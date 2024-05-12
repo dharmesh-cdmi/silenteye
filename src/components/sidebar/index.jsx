@@ -111,7 +111,7 @@ const Sidebar = () => {
            </p>
            <button
              type="button"
-             className="text-white my-2  bg-[#172A6E] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 mb-2 w-full"
+             className="text-white my-2  bg-[#172A6E] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center me-2 mb-2 w-full"
            >
              <IoMdAdd className="mx-2" />
              Add Devices

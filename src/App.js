@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
-import Tes from "./Pages/tes";
 import "./assests/css/App.css"
+import Dashboard from "./Pages/Dashboard";
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       children: [
         {
           index: true,
-          element: <Tes />,
+          element: <Dashboard />,
           },    
      
       ],
