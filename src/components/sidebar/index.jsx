@@ -155,6 +155,13 @@ const Sidebar = () => {
                 Settings
               </NavLink>
             </li>
+             { /* NOTES */ }
+             <li>
+                          <NavLink to={"/notes"} className="link">
+                            <SlSettings size={23} className="min-w-max" />
+                            Notes
+                          </NavLink>
+                        </li>
           </ul>
           
         </div>
