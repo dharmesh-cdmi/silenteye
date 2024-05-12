@@ -1,0 +1,26 @@
+
+  
+  .link {
+    @apply p-2.5 flex  gap-6 items-center md:cursor-pointer cursor-default duration-300 font-medium;
+  }
+  
+  .active {
+    @apply bg-[#172A6E] text-white;
+  }
+  .fullfill {
+    width: -webkit-fill-available;
+
+  }
+
+
+/* colors */
+  
+  .tprimary {
+     @apply text-[#101828]
+  }
+   
+  .tsecondary {
+    @apply text-slate-500
+ }
+ 
+  
