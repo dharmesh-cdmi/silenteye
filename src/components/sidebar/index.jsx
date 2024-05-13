@@ -4,6 +4,8 @@ import SubMenu from "./SubMenu";
 import { motion } from "framer-motion";
 
 // * React icons
+import { GrAppsRounded } from "react-icons/gr";
+import { VscFiles } from "react-icons/vsc";
 import { IoIosArrowBack, IoMdAdd } from "react-icons/io";
 import { SlSettings } from "react-icons/sl";
 import { AiOutlineAppstore } from "react-icons/ai";
@@ -153,13 +155,28 @@ const Sidebar = () => {
                 Settings
               </NavLink>
             </li>
-             { /* NOTES */ }
-             <li>
-                          <NavLink to={"/notes"} className="link">
-                            <SlSettings size={23} className="min-w-max" />
-                            Notes
-                          </NavLink>
-                        </li>
+    
+                  {/* NOTES */}
+            <li>
+              <NavLink to={"/notes"} className="link">
+                <VscFiles size={23} className="min-w-max" />
+                Notes
+              </NavLink>
+            </li>
+            {/* APPS */}
+            <li>
+              <NavLink to={"/apps"} className="link">
+                <GrAppsRounded size={23} className="min-w-max" />
+                Apps
+              </NavLink>
+            </li>       
+                         <li>
+                                                  <NavLink to={"/notes"} className="link">
+                                                    <SlSettings size={23} className="min-w-max" />
+                                                    Apps
+                                                  </NavLink>
+                                                </li>
+                        
                         <li>
                           <NavLink to={"/KeyLogger"} className="link">
                             <SlSettings size={23} className="min-w-max" />
