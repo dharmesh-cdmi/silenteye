@@ -9,7 +9,7 @@ import Notes from "./Pages/Notes/Notes.js"
 import AllApps from "./Pages/Apps/AllApps.js"
 import TotalApp from "./Pages/Apps/TotalApps.js"
 import InstalledApp from "./Pages/Apps/InstalledApp.js"
-import UnInstalledApp from "./Pages/Apps/UnstalledApp.js"
+import UnInstalledApp from "./Pages/Apps/./Pages/Apps/UnstalledApp.js"
 import BlockedApp from "./Pages/Apps/BlockedApp.js"
 import "./assests/css/App.css"
 
