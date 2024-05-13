@@ -8,8 +8,8 @@ import Messenger from "../../src/assests/images/KeyLogger/messenger.png";
 import instagram from "../../src/assests/images/KeyLogger/instagram.png";
 import snapchat from "../../src/assests/images/KeyLogger/snapchat.png";
 import KeyLoggerHeader from "../components/KeyLogger/KeyLoggerHeader";
-import Button from "../components/Shared/Button"
-import More from "../assests/images/more.png"
+import Button from "../components/Shared/Button";
+import More from "../assests/images/more.png";
 
 const keyloggerData = [
   [
@@ -89,10 +89,9 @@ const keyloggerData = [
 ];
 
 function KeyLogger() {
-  const viewMore=()=>{
-   //View More Logic Here
-
-  }
+  const viewMore = () => {
+    //View More Logic Here
+  };
 
   return (
     <div className="main ps-3 pe-3 pt-4">
@@ -112,13 +111,13 @@ function KeyLogger() {
         </div>
       ))}
       <div className="flex justify-center mb-12">
-      <Button
-            onClick={viewMore}
-            className="text-[18px] font-medium px-[32px]  py-[10px] text-[#101828] text-center"
-          >
-              View More
-              <img src={More} alt="more" className="ps-2"/>
-          </Button>
+        <Button
+          onClick={viewMore}
+          className="text-[18px] font-medium px-[32px]  py-[10px] text-[#101828] text-center"
+        >
+          View More
+          <img src={More} alt="more" className="ps-2" />
+        </Button>
       </div>
     </div>
   );

@@ -33,11 +33,16 @@ const KeyLoggerHeader = () => {
       </div>
       <div className="item-two flex flex-row items-center md:mt-0 mt-4">
         <div className="me-3">
+
+
+        </div>
+        <div className="me-3">
           <Button
             onClick={deleteKeyLogger}
             className="text-[18px] font-medium px-[12px]  py-[10px] text-[#101828] text-center"
           >
-            <img src={deleteIcon} alt="delete" className="pe-2"/>Deleted
+            <img src={deleteIcon} alt="delete" className="pe-2" />
+            Deleted
           </Button>
         </div>
         <div className="me-3">
@@ -45,7 +50,7 @@ const KeyLoggerHeader = () => {
             onClick={exportKeyLogger}
             className="text-[18px] font-medium px-[12px]  py-[10px] text-[#101828] text-center"
           >
-             <img src={exportIcon} alt="export" className="pe-2"/>
+            <img src={exportIcon} alt="export" className="pe-2" />
             Export
           </Button>
         </div>
@@ -55,7 +60,7 @@ const KeyLoggerHeader = () => {
             onClick={filterKeyLooger}
             className="text-[18px] font-medium px-[12px]  py-[10px] text-[#101828] text-center"
           >
-            <img src={filterIcon} alt="delete" className="pe-2"/>
+            <img src={filterIcon} alt="delete" className="pe-2" />
             Filter
           </Button>
         </div>
