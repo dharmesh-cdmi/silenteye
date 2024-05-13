@@ -2,6 +2,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
 import Tes from "./Pages/tes";
 import "./assests/css/App.css"
+import KeyLogger from "./Pages/KeyLogger";
+import { SavedPassword } from "./Pages/SavedPassword";
 
 
 function App() {
@@ -14,14 +16,34 @@ function App() {
           index: true,
           element: <Tes />,
           },    
-     
       ],
     },
+    {
+      path: "/keylogger",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <KeyLogger/>,
+          },    
+     
+      ],
 
+    },
+    {
+      path: "/SavedPassword",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <SavedPassword/>,
+          },    
+      ],
+    }
   ]);
   return (
     <>
-    <RouterProvider router={router} />      
+    <RouterProvider router={router} /> 
   </>
   );
 }
