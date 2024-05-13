@@ -10,7 +10,6 @@ import TotalApp from "./Pages/Apps/TotalApps.js"
 import InstalledApp from "./Pages/Apps/InstalledApp.js"
 import UnInstalledApp from "./Pages/Apps/UnstalledApp.js"
 import BlockedApp from "./Pages/Apps/BlockedApp.js"
-import "./assests/css/App.css"
 
 function App() {
   const router = createBrowserRouter([
@@ -21,7 +20,7 @@ function App() {
         {
           index: true,
           element: <Tes />,
-        },    
+        },
       ],
     },
     {
@@ -31,7 +30,7 @@ function App() {
         {
           index: true,
           element: <SavedPassword/>,
-        },    
+        },
       ],
     },
     {
@@ -41,7 +40,7 @@ function App() {
         {
           index: true,
           element: <KeyLogger/>,
-        },    
+        },
       ],
     },
     {
@@ -51,7 +50,7 @@ function App() {
         {
           index: true,
           element: <Notes/>,
-        },    
+        },
       ],
     },
     {
@@ -61,7 +60,7 @@ function App() {
         {
           index: true,
           element: <AllApps/>,
-        },    
+        },
       ],
     },
     {
@@ -71,7 +70,7 @@ function App() {
         {
           index: true,
           element: <InstalledApp/>,
-        },    
+        },
       ],
     },
     {
@@ -81,7 +80,7 @@ function App() {
         {
           index: true,
           element: <UnInstalledApp/>,
-        },    
+        },
       ],
     },
     {
@@ -91,7 +90,7 @@ function App() {
         {
           index: true,
           element: <BlockedApp/>,
-        },    
+        },
       ],
     },
   ]);
