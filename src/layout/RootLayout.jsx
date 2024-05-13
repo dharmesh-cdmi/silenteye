@@ -11,7 +11,7 @@ function RootLayout() {
       <main className="fullfill  bg-white">
       <Navbar/>  
       <Alert/>
-      <div className="max-w-5xl flex-1 mx-auto py-4">
+      <div className="max-w-5xl flex-1 mx-auto py-4 mt-28">
       <Outlet />
       </div>
         

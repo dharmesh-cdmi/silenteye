@@ -5,7 +5,7 @@ import { RiMenu2Fill } from "react-icons/ri";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white border-gray-300 dark:border-gray-600 dark:bg-gray-900 min-w-max border-b ">
+    <nav style={{width:"inherit"}} className="bg-white border-gray-300 dark:border-gray-600 dark:bg-gray-900  border-b fixed  top-0 z-10">
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2.5 px-9">
         <button
           data-collapse-toggle="mega-menu-full"
