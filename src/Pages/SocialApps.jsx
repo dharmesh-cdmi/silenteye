@@ -175,18 +175,14 @@ const SocialAppsData = [
     icon: messenger,
   },
 ];
-
 const SocialApps = () => {
-
     const viewMore = () => {
         //View More Logic Here
-    
     };
 
   return (
     <div className="main ps-3 pe-3 pt-4">
       <SocialAppsHeader />
-
       <ul className="grid xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-4 grid-cols-3   mt-10">
         {SocialAppsData.map((SocialApps, key) => (
           <li key={SocialApps.id} className="my-4">
@@ -203,8 +199,6 @@ const SocialApps = () => {
           <img src={More} alt="more" className="ps-2" />
         </Button>
       </div>
-
-
     </div>
   );
 };

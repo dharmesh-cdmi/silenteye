@@ -153,34 +153,49 @@ const Sidebar = () => {
                 Settings
               </NavLink>
             </li>
-             { /* NOTES */ }
-             <li>
-                          <NavLink to={"/notes"} className="link">
-                            <SlSettings size={23} className="min-w-max" />
-                            Notes
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={"/KeyLogger"} className="link">
-                            <SlSettings size={23} className="min-w-max" />
-                            KeyLogger
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={"/SavedPassword"} className="link">
-                            <SlSettings size={23} className="min-w-max" />
-                            Saved Passwords
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={"/SocialApps"} className="link">
-                            <SlSettings size={23} className="min-w-max" />
-                             Social Apps
-                          </NavLink>
-                        </li>
-
-
-
+            {/* NOTES */}
+            <li>
+              <NavLink to={"/notes"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                Notes
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/KeyLogger"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                KeyLogger
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/SavedPassword"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                Saved Passwords
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/SocialApps"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                Social Apps
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/AllAllerts"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                All Allerts & Notifications
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/NotificationSettings"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                Notification Setting
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/InstantAlerts"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                Instant Alerts
+              </NavLink>
+            </li>
           </ul>
         </div>
         <motion.div
