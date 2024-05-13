@@ -153,18 +153,13 @@ const Sidebar = () => {
                 Settings
               </NavLink>
             </li>
-            <li>
-              <NavLink to={"/keylogger"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                Key Logger
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={"/SavedPassword"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                Saved Passwords
-              </NavLink>
-            </li>
+             { /* NOTES */ }
+             <li>
+                          <NavLink to={"/notes"} className="link">
+                            <SlSettings size={23} className="min-w-max" />
+                            Notes
+                          </NavLink>
+                        </li>
           </ul>
         </div>
         <motion.div
