@@ -7,7 +7,6 @@ import TotalApp from "./Pages/Apps/TotalApps.js"
 import InstalledApp from "./Pages/Apps/InstalledApp.js"
 import UnInstalledApp from "./Pages/Apps/UnstalledApp.js"
 import BlockedApp from "./Pages/Apps/BlockedApp.js"
-
 import "./assests/css/App.css"
 
 
@@ -21,29 +20,29 @@ function App() {
           index: true,
           element: <Tes />,
           },    
-     {
-       path: 'notes',
-       element: <Notes />,
-     },
-              {
-                path: 'apps',
-                element: <AllApps />,
-              },
-              {
-                path: 'apps/installedapp',
-                element: <InstalledApp />,
-              },
-              {
-                path: 'apps/uninstalledapp',
-                element: <UnInstalledApp />,
-              },
-              {
-                path: 'apps/blockedapp',
-                element: <BlockedApp />,
-              },
      
       ],
     },
+        {
+          path: 'notes',
+          element: <Notes />,
+        },
+         {
+          path: 'apps',
+          element: <AllApps />,
+        },
+         {
+          path: 'apps/installedapp',
+          element: <InstalledApp />,
+        },
+         {
+          path: 'apps/uninstalledapp',
+          element: <UnInstalledApp />,
+        },
+         {
+          path: 'apps/blockedapp',
+          element: <BlockedApp />,
+        },
 
   ]);
   return (
