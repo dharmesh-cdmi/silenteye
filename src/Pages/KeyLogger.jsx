@@ -5,8 +5,12 @@ import google from "../../src/assests/images/KeyLogger/google.png";
 import photos from "../../src/assests/images/KeyLogger/photos.png";
 import whatsapp from "../../src/assests/images/KeyLogger/whatsapp.png";
 import Messenger from "../../src/assests/images/KeyLogger/messenger.png";
-import instagram from "../../src/assests/images/KeyLogger/instagram.png"
-import snapchat from "../../src/assests/images/KeyLogger/snapchat.png"
+import instagram from "../../src/assests/images/KeyLogger/instagram.png";
+import snapchat from "../../src/assests/images/KeyLogger/snapchat.png";
+import KeyLoggerHeader from "../components/KeyLogger/KeyLoggerHeader";
+import Button from "../components/Shared/Button"
+import More from "../assests/images/more.png"
+
 const keyloggerData = [
   [
     {
@@ -85,23 +89,38 @@ const keyloggerData = [
 ];
 
 function KeyLogger() {
+  const viewMore=()=>{
+   //View More Logic Here
+
+  }
+
   return (
-    <div className="main">
-    {keyloggerData.map((keyloggerData, index) => (
-      <div key={index} className="my-10">
-        <Table>
-          <Table.Header className="font-[16px]">
-            Monday, {index + 11} Jan, 2023
-          </Table.Header>
-          <Table.Body>
-            {keyloggerData.map((keyLogger) => (
-              <KeyLoggers key={keyLogger.id} keyLogger={keyLogger} />
-            ))}
-          </Table.Body>
-        </Table>
+    <div className="main ps-3 pe-3 pt-4">
+      <KeyLoggerHeader />
+      {keyloggerData.map((keyloggerData, index) => (
+        <div key={index} className="my-10">
+          <Table>
+            <Table.Header className="font-[16px]">
+              Monday, {index + 11} Jan, 2023
+            </Table.Header>
+            <Table.Body>
+              {keyloggerData.map((keyLogger) => (
+                <KeyLoggers key={keyLogger.id} keyLogger={keyLogger} />
+              ))}
+            </Table.Body>
+          </Table>
+        </div>
+      ))}
+      <div className="flex justify-center mb-12">
+      <Button
+            onClick={viewMore}
+            className="text-[18px] font-medium px-[32px]  py-[10px] text-[#101828] text-center"
+          >
+              View More
+              <img src={More} alt="more" className="ps-2"/>
+          </Button>
       </div>
-    ))}
-  </div>
+    </div>
   );
 }
 

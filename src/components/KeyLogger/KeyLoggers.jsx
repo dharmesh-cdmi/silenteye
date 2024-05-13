@@ -1,7 +1,12 @@
 import React from "react";
 
 const KeyLoggers = ({ keyLogger }) => {
-  const { id, img, heading, subheading, time } = keyLogger;
+  const { 
+    id, 
+    img, 
+    heading, 
+    subheading, 
+    time } = keyLogger;
   return (
     <div className="flex flex-row justify-between p-[16px] border-[0.5px] border-[#DDDDDD]">
       <div className="flex flex-col">
