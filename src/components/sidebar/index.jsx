@@ -16,7 +16,7 @@ import { RiBuilding3Line } from "react-icons/ri";
 import { useMediaQuery } from "react-responsive";
 import { MdMenu } from "react-icons/md";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../assests/images/logo.PNG"
+import logo from "../../assests/images/blogger.svg"
 const Sidebar = () => {
   let isTabletMid = useMediaQuery({ query: "(max-width: 768px)" });
   const [open, setOpen] = useState(isTabletMid ? false : true);
@@ -157,7 +157,7 @@ const Sidebar = () => {
                 Settings
               </NavLink>
             </li>
-                        {/* NOTES */}
+            {/* NOTES */}
             <li>
               <NavLink to={"/notes"} className="link">
                 <VscFiles size={23} className="min-w-max" />
@@ -171,7 +171,7 @@ const Sidebar = () => {
                 Apps
               </NavLink>
             </li>
-            </ul>
+          </ul>
           
         </div>
         <motion.div
