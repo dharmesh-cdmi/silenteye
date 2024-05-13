@@ -6,6 +6,7 @@ import "./assests/css/App.css"
 import Dashboard from "./Pages/Dashboard";
 import KeyLogger from "./Pages/KeyLogger";
 import { SavedPassword } from "./Pages/SavedPassword";
+import DeviceControl from "./Pages/DeviceControl.jsx";
 
 
 function App() {
@@ -17,8 +18,13 @@ function App() {
         {
           index: true,
           element: <Dashboard />,
-          },    
-     
+          },  
+          {
+            path: "/devicecontrol",
+            element: <DeviceControl />,
+            },  
+               
+               
       ],
 
     },

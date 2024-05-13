@@ -5,7 +5,7 @@ import { IoIosClose } from 'react-icons/io'
 const Alert = () => {
   return (
     <>
-<div id="alert-4" style={{width:"inherit"}} className="flex items-center mb-2 px-4 fixed top-16  pt-2 text-black  bg-[#FFEAB5] dark:bg-gray-800 " role="alert">
+<div id="alert-4" style={{width:"inherit"}} className="flex items-center z-20 mb-2 px-4 fixed top-16  pt-2 text-black  bg-[#FFEAB5] dark:bg-gray-800 " role="alert">
 <GoAlert />
 
   <span className="sr-only">Info</span>

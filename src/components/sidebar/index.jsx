@@ -126,7 +126,7 @@ const Sidebar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/authentication"} className="link">
+              <NavLink to={"/devicecontrol"} className="link">
                 <BsPerson size={23} className="min-w-max" />
                 Device Control
               </NavLink>
