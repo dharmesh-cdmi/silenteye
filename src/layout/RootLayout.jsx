@@ -9,7 +9,7 @@ function RootLayout() {
       
       <main className="fullfill">
       <Navbar/>  
-      <div className="max-w-5xl flex-1 mx-auto py-4">
+      <div className="max-w-5xl flex-1  mx-auto py-4">
       <Outlet />
       </div>
         
