@@ -14,7 +14,7 @@ import { RiBuilding3Line } from "react-icons/ri";
 import { useMediaQuery } from "react-responsive";
 import { MdMenu } from "react-icons/md";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../assests/images/logo.PNG"
+import logo from "../../assests/images/logo.PNG";
 const Sidebar = () => {
   let isTabletMid = useMediaQuery({ query: "(max-width: 768px)" });
   const [open, setOpen] = useState(isTabletMid ? false : true);
@@ -77,7 +77,6 @@ const Sidebar = () => {
       icon: TbReportAnalytics,
       menus: ["dashboard", "realtime", "events"],
     },
-    
   ];
 
   return (
@@ -98,7 +97,7 @@ const Sidebar = () => {
          h-screen "
       >
         <div className="flex items-center gap-2.5 font-medium border-b py-3 border-slate-300">
-          <img src={logo}  width={60} alt="logo" />
+          <img src={logo} width={60} alt="logo" />
           <span className="text-xl whitespace-pre">Silent Eye</span>
         </div>
 
@@ -132,18 +131,17 @@ const Sidebar = () => {
                 Device Control
               </NavLink>
             </li>
-           
 
             {(open || isTabletMid) && (
-              <div className=" py-2 border-slate-300 ">              
+              <div className=" py-2 border-slate-300 ">
                 {subMenusList?.map((menu) => (
                   <div key={menu.name} className="flex flex-col gap-1 ">
-                    <SubMenu  data={menu} />
+                    <SubMenu data={menu} />
                   </div>
                 ))}
               </div>
             )}
-             <li>
+            <li>
               <NavLink to={"/stroage"} className="link">
                 <HiOutlineDatabase size={23} className="min-w-max" />
                 Messages
@@ -162,8 +160,22 @@ const Sidebar = () => {
                             Notes
                           </NavLink>
                         </li>
+                        <li>
+                          <NavLink to={"/KeyLogger"} className="link">
+                            <SlSettings size={23} className="min-w-max" />
+                            KeyLogger
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to={"/SavedPassword"} className="link">
+                            <SlSettings size={23} className="min-w-max" />
+                            Saved Passwords
+                          </NavLink>
+                        </li>
+
+
+
           </ul>
-          
         </div>
         <motion.div
           onClick={() => {

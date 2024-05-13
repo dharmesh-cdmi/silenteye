@@ -4,6 +4,8 @@ import RootLayout from "./layout/RootLayout";
 import Notes from "./Pages/Notes/Notes.js"
 import "./assests/css/App.css"
 import Dashboard from "./Pages/Dashboard";
+import KeyLogger from "./Pages/KeyLogger";
+import { SavedPassword } from "./Pages/SavedPassword";
 
 
 function App() {
@@ -16,17 +18,41 @@ function App() {
           index: true,
           element: <Dashboard />,
           },    
-     {
-       path: 'notes',
-       element: <Notes />,
-     },
+     
+      ],
+
+    },
+    {
+      path: "/SavedPassword",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <SavedPassword/>,
+          },    
       ],
     },
 
+
+
+
+
+
+
+    {
+      path: "/KeyLogger",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <KeyLogger/>,
+          },    
+      ],
+    }
   ]);
   return (
     <>
-    <RouterProvider router={router} />      
+    <RouterProvider router={router} /> 
   </>
   );
 }
