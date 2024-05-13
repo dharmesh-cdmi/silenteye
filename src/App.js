@@ -1,10 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
 import Tes from "./Pages/tes";
-import "./assests/css/App.css"
+import "./assests/css/App.css";
 import KeyLogger from "./Pages/KeyLogger";
 import { SavedPassword } from "./Pages/SavedPassword";
-
+import SocialApps from "./Pages/SocialApps";
 
 function App() {
   const router = createBrowserRouter([
@@ -15,10 +15,8 @@ function App() {
         {
           index: true,
           element: <Tes />,
-          },    
-     
+        },
       ],
-
     },
     {
       path: "/SavedPassword",
@@ -26,16 +24,10 @@ function App() {
       children: [
         {
           index: true,
-          element: <SavedPassword/>,
-          },    
+          element: <SavedPassword />,
+        },
       ],
     },
-
-
-
-
-
-
 
     {
       path: "/KeyLogger",
@@ -43,15 +35,26 @@ function App() {
       children: [
         {
           index: true,
-          element: <KeyLogger/>,
-          },    
+          element: <KeyLogger />,
+        },
       ],
-    }
+    },
+
+    {
+      path: "/SocialApps",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <SocialApps />,
+        },
+      ],
+    },
   ]);
   return (
     <>
-    <RouterProvider router={router} /> 
-  </>
+      <RouterProvider router={router} />
+    </>
   );
 }
 

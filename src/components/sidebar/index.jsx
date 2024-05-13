@@ -172,6 +172,12 @@ const Sidebar = () => {
                             Saved Passwords
                           </NavLink>
                         </li>
+                        <li>
+                          <NavLink to={"/SocialApps"} className="link">
+                            <SlSettings size={23} className="min-w-max" />
+                             Social Apps
+                          </NavLink>
+                        </li>
 
 
 
