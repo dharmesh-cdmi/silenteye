@@ -1,5 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
+import Tes from "./Pages/tes";
+import Notes from "./Pages/Notes/Notes.js"
 import "./assests/css/App.css"
 import Dashboard from "./Pages/Dashboard";
 
@@ -14,7 +16,10 @@ function App() {
           index: true,
           element: <Dashboard />,
           },    
-     
+     {
+       path: 'notes',
+       element: <Notes />,
+     },
       ],
     },
 
