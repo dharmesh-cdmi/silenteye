@@ -1,6 +1,7 @@
 import {useState} from "react"
 import { Link } from 'react-router-dom';
 import "./AllApps.css"
+import { useMoveBack } from "../../components/KeyLogger/hooks/useMoveBack.js";
 
 import { IoFilterSharp } from "react-icons/io5";
 import { FaArrowLeftLong } from "react-icons/fa6";
@@ -9,10 +10,10 @@ import { IoIosSearch } from "react-icons/io";
 
 // FILES
 import TotalApps from "./TotalApps.js"
-import ExportBtn from "../../components/PageExportBtn/PageExportBtn.js"
+import ExportBtn from "../../components/pageExportBtn/PageExportBtn.js"
 
 const AllApps=()=>{
-
+const moveBacks = useMoveBack();
   return(
       <div className="Apps-wrapper">
     <div className="Apps-container flex flex-col justify-center align-middle ">
@@ -21,7 +22,7 @@ const AllApps=()=>{
     <div className="Apps-nav flex justify-between align-middle">
     {/* nav left*/}
     <div className="Apps-nav-left flex justify-center align-bottom">
-         <button className="notNavLeftIcon"><FaArrowLeftLong /></button>
+         <button onClick={moveBacks} className="notNavLeftIcon"><FaArrowLeftLong /></button>
        <span>Apps</span>
     </div>
    
@@ -48,7 +49,7 @@ const AllApps=()=>{
     </div>
 
  {/* Apps Containers */}
-  <TotalApps />
+  <TotalApps className="p-0" />
  
     </div>
     </div>

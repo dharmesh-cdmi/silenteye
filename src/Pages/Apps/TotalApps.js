@@ -1,5 +1,5 @@
 import {useState} from "react";
-import ExportBtn from "../../components/PageExportBtn/PageExportBtn.js"
+import ExportBtn from "../../components/pageExportBtn/PageExportBtn.js"
 import AppsRoutesHeader from "../../components/AppsRoutesHeader/AppsRoutesHeader.js"
 
 import {AllAppsData} from "./AppsData/AllAppsData.js"
