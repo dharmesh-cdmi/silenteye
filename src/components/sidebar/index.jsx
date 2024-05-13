@@ -160,6 +160,21 @@ const Sidebar = () => {
                             Notes
                           </NavLink>
                         </li>
+                        <li>
+                          <NavLink to={"/KeyLogger"} className="link">
+                            <SlSettings size={23} className="min-w-max" />
+                            KeyLogger
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to={"/SavedPassword"} className="link">
+                            <SlSettings size={23} className="min-w-max" />
+                            Saved Passwords
+                          </NavLink>
+                        </li>
+
+
+
           </ul>
         </div>
         <motion.div
