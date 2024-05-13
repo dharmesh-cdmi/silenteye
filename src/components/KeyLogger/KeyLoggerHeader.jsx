@@ -5,19 +5,29 @@ import Button from "../Shared/Button";
 import deleteIcon from "../../assests/images/Header/delete.png";
 import exportIcon from "../../assests/images/Header/Export.png";
 import filterIcon from "../../assests/images/Header/Filter.png";
+import Search from "../Shared/Search";
 
 const KeyLoggerHeader = () => {
   const moveBacks = useMoveBack();
   const deleteKeyLogger = () => {
     //Logic for delete the keylogger here
+
   };
   const exportKeyLogger = () => {
     //Logic for export the keylogger here
+
   };
 
   const filterKeyLooger = () => {
     //Logic for filter the keyLogger here
+
   };
+
+  const handleSearch = () => {
+    //Export Logic here
+
+  };
+
   return (
     <div className="flex md:flex-row flex-col md:justify-between  items-start  md:items-center">
       <div className="item-one flex flex-row items-center ">
@@ -33,13 +43,12 @@ const KeyLoggerHeader = () => {
       </div>
       <div className="item-two flex flex-row items-center md:mt-0 mt-4">
         <div className="me-3">
-
-
+          <Search  onClick={handleSearch}   placeholder="Search"/>
         </div>
         <div className="me-3">
           <Button
             onClick={deleteKeyLogger}
-            className="text-[18px] font-medium px-[12px]  py-[10px] text-[#101828] text-center"
+            className="text-[18px] drop-shadow-2xl  font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
           >
             <img src={deleteIcon} alt="delete" className="pe-2" />
             Deleted
@@ -48,7 +57,7 @@ const KeyLoggerHeader = () => {
         <div className="me-3">
           <Button
             onClick={exportKeyLogger}
-            className="text-[18px] font-medium px-[12px]  py-[10px] text-[#101828] text-center"
+            className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
           >
             <img src={exportIcon} alt="export" className="pe-2" />
             Export
@@ -58,7 +67,7 @@ const KeyLoggerHeader = () => {
         <div className="me-3">
           <Button
             onClick={filterKeyLooger}
-            className="text-[18px] font-medium px-[12px]  py-[10px] text-[#101828] text-center"
+            className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
           >
             <img src={filterIcon} alt="delete" className="pe-2" />
             Filter
