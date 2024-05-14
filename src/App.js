@@ -12,6 +12,7 @@ import InstantAlert from "./Pages/InstantAlert.jsx";
 import AppPermission from "./Pages/AppPermission";
 import PermisionManager from "./Pages/PermisionManager";
 import Export from "./Pages/Export.jsx";
+import Payment from "./Pages/Payment.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -116,6 +117,16 @@ function App() {
         {
           index: true,
           element: <Export/>,
+        },
+      ],
+    },
+    {
+      path: "/Payment",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <Payment/>,
         },
       ],
     },

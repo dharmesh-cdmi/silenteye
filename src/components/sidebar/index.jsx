@@ -228,6 +228,12 @@ const Sidebar = () => {
                  Data Export
               </NavLink>
             </li>
+            <li>
+              <NavLink to={"/Payment"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                  Saved Payment Methods
+              </NavLink>
+            </li>
           </ul>
         </div>
         <motion.div
