@@ -7,7 +7,9 @@ import { SavedPassword } from "./Pages/SavedPassword";
 import SocialApps from "./Pages/SocialApps";
 import AllAllert from "./Pages/AllAllert";
 import NotificationSetting from "./Pages/NotificationSetting";
-import InstantAlerts from "./Pages/InstantAlerts";
+import InstantAlert from "./Pages/InstantAlert";
+import AppPermission from "./Pages/AppPermission";
+import PermisionManager from "./Pages/PermisionManager";
 
 function App() {
   const router = createBrowserRouter([
@@ -82,13 +84,35 @@ function App() {
       children: [
         {
           index: true,
-          element: <InstantAlerts/>,
+          element: <InstantAlert/>,
         },
       ],
     },
-    
 
 
+    {
+      path: "/AppPermisions",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element:<AppPermission/> ,
+        },
+      ],
+      
+    },
+
+
+    {
+      path: "/PermisionManager",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element:<PermisionManager/> ,
+        },
+      ],
+    },
   ]);
   return (
     <>

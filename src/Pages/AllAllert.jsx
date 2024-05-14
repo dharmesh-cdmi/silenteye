@@ -81,8 +81,8 @@ const AllAllert = () => {
         <AllAllertsHeader/>
         {AllAllertsData.map((AllAllertsData, index) => (
         <div key={index} className="my-10">
-          <Table>
-            <Table.Header className="font-[16px]">
+          <Table className="border-[#DDDDDD] border-[1px] rounded-lg">
+            <Table.Header className="font-[16px] opacity-[50%]">
               Monday, {index + 11} Jan, 2023
             </Table.Header>
             <Table.Body>

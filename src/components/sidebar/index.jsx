@@ -196,6 +196,18 @@ const Sidebar = () => {
                 Instant Alerts
               </NavLink>
             </li>
+            <li>
+              <NavLink to={"/AppPermisions"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                 App Permissions
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/PermisionManager"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                 Permission Manager
+              </NavLink>
+            </li>
           </ul>
         </div>
         <motion.div

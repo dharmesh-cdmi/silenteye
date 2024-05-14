@@ -65,8 +65,8 @@ const NotificationSetting = () => {
     <div className="main ps-3 pe-3 pt-4">
       <Header heading="Notification Settings" />
       <div className="my-10">
-        <Table>
-          <Table.Header className="font-[16px]">
+        <Table className="border-[#DDDDDD] border-[1px] rounded-lg">
+          <Table.Header className="font-[16px] opacity-[50%]">
             Hide Notifications (All Apps)
           </Table.Header>
           <Table.Body>

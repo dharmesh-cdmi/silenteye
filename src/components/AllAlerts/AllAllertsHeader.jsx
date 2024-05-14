@@ -31,7 +31,7 @@ const AllAllertsHeader = () => {
           <img src={moveBack} alt="move-Back" />
         </div>
         <span className="text-[20px]  text-[#000000] ps-3 font-[600]">
-          Social Apps
+        Alert & Notifications
         </span>
       </div>
       <div className="item-two flex lg:flex-row flex-col  lg:mt-0 mt-5">
