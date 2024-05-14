@@ -7,7 +7,7 @@ const PermissionManagers = ({ PermisionManager }) => {
 
   return (
     <Table.Row >
-      <div className="flex flex-row justify-between p-[16px]">
+      <div className="flex flex-row justify-between p-[16px] items-baseline">
         <div className="flex flex-row items-center">
           <img src={icon} alt="camera" className="h-auto max-w-[100%]" />
           <div className="flex flex-col ms-3">
