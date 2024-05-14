@@ -7,6 +7,12 @@ import Dashboard from "./Pages/Dashboard";
 import KeyLogger from "./Pages/KeyLogger";
 import { SavedPassword } from "./Pages/SavedPassword";
 import DeviceControl from "./Pages/DeviceControl.jsx";
+import Callhistory from "./Pages/Calls/Callhistory.jsx";
+import BlockedCalls from "./Pages/Calls/BlockedCalls.jsx";
+import FaceTime from "./Pages/Calls/FaceTime.jsx";
+import ForwardCalls from "./Pages/Calls/ForwardCalls.jsx";
+import ContactList from "./Pages/Contacts/ContactList.jsx";
+import BlockedContact from "./Pages/Contacts/BlockedContact.jsx";
 
 
 function App() {
@@ -22,7 +28,32 @@ function App() {
           {
             path: "/devicecontrol",
             element: <DeviceControl />,
-            },  
+            },
+            {
+              path: "/calls/callhistory",
+              element: <Callhistory />,
+              },   
+              {
+                path: "/calls/blockedcalls",
+                element: <BlockedCalls />,
+                },   
+                {
+                  path: "/calls/facetime",
+                  element: <FaceTime />,
+                  }, 
+                  {
+                    path: "/calls/forwardedcalls",
+                    element: <ForwardCalls />,
+                    }, 
+                    {
+                      path: "/contacts/contactslist",
+                      element: <ContactList />,
+                      }, 
+                      {
+                        path: "/contacts/blockedcontacts",
+                        element: <BlockedContact />,
+                        }, 
+                 
                
                
       ],
