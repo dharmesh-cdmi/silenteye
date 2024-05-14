@@ -1,14 +1,14 @@
 import {useState} from 'react'
 import "./Notes.css"
 import {notesData} from "./Notes-data.js"
- import PageExportBtn from "../../components/PageExportBtn/PageExportBtn.js"
-
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaGripLines } from "react-icons/fa6";
 import { TbFileExport } from "react-icons/tb";
 import { IoIosSearch } from "react-icons/io";
 import { IoCreateOutline } from "react-icons/io5";
  import { MdDeleteOutline } from "react-icons/md";
+import PageExportBtn from '../../components/pageExportBtn/PageExportBtn.jsx';
+
 
 const Notes = () => {
   const [data, setData]=useState("");
