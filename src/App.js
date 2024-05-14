@@ -1,9 +1,12 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
-import Tes from "./Pages/tes";
+
+import Notes from "./Pages/Notes/Notes.js"
 import "./assests/css/App.css"
+import Dashboard from "./Pages/Dashboard";
 import KeyLogger from "./Pages/KeyLogger";
 import { SavedPassword } from "./Pages/SavedPassword";
+import DeviceControl from "./Pages/DeviceControl.jsx";
 
 
 function App() {
@@ -14,9 +17,14 @@ function App() {
       children: [
         {
           index: true,
-          element: <Tes />,
-          },    
-     
+          element: <Dashboard />,
+          },  
+          {
+            path: "/devicecontrol",
+            element: <DeviceControl />,
+            },  
+               
+               
       ],
 
     },

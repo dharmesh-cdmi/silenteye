@@ -80,7 +80,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div>
+    <div className="">
       <div
         onClick={() => setOpen(false)}
         className={`md:hidden fixed inset-0 max-h-screen z-[998] bg-black/50 ${
@@ -102,21 +102,21 @@ const Sidebar = () => {
         </div>
 
         <div className="flex flex-col  h-full ">
-          {open && (
-            <div className="mx-3">
-              <p className="text-base text-left font-medium">demo@domain.com</p>
-              <p className=" text-left tsecondary text-sm font-normal">
-                Updated: Apr 24 2024 16:30:22 
-              </p>
-              <button
-                type="button"
-                className="text-white my-2  bg-[#172A6E] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 mb-2 w-full"
-              >
-                <IoMdAdd className="mx-2" />
-                Add Devices
-              </button>
-            </div>
-          )}
+         {open && (
+           <div className="mx-3">
+           <p className="text-base text-left font-medium">demo@domain.com</p>
+           <p className=" text-left tsecondary text-sm font-normal">
+             Updated: Apr 24 2024 16:30:22 
+           </p>
+           <button
+             type="button"
+             className="text-white my-2  bg-[#172A6E] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center me-2 mb-2 w-full"
+           >
+             <IoMdAdd className="mx-2" />
+             Add Devices
+           </button>
+         </div>
+         )}
 
           <ul className="whitespace-pre  text-[0.9rem] py-2 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100   md:h-[68%] h-[70%]">
             <li>
@@ -126,7 +126,7 @@ const Sidebar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/authentication"} className="link">
+              <NavLink to={"/devicecontrol"} className="link">
                 <BsPerson size={23} className="min-w-max" />
                 Device Control
               </NavLink>
