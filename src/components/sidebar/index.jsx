@@ -4,6 +4,10 @@ import SubMenu from "./SubMenu";
 import { motion } from "framer-motion";
 
 // * React icons
+import { LuFileSymlink } from "react-icons/lu";
+import { IoLocationOutline } from "react-icons/io5";
+import { GrAppsRounded } from "react-icons/gr";
+import { VscFiles } from "react-icons/vsc";
 import { IoIosArrowBack, IoMdAdd } from "react-icons/io";
 import { SlSettings } from "react-icons/sl";
 import { AiOutlineAppstore } from "react-icons/ai";
@@ -77,6 +81,16 @@ const Sidebar = () => {
       icon: TbReportAnalytics,
       menus: ["dashboard", "realtime", "events"],
     },
+        {
+      name: "Apps",
+      icon: TbReportAnalytics,
+      menus: ["installedapp", "uninstalledapp", "blockedapp"],
+    },
+    {
+      name: "Location",
+      icon: IoLocationOutline,
+      menus: ["livelocation", "locationhistory", "geofrence"],
+    }
   ];
 
   return (
@@ -173,7 +187,13 @@ const Sidebar = () => {
                           </NavLink>
                         </li>
 
-
+                        {/* EXPORTS FILES */}
+                        <li>
+                          <NavLink to={"/export"} className="link">
+                            <LuFileSymlink size={23} className="min-w-max" />
+                            Export Data
+                          </NavLink>
+                        </li>
 
           </ul>
         </div>
