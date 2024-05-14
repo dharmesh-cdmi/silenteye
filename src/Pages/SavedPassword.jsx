@@ -77,7 +77,7 @@ export const SavedPassword = () => {
   ];
 
   return (
-    <div className="main">
+    <div className="main ps-3 pe-3 pt-4">
       {SavedPasswordsData.map((SavedPasswordsData, index) => (
         <div key={index} className="my-10">
           <Table>

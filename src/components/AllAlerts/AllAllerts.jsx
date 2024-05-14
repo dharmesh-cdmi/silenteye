@@ -1,4 +1,5 @@
 import React from "react";
+import {Table} from "../Shared/Table"
 
 const AllAlerts = ({AllAlert}) => {
   const { 
@@ -8,7 +9,9 @@ const AllAlerts = ({AllAlert}) => {
     subheading, 
     time } = AllAlert;
   return (
-    <div className="flex flex-row justify-between p-[16px] border-[0.5px] border-[#DDDDDD]">
+
+    <Table.Row>
+    <div className="flex flex-row justify-between p-[16px]">
       <div className="flex flex-col">
         <div className="flex flex-row">
           <img src={img} alt="google" className=" h-auto max-w-[100%]" />
@@ -24,6 +27,7 @@ const AllAlerts = ({AllAlert}) => {
         {time}
       </span>
     </div>
+    </Table.Row>
   );
 };
 

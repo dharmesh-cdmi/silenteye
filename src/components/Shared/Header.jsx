@@ -43,7 +43,7 @@ const Header = ({heading}) => {
       </div>
       <div className="item-two flex lg:flex-row flex-col  lg:mt-0 mt-5">
         <div className="me-3">
-          <Search  onClick={handleSearch}   placeholder={`Search ${heading}`}/>
+          <Search  onClick={handleSearch}   placeholder="Search"/>
         </div>
      <div className="flex flex-row  flex-wrap   sm:flex-nowrap  mt-3 lg:mt-0 items-center ">
         <div className="me-3">

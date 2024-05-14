@@ -6,7 +6,7 @@ import KeyLogger from "./Pages/KeyLogger";
 import { SavedPassword } from "./Pages/SavedPassword";
 import SocialApps from "./Pages/SocialApps";
 import AllAllert from "./Pages/AllAllert";
-import NotificationSettings from "./Pages/NotificationSettings";
+import NotificationSetting from "./Pages/NotificationSetting";
 import InstantAlerts from "./Pages/InstantAlerts";
 
 function App() {
@@ -71,7 +71,7 @@ function App() {
       children: [
         {
           index: true,
-          element: <NotificationSettings/>,
+          element: <NotificationSetting/>,
         },
       ],
     },

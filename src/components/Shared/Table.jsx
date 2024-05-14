@@ -22,5 +22,15 @@ const Body = ({ children, className = " ", ...restProps }) => {
     </div>
 )};
 
+const Row =( {children,className=" ",...restProps} )=>{
+  
+  return (
+    <div {...restProps} className="border-[0.5px] border-[#DDDDDD]">
+        {children}
+    </div>
+  )}
+
+
 Table.Header = Header;
 Table.Body = Body;
+Table.Row=Row
