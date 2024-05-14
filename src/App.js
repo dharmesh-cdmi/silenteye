@@ -11,6 +11,7 @@ import NotificationSetting from "./Pages/NotificationSetting";
 import InstantAlert from "./Pages/InstantAlert.jsx";
 import AppPermission from "./Pages/AppPermission";
 import PermisionManager from "./Pages/PermisionManager";
+import Export from "./Pages/Export.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -95,6 +96,26 @@ function App() {
         {
           index: true,
           element: <PermisionManager />,
+        },
+      ],
+    },
+    {
+      path: "/PermisionManager",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <PermisionManager />,
+        },
+      ],
+    },
+    {
+      path: "/Export",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <Export/>,
         },
       ],
     },

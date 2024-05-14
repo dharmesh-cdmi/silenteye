@@ -222,6 +222,12 @@ const Sidebar = () => {
                  Permission Manager
               </NavLink>
             </li>
+            <li>
+              <NavLink to={"/Export"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                 Data Export
+              </NavLink>
+            </li>
           </ul>
         </div>
         <motion.div
