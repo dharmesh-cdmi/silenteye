@@ -1,6 +1,6 @@
 import {useState} from "react"
 import { Link } from 'react-router-dom';
-import { useMoveBack } from "../../components/KeyLogger/hooks/useMoveBack.js";
+import { useMoveBack } from "../../hooks/useMoveBack.js";
 import "./BrowserHead.css"
 
 import { IoFilterSharp } from "react-icons/io5";
