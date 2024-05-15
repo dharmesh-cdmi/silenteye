@@ -17,7 +17,7 @@ const Payment = () => {
   return (
     <div className="main ps-3 pe-3 pt-4">
       <Header heading="Saved Payment Methods" />
-      <div className="grid  grid-cols-3 my-8 gap-4">
+      <div className="grid  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1   my-8 gap-4">
         <img src={visa} alt="visa" />
         <img src={green} alt="green" />
         <img src={american} alt="green" />
