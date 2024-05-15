@@ -15,9 +15,9 @@ const Navbar = ({isTabletMid,open,setOpen}) => {
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="mega-menu-full"
           aria-expanded="false"
-          // onClick={() => {
-          //   setOpen(!open);
-          // }}
+          onClick={() => {
+            setOpen(!open);
+          }}
         >
           <span className="sr-only">Open main menu</span>
          {open ?<IoCloseSharp  className="text-black"/> :<RiMenu2Fill className="text-black" />} 

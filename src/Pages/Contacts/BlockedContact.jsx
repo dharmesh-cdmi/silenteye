@@ -81,7 +81,7 @@ const BlockedContact = () => {
           <p className="border-b text-gray-400  p-1">A</p>
 
             {callBlockeddata.map((info, i) => (
-              <ul key={i} className="flex p-2 ">
+              <ul key={i} className="flex p-2 liborder">
                 <li className="flex-none w-14 pt-2">
                   <img
                     className="w-10 h-10 rounded-full m-auto"
@@ -199,7 +199,7 @@ const BlockedContact = () => {
                         </div>
                     </div>
               </div>
-              <ul className="flex p-2  ">
+              <ul className="flex p-2  liborder">
              
               <li className="p-1 flex-1 w-64 font-semibold ">
                 <div>
@@ -228,7 +228,7 @@ const BlockedContact = () => {
                   </div>
               </li>
             </ul>
-            <ul className="flex p-2  ">
+            <ul className="flex p-2  liborder">
              
               <li className="p-1 flex-1 w-64 font-semibold ">
                 <div>
@@ -257,7 +257,7 @@ const BlockedContact = () => {
                   </div>
               </li>
             </ul>
-            <ul className="flex p-2  ">
+            <ul className="flex p-2 liborder ">
              
               <li className="p-1 flex-1 w-64 font-semibold ">
                 <div>
@@ -286,7 +286,7 @@ const BlockedContact = () => {
                   </div>
               </li>
             </ul>
-            <ul className="flex p-2  ">
+            <ul className="flex p-2  liborder">
              
               <li className="p-1 flex-1 w-64 font-semibold ">
                 <div>

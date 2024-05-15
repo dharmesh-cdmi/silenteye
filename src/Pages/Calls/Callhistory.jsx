@@ -98,7 +98,7 @@ const Callhistory = () => {
             {/* body */}
             <div className="overflow-y-scroll h-96 no-scrollbar">
               {callhistoryData.map((info, i) => (
-                <ul key={i} className="flex p-2 ">
+                <ul key={i} className="flex p-2 liborder">
                   <li className="flex-none w-14 pt-2">
                     <img
                       className="w-10 h-10 rounded-full m-auto"
@@ -133,15 +133,15 @@ const Callhistory = () => {
           <div className="border-r">
             {/* head */}
             <div className="text-lg font-bold p-0 md:p-2 ">
-              <ul className="flex p-2  ">
-                <li className="flex-none w-20 pt-2 border-none">
+              <ul className="flex p-2 ">
+                <li className="flex-none w-20 pt-2 border-none ">
                   <img
                     className="w-20 h-20 rounded-full m-auto"
                     src="https://xsgames.co/randomusers/avatar.php?g=male"
                     alt="img"
                   />
                 </li>
-                <li className="p-1 flex-1 w-64 font-semibold border-none">
+                <li className="p-1 flex-1 w-30 font-semibold border-none">
                   <div>
                     <p className="text-lg">Hewie Gamage</p>
                     <div className={`text-gray-400 flex font-normal`}>
@@ -158,17 +158,21 @@ const Callhistory = () => {
                     </div>
                   </div>
                 </li>
-                <li className="p-1 text-gray-400 font-semibold pt-4 border-none">
+                <li className="p-1 w-20 text-gray-400 font-semibold pt-4 border-none">
                   <div className="flex gap-4 mt-6 ">
                     <div className="hidden md:block">
                       <BsPersonAdd
                         className="text-slate-900 cursor-pointer"
                         size={25}
                       />
-                      <RiDeleteBin6Line
+                      
+                    </div>
+                    <div className="hidden md:block">
+                    <RiDeleteBin6Line
                         className="text-red-900 cursor-pointer"
                         size={25}
                       />
+                      
                     </div>
                   </div>
                 </li>
@@ -178,7 +182,7 @@ const Callhistory = () => {
             {/* body */}
             <div className="overflow-y-scroll h-96 no-scrollbar">
               <p className="border-b text-gray-400  p-2">All Calls</p>
-              <ul className="flex p-2  ">
+              <ul className="flex p-2 liborder ">
                 <li className="p-1 flex-1 w-64 font-semibold ">
                   <div>
                     <div className={`text-green-600 flex font-bold`}>
@@ -210,7 +214,7 @@ const Callhistory = () => {
                   </div>
                 </li>
               </ul>
-              <ul className="flex p-2  ">
+              <ul className="flex p-2 liborder ">
                 <li className="p-1 flex-1 w-64 font-semibold ">
                   <div>
                     <div className={`text-gray-600 flex font-bold`}>
@@ -242,7 +246,7 @@ const Callhistory = () => {
                   </div>
                 </li>
               </ul>
-              <ul className="flex p-2  ">
+              <ul className="flex p-2 liborder ">
                 <li className="p-1 flex-1 w-64 font-semibold ">
                   <div>
                     <div className={`text-red-600 flex font-bold`}>
@@ -274,7 +278,7 @@ const Callhistory = () => {
                   </div>
                 </li>
               </ul>
-              <ul className="flex p-2  ">
+              <ul className="flex p-2 liborder ">
                 <li className="p-1 flex-1 w-64 font-semibold ">
                   <div>
                     <div className={`text-green-600 flex font-bold`}>
@@ -309,7 +313,7 @@ const Callhistory = () => {
               <div className="flex p-2 justify-between">
                 <div aria-label="Page navigation example">
                   <div className="hidden md:block">
-                    <ul class="inline-flex -space-x-px text-base h-10 ">
+                    <ul class="inline-flex -space-x-px text-base h-10">
                       <li>
                         <a
                           href="#"
