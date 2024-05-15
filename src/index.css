@@ -12,9 +12,12 @@
     /* li{
       @apply border-b border-slate-300 
     } */
+    
   }
   
-  
+  .liborder{
+    @apply border-b border-slate-300 
+  }
   .link {
     @apply p-2.5 flex  gap-6 items-center md:cursor-pointer cursor-default duration-300 font-medium;
   }

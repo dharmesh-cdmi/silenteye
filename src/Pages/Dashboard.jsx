@@ -350,7 +350,7 @@ const Dashboard = () => {
       <div className="m-auto cursor-pointer">
         <div className="flex items-center justify-center">
         <img
-                  className="w-8 h-8 rounded-full m-auto"
+                  className="w-8 h-8  m-auto"
                   src={data.icon}
                   alt
                 />
@@ -362,12 +362,12 @@ const Dashboard = () => {
   ))}
 </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-0 mb-8 mx-4 mx:m-0 ">
         <InfoCard title="Device Info"  className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
-              <ul key={i} className="grid grid-cols-2">
-                <li className="p-1 px-2 font-medium">{info.name}</li>
+              <ul key={i} className="grid grid-cols-2 liborder">
+                <li className="p-1 px-2 font-medium ">{info.name}</li>
                 <li className="p-1 text-[#172A6E] font-semibold">
                   {info.details}
                 </li>
@@ -381,13 +381,13 @@ const Dashboard = () => {
           className="mb-5 md:mb-0"
         >
           <div className="rounded-lg py-1 bg-gray-50">
-            <img src={liveimg} alt="img" className="object-contain" />
+            <img src={liveimg} alt="img" className="object-cover h-32 w-96" />
           </div>
         </InfoCard>
         <InfoCard title="Account Info "  className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
-              <ul key={i} className="grid grid-cols-2">
+              <ul key={i} className="grid grid-cols-2 liborder">
                 <li className="p-1 px-2 font-medium">{info.name}</li>
                 <li className="p-1 text-[#172A6E] font-semibold">
                   {info.details}
@@ -405,7 +405,7 @@ const Dashboard = () => {
           className="mb-5 md:mb-0"
         >
           {RecentCall.map((info, i) => (
-            <ul key={i} className="flex p-2 ">
+            <ul key={i} className="flex p-2 liborder">
               <li className="flex-none w-14 pt-2">
                 <img
                   className="w-10 h-10 rounded-full m-auto"
@@ -440,7 +440,7 @@ const Dashboard = () => {
           className="mb-5 md:mb-0"
         >
           {RecentMessages.map((info, i) => (
-            <ul key={i} className="flex p-2 ">
+            <ul key={i} className="flex p-2 liborder">
               <li className="flex-none w-14 pt-2">
                 <img
                   className="w-10 h-10 rounded-full m-auto"
@@ -527,7 +527,7 @@ const Dashboard = () => {
           </div>
         </InfoCard>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
       <InfoCard
           title="Recent Alert & Notifications"
           titleRight={<p className="text-blue-400">See All</p>}
