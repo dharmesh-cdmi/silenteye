@@ -12,6 +12,10 @@ import { IoIosArrowBack, IoMdAdd } from "react-icons/io";
 import { SlSettings } from "react-icons/sl";
 import { AiOutlineAppstore } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
+import { PiDevicesLight } from "react-icons/pi";
+import { MdOutlineCall } from "react-icons/md";
+import { IoMdContacts } from "react-icons/io";
+
 import { HiOutlineDatabase } from "react-icons/hi";
 import { TbReportAnalytics } from "react-icons/tb";
 import { RiBuilding3Line } from "react-icons/ri";
@@ -72,12 +76,12 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
   const subMenusList = [
     {
       name: "Calls",
-      icon: RiBuilding3Line,
+      icon: MdOutlineCall ,
       menus: ["callhistory", "livecall", "blockedcalls", "forwardedcalls","facetime","livefacetime"],
     },
     {
       name: "Contacts",
-      icon: TbReportAnalytics,
+      icon: IoMdContacts ,
       menus: ["contactslist", "blockedcontacts",],
     },
     {
@@ -140,8 +144,8 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
             </li>
             <li>
               <NavLink to={"/devicecontrol"} className="link">
-                <BsPerson size={23} className="min-w-max" />
-                Device Control
+                <PiDevicesLight size={23} className="min-w-max" />
+                Device Control 
               </NavLink>
             </li>
 
@@ -160,12 +164,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
                 Messages
               </NavLink>
             </li>
-            <li>
-              <NavLink to={"/settings"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                Settings
-              </NavLink>
-            </li>
+           
             {/* NOTES */}
             <li>
               <NavLink to={"/notes"} className="link">
