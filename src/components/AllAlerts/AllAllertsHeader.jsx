@@ -5,6 +5,8 @@ import Button from "../Shared/Button";
 import exportIcon from "../../assests/images/Header/Export.png";
 import settingIcon from "../../assests/images/AllAlerts/settings.png";
 import Search from "../Shared/Search";
+import Modal from "../Shared/Modal";
+import Upgrade from "../Shared/Upgrade";
 
 const AllAllertsHeader = () => {
   const moveBacks = useMoveBack();
@@ -31,32 +33,52 @@ const AllAllertsHeader = () => {
           <img src={moveBack} alt="move-Back" />
         </div>
         <span className="text-[20px]  text-[#000000] ps-3 font-[600]">
-        Alert & Notifications
+          Alert & Notifications
         </span>
       </div>
       <div className="item-two flex lg:flex-row flex-col  lg:mt-0 mt-5">
         <div className="me-3">
-          <Search onClick={handleSearch} placeholder="Search" />
+          <Modal>
+            <Modal.Toggle toggleName="search-allAlert">
+              <Search onClick={handleSearch} placeholder="Search" />
+            </Modal.Toggle>
+            <Modal.Window windowName="search-allAlert">
+              <Upgrade />
+            </Modal.Window>
+          </Modal>
         </div>
         <div className="flex flex-row  flex-wrap   sm:flex-nowrap  mt-3 lg:mt-0 items-center ">
           <div className="me-3">
-            <Button
-              onClick={exportAllAlerts}
-              className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
-            >
-              <img src={exportIcon} alt="export" className="pe-2" />
-              Export
-            </Button>
+            <Modal>
+              <Modal.Toggle toggleName="export-allAlert">
+                <Button
+                  onClick={exportAllAlerts}
+                  className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
+                >
+                  <img src={exportIcon} alt="export" className="pe-2" />
+                  Export
+                </Button>
+              </Modal.Toggle>
+              <Modal.Window windowName="export-allAlert">
+                <Upgrade />
+              </Modal.Window>
+            </Modal>
           </div>
-
           <div className="me-3 sm:mt-0">
-            <Button
-              onClick={settingsAllAlerts}
-              className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
-            >
-              <img src={settingIcon} alt="setting" className="pe-2" />
-              Setting
-            </Button>
+            <Modal>
+              <Modal.Toggle toggleName="export-allAlert">
+                <Button
+                  onClick={settingsAllAlerts}
+                  className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
+                >
+                  <img src={settingIcon} alt="setting" className="pe-2" />
+                  Setting
+                </Button>
+              </Modal.Toggle>
+              <Modal.Window windowName="export-allAlert">
+                <Upgrade />
+              </Modal.Window>
+            </Modal>
           </div>
         </div>
       </div>

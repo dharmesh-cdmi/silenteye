@@ -10,6 +10,8 @@ import snapchat from "../../src/assests/images/KeyLogger/snapchat.png";
 import KeyLoggerHeader from "../components/KeyLogger/KeyLoggerHeader";
 import Button from "../components/Shared/Button";
 import More from "../assests/images/more.png";
+import Modal from "../components/Shared/Modal";
+import Upgrade from "../components/Shared/Upgrade"
 
 const keyloggerData = [
   [
@@ -89,14 +91,12 @@ const keyloggerData = [
 ];
 
 function KeyLogger() {
-
   const viewMore = () => {
     //View More Logic Here
-
   };
   return (
     <div className="main ps-3 pe-3 pt-4">
-      <KeyLoggerHeader    />
+      <KeyLoggerHeader />
       {keyloggerData.map((keyloggerData, index) => (
         <div key={index} className="my-10">
           <Table className="border-[#DDDDDD] border-[1px] rounded-lg">
@@ -112,13 +112,20 @@ function KeyLogger() {
         </div>
       ))}
       <div className="flex justify-center mb-12">
-        <Button
-          onClick={viewMore}
-          className="text-[18px]   drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
-        >
-          View More
-          <img src={More} alt="more" className="ps-2" />
-        </Button>
+        <Modal>
+          <Modal.Toggle toggleName="viewMore-keylogger">
+            <Button
+              onClick={viewMore}
+              className="text-[18px]   drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
+            >
+              View More
+              <img src={More} alt="more" className="ps-2" />
+            </Button>
+          </Modal.Toggle>
+          <Modal.Window windowName="viewMore-keylogger">
+            <Upgrade />
+          </Modal.Window>
+        </Modal>
       </div>
     </div>
   );

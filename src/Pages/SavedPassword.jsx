@@ -12,6 +12,8 @@ import SavedPasswords from "../components/SavedPasswords/SavedPasswords";
 import Header from "../components/Shared/Header";
 import Button from "../components/Shared/Button";
 import More from "../assests/images/more.png";
+import Modal from "../components/Shared/Modal";
+import Upgrade from "../components/Shared/Upgrade"
 
 const SavedPasswordsData = [
   [
@@ -102,14 +104,21 @@ export const SavedPassword = () => {
           </Table>
         </div>
       ))}
-      <div className="flex justify-center mb-12">
-        <Button
-          onClick={viewMore}
-          className="text-[18px]   drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
-        >
-          View More
-          <img src={More} alt="more" className="ps-2" />
-        </Button>
+        <div className="flex justify-center mb-12">
+        <Modal>
+          <Modal.Toggle toggleName="viewMore-keylogger">
+            <Button
+              onClick={viewMore}
+              className="text-[18px]   drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
+            >
+              View More
+              <img src={More} alt="more" className="ps-2" />
+            </Button>
+          </Modal.Toggle>
+          <Modal.Window windowName="viewMore-keylogger">
+            <Upgrade />
+          </Modal.Window>
+        </Modal>
       </div>
     </div>
   );

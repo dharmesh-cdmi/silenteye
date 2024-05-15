@@ -1,15 +1,17 @@
-import React from 'react'
-import AllAllertsHeader from '../components/AllAlerts/AllAllertsHeader'
-import { Table } from '../components/Shared/Table';
-import Button from '../components/Shared/Button';
+import React from "react";
+import AllAllertsHeader from "../components/AllAlerts/AllAllertsHeader";
+import { Table } from "../components/Shared/Table";
+import Button from "../components/Shared/Button";
 import More from "../assests/images/more.png";
-import AllAlerts from "../components/AllAlerts/AllAllerts"
-import whatsapp from "../../src/assests/images/AllAlerts/whatsapp.png"
-import location from "../../src/assests/images/AllAlerts/Location.png"
-import youtube from "../../src/assests/images/AllAlerts/youtube.png"
-import messenger from "../../src/assests/images/AllAlerts/messenger.png"
-import snapchat from "../../src/assests/images/AllAlerts/snapchat.png"
-import instagram from "../../src/assests/images/AllAlerts/instagram.png"
+import AllAlerts from "../components/AllAlerts/AllAllerts";
+import whatsapp from "../../src/assests/images/AllAlerts/whatsapp.png";
+import location from "../../src/assests/images/AllAlerts/Location.png";
+import youtube from "../../src/assests/images/AllAlerts/youtube.png";
+import messenger from "../../src/assests/images/AllAlerts/messenger.png";
+import snapchat from "../../src/assests/images/AllAlerts/snapchat.png";
+import instagram from "../../src/assests/images/AllAlerts/instagram.png";
+import Modal from "../components/Shared/Modal";
+import Upgrade from "../components/Shared/Upgrade";
 
 const AllAllertsData = [
   [
@@ -36,19 +38,18 @@ const AllAllertsData = [
     },
     {
       id: "4",
-      img:messenger,
+      img: messenger,
       heading: "Yoknin Yossee",
       subheading: "Hey ! How are you?",
       time: "08:43 AM",
     },
     {
       id: "5",
-      img:whatsapp,
+      img: whatsapp,
       heading: "Moon & Urus",
       subheading: "New Office Table Available Now !",
       time: "08:43 AM",
     },
-  
   ],
   [
     {
@@ -60,26 +61,22 @@ const AllAllertsData = [
     },
     {
       id: "2",
-      img: instagram ,
+      img: instagram,
       heading: "Akin Kins",
       subheading: "New Snap ! Check it Out",
       time: "11:32 PM",
     },
-    
   ],
 ];
 const AllAllert = () => {
-
   const viewMore = () => {
     //View More Logic Here
-
   };
 
-
   return (
-    <div className="main ps-3 pe-3 pt-4" >
-        <AllAllertsHeader/>
-        {AllAllertsData.map((AllAllertsData, index) => (
+    <div className="main ps-3 pe-3 pt-4">
+      <AllAllertsHeader />
+      {AllAllertsData.map((AllAllertsData, index) => (
         <div key={index} className="my-10">
           <Table className="border-[#DDDDDD] border-[1px] rounded-lg">
             <Table.Header className="font-[16px] opacity-[50%]">
@@ -88,24 +85,29 @@ const AllAllert = () => {
             <Table.Body>
               {AllAllertsData.map((AllAlert) => (
                 <AllAlerts key={AllAlert.id} AllAlert={AllAlert} />
-                
               ))}
             </Table.Body>
           </Table>
         </div>
       ))}
       <div className="flex justify-center mb-12">
-        <Button
-          onClick={viewMore}
-          className="text-[18px]   drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
-        >
-          View More
-          <img src={More} alt="more" className="ps-2" />
-        </Button>
+        <Modal>
+          <Modal.Toggle toggleName="viewMore-allAllert">
+            <Button
+              onClick={viewMore}
+              className="text-[18px]   drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
+            >
+              View More
+              <img src={More} alt="more" className="ps-2" />
+            </Button>
+          </Modal.Toggle>
+          <Modal.Window windowName="viewMore-allAllert">
+            <Upgrade />
+          </Modal.Window>
+        </Modal>
       </div>
-    
     </div>
-  )
-}
+  );
+};
 
-export default AllAllert
+export default AllAllert;

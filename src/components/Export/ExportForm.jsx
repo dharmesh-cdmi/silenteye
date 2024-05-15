@@ -3,7 +3,9 @@ import { useForm } from "react-hook-form";
 import Select from "../../../src/components/Shared/Select";
 import Check from "../Shared/Check";
 import Button from "../Shared/Button";
-import exporticon from "../../../src/assests/images/Export/export.png"
+import exporticon from "../../../src/assests/images/Export/export.png";
+import Modal from "../../../src/components/Shared/Modal";
+import Upgrade from "../../../src/components/Shared/Upgrade";
 
 const ModuleOptions = [{ label: "Call Logs", value: "CallLogs" }];
 
@@ -64,10 +66,20 @@ const ExportForm = () => {
           2.Only 1000 records can be exported at a time.
         </span>
       </div>
-      <Button type="submit" className="bg-[#172A6E] w-full mt-5 p-[16px] text-[#ffffff] text-[20px] rounded-[8px] ">
-        <img src={exporticon} alt="exporticon" className="pe-3" />
-        Export Data
-      </Button>
+      <Modal>
+        <Modal.Toggle toggleName="exportData">
+          <Button
+            type="submit"
+            className="bg-[#172A6E] w-full mt-5 p-[16px] text-[#ffffff] text-[20px] rounded-[8px] "
+          >
+            <img src={exporticon} alt="exporticon" className="pe-3" />
+            Export Data
+          </Button>
+        </Modal.Toggle>
+        <Modal.Window windowName="exportData">
+          <Upgrade />
+        </Modal.Window>
+      </Modal>
     </form>
   );
 };

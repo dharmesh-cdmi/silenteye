@@ -6,26 +6,24 @@ import deleteIcon from "../../assests/images/Header/delete.png";
 import exportIcon from "../../assests/images/Header/Export.png";
 import filterIcon from "../../assests/images/Header/Filter.png";
 import Search from "../Shared/Search";
+import Modal from "../Shared/Modal";
+import Upgrade from "../Shared/Upgrade";
 
-const Header = ({heading}) => {
+const Header = ({ heading }) => {
   const moveBacks = useMoveBack();
   const deleteKeyLogger = () => {
     //Logic for delete the keylogger here
-
   };
   const exportKeyLogger = () => {
     //Logic for export the keylogger here
-
   };
 
   const filterKeyLooger = () => {
     //Logic for filter the keyLogger here
-
   };
 
   const handleSearch = () => {
     //Export Logic here
-
   };
 
   return (
@@ -43,28 +41,49 @@ const Header = ({heading}) => {
       </div>
       <div className="item-two flex lg:flex-row flex-col  lg:mt-0 mt-5">
         <div className="me-3">
-          <Search  onClick={handleSearch}   placeholder="Search"/>
+        <Modal>
+            <Modal.Toggle toggleName={`search-${heading}`}>
+              <Search onClick={handleSearch} placeholder="Search"  />
+            </Modal.Toggle>
+            <Modal.Window windowName={`search-${heading}`}>
+              <Upgrade />
+            </Modal.Window>
+          </Modal>
         </div>
-     <div className="flex flex-row  flex-wrap   sm:flex-nowrap  mt-3 lg:mt-0 items-center ">
-        <div className="me-3">
-          <Button
-            onClick={exportKeyLogger}
-            className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
-          >
-            <img src={exportIcon} alt="export" className="pe-2" />
-            Export
-          </Button>
-        </div>
+        <div className="flex flex-row  flex-wrap   sm:flex-nowrap  mt-3 lg:mt-0 items-center ">
+          <div className="me-3">
+            <Modal>
+              <Modal.Toggle toggleName={`export-${heading}`}>
+                <Button
+                  onClick={exportKeyLogger}
+                  className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
+                >
+                  <img src={exportIcon} alt="export" className="pe-2" />
+                  Export
+                </Button>
+              </Modal.Toggle>
+              <Modal.Window windowName={`export-${heading}`}>
+                <Upgrade />
+              </Modal.Window>
+            </Modal>
+          </div>
 
-        <div className="me-3 sm:mt-0">
-          <Button
-            onClick={filterKeyLooger}
-            className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
-          >
-            <img src={filterIcon} alt="delete" className="pe-2" />
-            Filter
-          </Button>
-        </div>
+          <div className="me-3 sm:mt-0">
+            <Modal>
+              <Modal.Toggle toggleName={`filter-${heading}`}>
+                <Button
+                  onClick={filterKeyLooger}
+                  className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
+                >
+                  <img src={filterIcon} alt="filter" className="pe-2" />
+                  Filter
+                </Button>
+              </Modal.Toggle>
+              <Modal.Window windowName={`filter-${heading}`}>
+                <Upgrade />
+              </Modal.Window>
+            </Modal>
+          </div>
         </div>
       </div>
     </div>

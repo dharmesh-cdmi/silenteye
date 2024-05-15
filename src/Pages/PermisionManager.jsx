@@ -12,6 +12,8 @@ import { Table } from "../components/Shared/Table";
 import More from "../assests/images/more.png";
 import Button from "../components/Shared/Button";
 import PermissionManagers from "../components/PermissionManager/PermissionManagers";
+import Modal from "../components/Shared/Modal";
+import Upgrade from "../components/Shared/Upgrade"
 
 const PermisionManagerData = [
   {
@@ -88,13 +90,20 @@ const PermisionManager = () => {
         </Table>
       </div>
       <div className="flex justify-center mb-12">
-        <Button
-          onClick={viewMore}
-          className="text-[18px]  drop-shadow-3xl font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
-        >
-          View More
-          <img src={More} alt="more" className="ps-2" />
-        </Button>
+      <Modal>
+          <Modal.Toggle toggleName="viewMore-PermisionManager">
+            <Button
+              onClick={viewMore}
+              className="text-[18px] drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
+            >
+              View More
+              <img src={More} alt="more" className="ps-2" />
+            </Button>
+          </Modal.Toggle>
+          <Modal.Window windowName="viewMore-PermisionManager">
+            <Upgrade />
+          </Modal.Window>
+        </Modal>
       </div>
     </div>
   );
