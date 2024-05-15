@@ -2,16 +2,21 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../components/sidebar";
 import Navbar from "../components/Navbar";
 import Alert from "../components/Alert";
+import { useMediaQuery } from "react-responsive";
+import { useState } from "react";
 function RootLayout() {
+  let isTabletMid = useMediaQuery({ query: "(max-width: 768px)" });
+  const [open, setOpen] = useState(isTabletMid ? false : true);
   return (
     <div className="flex gap-0">
-      <Sidebar />   
+      <Sidebar open={open} setOpen={setOpen} isTabletMid={isTabletMid}/>   
       
       
-      <main className="fullfill  bg-white">
-      <Navbar/>  
+      
+      <main className={`fullfill bg-white   ${open ? 'ml-[248px]' : 'sm:ml-0 md:ml-[57px]'} overflow-y-auto h-screen` }>
+      <Navbar open={open} setOpen={setOpen} isTabletMid={isTabletMid}/>  
       <Alert/>
-      <div className="max-w-5xl flex-1 mx-auto py-4 mt-28">
+      <div className="max-w-5xl flex-1 md:mx-auto py-0 md:py-4 mt-24 md:mt-32 mx-2 ">
       <Outlet />
       </div>
         
