@@ -87,13 +87,18 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
     {
       name: "Apps",
       icon: TbReportAnalytics,
-      menus: ["installedapp", "uninstalledapp", "blockedapp"],
+      menus: ["allapps", "installedapp", "uninstalledapp", "blockedapp"],
     },
     {
       name: "Location",
       icon: IoLocationOutline,
       menus: ["livelocation", "locationhistory", "geofrence"],
     },
+     {
+       name: "Browser",
+       icon: GoBrowser,
+       menus: ["browseHistory", "datausage", "webfilter", "screentime"],
+     },
   ];
 
   return (

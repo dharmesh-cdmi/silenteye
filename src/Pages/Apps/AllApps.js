@@ -1,7 +1,7 @@
 import {useState} from "react"
 import { Link } from 'react-router-dom';
 import "./AllApps.css"
-import { useMoveBack } from "../../components/KeyLogger/hooks/useMoveBack.js";
+import { useMoveBack } from "../..//hooks/useMoveBack.js";
 
 import { IoFilterSharp } from "react-icons/io5";
 import { FaArrowLeftLong } from "react-icons/fa6";

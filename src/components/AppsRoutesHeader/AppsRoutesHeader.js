@@ -3,13 +3,13 @@ import {Link} from "react-router-dom"
 
 const appsRoutesHeader=()=>{
   return(
-  <div className="appsRoutesHeader flex justify-center">
+  <div className="appsRoutesHeader flex">
   
- <Link to={"/apps"}>
-  <div className="appsRoutesCons fi-appBox">
+ <Link to={"/apps/allapps"}>
+  <div className="appsRoutesCons">
     <>
       <div className="appsRoutesCon flex flex-col justify-center">
-        <h3>All Apps</h3>
+        <h3>All App</h3>
         <p>134 Apps</p>
       </div>
     </>
