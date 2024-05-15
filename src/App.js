@@ -1,13 +1,18 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
-
-import Notes from "./Pages/Notes/Notes.js"
-import "./assests/css/App.css"
+import Notes from "./Pages/Notes/Notes.js";
+import "./assests/css/App.css";
 import Dashboard from "./Pages/Dashboard";
 import KeyLogger from "./Pages/KeyLogger";
 import { SavedPassword } from "./Pages/SavedPassword";
-import DeviceControl from "./Pages/DeviceControl.jsx";
-import Callhistory from "./Pages/Calls/Callhistory.jsx";
+import SocialApps from "./Pages/SocialApps";
+import AllAllert from "./Pages/AllAllert";
+import NotificationSetting from "./Pages/NotificationSetting";
+import InstantAlert from "./Pages/InstantAlert.jsx";
+import AppPermission from "./Pages/AppPermission";
+import PermisionManager from "./Pages/PermisionManager";
+import Export from "./Pages/Export.jsx";
+import Payment from "./Pages/Payment.jsx";import Callhistory from "./Pages/Calls/Callhistory.jsx";
 import BlockedCalls from "./Pages/Calls/BlockedCalls.jsx";
 import FaceTime from "./Pages/Calls/FaceTime.jsx";
 import ForwardCalls from "./Pages/Calls/ForwardCalls.jsx";
@@ -18,11 +23,67 @@ import BlockedContact from "./Pages/Contacts/BlockedContact.jsx";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/SavedPassword",
       element: <RootLayout />,
       children: [
         {
           index: true,
+          element: <SavedPassword />,
+        },
+      ],
+    },
+
+    {
+      path: "/KeyLogger",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <KeyLogger />,
+        },
+      ],
+    },
+
+    {
+      path: "/SocialApps",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <SocialApps />,
+        },
+      ],
+    },
+    {
+      path: "/AllAllerts",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <AllAllert />,
+        },
+      ],
+    },
+
+    {
+      path: "/NotificationSettings",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <NotificationSetting />,
+        },
+      ],
+    },
+    {
+      path: "/InstantAlerts",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <InstantAlert />,
+        },
+      ],
           element: <Dashboard />,
           },  
           {
@@ -60,37 +121,61 @@ function App() {
 
     },
     {
-      path: "/SavedPassword",
+      path: "/AppPermisions",
       element: <RootLayout />,
       children: [
         {
           index: true,
-          element: <SavedPassword/>,
-          },    
+          element: <AppPermission />,
+        },
       ],
     },
 
-
-
-
-
-
-
     {
-      path: "/KeyLogger",
+      path: "/PermisionManager",
       element: <RootLayout />,
       children: [
         {
           index: true,
-          element: <KeyLogger/>,
-          },    
+          element: <PermisionManager />,
+        },
       ],
-    }
+    },
+    {
+      path: "/PermisionManager",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <PermisionManager />,
+        },
+      ],
+    },
+    {
+      path: "/Export",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <Export/>,
+        },
+      ],
+    },
+    {
+      path: "/Payment",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <Payment/>,
+        },
+      ],
+    },
   ]);
   return (
     <>
-    <RouterProvider router={router} /> 
-  </>
+      <RouterProvider router={router} />
+    </>
   );
 }
 

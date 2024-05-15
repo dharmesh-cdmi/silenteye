@@ -20,6 +20,13 @@
      background-color:#FFFFFF;
      ;
   }
+  :focus-visible {
+    outline: none !important;
+}
+
+.custom-shadow {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14);
+}
 
 /* toggle button */
 
