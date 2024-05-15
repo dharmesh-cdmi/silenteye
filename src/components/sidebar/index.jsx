@@ -94,11 +94,6 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
       icon: IoLocationOutline,
       menus: ["livelocation", "locationhistory", "geofrence"],
     },
-     {
-       name: "Browser",
-       icon: GoBrowser,
-       menus: ["browseHistory", "datausage", "webfilter", "screentime"],
-     },
   ];
 
   return (

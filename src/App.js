@@ -26,11 +26,6 @@ import BlockedApp from "./Pages/Apps/BlockedApp.js";
 import Location from "./Pages/Location/Location.js"
 import GeoFence from "./Pages/Location/geoFence.js"
 import LocationHistory from "./Pages/Location/LocationHistory.js"
-import AllApps from "./Pages/Apps/AllApps.js"
-import BrowseHistory from "./Pages/Browser/BrowserHistory.js"
-import BrowseDataUsage from "./Pages/Browser/BrowseDataUsage.js"
-import WebFilter from "./Pages/Browser/WebFilter.js"
-import ScreenTime from "./Pages/Browser/ScreenTime.js"
 
 
 function App() {
@@ -116,10 +111,6 @@ function App() {
           path: "/Payment",
           element: <Payment />,
         },
-          {
-            path: "/apps/allapps",
-            element: <AllApps />,
-          },
         {
           path: "/apps/installedapp",
           element: <InstalledApp />,
@@ -131,31 +122,7 @@ function App() {
         {
           path: "/apps/blockedapp",
           element: <BlockedApp />,
-        },
-        {
-      path: "/location",
-      element: <Location  />,
-        },
-        {
-          path: "/location/livelocation",
-          element: <Location />,
-
-        },
-        {
-      path: "/location/locationhistory",
-      element: <LocationHistory />,
-          
-        },
-        {
-      path: "/location/geofrence",
-      element: <GeoFence />,
-          
-        },
-        {
-              path: "/notes",
-              element: <Notes />,
-            },
-      
+        },  
       
       ],
     },
