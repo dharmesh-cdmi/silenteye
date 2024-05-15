@@ -1,4 +1,5 @@
 import React from "react";
+import {Table} from "../Shared/Table"
 
 const KeyLoggers = ({ keyLogger }) => {
   const { 
@@ -8,7 +9,8 @@ const KeyLoggers = ({ keyLogger }) => {
     subheading, 
     time } = keyLogger;
   return (
-    <div className="flex flex-row justify-between p-[16px] border-[0.5px] border-[#DDDDDD]">
+    <Table.Row>
+    <div className="flex flex-row justify-between p-[16px] ">
       <div className="flex flex-col">
         <div className="flex flex-row">
           <img src={img} alt="google" className=" h-auto max-w-[100%]" />
@@ -24,6 +26,7 @@ const KeyLoggers = ({ keyLogger }) => {
         {time}
       </span>
     </div>
+    </Table.Row>
   );
 };
 

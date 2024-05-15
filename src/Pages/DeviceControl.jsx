@@ -25,7 +25,6 @@ const DeviceControl = () => {
   return (
     <div>
       <DeviceControlHead />
-
       <div className="border rounded-xl my-8">
         <div className="flex p-4 border-b">
           <div>

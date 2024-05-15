@@ -1,62 +1,31 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
-
-import Notes from "./Pages/Notes/Notes.js"
-import "./assests/css/App.css"
+import Notes from "./Pages/Notes/Notes.js";
+import "./assests/css/App.css";
 import Dashboard from "./Pages/Dashboard";
 import KeyLogger from "./Pages/KeyLogger";
 import { SavedPassword } from "./Pages/SavedPassword";
-import DeviceControl from "./Pages/DeviceControl.jsx";
-
-import AllApps from "./Pages/Apps/AllApps.js"
-import TotalApp from "./Pages/Apps/TotalApps.js"
-import InstalledApp from "./Pages/Apps/InstalledApp.js"
-import UnInstalledApp from "./Pages/Apps/UnstalledApp.js"
-import BlockedApp from "./Pages/Apps/BlockedApp.js"
-import "./assests/css/App.css"
-
-import Location from "./Pages/Location/Location.js"
-import LocationHistory from "./Pages/Location/LocationHistory.js"
-import GeoFence from "./Pages/Location/geoFence.js"
-
-import Export from "./Pages/Export/Export.js"
-
+import SocialApps from "./Pages/SocialApps";
+import AllAllert from "./Pages/AllAllert";
+import NotificationSetting from "./Pages/NotificationSetting";
+import InstantAlert from "./Pages/InstantAlert.jsx";
+import AppPermission from "./Pages/AppPermission";
+import PermisionManager from "./Pages/PermisionManager";
+import Export from "./Pages/Export.jsx";
+import Payment from "./Pages/Payment.jsx";
 
 function App() {
   const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <RootLayout />,
-      children: [
-        {
-          index: true,
-          element: <Dashboard />,
-          },  
-          {
-            path: "/devicecontrol",
-            element: <DeviceControl />,
-            },  
-               
-               
-      ],
-
-    },
     {
       path: "/SavedPassword",
       element: <RootLayout />,
       children: [
         {
           index: true,
-          element: <SavedPassword/>,
-          },    
+          element: <SavedPassword />,
+        },
       ],
     },
-
-
-
-
-
-
 
     {
       path: "/KeyLogger",
@@ -64,115 +33,108 @@ function App() {
       children: [
         {
           index: true,
-          element: <KeyLogger/>,
-          },    
+          element: <KeyLogger />,
+        },
       ],
     },
-        {
-      path: "/notes",
+
+    {
+      path: "/SocialApps",
       element: <RootLayout />,
       children: [
         {
           index: true,
-          element: <Notes/>,
-        },    
+          element: <SocialApps />,
+        },
       ],
     },
     {
-      path: "/apps",
+      path: "/AllAllerts",
       element: <RootLayout />,
       children: [
         {
           index: true,
-          element: <AllApps/>,
-        },    
+          element: <AllAllert />,
+        },
       ],
     },
+
     {
-      path: "/apps/installedapp",
+      path: "/NotificationSettings",
       element: <RootLayout />,
       children: [
         {
           index: true,
-          element: <InstalledApp/>,
-        },    
+          element: <NotificationSetting />,
+        },
       ],
     },
     {
-      path: "/apps/uninstalledapp",
+      path: "/InstantAlerts",
       element: <RootLayout />,
       children: [
         {
           index: true,
-          element: <UnInstalledApp/>,
-        },    
+          element: <InstantAlert />,
+        },
       ],
     },
     {
-      path: "/apps/blockedapp",
+      path: "/AppPermisions",
       element: <RootLayout />,
       children: [
         {
           index: true,
-          element: <BlockedApp/>,
-        },    
+          element: <AppPermission />,
+        },
       ],
     },
+
     {
-      path: "/location",
+      path: "/PermisionManager",
       element: <RootLayout />,
       children: [
         {
           index: true,
-          element: <Location/>,
-        },    
+          element: <PermisionManager />,
+        },
       ],
     },
     {
-      path: "/location/livelocation",
+      path: "/PermisionManager",
       element: <RootLayout />,
       children: [
         {
           index: true,
-          element: <Location/>,
-        },    
+          element: <PermisionManager />,
+        },
       ],
     },
     {
-      path: "/location/locationhistory",
-      element: <RootLayout />,
-      children: [
-        {
-          index: true,
-          element: <LocationHistory/>,
-        },    
-      ],
-    },
-    {
-      path: "/location/geofrence",
-      element: <RootLayout />,
-      children: [
-        {
-          index: true,
-          element: <GeoFence/>,
-        },    
-      ],
-    },
-    {
-      path: "/export",
+      path: "/Export",
       element: <RootLayout />,
       children: [
         {
           index: true,
           element: <Export/>,
-        },    
+        },
+      ],
+    },
+    {
+      path: "/Payment",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <Payment/>,
+        },
       ],
     },
   ]);
   return (
     <>
-    <RouterProvider router={router} /> 
-  </>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
