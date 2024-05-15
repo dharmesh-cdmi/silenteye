@@ -1,6 +1,7 @@
 import { cloneElement, createContext, useContext, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { X } from '@phosphor-icons/react';
+// import { X } from '@phosphor-icons/react';
+import { IoMdClose } from 'react-icons/io';
 
 const ModalContext = createContext();
 
@@ -40,7 +41,7 @@ function Window({ children, windowName }) {
           onClick={onCloseModal}
           className="absolute right-4 top-2 rounded-[8px]  border-[#D0D5DD] border-[1px]   p-[5px]   text-[#000000] transition-all hover:bg-gray-100"
         >
-          <X size={20} />
+          <IoMdClose  size={20} />
         </button>
 
         <div>{cloneElement(children, { onCloseModal })}</div>

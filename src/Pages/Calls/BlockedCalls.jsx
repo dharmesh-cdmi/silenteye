@@ -77,7 +77,7 @@ const BlockedCalls = () => {
             {/* body */}
             <div className="overflow-y-scroll h-96 no-scrollbar">
               {callBlockeddata.map((info, i) => (
-                <ul key={i} className="flex p-2 ">
+                <ul key={i} className="flex p-2 liborder">
                   <li className="flex-none w-14 pt-2">
                     <img
                       className="w-10 h-10 rounded-full m-auto"
@@ -160,7 +160,7 @@ const BlockedCalls = () => {
             {/* body */}
             <div className="overflow-y-scroll h-96 no-scrollbar">
                 <p className="border-b text-gray-400  p-2">All Blocked Calls History</p>
-                <ul className="flex p-2  ">
+                <ul className="flex p-2 liborder ">
                
                 <li className="p-1 flex-1 w-64 font-semibold ">
                   <div>
@@ -191,7 +191,7 @@ const BlockedCalls = () => {
                     </div>
                 </li>
               </ul>
-              <ul className="flex p-2  ">
+              <ul className="flex p-2  liborder">
                
                <li className="p-1 flex-1 w-64 font-semibold ">
                  <div>
@@ -222,7 +222,7 @@ const BlockedCalls = () => {
                    </div>
                </li>
              </ul>
-             <ul className="flex p-2  ">
+             <ul className="flex p-2  liborder">
                
                <li className="p-1 flex-1 w-64 font-semibold ">
                  <div>
@@ -253,7 +253,7 @@ const BlockedCalls = () => {
                    </div>
                </li>
              </ul>
-             <ul className="flex p-2  ">
+             <ul className="flex p-2 liborder ">
                
                <li className="p-1 flex-1 w-64 font-semibold ">
                  <div>

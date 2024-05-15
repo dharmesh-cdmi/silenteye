@@ -212,7 +212,9 @@ const ForwardCalls = () => {
           aria-label="Table navigation"
         >
           <div aria-label="Page navigation example ">
-            <ul class="inline-flex -space-x-px text-base h-10 hidden md:block">
+            <div className="hidden md:block">
+
+            <ul class="inline-flex -space-x-px text-base h-10 ">
               <li className="border-none">
                 <a
                   href="#"
@@ -256,6 +258,7 @@ const ForwardCalls = () => {
                 </a>
               </li>
             </ul>
+            </div>
           </div>
           <button
             type="button"

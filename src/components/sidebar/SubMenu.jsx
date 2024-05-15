@@ -9,7 +9,7 @@ const SubMenu = ({ data }) => {
   return (
     <>
       <li
-        className={`link ${pathname.includes(data.name) && "text-blue-600"}`}
+        className={`link liborder ${pathname.includes(data.name) && "text-[#172A6E]"}`}
         onClick={() => setSubMenuOpen(!subMenuOpen)}
       >
         <data.icon size={23} className="min-w-max" />
@@ -33,7 +33,7 @@ const SubMenu = ({ data }) => {
      {subMenuOpen ?    (
       <>
       {data.menus?.map((menu) => (
-          <li key={menu}>
+          <li key={menu} className="liborder">
             {/* className="hover:text-blue-600 hover:font-medium" */}
             <NavLink
               to={`/${data.name}/${menu}`}
