@@ -100,7 +100,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
     <div className="h-screen fixed left-0  ">
       <div
         onClick={() => setOpen(false)}
-        className={`md:hidden fixed inset-0 max-h-screen z-[998] bg-black/50 ${
+        className={`md:hidden fixed inset-0 max-h-screen  bg-black/50 ${
           open ? "block" : "hidden"
         } `}
       ></div>
@@ -232,6 +232,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
                   Saved Payment Methods
               </NavLink>
             </li>
+
           </ul>
         </div>
         {/* <motion.div
