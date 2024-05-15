@@ -100,7 +100,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
     <div className="h-screen fixed left-0 w-64 ">
       <div
         onClick={() => setOpen(false)}
-        className={`md:hidden fixed inset-0 max-h-screen z-[998] bg-black/50 ${
+        className={`md:hidden fixed inset-0 max-h-screen  bg-black/50 ${
           open ? "block" : "hidden"
         } `}
       ></div>
@@ -109,7 +109,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
         variants={Nav_animation}
         initial={{ x: isTabletMid ? -250 : 0 }}
         animate={open ? "open" : "closed"}
-        className=" bg-white text-gray shadow-xl z-[999] max-w-[16rem] border-r-2 border-solid  w-[16rem] 
+        className=" bg-white text-gray shadow-xl  max-w-[16rem] border-r-2 border-solid  w-[16rem] 
             overflow-hidden md:relative fixed
          h-screen "
       >
@@ -232,6 +232,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
                   Saved Payment Methods
               </NavLink>
             </li>
+
           </ul>
         </div>
         <motion.div

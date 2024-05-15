@@ -9,9 +9,9 @@
     h1 {
       @apply text-xl font-medium capitalize;
     }
-    li{
+    /* li{
       @apply border-b border-slate-300 
-    }
+    } */
   }
   
   
