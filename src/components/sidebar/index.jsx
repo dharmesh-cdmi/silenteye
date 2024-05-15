@@ -4,6 +4,7 @@ import SubMenu from "./SubMenu";
 import { motion } from "framer-motion";
 
 // * React icons
+import { GoBrowser } from "react-icons/go";
 import { LuFileSymlink } from "react-icons/lu";
 import { IoLocationOutline } from "react-icons/io5";
 import { GrAppsRounded } from "react-icons/gr";
@@ -12,10 +13,6 @@ import { IoIosArrowBack, IoMdAdd } from "react-icons/io";
 import { SlSettings } from "react-icons/sl";
 import { AiOutlineAppstore } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
-import { PiDevicesLight } from "react-icons/pi";
-import { MdOutlineCall } from "react-icons/md";
-import { IoMdContacts } from "react-icons/io";
-
 import { HiOutlineDatabase } from "react-icons/hi";
 import { TbReportAnalytics } from "react-icons/tb";
 import { RiBuilding3Line } from "react-icons/ri";
@@ -23,8 +20,9 @@ import { useMediaQuery } from "react-responsive";
 import { MdMenu } from "react-icons/md";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../assests/images/logo.PNG";
-const Sidebar = ({isTabletMid,open,setOpen}) => {
-
+const Sidebar = () => {
+  let isTabletMid = useMediaQuery({ query: "(max-width: 768px)" });
+  const [open, setOpen] = useState(isTabletMid ? false : true);
   const sidebarRef = useRef();
   const { pathname } = useLocation();
 
@@ -76,17 +74,17 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
   const subMenusList = [
     {
       name: "Calls",
-      icon: MdOutlineCall ,
-      menus: ["callhistory", "livecall", "blockedcalls", "forwardedcalls","facetime","livefacetime"],
+      icon: RiBuilding3Line,
+      menus: ["auth", "app settings", "stroage", "hosting"],
     },
     {
       name: "Contacts",
-      icon: IoMdContacts ,
-      menus: ["contactslist", "blockedcontacts",],
-    },
-    {
-      name: "Apps",
       icon: TbReportAnalytics,
+      menus: ["dashboard", "realtime", "events"],
+    },
+        {
+      name: "Apps",
+      icon: GrAppsRounded,
       menus: ["installedapp", "uninstalledapp", "blockedapp"],
     },
     {
@@ -94,10 +92,15 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
       icon: IoLocationOutline,
       menus: ["livelocation", "locationhistory", "geofrence"],
     },
+    {
+      name: "Browser",
+      icon: GoBrowser,
+      menus: ["browseHistory", "datausage", "webfilter", "screentime"],
+    },
   ];
 
   return (
-    <div className="h-screen fixed left-0 w-64 ">
+    <div className="">
       <div
         onClick={() => setOpen(false)}
         className={`md:hidden fixed inset-0 max-h-screen z-[998] bg-black/50 ${
@@ -119,23 +122,23 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
         </div>
 
         <div className="flex flex-col  h-full ">
-          {open && (
-            <div className="mx-3">
-              <p className="text-base text-left font-medium">demo@domain.com</p>
-              <p className=" text-left tsecondary text-sm font-normal">
-                Updated: Apr 24 2024 16:30:22 
-              </p>
-              <button
-                type="button"
-                className="text-white my-2  bg-[#172A6E] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center me-2 mb-2 w-full"
-              >
-                <IoMdAdd className="mx-2" />
-                Add Devices
-              </button>
-            </div>
-          )}
+         {open && (
+           <div className="mx-3">
+           <p className="text-base text-left font-medium">demo@domain.com</p>
+           <p className=" text-left tsecondary text-sm font-normal">
+             Updated: Apr 24 2024 16:30:22 
+           </p>
+           <button
+             type="button"
+             className="text-white my-2  bg-[#172A6E] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center me-2 mb-2 w-full"
+           >
+             <IoMdAdd className="mx-2" />
+             Add Devices
+           </button>
+         </div>
+         )}
 
-          <ul className="whitespace-pre  no-scrollbar text-[0.9rem] py-2 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100   md:h-[68%] h-[70%]">
+          <ul className="whitespace-pre  text-[0.9rem] py-2 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100   md:h-[68%] h-[70%]">
             <li>
               <NavLink to={"/"} className="link">
                 <AiOutlineAppstore size={23} className="min-w-max" />
@@ -144,8 +147,8 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
             </li>
             <li>
               <NavLink to={"/devicecontrol"} className="link">
-                <PiDevicesLight size={23} className="min-w-max" />
-                Device Control 
+                <BsPerson size={23} className="min-w-max" />
+                Device Control
               </NavLink>
             </li>
 
@@ -164,74 +167,40 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
                 Messages
               </NavLink>
             </li>
-           
-            {/* NOTES */}
             <li>
-              <NavLink to={"/notes"} className="link">
+              <NavLink to={"/settings"} className="link">
                 <SlSettings size={23} className="min-w-max" />
-                Notes
+                Settings
               </NavLink>
             </li>
-            <li>
-              <NavLink to={"/KeyLogger"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                KeyLogger
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={"/SavedPassword"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                Saved Passwords
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={"/SocialApps"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                Social Apps
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={"/AllAllerts"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                All Allerts & Notifications
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={"/NotificationSettings"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                Notification Setting
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={"/InstantAlerts"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                Instant Alerts
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={"/AppPermisions"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                 App Permissions
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={"/PermisionManager"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                 Permission Manager
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={"/Export"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                 Data Export
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={"/Payment"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                  Saved Payment Methods
-              </NavLink>
-            </li>
+             { /* NOTES */ }
+             <li>
+                          <NavLink to={"/notes"} className="link">
+                            <SlSettings size={23} className="min-w-max" />
+                            Notes
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to={"/KeyLogger"} className="link">
+                            <SlSettings size={23} className="min-w-max" />
+                            KeyLogger
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to={"/SavedPassword"} className="link">
+                            <SlSettings size={23} className="min-w-max" />
+                            Saved Passwords
+                          </NavLink>
+                        </li>
+
+                        {/* EXPORTS FILES */}
+                        <li>
+                          <NavLink to={"/export"} className="link">
+                            <LuFileSymlink size={23} className="min-w-max" />
+                            Export Data
+                          </NavLink>
+                        </li>
+
           </ul>
         </div>
         <motion.div
