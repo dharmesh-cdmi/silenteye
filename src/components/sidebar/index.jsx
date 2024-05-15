@@ -44,7 +44,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
     ? {
         open: {
           x: 0,
-          width: "16rem",
+          width: "3.5rem",
           transition: {
             damping: 40,
           },
@@ -97,7 +97,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
   ];
 
   return (
-    <div className="h-screen fixed left-0 w-64 ">
+    <div className="h-screen fixed left-0  ">
       <div
         onClick={() => setOpen(false)}
         className={`md:hidden fixed inset-0 max-h-screen z-[998] bg-black/50 ${
@@ -109,7 +109,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
         variants={Nav_animation}
         initial={{ x: isTabletMid ? -250 : 0 }}
         animate={open ? "open" : "closed"}
-        className=" bg-white text-gray shadow-xl z-[999] max-w-[16rem] border-r-2 border-solid  w-[16rem] 
+        className=" bg-white text-gray shadow-xl z-[999]  max-w-[16rem] border-r-2 border-solid  w-[16rem] 
             overflow-hidden md:relative fixed
          h-screen "
       >
@@ -120,7 +120,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
 
         <div className="flex flex-col  h-full ">
           {open && (
-            <div className="mx-3">
+            <div className="mx-3 hidden md:block">
               <p className="text-base text-left font-medium">demo@domain.com</p>
               <p className=" text-left tsecondary text-sm font-normal">
                 Updated: Apr 24 2024 16:30:22 
@@ -234,7 +234,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
             </li>
           </ul>
         </div>
-        <motion.div
+        {/* <motion.div
           onClick={() => {
             setOpen(!open);
           }}
@@ -255,7 +255,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
           className="absolute w-fit h-fit md:block z-50 hidden right-2 bottom-3 cursor-pointer"
         >
           <IoIosArrowBack size={25} />
-        </motion.div>
+        </motion.div> */}
       </motion.div>
       <div className="m-3 md:hidden  " onClick={() => setOpen(true)}>
         <MdMenu size={25} />
