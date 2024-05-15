@@ -28,7 +28,6 @@ import GeoFence from "./Pages/Location/geoFence.js"
 import LocationHistory from "./Pages/Location/LocationHistory.js"
 
 
-
 function App() {
   const router = createBrowserRouter([
     {
@@ -123,34 +122,7 @@ function App() {
         {
           path: "/apps/blockedapp",
           element: <BlockedApp />,
-        },
-        {
-      path: "/location",
-      element: <Location/>,
-
-
-        },
-        {
-          path: "/location/livelocation",
-          element: <Location/>,
-
-        },
-        {
-      path: "/location/locationhistory",
-      element: <LocationHistory/>,
-          
-        },
-        {
-      path: "/location/geofrence",
-      element: <GeoFence/>,
-          
-        },
-        {
-          path: "/notes",
-          element: <Notes/>,
-              
-            },
-      
+        },  
       
       ],
     },

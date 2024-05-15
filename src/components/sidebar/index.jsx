@@ -87,7 +87,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
     {
       name: "Apps",
       icon: TbReportAnalytics,
-      menus: ["installedapp", "uninstalledapp", "blockedapp"],
+      menus: ["allapps", "installedapp", "uninstalledapp", "blockedapp"],
     },
     {
       name: "Location",
