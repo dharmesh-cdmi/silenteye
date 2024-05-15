@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FaRegImages, FaSignal, FaWifi } from "react-icons/fa";
+import { FaApple, FaRegImages, FaSignal, FaWifi } from "react-icons/fa";
 import { FiVideo } from "react-icons/fi";
 import { GrAppsRounded } from "react-icons/gr";
 import { IoDocumentTextOutline, IoMusicalNotesOutline } from "react-icons/io5";
@@ -27,77 +27,92 @@ import cmath from "../assests/images/cymath2.png";
 import robo from "../assests/images/robo2.png";
 import photos from "../assests/images/KeyLogger/photos.png";
 import location from "../assests/images/location.png";
+import wifi from "../assests/images/dashboard/wifi.png";
+import Apps from "../assests/images/dashboard/Apps.png";
+import Network from "../assests/images/dashboard/Network.png";
+import audio from "../assests/images/dashboard/audio.png";
+import battery from "../assests/images/dashboard/battery.png";
+import device from "../assests/images/dashboard/device storage.png";
+import document from "../assests/images/dashboard/document.png";
+import freespace from "../assests/images/dashboard/free space.png";
+import gps from "../assests/images/dashboard/gps.png";
+import image from "../assests/images/dashboard/image.png";
+import other from "../assests/images/dashboard/other.png";
+import video from "../assests/images/dashboard/video.png";
+import { CiMobile3 } from "react-icons/ci";
+import { IoIosArrowDown } from "react-icons/io";
+
 
 const Dashboard = () => {
   const DashIcons = [
     {
-      icon: <FaWifi size={25} />,
+      icon: wifi,
       name: "Wifi",
       status: "On",
       link: "",
     },
     {
-      icon: <FaSignal size={25} />,
+      icon: Network,
       name: "Verizon",
       status: "On",
       link: "",
     },
     {
-      icon: <TbGps size={25} />,
+      icon: gps,
       name: "GPS",
       status: "On",
       link: "",
     },
     {
-      icon: <TiBatteryHigh size={25} />,
+      icon: battery,
       name: "Battery",
       status: "76%",
       link: "",
     },
     {
-      icon: <LuFolderOpenDot size={25} />,
+      icon: device,
       name: "Device Storage",
       status: "64 GB",
       link: "",
     },
     {
-      icon: <VscFolderLibrary size={25} />,
+      icon: freespace,
       name: "Free Space",
       status: "31.57 GB",
       link: "",
     },
     {
-      icon: <FiVideo size={25} />,
+      icon: video,
       name: "Videos",
       status: "12.57 GB",
       link: "",
     },
     {
-      icon: <FaRegImages size={25} />,
+      icon: image,
       name: "Image",
       status: "4.57 GB",
       link: "",
     },
     {
-      icon: <IoMusicalNotesOutline size={25} />,
+      icon: audio,
       name: "Audio",
       status: "31.57 GB",
       link: "",
     },
     {
-      icon: <GrAppsRounded size={25} />,
+      icon: Apps,
       name: "Apps",
       status: "31.57 GB",
       link: "",
     },
     {
-      icon: <IoDocumentTextOutline size={25} />,
+      icon: document,
       name: "Documents",
       status: "8.78 GB",
       link: "",
     },
     {
-      icon: <VscDiffAdded size={25} />,
+      icon: other,
       name: "Other",
       status: "2.34 GB",
       link: "",
@@ -310,24 +325,45 @@ const Dashboard = () => {
   ];
   return (
     <>
-      <div className="grid grid-cols-6 gap-4 mb-8">
-        {DashIcons.map((data, i) => (
-          <div
-            className="flex items-center justify-center text-center mb-6"
-            key={i}
+
+    <div className="md:hidden flex justify-center mb-4">
+    <button
+            type="button"
+            class="text-gray-900  w-full gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700  mb-2"
           >
-            <div className="m-auto cursor-pointer">
-              <div className="flex items-center justify-center">
-                {data.icon}
-              </div>
-              <h6 className="font-normal">{data.name}</h6>
-              <p className="text-[#007AFF] font-light">{data.status}</p>
-            </div>
-          </div>
-        ))}
+            <CiMobile3 />
+
+            Ashly's Device &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <FaApple />
+            iPhone 11
+            <IoIosArrowDown className="flex justify-end" />
+
+            
+          </button>
+    </div>
+      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6  gap-2 md:gap-4 mx-2 md:mx-0 mb-8">
+  {DashIcons.map((data, i) => (
+    <div
+      className="flex items-center justify-center text-center mb-6"
+      key={i}
+    >
+      <div className="m-auto cursor-pointer">
+        <div className="flex items-center justify-center">
+        <img
+                  className="w-8 h-8 rounded-full m-auto"
+                  src={data.icon}
+                  alt
+                />
+        </div>
+        <h6 className="font-normal">{data.name}</h6>
+        <p className="text-[#007AFF] font-light">{data.status}</p>
       </div>
-      <div className="grid grid-cols-3 gap-4 mb-8">
-        <InfoCard title="Device Info">
+    </div>
+  ))}
+</div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
+        <InfoCard title="Device Info"  className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
               <ul key={i} className="grid grid-cols-2">
@@ -342,12 +378,13 @@ const Dashboard = () => {
         <InfoCard
           title="Live Location"
           titleRight={<p className="text-blue-400">More</p>}
+          className="mb-5 md:mb-0"
         >
           <div className="rounded-lg py-1 bg-gray-50">
             <img src={liveimg} alt="img" className="object-contain" />
           </div>
         </InfoCard>
-        <InfoCard title="Account Info ">
+        <InfoCard title="Account Info "  className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
               <ul key={i} className="grid grid-cols-2">
@@ -361,10 +398,11 @@ const Dashboard = () => {
         </InfoCard>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
         <InfoCard
           title="Recent Calls"
           titleRight={<p className="text-blue-400">See All</p>}
+          className="mb-5 md:mb-0"
         >
           {RecentCall.map((info, i) => (
             <ul key={i} className="flex p-2 ">
@@ -399,6 +437,7 @@ const Dashboard = () => {
         <InfoCard
           title="Recent Messages"
           titleRight={<p className="text-blue-400">See All</p>}
+          className="mb-5 md:mb-0"
         >
           {RecentMessages.map((info, i) => (
             <ul key={i} className="flex p-2 ">
@@ -424,8 +463,8 @@ const Dashboard = () => {
           ))}
         </InfoCard>
       </div>
-      <div className="grid grid-cols-2 gap-4 mb-8">
-        <div className="border border-slate-300 rounded-lg p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
+        <div className="border border-slate-300 rounded-lg p-4 mb-5 md:mb-0">
           <h4 className="text-gray-400 text-lg font-normal">
             App Usage : Daily Average
           </h4>
@@ -457,6 +496,7 @@ const Dashboard = () => {
         <InfoCard
           title="Recent Most Used Apps"
           titleRight={<p className="text-blue-400">See All</p>}
+          className="mb-5 md:mb-0"
         >
           <div className="rounded-lg p-2 bg-gray-50">
             {MostUsedApp.map((info, i) => (
@@ -487,10 +527,11 @@ const Dashboard = () => {
           </div>
         </InfoCard>
       </div>
-      <div className="grid grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
       <InfoCard
           title="Recent Alert & Notifications"
           titleRight={<p className="text-blue-400">See All</p>}
+          className="mb-5 md:mb-0"
         >
           <div >
             {RecentAlert.map((info, i) => (
@@ -520,6 +561,7 @@ const Dashboard = () => {
         <InfoCard
           title="Recent KeyLogger"
           titleRight={<p className="text-blue-400">See All</p>}
+          className="mb-5 md:mb-0"
         >
           <div >
             {RecentKeylogger.map((info, i) => (
@@ -550,6 +592,7 @@ const Dashboard = () => {
         <InfoCard
           title="Recent Browser Histroy"
           titleRight={<p className="text-blue-400">See All</p>}
+          className="mb-5 md:mb-0"
         >
           <div >
             {RecentBrowserHistory.map((info, i) => (

@@ -1,25 +1,32 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
-
-import Notes from "./Pages/Notes/Notes.js"
-import "./assests/css/App.css"
+import Notes from "./Pages/Notes/Notes.js";
+import "./assests/css/App.css";
 import Dashboard from "./Pages/Dashboard";
+import DeviceControl from "./Pages/DeviceControl";
 import KeyLogger from "./Pages/KeyLogger";
 import { SavedPassword } from "./Pages/SavedPassword";
-import DeviceControl from "./Pages/DeviceControl.jsx";
-
-import AllApps from "./Pages/Apps/AllApps.js"
-import TotalApp from "./Pages/Apps/TotalApps.js"
-import InstalledApp from "./Pages/Apps/InstalledApp.js"
-import UnInstalledApp from "./Pages/Apps/UnstalledApp.js"
-import BlockedApp from "./Pages/Apps/BlockedApp.js"
-import "./assests/css/App.css"
-
+import SocialApps from "./Pages/SocialApps";
+import AllAllert from "./Pages/AllAllert";
+import NotificationSetting from "./Pages/NotificationSetting";
+import InstantAlert from "./Pages/InstantAlert.jsx";
+import AppPermission from "./Pages/AppPermission";
+import PermisionManager from "./Pages/PermisionManager";
+import Export from "./Pages/Export.jsx";
+import Payment from "./Pages/Payment.jsx";
+import Callhistory from "./Pages/Calls/Callhistory.jsx";
+import BlockedCalls from "./Pages/Calls/BlockedCalls.jsx";
+import FaceTime from "./Pages/Calls/FaceTime.jsx";
+import ForwardCalls from "./Pages/Calls/ForwardCalls.jsx";
+import ContactList from "./Pages/Contacts/ContactList.jsx";
+import BlockedContact from "./Pages/Contacts/BlockedContact.jsx";
+import InstalledApp from "./Pages/Apps/InstalledApp.js";
+import UnInstalledApp from "./Pages/Apps/UnstalledApp.js";
+import BlockedApp from "./Pages/Apps/BlockedApp.js";
 import Location from "./Pages/Location/Location.js"
-import LocationHistory from "./Pages/Location/LocationHistory.js"
 import GeoFence from "./Pages/Location/geoFence.js"
+import LocationHistory from "./Pages/Location/LocationHistory.js"
 
-import Export from "./Pages/Export/Export.js"
 
 
 function App() {
@@ -31,148 +38,127 @@ function App() {
         {
           index: true,
           element: <Dashboard />,
-          },  
-          {
-            path: "/devicecontrol",
-            element: <DeviceControl />,
-            },  
-               
-               
-      ],
-
-    },
-    {
-      path: "/SavedPassword",
-      element: <RootLayout />,
-      children: [
+        },
         {
-          index: true,
-          element: <SavedPassword/>,
-          },    
-      ],
-    },
-
-
-
-
-
-
-
-    {
-      path: "/KeyLogger",
-      element: <RootLayout />,
-      children: [
+          path: "/devicecontrol",
+          element: <DeviceControl />,
+        },
+        // call Routes
         {
-          index: true,
-          element: <KeyLogger/>,
-          },    
-      ],
-    },
+          path: "/calls/callhistory",
+          element: <Callhistory />,
+        },
         {
-      path: "/notes",
-      element: <RootLayout />,
-      children: [
+          path: "/calls/blockedcalls",
+          element: <BlockedCalls />,
+        },
         {
-          index: true,
-          element: <Notes/>,
-        },    
-      ],
-    },
-    {
-      path: "/apps",
-      element: <RootLayout />,
-      children: [
+          path: "/calls/facetime",
+          element: <FaceTime />,
+        },
         {
-          index: true,
-          element: <AllApps/>,
-        },    
-      ],
-    },
-    {
-      path: "/apps/installedapp",
-      element: <RootLayout />,
-      children: [
+          path: "/calls/forwardedcalls",
+          element: <ForwardCalls />,
+        },
+        // Contacts Routes
+
         {
-          index: true,
-          element: <InstalledApp/>,
-        },    
-      ],
-    },
-    {
-      path: "/apps/uninstalledapp",
-      element: <RootLayout />,
-      children: [
+          path: "/contacts/contactslist",
+          element: <ContactList />,
+        },
         {
-          index: true,
-          element: <UnInstalledApp/>,
-        },    
-      ],
-    },
-    {
-      path: "/apps/blockedapp",
-      element: <RootLayout />,
-      children: [
+          path: "/contacts/blockedcontacts",
+          element: <BlockedContact />,
+        },
+
         {
-          index: true,
-          element: <BlockedApp/>,
-        },    
-      ],
-    },
-    {
+          path: "/SavedPassword",
+          element: <SavedPassword />,
+        },
+
+        {
+          path: "/KeyLogger",
+          element: <KeyLogger />,
+        },
+        {
+          path: "/SocialApps",
+          element: <SocialApps />,
+        },
+        {
+          path: "/AllAllerts",
+          element: <AllAllert />,
+        },
+        {
+          path: "/NotificationSettings",
+          element: <NotificationSetting />,
+        },
+        {
+          path: "/InstantAlerts",
+          element: <InstantAlert />,
+        },
+        {
+          path: "/AppPermisions",
+          element: <AppPermission />,
+        },
+        {
+          path: "/PermisionManager",
+          element: <PermisionManager />,
+        },
+        {
+          path: "/Export",
+          element: <Export />,
+        },
+        {
+          path: "/Payment",
+          element: <Payment />,
+        },
+        {
+          path: "/apps/installedapp",
+          element: <InstalledApp />,
+        },
+        {
+          path: "/apps/uninstalledapp",
+          element: <UnInstalledApp />,
+        },
+        {
+          path: "/apps/blockedapp",
+          element: <BlockedApp />,
+        },
+        {
       path: "/location",
-      element: <RootLayout />,
-      children: [
+      element: <Location/>,
+
+
+        },
         {
-          index: true,
+          path: "/location/livelocation",
           element: <Location/>,
-        },    
-      ],
-    },
-    {
-      path: "/location/livelocation",
-      element: <RootLayout />,
-      children: [
+
+        },
         {
-          index: true,
-          element: <Location/>,
-        },    
-      ],
-    },
-    {
       path: "/location/locationhistory",
-      element: <RootLayout />,
-      children: [
+      element: <LocationHistory/>,
+          
+        },
         {
-          index: true,
-          element: <LocationHistory/>,
-        },    
-      ],
-    },
-    {
       path: "/location/geofrence",
-      element: <RootLayout />,
-      children: [
+      element: <GeoFence/>,
+          
+        },
         {
-          index: true,
-          element: <GeoFence/>,
-        },    
-      ],
-    },
-    {
-      path: "/export",
-      element: <RootLayout />,
-      children: [
-        {
-          index: true,
-          element: <Export/>,
-        },    
+          path: "/notes",
+          element: <Notes/>,
+              
+            },
+      
+      
       ],
     },
   ]);
   return (
     <>
-    <RouterProvider router={router} /> 
-  </>
+      <RouterProvider router={router} />
+    </>
   );
 }
 

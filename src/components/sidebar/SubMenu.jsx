@@ -30,17 +30,22 @@ const SubMenu = ({ data }) => {
         }
         className="flex h-0 flex-col pl-14 text-[0.8rem] font-normal overflow-hidden"
       >
-        {data.menus?.map((menu) => (
+     {subMenuOpen ?    (
+      <>
+      {data.menus?.map((menu) => (
           <li key={menu}>
             {/* className="hover:text-blue-600 hover:font-medium" */}
             <NavLink
               to={`/${data.name}/${menu}`}
-              className="link !bg-transparent capitalize"
+              className="link  capitalize"
             >
               {menu}
             </NavLink>
           </li>
         ))}
+      </>
+
+     ):""}
       </motion.ul>
     </>
   );

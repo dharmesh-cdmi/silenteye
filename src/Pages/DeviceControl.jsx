@@ -20,11 +20,12 @@ import frame87 from "../assests/images/DashControl/Frame 87.png";
 import { IoIosArrowDown, IoIosCall } from "react-icons/io";
 import { CiMobile3 } from "react-icons/ci";
 import { AiFillEdit } from "react-icons/ai";
+import CallsHead from "../components/Calls/CallsHead";
 
 const DeviceControl = () => {
   return (
     <div>
-      <DeviceControlHead />
+      <CallsHead heading="Device Control" placeholder="Search "/>
 
       <div className="border rounded-xl my-8">
         <div className="flex p-4 border-b">
@@ -40,7 +41,7 @@ const DeviceControl = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
           <div className="p-4 border-r">
             <div className="flex ">
               <div className="flex-none w-8">
@@ -132,7 +133,7 @@ const DeviceControl = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
           <div className="p-4 border-r">
             <div className="flex ">
               <div className="flex-none w-8">
@@ -158,12 +159,12 @@ const DeviceControl = () => {
                   <IoIosCall />
                 </p>
               </div> */}
-              <div className=" w-70 mt-1">
+              <div className=" w-52 md:w-70 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
                 Disables Wifi network / WLan network connectivity
                 </p>
               </div>
-              <div className="flex-1 w-30 text-end me-2 mt-1">
+              <div className="flex-1 w-48 md:w-30 text-end me-2 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
                 Active Network
                 </p>
@@ -191,12 +192,12 @@ const DeviceControl = () => {
             </div>
             <div className="flex ">
               
-              <div className=" w-65 mt-1">
+              <div className=" w-52 md:w-70 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
                 Disables Wifi network / WLan network connectivity
                 </p>
               </div>
-              <div className="flex-1 w-35 text-end me-2 mt-1">
+              <div className="flex-1 w-48 md:w-30 text-end me-2 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
                 No Network for 3 h
                 </p>
@@ -208,7 +209,7 @@ const DeviceControl = () => {
       </div>
       
       <div className="border rounded-xl my-8">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
         <div className="flex p-4">
           <div>
             <img src={fram4} alt="img" className="object-contain mt-2" />
@@ -235,7 +236,7 @@ const DeviceControl = () => {
         </div>
       </div>
       <div className="border rounded-xl my-8">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
         <div className="flex p-4">
           <div>
             <img src={fram5} alt="img" className="object-contain mt-2" />
@@ -271,7 +272,7 @@ const DeviceControl = () => {
         </div>
       </div>
       <div className="border rounded-xl my-8">
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-0 ">
         <div className="flex p-4 col-span-2">
           <div>
             <img src={fram6} alt="img" className="object-contain mt-2" />
@@ -299,7 +300,7 @@ const DeviceControl = () => {
         </div>
       </div>
       <div className="border rounded-xl my-8">
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-0 ">
         <div className="flex p-4 col-span-2">
           <div>
             <img src={fram7} alt="img" className="object-contain mt-2" />
@@ -329,7 +330,7 @@ const DeviceControl = () => {
         </div>
       </div>
       <div className="border rounded-xl my-8">
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-3  ">
         <div className="flex p-4 col-span-2">
           <div>
             <img src={frame87} alt="img" className="object-contain mt-2" />
@@ -350,7 +351,7 @@ const DeviceControl = () => {
             <p className="text-sm font-medium text-gray-400">
             Social Media Content Filter
             </p>
-            <div className="flex">
+            <div className="flex flex-wrap gap-2">
             <span class="bg-blue-100 text-slate-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">Nudity</span>
             <span class="bg-blue-100 text-slate-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">Hate</span>
             <span class="bg-blue-100 text-slate-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">Violence</span>
