@@ -1,4 +1,4 @@
-import BrowserHead from "../../components/BrowserHead/BrowserHead.js"
+import BrowserHead from '../../components/BrowseHead/BrowserHead.js'
 import "./webFilter.css"
 
 import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx"
