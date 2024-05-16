@@ -78,6 +78,7 @@ const Sidebar = ({isTabletMid,open,setOpen}) => {
       name: "Calls",
       icon: MdOutlineCall ,
       menus: ["callhistory", "livecall", "blockedcalls", "forwardedcalls","facetime","livefacetime"],
+      
     },
     {
       name: "Contacts",
