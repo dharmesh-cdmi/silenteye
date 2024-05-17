@@ -26,6 +26,7 @@ import BlockedApp from "./Pages/Apps/BlockedApp.js";
 import Location from "./Pages/Location/Location.js"
 import GeoFence from "./Pages/Location/geoFence.js"
 import LocationHistory from "./Pages/Location/LocationHistory.js"
+import AllApps from "./Pages/Apps/AllApps.js";
 
 
 function App() {
@@ -71,7 +72,7 @@ function App() {
         },
 
         {
-          path: "/SavedPassword",
+          path: "/Privacy&Security/SavedPassword",
           element: <SavedPassword />,
         },
 
@@ -96,8 +97,12 @@ function App() {
           element: <InstantAlert />,
         },
         {
-          path: "/AppPermisions",
+          path: "/Privacy&Security/AppPermisions",
           element: <AppPermission />,
+        },
+        {
+          path: "/Apps/allapps",
+          element: <AllApps />,
         },
         {
           path: "/PermisionManager",
@@ -108,7 +113,7 @@ function App() {
           element: <Export />,
         },
         {
-          path: "/Payment",
+          path: "/Privacy&Security/Payment",
           element: <Payment />,
         },
         {
@@ -122,7 +127,13 @@ function App() {
         {
           path: "/apps/blockedapp",
           element: <BlockedApp />,
+        }, 
+        {
+          path: "/notes",
+          element: <Notes />,
         },  
+         
+
       
       ],
     },

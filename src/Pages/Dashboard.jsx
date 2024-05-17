@@ -355,20 +355,20 @@ const Dashboard = () => {
                   alt
                 />
         </div>
-        <h6 className="font-normal">{data.name}</h6>
-        <p className="text-[#007AFF] font-light">{data.status}</p>
+        <h6 className="text-[18px] weight-[500]">{data.name}</h6>
+        <p className="text-[#007AFF] text-[16px] weight-[500]">{data.status}</p>
       </div>
     </div>
   ))}
 </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-0 mb-8 mx-4 mx:m-0 ">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-0 mb-8  mx:m-0 ">
         <InfoCard title="Device Info"  className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
-              <ul key={i} className="grid grid-cols-2 liborder">
-                <li className="p-1 px-2 font-medium ">{info.name}</li>
-                <li className="p-1 text-[#172A6E] font-semibold">
+              <ul key={i} className="grid grid-cols-2 liborder ">
+                <li className="py-2 px-2 font-medium  ">{info.name}</li>
+                <li className="py-2 text-[#172A6E] font-semibold">
                   {info.details}
                 </li>
               </ul>
@@ -381,31 +381,48 @@ const Dashboard = () => {
           className="mb-5 md:mb-0"
         >
           <div className="rounded-lg py-1 bg-gray-50">
-            <img src={liveimg} alt="img" className="object-cover h-32 w-96" />
+            <img src={liveimg} alt="img" className="object-cover h-44 w-96" />
           </div>
         </InfoCard>
         <InfoCard title="Account Info "  className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
-            {DashInfo.map((info, i) => (
-              <ul key={i} className="grid grid-cols-2 liborder">
-                <li className="p-1 px-2 font-medium">{info.name}</li>
-                <li className="p-1 text-[#172A6E] font-semibold">
-                  {info.details}
+           
+              <ul  className="grid grid-cols-2 place-content-between ">
+                <li className="py-2 px-2 font-medium liborder">Membership</li>
+                <li className="py-2 text-[#172A6E] font-semibold liborder text-end me-2">
+                  Premium
+                </li>
+                <li className="py-2 px-2 font-medium liborder">Duration</li>
+                <li className="py-2 text-[#172A6E] liborder font-semibold text-end me-2">
+                  Yearly
+                </li>
+                <li className="p-1 px-2 font-medium liborder">Auto Renew</li>
+                <li className="p-1 text-[#172A6E] liborder font-semibold text-end me-2">
+                <label className="toggle-switch">
+                  <input type="checkbox"  />
+                  <div className="toggle-switch-background">
+                    <div className="toggle-switch-handle" />
+                  </div>
+                </label>
+                </li>
+                <li className="py-2 px-2 font-medium liborder">Expiry Date</li>
+                <li className="py-2 text-[#172A6E] liborder font-semibold text-end me-2">
+                  Dec 28,2024 2:28
                 </li>
               </ul>
-            ))}
+           
           </div>
         </InfoCard>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-0 mb-8  mx:m-0">
         <InfoCard
           title="Recent Calls"
           titleRight={<p className="text-blue-400">See All</p>}
           className="mb-5 md:mb-0"
         >
           {RecentCall.map((info, i) => (
-            <ul key={i} className="flex p-2 liborder">
+            <ul key={i} className="flex p-2 liborder ">
               <li className="flex-none w-14 pt-2">
                 <img
                   className="w-10 h-10 rounded-full m-auto"
@@ -414,17 +431,17 @@ const Dashboard = () => {
                 />
               </li>
               <li className="p-1 flex-1 w-64 font-semibold">
-                <div>
-                  {info.name}
+                <div >
+                  <p className="text-[24px] weight-[500]">{info.name}</p>
                   <div
                     className={`${
                       info.callStatus == "outgoing" && "text-gray-400"
                     } ${info.callStatus == "missed" && "text-red-600"} ${
                       info.callStatus == "incoming" && "text-green-600"
-                    } flex font-normal`}
+                    } flex `}
                   >
                     <p className="my-auto ">{info.callIcon}</p>
-                    <p className="ps-1">{info.callStatus}</p>
+                    <p className="ps-1 text-[17px] weight-[500]">{info.callStatus}</p>
                   </div>
                 </div>
               </li>
@@ -450,8 +467,9 @@ const Dashboard = () => {
               </li>
               <li className="p-1 flex-1 w-64 font-semibold">
                 <div>
-                  {info.name}
-                  <p className="ps-1 text-gray-400 text-sm">
+                <p className="text-[24px] weight-[500]">{info.name}</p>
+
+                  <p className="ps-1 text-gray-400 text-[17px] weight-[500] ">
                     {info.msg.slice(0, 45)}...
                   </p>
                 </div>
@@ -547,12 +565,12 @@ const Dashboard = () => {
                   <li className="p-1 flex-1 w-64 font-semibold text-lg text-gray-900 border-none">
                     <div>{info.name.slice(0,22)}</div>
                   </li>
-                  <li className="p-1 text-gray-400 font-semibold  border-none">
+                  <li className="p-1 text-gray-400 font-semibold  text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
                 
-                <p className="text-sm text-gray-400">{info.des}</p>
+                <p className="text-sm pb-2 text-gray-400">{info.des}</p>
                 
               </div>
             ))}
@@ -578,12 +596,12 @@ const Dashboard = () => {
                   <div>{info.name.slice(0,25)}</div>
 
                   </li>
-                  <li className="p-1 text-gray-400 font-semibold  border-none">
+                  <li className="p-1 text-gray-400 font-semibold text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
                 
-                <p className="text-sm text-gray-400">{info.des}</p>
+                <p className="text-sm pb-2 text-gray-400">{info.des}</p>
                 
               </div>
             ))}
@@ -609,12 +627,12 @@ const Dashboard = () => {
                   <div>{info.name.slice(0,25)}</div>
 
                   </li>
-                  <li className="p-1 text-gray-400 font-semibold  border-none">
+                  <li className="p-1 text-gray-400 font-semibold text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
                 
-                <p className="text-sm text-gray-400">{info.des}</p>
+                <p className="text-sm pb-2 text-gray-400">{info.des}</p>
                 
               </div>
             ))}

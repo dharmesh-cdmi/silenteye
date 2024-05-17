@@ -1,25 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../src/assests/font/Urbanist.woff') format('woff');
+  /* Add more src lines for additional formats if needed */
+}
 @layer base {    
     body {
       background: #f1f1f1;
+      font-family: 'Urbanist', sans-serif;
     }
     h1 {
       @apply text-xl font-medium capitalize;
     }
-    /* li{
-      @apply border-b border-slate-300 
-    } */
     
   }
+ 
+
   
   .liborder{
     @apply border-b border-slate-300 
   }
   .link {
-    @apply p-2.5 flex  gap-6 items-center md:cursor-pointer cursor-default duration-300 font-medium;
+    @apply p-2.5  flex  gap-6 items-center md:cursor-pointer cursor-default duration-300 font-medium;
   }
   
   .active {

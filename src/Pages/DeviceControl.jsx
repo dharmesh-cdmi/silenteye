@@ -183,7 +183,7 @@ const DeviceControl = () => {
               </div>
               <div className="flex-1 w-15 text-end me-2">
                 <label className="toggle-switch">
-                  <input type="checkbox" checked />
+                  <input type="checkbox"  />
                   <div className="toggle-switch-background">
                     <div className="toggle-switch-handle" />
                   </div>
