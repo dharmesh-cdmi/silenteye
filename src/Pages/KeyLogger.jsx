@@ -24,27 +24,20 @@ const keyloggerData = [
     },
     {
       id: "2",
-      img: photos,
-      heading: "Photos",
-      subheading: "should we meet up tomorrow before classes?",
-      time: "08:58 AM",
-    },
-    {
-      id: "3",
       img: whatsapp,
       heading: "WhatsApp",
       subheading: "hey, how are you doing?",
       time: "08:44 AM",
     },
     {
-      id: "4",
+      id: "3",
       img: whatsapp,
       heading: "WhatsApp",
       subheading: "idk, maybe in an hour or so",
       time: "08:43 AM",
     },
     {
-      id: "5",
+      id: "4",
       img: Messenger,
       heading: "Messenger",
       subheading: "did she say anything to you? or dad?",
@@ -68,7 +61,7 @@ const keyloggerData = [
     },
     {
       id: "3",
-      img: whatsapp,
+      img: google,
       heading: "Chrome",
       subheading: "what is my ip address",
       time: "11:31 PM",
@@ -79,13 +72,6 @@ const keyloggerData = [
       heading: "Instagram",
       subheading: "I thought you already talked to her",
       time: "11:28 PM",
-    },
-    {
-      id: "5",
-      img: Messenger,
-      heading: "Twitter",
-      subheading: "Hey,Posting New Today",
-      time: "11:25 PM",
     },
   ],
 ];
@@ -116,7 +102,7 @@ function KeyLogger() {
           <Modal.Toggle toggleName="viewMore-keylogger">
             <Button
               onClick={viewMore}
-              className="text-[18px]   drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
+              className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]  font-medium px-[32px]   py-[10px] text-[#101828] text-center"
             >
               View More
               <img src={More} alt="more" className="ps-2" />
