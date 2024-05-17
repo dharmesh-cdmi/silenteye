@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { FaApple, FaRegImages, FaSignal, FaWifi } from "react-icons/fa";
 import { FiVideo } from "react-icons/fi";
@@ -44,6 +44,8 @@ import { IoIosArrowDown } from "react-icons/io";
 
 
 const Dashboard = () => {
+  const [autoRenew,setAutoReNew]=useState(true)
+
   const DashIcons = [
     {
       icon: wifi,
@@ -323,6 +325,7 @@ const Dashboard = () => {
    
     
   ];
+
   return (
     <>
 
@@ -367,8 +370,8 @@ const Dashboard = () => {
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
               <ul key={i} className="grid grid-cols-2 liborder ">
-                <li className="py-2 px-2 font-medium  ">{info.name}</li>
-                <li className="py-2 text-[#172A6E] font-semibold">
+                <li className="py-3 px-2 font-medium  ">{info.name}</li>
+                <li className="py-3 text-[#172A6E] font-semibold">
                   {info.details}
                 </li>
               </ul>
@@ -381,32 +384,32 @@ const Dashboard = () => {
           className="mb-5 md:mb-0"
         >
           <div className="rounded-lg py-1 bg-gray-50">
-            <img src={liveimg} alt="img" className="object-cover h-44 w-96" />
+            <img src={liveimg} alt="img" className="object-cover h-52 w-96" />
           </div>
         </InfoCard>
         <InfoCard title="Account Info "  className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
            
               <ul  className="grid grid-cols-2 place-content-between ">
-                <li className="py-2 px-2 font-medium liborder">Membership</li>
-                <li className="py-2 text-[#172A6E] font-semibold liborder text-end me-2">
+                <li className="py-3 px-2 font-medium liborder">Membership</li>
+                <li className="py-3 text-[#172A6E] font-semibold liborder text-end me-2">
                   Premium
                 </li>
-                <li className="py-2 px-2 font-medium liborder">Duration</li>
-                <li className="py-2 text-[#172A6E] liborder font-semibold text-end me-2">
+                <li className="py-3 px-2 font-medium liborder">Duration</li>
+                <li className="py-3 text-[#172A6E] liborder font-semibold text-end me-2">
                   Yearly
                 </li>
-                <li className="p-1 px-2 font-medium liborder">Auto Renew</li>
+                <li className="p-1 px-2 font-medium liborder mt-2">Auto Renew</li>
                 <li className="p-1 text-[#172A6E] liborder font-semibold text-end me-2">
-                <label className="toggle-switch">
-                  <input type="checkbox"  />
+                <label className="toggle-switch mt-1">
+                  <input type="checkbox" value={autoRenew} onChange={()=>setAutoReNew(!autoRenew)} />
                   <div className="toggle-switch-background">
                     <div className="toggle-switch-handle" />
                   </div>
                 </label>
                 </li>
-                <li className="py-2 px-2 font-medium liborder">Expiry Date</li>
-                <li className="py-2 text-[#172A6E] liborder font-semibold text-end me-2">
+                <li className="py-3 px-2 font-medium liborder">Expiry Date</li>
+                <li className="py-3 text-[#172A6E] liborder font-semibold text-end me-2">
                   Dec 28,2024 2:28
                 </li>
               </ul>

@@ -12,13 +12,14 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { useMediaQuery } from "react-responsive";
 import { MdMenu } from "react-icons/md";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../assests/images/logo.PNG";
+import logo from "../../assests/images/Logo.svg";
+import logo2 from "../../assests/images/Logo-Symbol.png";
 import Calendar from "../../assests/images/sideicon/Calendar.svg";
 import Calls from "../../assests/images/sideicon/Calls.svg";
 import Camera from "../../assests/images/sideicon/Camera.svg";
 import Contacts from "../../assests/images/sideicon/Contacts.svg";
 import DeviceControl from "../../assests/images/sideicon/Device Control.svg";
-import {ReactComponent as Home} from "../../assests/images/sideicon/Home.svg";
+import  Home from "../../assests/images/sideicon/Home.svg";
 import Media from "../../assests/images/sideicon/Media.svg";
 import Messages from "../../assests/images/sideicon/Messages.svg";
 import Network from "../../assests/images/sideicon/Network.svg";
@@ -78,7 +79,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
     ? {
         open: {
           x: 0,
-          width: "3.5rem",
+          width: "15.5rem",
           transition: {
             damping: 40,
           },
@@ -575,10 +576,12 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
             overflow-hidden md:relative fixed
          h-screen "
       >
-        <div className="flex items-center gap-2.5 font-medium border-b py-3 border-slate-300">
-          <img src={logo} width={60} alt="logo" />
-          <span className="text-xl whitespace-pre">Silent Eye</span>
+        <div className="flex justify-center gap-2.5 font-medium border-b pt-[1.12rem] md:py-[1.12rem]  border-slate-300">
+         {open ? <img src={logo} className=" h-[2rem] w-[10rem] object-cover" width={60} alt="logo" /> : <img src={logo2} width={38} alt="logo" className="md:py-[0.25rem]"  />} 
+        
+          
         </div>
+       
 
         <div className="flex flex-col  h-full ">
           {open && (
@@ -597,11 +600,16 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
             </div>
           )}
 
-          <ul className="whitespace-pre liborder text-[18px] weight-[500] no-scrollbar  py-2 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100   h-[70%]">
+          <ul className="whitespace-pre liborder border-t text-[18px] weight-[500] no-scrollbar  mt-2 md:mt-0 flex flex-col   font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100   md:h-[75%] h-[90%]">
             <li className="liborder">
               <NavLink to={"/"} className="link ">
-            
-                <Home  className="fill-white stroke-rose-400"/>
+         
+              <img
+                  className="h-5 "
+                  src={Home}
+                  alt
+                />
+
                 Dashboard
                 
               </NavLink>
@@ -620,7 +628,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
             
               <div className="  border-slate-300 ">
                 {subMenusList1?.map((menu,i) => (
-                  <div key={i} className="flex flex-col gap-1 ">
+                  <div key={i} className="flex flex-col  ">
                     <SubMenu data={menu} />
                   </div>
                 ))}
@@ -639,7 +647,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
            
               <div className="  border-slate-300 ">
                 {subMenusList2?.map((menu,i) => (
-                  <div key={i} className="flex flex-col gap-1 ">
+                  <div key={i} className="flex flex-col  ">
                     <SubMenu data={menu} />
                   </div>
                 ))}
@@ -668,7 +676,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
             </li>
             <div className="  border-slate-300 ">
                 {subMenusList3?.map((menu,i) => (
-                  <div key={i} className="flex flex-col gap-1 ">
+                  <div key={i} className="flex flex-col  ">
                     <SubMenu data={menu} />
                   </div>
                 ))}
@@ -685,7 +693,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
             </li>
             <div className="  border-slate-300 ">
                 {subMenusList4?.map((menu,i) => (
-                  <div key={i} className="flex flex-col gap-1 ">
+                  <div key={i} className="flex flex-col  ">
                     <SubMenu data={menu} />
                   </div>
                 ))}
@@ -699,7 +707,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
 
 <div className="  border-slate-300 ">
                 {subMenusList5?.map((menu,i) => (
-                  <div key={i} className="flex flex-col gap-1 ">
+                  <div key={i} className="flex flex-col  ">
                     <SubMenu2 data={menu} />
                   </div>
                 ))}
