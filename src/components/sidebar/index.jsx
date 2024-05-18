@@ -162,9 +162,28 @@ const Sidebar = () => {
               </div>
             )}
             <li>
-              <NavLink to={"/stroage"} className="link">
+              <NavLink to={"/messages"} className="link">
                 <HiOutlineDatabase size={23} className="min-w-max" />
                 Messages
+              </NavLink>
+            </li>
+    
+            <li>
+              <NavLink to={"/settings"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                Messages
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/settings"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                Settings
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/settings"} className="link">
+                <SlSettings size={23} className="min-w-max" />
+                Settings
               </NavLink>
             </li>
             <li>

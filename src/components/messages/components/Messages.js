@@ -36,7 +36,7 @@ function Messages() {
   ];
   return (
     <div className="grid lg:grid-cols-2 grid-cols-1 rounded-lg border border-gray-500 mt-10">
-      <div className="lg:mx-10">
+      <div className="lg:mx-0">
         <p className="py-4 ps-3 font-semibold border-b-2 ">Recent Messages</p>
         {msgData.map((msg, index) => {
           return <Tabs msg={msg} />;
