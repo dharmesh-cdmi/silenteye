@@ -123,7 +123,6 @@ function App() {
           path: "/apps/blockedapp",
           element: <BlockedApp />,
         },  
-      
       ],
     },
   ]);
