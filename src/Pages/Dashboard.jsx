@@ -195,6 +195,19 @@ const Dashboard = () => {
       msg: "Little brother, I'm lonely and I'm looking for company. My Telegram ID: Tindf202",
       time: "9:41 am",
     },
+    {
+      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      name: "Riyah Webflow",
+      msg: "Little brother, I'm lonely and I'm looking for company. My Telegram ID: Tindf202",
+      time: "9:41 am",
+    },
+    {
+      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      name: "13654825",
+      msg: "Little brother, I'm lonely and I'm looking for company. My Telegram ID: Tindf202",
+      time: "9:41 am",
+    },
+  
   ];
   const MostUsedApp = [
     {
