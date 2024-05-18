@@ -7,6 +7,10 @@ import { HiPhoneMissedCall } from "react-icons/hi";
 import { VscCallOutgoing } from "react-icons/vsc";
 import callicon from "../../assests/images/calls/Frame.png";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import Modal from "../../components/Shared/Modal";
+import Upgrade from "../../components/Shared/Upgrade";
+import Delete from "../../assests/images/delete.png";
+
 
 const ForwardCalls = () => {
     const forwordcalldata = [
@@ -78,7 +82,9 @@ const ForwardCalls = () => {
         heading="Forwarded Calls"
         placeholder="Search by Name or Phone Number"
       />
-
+       <Modal>
+               
+              
       <div className="border rounded-xl my-8">
         <div className="grid md:grid-cols-5 grid-cols-1">
           <div className="border-r">
@@ -119,6 +125,7 @@ const ForwardCalls = () => {
            
           </div>
           <div className="mx-2 ">
+          <Modal.Toggle toggleName="Update">
           <button
                 type="button"
                 class="text-gray-900 gap-2 mt-2 w-full md:w-24  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm pl-[9rem] md:pl-[1rem] py-1 text-center inline-flex items-center  me-2 mb-2"
@@ -126,6 +133,8 @@ const ForwardCalls = () => {
                 <FiEdit size={30} />
                 Edit
               </button>
+                </Modal.Toggle>
+        
           </div>
         </div>
       </div>
@@ -198,9 +207,17 @@ const ForwardCalls = () => {
                 </td>
                 <td className="px-6 py-4">{calldata.duration}</td>
                 <td className="px-6 py-4">
-                    <div >
-                    <RiDeleteBin6Line className="m-auto text-red-600 cursor-pointer"/>
+
+                         <Modal.Toggle toggleName="Update">                 
+                    <div className="hidden md:block">
+                      <img
+                  className="h-6 cursor-pointer"
+                  src={Delete}
+                  alt
+                />
                     </div>
+                   
+                    </Modal.Toggle>
                 </td>
               </tr>
             ))}
@@ -212,7 +229,9 @@ const ForwardCalls = () => {
           aria-label="Table navigation"
         >
           <div aria-label="Page navigation example ">
-            <ul class="inline-flex -space-x-px text-base h-10 hidden md:block">
+            <div className="hidden md:block">
+
+            <ul class="inline-flex -space-x-px text-base h-10 ">
               <li className="border-none">
                 <a
                   href="#"
@@ -256,7 +275,9 @@ const ForwardCalls = () => {
                 </a>
               </li>
             </ul>
+            </div>
           </div>
+          <Modal.Toggle toggleName="Update">
           <button
             type="button"
             class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
@@ -264,8 +285,14 @@ const ForwardCalls = () => {
             <MdKeyboardDoubleArrowDown size={30} />
             View More
           </button>
+                </Modal.Toggle>
+      
         </nav>
       </div>
+      <Modal.Window windowName="Update">
+      <Upgrade/>   
+                         </Modal.Window>
+              </Modal>
     </div>
   );
 };
