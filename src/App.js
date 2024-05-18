@@ -130,8 +130,8 @@ function App() {
           element: <BlockedApp />,
         },
         {
-          path: "/location",
-          element: <Location />,
+      path: "/location",
+      element: <Location />,
         },
         {
           path: "/location/livelocation",
