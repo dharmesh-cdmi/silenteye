@@ -12,7 +12,7 @@ import NotificationSetting from "./Pages/NotificationSetting";
 import InstantAlert from "./Pages/InstantAlert.jsx";
 import AppPermission from "./Pages/AppPermission";
 import PermisionManager from "./Pages/PermisionManager";
-import Export from "./Pages/Export.jsx";
+import Export from "./Pages/Export/Export.js";
 import Payment from "./Pages/Payment.jsx";
 import Callhistory from "./Pages/Calls/Callhistory.jsx";
 import BlockedCalls from "./Pages/Calls/BlockedCalls.jsx";
@@ -27,6 +27,12 @@ import Location from "./Pages/Location/Location.js"
 import GeoFence from "./Pages/Location/geoFence.js"
 import LocationHistory from "./Pages/Location/LocationHistory.js"
 
+import AllApps from "./Pages/Apps/AllApps.js"
+import TotalApp from "./Pages/Apps/TotalApps.js"
+import BrowseHistory from "./Pages/Browser/BrowserHistory.js"
+import BrowseDataUsage from "./Pages/Browser/BrowseDataUsage.js"
+import WebFilter from "./Pages/Browser/WebFilter.js"
+import ScreenTime from "./Pages/Browser/ScreenTime.js"
 
 function App() {
   const router = createBrowserRouter([
@@ -122,8 +128,54 @@ function App() {
         {
           path: "/apps/blockedapp",
           element: <BlockedApp />,
-        },  
+        },
+        {
+      path: "/location",
+      element: <Location />,
+
+
+        },
+        {
+          path: "/location/livelocation",
+          element: <Location />,
+
+        },
+        {
+      path: "/location/locationhistory",
+      element: <LocationHistory />,
+          
+        },
+        {
+      path: "/location/geofrence",
+      element: <GeoFence />,
+          
+        },
+        {
+          path: "/notes",
+          element: <Notes />,
+              
+            },
       
+    {
+      path: "/apps/allapps",
+          element: <AllApps />,
+    },
+        {
+      path: "/browser/browseHistory",
+          element: <BrowseHistory />,
+    },
+    {
+      path: "/browser/datausage",
+          element: <BrowseDataUsage />,
+    },
+    {
+      path: "/browser/webfilter",
+          element: <WebFilter />,
+    },
+    {
+      path: "/browser/screentime",
+          element: <ScreenTime />,
+    },
       ],
     },
   ]);
