@@ -291,23 +291,11 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
       subMenu: [
         {
           name: "Browser History",
-          link: "browserhistory",
+          link: "browseHistory",
         },
         {
           name: "Web Filters",
-          link: "webfilters"
-        },
-        {
-          name: "Blocked Websites",
-          link: "blockedwebsites",
-        },
-        {
-          name: "Bookmarked Websites",
-          link: "bookmarkedwebsites"
-        },
-        {
-          name: "Incognito Tabs",
-          link: "incognitotabs"
+          link: "webfilter"
         },
         {
           name: "Data Usage",
