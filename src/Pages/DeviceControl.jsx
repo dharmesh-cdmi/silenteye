@@ -21,6 +21,9 @@ import { IoIosArrowDown, IoIosCall } from "react-icons/io";
 import { CiMobile3 } from "react-icons/ci";
 import { AiFillEdit } from "react-icons/ai";
 import CallsHead from "../components/Calls/CallsHead";
+import Verizon from "../components/Shared/Verizon";
+import Modal from "../components/Shared/Modal";
+import FilterTegModal from "../components/Shared/FilterTegModal";
 
 const DeviceControl = () => {
   return (
@@ -53,12 +56,19 @@ const DeviceControl = () => {
                 </p>
               </div>
               <div className="flex-1 w-15 text-end me-2">
-                <label className="toggle-switch">
-                  <input type="checkbox" />
-                  <div className="toggle-switch-background">
-                    <div className="toggle-switch-handle" />
-                  </div>
-                </label>
+                <Modal>
+                  <Modal.Toggle toggleName="Update">
+                    <label className="toggle-switch">
+                      <input type="checkbox" />
+                      <div className="toggle-switch-background">
+                        <div className="toggle-switch-handle" />
+                      </div>
+                    </label>
+                  </Modal.Toggle>
+                  <Modal.Window windowName="Update">
+                    <Verizon />
+                  </Modal.Window>
+                </Modal>
               </div>
             </div>
             <div className="flex ">
@@ -90,12 +100,19 @@ const DeviceControl = () => {
                 </p>
               </div>
               <div className="flex-1 w-15 text-end me-2">
-                <label className="toggle-switch">
-                  <input type="checkbox" checked />
-                  <div className="toggle-switch-background">
-                    <div className="toggle-switch-handle" />
-                  </div>
-                </label>
+                <Modal>
+                  <Modal.Toggle toggleName="Update">
+                    <label className="toggle-switch">
+                      <input type="checkbox" checked />
+                      <div className="toggle-switch-background">
+                        <div className="toggle-switch-handle" />
+                      </div>
+                    </label>
+                  </Modal.Toggle>
+                  <Modal.Window windowName="Update">
+                    <Verizon />
+                  </Modal.Window>
+                </Modal>
               </div>
             </div>
             <div className="flex ">
@@ -144,12 +161,19 @@ const DeviceControl = () => {
                 </p>
               </div>
               <div className="flex-1 w-15 text-end me-2">
-                <label className="toggle-switch">
-                  <input type="checkbox" checked />
-                  <div className="toggle-switch-background">
-                    <div className="toggle-switch-handle" />
-                  </div>
-                </label>
+                <Modal>
+                  <Modal.Toggle toggleName="Update">
+                    <label className="toggle-switch">
+                      <input type="checkbox" checked />
+                      <div className="toggle-switch-background">
+                        <div className="toggle-switch-handle" />
+                      </div>
+                    </label>
+                  </Modal.Toggle>
+                  <Modal.Window windowName="Update">
+                    <Verizon />
+                  </Modal.Window>
+                </Modal>
               </div>
             </div>
             <div className="flex ">
@@ -308,11 +332,18 @@ const DeviceControl = () => {
                 className="object-contain ps-3 md:ps-0 h-28 md:h-12"
               />
               <img src={menu1} alt="img" className="object-contain h-12" />
-              <img
-                src={switc}
-                alt="img"
-                className="object-contain h-12 hidden md:block "
-              />
+              <Modal>
+                <Modal.Toggle toggleName="Update">
+                  <img
+                    src={switc}
+                    alt="img"
+                    className="object-contain h-12 hidden md:block cursor-pointer"
+                  />
+                </Modal.Toggle>
+                <Modal.Window windowName="Update">
+                  <Verizon />
+                </Modal.Window>
+              </Modal>
             </div>
           </div>
         </div>
@@ -321,27 +352,42 @@ const DeviceControl = () => {
         <div className="grid grid-cols-1 md:grid-cols-3  ">
           <div className="flex p-4 col-span-2">
             <div>
-              <img src={frame87} alt="img" className="object-contain mt-2 sm:w-24" />
+              <img
+                src={frame87}
+                alt="img"
+                className="object-contain mt-2 sm:w-24"
+              />
             </div>
             <div className="mx-2 w-70">
-             <div className="flex ">
-             <div>
-             <p className="font-semibold text-xl text-gray-900">
-                Filter harmful content on Device{" "}
-               <div className="hidden md:block">
-               <button
-                  type="button"
-                  class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
-                >
-                  <AiFillEdit />
-                  Edit Filters
-                </button>
-               </div>
-              </p>
-             </div>
-             <img src={safemode} alt="img" className="object-contain h-12 block md:hidden" />
-
-             </div>
+              <div className="flex ">
+                <div>
+                  <p className="font-semibold text-xl text-gray-900">
+                    Filter harmful content on Device{" "}
+                    <div className="hidden md:block">
+                     
+                      <Modal>
+                <Modal.Toggle toggleName="Update">
+                <button
+                        type="button"
+                        class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
+                      >
+                        <AiFillEdit />
+                        Edit Filters
+                      </button>
+                </Modal.Toggle>
+                <Modal.Window windowName="Update">
+                 <FilterTegModal/>      
+                         </Modal.Window>
+              </Modal>
+                    </div>
+                  </p>
+                </div>
+                <img
+                  src={safemode}
+                  alt="img"
+                  className="object-contain h-12 block md:hidden"
+                />
+              </div>
               <p className="text-sm font-medium text-gray-400">
                 Social Media Content Filter
               </p>
@@ -365,12 +411,15 @@ const DeviceControl = () => {
                   +25 More Tags
                 </span>
               </div>
-              
             </div>
           </div>
           <div className="flex p-4 mt-4 justify-end">
             <div>
-              <img src={safemode} alt="img" className="object-contain h-12 hidden md:block" />
+              <img
+                src={safemode}
+                alt="img"
+                className="object-contain h-12 hidden md:block"
+              />
             </div>
           </div>
         </div>

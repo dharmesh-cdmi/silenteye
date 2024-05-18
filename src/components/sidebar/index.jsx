@@ -713,53 +713,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
                 ))}
               </div>
 
-            {/* <li className="liborder">
-              <NavLink to={"/SocialApps"} className="link">
-               
-                <img
-                  className="h-5 "
-                  src={Chat}
-                  alt
-                />
-                Social Apps
-              </NavLink>
-            </li> */}
-            {/* <li className="liborder">
-              <NavLink to={"/AllAllerts"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                All Allerts & Notifications
-              </NavLink>
-            </li>
-            <li className="liborder">
-              <NavLink to={"/NotificationSettings"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                Notification Setting
-              </NavLink>
-            </li>
-            <li className="liborder">
-              <NavLink to={"/InstantAlerts"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                Instant Alerts
-              </NavLink>
-            </li>
-            <li className="liborder">
-              <NavLink to={"/AppPermisions"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                App Permissions
-              </NavLink>
-            </li>
-            <li className="liborder">
-              <NavLink to={"/PermisionManager"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                Permission Manager
-              </NavLink>
-            </li>
-            <li className="liborder">
-              <NavLink to={"/Payment"} className="link">
-                <SlSettings size={23} className="min-w-max" />
-                Saved Payment Methods
-              </NavLink>
-            </li> */}
+         
             <li className="liborder">
               <NavLink to={"/Export"} className="link">
                 <img
@@ -771,7 +725,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
               </NavLink>
             </li>
             <li className="liborder">
-              <NavLink to={"/"} className="link">
+              <NavLink to={"/logout"} className="link">
               <img
                   className="h-5 "
                   src={Logout}

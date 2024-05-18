@@ -21,8 +21,8 @@ export function BuyNow2({ onCloseModal }){
     <h3 className="font-[500] opacity-[50%] text-[18px] text-[#000000]">
       Buy Now For Premium Live Features. This feature is only available after purchase!
       </h3>
-    <div className="mt-6  pb-[12px] ">
-      <Button className="py-[10px] px-[32px] text-[18px] font-[600] text-[#000000] " onClick={onCloseModal}>
+    <div className="mt-6  pb-[12px] w-[100%]">
+      <Button className="py-[10px] w-[100%] px-[32px] text-[18px] font-[600] text-[#000000] " onClick={onCloseModal}>
          Cancel
       </Button>
     </div>

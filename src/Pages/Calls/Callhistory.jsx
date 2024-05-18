@@ -10,16 +10,13 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { IoMicOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
+import Upgrade from "../../components/Shared/Upgrade";
+import Modal from "../../components/Shared/Modal";
+import Delete from "../../assests/images/delete.png";
 
 const Callhistory = () => {
   const callhistoryData = [
-    {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
-      name: "Hewie Gamage",
-      callIcon: <VscCallOutgoing />,
-      callStatus: "outgoing",
-      date: "21/05/2024",
-    },
+   
     {
       img: "https://xsgames.co/randomusers/avatar.php?g=female",
       name: "Tommi Osayande",
@@ -97,40 +94,76 @@ const Callhistory = () => {
             <hr />
             {/* body */}
             <div className="overflow-y-scroll h-96 no-scrollbar">
+            <ul  className="flex p-2 liborder cursor-pointer bg-gray-100">
+          
+                      <li className="flex-none w-14 pt-2">
+                        <img
+                          className="w-10 h-10 rounded-full m-auto"
+                          src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                          alt
+                        />
+                      </li>
+                      <li className="p-1 flex-1 w-64 font-semibold">
+                        <div>
+                        "Hewie Gamage"
+                          <div
+                            className="text-gray-400 flex"
+                          >
+                            <p className="my-auto "><VscCallOutgoing /></p>
+                            <p className="ps-1">outgoing</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="p-1 text-gray-400 font-semibold pt-4">
+                      "21/05/2024"
+                      </li>
+                    </ul>
               {callhistoryData.map((info, i) => (
-                <ul key={i} className="flex p-2 liborder">
-                  <li className="flex-none w-14 pt-2">
-                    <img
-                      className="w-10 h-10 rounded-full m-auto"
-                      src={info.img}
-                      alt
-                    />
-                  </li>
-                  <li className="p-1 flex-1 w-64 font-semibold">
-                    <div>
-                      {info.name}
-                      <div
-                        className={`${
-                          info.callStatus == "outgoing" && "text-gray-400"
-                        } ${info.callStatus == "missed" && "text-red-600"} ${
-                          info.callStatus == "incoming" && "text-green-600"
-                        } flex font-normal`}
-                      >
-                        <p className="my-auto ">{info.callIcon}</p>
-                        <p className="ps-1">{info.callStatus}</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-1 text-gray-400 font-semibold pt-4">
-                    {info.date}
-                  </li>
-                </ul>
+                <Modal>
+                  <Modal.Toggle toggleName="Update">
+                    <ul key={i} className="flex p-2 liborder cursor-pointer">
+                      <li className="flex-none w-14 pt-2">
+                        <img
+                          className="w-10 h-10 rounded-full m-auto"
+                          src={info.img}
+                          alt
+                        />
+                      </li>
+                      <li className="p-1 flex-1 w-64 font-semibold">
+                        <div>
+                          {info.name}
+                          <div
+                            className={`${
+                              info.callStatus == "outgoing" && "text-gray-400"
+                            } ${
+                              info.callStatus == "missed" && "text-red-600"
+                            } ${
+                              info.callStatus == "incoming" && "text-green-600"
+                            } flex font-normal`}
+                          >
+                            <p className="my-auto ">{info.callIcon}</p>
+                            <p className="ps-1">{info.callStatus}</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="p-1 text-gray-400 font-semibold pt-4">
+                        {info.date}
+                      </li>
+                    </ul>
+                  </Modal.Toggle>
+                  <Modal.Window windowName="Update">
+                    <Upgrade/>
+                  </Modal.Window>
+                </Modal>
               ))}
             </div>
           </div>
 
           {/* second column */}
           <div className="border-r">
+          <Modal>
+                 
+                
             {/* head */}
             <div className="text-lg font-bold p-0 md:p-2 ">
               <ul className="flex p-2 ">
@@ -160,20 +193,26 @@ const Callhistory = () => {
                 </li>
                 <li className="p-1 w-20 text-gray-400 font-semibold pt-4 border-none">
                   <div className="flex gap-4 mt-6 ">
+                  <Modal.Toggle toggleName="Update">                 
+                    
                     <div className="hidden md:block">
                       <BsPersonAdd
                         className="text-slate-900 cursor-pointer"
                         size={25}
                       />
-                      
                     </div>
+                   
+                    </Modal.Toggle>
+                    <Modal.Toggle toggleName="Update">                 
                     <div className="hidden md:block">
-                    <RiDeleteBin6Line
-                        className="text-red-900 cursor-pointer"
-                        size={25}
-                      />
-                      
+                      <img
+                  className="h-6 cursor-pointer"
+                  src={Delete}
+                  alt
+                />
                     </div>
+                   
+                    </Modal.Toggle>
                   </div>
                 </li>
               </ul>
@@ -202,15 +241,26 @@ const Callhistory = () => {
                 <li className="p-1 text-gray-400 font-semibold pt-2 ">
                   <div className="flex gap-4 mt-2">
                     <p className="ps-1">00:18:27s</p>
-
-                    <IoMicOutline
-                      className="text-slate-900 cursor-pointer"
-                      size={25}
-                    />
-                    <RiDeleteBin6Line
-                      className="text-red-900 cursor-pointer"
-                      size={25}
-                    />
+                    <Modal.Toggle toggleName="Update">                 
+                    <div className="hidden md:block">
+                      
+                  <IoMicOutline
+                    className="text-slate-900 cursor-pointer"
+                    size={25}
+                  />
+                    </div>
+                   
+                    </Modal.Toggle>
+                   <Modal.Toggle toggleName="Update">                 
+                    <div className="hidden md:block">
+                      <img
+                  className="h-6 cursor-pointer"
+                  src={Delete}
+                  alt
+                />
+                    </div>
+                   
+                    </Modal.Toggle>
                   </div>
                 </li>
               </ul>
@@ -232,17 +282,28 @@ const Callhistory = () => {
                   </div>
                 </li>
                 <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                  <div className="flex gap-4 mt-2">
+                <div className="flex gap-4 mt-2">
                     <p className="ps-1">00:18:27s</p>
-
-                    <IoMicOutline
-                      className="text-slate-900 cursor-pointer"
-                      size={25}
-                    />
-                    <RiDeleteBin6Line
-                      className="text-red-900 cursor-pointer"
-                      size={25}
-                    />
+                    <Modal.Toggle toggleName="Update">                 
+                    <div className="hidden md:block">
+                      
+                  <IoMicOutline
+                    className="text-slate-900 cursor-pointer"
+                    size={25}
+                  />
+                    </div>
+                   
+                    </Modal.Toggle>
+                   <Modal.Toggle toggleName="Update">                 
+                    <div className="hidden md:block">
+                      <img
+                  className="h-6 cursor-pointer"
+                  src={Delete}
+                  alt
+                />
+                    </div>
+                   
+                    </Modal.Toggle>
                   </div>
                 </li>
               </ul>
@@ -264,17 +325,28 @@ const Callhistory = () => {
                   </div>
                 </li>
                 <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                  <div className="flex gap-4 mt-2">
+                <div className="flex gap-4 mt-2">
                     <p className="ps-1">00:18:27s</p>
-
-                    <IoMicOutline
-                      className="text-slate-900 cursor-pointer"
-                      size={25}
-                    />
-                    <RiDeleteBin6Line
-                      className="text-red-900 cursor-pointer"
-                      size={25}
-                    />
+                    <Modal.Toggle toggleName="Update">                 
+                    <div className="hidden md:block">
+                      
+                  <IoMicOutline
+                    className="text-slate-900 cursor-pointer"
+                    size={25}
+                  />
+                    </div>
+                   
+                    </Modal.Toggle>
+                   <Modal.Toggle toggleName="Update">                 
+                    <div className="hidden md:block">
+                      <img
+                  className="h-6 cursor-pointer"
+                  src={Delete}
+                  alt
+                />
+                    </div>
+                   
+                    </Modal.Toggle>
                   </div>
                 </li>
               </ul>
@@ -296,17 +368,28 @@ const Callhistory = () => {
                   </div>
                 </li>
                 <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                  <div className="flex gap-4 mt-2">
+                <div className="flex gap-4 mt-2">
                     <p className="ps-1">00:18:27s</p>
-
-                    <IoMicOutline
-                      className="text-slate-900 cursor-pointer"
-                      size={25}
-                    />
-                    <RiDeleteBin6Line
-                      className="text-red-900 cursor-pointer"
-                      size={25}
-                    />
+                    <Modal.Toggle toggleName="Update">                 
+                    <div className="hidden md:block">
+                      
+                  <IoMicOutline
+                    className="text-slate-900 cursor-pointer"
+                    size={25}
+                  />
+                    </div>
+                   
+                    </Modal.Toggle>
+                   <Modal.Toggle toggleName="Update">                 
+                    <div className="hidden md:block">
+                      <img
+                  className="h-6 cursor-pointer"
+                  src={Delete}
+                  alt
+                />
+                    </div>
+                   
+                    </Modal.Toggle>
                   </div>
                 </li>
               </ul>
@@ -361,16 +444,26 @@ const Callhistory = () => {
                 </div>
 
                 <div className="m-auto md:m-0">
-                  <button
+
+                <Modal.Toggle toggleName="Update">                 
+                    
+                <button
                     type="button"
                     class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
                   >
                     <MdKeyboardDoubleArrowDown size={30} />
                     View More
                   </button>
+                   
+                    </Modal.Toggle>
+                  
                 </div>
               </div>
             </div>
+            <Modal.Window windowName="Update">
+                    <Upgrade/>
+                  </Modal.Window>
+                </Modal>
           </div>
         </div>
       </div>
