@@ -132,8 +132,6 @@ function App() {
         {
       path: "/location",
       element: <Location />,
-
-
         },
         {
           path: "/location/livelocation",
