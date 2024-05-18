@@ -77,7 +77,7 @@ function App() {
         },
 
         {
-          path: "/SavedPassword",
+          path: "/Privacy&Security/SavedPassword",
           element: <SavedPassword />,
         },
 
@@ -90,19 +90,19 @@ function App() {
           element: <SocialApps />,
         },
         {
-          path: "/AllAllerts",
+          path: "/Alert&Notification/AllAllerts",
           element: <AllAllert />,
         },
         {
-          path: "/NotificationSettings",
+          path: "/Alert&Notification/NotificationSettings",
           element: <NotificationSetting />,
         },
         {
-          path: "/InstantAlerts",
+          path: "/Alert&Notification/InstantAlerts",
           element: <InstantAlert />,
         },
         {
-          path: "/AppPermisions",
+          path: "/Privacy&Security/AppPermisions",
           element: <AppPermission />,
         },
         {
@@ -114,7 +114,7 @@ function App() {
           element: <Export />,
         },
         {
-          path: "/Payment",
+          path: "/Privacy&Security/Payment",
           element: <Payment />,
         },
         {
