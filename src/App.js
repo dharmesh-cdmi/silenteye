@@ -12,7 +12,7 @@ import NotificationSetting from "./Pages/NotificationSetting";
 import InstantAlert from "./Pages/InstantAlert.jsx";
 import AppPermission from "./Pages/AppPermission";
 import PermisionManager from "./Pages/PermisionManager";
-import Export from "./Pages/Export/Export.js";
+import Export from "./Pages/Export.jsx";
 import Payment from "./Pages/Payment.jsx";
 import Callhistory from "./Pages/Calls/Callhistory.jsx";
 import BlockedCalls from "./Pages/Calls/BlockedCalls.jsx";
