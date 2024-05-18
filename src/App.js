@@ -23,16 +23,16 @@ import BlockedContact from "./Pages/Contacts/BlockedContact.jsx";
 import InstalledApp from "./Pages/Apps/InstalledApp.js";
 import UnInstalledApp from "./Pages/Apps/UnstalledApp.js";
 import BlockedApp from "./Pages/Apps/BlockedApp.js";
-import Location from "./Pages/Location/Location.js"
-import GeoFence from "./Pages/Location/geoFence.js"
-import LocationHistory from "./Pages/Location/LocationHistory.js"
+import Location from "./Pages/Location/Location.js";
+import GeoFence from "./Pages/Location/geoFence.js";
+import LocationHistory from "./Pages/Location/LocationHistory.js";
 
-import AllApps from "./Pages/Apps/AllApps.js"
-import TotalApp from "./Pages/Apps/TotalApps.js"
-import BrowseHistory from "./Pages/Browser/BrowserHistory.js"
-import BrowseDataUsage from "./Pages/Browser/BrowseDataUsage.js"
-import WebFilter from "./Pages/Browser/WebFilter.js"
-import ScreenTime from "./Pages/Browser/ScreenTime.js"
+import AllApps from "./Pages/Apps/AllApps.js";
+import TotalApp from "./Pages/Apps/TotalApps.js";
+import BrowseHistory from "./Pages/Browser/BrowserHistory.js";
+import BrowseDataUsage from "./Pages/Browser/BrowseDataUsage.js";
+import WebFilter from "./Pages/Browser/WebFilter.js";
+import ScreenTime from "./Pages/Browser/ScreenTime.js";
 
 function App() {
   const router = createBrowserRouter([
@@ -130,52 +130,54 @@ function App() {
           element: <BlockedApp />,
         },
         {
-      path: "/location",
-      element: <Location />,
-
-
+          path: "/location",
+          element: <Location />,
         },
         {
           path: "/location/livelocation",
           element: <Location />,
-
         },
         {
-      path: "/location/locationhistory",
-      element: <LocationHistory />,
-          
+          path: "/location/locationhistory",
+          element: <LocationHistory />,
         },
         {
-      path: "/location/geofrence",
-      element: <GeoFence />,
-          
+          path: "/location/geofrence",
+          element: <GeoFence />,
         },
         {
           path: "/notes",
           element: <Notes />,
-              
-            },
-      
-    {
-      path: "/apps/allapps",
-          element: <AllApps />,
-    },
+        },
+
         {
-      path: "/browser/browseHistory",
+          path: "/apps/allapps",
+          element: <AllApps />,
+        },
+        {
+          path: "/browser/browseHistory",
           element: <BrowseHistory />,
-    },
-    {
-      path: "/browser/datausage",
+        },
+        {
+          path: "/browser/datausage",
           element: <BrowseDataUsage />,
-    },
-    {
-      path: "/browser/webfilter",
+        },
+        {
+          path: "/browser/webfilter",
           element: <WebFilter />,
-    },
-    {
-      path: "/browser/screentime",
+        },
+        {
+          path: "/browser/screentime",
           element: <ScreenTime />,
-    },
+        },
+        {
+          path: "/SavedPassword",
+          element: <ScreenTime />,
+        },
+
+
+        
+
       ],
     },
   ]);
