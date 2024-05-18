@@ -352,12 +352,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
           name: "GeoFence",
           link: "geofrence",
         },
-        {
-          name: "Wifi Logger",
-          link: "wifilogger",
-        },
        
-     
       ],
     },
    
