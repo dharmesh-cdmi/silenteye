@@ -159,20 +159,20 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
   const subMenusList2 = [
    
     {
-      name: "Network",
+      name: "network",
       icon: Network,     
       subMenu: [
         {
           name: "Mobile Network",
-          link: "mobilenetwork",
+          link: "mobile-network",
         },
         {
           name: "Wifi Network",
-          link: "wifinetwork"
+          link: "wifi-network"
         },
         {
           name: "Data Usage",
-          link: "datausage",
+          link: "data-usage",
         },       
      
       ],
@@ -195,14 +195,14 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "All Captures",
-          link: "allcaptures",
+          link: "",
         },
        
      
       ],
     },
     {
-      name: "Media",
+      name: "media",
       icon: Media,     
       subMenu: [
         {
@@ -238,11 +238,6 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
           name: "Hidden",
           link: false,
         },
-
-       
-       
-
-       
        
      
       ],
