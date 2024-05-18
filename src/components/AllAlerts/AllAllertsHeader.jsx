@@ -27,7 +27,7 @@ const AllAllertsHeader = () => {
     <div className="flex lg:flex-row flex-col lg:justify-between  items-start  lg:items-center">
       <div className="item-one flex flex-row items-center ">
         <div
-          className="image-wrapper p-[10px]  border-[#D0D5DD] border-[1px] cursor-pointer  rounded-[8px]"
+          className="image-wrapper p-[10px]  shadow-[0px_0px_56px_0px_#00000014]  border-[#D0D5DD] border-[1px] cursor-pointer  rounded-[8px]"
           onClick={moveBacks}
         >
           <img src={moveBack} alt="move-Back" />
@@ -53,7 +53,7 @@ const AllAllertsHeader = () => {
               <Modal.Toggle toggleName="export-allAlert">
                 <Button
                   onClick={exportAllAlerts}
-                  className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
+                  className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium px-[12px]    py-[10px] text-[#101828] text-center"
                 >
                   <img src={exportIcon} alt="export" className="pe-2" />
                   Export
@@ -69,7 +69,7 @@ const AllAllertsHeader = () => {
               <Modal.Toggle toggleName="export-allAlert">
                 <Button
                   onClick={settingsAllAlerts}
-                  className="text-[18px] drop-shadow-2xl font-medium px-[12px] custom-shadow   py-[10px] text-[#101828] text-center"
+                  className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]  font-medium px-[12px]    py-[10px] text-[#101828] text-center"
                 >
                   <img src={settingIcon} alt="setting" className="pe-2" />
                   Setting

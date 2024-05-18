@@ -22,29 +22,23 @@ const AllAllertsData = [
       subheading: "Do you want to go see a movie tonight?",
       time: "09:10 AM",
     },
+    
     {
       id: "2",
-      img: location,
-      heading: "Asher is Out of Location",
-      subheading: "Location Alert ! GeoFencer.",
-      time: "08:44 AM",
-    },
-    {
-      id: "3",
       img: youtube,
       heading: "Watch Now : Tll News New Video",
       subheading: "How you feel about new video?",
       time: "08:44 AM",
     },
     {
-      id: "4",
+      id: "3",
       img: messenger,
       heading: "Yoknin Yossee",
       subheading: "Hey ! How are you?",
       time: "08:43 AM",
     },
     {
-      id: "5",
+      id: "4",
       img: whatsapp,
       heading: "Moon & Urus",
       subheading: "New Office Table Available Now !",
@@ -95,7 +89,7 @@ const AllAllert = () => {
           <Modal.Toggle toggleName="viewMore-allAllert">
             <Button
               onClick={viewMore}
-              className="text-[18px]   drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
+              className="text-[18px]  shadow-[0px_0px_56px_0px_#00000014]  font-medium px-[32px]  py-[10px] text-[#101828] text-center"
             >
               View More
               <img src={More} alt="more" className="ps-2" />

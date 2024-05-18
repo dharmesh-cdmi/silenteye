@@ -94,7 +94,7 @@ const PermisionManager = () => {
           <Modal.Toggle toggleName="viewMore-PermisionManager">
             <Button
               onClick={viewMore}
-              className="text-[18px] drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
+              className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]  font-medium px-[32px]  py-[10px] text-[#101828] text-center"
             >
               View More
               <img src={More} alt="more" className="ps-2" />
