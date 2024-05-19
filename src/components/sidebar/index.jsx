@@ -262,7 +262,6 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
           name: "Screen Recordings",
           link: false,
          
-
         },
         {
           name: "Recently Deleted",
@@ -305,15 +304,15 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "App Notifications",
-          link: "appnotifications"
+          link: "notification",
         },
         {
           name: "Screen Time",
-          link: "screentime"
+          link: "screentime",
         },
         {
           name: "Login & Passwords",
-          link: "loginpasswords"
+        link: false,
         },
      
       ],
@@ -332,15 +331,15 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Blocked Websites",
-          link: "blockedwebsites",
+         link: false,
         },
         {
           name: "Bookmarked Websites",
-          link: "bookmarkedwebsites"
+          link: false,
         },
         {
           name: "Incognito Tabs",
-          link: "incognitotabs"
+          link: false,
         },
         {
           name: "Data Usage",
@@ -363,7 +362,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Recent Files",
-          link: "recentfiles"
+          link: false,
         },
         {
           name: "Downloads",
@@ -371,11 +370,11 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Documents",
-          link: "documents",
+         link: false,
         },
         {
           name: "Recently Deleted",
-          link: "recentlydeleted",
+          link: false,
         },
        
      
@@ -399,7 +398,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Wifi Logger",
-          link: "wifilogger",
+           link: false
         },
        
      

@@ -42,6 +42,11 @@ import VideosMain from "./components/media/videos/VideosMain";
 import AlbumMain from "./components/media/albums/AlbumMain";
 import CalenderMain from "./components/calender/CalenderMain";
 import ScreenShotsMain from "./components/media/screenshots/ScreenShotsMain";
+import AllFiles from "./Pages/Files/AllFiles.js"
+import FilesDownload from "./Pages/Files/FilesDownload.js"
+import Appsnotification from "./Pages/Apps/Appsnotification.js"
+import Appsscreentime from "./Pages/Apps/AppScreentimem.js"
+
 
 function App() {
   const router = createBrowserRouter([
@@ -255,7 +260,7 @@ function App() {
           element: <AllApps />,
         },
         {
-          path: "/browser/browseHistory",
+          path: "/browser/browserhistory",
           element: <BrowseHistory />,
         },
         {
@@ -263,7 +268,7 @@ function App() {
           element: <BrowseDataUsage />,
         },
         {
-          path: "/browser/webfilter",
+          path: "/browser/webfilters",
           element: <WebFilter />,
         },
         {
@@ -271,13 +276,28 @@ function App() {
           element: <ScreenTime />,
         },
         {
-          path: "/SavedPassword",
-          element: <ScreenTime />,
+          path: "/browser/datausage",
+          element: <datausage />,
         },
 
 
         
-
+{
+  path: "/files/allfiles",
+  element: <AllFiles />,
+},
+{
+  path: "/files/downloads",
+  element: <FilesDownload />,
+},
+{
+  path: "/apps/notification",
+  element: <Appsnotification />,
+},
+{
+  path: "/apps/screentime",
+  element: <Appsscreentime />,
+}
       ],
     },
   ]);
