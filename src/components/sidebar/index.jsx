@@ -304,11 +304,11 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "App Notifications",
-          link: false,
+          link: "notification",
         },
         {
           name: "Screen Time",
-          link: false,
+          link: "screentime",
         },
         {
           name: "Login & Passwords",

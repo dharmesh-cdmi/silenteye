@@ -44,6 +44,9 @@ import CalenderMain from "./components/calender/CalenderMain";
 import ScreenShotsMain from "./components/media/screenshots/ScreenShotsMain";
 import AllFiles from "./Pages/Files/AllFiles.js"
 import FilesDownload from "./Pages/Files/FilesDownload.js"
+import Appsnotification from "./Pages/Apps/Appsnotification.js"
+import Appsscreentime from "./Pages/Apps/AppScreentimem.js"
+
 
 function App() {
   const router = createBrowserRouter([
@@ -286,6 +289,14 @@ function App() {
 {
   path: "/files/downloads",
   element: <FilesDownload />,
+},
+{
+  path: "/apps/notification",
+  element: <Appsnotification />,
+},
+{
+  path: "/apps/screentime",
+  element: <Appsscreentime />,
 }
       ],
     },
