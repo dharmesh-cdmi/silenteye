@@ -1,0 +1,28 @@
+.downloadfilegap h3{
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+
+       /* APPS CONTAINERS */
+    .appsComponentsCon {
+        gap: 0.8rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+   .downloadfilegap .appBox {
+        width: 100px;
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+    .appBoxicon {
+        font-size: 3rem;
+    }
+    .appBoxDes h3 {
+        font-size: 0.8rem;
+    }
+    .appBoxDes p {
+        font-size: 0.7rem;
+    }
+}
