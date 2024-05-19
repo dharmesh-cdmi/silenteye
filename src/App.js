@@ -26,13 +26,22 @@ import BlockedApp from "./Pages/Apps/BlockedApp.js";
 import Location from "./Pages/Location/Location.js";
 import GeoFence from "./Pages/Location/geoFence.js";
 import LocationHistory from "./Pages/Location/LocationHistory.js";
-
 import AllApps from "./Pages/Apps/AllApps.js";
 import TotalApp from "./Pages/Apps/TotalApps.js";
 import BrowseHistory from "./Pages/Browser/BrowserHistory.js";
 import BrowseDataUsage from "./Pages/Browser/BrowseDataUsage.js";
 import WebFilter from "./Pages/Browser/WebFilter.js";
 import ScreenTime from "./Pages/Browser/ScreenTime.js";
+import MessagesMain from "./components/messages/MessagesMain";
+import MobileMain from "./components/network/mobile/MobileMain";
+import WifiMain from "./components/network/wifi/WifiMain";
+import DataMain from "./components/network/data-usage/DataMain";
+import MediaMain from "./components/media/photos/photosMain";
+import CameraMain from "./components/camera/CameraMain";
+import VideosMain from "./components/media/videos/VideosMain";
+import AlbumMain from "./components/media/albums/AlbumMain";
+import CalenderMain from "./components/calender/CalenderMain";
+import ScreenShotsMain from "./components/media/screenshots/ScreenShotsMain";
 
 function App() {
   const router = createBrowserRouter([
@@ -66,11 +75,20 @@ function App() {
           element: <ForwardCalls />,
         },
         // Contacts Routes
-
         {
           path: "/contacts/contactslist",
           element: <ContactList />,
         },
+        { path: "messages", element: <MessagesMain /> },
+        { path: "/network/mobile-network", element: <MobileMain /> },
+        { path: "/network/wifi-network", element: <WifiMain /> },
+        { path: "/network/data-usage", element: <DataMain /> },
+        { path: "camera", element: <CameraMain /> },
+        { path: "media/photos", element: <MediaMain /> },
+        { path: "media/videos", element: <VideosMain /> },
+        { path: "media/screenshots", element: <ScreenShotsMain /> },
+        { path: "media/albums", element: <AlbumMain /> },
+        { path: "/calendar", element: <CalenderMain /> },
         {
           path: "/contacts/blockedcontacts",
           element: <BlockedContact />,
@@ -86,6 +104,30 @@ function App() {
           element: <KeyLogger />,
         },
         {
+          path: "/KeyLogger",
+          element: <KeyLogger />,
+        },
+        {
+          path: "/KeyLogger",
+          element: <KeyLogger />,
+        },
+        {
+          path: "/SocialApps",
+          element: <SocialApps />,
+        },
+        {
+          path: "/AllAllerts",
+          element: <AllAllert />,
+        },
+        {
+          path: "/SocialApps",
+          element: <SocialApps />,
+        },
+        {
+          path: "/Alert&Notification/AllAllerts",
+          element: <AllAllert />,
+        },
+        {
           path: "/SocialApps",
           element: <SocialApps />,
         },
@@ -96,6 +138,30 @@ function App() {
         {
           path: "/Alert&Notification/NotificationSettings",
           element: <NotificationSetting />,
+        },
+        {
+          path: "/Alert&Notification/NotificationSettings",
+          element: <NotificationSetting />,
+        },
+        {
+          path: "/NotificationSettings",
+          element: <NotificationSetting />,
+        },
+        {
+          path: "/InstantAlerts",
+          element: <InstantAlert />,
+        },
+        {
+          path: "/AppPermisions",
+          element: <AppPermission />,
+        },
+        {
+          path: "/Alert&Notification/InstantAlerts",
+          element: <InstantAlert />,
+        },
+        {
+          path: "/Privacy&Security/AppPermisions",
+          element: <AppPermission />,
         },
         {
           path: "/Alert&Notification/InstantAlerts",
@@ -114,6 +180,38 @@ function App() {
           element: <Export />,
         },
         {
+          path: "/PermisionManager",
+          element: <PermisionManager />,
+        },
+        {
+          path: "/Export",
+          element: <Export />,
+        },
+        {
+          path: "/PermisionManager",
+          element: <PermisionManager />,
+        },
+        {
+          path: "/Export",
+          element: <Export />,
+        },
+        {
+          path: "/Payment",
+          element: <Payment />,
+        },
+        {
+          path: "/apps/installedapp",
+          element: <InstalledApp />,
+        },
+        {
+          path: "/Privacy&Security/Payment",
+          element: <Payment />,
+        },
+        {
+          path: "/apps/installedapp",
+          element: <InstalledApp />,
+        },
+        {
           path: "/Privacy&Security/Payment",
           element: <Payment />,
         },
@@ -130,14 +228,16 @@ function App() {
           element: <BlockedApp />,
         },
         {
-      path: "/location",
-      element: <Location />,
+          path: "/location",
+          element: <Location />,
         },
         {
           path: "/location/livelocation",
           element: <Location />,
         },
         {
+          path: "/location/locationhistory",
+          element: <LocationHistory />,
           path: "/location/locationhistory",
           element: <LocationHistory />,
         },

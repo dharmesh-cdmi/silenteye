@@ -1,8 +1,6 @@
 import {useState} from "react"
 import { Link } from 'react-router-dom';
-import { useMoveBack } from "../../hooks/useMoveBack";
-
-
+import { useMoveBack } from "../../hooks/useMoveBack.js";
 import "./Locationhead.css"
 
 import { IoFilterSharp } from "react-icons/io5";
@@ -11,7 +9,6 @@ import { TbFileExport } from "react-icons/tb";
 import { IoIosSearch } from "react-icons/io";
 
 // FILES
-import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx"
 
 const LocationHead=()=>{
 const moveBacks = useMoveBack();

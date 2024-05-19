@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 import "../../components/LocationHead/Locationhead.css"
 import "./Export.css";
 

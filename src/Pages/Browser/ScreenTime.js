@@ -1,4 +1,5 @@
-import BrowserHead from "../../components/BrowserHead/BrowserHead.js"
+import BrowserHead from '../../components/BrowserHead/BrowserHead.js'
+
 import "./ScreenTime.css"
 
 import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx"

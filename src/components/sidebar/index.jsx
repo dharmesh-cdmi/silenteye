@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { useRef } from "react";
-import SubMenu, { SubMenu2 } from "./SubMenu";
+import  { SubMenu2 } from "./SubMenu";
 import { motion } from "framer-motion";
+import SubMenu from "./SubMenu"
 
 // * React icons
 import { IoLocationOutline } from "react-icons/io5";
+
 
 import { SlSettings } from "react-icons/sl";
 
@@ -58,6 +60,7 @@ import Twitter from "../../assests/images/sideicon/SideBar/Twitter.png";
 import Viber from "../../assests/images/sideicon/SideBar/Viber.png";
 import Zolo from "../../assests/images/sideicon/SideBar/Zolo.png";
 import whatsapp from "../../assests/images/sideicon/SideBar/whatsapp.png";
+
 import { IoMdAdd } from "react-icons/io";
 const Sidebar = ({ isTabletMid, open, setOpen }) => {
   const sidebarRef = useRef();
@@ -79,6 +82,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
     ? {
         open: {
           x: 0,
+          width: "15.5rem",
           width: "15.5rem",
           transition: {
             damping: 40,
@@ -108,9 +112,41 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
       };
 
+
+
+
+
+
   const subMenusList1 = [
     {
       name: "Calls",
+      icon: Calls,  
+      subMenu: [
+        {
+          name: "Call History",
+          link: "callhistory",
+        },
+        {
+          name: "Live Call",
+          link: false
+        },
+        {
+          name: "Blocked Calls",
+          link: "blockedcalls",
+        },
+        {
+          name: "Forwarded Calls",
+          link: "forwardedcalls",
+        },
+        {
+          name: "Face Time",
+          link: "facetime",
+        },
+        {
+          name: "Live Face Time",
+          link: false,
+        },
+      ],
       icon: Calls,  
       subMenu: [
         {
@@ -159,20 +195,20 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
   const subMenusList2 = [
    
     {
-      name: "Network",
+      name: "network",
       icon: Network,     
       subMenu: [
         {
           name: "Mobile Network",
-          link: "mobilenetwork",
+          link: "mobile-network",
         },
         {
           name: "Wifi Network",
-          link: "wifinetwork"
+          link: "wifi-network"
         },
         {
           name: "Data Usage",
-          link: "datausage",
+          link: "data-usage",
         },       
      
       ],
@@ -195,14 +231,14 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "All Captures",
-          link: "allcaptures",
+          link: "",
         },
        
      
       ],
     },
     {
-      name: "Media",
+      name: "media",
       icon: Media,     
       subMenu: [
         {
@@ -238,17 +274,14 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
           name: "Hidden",
           link: false,
         },
-
-       
-       
-
-       
        
      
       ],
     },
    
   ];
+
+
   const subMenusList3 = [    
     {
       name: "Apps",
@@ -291,11 +324,23 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
       subMenu: [
         {
           name: "Browser History",
-          link: "browseHistory",
+          link: "browserhistory",
         },
         {
           name: "Web Filters",
-          link: "webfilter"
+          link: "webfilters"
+        },
+        {
+          name: "Blocked Websites",
+          link: "blockedwebsites",
+        },
+        {
+          name: "Bookmarked Websites",
+          link: "bookmarkedwebsites"
+        },
+        {
+          name: "Incognito Tabs",
+          link: "incognitotabs"
         },
         {
           name: "Data Usage",
@@ -352,7 +397,12 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
           name: "GeoFence",
           link: "geofrence",
         },
+        {
+          name: "Wifi Logger",
+          link: "wifilogger",
+        },
        
+     
       ],
     },
    
