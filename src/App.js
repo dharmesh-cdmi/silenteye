@@ -12,7 +12,7 @@ import NotificationSetting from "./Pages/NotificationSetting";
 import InstantAlert from "./Pages/InstantAlert.jsx";
 import AppPermission from "./Pages/AppPermission";
 import PermisionManager from "./Pages/PermisionManager";
-import Export from "./Pages/Export/Export.js";
+import Export from "./Pages/Export.jsx";
 import Payment from "./Pages/Payment.jsx";
 import Callhistory from "./Pages/Calls/Callhistory.jsx";
 import BlockedCalls from "./Pages/Calls/BlockedCalls.jsx";
@@ -95,7 +95,7 @@ function App() {
         },
 
         {
-          path: "/SavedPassword",
+          path: "/Privacy&Security/SavedPassword",
           element: <SavedPassword />,
         },
 
@@ -108,12 +108,8 @@ function App() {
           element: <KeyLogger />,
         },
         {
-          path: "/SocialApps",
-          element: <SocialApps />,
-        },
-        {
-          path: "/AllAllerts",
-          element: <AllAllert />,
+          path: "/KeyLogger",
+          element: <KeyLogger />,
         },
         {
           path: "/SocialApps",
@@ -124,7 +120,27 @@ function App() {
           element: <AllAllert />,
         },
         {
-          path: "/NotificationSettings",
+          path: "/SocialApps",
+          element: <SocialApps />,
+        },
+        {
+          path: "/Alert&Notification/AllAllerts",
+          element: <AllAllert />,
+        },
+        {
+          path: "/SocialApps",
+          element: <SocialApps />,
+        },
+        {
+          path: "/Alert&Notification/AllAllerts",
+          element: <AllAllert />,
+        },
+        {
+          path: "/Alert&Notification/NotificationSettings",
+          element: <NotificationSetting />,
+        },
+        {
+          path: "/Alert&Notification/NotificationSettings",
           element: <NotificationSetting />,
         },
         {
@@ -140,12 +156,28 @@ function App() {
           element: <AppPermission />,
         },
         {
-          path: "/InstantAlerts",
+          path: "/Alert&Notification/InstantAlerts",
           element: <InstantAlert />,
         },
         {
-          path: "/AppPermisions",
+          path: "/Privacy&Security/AppPermisions",
           element: <AppPermission />,
+        },
+        {
+          path: "/Alert&Notification/InstantAlerts",
+          element: <InstantAlert />,
+        },
+        {
+          path: "/Privacy&Security/AppPermisions",
+          element: <AppPermission />,
+        },
+        {
+          path: "/PermisionManager",
+          element: <PermisionManager />,
+        },
+        {
+          path: "/Export",
+          element: <Export />,
         },
         {
           path: "/PermisionManager",
@@ -172,7 +204,15 @@ function App() {
           element: <InstalledApp />,
         },
         {
-          path: "/Payment",
+          path: "/Privacy&Security/Payment",
+          element: <Payment />,
+        },
+        {
+          path: "/apps/installedapp",
+          element: <InstalledApp />,
+        },
+        {
+          path: "/Privacy&Security/Payment",
           element: <Payment />,
         },
         {
@@ -196,6 +236,8 @@ function App() {
           element: <Location />,
         },
         {
+          path: "/location/locationhistory",
+          element: <LocationHistory />,
           path: "/location/locationhistory",
           element: <LocationHistory />,
         },
@@ -228,6 +270,14 @@ function App() {
           path: "/browser/screentime",
           element: <ScreenTime />,
         },
+        {
+          path: "/SavedPassword",
+          element: <ScreenTime />,
+        },
+
+
+        
+
       ],
     },
   ]);
