@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { useRef } from "react";
 import SubMenu, { SubMenu2 } from "./SubMenu";
+import SubMenu, { SubMenu2 } from "./SubMenu";
 import { motion } from "framer-motion";
 
 // * React icons
 import { IoLocationOutline } from "react-icons/io5";
+
 
 import { SlSettings } from "react-icons/sl";
 
@@ -12,6 +14,54 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { useMediaQuery } from "react-responsive";
 import { MdMenu } from "react-icons/md";
 import { NavLink, useLocation } from "react-router-dom";
+import logo from "../../assests/images/Logo.svg";
+import logo2 from "../../assests/images/Logo-Symbol.png";
+import Calendar from "../../assests/images/sideicon/Calendar.svg";
+import Calls from "../../assests/images/sideicon/Calls.svg";
+import Camera from "../../assests/images/sideicon/Camera.svg";
+import Contacts from "../../assests/images/sideicon/Contacts.svg";
+import DeviceControl from "../../assests/images/sideicon/Device Control.svg";
+import  Home from "../../assests/images/sideicon/Home.svg";
+import Media from "../../assests/images/sideicon/Media.svg";
+import Messages from "../../assests/images/sideicon/Messages.svg";
+import Network from "../../assests/images/sideicon/Network.svg";
+import notes from "../../assests/images/sideicon/notes.svg";
+import Apps from "../../assests/images/sideicon/Apps.svg";
+import Browser from "../../assests/images/sideicon/Browser.svg";
+import Files from "../../assests/images/sideicon/Files.svg";
+import Location from "../../assests/images/sideicon/Location.svg";
+import KeyLogger from "../../assests/images/sideicon/KeyLogger.svg";
+import Shield from "../../assests/images/sideicon/Shield.png";
+import Bell from "../../assests/images/sideicon/Bell.png";
+import Export from "../../assests/images/sideicon/Export.png";
+import Logout from "../../assests/images/sideicon/Logout.png";
+import Chat from "../../assests/images/sideicon/Chat.png";
+import Discord from "../../assests/images/sideicon/SideBar/Discord.png";
+import FacebookMessenger from "../../assests/images/sideicon/SideBar/Facebook Messenger.png";
+import Gmail from "../../assests/images/sideicon/SideBar/Gmail.png";
+import GoogleChat from "../../assests/images/sideicon/SideBar/Google Chat.png";
+import Hike from "../../assests/images/sideicon/SideBar/Hike.png";
+import IMO from "../../assests/images/sideicon/SideBar/IMO.png";
+import Instagram from "../../assests/images/sideicon/SideBar/Instagram.png";
+import KIK from "../../assests/images/sideicon/SideBar/KIK.png";
+import KakaoTalk from "../../assests/images/sideicon/SideBar/KakaoTalk.png";
+import Line from "../../assests/images/sideicon/SideBar/Line.png";
+import MicrosoftTeams from "../../assests/images/sideicon/SideBar/Microsoft Teams.png";
+import Outlook from "../../assests/images/sideicon/SideBar/Outlook.png";
+import Signal from "../../assests/images/sideicon/SideBar/Signal.png";
+import Skype from "../../assests/images/sideicon/SideBar/Skype.png";
+import Slack from "../../assests/images/sideicon/SideBar/Slack.png";
+import Snapchat from "../../assests/images/sideicon/SideBar/Snapchat.png";
+import Tango from "../../assests/images/sideicon/SideBar/Tango.png";
+import Telegram from "../../assests/images/sideicon/SideBar/Telegram.png";
+import Tiktok from "../../assests/images/sideicon/SideBar/Tiktok.png";
+import Tinder from "../../assests/images/sideicon/SideBar/Tinder.png";
+import Twitter from "../../assests/images/sideicon/SideBar/Twitter.png";
+import Viber from "../../assests/images/sideicon/SideBar/Viber.png";
+import Zolo from "../../assests/images/sideicon/SideBar/Zolo.png";
+import whatsapp from "../../assests/images/sideicon/SideBar/whatsapp.png";
+import { IoMdAdd } from "react-icons/io";
+const Sidebar = ({ isTabletMid, open, setOpen }) => {
 import logo from "../../assests/images/Logo.svg";
 import logo2 from "../../assests/images/Logo-Symbol.png";
 import Calendar from "../../assests/images/sideicon/Calendar.svg";
@@ -80,6 +130,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         open: {
           x: 0,
           width: "15.5rem",
+          width: "15.5rem",
           transition: {
             damping: 40,
           },
@@ -109,8 +160,36 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
       };
 
   const subMenusList1 = [
+  const subMenusList1 = [
     {
       name: "Calls",
+      icon: Calls,  
+      subMenu: [
+        {
+          name: "Call History",
+          link: "callhistory",
+        },
+        {
+          name: "Live Call",
+          link: false
+        },
+        {
+          name: "Blocked Calls",
+          link: "blockedcalls",
+        },
+        {
+          name: "Forwarded Calls",
+          link: "forwardedcalls",
+        },
+        {
+          name: "Face Time",
+          link: "facetime",
+        },
+        {
+          name: "Live Face Time",
+          link: false,
+        },
+      ],
       icon: Calls,  
       subMenu: [
         {
@@ -242,6 +321,10 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
      
       ],
     },
+   
+  ];
+  const subMenusList3 = [    
+    {
    
   ];
   const subMenusList3 = [    

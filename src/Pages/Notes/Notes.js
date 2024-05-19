@@ -53,7 +53,58 @@ const Notes = () => {
     </div>
     
     {/* notes components container */}
-   
+    <div className="notes-compCon flex justify-center align-middle ">
+    {/* notes components left */}
+    <div className="notes-compCon-left flex flex-col">
+
+    <div className="notCompLeftHeader flex flex-col justify-center align-middle  p-4">
+       Recente Notes
+    </div>
+    {notesData.length > 0 ?
+    notesData.map((v ,i)=>(
+        <div className="notCompLeftCols flex  justify-between align-middle  p-4" key={i} onClick={(e)=>selecteData(i)}>
+    <div className="notCompLeftColsDes">
+       <h3>{v.title}</h3>
+       <p>{v.description.length > 25 ? v.description.substr(0, 25) + " ..." : ""}</p>
+    </div>
+       <span>{v.date}</span>
+    </div>
+      ))
+    :(
+      <h3>No data Found</h3>
+      )}
+
+    </div>
+    {/* notes components right */}
+    <div className="notes-compCon-right flex flex-col justify-center align-middle ">
+    
+        <div className="notCompRightHeader flex  justify-center align-middle p-4">
+        {selectedData &&(
+    <div className="notCompRightHeaderDes">
+       <h3>{selectedData.title}</h3>
+       <p>craeted: {selectedData.date}</p>
+    </div>
+          )}
+       <span className="notCompRightHeaderDesIcons flex">
+       <IoCreateOutline className="cursor-pointer" />
+       <MdDeleteOutline className="NoteDeleteIconBin cursor-pointer" />
+       </span>
+    </div>
+    
+    {selectedData && (
+        <div className="notDescriptionCon flex flex-col p-4">
+    <div className="notDescriptionTitle flex">
+    <p>last edited : {selectedData.date}</p>
+    </div>
+    <div className="notDescription flex flex-col">
+    <h3>{selectedData.title}</h3>
+    <p>{selectedData.description}</p>
+    </div>
+    </div>
+      )}
+    
+    </div>
+    </div>
     
 <PageExportBtn />
 

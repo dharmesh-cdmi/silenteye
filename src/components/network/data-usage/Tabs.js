@@ -4,7 +4,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 
 function Tabs() {
   return (
-    <div className="lg:mx-10 mx-5 mt-10">
+    <div className="lg:mx-4 mx-5 mt-10">
       <section className="grid lg:grid-cols-4 grid-cols-1 border-2 border-gray-50 rounded-xl ">
         <div className="py-2 px-2 border">
           <div className="flex justify-between align-middle">

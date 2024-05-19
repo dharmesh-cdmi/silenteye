@@ -104,6 +104,18 @@ function App() {
           element: <KeyLogger />,
         },
         {
+          path: "/KeyLogger",
+          element: <KeyLogger />,
+        },
+        {
+          path: "/SocialApps",
+          element: <SocialApps />,
+        },
+        {
+          path: "/AllAllerts",
+          element: <AllAllert />,
+        },
+        {
           path: "/SocialApps",
           element: <SocialApps />,
         },
@@ -114,6 +126,18 @@ function App() {
         {
           path: "/NotificationSettings",
           element: <NotificationSetting />,
+        },
+        {
+          path: "/NotificationSettings",
+          element: <NotificationSetting />,
+        },
+        {
+          path: "/InstantAlerts",
+          element: <InstantAlert />,
+        },
+        {
+          path: "/AppPermisions",
+          element: <AppPermission />,
         },
         {
           path: "/InstantAlerts",
@@ -130,6 +154,22 @@ function App() {
         {
           path: "/Export",
           element: <Export />,
+        },
+        {
+          path: "/PermisionManager",
+          element: <PermisionManager />,
+        },
+        {
+          path: "/Export",
+          element: <Export />,
+        },
+        {
+          path: "/Payment",
+          element: <Payment />,
+        },
+        {
+          path: "/apps/installedapp",
+          element: <InstalledApp />,
         },
         {
           path: "/Payment",

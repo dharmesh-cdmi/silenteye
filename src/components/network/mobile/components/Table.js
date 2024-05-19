@@ -23,7 +23,7 @@ function Table() {
     { name: "wikipedia.org", data: "740 Mb",img:crome },
   ];
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:mx-10 mx-5 border rounded-lg mt-7">
+    <div className="grid lg:grid-cols-2 grid-cols-1 lg:mx-4 mx-5 border rounded-lg mt-7">
       <div className="border-r-2 border-b-2 p-3  ">
         <p className="text-2xl font-bold">
           1.42 GB

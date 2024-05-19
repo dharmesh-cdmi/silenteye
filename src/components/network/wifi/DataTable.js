@@ -64,7 +64,7 @@ function DataTable() {
     },
   ];
   return (
-    <div className="grid lg:grid-cols-6 grid-cols-6 mt-10 border rounded-lg lg:mx-10 mx-5">
+    <div className="grid lg:grid-cols-6 grid-cols-6 mt-10 border rounded-lg lg:mx-4 mx-5">
       <p className="text-center text-gray-500 p-2 border-b-2">Name</p>
       <p className="text-center text-gray-500 p-2 border-b-2">Connected At</p>
       <p className="text-center text-gray-500 p-2 border-b-2">Usage Time</p>

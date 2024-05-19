@@ -17,7 +17,7 @@ function UsageTable() {
     { name: "Gmail", img: crome },
   ];
   return (
-    <div className="grid grid-cols-1 border lg:mx-10 mx-5 mt-9 rounded-xl">
+    <div className="grid grid-cols-1 border lg:mx-4 mx-5 mt-9 rounded-xl">
       {contents.map((content, index) => {
         return (
           <div className="flex align-middle justify-between p-4 border ">
