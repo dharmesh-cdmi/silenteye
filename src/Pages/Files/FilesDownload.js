@@ -11,18 +11,16 @@ const FilesDownload = () =>{
   return(
     <>
     <AllFilesHead />
-    <div className="Apps-container">
+    <div className="Apps-container downloadFilesComponent justify-center">
      
-          <div className="appsComponentsCon flex">
+          <div className="appsComponentsCon flex downloadFilesComCon">
         {appData && appData.length > 0 ? (
           appData.map((v) => (
-            <div key={v.id} className="appBox flex flex-col justify-center downloadfilegap">
- <span className="appBoxicon">
-              <span className="appBoxicon">
+            <div key={v.id} className="appBox fileBox flex flex-col justify-center">
+              <span className="appBoxicon fileBoxicon">
                 {v.icon}
               </span>
- </span>
-              <div className="appBoxDes flex flex-col justify-center">
+              <div className="appBoxDes fileBoxDes flex flex-col justify-center">
                 <h3>{v.title}</h3>
                 <p className="text-slate-600">{v.size}</p>
               </div>
