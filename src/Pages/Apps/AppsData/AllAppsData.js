@@ -123,5 +123,30 @@ export const AllAppsData = [
     title: "Line",
     size: "85 MB",
     icon: <img src={lineicon} alt="Line" />,
-  }
+  },
+  {
+    id: 17,
+    title: "Instagram",
+    size: "65 MB",
+    icon: <img src={instagramicon} alt="Instagram" />,
+  },
+  {
+    id: 18,
+    title: "Keep",
+    size: "70 MB",
+    icon: <img src={keepicon} alt="Keep" />,
+  },
+ {
+    id: 19,
+    title: "Kik",
+    size: "75 MB",
+    icon: <img src={kikicon} alt="Kik" />,
+  },
+  {
+    id: 20,
+    title: "Lightroom",
+    size: "80 MB",
+    icon: <img src={lightroomicon} alt="Lightroom" />,
+  },
+
 ]

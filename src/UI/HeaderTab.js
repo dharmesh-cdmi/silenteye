@@ -11,8 +11,8 @@ const LocationHead = (props) => {
   return (
     <div className="Location-nav flex justify-between align-middle ">
       <div className="Location-nav-left flex justify-center align-bottom">
-        <button className="notNavLeftIcon border-2 p-2 rounded-md shadow-lg">
-          <IoIosArrowRoundBack />
+        <button className="notNavLeftIcon border-2 p-1 rounded-md shadow-lg">
+          <IoIosArrowRoundBack className="w-6 h-6" />
         </button>
         <span className="font-semibold text-lg">{props.data.location}</span>
       </div>

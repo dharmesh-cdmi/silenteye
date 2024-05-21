@@ -6,12 +6,15 @@ import { IoFilterSharp } from "react-icons/io5";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { TbFileExport } from "react-icons/tb";
 import { IoIosSearch } from "react-icons/io";
+import Modal from '../Shared/Modal';
+import Upgrade from '../Shared/Upgrade';
 
 const AppsRoutesHeader = () => {
 
   return (
     <>
       {/* Navigations, search*/}
+      <Modal>
       <div className="Apps-nav flex justify-between align-middle">
         {/* nav left*/}
         <div className="Apps-nav-left flex justify-center align-bottom">
@@ -24,57 +27,67 @@ const AppsRoutesHeader = () => {
         {/* nav right*/}
         <div className="Apps-nav-right flex justify-center items-center p-4">
           {/* Search */}
+          <Modal.Toggle toggleName="Update">
           <span className="flex items-center appsNavRightSearch cursor-pointer">
             <IoIosSearch />
             <input type="text" placeholder="Search Apps" />
           </span>
+          </Modal.Toggle>
 
           {/* Export */}
+          <Modal.Toggle toggleName="Update">
           <span className="flex items-center appsNavRightExportIcon cursor-pointer">
             <TbFileExport />
             <span className="responsiveTitleHide">Export</span>
           </span>
+          </Modal.Toggle>
 
           {/* Filter */}
+          <Modal.Toggle toggleName="Update">
           <span className="flex items-center appsNavRightFilterIcon cursor-pointer">
             <IoFilterSharp />
             <span className="responsiveTitleHide">Filter</span>
           </span>
+          </Modal.Toggle>
+          <Modal.Window windowName="Update">
+                      <Upgrade/>
+                    </Modal.Window>
         </div>
       </div>
+      </Modal>
 
-      <div className="appsRoutesHeader flex justify-center">
+      <div className="grid lg:grid-cols-4 grid-cols- border-2 rounded-xl">
         <Link to="/apps/allapps">
-          <div className="appsRoutesCons fi-appBox">
-            <div className="appsRoutesCon flex flex-col justify-center">
-              <h3>All Apps</h3>
+          <div className="mx-3 my-1 border-r-2 ">
+            <div className=" flex flex-col justify-center">
+              <h3 className="font-semibold text-md">All Apps</h3>
               <p>134 Apps</p>
             </div>
           </div>
         </Link>
 
         <Link to="/apps/installedapp">
-          <div className="appsRoutesCons">
-            <div className="appsRoutesCon flex flex-col justify-center">
-              <h3>Installed Apps</h3>
+          <div className=" mx-3 my-1 border-r-2">
+            <div className=" flex flex-col justify-center">
+              <h3 className="font-semibold text-md">Installed Apps</h3>
               <p>120 Apps</p>
             </div>
           </div>
         </Link>
 
         <Link to="/apps/uninstalledapp">
-          <div className="appsRoutesCons">
-            <div className="appsRoutesCon flex flex-col justify-center">
-              <h3>Uninstalled</h3>
+          <div className="mx-3 my-1 border-r-2">
+            <div className=" flex flex-col justify-center">
+              <h3 className="font-semibold text-md">Uninstalled</h3>
               <p>14 Apps</p>
             </div>
           </div>
         </Link>
 
         <Link to="/apps/blockedapp">
-          <div className="appsRoutesCons lastAppsbox">
-            <div className="appsRoutesCon flex flex-col justify-center">
-              <h3>Blocked Apps</h3>
+          <div className="lastAppsbox mx-3 my-1 ">
+            <div className="flex flex-col  justify-start">
+              <h3 className="font-semibold text-md">Blocked Apps</h3>
               <p>2 Apps</p>
             </div>
           </div>
