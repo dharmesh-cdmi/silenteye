@@ -357,7 +357,7 @@ const Dashboard = () => {
             
           </button>
     </div>
-      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6  gap-8 md:gap-4 mx-2 md:mx-0 mb-8">
+      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6  gap-8 md:gap-4 mx-2 md:mx-0 mb-8">
   {DashIcons.map((data, i) => (
     <div
       className="flex items-center justify-center text-center mb-6"
@@ -378,13 +378,13 @@ const Dashboard = () => {
   ))}
 </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3  gap-10 mb-8  mx:m-0 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8  mx:m-0 ">
         <InfoCard title="Device Info"  className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
               <ul key={i} className="grid grid-cols-2 liborder ">
                 <li className="py-3 px-2 font-medium  ">{info.name}</li>
-                <li className="py-3 text-[#172A6E] font-semibold">
+                <li className="py-3  text-[#172A6E]  sm:font-medium md:font-semibold">
                   {info.details}
                 </li>
               </ul>
@@ -431,7 +431,7 @@ const Dashboard = () => {
         </InfoCard>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-0 mb-8  mx:m-0">
+      <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-0 mb-8  mx:m-0">
         <InfoCard
           title="Recent Calls"
           titleRight={<p className="text-blue-400">See All</p>}
@@ -448,7 +448,7 @@ const Dashboard = () => {
               </li>
               <li className="p-1 flex-1 w-64 font-semibold">
                 <div >
-                  <p className="text-[18px] md:text-[24px] weight-[500]">{info.name}</p>
+                  <p className="text-[16px] md:text-[18px] lg:text-[18px] xl:text-[24px] weight-[500]">{info.name}</p>
                   <div
                     className={`${
                       info.callStatus == "outgoing" && "text-gray-400"
@@ -457,7 +457,7 @@ const Dashboard = () => {
                     } flex `}
                   >
                     <p className="my-auto ">{info.callIcon}</p>
-                    <p className="ps-1 text-[17px] weight-[500]">{info.callStatus}</p>
+                    <p className="ps-1 text-[17px]  weight-[500]">{info.callStatus}</p>
                   </div>
                 </div>
               </li>
@@ -483,10 +483,13 @@ const Dashboard = () => {
               </li>
               <li className="p-1 flex-1 w-64 font-semibold">
                 <div>
-                <p className="text-[18px] md:text-[24px] weight-[500]">{info.name}</p>
+                <p className="text-[16px] md:text-[18px] lg:text-[18px] xl:text-[24px] weight-[500]">{info.name}</p>
 
-                  <p className="ps-1 text-gray-400 text-[17px] weight-[500] ">
-                    {info.msg.slice(0, 45)}...
+                  <p className="ps-1 text-gray-400 lg:hidden xl:block text-[17px] weight-[500] ">
+                    {info.msg.slice(0, 50)}..
+                  </p>
+                  <p className="ps-1 text-gray-400 lg:block hidden xl:hidden 2xl:hidden text-[17px] weight-[500] ">
+                    {info.msg.slice(0,20)}..
                   </p>
                 </div>
               </li>
@@ -497,7 +500,7 @@ const Dashboard = () => {
           ))}
         </InfoCard>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
+      <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
         <div className="border border-slate-300 rounded-lg p-4 mb-5 md:mb-0">
           <h4 className="text-gray-400 text-lg font-normal">
             App Usage : Daily Average
@@ -511,18 +514,18 @@ const Dashboard = () => {
           </div>
           <div className="flex justify-between">
             <div>
-              <h1 className="text-2xl font-bold text-blue-500">
+              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-blue-500">
                 Productivity & Finance
               </h1>
-              <h1 className="text-xl font-medium">10h 49m</h1>
+              <h1 className=" lg:text-xl md:text-lg text-base font-medium">10h 49m</h1>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-cyan-600">Other</h1>
-              <h1 className="text-xl font-medium ">8h 32m</h1>
+              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-cyan-600">Other</h1>
+              <h1 className=" lg:text-xl md:text-lg text-base font-medium ">8h 32m</h1>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-orange-700">Social</h1>
-              <h1 className="text-xl font-medium ">5h 44m</h1>
+              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-orange-700">Social</h1>
+              <h1 className=" lg:text-xl md:text-lg text-base font-medium ">5h 44m</h1>
             </div>
           </div>
         </div>
@@ -561,7 +564,7 @@ const Dashboard = () => {
           </div>
         </InfoCard>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
       <InfoCard
           title="Recent Alert & Notifications"
           titleRight={<p className="text-blue-400">See All</p>}
@@ -578,8 +581,8 @@ const Dashboard = () => {
                       alt="logo"
                     />
                   </li>
-                  <li className="p-1 flex-1 w-64 font-semibold text-xl text-gray-900 border-none">
-                    <div>{info.name.slice(0,22)}</div>
+                  <li className="p-1 flex-1 w-64 font-semibold text-xl  text-gray-900 border-none">
+                    <div>{info.name.slice(0,20)}</div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold  text-sm border-none">
                     {info.time}
