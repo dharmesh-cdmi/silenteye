@@ -1,9 +1,9 @@
 import React from "react";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
-
-import alb from "../../../../assests/images/album.png"
-import alb2 from "../../../../assests/images/album2.png"
-import alb3 from "../../../../assests/images/album3.png"
+import alb from "../../../../assests/images/album.png";
+import alb2 from "../../../../assests/images/album2.png";
+import alb3 from "../../../../assests/images/album3.png";
 
 function Gallery() {
   const albums = [
@@ -16,13 +16,16 @@ function Gallery() {
     { img: alb3, text: "Recents", desc: "1264 Photos, 164 Videos" },
   ];
   return (
-    <div className="mt-10 lg:mx-10 mx-5">
+    <div className="mt-10 lg:mx-4 mx-5">
       <p className="lg:p-4 p-1 text-gray-500 text-sm">My Albums</p>
-      <div className="grid lg:grid-cols-5 grid-cols-2 gap-6 lg:mx-10  lg:mt-10 mt-20">
+      <div className="grid lg:grid-cols-5 grid-cols-2 gap-6 lg:mx-2  lg:mt-10 mt-20">
         {albums.map((album, index) => {
           return (
             <div className="flex flex-col justify-center" key={index}>
-              <img className="lg:h-40 lg:w-40 h-48 w-48 rounded-lg mx-auto" src={album.img}></img>
+              <img
+                className="lg:h-40 lg:w-40 h-48 w-48 rounded-lg mx-auto"
+                src={album.img}
+              ></img>
               <p className="text-sm text-center font-medium mt-2">
                 {album.text}{" "}
               </p>
@@ -36,7 +39,10 @@ function Gallery() {
         {albums.splice(3).map((album, index) => {
           return (
             <div className="flex flex-col justify-center" key={index}>
-              <img className="lg:h-40 lg:w-40 h-48 w-48 rounded-lg mx-auto" src={album.img}></img>
+              <img
+                className="lg:h-40 lg:w-40 h-48 w-48 rounded-lg mx-auto"
+                src={album.img}
+              ></img>
               <p className="text-sm text-center font-medium mt-2">
                 {album.text}{" "}
               </p>
@@ -45,6 +51,13 @@ function Gallery() {
           );
         })}
       </div>
+      <button
+        type="button"
+        className="text-gray-900 gap-2   bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mb-2 mx-auto"
+      >
+        <MdKeyboardDoubleArrowDown size={30} />
+        View More
+      </button>
     </div>
   );
 }

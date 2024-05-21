@@ -1,9 +1,15 @@
 import React from 'react'
 import Switch from '../../../UI/Switch'
+import { CiLock } from "react-icons/ci";
+import { FaWifi } from "react-icons/fa6";
+import { AiOutlineDownload } from "react-icons/ai";
+import del from '../../../assests/images/delete.png'
+
+
 
 function Tabs() {
   return (
-    <div className="lg:mx-10 mx-5 mt-10">
+    <div className="lg:mx-4 mx-5 mt-10">
       <section className="grid lg:grid-cols-4 grid-cols-1 border-2 border-gray-50 rounded-xl ">
         <div className="py-2 px-2 border-r-2">
           <div className="flex justify-between align-middle">
@@ -15,8 +21,8 @@ function Tabs() {
                 <p className="text-gray-500 text-sm">Off</p>
               </div>
             </div>
-            <div className="mt-3">
-              <Switch />
+            <div className="mt-3 ">
+            <Switch/>
             </div>
           </div>
         </div>
@@ -31,28 +37,39 @@ function Tabs() {
                 </div>
               </div>
             </div>
-            <div className="mt-1">
-              <Switch />
+            <div className="mt-4 flex ">
+            <CiLock className='w-6 h-6 mr-0.5 font-medium' />
+              <FaWifi className='w-6 h-6 mr-0.5'  />
+              <img src={del}  className='h-6 w-6'/>
             </div>
           </div>
         </div>
-        <div className="py-2 border-r-2 px-2">
-          <div className="flex justify-start flex-col">
-            <p className="text-gray-500 text-sm">Default for Calls</p>
-            <div className="grid grid-cols-3 bg-gray-300 h-10 rounded-lg cursor-pointer">
-              <div className="bg-green-600 rounded-lg m-1">
-                <img></img>
+        <div className="py-2 px-2 border">
+          <div className="flex justify-between align-middle">
+            <div className="flex flex-col">
+              <div className="flex ">
+                <AiOutlineDownload className="h-6 w-6" />
+                <h3 className="font-semibold text-md">Uploaded</h3>
               </div>
+              <p className=" text-sm">
+                130.77 GB
+                <span className="text-gray-500 text-xs">Data Uploaded</span>
+              </p>
             </div>
           </div>
         </div>
-        <div className="p-2 ">
-          <div className="flex justify-start flex-col">
-            <p className="text-gray-500 text-sm">Default for Internet Data</p>
-            <div className="grid grid-cols-2 bg-gray-300 h-10 rounded-lg cursor-pointer">
-              <div className="bg-green-600 rounded-lg m-1">
-                <img></img>
+
+        <div className="py-2 px-2 border">
+          <div className="flex justify-between align-middle">
+            <div className="flex flex-col">
+              <div className="flex ">
+                <AiOutlineDownload className="h-6 w-6" />
+                <h3 className="font-semibold text-md">Downloaded</h3>
               </div>
+              <p className=" text-sm">
+                130.77 GB{" "}
+                <span className="text-gray-500 text-xs">Data Downloaded</span>
+              </p>
             </div>
           </div>
         </div>

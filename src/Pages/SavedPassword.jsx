@@ -1,6 +1,6 @@
 import React from "react";
 import { Table } from "../components/Shared/Table";
-import adope from "../../src/assests/images/SavedPasswords/adope.png"
+import messenger from "../../src/assests/images/SavedPasswords/messenger.png"
 import amazon from "../../src/assests/images/SavedPasswords/amazon.png"
 import dribble from "../../src/assests/images/SavedPasswords/dribble.png"
 import ebay from "../../src/assests/images/SavedPasswords/ebay.png"
@@ -12,13 +12,15 @@ import SavedPasswords from "../components/SavedPasswords/SavedPasswords";
 import Header from "../components/Shared/Header";
 import Button from "../components/Shared/Button";
 import More from "../assests/images/more.png";
+import Modal from "../components/Shared/Modal";
+import Upgrade from "../components/Shared/Upgrade"
 
 const SavedPasswordsData = [
   [
     {
       id: "1",
-      icon: adope,
-      heading: "adobe.com",
+      icon: messenger,
+      heading: "messenger.com",
       identity: "Test123",
       password: "Testing4Pass@9900",
     },
@@ -36,15 +38,9 @@ const SavedPasswordsData = [
       identity: "Test125",
       password: "Testing6Pass@9900",
     },
+   
     {
       id: "4",
-      icon: ebay,
-      heading: "ebay.com",
-      identity: "Test126",
-      password: "Testing7Pass@9900",
-    },
-    {
-      id: "5",
       icon: facebook,
       heading: "facebook.com",
       identity: "Test127",
@@ -102,14 +98,21 @@ export const SavedPassword = () => {
           </Table>
         </div>
       ))}
-      <div className="flex justify-center mb-12">
-        <Button
-          onClick={viewMore}
-          className="text-[18px]   drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
-        >
-          View More
-          <img src={More} alt="more" className="ps-2" />
-        </Button>
+        <div className="flex justify-center mb-12">
+        <Modal>
+          <Modal.Toggle toggleName="viewMore-keylogger">
+            <Button
+              onClick={viewMore}
+              className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium px-[32px]  py-[10px] text-[#101828] text-center"
+            >
+              View More
+              <img src={More} alt="more" className="ps-2" />
+            </Button>
+          </Modal.Toggle>
+          <Modal.Window windowName="viewMore-keylogger">
+            <Upgrade />
+          </Modal.Window>
+        </Modal>
       </div>
     </div>
   );

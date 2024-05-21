@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { useMoveBack } from '../../hooks/useMoveBack.js';
 import "../../components/LocationHead/Locationhead.css"
 import "./Export.css";
 
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { LuHistory } from "react-icons/lu";
 import { IoCloudDownloadOutline } from "react-icons/io5";
+import { useMoveBack } from '../../hooks/useMoveBack';
 
 const Export =()=>{
 const moveBacks = useMoveBack();

@@ -11,17 +11,14 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 import { CgRemove } from "react-icons/cg";
 import { AiOutlineMessage } from "react-icons/ai";
+import Modal from "../../components/Shared/Modal";
+import Upgrade from "../../components/Shared/Upgrade";
+import Delete from "../../assests/images/delete.png";
+
 
 const ContactList = () => {
     const contactlistdata = [
-        {
-          img: "https://xsgames.co/randomusers/avatar.php?g=male",
-          name: "Alice Gamage",
-          callIcon: callicon,
-          callNo: "(308) 555-0121",
-          date: "Tue, May 21, 2024",
-          time: "3:58 AM",
-        },
+       
         {
           img: "https://xsgames.co/randomusers/avatar.php?g=female",
           name: "Adam Smith",
@@ -67,6 +64,9 @@ const ContactList = () => {
   return (
     <div>
     <CallsHead heading="Contacts List" placeholder="Search by Name or Phone Number"/>
+    <Modal>
+               
+               
     <div className="border rounded-xl my-8 shadow">
       <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0">
         {/* first column */}
@@ -79,9 +79,37 @@ const ContactList = () => {
           {/* body */}
           <div className="overflow-y-scroll h-96 no-scrollbar">
           <p className="border-b text-gray-400  p-1">A</p>
+         
+          <ul  className="flex p-2 liborder cursor-pointer bg-gray-100">
+          
+          <li className="flex-none w-14 pt-2">
+            <img
+              className="w-10 h-10 rounded-full m-auto"
+              src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+              alt
+            />
+          </li>
+          <li className="p-1 flex-1 w-64 font-semibold">
+            <div>
+            Alice Gamage
+              <div
+                className="text-gray-400 flex"
+              >
+                <p className="my-auto "><VscCallOutgoing /></p>
+                <p className="ps-1">(308) 555-0121</p>
+              </div>
+            </div>
+          </li>
+          <li className="p-1 text-gray-400 font-semibold pt-4">
+          Tue, May 21, 2024 <br />
+          3:58 AM
+          </li>
+        </ul>
 
             {contactlistdata.map((info, i) => (
-              <ul key={i} className="flex p-2 ">
+                 <Modal.Toggle toggleName="Update">
+                
+              <ul key={i} className="flex p-2 liborder cursor-pointer">
                 <li className="flex-none w-14 pt-2">
                   <img
                     className="w-10 h-10 rounded-full m-auto"
@@ -108,6 +136,7 @@ const ContactList = () => {
 
                 </li>
               </ul>
+                 </Modal.Toggle>
             ))}
             <div className="flex justify-center">
             <button
@@ -159,9 +188,19 @@ const ContactList = () => {
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-4 border-none hidden md:block">
                   <div className="flex gap-2 mt-6">
+                  <Modal.Toggle toggleName="Update">
+                
                   <BsPersonAdd className="text-slate-900 cursor-pointer" size={25}/>
+                </Modal.Toggle>
+                <Modal.Toggle toggleName="Update">
+                <img
+                          className=" h-6 rounded-full m-auto cursor-pointer"
+                          src={Delete}
+                          alt
+                        />
+                
+                </Modal.Toggle>
 
-                  <RiDeleteBin6Line className="text-red-900 cursor-pointer" size={25}/>
                   </div>
               </li>
             </ul>
@@ -169,39 +208,54 @@ const ContactList = () => {
           <hr />
           {/* body */}
           <div className="overflow-y-scroll h-96 no-scrollbar">
-              <div className="grid grid-cols-5 border-b p-2">
-                    <div className="border-r mx-auto">
+              <div className="grid grid-cols-5  p-2 divide-x border-b">
+                    <div className=" mx-auto">
                         <div className="flex gap-2 p-1 flex-col md:flex-row">
-                        <AiOutlineMessage size={25} className="m-auto" /> 
+                        <Modal.Toggle toggleName="Update">
+                
+                        <AiOutlineMessage size={25} className="m-auto cursor-pointer" /> 
+                </Modal.Toggle>
                             <p className="font-medium">Message</p>
                         </div>
                     </div>
-                    <div className="border-r mx-auto">
+                    <div className=" mx-auto">
                         <div className="flex gap-2 p-1 flex-col md:flex-row ">
-                        <IoIosCall  size={25} className="m-auto" />
+                        <Modal.Toggle toggleName="Update">
+                
+                        <IoIosCall  size={25} className="m-auto cursor-pointer" />
+                </Modal.Toggle>
                             <p className="font-medium">Call</p>
                         </div>
                     </div>
-                    <div className="border-r mx-auto">
+                    <div className=" mx-auto">
                         <div className="flex gap-2 p-1 flex-col md:flex-row">
-                        <IoVideocamOutline  size={25} className="m-auto"/>
+                        <Modal.Toggle toggleName="Update">
+                
+                        <IoVideocamOutline  size={25} className="m-auto cursor-pointer"/>
+                </Modal.Toggle>
                             <p className="font-medium">Facetime</p>
                         </div>
                     </div>
-                    <div className="border-r mx-auto">
+                    <div className=" mx-auto">
                         <div className="flex gap-2 p-1 flex-col md:flex-row">
-                        <MdOutlineMailOutline  size={25} className="m-auto"/>
+                        <Modal.Toggle toggleName="Update">
+                
+                        <MdOutlineMailOutline  size={25} className="m-auto cursor-pointer"/>
+                </Modal.Toggle>
                             <p className="font-medium">Mail</p>
                         </div>
                     </div>
-                    <div className="border-r mx-auto">
+                    <div className=" mx-auto">
                         <div className="flex gap-2 p-1 flex-col md:flex-row">
-                        <BsCurrencyDollar  size={25} className="m-auto"/>
+                        <Modal.Toggle toggleName="Update">
+                
+                        <BsCurrencyDollar  size={25} className="m-auto cursor-pointer"/>
+                </Modal.Toggle>
                             <p className="font-medium">Pay</p>
                         </div>
                     </div>
               </div>
-              <ul className="flex p-2  ">
+              <ul className="flex p-2 liborder ">
              
               <li className="p-1 flex-1 w-64 font-semibold ">
                 <div>
@@ -225,12 +279,14 @@ const ContactList = () => {
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
                   <div className="flex gap-4 mt-2">
-                    
+                  <Modal.Toggle toggleName="Update">
+                
                   <CgRemove  className="text-red-900 cursor-pointer" size={25}/>
+                </Modal.Toggle>
                   </div>
               </li>
             </ul>
-            <ul className="flex p-2  ">
+            <ul className="flex p-2 liborder ">
              
               <li className="p-1 flex-1 w-64 font-semibold ">
                 <div>
@@ -254,12 +310,15 @@ const ContactList = () => {
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
                   <div className="flex gap-4 mt-2">
-                    
+                  <Modal.Toggle toggleName="Update">
+                
                   <CgRemove  className="text-red-900 cursor-pointer" size={25}/>
+                </Modal.Toggle>
+                    
                   </div>
               </li>
             </ul>
-            <ul className="flex p-2  ">
+            <ul className="flex p-2  liborder">
              
               <li className="p-1 flex-1 w-64 font-semibold ">
                 <div>
@@ -283,12 +342,14 @@ const ContactList = () => {
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
                   <div className="flex gap-4 mt-2">
-                    
+                  <Modal.Toggle toggleName="Update">
+                
                   <CgRemove  className="text-red-900 cursor-pointer" size={25}/>
+                </Modal.Toggle>
                   </div>
               </li>
             </ul>
-            <ul className="flex p-2  ">
+            <ul className="flex p-2 liborder ">
              
               <li className="p-1 flex-1 w-64 font-semibold ">
                 <div>
@@ -312,8 +373,10 @@ const ContactList = () => {
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
                   <div className="flex gap-4 mt-2">
-                    
+                  <Modal.Toggle toggleName="Update">
+                
                   <CgRemove  className="text-red-900 cursor-pointer" size={25}/>
+                </Modal.Toggle>
                   </div>
               </li>
             </ul>
@@ -369,6 +432,8 @@ const ContactList = () => {
                 </div>
 
                 <div className="m-auto md:m-0">
+                <Modal.Toggle toggleName="Update">
+                
                   <button
                     type="button"
                     class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
@@ -376,6 +441,7 @@ const ContactList = () => {
                     <MdKeyboardDoubleArrowDown size={30} />
                     View More
                   </button>
+                </Modal.Toggle>
                 </div>
               </div>
          
@@ -384,6 +450,10 @@ const ContactList = () => {
         </div>
       </div>
     </div>
+    <Modal.Window windowName="Update">
+                    <Upgrade/>
+                  </Modal.Window>
+                </Modal>
   </div>
   )
 }
