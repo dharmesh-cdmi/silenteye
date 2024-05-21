@@ -1,11 +1,26 @@
+import {Link} from "react-router-dom"
 import  { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import "./PageExportBtn.css"
 
+import Modal from "../../components/Shared/Modal.jsx"
+import Upgrade from "../../components/Shared/Upgrade";
+
 const PageExportBtn=()=>{
   return(
-        <div className="notesViewMoreCon flex justify-center">
-    <button className="flex justify-center">view more <MdOutlineKeyboardDoubleArrowDown /></button>
+
+    
+            <Modal>
+          <Modal.Toggle toggleName="viewMore-keylogger">
+   
+           <div className="notesViewMoreCon flex justify-center">
+    <button className="flex justify-center">View More <MdOutlineKeyboardDoubleArrowDown /></button>
     </div>
+            
+          </Modal.Toggle>
+          <Modal.Window windowName="viewMore-keylogger">
+            <Upgrade />
+          </Modal.Window>
+        </Modal>
     )
 }
 
