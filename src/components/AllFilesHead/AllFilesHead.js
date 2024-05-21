@@ -18,49 +18,38 @@ const AllFilesHead = () => {
   const moveBacks = useMoveBack();
   return (
     <div className="Browser-nav flex justify-between align-middle">
-      {/* nav left*/}
-      <div className="Browser-nav-left flex justify-center align-bottom">
-        <button onClick={moveBacks} className="notNavLeftIcon border-2 rounded-md p-1">
-          <FaArrowLeftLong />
-        </button>
-        <span>Files</span>
-      </div>
+    {/* nav left*/}
+    <div className="Browser-nav-left flex justify-center align-bottom">
+         <button onClick={moveBacks} className="notNavLeftIcon shadow-[0px_0px_56px_0px_#00000014]"><FaArrowLeftLong /></button>
+       <span>Files</span>
+    </div>
+   
+    {/* nav right*/}
+  <div className="Browser-nav-right flex justify-center items-center p-4">
+      {/* Search */}
+      <span className="flex items-center BrowserNavRightSearch cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
+        <IoIosSearch />
+        <input type="text" placeholder="Search Browser" />
+      </span>
 
-      {/* nav right*/}
-      <div className="Browser-nav-right flex justify-center items-center p-4">
-        {/* Search */}
-        <span className="flex items-center BrowserNavRightSearch cursor-pointer">
-          <IoIosSearch />
-          <input type="text" placeholder="Search Browser" />
-        </span>
+      {/* Delete */}
+      <span className="flex items-center BrowserNavRightExportIcon cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
+        <MdDeleteOutline className="text-red-600" />
+        <span className="responsiveTitleHide">Delete</span>
+      </span>
+      
+      {/* Export */}
+      <span className="flex items-center BrowserNavRightExportIcon cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
+        <TbFileExport />
+        <span className="responsiveTitleHide">Export</span>
+      </span>
 
-        {/* Delete */}
-        <Modal>
-          <Modal.Toggle toggleName="Update">
-            <span className="flex items-center BrowserNavRightExportIcon cursor-pointer">
-              <MdDeleteOutline className="text-red-600" />
-              <span className="responsiveTitleHide">Delete</span>
-            </span>
-          </Modal.Toggle>
-          <Modal.Toggle toggleName="Update">
-            {/* Export */}
-            <span className="flex items-center BrowserNavRightExportIcon cursor-pointer">
-              <TbFileExport />
-              <span className="responsiveTitleHide">Export</span>
-            </span>
-          </Modal.Toggle>
-          <Modal.Toggle toggleName="Update">
-            {/* Filter */}
-            <span className="flex items-center BrowserNavRightFilterIcon cursor-pointer">
-              <IoFilterSharp />
-              <span className="responsiveTitleHide">Filter</span>
-            </span>
-          </Modal.Toggle>
-          <Modal.Window windowName="Update">
-            <Upgrade />
-          </Modal.Window>
-        </Modal>
-      </div>
+      {/* Filter */}
+      <span className="flex items-center BrowserNavRightFilterIcon cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
+        <IoFilterSharp />
+        <span className="responsiveTitleHide">Filter</span>
+      </span>
+    </div>
     </div>
   );
 };
