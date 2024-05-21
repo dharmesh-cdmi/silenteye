@@ -23,6 +23,9 @@ import tiktokicon from "../../assests/images/tiktok.svg";
 import tindericon from "../../assests/images/tinder.svg";
 import twittericon from "../../assests/images/twitter.svg";
 
+import Modal from '../../components/Shared/Modal.jsx';
+import Upgrade from '../../components/Shared/Upgrade.jsx';
+
 const Appsnotification = () => {
   return (
     <>
@@ -30,7 +33,7 @@ const Appsnotification = () => {
       <div className="Apps-nav flex justify-between align-middle">
         {/* nav left*/}
         <div className="Apps-nav-left flex justify-center align-bottom">
-          <button className="notNavLeftIcon">
+          <button className="notNavLeftIcon shadow-lg">
             <FaArrowLeftLong />
           </button>
           <span>Apps</span>
@@ -39,19 +42,26 @@ const Appsnotification = () => {
         {/* nav right*/}
         <div className="Apps-nav-right flex justify-center items-center p-4">
           {/* Search */}
-          <span className="flex items-center appsNavRightSearch cursor-pointer">
+          <span className="flex items-center appsNavRightSearch cursor-pointer shadow-lg">
             <IoIosSearch />
             <input type="text" placeholder="Search Apps" />
           </span>
 
           {/* Export */}
-          <span className="flex items-center appsNavRightExportIcon cursor-pointer">
-            <TbFileExport />
-            <span className="responsiveTitleHide">Export</span>
-          </span>
+        <Modal>
+           <Modal.Toggle toggleName="Upgrade">
+      <span className="flex items-center LocationNavRightExportIcon cursor-pointer shadow-lg ">
+        <TbFileExport />
+        <span className="responsiveTitleHide">Export</span>
+      </span>
+         </Modal.Toggle>
+          <Modal.Window windowName="Upgrade">
+            <Upgrade />
+          </Modal.Window>
+          </Modal>
 
           {/* Filter */}
-          <span className="flex items-center appsNavRightFilterIcon cursor-pointer">
+          <span className="flex items-center appsNavRightFilterIcon cursor-pointer shadow-lg">
             <IoFilterSharp />
             <span className="responsiveTitleHide">Filter</span>
           </span>
