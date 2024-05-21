@@ -3,6 +3,8 @@ import "./LocationHeader.css";
 import { IoIosArrowRoundBack, IoIosSearch } from "react-icons/io";
 import { TbFileExport } from "react-icons/tb";
 import { IoFilterSharp } from "react-icons/io5";
+import Upgrade from "../components/Shared/Upgrade";
+import Modal from "../components/Shared/Modal";
 
 
 const LocationHead = (props) => {
@@ -21,15 +23,27 @@ const LocationHead = (props) => {
           <input type="text" className="w-full" placeholder={props.data.placeHolder} />
         </span>
 
+<Modal>
+<Modal.Toggle toggleName="Update">
+
         <span className="flex items-center LocationNavRightExportIcon cursor-pointer shadow-lg">
             <TbFileExport className="h-6 w-6  font-medium"/>
           <span className="responsiveTitleHide ">Export</span>
         </span>
+        </Modal.Toggle>
+
+
+<Modal.Toggle toggleName="Update">
 
         <span className="flex items-center LocationNavRightFilterIcon cursor-pointer shadow-lg">
         <IoFilterSharp className="h-6 w-6  font-medium"/>
           <span className="responsiveTitleHide">Filter</span>
         </span>
+        </Modal.Toggle>
+        <Modal.Window windowName="Update">
+                      <Upgrade/>
+                    </Modal.Window>
+        </Modal>
       </div>
     </div>
   );

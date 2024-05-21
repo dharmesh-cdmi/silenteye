@@ -9,7 +9,7 @@ const Verizon = () => {
   const moveBacks = useMoveBack();
 
   return (
-    <div className="w-[37rem] h-[28rem]">
+    <div className=" w-[22rem] md:w-[37rem] h-[28rem]">
       <div className="flex py-4 border-b-[#DDDDDD] px-[16px]     border-b-[1px]">
         <div
           className="image-wrapper me-2  p-[8px]  border-[#D0D5DD] border-[1px] cursor-pointer  rounded-[8px]"
@@ -50,9 +50,9 @@ const Verizon = () => {
         </div>
         <div class="inline-flex items-center justify-center w-full">
           <hr class="w-[35rem] h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-          <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+          {/* <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
             or
-          </span>
+          </span> */}
         </div>
         <div>
             <h4 className="font-[600] text-[20px]">

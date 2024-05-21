@@ -2,19 +2,22 @@ import React from "react";
 
 import v from "../../../assests/images/vid.png";
 import v2 from "../../../assests/images/vid2.png";
+import ph2 from '../../../assests/images/ph2.png'
+import ph3 from '../../../assests/images/ph3.png'
+import ph4 from '../../../assests/images/ph4.png'
 
 function Gallery() {
   const vids = [
     { vid: v, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
     { vid: v2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: ph2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: ph3, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: ph4, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
     { vid: v2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
     { vid: v, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: ph2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: ph3, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: ph4, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
   ];
   return (
     <>

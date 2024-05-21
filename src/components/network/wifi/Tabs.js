@@ -4,6 +4,8 @@ import { CiLock } from "react-icons/ci";
 import { FaWifi } from "react-icons/fa6";
 import { AiOutlineDownload } from "react-icons/ai";
 import del from '../../../assests/images/delete.png'
+import { TiTick } from "react-icons/ti";
+
 
 
 
@@ -30,7 +32,7 @@ function Tabs() {
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
-                <img className="h-8 w-8"></img>
+                <TiTick className='w-7 h-7'/>
                 <div>
                 <h3 className="font-semibold text-lg">Home 5G</h3>
                 <p className="text-gray-400 text-sm">Connected</p>

@@ -82,8 +82,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
     ? {
         open: {
           x: 0,
-          width: "15.5rem",
-          width: "15.5rem",
+          width: "260px",         
           transition: {
             damping: 40,
           },
@@ -99,7 +98,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
       }
     : {
         open: {
-          width: "15.5rem",
+          width: "260px",
           transition: {
             damping: 40,
           },
@@ -624,11 +623,12 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
               </p>
               <button
                 type="button"
-                className="text-white my-2  bg-[#172A6E] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center me-2 mb-2 w-full"
+                className="text-white my-2  bg-[#172A6E]  focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-12 py-2 text-center inline-flex items-center me-2 mb-2 w-full"
               >
                 <IoMdAdd className="mx-2" />
                 Add Devices
               </button>
+              
             </div>
           )}
 

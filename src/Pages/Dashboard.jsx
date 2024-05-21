@@ -357,7 +357,7 @@ const Dashboard = () => {
             
           </button>
     </div>
-      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6  gap-2 md:gap-4 mx-2 md:mx-0 mb-8">
+      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6  gap-8 md:gap-4 mx-2 md:mx-0 mb-8">
   {DashIcons.map((data, i) => (
     <div
       className="flex items-center justify-center text-center mb-6"
@@ -378,7 +378,7 @@ const Dashboard = () => {
   ))}
 </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3  gap-0 mb-8  mx:m-0 ">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-10 mb-8  mx:m-0 ">
         <InfoCard title="Device Info"  className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
@@ -448,7 +448,7 @@ const Dashboard = () => {
               </li>
               <li className="p-1 flex-1 w-64 font-semibold">
                 <div >
-                  <p className="text-[24px] weight-[500]">{info.name}</p>
+                  <p className="text-[18px] md:text-[24px] weight-[500]">{info.name}</p>
                   <div
                     className={`${
                       info.callStatus == "outgoing" && "text-gray-400"
@@ -483,7 +483,7 @@ const Dashboard = () => {
               </li>
               <li className="p-1 flex-1 w-64 font-semibold">
                 <div>
-                <p className="text-[24px] weight-[500]">{info.name}</p>
+                <p className="text-[18px] md:text-[24px] weight-[500]">{info.name}</p>
 
                   <p className="ps-1 text-gray-400 text-[17px] weight-[500] ">
                     {info.msg.slice(0, 45)}...
@@ -578,7 +578,7 @@ const Dashboard = () => {
                       alt="logo"
                     />
                   </li>
-                  <li className="p-1 flex-1 w-64 font-semibold text-lg text-gray-900 border-none">
+                  <li className="p-1 flex-1 w-64 font-semibold text-xl text-gray-900 border-none">
                     <div>{info.name.slice(0,22)}</div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold  text-sm border-none">
