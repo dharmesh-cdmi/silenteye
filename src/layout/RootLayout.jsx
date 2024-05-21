@@ -9,18 +9,18 @@ function RootLayout() {
   const [open, setOpen] = useState(isTabletMid ? false : true);
   return (
     <div className="flex gap-0">
-      <Sidebar open={open} setOpen={setOpen} isTabletMid={isTabletMid} />
-      <main
-        className={`fullfill bg-white   ${
-          open ? "sm:ml-0 md:ml-[248px]" : "sm:ml-0 md:ml-[57px]"
-        } overflow-y-auto h-screen`}
-      >
-        <Navbar open={open} setOpen={setOpen} isTabletMid={isTabletMid} />
-        <Alert />
-        <div className="max-w-5xl flex-1 md:mx-auto py-0 md:py-4 mt-24 md:mt-32 mx-2 ">
-          <Outlet />
-        </div>
-      </main>
+      <Sidebar open={open} setOpen={setOpen} isTabletMid={isTabletMid}/>   
+      
+      
+      
+      <main className={`fullfill bg-white   ${open ? 'ml-[248px]' : 'sm:ml-0 md:ml-[57px]'} overflow-y-auto h-screen` }>
+      <Navbar open={open} setOpen={setOpen} isTabletMid={isTabletMid}/>  
+      <Alert/>
+      <div className="max-w-5xl flex-1 md:mx-auto py-0 md:py-4 mt-24 md:mt-32 mx-2 ">
+      <Outlet />
+      </div>
+        
+        </main>
     </div>
   );
 }

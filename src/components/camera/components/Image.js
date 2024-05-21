@@ -1,9 +1,7 @@
 import React from "react";
 
-import del from "../../../assests/images/delete.png";
-import gallery from "../../../assests/images/gallery.png";
-import { MdOutlineFileDownload } from "react-icons/md";
-import { FiUpload } from "react-icons/fi";
+import del from "../../../assests/images/delete.png"
+import gallery from "../../../assests/images/gallery.png"
 
 function Image() {
   return (
@@ -22,8 +20,8 @@ function Image() {
         </div>
         <div className="flex align-middle">
           <img className="h-6 w-6 mt-5" src={del}></img>
-          <MdOutlineFileDownload className="h-6 w-6 mt-5 ml-2" />
-          <FiUpload className="h-6 w-6 mt-5 ml-2" />
+          <img className="h-6 w-6 mt-5 ml-2" src={del}></img>
+          <img className="h-6 w-6 mt-5 ml-2" src={del}></img>
         </div>
       </div>
       <div className="relative">

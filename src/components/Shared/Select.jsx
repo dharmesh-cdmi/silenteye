@@ -1,12 +1,9 @@
-import React from "react";
-import { FaChevronDown } from "react-icons/fa";
+import React from 'react'
 
-const Select = ({ label, register, options, onclick, placeholder }) => {
+const Select = ({label,register,options,onclick}) => {
   return (
-    <div>
-      <h1 className=" text-[16px] font-[500] opacity-[50%] ]">{label}</h1>
-      <div className=" rounded-[12px] w-full p-[12px]  flex flex-row justify-between  / cursor-pointer items-center bg-[#8E8E9314] ">
-        {/* <label className="block text-[16px] text-[#000000] opacity-[50%]">
+    <div className=' w-full'>
+        <label className="block text-[16px] text-[#000000] opacity-[50%]">
           {label}
         </label> 
         <select
@@ -19,14 +16,10 @@ const Select = ({ label, register, options, onclick, placeholder }) => {
             {option.label}
           </option>
         ))}
-      </select>   */}
-        <label className="block text-[18px] font-[500] text-[#000000] ">
-          {placeholder}
-        </label>
-        <FaChevronDown size={10} />
-      </div>
+      </select>  
+    
     </div>
-  );
-};
+  )
+}
 
-export default Select;
+export default Select

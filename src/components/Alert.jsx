@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { GoAlert } from 'react-icons/go'
 import { IoIosClose } from 'react-icons/io'
 
 const Alert = () => {
   return (
     <>
-<div id="alert-4" style={{width:"inherit" , top:"68px"}} className=" items-center hidden border-t sm:hidden md:block  z-10 mb-2 px-4 fixed   pt-2 text-black  bg-[#FFEAB5] dark:bg-gray-800 " role="alert">
+<div id="alert-4" style={{width:"inherit" , top:"69px"}} className=" items-center hidden sm:hidden md:block  z-20 mb-2 px-4 fixed   pt-2 text-black  bg-[#FFEAB5] dark:bg-gray-800 " role="alert">
 <div className='flex mx-3'>
   
 <GoAlert />

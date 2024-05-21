@@ -7,7 +7,7 @@ import "../../../UI/LocationHeader.css"
 
 const Header = (props) => {
   return (
-    <div className="Location-nav flex justify-between align-middle mr-10">
+    <div className="Location-nav flex justify-between align-middle mx-10 mt-28">
       <div className="Location-nav-left flex justify-center align-bottom">
         <button className="notNavLeftIcon border-2 p-2 rounded-md shadow-lg">
           <IoIosArrowRoundBack />

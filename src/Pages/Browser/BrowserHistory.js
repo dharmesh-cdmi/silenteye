@@ -1,6 +1,6 @@
-import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx"
-import BrowserHead from '../../components/BrowserHead/BrowserHead.js'
+import BrowserHead from "../../components/BrowseHead/BrowserHead.js";
 
+import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx"
 
 import { FaApple } from "react-icons/fa";
 

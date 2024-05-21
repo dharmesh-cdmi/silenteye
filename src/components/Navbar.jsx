@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { CiMobile3 } from "react-icons/ci";
-import { IoIosArrowDown, IoIosArrowRoundUp, IoIosArrowUp, IoMdNotificationsOutline } from "react-icons/io";
+import { IoIosArrowDown, IoMdNotificationsOutline } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
 import { RiMenu2Fill } from "react-icons/ri";
 
 const Navbar = ({isTabletMid,open,setOpen}) => {
-  const [openTab,setOpenTab]=useState(false)
-  const handleToggle =()=>{
-    setOpenTab(!openTab)
-  }
   return (
     <nav style={{width:"inherit"}} className="bg-white border-gray-300 dark:border-gray-600 dark:bg-gray-900  border-b fixed  top-0 z-10">
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-[8.8px]  md:px-9">
@@ -19,9 +15,9 @@ const Navbar = ({isTabletMid,open,setOpen}) => {
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="mega-menu-full"
           aria-expanded="false"
-          onClick={() => {
-            setOpen(!open);
-          }}
+          // onClick={() => {
+          //   setOpen(!open);
+          // }}
         >
           <span className="sr-only">Open main menu</span>
          {open ?<IoCloseSharp  className="text-black"/> :<RiMenu2Fill className="text-black" />} 
@@ -46,18 +42,13 @@ const Navbar = ({isTabletMid,open,setOpen}) => {
         <div className="flex gap-4">
          <div className="hidden md:block">
          <button
-         onClick={handleToggle}
             type="button"
             class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
           >
             <CiMobile3 />
 
             Ashly's Device
-           <IoIosArrowDown
-          className={` ${openTab && "rotate-180"} duration-200 `}
-        /> 
-       
-           
+            <IoIosArrowDown />
 
             
           </button>

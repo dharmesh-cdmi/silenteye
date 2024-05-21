@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-
 
 function Matrix() {
   const days = ["SUN", "MON", "TUE", "WED", "THUR", "FRI", "SAT"];
@@ -14,19 +12,23 @@ function Matrix() {
     },
     {
       time: "10:00-13:00",
-      main: "Brainstorm with the team",
-      desc: "Define the problem or question",
+      main: "Design new UX flow from micheal",
+      desc: "Starts from screen 16",
     },
     {
       time: "10:00-13:00",
-      main: "Workout with Ella",
-      desc: "We will do the legs and backend workout",
+      main: "Design new UX flow from micheal",
+      desc: "Starts from screen 16",
     },
-  
+    {
+      time: "10:00-13:00",
+      main: "Design new UX flow from micheal",
+      desc: "Starts from screen 16",
+    },
   ];
 
   return (
-    <div className="mt-10 mx-4">
+    <div className="mt-10 mx-10">
       <div className="grid grid-cols-7 rounded-xl border">
         {days.map((day, idx) => {
           return (
@@ -37,15 +39,8 @@ function Matrix() {
         })}
         {i.map((num, index) => {
           return (
-            <div className="p-2 pb-1  border font-medium" key={index}>
+            <div className="p-2 pb-5 border" key={index}>
               {num % 32}
-              {(num === 4 || num === 5 || num === 31 || num === 8 || num === 14 || num === 17 || num === 27) && (
-                <div className="flex mt-1">
-                  <div className="bg-green-800  h-2 w-2 rounded-full mr-1"></div>
-                  <div className="bg-blue-900 h-2 w-2 rounded-full mr-1"></div>
-                  <div className="bg-blue-500 h-2 w-2 rounded-full mr-1"></div>
-                </div>
-              )}
             </div>
           );
         })}
@@ -65,11 +60,7 @@ function Matrix() {
         })}
       </div>
       <div className="flex justify-center align middle my-10  ">
-        <button className="mx-auto border-2 shadow-lg px-5 py-1.5 rounded-lg flex ">
-          View More
-          <MdKeyboardDoubleArrowDown className="mt-1 h-4 w-4" />
-
-        </button>
+        <button className="mx-auto border-2 shadow-lg px-5 py-1.5 rounded-lg">View More</button>
       </div>
     </div>
   );

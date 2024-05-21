@@ -10,8 +10,6 @@ import snapchat from "../../src/assests/images/KeyLogger/snapchat.png";
 import KeyLoggerHeader from "../components/KeyLogger/KeyLoggerHeader";
 import Button from "../components/Shared/Button";
 import More from "../assests/images/more.png";
-import Modal from "../components/Shared/Modal";
-import Upgrade from "../components/Shared/Upgrade"
 
 const keyloggerData = [
   [
@@ -24,20 +22,27 @@ const keyloggerData = [
     },
     {
       id: "2",
+      img: photos,
+      heading: "Photos",
+      subheading: "should we meet up tomorrow before classes?",
+      time: "08:58 AM",
+    },
+    {
+      id: "3",
       img: whatsapp,
       heading: "WhatsApp",
       subheading: "hey, how are you doing?",
       time: "08:44 AM",
     },
     {
-      id: "3",
+      id: "4",
       img: whatsapp,
       heading: "WhatsApp",
       subheading: "idk, maybe in an hour or so",
       time: "08:43 AM",
     },
     {
-      id: "4",
+      id: "5",
       img: Messenger,
       heading: "Messenger",
       subheading: "did she say anything to you? or dad?",
@@ -61,7 +66,7 @@ const keyloggerData = [
     },
     {
       id: "3",
-      img: google,
+      img: whatsapp,
       heading: "Chrome",
       subheading: "what is my ip address",
       time: "11:31 PM",
@@ -73,16 +78,25 @@ const keyloggerData = [
       subheading: "I thought you already talked to her",
       time: "11:28 PM",
     },
+    {
+      id: "5",
+      img: Messenger,
+      heading: "Twitter",
+      subheading: "Hey,Posting New Today",
+      time: "11:25 PM",
+    },
   ],
 ];
 
 function KeyLogger() {
+
   const viewMore = () => {
     //View More Logic Here
+
   };
   return (
     <div className="main ps-3 pe-3 pt-4">
-      <KeyLoggerHeader />
+      <KeyLoggerHeader    />
       {keyloggerData.map((keyloggerData, index) => (
         <div key={index} className="my-10">
           <Table className="border-[#DDDDDD] border-[1px] rounded-lg">
@@ -98,20 +112,13 @@ function KeyLogger() {
         </div>
       ))}
       <div className="flex justify-center mb-12">
-        <Modal>
-          <Modal.Toggle toggleName="viewMore-keylogger">
-            <Button
-              onClick={viewMore}
-              className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]  font-medium px-[32px]   py-[10px] text-[#101828] text-center"
-            >
-              View More
-              <img src={More} alt="more" className="ps-2" />
-            </Button>
-          </Modal.Toggle>
-          <Modal.Window windowName="viewMore-keylogger">
-            <Upgrade />
-          </Modal.Window>
-        </Modal>
+        <Button
+          onClick={viewMore}
+          className="text-[18px]   drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
+        >
+          View More
+          <img src={More} alt="more" className="ps-2" />
+        </Button>
       </div>
     </div>
   );
