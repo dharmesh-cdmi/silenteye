@@ -1,5 +1,10 @@
 import React from "react";
 import Switch from "../../../../UI/Switch";
+import { RiDualSim1Fill, RiDualSim2Fill } from "react-icons/ri";
+import { BsFillPencilFill } from "react-icons/bs";
+import Modal from "../../../Shared/Modal";
+import Upgrade from "../../../Shared/Upgrade";
+
 
 function Tabs() {
   return (
@@ -45,9 +50,28 @@ function Tabs() {
           <div className="flex justify-start flex-col">
             <p className="text-gray-500 text-sm">Default for Calls</p>
             <div className="grid grid-cols-3 bg-gray-300 h-10 rounded-lg cursor-pointer">
-              <div className="bg-green-600 rounded-lg m-1">
-                <img></img>
+              <Modal>
+                <Modal.Toggle toggleName="Update">
+              <div className="bg-green-600 rounded-lg m-1 flex justify-center items-center">
+                <RiDualSim1Fill className="w-7 h-7 " />
               </div>
+              </Modal.Toggle>
+
+              <Modal.Toggle toggleName="Update">
+
+              <div className="flex justify-center items-center">      
+                <RiDualSim2Fill className="w-7 h-7" />
+              </div>
+             </Modal.Toggle>
+             <Modal.Toggle toggleName="Update">
+              <div className="flex justify-center items-center">
+                <BsFillPencilFill className="w-6 h-6" />
+              </div>
+              </Modal.Toggle>
+              <Modal.Window windowName="Update">
+                      <Upgrade/>
+                    </Modal.Window>
+              </Modal>
             </div>
           </div>
         </div>
@@ -55,9 +79,22 @@ function Tabs() {
           <div className="flex justify-start flex-col">
             <p className="text-gray-500 text-sm">Default for Internet Data</p>
             <div className="grid grid-cols-2 bg-gray-300 h-10 rounded-lg cursor-pointer">
-              <div className="bg-green-600 rounded-lg m-1">
-                <img></img>
+              <Modal>
+            <Modal.Toggle toggleName="Update">
+              <div className="bg-green-600 rounded-lg m-1 flex justify-center">
+              <RiDualSim1Fill className="w-7 h-7 " />
+
               </div>
+              </Modal.Toggle>
+              <Modal.Toggle toggleName="Update">
+              <div className="flex justify-center items-center">
+                <RiDualSim2Fill className="w-7 h-7" />
+              </div>
+              </Modal.Toggle>
+              <Modal.Window windowName="Update">
+                      <Upgrade/>
+                    </Modal.Window>
+              </Modal>
             </div>
           </div>
         </div>

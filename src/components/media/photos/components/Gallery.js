@@ -1,27 +1,36 @@
 import React, { useState } from "react";
 
 import img from "../../../../assests/images/img.png";
+import ph1 from '../../../../assests/images/image 3.png'
+import ph2 from '../../../../assests/images/ph2.png'
+import ph3 from '../../../../assests/images/ph3.png'
+import ph4 from '../../../../assests/images/ph4.png'
+import ph5 from '../../../../assests/images/ph5.png'
+
 
 function Gallery() {
   const [backdrop, setBackdrop] = useState(false);
   const imgs = [
     { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph1, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph3, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph4, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph5, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
     { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph1, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph3, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph4, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph5, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
     { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph1, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph3, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph4, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph5, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ph1, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+   
   ];
   return (
     <>

@@ -4,6 +4,8 @@ import del from "../../../assests/images/delete.png";
 import gallery from "../../../assests/images/gallery.png";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FiUpload } from "react-icons/fi";
+import Upgrade from "../../Shared/Upgrade";
+import Modal from "../../Shared/Modal";
 
 function Image() {
   return (
@@ -21,9 +23,21 @@ function Image() {
           </div>
         </div>
         <div className="flex align-middle">
-          <img className="h-6 w-6 mt-5" src={del}></img>
-          <MdOutlineFileDownload className="h-6 w-6 mt-5 ml-2" />
-          <FiUpload className="h-6 w-6 mt-5 ml-2" />
+          <Modal>
+            <Modal.Toggle toggleName="Update">
+              <img className="h-6 w-6 mt-5 cursor-pointer" src={del}></img>
+            </Modal.Toggle>
+            <Modal.Toggle toggleName="Update">
+              <MdOutlineFileDownload className="h-6 w-6 mt-5 ml-2 cursor-pointer" />
+            </Modal.Toggle>
+
+            <Modal.Toggle toggleName="Update">
+              <FiUpload className="h-6 w-6 mt-5 ml-2 cursor-pointer" />
+            </Modal.Toggle>
+            <Modal.Window windowName="Update">
+              <Upgrade />
+            </Modal.Window>
+          </Modal>
         </div>
       </div>
       <div className="relative">
