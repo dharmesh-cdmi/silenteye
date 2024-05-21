@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import Select from "../../../src/components/Shared/Select";
+import ExportSelect from "../Shared/ExportSelect";
 import Check from "../Shared/Check";
 import Button from "../Shared/Button";
 import exporticon from "../../../src/assests/images/Export/export.png";
@@ -33,7 +33,7 @@ const ExportForm = () => {
       <div className="mb-4 ">
       <Modal>
         <Modal.Toggle toggleName="selectModule">
-        <Select
+        <ExportSelect
           label="Module"
           options={ModuleOptions}
           register={register("module")}
@@ -50,7 +50,7 @@ const ExportForm = () => {
       <div className="mb-4">
       <Modal>
         <Modal.Toggle toggleName="itemModule">
-        <Select
+        <ExportSelect
           label="Items"
           options={ItemsOptions}
           register={register("Items")}
@@ -63,11 +63,9 @@ const ExportForm = () => {
         </Modal.Window>
       </Modal>
 
-
-
       </div>
       <div className="mb-4">
-        <Select
+        <ExportSelect
           label="Format"
           options={CSVOptions}
           register={register("Format")}
