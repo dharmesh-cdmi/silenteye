@@ -20,32 +20,39 @@ const AllFilesHead = () => {
     <div className="Browser-nav flex justify-between align-middle">
     {/* nav left*/}
     <div className="Browser-nav-left flex justify-center align-bottom">
-         <button onClick={moveBacks} className="notNavLeftIcon shadow-[0px_0px_56px_0px_#00000014]"><FaArrowLeftLong /></button>
+         <button onClick={moveBacks} className="notNavLeftIcon shadow-lg"><FaArrowLeftLong /></button>
        <span>Files</span>
     </div>
    
     {/* nav right*/}
   <div className="Browser-nav-right flex justify-center items-center p-4">
       {/* Search */}
-      <span className="flex items-center BrowserNavRightSearch cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
+      <span className="flex items-center BrowserNavRightSearch cursor-pointer shadow-lg ">
         <IoIosSearch />
         <input type="text" placeholder="Search Browser" />
       </span>
 
       {/* Delete */}
-      <span className="flex items-center BrowserNavRightExportIcon cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
+      <span className="flex items-center BrowserNavRightExportIcon cursor-pointer shadow-lg ">
         <MdDeleteOutline className="text-red-600" />
         <span className="responsiveTitleHide">Delete</span>
       </span>
       
       {/* Export */}
-      <span className="flex items-center BrowserNavRightExportIcon cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
+          <Modal>
+           <Modal.Toggle toggleName="Upgrade">
+      <span className="flex items-center LocationNavRightExportIcon cursor-pointer shadow-lg ">
         <TbFileExport />
         <span className="responsiveTitleHide">Export</span>
       </span>
+         </Modal.Toggle>
+          <Modal.Window windowName="Upgrade">
+            <Upgrade />
+          </Modal.Window>
+          </Modal>
 
       {/* Filter */}
-      <span className="flex items-center BrowserNavRightFilterIcon cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
+      <span className="flex items-center BrowserNavRightFilterIcon cursor-pointer shadow-lg ">
         <IoFilterSharp />
         <span className="responsiveTitleHide">Filter</span>
       </span>
