@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import "./Notes.css"
+import "../../components/BrowserHead/BrowserHead.css"
 import {notesData} from "./Notes-data.js"
 import { IoFilterSharp } from "react-icons/io5";
 import { FaArrowLeftLong } from "react-icons/fa6";
@@ -9,7 +10,6 @@ import { IoIosSearch } from "react-icons/io";
 import { IoCreateOutline } from "react-icons/io5";
 import { MdDeleteOutline } from "react-icons/md";
 import PageExportBtn from '../../components/pageExportBtn/PageExportBtn.jsx';
-import React, { useState } from "react";
 import imgg from "../../assests/images/imgg.png";
 import Convo from "../../components/messages/components/Convo";
 import delet from "../../assests/images/delete.png";
@@ -20,8 +20,10 @@ import LocationHead from "../../UI/HeaderTab";
 
 import Upgrade from "../../components/Shared/Upgrade";
 import Modal from "../../components/Shared/Modal";
+import { useMoveBack } from "../../hooks/useMoveBack.js";
 
 function Messages() {
+  const moveBacks = useMoveBack();
   const [modal, setModal] = useState(false);
   const headerData = {
     location: "Messages",
@@ -59,7 +61,44 @@ function Messages() {
   ];
   return (
     <Card>
-      <LocationHead data={headerData} />
+   {/* NOTES HEADER */}
+    <div className="Browser-nav flex justify-between align-middle">
+    {/* nav left*/}
+    <div className="Browser-nav-left flex justify-center align-bottom">
+         <button onClick={moveBacks} className="notNavLeftIcon shadow-lg "><FaArrowLeftLong /></button>
+       <span>Notes</span>
+    </div>
+   
+    {/* nav right*/}
+  <div className="Browser-nav-right flex justify-center items-center p-4">
+      {/* Search */}
+      <span className="flex items-center BrowserNavRightSearch cursor-pointer shadow-lg ">
+        <IoIosSearch />
+        <input type="text" placeholder="Search Notes" />
+      </span>
+
+      {/* Export */}
+          <Modal>
+           <Modal.Toggle toggleName="Upgrade">
+      <span className="flex items-center LocationNavRightExportIcon cursor-pointer shadow-lg ">
+        <TbFileExport />
+        <span className="responsiveTitleHide">Export</span>
+      </span>
+         </Modal.Toggle>
+          <Modal.Window windowName="Upgrade">
+            <Upgrade />
+          </Modal.Window>
+          </Modal>
+
+      {/* Filter */}
+      <span className="flex items-center BrowserNavRightFilterIcon cursor-pointer shadow-lg ">
+        <IoFilterSharp />
+        <span className="responsiveTitleHide">Filter</span>
+      </span>
+    </div>
+    </div>
+    
+   {/* " <LocationHead data={headerData} /> */}
       <div className="grid lg:grid-cols-2 grid-cols-1 rounded-lg border-2 mx-4  border-gray-200 mt-10">
         <div className="">
           <p className="py-4 ps-3 font-semibold border-b-2 ">Recent Notes</p>
