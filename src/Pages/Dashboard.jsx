@@ -372,7 +372,7 @@ const Dashboard = () => {
                 />
         </div>
         <h6 className="text-[18px] weight-[500]">{data.name}</h6>
-        <p className="text-[##007AFF] text-[16px] weight-[500]">{data.status}</p>
+        <p className="text-[#007AFF] text-[16px] weight-[500]">{data.status}</p>
       </div>
     </div>
   ))}
