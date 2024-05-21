@@ -1,20 +1,11 @@
 import React, { useState } from "react";
 
-import { FaApple, FaRegImages, FaSignal, FaWifi } from "react-icons/fa";
-import { FiVideo } from "react-icons/fi";
-import { GrAppsRounded } from "react-icons/gr";
-import { IoDocumentTextOutline, IoMusicalNotesOutline } from "react-icons/io5";
-import { LuFolderOpenDot } from "react-icons/lu";
-import { TbGps } from "react-icons/tb";
-import { TiBatteryHigh } from "react-icons/ti";
-import {
-  VscCallOutgoing,
-  VscDiffAdded,
-  VscFolderLibrary,
-} from "react-icons/vsc";
+import { FaApple } from "react-icons/fa";
+
+import { VscCallOutgoing } from "react-icons/vsc";
 import InfoCard from "../components/Cards/InfoCard";
 import liveimg from "../assests/images/liveloca.png";
-import { MdPhoneCallback } from "react-icons/md";
+import { MdKeyboardDoubleArrowDown, MdPhoneCallback } from "react-icons/md";
 import { HiPhoneMissedCall } from "react-icons/hi";
 import YT from "../assests/images/yt.png";
 import crome from "../assests/images/crome.png";
@@ -41,10 +32,12 @@ import other from "../assests/images/dashboard/other.png";
 import video from "../assests/images/dashboard/video.png";
 import { CiMobile3 } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
-
+import Modal from "../components/Shared/Modal";
+import Upgrade from "../components/Shared/Upgrade";
+import Button from "../components/Shared/Button";
 
 const Dashboard = () => {
-  const [autoRenew,setAutoReNew]=useState(true)
+  const [autoRenew, setAutoReNew] = useState(true);
 
   const DashIcons = [
     {
@@ -207,7 +200,6 @@ const Dashboard = () => {
       msg: "Little brother, I'm lonely and I'm looking for company. My Telegram ID: Tindf202",
       time: "9:41 am",
     },
-  
   ];
   const MostUsedApp = [
     {
@@ -266,9 +258,6 @@ const Dashboard = () => {
       des: "New Office Table Available Now!",
       time: "9:10 AM",
     },
-   
-   
-    
   ];
   const RecentKeylogger = [
     {
@@ -301,8 +290,6 @@ const Dashboard = () => {
       des: "did she say anything to you? or dad?",
       time: "9:10 AM",
     },
-   
-    
   ];
   const RecentBrowserHistory = [
     {
@@ -335,51 +322,43 @@ const Dashboard = () => {
       des: "https://www.cymath.com",
       time: "9:10 AM",
     },
-   
-    
   ];
 
   return (
     <>
-
-    <div className="md:hidden flex justify-center mb-4">
-    <button
-            type="button"
-            class="text-gray-900  w-full gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700  mb-2"
-          >
-            <CiMobile3 />
-
-            Ashly's Device &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            <FaApple />
-            iPhone 11
-            <IoIosArrowDown className="flex justify-end" />
-
-            
-          </button>
-    </div>
-      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6  gap-8 md:gap-4 mx-2 md:mx-0 mb-8">
-  {DashIcons.map((data, i) => (
-    <div
-      className="flex items-center justify-center text-center mb-6"
-      key={i}
-    >
-      <div className="m-auto cursor-pointer">
-        <div className="flex items-center justify-center">
-        <img
-                  className="w-8 h-8  m-auto"
-                  src={data.icon}
-                  alt
-                />
-        </div>
-        <h6 className="text-[18px] weight-[500]">{data.name}</h6>
-        <p className="text-[#007AFF] text-[16px] weight-[500]">{data.status}</p>
+      <div className="md:hidden flex justify-center mb-4">
+        <button
+          type="button"
+          class="text-gray-900  w-full gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700  mb-2"
+        >
+          <CiMobile3 />
+          Ashly's Device &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <FaApple />
+          iPhone 11
+          <IoIosArrowDown className="flex justify-end" />
+        </button>
       </div>
-    </div>
-  ))}
-</div>
+      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6  gap-8 md:gap-4 mx-2 md:mx-0 mb-8">
+        {DashIcons.map((data, i) => (
+          <div
+            className="flex items-center justify-center text-center mb-6"
+            key={i}
+          >
+            <div className="m-auto cursor-pointer">
+              <div className="flex items-center justify-center">
+                <img className="w-8 h-8  m-auto" src={data.icon} alt />
+              </div>
+              <h6 className="text-[18px] weight-[500]">{data.name}</h6>
+              <p className="text-[#007AFF] text-[16px] weight-[500]">
+                {data.status}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8  mx:m-0 ">
-        <InfoCard title="Device Info"  className="mb-5 md:mb-0">
+        <InfoCard title="Device Info" className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
               <ul key={i} className="grid grid-cols-2 liborder ">
@@ -400,33 +379,35 @@ const Dashboard = () => {
             <img src={liveimg} alt="img" className="object-cover h-52 w-96" />
           </div>
         </InfoCard>
-        <InfoCard title="Account Info "  className="mb-5 md:mb-0">
+        <InfoCard title="Account Info " className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
-           
-              <ul  className="grid grid-cols-2 place-content-between ">
-                <li className="py-3 px-2 font-medium liborder">Membership</li>
-                <li className="py-3 text-[#172A6E] font-semibold liborder text-end me-2">
-                  Premium
-                </li>
-                <li className="py-3 px-2 font-medium liborder">Duration</li>
-                <li className="py-3 text-[#172A6E] liborder font-semibold text-end me-2">
-                  Yearly
-                </li>
-                <li className="p-1 px-2 font-medium liborder mt-2">Auto Renew</li>
-                <li className="p-1 text-[#172A6E] liborder font-semibold text-end me-2">
+            <ul className="grid grid-cols-2 place-content-between ">
+              <li className="py-3 px-2 font-medium liborder">Membership</li>
+              <li className="py-3 text-[#172A6E] font-semibold liborder text-end me-2">
+                Premium
+              </li>
+              <li className="py-3 px-2 font-medium liborder">Duration</li>
+              <li className="py-3 text-[#172A6E] liborder font-semibold text-end me-2">
+                Yearly
+              </li>
+              <li className="p-1 px-2 font-medium liborder mt-2">Auto Renew</li>
+              <li className="p-1 text-[#172A6E] liborder font-semibold text-end me-2">
                 <label className="toggle-switch mt-1">
-                  <input type="checkbox" value={autoRenew} onChange={()=>setAutoReNew(!autoRenew)} />
+                  <input
+                    type="checkbox"
+                    value={autoRenew}
+                    onChange={() => setAutoReNew(!autoRenew)}
+                  />
                   <div className="toggle-switch-background">
                     <div className="toggle-switch-handle" />
                   </div>
                 </label>
-                </li>
-                <li className="py-3 px-2 font-medium liborder">Expiry Date</li>
-                <li className="py-3 text-[#172A6E] liborder font-semibold text-end me-2">
-                  Dec 28,2024 2:28
-                </li>
-              </ul>
-           
+              </li>
+              <li className="py-3 px-2 font-medium liborder">Expiry Date</li>
+              <li className="py-3 text-[#172A6E] liborder font-semibold text-end me-2">
+                Dec 28,2024 2:28
+              </li>
+            </ul>
           </div>
         </InfoCard>
       </div>
@@ -447,8 +428,10 @@ const Dashboard = () => {
                 />
               </li>
               <li className="p-1 flex-1 w-64 font-semibold">
-                <div >
-                  <p className="text-[16px] md:text-[18px] lg:text-[18px] xl:text-[24px] weight-[500]">{info.name}</p>
+                <div>
+                  <p className="text-[16px] md:text-[18px] lg:text-[18px] xl:text-[24px] weight-[500]">
+                    {info.name}
+                  </p>
                   <div
                     className={`${
                       info.callStatus == "outgoing" && "text-gray-400"
@@ -457,7 +440,9 @@ const Dashboard = () => {
                     } flex `}
                   >
                     <p className="my-auto ">{info.callIcon}</p>
-                    <p className="ps-1 text-[17px]  weight-[500]">{info.callStatus}</p>
+                    <p className="ps-1 text-[17px]  weight-[500]">
+                      {info.callStatus}
+                    </p>
                   </div>
                 </div>
               </li>
@@ -483,13 +468,15 @@ const Dashboard = () => {
               </li>
               <li className="p-1 flex-1 w-64 font-semibold">
                 <div>
-                <p className="text-[16px] md:text-[18px] lg:text-[18px] xl:text-[24px] weight-[500]">{info.name}</p>
+                  <p className="text-[16px] md:text-[18px] lg:text-[18px] xl:text-[24px] weight-[500]">
+                    {info.name}
+                  </p>
 
                   <p className="ps-1 text-gray-400 lg:hidden xl:block text-[17px] weight-[500] ">
                     {info.msg.slice(0, 50)}..
                   </p>
                   <p className="ps-1 text-gray-400 lg:block hidden xl:hidden 2xl:hidden text-[17px] weight-[500] ">
-                    {info.msg.slice(0,20)}..
+                    {info.msg.slice(0, 20)}..
                   </p>
                 </div>
               </li>
@@ -517,15 +504,25 @@ const Dashboard = () => {
               <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-blue-500">
                 Productivity & Finance
               </h1>
-              <h1 className=" lg:text-xl md:text-lg text-base font-medium">10h 49m</h1>
+              <h1 className=" lg:text-xl md:text-lg text-base font-medium">
+                10h 49m
+              </h1>
             </div>
             <div>
-              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-cyan-600">Other</h1>
-              <h1 className=" lg:text-xl md:text-lg text-base font-medium ">8h 32m</h1>
+              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-cyan-600">
+                Other
+              </h1>
+              <h1 className=" lg:text-xl md:text-lg text-base font-medium ">
+                8h 32m
+              </h1>
             </div>
             <div>
-              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-orange-700">Social</h1>
-              <h1 className=" lg:text-xl md:text-lg text-base font-medium ">5h 44m</h1>
+              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-orange-700">
+                Social
+              </h1>
+              <h1 className=" lg:text-xl md:text-lg text-base font-medium ">
+                5h 44m
+              </h1>
             </div>
           </div>
         </div>
@@ -565,32 +562,27 @@ const Dashboard = () => {
         </InfoCard>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
-      <InfoCard
+        <InfoCard
           title="Recent Alert & Notifications"
           titleRight={<p className="text-blue-400">See All</p>}
           className="mb-5 md:mb-0"
         >
-          <div >
+          <div>
             {RecentAlert.map((info, i) => (
               <div className="border-b border-slate-300">
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
-                    <img
-                      className="w-5 h-5 "
-                      src={info.img}
-                      alt="logo"
-                    />
+                    <img className="w-5 h-5 " src={info.img} alt="logo" />
                   </li>
                   <li className="p-1 flex-1 w-64 font-semibold text-xl  text-gray-900 border-none">
-                    <div>{info.name.slice(0,20)}</div>
+                    <div>{info.name.slice(0, 20)}</div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold  text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
-                
+
                 <p className="text-sm pb-2 text-gray-400">{info.des}</p>
-                
               </div>
             ))}
           </div>
@@ -600,28 +592,22 @@ const Dashboard = () => {
           titleRight={<p className="text-blue-400">See All</p>}
           className="mb-5 md:mb-0"
         >
-          <div >
+          <div>
             {RecentKeylogger.map((info, i) => (
               <div className="border-b border-slate-300">
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
-                    <img
-                      className="w-5 h-5 "
-                      src={info.img}
-                      alt="logo"
-                    />
+                    <img className="w-5 h-5 " src={info.img} alt="logo" />
                   </li>
                   <li className="p-1 flex-1 w-64 font-semibold text-xl  text-gray-900 border-none">
-                  <div>{info.name.slice(0,25)}</div>
-
+                    <div>{info.name.slice(0, 25)}</div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
-                
+
                 <p className="text-sm pb-2 text-gray-400">{info.des}</p>
-                
               </div>
             ))}
           </div>
@@ -631,32 +617,39 @@ const Dashboard = () => {
           titleRight={<p className="text-blue-400">See All</p>}
           className="mb-5 md:mb-0"
         >
-          <div >
+          <div>
             {RecentBrowserHistory.map((info, i) => (
               <div className="border-b border-slate-300">
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
-                    <img
-                      className="w-5 h-5 "
-                      src={info.img}
-                      alt="logo"
-                    />
+                    <img className="w-5 h-5 " src={info.img} alt="logo" />
                   </li>
                   <li className="p-1 flex-1 w-64 font-semibold text-xl  text-gray-900 border-none">
-                  <div>{info.name.slice(0,25)}</div>
-
+                    <div>{info.name.slice(0, 25)}</div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
-                
+
                 <p className="text-sm pb-2 text-gray-400">{info.des}</p>
-                
               </div>
             ))}
           </div>
         </InfoCard>
+      </div>
+      <div className="flex justify-center mb-12">
+        <Modal>
+          <Modal.Toggle toggleName="viewMore-keylogger">
+            <Button className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium px-[32px]  py-[10px] text-[#101828] text-center">
+              View More
+              <MdKeyboardDoubleArrowDown size={18} />
+            </Button>
+          </Modal.Toggle>
+          <Modal.Window windowName="viewMore-keylogger">
+            <Upgrade />
+          </Modal.Window>
+        </Modal>
       </div>
     </>
   );
