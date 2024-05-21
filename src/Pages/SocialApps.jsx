@@ -27,9 +27,6 @@ import messenger from "../../src/assests/images/SocialApps/messenger.png";
 import SocialApp from "../components/SocialApps/SocialApp";
 import Button from "../components/Shared/Button";
 import More from "../assests/images/more.png";
-import Modal from "../components/Shared/Modal";
-import Upgrade from "../components/Shared/Upgrade";
-
 
 const SocialAppsData = [
   {
@@ -179,9 +176,9 @@ const SocialAppsData = [
   },
 ];
 const SocialApps = () => {
-  const viewMore = () => {
-    //View More Logic Here
-  };
+    const viewMore = () => {
+        //View More Logic Here
+    };
 
   return (
     <div className="main ps-3 pe-3 pt-4">
@@ -194,20 +191,13 @@ const SocialApps = () => {
         ))}
       </ul>
       <div className="flex justify-center mt-12 mb-12">
-        <Modal>
-          <Modal.Toggle toggleName="viewMore-keylogger">
-            <Button
-              onClick={viewMore}
-              className="text-[18px]   shadow-[0px_0px_56px_0px_#00000014]   font-medium px-[32px]   py-[10px] text-[#101828] text-center"
-            >
-              View More
-              <img src={More} alt="more" className="ps-2" />
-            </Button>
-          </Modal.Toggle>
-          <Modal.Window windowName="viewMore-keylogger">
-            <Upgrade />
-          </Modal.Window>
-        </Modal>
+        <Button
+          onClick={viewMore}
+          className="text-[18px]   drop-shadow-3xl  font-medium px-[32px] custom-shadow  py-[10px] text-[#101828] text-center"
+        >
+          View More
+          <img src={More} alt="more" className="ps-2" />
+        </Button>
       </div>
     </div>
   );

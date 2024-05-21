@@ -28,7 +28,7 @@ function Gallery() {
     <div className="mt-10">
       <p className="py-7 text-gray-500 text-center text-xs">Today 8:02 AM</p>
 
-      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-2 mx-5 lg:mt-10 mt-20 ">
+      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-10 mx-5 lg:mt-10 mt-20 ">
         {imgs.map((img, index) => {
           return (
             <div className="flex flex-col justify-center" key={index}>

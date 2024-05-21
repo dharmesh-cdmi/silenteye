@@ -7,7 +7,7 @@ import { IoFilterSharp } from "react-icons/io5";
 
 const LocationHead = (props) => {
   return (
-    <div className="Location-nav flex justify-between align-middle ">
+    <div className="Location-nav flex justify-between align-middle lg:mx-10 mx-2 mt-28">
       <div className="Location-nav-left flex justify-center align-bottom">
         <button className="notNavLeftIcon border-2 p-2 rounded-md shadow-lg">
           <IoIosArrowRoundBack />
