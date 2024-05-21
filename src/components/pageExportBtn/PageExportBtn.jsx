@@ -1,9 +1,8 @@
 import {Link} from "react-router-dom"
 import  { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import "./PageExportBtn.css"
-
-import Modal from "../../components/Shared/Modal.jsx"
-import Upgrade from "../../components/Shared/Upgrade";
+import Modal from "../Shared/Modal";
+import Upgrade from "../Shared/Upgrade";
 
 const PageExportBtn=()=>{
   return(

@@ -14,16 +14,16 @@ const ScreenTime =()=>{
     <>
     <BrowserHead />
     
-    <section className="screenTimeWrapper flex">
+    <section className="grid md:grid-cols-2 grid-cols-1 gap-7 mx-10">
     {/* LEFT SECTION */}
-    <div className="screenTimeLeft flex">
-    <img src={ScreenTimeImage} />
+    <div className="flex">
+    <img src={ScreenTimeImage} className='h-96 w-96' />
     </div>
     
     {/* RIGHT SECTION */}
-    <div className="screenTimeRight flex flex-col">
-    <h3>Recent Most Used Apps</h3>
-    <img src={DataUsageImage} />
+    <div className=" border-2 rounded-xl flex flex-col">
+    <h3 className='text-sm p-2 text-slate-500'>Recent Most Used Apps</h3>
+    <img src={DataUsageImage} className='h-72 ' />
     </div>
     
     </section>

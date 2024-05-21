@@ -1,7 +1,9 @@
-import {useState} from "react"
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useMoveBack } from "../../hooks/useMoveBack.js";
-import "./AllFilesHead.css"
+import "./AllFilesHead.css";
+import Modal from "../Shared/Modal.jsx";
+import Upgrade from "../Shared/Upgrade.jsx";
 
 import { IoFilterSharp } from "react-icons/io5";
 import { FaArrowLeftLong } from "react-icons/fa6";
@@ -10,11 +12,11 @@ import { TbFileExport } from "react-icons/tb";
 import { IoIosSearch } from "react-icons/io";
 
 // FILES
-import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx"
+import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx";
 
-const AllFilesHead=()=>{
-const moveBacks = useMoveBack();
-  return(
+const AllFilesHead = () => {
+  const moveBacks = useMoveBack();
+  return (
     <div className="Browser-nav flex justify-between align-middle">
     {/* nav left*/}
     <div className="Browser-nav-left flex justify-center align-bottom">
@@ -49,7 +51,7 @@ const moveBacks = useMoveBack();
       </span>
     </div>
     </div>
-    )
-}
+  );
+};
 
 export default AllFilesHead;

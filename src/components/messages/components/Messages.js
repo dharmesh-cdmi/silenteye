@@ -70,7 +70,7 @@ function Messages() {
             <h3 className="font-bold text-xl text-nowrap ">Riyah Zoik</h3>
             <p className="text-slate-500 text-nowrap">(480) 555-0109</p>
           </div>
-          <div className="flex justify-end align-middle ml-60 mt-5">
+          <div className="flex justify-end align-middle lg:ml-60 ml-20 mt-5">
           <Modal>
             <Modal.Toggle toggleName="Update">
             <img src={man} className="h-5 w-5 mr-3 cursor-pointer" onClick={()=>setModal(true)}></img>

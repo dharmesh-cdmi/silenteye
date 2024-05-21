@@ -13,15 +13,15 @@
     padding: 1rem;
     /*  border: 1px solid red; */
 }
-fileBoxicon img {
-    width: 70px;
+.fileBoxicon img {
+    width: 40px;
 }
 @media only screen and (max-width: 767px) {
     /* Styles for mobile devices */
 
     /* APPS CONTAINERS */
     .appsComponentsCon {
-        gap: 0.5rem;
+        gap: 0.3rem;
         justify-content: center;
         margin-top: 1rem;
     }
@@ -34,7 +34,7 @@ fileBoxicon img {
         /*  border: 1px solid red; */
     }
     .fileBoxicon img {
-        width: 70px;
+        width: 40px;
     }
     .fileBoxDes h3 {
         font-size: 0.8rem;

@@ -14,13 +14,13 @@
 }
 .webFilterHeader h3{
   color: red;
-  font-size: 1.2rem; 
+  /* font-size: 0.3rem;  */
   font-weight: 500;
 }
 .webFilterHeader button{
-background-color: #333;
+background-color: #1f1057;
 color: #fff;
-font-size: 1.5rem;
+font-size: 1rem;
 padding: 10px;
 border-radius: 10px;
 }

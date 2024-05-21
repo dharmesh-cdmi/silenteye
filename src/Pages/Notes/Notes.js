@@ -9,109 +9,165 @@ import { IoIosSearch } from "react-icons/io";
 import { IoCreateOutline } from "react-icons/io5";
 import { MdDeleteOutline } from "react-icons/md";
 import PageExportBtn from '../../components/pageExportBtn/PageExportBtn.jsx';
+import React, { useState } from "react";
+import imgg from "../../assests/images/imgg.png";
+import Convo from "../../components/messages/components/Convo";
+import delet from "../../assests/images/delete.png";
+import man from "../../assests/images/man.png";
+import Tabs from "../../components/messages/components/Tabs";
+import Card from "../../UI/Card";
+import LocationHead from "../../UI/HeaderTab";
 
+import Upgrade from "../../components/Shared/Upgrade";
+import Modal from "../../components/Shared/Modal";
 
-const Notes = () => {
-  const [data, setData]=useState("");
-  const [selectedData, setSelectedData]=useState("");
+function Messages() {
+  const [modal, setModal] = useState(false);
+  const headerData = {
+    location: "Messages",
+    placeHolder: "Search by Name or Phone Number",
+  };
+
+  const msgData = [
+    {
+      name: "Recent Rally",
+      text: "We are going to rally on saturday...",
+
+      active: true,
+    },
+    {
+      name: "Hawaii",
+      text: "Things to bring, I am lonely and I amm looking for compa...",
+    },
+    {
+      name: "Bike Wish List",
+      text: "Little brother, I am lonely and I amm looking for compa...",
+    },
+    {
+      name: "Hawaii",
+      text: "Things to bring, I am lonely and I amm looking for compa...",
+    },
+    {
+      name: "Bike Wish List",
+      text: "Little brother, I am lonely and I amm looking for compa...",
+    },
+    {
+      name: "Bike Wish List",
+      text: "Little brother, I am lonely and I amm looking for compa...",
+    },
   
-  const selecteData =(i)=>{
-    setSelectedData(notesData[i])
-  }
-  
+  ];
   return (
-    <div className="notes-wrapper">
-    <div className="notes-container flex flex-col justify-center align-middle ">
-   
-       {/* Navigations, search*/}
-    <div className="notes-nav flex justify-between align-middle">
-    {/* nav left*/}
-    <div className="notes-nav-left flex justify-center align-bottom">
-         <button className="notNavLeftIcon"><FaArrowLeftLong /></button>
-       <span>Notes</span>
-    </div>
-   
-    {/* nav right*/}
-  <div className="notes-nav-right flex justify-center items-center p-4">
-      {/* Search */}
-      <span className="flex items-center noteNavRightSearch cursor-pointer">
-        <IoIosSearch />
-        <input type="text" placeholder="Search Notes" />
-      </span>
-
-      {/* Export */}
-      <span className="flex items-center noteNavRightExportIcon cursor-pointer">
-        <TbFileExport />
-        <span className="responsiveTitleHide">Export</span>
-      </span>
-
-      {/* Filter */}
-      <span className="flex items-center noteNavRightFilterIcon cursor-pointer">
-        <IoFilterSharp />
-        <span className="responsiveTitleHide">Filter</span>
-      </span>
-    </div>
-    </div>
-    
-    {/* notes components container */}
-    <div className="notes-compCon flex justify-center align-middle ">
-    {/* notes components left */}
-    <div className="notes-compCon-left flex flex-col">
-
-    <div className="notCompLeftHeader flex flex-col justify-center align-middle  p-4">
-       Recente Notes
-    </div>
-    {notesData.length > 0 ?
-    notesData.map((v ,i)=>(
-        <div className="notCompLeftCols flex  justify-between align-middle  p-4" key={i} onClick={(e)=>selecteData(i)}>
-    <div className="notCompLeftColsDes">
-       <h3>{v.title}</h3>
-       <p>{v.description.length > 25 ? v.description.substr(0, 25) + " ..." : ""}</p>
-    </div>
-       <span>{v.date}</span>
-    </div>
-      ))
-    :(
-      <h3>No data Found</h3>
-      )}
-
-    </div>
-    {/* notes components right */}
-    <div className="notes-compCon-right flex flex-col justify-center align-middle ">
-    
-        <div className="notCompRightHeader flex  justify-center align-middle p-4">
-        {selectedData &&(
-    <div className="notCompRightHeaderDes">
-       <h3>{selectedData.title}</h3>
-       <p>craeted: {selectedData.date}</p>
-    </div>
-          )}
-       <span className="notCompRightHeaderDesIcons flex">
-       <IoCreateOutline className="cursor-pointer" />
-       <MdDeleteOutline className="NoteDeleteIconBin cursor-pointer" />
-       </span>
-    </div>
-    
-    {selectedData && (
-        <div className="notDescriptionCon flex flex-col p-4">
-    <div className="notDescriptionTitle flex">
-    <p>last edited : {selectedData.date}</p>
-    </div>
-    <div className="notDescription flex flex-col">
-    <h3>{selectedData.title}</h3>
-    <p>{selectedData.description}</p>
-    </div>
-    </div>
-      )}
-    
-    </div>
-    </div>
-    
-<PageExportBtn />
-
-    </div>
-    </div>
-  )
+    <Card>
+      <LocationHead data={headerData} />
+      <div className="grid lg:grid-cols-2 grid-cols-1 rounded-lg border-2 mx-4  border-gray-200 mt-10">
+        <div className="">
+          <p className="py-4 ps-3 font-semibold border-b-2 ">Recent Notes</p>
+          {msgData.map((msg, index) => {
+            return (
+              <Modal>
+                <Modal.Toggle toggleName="Update">
+                  <div
+                    className={` ${
+                      msg.active ? "bg-gray-200" : ""
+                    } flex py-4 border-b-2 cursor-pointer `}
+                  >
+                    <div className="flex align-middle flex-col px-3">
+                      <h3 className="font-semibold">{msg.name}</h3>
+                      <p className="">{msg.text}</p>
+                    </div>
+                    <p className="text-gray-500 text-end mt-4">9:41 PM</p>
+                  </div>
+                </Modal.Toggle>
+                <Modal.Window windowName="Update">
+                  <Upgrade />
+                </Modal.Window>
+              </Modal>
+            );
+          })}
+        </div>
+        <div className="border-l-2 ">
+          <div className="border-b-2 flex py-3 ps-3 align-middle  ">
+            <div className="ml-3">
+              <h3 className="font-bold text-xl text-nowrap ">Mode Of Transportation</h3>
+              <p className="text-slate-500 text-nowrap">Created:Yesterday 8:23 AM</p>
+            </div>
+            <div className="flex justify-end align-middle ml-44 mt-5">
+              <Modal>
+                <Modal.Toggle toggleName="Update">
+                  <img
+                    src={man}
+                    className="h-5 w-5 mr-3 cursor-pointer"
+                    onClick={() => setModal(true)}
+                  ></img>
+                </Modal.Toggle>
+                <Modal.Toggle toggleName="Update">
+                  <img
+                    src={delet}
+                    className="h-5 w-5 cursor-pointer"
+                    onClick={() => setModal(true)}
+                  ></img>
+                </Modal.Toggle>
+                <Modal.Window windowName="Update">
+                  <Upgrade />
+                </Modal.Window>
+              </Modal>
+            </div>
+          </div>
+          <>
+      <div className="text-center text-slate-500 text-sm">Last Edit: Yesterday 8:23 AM</div>
+      <div className="px-2 mt-3">
+        <div className=" ">
+          <div className="text-black     rounded-xl w-56 px-4 font-bold text-xl text-nowrap">
+          Mode Of Transportation
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          We are going to rally on saturday
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          Items to prepare
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          We are going to rally on saturday
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          We are going to rally on saturday
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          We are going to rally on saturday
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          We are going to rally on saturday
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          We are going to rally on saturday
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          We are going to rally on saturday
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          We are going to rally on saturday
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          We are going to rally on saturday
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          We are going to rally on saturday
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
+          We are going to rally on saturday
+          </div>
+          <div className="text-black     rounded-xl w-56 px-4 font-bold text-xl text-nowrap">
+          </div>
+         
+     
+        </div>
+      </div>
+    </>
+        </div>
+      </div>
+    </Card>
+  );
 }
 
-export default Notes
+export default Messages;

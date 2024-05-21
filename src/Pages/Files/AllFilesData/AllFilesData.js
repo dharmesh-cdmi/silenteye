@@ -46,58 +46,6 @@ export const AllFilesData = [
     size: "75 items",
     icon: <img src={file1} alt="Music" />,
   },
-  {
-    id: 8,
-    title: "Videos",
-    size: "40 items",
-    icon: <img src={file1} alt="Videos" />,
-  },
-  {
-    id: 9,
-    title: "Archives",
-    size: "30 items",
-    icon: <img src={file1} alt="Archives" />,
-  },
-  {
-    id: 10,
-    title: "Projects",
-    size: "85 items",
-    icon: <img src={file1} alt="Projects" />,
-  },
-  {
-    id: 11,
-    title: "Reports",
-    size: "60 items",
-    icon: <img src={file1} alt="Reports" />,
-  },
-  {
-    id: 12,
-    title: "Backups",
-    size: "25 items",
-    icon: <img src={file1} alt="Backups" />,
-  },
-  {
-    id: 13,
-    title: "Shared",
-    size: "110 items",
-    icon: <img src={file1} alt="Shared" />,
-  },
-  {
-    id: 14,
-    title: "Favorites",
-    size: "45 items",
-    icon: <img src={file1} alt="Favorites" />,
-  },
-  {
-    id: 15,
-    title: "Templates",
-    size: "70 items",
-    icon: <img src={file1} alt="Templates" />,
-  },
-  {
-    id: 16,
-    title: "Trash",
-    size: "10 items",
-    icon: <img src={file1} alt="Trash" />,
-  },
+
+
 ];
