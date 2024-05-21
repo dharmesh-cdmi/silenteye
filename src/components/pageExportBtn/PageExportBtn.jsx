@@ -12,7 +12,7 @@ const PageExportBtn=()=>{
             <Modal>
           <Modal.Toggle toggleName="viewMore-keylogger">
    
-           <div className="notesViewMoreCon flex justify-center">
+           <div className="notesViewMoreCon flex justify-center shadow-[0px_0px_56px_0px_#00000014] ">
     <button className="flex justify-center">View More <MdOutlineKeyboardDoubleArrowDown /></button>
     </div>
             
