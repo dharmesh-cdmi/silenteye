@@ -16,26 +16,26 @@ const moveBacks = useMoveBack();
     <div className="Location-nav flex justify-between align-middle">
     {/* nav left*/}
     <div className="Location-nav-left flex justify-center align-bottom">
-         <button onClick={moveBacks} className="notNavLeftIcon"><FaArrowLeftLong /></button>
+         <button onClick={moveBacks} className="notNavLeftIcon shadow-[0px_0px_56px_0px_#00000014] "><FaArrowLeftLong /></button>
        <span>Location</span>
     </div>
    
     {/* nav right*/}
   <div className="Location-nav-right flex justify-center items-center p-4">
       {/* Search */}
-      <span className="flex items-center LocationNavRightSearch cursor-pointer">
+      <span className="flex items-center LocationNavRightSearch cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
         <IoIosSearch />
         <input type="text" placeholder="Search Location" />
       </span>
 
       {/* Export */}
-      <span className="flex items-center LocationNavRightExportIcon cursor-pointer">
+      <span className="flex items-center LocationNavRightExportIcon cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
         <TbFileExport />
         <span className="responsiveTitleHide">Export</span>
       </span>
 
       {/* Filter */}
-      <span className="flex items-center LocationNavRightFilterIcon cursor-pointer">
+      <span className="flex items-center LocationNavRightFilterIcon cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
         <IoFilterSharp />
         <span className="responsiveTitleHide">Filter</span>
       </span>
