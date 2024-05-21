@@ -2,6 +2,9 @@ import React from "react";
 import del from '../../../assests/images/delete.png'
 import { FaWifi } from "react-icons/fa6";
 import chrome from '.././../../assests/images/crome.png'
+import Modal from "../../Shared/Modal";
+import Upgrade from "../../Shared/Upgrade";
+
 
 
 function DataTable() {
@@ -75,6 +78,7 @@ function DataTable() {
       {contents.map((content, index) => {
         return (
           <>
+          <Modal>
             <div className="flex py-4">
               <FaWifi className="h-5 w-5 ml-3 mt-1"/>
               <h3 className="font-semibold ml-2">Home 5G</h3>
@@ -92,9 +96,15 @@ function DataTable() {
             <div className="flex justify-center py-4">
                 <p className="">{content.longitude}</p>
             </div>
-            <div className="flex justify-center py-4">
+            <Modal.Toggle toggleName="Update">
+            <div className="flex justify-center py-4 cursor-pointer">
                 <img className="h-8 w-8" src={del} ></img>
             </div>
+            </Modal.Toggle>
+            <Modal.Window windowName="Update">
+                      <Upgrade/>
+                    </Modal.Window>
+              </Modal>
           </>
         );
       })}
