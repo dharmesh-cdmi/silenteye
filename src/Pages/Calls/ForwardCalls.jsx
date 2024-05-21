@@ -139,7 +139,7 @@ const ForwardCalls = () => {
         </div>
       </div>
 
-      <div className="relative overflow-x-auto shadow-md rounded-lg border ">
+      <div className=" overflow-x-auto shadow-md rounded-lg border ">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase border-b ">
             <tr>

@@ -6,7 +6,7 @@ export default function InfoCard(props) {
               <h2 className=" text-slate-400  ">
                   {title}
               </h2>
-              <div className="text-blue-600 ">{titleRight}</div>
+              <div className="text-[#007AFF] ">{titleRight}</div>
           </div>
           <div className="rounded-lg py-1 text-[18px] weight-[500]">
                {children}

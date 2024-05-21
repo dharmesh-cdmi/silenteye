@@ -7,16 +7,17 @@ import { useState } from "react";
 function RootLayout() {
   let isTabletMid = useMediaQuery({ query: "(max-width: 768px)" });
   const [open, setOpen] = useState(isTabletMid ? false : true);
+  
   return (
     <div className="flex gap-0">
       <Sidebar open={open} setOpen={setOpen} isTabletMid={isTabletMid}/>   
       
       
       
-      <main className={`fullfill bg-white   ${open ? 'sm:ml-0 md:ml-[248px]' : 'sm:ml-0 md:ml-[57px]'} overflow-y-auto h-screen` }>
-      <Navbar open={open} setOpen={setOpen} isTabletMid={isTabletMid}/>  
+      <main className={`fullfill bg-white   ${open ? 'sm:ml-0 md:ml-[256px]' : 'sm:ml-0 md:ml-[57px]'} overflow-y-auto h-screen` }>
       <Alert/>
-      <div className="max-w-5xl flex-1 md:mx-auto py-0 md:py-4 mt-24 md:mt-32 mx-2 ">
+      <Navbar open={open} setOpen={setOpen} isTabletMid={isTabletMid}/>  
+      <div className=" flex-1 md:mx-auto py-0 md:py-4 mt-24 md:mt-32 mx-2 md:p-10">
       <Outlet />
       </div>
         

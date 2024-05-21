@@ -5,7 +5,7 @@ import diamond2 from "../../assests/images/image2.png"
 
 export function BuyNow2({ onCloseModal }){
   return (
-    <div className="max-w-[22rem] h-[24rem]">
+    <div className="max-w-[22rem] ">
     <div className="border-b-[#DDDDDD] px-[16px] py-[12px]    border-b-[1px]">
       <h1 className="text-[22px] font-[600] text-[#000000]">
         Buy Now !
@@ -39,7 +39,7 @@ export function BuyNow2({ onCloseModal }){
 
 const BuyNow = ({ onCloseModal }) => {
   return (
-    <div className="max-w-xl h-[15rem]">
+    <div className="max-w-xl">
     <div className="border-b-[#DDDDDD] px-[16px] py-[12px]    border-b-[1px]">
       <h1 className="text-[22px] font-[600] text-[#000000]">
         Buy Now !
@@ -61,6 +61,7 @@ const BuyNow = ({ onCloseModal }) => {
       <img src={diamond} alt="diamond" className="pe-2"/>
           Buy Now
       </Button>
+   
       </div>
     </div>
   </div>
