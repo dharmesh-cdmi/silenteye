@@ -56,39 +56,39 @@ const AppsRoutesHeader = () => {
       </div>
       </Modal>
 
-      <div className="grid lg:grid-cols-4 grid-cols- border-2 rounded-xl">
+      <div className="grid lg:grid-cols-4 grid-cols-4 border-2 rounded-xl">
         <Link to="/apps/allapps">
-          <div className="mx-3 my-1 border-r-2 ">
+          <div className="md:mx-3 mx-1 my-1 border-r-2 ">
             <div className=" flex flex-col justify-center">
-              <h3 className="font-semibold text-md">All Apps</h3>
-              <p>134 Apps</p>
+              <h3 className="font-semibold md:text-base text-xs">All Apps</h3>
+              <p className="md:text-base text-xs">134 Apps</p>
             </div>
           </div>
         </Link>
 
         <Link to="/apps/installedapp">
-          <div className=" mx-3 my-1 border-r-2">
+          <div className=" md:mx-3 mx-1 my-1 border-r-2">
             <div className=" flex flex-col justify-center">
-              <h3 className="font-semibold text-md">Installed Apps</h3>
-              <p>120 Apps</p>
+              <h3 className="font-semibold md:text-base text-xs">Installed Apps</h3>
+              <p className="md:text-base text-xs">120 Apps</p>
             </div>
           </div>
         </Link>
 
         <Link to="/apps/uninstalledapp">
-          <div className="mx-3 my-1 border-r-2">
+          <div className="md:mx-3 mx-1 my-1 border-r-2">
             <div className=" flex flex-col justify-center">
-              <h3 className="font-semibold text-md">Uninstalled</h3>
-              <p>14 Apps</p>
+              <h3 className="font-semibold md:text-base text-xs">Uninstalled</h3>
+              <p className=" md:text-base text-xs">14 Apps</p>
             </div>
           </div>
         </Link>
 
         <Link to="/apps/blockedapp">
-          <div className="lastAppsbox mx-3 my-1 ">
+          <div className="lastAppsbox md:mx-3 mx-1 my-1 ">
             <div className="flex flex-col  justify-start">
-              <h3 className="font-semibold text-md">Blocked Apps</h3>
-              <p>2 Apps</p>
+              <h3 className="font-semibold md:text-base text-xs">Blocked Apps</h3>
+              <p className="md:text-base text-xs">2 Apps</p>
             </div>
           </div>
         </Link>

@@ -18,7 +18,7 @@ const TotalApps = () => {
         <AppsRoutesHeader />
 
         <div className="appsComponentsContainer flex">
-          <div className="my-5 flex-wrap  flex">
+          <div className="my-5 flex-wrap lg:ms-auto ml-5  flex">
             {appData && appData.length > 0 ? (
               appData.map((v, i) => (
                 <div key={i} className="appBox mb-8 flex flex-col justify-center">

@@ -15,7 +15,7 @@ const BlockededApp = () => {
     <div className="Apps-container">
      <AppsRoutesHeader />
      
-      <div className="appsComponentsCon flex">
+      <div className="appsComponentsCon lg:ms-auto ms-5  flex">
         {appData && appData.length > 0 ? (
           appData.map((v) => (
             <div key={v.id} className="appBox flex flex-col justify-center">
