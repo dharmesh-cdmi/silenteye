@@ -21,7 +21,7 @@ const moveBacks = useMoveBack();
     {/* nav left*/}
     <div className="Browser-nav-left flex justify-center align-bottom">
          <button onClick={moveBacks} className="notNavLeftIcon shadow-lg "><FaArrowLeftLong /></button>
-       <span>Browser</span>
+       <span>Location</span>
     </div>
    
     {/* nav right*/}
