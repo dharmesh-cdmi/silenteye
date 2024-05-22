@@ -17,7 +17,7 @@ import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx";
 const AllFilesHead = () => {
   const moveBacks = useMoveBack();
   return (
-    <div className="Browser-nav flex justify-between align-middle">
+    <div className="Browser-nav flex justify-between align-middle mb-4">
     {/* nav left*/}
     <div className="Browser-nav-left flex justify-center align-bottom">
          <button onClick={moveBacks} className="notNavLeftIcon shadow-lg"><FaArrowLeftLong /></button>
