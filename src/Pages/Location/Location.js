@@ -11,13 +11,13 @@ const Location = () => {
   return (
     <div className="Location-wrapper">
       <div className="Location-container flex flex-col justify-center align-middle ">
-        {/* <LocationHead /> */}
 
         {/*  LIVE LOCATION HEADER */}
         {/* <div className="locationHeader flex justify-center">
     <h3>Live Location</h3>
     <Link to="#">view more</Link>
     </div> */}
+        <LocationHead />
 
         {/*  LIVE LOCATION MAP */}
         <div className="LocationMapCon flex justify-center">
