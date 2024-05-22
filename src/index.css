@@ -30,6 +30,7 @@
     @apply bg-[#172A6E] text-white;
   }
   
+  
 
  
 @layer utilities {
@@ -43,3 +44,6 @@
           scrollbar-width: none;  /* Firefox */
     }
   }
+
+
+  

@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import Select from "../../../src/components/Shared/Select";
+import ExportSelect from "../Shared/ExportSelect";
 import Check from "../Shared/Check";
 import Button from "../Shared/Button";
 import exporticon from "../../../src/assests/images/Export/export.png";
@@ -30,28 +30,47 @@ const ExportForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="mb-4">
-        <Select
+      <div className="mb-4 ">
+      <Modal>
+        <Modal.Toggle toggleName="selectModule">
+        <ExportSelect
           label="Module"
           options={ModuleOptions}
           register={register("module")}
           onclick={module}
+          placeholder="Call Logs"
         />
+        </Modal.Toggle>
+        <Modal.Window windowName="selectModule">
+          <Upgrade />
+        </Modal.Window>
+      </Modal>
+
       </div>
       <div className="mb-4">
-        <Select
+      <Modal>
+        <Modal.Toggle toggleName="itemModule">
+        <ExportSelect
           label="Items"
           options={ItemsOptions}
           register={register("Items")}
           onclick={item}
+          placeholder="1-1000"
         />
+         </Modal.Toggle>
+        <Modal.Window windowName="itemModule">
+          <Upgrade />
+        </Modal.Window>
+      </Modal>
+
       </div>
       <div className="mb-4">
-        <Select
+        <ExportSelect
           label="Format"
           options={CSVOptions}
           register={register("Format")}
           onclick={format}
+          placeholder="CSV"
         />
       </div>
       <Check label="Delete Exported Data from Dashboard" />
@@ -70,7 +89,7 @@ const ExportForm = () => {
         <Modal.Toggle toggleName="exportData">
           <Button
             type="submit"
-            className="bg-[#172A6E] w-full mt-5 p-[16px] text-[#ffffff] text-[20px] rounded-[8px] "
+            className="bg-[#172A6E] w-full mt-5 p-[12px] text-[#ffffff] text-[20px] rounded-[8px] "
           >
             <img src={exporticon} alt="exporticon" className="pe-3" />
             Export Data
