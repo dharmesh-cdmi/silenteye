@@ -18,7 +18,7 @@ const AppsRoutesHeader = () => {
       <div className="Apps-nav flex justify-between align-middle">
         {/* nav left*/}
         <div className="Apps-nav-left flex justify-center align-bottom">
-          <button className="notNavLeftIcon shadow-[0px_0px_56px_0px_#00000014] ">
+          <button className="notNavLeftIcon shadow-lg ">
             <FaArrowLeftLong />
           </button>
           <span>Apps</span>
@@ -28,7 +28,7 @@ const AppsRoutesHeader = () => {
         <div className="Apps-nav-right flex justify-center items-center p-4">
           {/* Search */}
           <Modal.Toggle toggleName="Update">
-          <span className="flex items-center appsNavRightSearch cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
+          <span className="flex items-center appsNavRightSearch cursor-pointer shadow-lg ">
             <IoIosSearch />
             <input type="text" placeholder="Search Apps" />
           </span>
@@ -36,7 +36,7 @@ const AppsRoutesHeader = () => {
 
           {/* Export */}
           <Modal.Toggle toggleName="Update">
-          <span className="flex items-center appsNavRightExportIcon cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
+          <span className="flex items-center appsNavRightExportIcon cursor-pointer shadow-lg ">
             <TbFileExport />
             <span className="responsiveTitleHide">Export</span>
           </span>
@@ -44,7 +44,7 @@ const AppsRoutesHeader = () => {
 
           {/* Filter */}
           <Modal.Toggle toggleName="Update">
-          <span className="flex items-center appsNavRightFilterIcon cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
+          <span className="flex items-center appsNavRightFilterIcon cursor-pointer shadow-lg ">
             <IoFilterSharp />
             <span className="responsiveTitleHide">Filter</span>
           </span>
