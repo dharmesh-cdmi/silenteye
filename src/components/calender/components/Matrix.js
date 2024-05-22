@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import Modal from "../../Shared/Modal";
+import Upgrade from "../../Shared/Upgrade";
 
 
 function Matrix() {
@@ -64,6 +66,8 @@ function Matrix() {
           );
         })}
       </div>
+      <Modal>
+      <Modal.Toggle toggleName="Update">
       <div className="flex justify-center align middle my-10  ">
         <button className="mx-auto border-2 shadow-lg px-5 py-1.5 rounded-lg flex ">
           View More
@@ -71,6 +75,11 @@ function Matrix() {
 
         </button>
       </div>
+      </Modal.Toggle>
+      <Modal.Window windowName="Update">
+                      <Upgrade/>
+                    </Modal.Window>
+      </Modal>
     </div>
   );
 }

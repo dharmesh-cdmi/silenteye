@@ -18,16 +18,16 @@ const TotalApps = () => {
         <AppsRoutesHeader />
 
         <div className="appsComponentsContainer flex">
-          <div className="appsComponentsCon flex">
+          <div className="my-5 flex-wrap  flex">
             {appData && appData.length > 0 ? (
               appData.map((v, i) => (
-                <div key={i} className="appBox flex flex-col justify-center">
+                <div key={i} className="appBox mb-8 flex flex-col justify-center">
                   <span className="appBoxicon">
                     <span className="appBoxicon">{v.icon}</span>
                   </span>
                   <div className="appBoxDes flex flex-col justify-center">
-                    <h3>{v.title}</h3>
-                    <p className="text-slate-600">{v.size}</p>
+                    <h3 className="text-md font-semibold">{v.title}</h3>
+                    <p className="text-slate-500 text-sm ">{v.size}</p>
                   </div>
                 </div>
               ))
