@@ -42,10 +42,11 @@ export const AllFilesData = [
   },
   {
     id: 7,
-    title: "Music",
-    size: "75 items",
-    icon: <img src={file1} alt="Music" />,
+    title: "Images",
+    size: "50 items",
+    icon: <img src={file1} alt="Images" />,
   },
+
 
 
 ];

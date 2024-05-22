@@ -1,5 +1,5 @@
 .downloadFilesComCon {
-    gap: 1rem;
+    gap: 0rem;
 }
 .fileBox {
     gap: 0rem;
@@ -21,7 +21,7 @@
 
     /* APPS CONTAINERS */
     .appsComponentsCon {
-        gap: 0.3rem;
+        gap: 1.4rem;
         justify-content: center;
         margin-top: 1rem;
     }

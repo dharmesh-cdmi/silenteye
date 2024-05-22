@@ -9,10 +9,10 @@ const PageExportBtn=()=>{
 
     
             <Modal>
-          <Modal.Toggle toggleName="viewMore-keylogger">
+          <Modal.Toggle toggleName="Upgrade">
    
-           <div className="notesViewMoreCon flex justify-center shadow-[0px_0px_56px_0px_#00000014] ">
-    <button className="flex justify-center">View More <MdOutlineKeyboardDoubleArrowDown /></button>
+           <div className="notesViewMoreCon flex justify-center">
+    <button className="flex justify-center shadow-lg">View More <MdOutlineKeyboardDoubleArrowDown /></button>
     </div>
             
           </Modal.Toggle>
@@ -23,4 +23,4 @@ const PageExportBtn=()=>{
     )
 }
 
-export default PageExportBtn
+export default PageExportBtn

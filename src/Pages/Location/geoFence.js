@@ -14,25 +14,25 @@ const GeoFrence =()=>{
        <div className="Location-wrapper">
     <div className="Location-container flex flex-col justify-center align-middle ">
     <LocationHead />
-       <div className="geoTopBtns flex">
+       {/* <div className="geoTopBtns flex">
    <Link to={"#"}><button className="active">All</button></Link>
    <Link to={"#"}><button>Today</button></Link>
    <Link to={"#"}><button>Yesterday</button></Link>
    <Link to={"#"}><button>Last 7 Day</button></Link>
-   </div>
+   </div> */}
     {/* GEOFRENCE CONTAINERS */}
    <div className="geoFrenceContainer flex">
    
     {/* GEOFRENCE LEFT CONTAINERS */}
-   <div className="geoFrenceConLeft flex flex-col justify-center">
+   <div className="geoFrenceConLeft flex flex-col justify-start">
    <div className="geoLeftDes flex flex-col">
-   <h3>GeoFrence History</h3>
+   <h3 className="text-slate-500 text-sm">GeoFrence History</h3>
    </div>
    <div className="geoLeftBtns flex">
-   <Link to={"#"}><button className="active">All</button></Link>
-   <Link to={"#"}><button>Today</button></Link>
-   <Link to={"#"}><button>Yesterday</button></Link>
-   <Link to={"#"}><button>Last 7 Day</button></Link>
+   <Link to={"#"}><button className="active text-slate-500">All</button></Link>
+   <Link to={"#"}><button className=" text-slate-500">Today</button></Link>
+   <Link to={"#"}><button className=" text-slate-500">Yesterday</button></Link>
+   <Link to={"#"}><button className=" text-slate-500">Last 7 Day</button></Link>
    </div>
    
    {/*  LIVE LOCATION HISTORY BODY */}
@@ -41,10 +41,10 @@ const GeoFrence =()=>{
       LocationGeofrenceData.map((v, i)=>(
     <div className="LocationHistoryCols flex gap-16 justify-start cursor-pointer">
     <div className="LocationHistoryCol flex flex-col justify-start cursor-pointer">
-    <p className="flex justify-start gap-4"><span className="LiveCircleIcon iconBlue" />
+    <p className="flex justify-start gap-4 text-slate-500"><span className="LiveCircleIcon iconBlue" />
     {v.des}</p>
     <h3>{v.title}</h3>
-     <p className="flex justify-start gap-4">{v.date}</p>
+     <p className="flex justify-start gap-4 text-slate-500 text-sm">{v.date + " 10:45 AM"} </p>
     </div>
     </div>
        )) : (
@@ -58,17 +58,17 @@ const GeoFrence =()=>{
     {/* GEOFRENCE RIGHT CONTAINERS */}
    <div className="geoFrenceConRight flex flex-col justify-center">
      <div className="geoRightDes flex flex-col">
-   <h3>GeoFrence History</h3>
+   <h3 className="text-sm text-slate-500">Location History</h3>
    </div>
    <div className="geoRightMap" />
 
 <div className="LocationHistoryCols flex gap-16 justify-start cursor-pointer">
     <div className="locationhistoryImg ml-2" />
     <div className="LocationHistoryCol flex flex-col justify-start cursor-pointer">
-    <p className="flex justify-start"><span className="LiveCircleIcon" />
+    <p className="flex justify-start text-slate-500 text-sm"><span className="LiveCircleIcon mr-2" />
     41.3130335</p>
-    <h3>S Mainsp</h3>
-     <p className="flex justify-start">Mon, May 2024</p>
+    <h3 className="font-semibold text-lg">S Mainsp</h3>
+     <p className="flex justify-start text-slate-500 text-sm">Mon, May 2024 10:45 AM</p>
     </div>
     </div>
 

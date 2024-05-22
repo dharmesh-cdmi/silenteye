@@ -27,6 +27,7 @@ const AppsRoutesHeader = () => {
         {/* nav right*/}
         <div className="Apps-nav-right flex justify-center items-center p-4">
           {/* Search */}
+          <Modal.Toggle toggleName="Update">
           <span className="flex items-center appsNavRightSearch cursor-pointer shadow-[0px_0px_56px_0px_#00000014] ">
             <IoIosSearch />
             <input type="text" placeholder="Search Apps" />

@@ -10,9 +10,9 @@ const BrowseDataUsage = () => {
       <BrowserHead />
 
       <section className="browserContainer flex flex-col">
-        <div className="browserHeader ">
+        <div className="browserHeader border-t-2 border-l-2 border-r-2 border-slate-200 border-b-0 rounded-t-lg ">
           <h3 className="flex font-semibold text-lg">
-            <span>702 MB</span> of Website data used{" "}
+            <span>2.40 GB</span> of Website data used{" "}
           </h3>
           <p>Today</p>
         </div>

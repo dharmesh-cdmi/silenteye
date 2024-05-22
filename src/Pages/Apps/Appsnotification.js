@@ -33,7 +33,7 @@ const Appsnotification = () => {
           <button className="notNavLeftIcon">
             <FaArrowLeftLong />
           </button>
-          <span>Apps</span>
+          <span className="mr-3">Apps</span>
         </div>
 
         {/* nav right*/}
@@ -62,7 +62,7 @@ const Appsnotification = () => {
 
       <section className="browserContainer flex flex-col">
         {/* Browser Header */}
-        <div className="browserHeader appnotificationheader flex justify-between">
+        <div className="browserHeader appnotificationheader border-2 border-b-0 rounded-t-lg border-slate-300 flex justify-between">
           <h3 className="font-semibold text-lg">
             Hide Notifications (All apps)
           </h3>
@@ -74,8 +74,8 @@ const Appsnotification = () => {
         <div className="browseHistoryCon flex flex-col">
           <div className="browseHistoryCol flex ">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
-              <h3>
-                <span>
+              <h3 className="flex align-middle items-center font-semibold">
+                <span className="mr-3">
                   <img src={snapchaticon} />
                 </span>
                 Snapchat
@@ -86,11 +86,11 @@ const Appsnotification = () => {
             </div>
           </div>
 
-          <div className="browseHistoryCol flex flex">
+          <div className="browseHistoryCol flex">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
-              <h3>
-                <span>
-                  <img src={telegramiconIcon} />{" "}
+              <h3 className="flex align-middle items-center font-semibold">
+                <span className="mr-3">
+                  <img src={telegramiconIcon} />
                 </span>
                 Telegram
               </h3>
@@ -100,11 +100,11 @@ const Appsnotification = () => {
             </div>
           </div>
 
-          <div className="browseHistoryCol flex flex">
+          <div className="browseHistoryCol flex">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
-              <h3>
-                <span>
-                  <img src={tiktokicon} />{" "}
+              <h3 className="flex align-middle items-center font-semibold">
+                <span className="mr-3">
+                  <img src={tiktokicon} />
                 </span>
                 Tiktok
               </h3>
@@ -114,10 +114,10 @@ const Appsnotification = () => {
             </div>
           </div>
 
-          <div className="browseHistoryCol flex flex">
+          <div className="browseHistoryCol flex">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
-              <h3>
-                <span>
+              <h3 className="flex align-middle items-center font-semibold">
+                <span className="mr-3">
                   <img src={tindericon} />{" "}
                 </span>
                 Tinder
@@ -128,10 +128,10 @@ const Appsnotification = () => {
             </div>
           </div>
 
-          <div className="browseHistoryCol flex flex">
+          <div className="browseHistoryCol flex">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
-              <h3>
-                <span>
+              <h3 className="flex align-middle items-center font-semibold ">
+                <span className="mr-3">
                   <img src={twittericon} />{" "}
                 </span>
                 Twitter
