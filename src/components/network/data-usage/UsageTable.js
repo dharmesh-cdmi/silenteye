@@ -5,10 +5,12 @@ import messenger from '../../../assests/images/SocialApps/messenger.png'
 import facebook from '../../../assests/images/SocialApps/facebook.png'
 import youtube from '../../../assests/images/yt.png'
 import crome from '../../../assests/images/crome.png'
+import wif from '../../../assests/images/wif.png'
+
 
 function UsageTable() {
   const contents = [
-    { name: "Mobile Hotspot", img: "" },
+    { name: "Mobile Hotspot", img: wif },
     { name: "WhatsApp", img: whatsapp },
     { name: "Youtube", img: youtube },
     { name: "Chrome", img: crome },
