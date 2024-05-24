@@ -168,11 +168,13 @@ const SubMenu = ({ data, open }) => {
                     <Modal>
                       <Modal.Toggle toggleName="Update">
                         <button
-                          className="link capitalize  w-80"
+                          className="link capitalize  w-full"
                           toggleName="Update"
                         >
-                          <p className="ps-2  text-start">{menu.name}</p>
-                          <div className="justify-end flex  w-52 md:hidden order-last">
+                          <div className="w-1/2">
+                            <p className="ps-2  text-start">{menu.name}</p>
+                          </div>
+                          <div className="justify-end flex  w-1/2 md:hidden order-last">
                             <img className="h-5 " src={Premium} alt="LOGO" />
                           </div>
                         </button>
