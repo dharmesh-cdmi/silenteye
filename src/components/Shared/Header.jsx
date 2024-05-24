@@ -98,7 +98,6 @@ const Header = ({ heading }) => {
               </Modal.Window>
             </Modal>
           </div>
-        
       </div>
     </div>
   );

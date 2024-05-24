@@ -3,10 +3,12 @@ import { Table } from "../Shared/Table";
 
 const AllAlerts = ({ AllAlert }) => {
   const { id, img, heading, subheading, time } = AllAlert;
+  const borderClasses = id !== "1" ? "sm:border-[0px] border-t-[0.5px] border-[#DDDDDD]" : "";
+
   return (
     <Table.Row>
       <div className="px-[12px] ">
-        <div className=" sm:border-[0px]  border-t-[0.5px] border-[#DDDDDD]">
+        <div className={`${borderClasses}`}>
           <div className="flex flex-row justify-between p-[16px]">
             <div className="flex flex-col">
               <div className="flex flex-row">

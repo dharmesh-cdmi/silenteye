@@ -7,6 +7,8 @@ import settingIcon from "../../assests/images/AllAlerts/settings.png";
 import Search from "../Shared/Search";
 import Modal from "../Shared/Modal";
 import Upgrade from "../Shared/Upgrade";
+import searchIcon from "../../assests/images/magnify.png"
+
 
 const AllAllertsHeader = () => {
   const moveBacks = useMoveBack();
@@ -22,9 +24,10 @@ const AllAllertsHeader = () => {
   const handleSearch = () => {
     //Export Logic here
   };
-
+  
+  
   return (
-    <div className="flex flex-row  justify-between items-start  border-b-[0.5px] py-[8px] px-[12px] border-[#DDDDDD] sm:border-[0px]">
+    <div className="flex flex-row  justify-between items-start  py-[8px] px-[8px]  sm:border-[0px]">
       <div className="item-one flex flex-row items-center ">
         <div
           className="image-wrappe sm:shadow-[0px_0px_56px_0px_#00000014]   p-[10px]  sm:border-[#D0D5DD] sm:border-[1px] cursor-pointer  rounded-[8px]"
@@ -43,6 +46,21 @@ const AllAllertsHeader = () => {
               <Search onClick={handleSearch} placeholder="Search" />
             </Modal.Toggle>
             <Modal.Window windowName="search-allAlert">
+              <Upgrade />
+            </Modal.Window>
+          </Modal>
+        </div>
+        <div className="me-3 sm:hidden block">
+        <Modal>
+            <Modal.Toggle toggleName="search-keylogger">
+              <Button
+                className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium px-[12px]    py-[10px] text-[#101828] text-center"
+              >
+                <img src={searchIcon} alt="delete" className="sm:pe-2" />
+                <span className="hidden sm:block">Deleted</span>
+              </Button>
+            </Modal.Toggle>
+            <Modal.Window windowName="search-keylogger">
               <Upgrade />
             </Modal.Window>
           </Modal>
