@@ -3,15 +3,17 @@ import { Table } from "../Shared/Table";
 
 const KeyLoggers = ({ keyLogger }) => {
   const { id, img, heading, subheading, time } = keyLogger;
+  const borderClasses = id !== "1" ? "sm:border-[0px] border-t-[0.5px] border-[#DDDDDD]" : "";
+
   return (
     <Table.Row>
       <div className="px-[12px] ">
-        <div className=" sm:border-[0px]  border-t-[0.5px] border-[#DDDDDD]">
+        <div className={`${borderClasses}`}>
           <div className="flex flex-row justify-between  py-[12px] ">
             <div className="flex flex-col">
               <div className="flex flex-row">
-                <img src={img} alt="google" className=" h-auto max-w-[100%]" />
-                <h1 className="ms-2 text-[20px] text-[#000000]  font-[600]">
+                <img src={img} alt="google" className="h-auto max-w-[100%]" />
+                <h1 className="ms-2 sm:text-[20px] text-[18px] text-[#000000]  font-[600]">
                   {heading}
                 </h1>
               </div>

@@ -4,11 +4,13 @@ import { Accordion } from "../Shared/Accordian";
 import copy from "../../assests/images/copy.png";
 const SavedPasswords = ({ SavedPassword }) => {
   const { id, icon, heading, identity, password } = SavedPassword;
+  const borderClasses = id !== "1" ? "sm:border-[0px] border-t-[0.5px] border-[#DDDDDD]" : "";
 
+   
   return (
     <Table.Row>
       <div className="px-[12px] ">
-        <div className=" sm:border-[0px]  border-t-[0.5px] border-[#DDDDDD]">
+        <div className={`${borderClasses}`}>
           <Accordion>
             <Accordion.Item>
               <Accordion.Header>
