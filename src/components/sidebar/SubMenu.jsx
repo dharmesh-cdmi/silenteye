@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { IoIosArrowDown } from "react-icons/io";
 import { NavLink, useLocation } from "react-router-dom";
@@ -6,9 +6,15 @@ import Modal from "../Shared/Modal";
 import BuyNow, { BuyNow2 } from "../Shared/BuyNow";
 import Premium from "../../assests/images/sideicon/SideBar/Premium.png";
 
-export function SubMenu2({ data }) {
+export function SubMenu2({ data, open }) {
   const { pathname } = useLocation();
   const [subMenuOpen, setSubMenuOpen] = useState(false);
+  useEffect(() => {
+    // Update subMenuOpen state when the value of open prop changes
+    if (!open) {
+      setSubMenuOpen(false);
+    }
+  }, [open]);
   return (
     <>
       <NavLink
@@ -65,30 +71,28 @@ export function SubMenu2({ data }) {
                           className="link capitalize w-60"
                           toggleName="Update"
                         >
-
-
                           <div className="flex">
                             <div className="flex-none w-10">
-                          <img className="h-5 w-5" src={menu.icon} alt="LOGO" />
-
+                              <img
+                                className="h-5 w-5"
+                                src={menu.icon}
+                                alt="LOGO"
+                              />
                             </div>
-                          <div className=" w-24 ">
-                          <div className="text-start">
-                          <p className="break-word Weight-[500] ">{menu.name}</p> 
-                          <p className="break-word Weight-[500]">{menu.name2}</p> 
+                            <div className=" w-24 ">
+                              <div className="text-start">
+                                <p className="break-word Weight-[500] ">
+                                  {menu.name}
+                                </p>
+                                <p className="break-word Weight-[500]">
+                                  {menu.name2}
+                                </p>
+                              </div>
+                            </div>
+                            <div className="flex-initial w-24 flex justify-center ">
+                              <img className="h-5 " src={Premium} alt="LOGO" />
+                            </div>
                           </div>
-
-                          </div>
-                         <div className="flex-initial w-24 flex justify-center ">
-                         <img className="h-5 " src={Premium} alt="LOGO" />
-                         </div>
-
-                          </div>
-
-                         
-
-                          
-                          
                         </button>
                       </Modal.Toggle>
                       <Modal.Window windowName="Update">
@@ -107,9 +111,17 @@ export function SubMenu2({ data }) {
     </>
   );
 }
-const SubMenu = ({ data }) => {
+const SubMenu = ({ data, open }) => {
   const { pathname } = useLocation();
   const [subMenuOpen, setSubMenuOpen] = useState(false);
+
+  useEffect(() => {
+    // Update subMenuOpen state when the value of open prop changes
+    if (!open) {
+      setSubMenuOpen(false);
+    }
+  }, [open]);
+
   return (
     <>
       <li
@@ -156,10 +168,13 @@ const SubMenu = ({ data }) => {
                     <Modal>
                       <Modal.Toggle toggleName="Update">
                         <button
-                          className="link capitalize  w-96"
+                          className="link capitalize  w-80"
                           toggleName="Update"
                         >
-                          <p className="ps-2">{menu.name}</p>
+                          <p className="ps-2  text-start">{menu.name}</p>
+                          <div className="justify-end flex  w-52 md:hidden order-last">
+                            <img className="h-5 " src={Premium} alt="LOGO" />
+                          </div>
                         </button>
                       </Modal.Toggle>
                       <Modal.Window windowName="Update">

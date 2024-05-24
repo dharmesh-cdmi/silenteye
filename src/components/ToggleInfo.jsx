@@ -10,25 +10,72 @@ import fram4 from "../assests/images/nav/Frame-4.png";
 import { CiMobile3 } from "react-icons/ci";
 
 export function NotificationInfo(props) {
+  const NotificationData = [
+    {
+      img: Frame,
+      name: "Low Battery",
+      status: "Battery is Low on Device iPhone 11 ",
+      timedate: "9:20 AM",
+      color: true,
+    },
+    {
+      img: fram4,
+      name: "Offline Status",
+      status: "Device goes on offline on 21 Feb, 2024 ",
+      timedate: "9:00 AM",
+      color: true,
+    },
+    {
+      img: fram_1,
+      name: "App Access",
+      status: "Instagram is Opened ",
+      timedate: "8:20 AM",
+      color: true,
+    },
+    {
+      img: fram2,
+      name: "Geofence Updates",
+      status: "Device is gone outside of range area ",
+      timedate: "8:20 AM",
+      color: false,
+    },
+    {
+      img: Frame,
+      name: "Low Battery",
+      status: "Battery is Low on Device iPhone 11 ",
+      timedate: "9:20 AM",
+      color: false,
+    },
+    {
+      img: fram4,
+      name: "Offline Status",
+      status: "Device goes on offline on 21 Feb, 2024 ",
+      timedate: "9:00 AM",
+      color: false,
+    },
+  ];
   return (
     <div
       id="static-modal"
       data-modal-backdrop="static"
       tabIndex={-1}
       aria-hidden="true"
-      className=" fixed top-[4.8rem] md:right-52 border shadow  z-50 flex justify-center  items-center bg-white rounded-lg"
+      className=" fixed  top-[3.7rem] md:top-[4.8rem] md:right-52 border shadow w-full md:w-fit  z-50 flex justify-center  items-center bg-white rounded-lg"
       style={{ zIndex: 9999 }} // Adjust z-index here
     >
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 mx-auto">
-        <div >
+      <div class="relative bg-white md:rounded-lg md:shadow  mx-auto">
+        <div>
           {/* Modal header */}
-          <div className="flex items-center justify-between p-2 md:p-3 border-b rounded-t dark:border-gray-600">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-             Notification <span class="bg-[#34C759] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full ">3 New</span>
+          <div className="flex items-center justify-between p-2 md:p-3 border-b rounded-t ">
+            <h3 className="text-xl font-semibold text-gray-900 ">
+              Notification{" "}
+              <span class="bg-[#34C759] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full ">
+                3 New
+              </span>
             </h3>
             <button
               type="button"
-              className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center "
               data-modal-hide="static-modal"
             >
               <svg
@@ -46,29 +93,52 @@ export function NotificationInfo(props) {
                   d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
                 />
               </svg>
-              <span className="sr-only" >Close modal</span>
+              <span className="sr-only">Close modal</span>
             </button>
           </div>
-           {/* Main Content */}
-          <div className="flex p-1 md:p-2 border-b  md:w-[466px]">
+          {/* Main Content */}
+
+          {NotificationData.map((data, i) => (
+            <div
+              className={`${
+                data.color === false ? "opacity-50" : ""
+              } flex p-1 md:p-2 px-2 border-b w-full md:w-[466px]`}
+            >
+              <div>
+                <img src={data.img} alt="img" className="object-contain mt-2" />
+              </div>
+              <div className="mx-2 w-11/12 md:w-72">
+                <p className="font-semibold text-xl text-gray-900">
+                  {data.name}
+                </p>
+                <p className="text-sm font-medium text-gray-400">
+                  {data.status}
+                </p>
+              </div>
+              <p className="text-sm font-medium text-gray-400 ps-[3.25rem] mt-4">
+                {data.timedate}
+              </p>
+            </div>
+          ))}
+          {/* <div className="flex p-1 md:p-2 border-b w-full md:w-[466px]">
             <div>
               <img src={Frame} alt="img" className="object-contain mt-2" />
             </div>
-            <div className="mx-2 w-72">
+            <div className="mx-2 w-11/12 md:w-72">
               <p className="font-semibold text-xl text-gray-900">Low Battery</p>
               <p className="text-sm font-medium text-gray-400">
                 Battery is Low on Device iPhone 11
               </p>
             </div>
             <p className="text-sm font-medium text-gray-400 ps-[3.25rem] mt-4">
-                9:20 AM 
-              </p>
+              9:20 AM
+            </p>
           </div>
           <div className="flex p-3 border-b w-80 md:w-[466px]">
             <div>
               <img src={fram4} alt="img" className="object-contain mt-2" />
             </div>
-            <div className="mx-2 w-72">
+            <div className="mx-2 w-11/12 md:w-72">
               <p className="font-semibold text-xl text-gray-900">
                 Offline Status
               </p>
@@ -77,81 +147,85 @@ export function NotificationInfo(props) {
               </p>
             </div>
             <p className="text-sm font-medium text-gray-400 ps-[3.25rem] mt-4">
-                9:00 AM 
-              </p>
+              9:00 AM
+            </p>
           </div>
           <div className="flex p-3 border-b w-80 md:w-[466px]">
             <div>
               <img src={fram_1} alt="img" className="object-contain mt-2" />
             </div>
-            <div className="mx-2 w-72">
+            <div className="mx-2 w-11/12 md:w-72">
               <p className="font-semibold text-xl text-gray-900">App Access</p>
               <p className="text-sm font-medium text-gray-400">
                 Instagram is Opened
               </p>
             </div>
             <p className="text-sm font-medium text-gray-400 ps-[3.25rem] mt-4">
-                8:20 AM 
-              </p>
+              8:20 AM
+            </p>
           </div>
           <div className="flex p-3 border-b opacity-50 w-80 md:w-[466px]">
             <div>
               <img src={fram2} alt="img" className="object-contain mt-2" />
             </div>
-            <div className="mx-2 w-72">
-              <p className="font-semibold text-xl text-gray-900">Geofence Updates</p>
+            <div className="mx-2 w-11/12 md:w-72">
+              <p className="font-semibold text-xl text-gray-900">
+                Geofence Updates
+              </p>
               <p className="text-sm font-medium text-gray-400">
                 Device is gone outside of range area
               </p>
             </div>
             <p className="text-sm font-medium text-gray-400 ps-[3.25rem] mt-4">
-                7:20 AM 
-              </p>
+              7:20 AM
+            </p>
           </div>
           <div className="flex p-3 border-b opacity-50 w-80 md:w-[466px]">
             <div>
               <img src={Frame} alt="img" className="object-contain mt-2" />
             </div>
-            <div className="mx-2 w-72">
+            <div className="mx-2 w-11/12 md:w-72">
               <p className="font-semibold text-xl text-gray-900">Low Battery</p>
               <p className="text-sm font-medium text-gray-400">
-               Battery is Low on Device: iPhone 11
+                Battery is Low on Device: iPhone 11
               </p>
             </div>
             <p className="text-sm font-medium  text-gray-400 ps-[3.25rem] mt-4">
-               20/02/2024
-              </p>
+              20/02/2024
+            </p>
           </div>
           <div className="flex p-3 border-b opacity-50 w-80 md:w-[466px]">
             <div>
               <img src={fram4} alt="img" className="object-contain mt-2" />
             </div>
-            <div className="mx-2 w-72">
-              <p className="font-semibold text-xl text-gray-900">Offline Status</p>
+            <div className="mx-2 w-11/12 md:w-72">
+              <p className="font-semibold text-xl text-gray-900">
+                Offline Status
+              </p>
               <p className="text-sm font-medium text-gray-400">
-               Device goes on offline on 21Feb, 2024, 8:49 AM
+                Device goes on offline on 21Feb, 2024, 8:49 AM
               </p>
             </div>
             <p className="text-sm font-medium text-gray-400 ps-[3.25rem] mt-4">
-               20/02/2024
-              </p>
-          </div>
+              20/02/2024
+            </p>
+          </div> */}
 
           {/* Modal footer */}
           <div className="flex flex-row-reverse items-end p-2 border-t border-gray-200 rounded-b ">
             <button
               data-modal-hide="static-modal"
               type="button"
-              className="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+              className="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 "
             >
-             Mark all as read
+              Mark all as read
             </button>
             <button
               data-modal-hide="static-modal"
               type="button"
-              className="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+              className="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 "
             >
-             Clear All
+              Clear All
             </button>
           </div>
         </div>

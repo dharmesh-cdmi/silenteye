@@ -45,7 +45,7 @@ const DeviceControl = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
-          <div className="p-4 border-r">
+          <div className="p-4 md:border-r">
             <div className="flex ">
               <div className="flex-none w-8">
                 <img src={sim1} alt="img" className="object-contain h-8" />
@@ -150,7 +150,7 @@ const DeviceControl = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
-          <div className="p-4 border-r">
+          <div className="p-4 md:border-r">
             <div className="flex ">
               <div className="flex-none w-8">
                 <img src={fram2} alt="img" className="object-contain h-8" />
@@ -273,7 +273,7 @@ const DeviceControl = () => {
             <div>
               <button
                 type="button"
-                class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
+                class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
               >
                 <CiMobile3 size={30} />
                 View Live Screen
@@ -364,21 +364,20 @@ const DeviceControl = () => {
                   <p className="font-semibold text-xl text-gray-900">
                     Filter harmful content on Device{" "}
                     <div className="hidden md:block">
-                     
                       <Modal>
-                <Modal.Toggle toggleName="Update">
-                <button
-                        type="button"
-                        class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
-                      >
-                        <AiFillEdit />
-                        Edit Filters
-                      </button>
-                </Modal.Toggle>
-                <Modal.Window windowName="Update">
-                 <FilterTegModal/>      
-                         </Modal.Window>
-              </Modal>
+                        <Modal.Toggle toggleName="Update">
+                          <button
+                            type="button"
+                            class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                          >
+                            <AiFillEdit />
+                            Edit Filters
+                          </button>
+                        </Modal.Toggle>
+                        <Modal.Window windowName="Update">
+                          <FilterTegModal />
+                        </Modal.Window>
+                      </Modal>
                     </div>
                   </p>
                 </div>

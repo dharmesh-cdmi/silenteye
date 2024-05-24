@@ -35,9 +35,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import Modal from "../components/Shared/Modal";
 import Upgrade from "../components/Shared/Upgrade";
 import Button from "../components/Shared/Button";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [autoRenew, setAutoReNew] = useState(true);
+  const [toggle, setToggle] = useState(false);
+  const handletoggle = () => {
+    setToggle(!toggle);
+  };
 
   const DashIcons = [
     {
@@ -143,29 +148,29 @@ const Dashboard = () => {
       img: "https://xsgames.co/randomusers/avatar.php?g=female",
       name: "Tommi Osayande",
       callIcon: <MdPhoneCallback />,
-      callStatus: "incoming",
+      callStatus: "missed",
       date: "21/05/2024",
     },
     ,
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
-      name: "Sander Margotta",
-      callIcon: <HiPhoneMissedCall />,
-      callStatus: "missed",
-      date: "21/05/2024",
-    },
-    {
       img: "https://xsgames.co/randomusers/avatar.php?g=female",
       name: "Morty Zumalt",
       callIcon: <HiPhoneMissedCall />,
-      callStatus: "missed",
+      callStatus: "outgoing",
+      date: "21/05/2024",
+    },
+    {
+      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      name: "Sander Margotta",
+      callIcon: <HiPhoneMissedCall />,
+      callStatus: "incoming",
       date: "21/05/2024",
     },
     {
       img: "https://xsgames.co/randomusers/avatar.php?g=male",
       name: "Ramona Bea",
       callIcon: <HiPhoneMissedCall />,
-      callStatus: "missed",
+      callStatus: "incoming",
       date: "21/05/2024",
     },
   ];
@@ -177,27 +182,27 @@ const Dashboard = () => {
       time: "9:41 am",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: "https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png",
       name: "13654825",
-      msg: "Little brother, I'm lonely and I'm looking for company. My Telegram ID: Tindf202",
+      msg: "The Apple Id code is 125544. Dont share with",
       time: "9:41 am",
     },
     {
       img: "https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png",
-      name: "(+1)47445786",
-      msg: "Little brother, I'm lonely and I'm looking for company. My Telegram ID: Tindf202",
-      time: "9:41 am",
-    },
-    {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
-      name: "Riyah Webflow",
-      msg: "Little brother, I'm lonely and I'm looking for company. My Telegram ID: Tindf202",
+      name: "13654825",
+      msg: "Your Tinder code is 815180 Don't share @tinder",
       time: "9:41 am",
     },
     {
       img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      name: "(319) 555-0115",
+      msg: "Verfication code 759028, valid for 10 minutes",
+      time: "9:41 am",
+    },
+    {
+      img: "https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png",
       name: "13654825",
-      msg: "Little brother, I'm lonely and I'm looking for company. My Telegram ID: Tindf202",
+      msg: "562963 SMS login verfication code, valid for ",
       time: "9:41 am",
     },
   ];
@@ -326,30 +331,88 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className="md:hidden flex justify-center mb-4">
-        <button
-          type="button"
-          class="text-gray-900  w-full gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700  mb-2"
+      <div className="md:hidden border-b mx-2 mb-2 rounded-lg pt-2 bg-gray-50 mt-20">
+        <ul
+          className="grid grid-cols-2  mb-2 cursor-pointer"
+          onClick={handletoggle}
         >
-          <CiMobile3 />
-          Ashly's Device &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-          <FaApple />
-          iPhone 11
-          <IoIosArrowDown className="flex justify-end" />
-        </button>
+          <li className=" mt-2 gap-2 flex font-medium  ">
+            <CiMobile3 size={20} className="ms-2  mt-[0.15rem] " /> Ashly's
+            Device
+          </li>
+          <li className="mt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
+            <button
+              type="button"
+              class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 "
+            >
+              <FaApple className="text-black " />
+              iPhone 11
+              <IoIosArrowDown className="flex justify-end" />
+            </button>
+          </li>
+        </ul>
       </div>
-      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6  gap-8 md:gap-4 mx-2 md:mx-0 mb-8">
+      {toggle && (
+        <div
+          className="  mx-2  rounded-lg mb-6 cursor-pointer bg-gray-50"
+          onClick={handletoggle}
+        >
+          <ul className="grid grid-cols-2  liborder ">
+            <li className="pt-2 px-2 font-medium  "> Gerry's Device</li>
+            <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
+              <button
+                type="button"
+                class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+              >
+                <FaApple className="text-black " />
+                iPhone 13
+              </button>
+            </li>
+          </ul>
+          <ul className="grid grid-cols-2  liborder ">
+            <li className="pt-2 px-2 font-medium  "> Akhil's Device</li>
+            <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
+              <button
+                type="button"
+                class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+              >
+                Samsung 12
+              </button>
+            </li>
+          </ul>
+          <ul className="grid grid-cols-2   ">
+            <li className="pt-2 px-2 font-medium  "> Gurdeep's Device</li>
+            <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
+              <button
+                type="button"
+                class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+              >
+                <FaApple className="text-black " />
+                iPhone 14 Pro
+              </button>
+            </li>
+          </ul>
+        </div>
+      )}
+
+      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 md:gap-4 my-8 md:my-2 ">
         {DashIcons.map((data, i) => (
           <div
-            className="flex items-center justify-center text-center mb-6"
+            className="flex items-center justify-center text-center mb-4 md:mb-6"
             key={i}
           >
             <div className="m-auto cursor-pointer">
               <div className="flex items-center justify-center">
-                <img className="w-8 h-8  m-auto" src={data.icon} alt />
+                <img
+                  className="w-6 h-6 md:w-8 md:h-8  m-auto"
+                  src={data.icon}
+                  alt
+                />
               </div>
-              <h6 className="text-[18px] weight-[500]">{data.name}</h6>
-              <p className="text-[#007AFF] text-[16px] weight-[500]">
+              <h6 className="text-[13px] md:text-[18px] weight-[500]">
+                {data.name}
+              </h6>
+              <p className="text-[#007AFF] text-[12px] md:text-[16px] weight-[500]">
                 {data.status}
               </p>
             </div>
@@ -357,7 +420,7 @@ const Dashboard = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8  mx:m-0 ">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8  mx:m-0 ">
         <InfoCard title="Device Info" className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
@@ -372,7 +435,11 @@ const Dashboard = () => {
         </InfoCard>
         <InfoCard
           title="Live Location"
-          titleRight={<p className="text-blue-400">More</p>}
+          titleRight={
+            <p className="text-blue-400">
+              <Link to="/location">View More</Link>
+            </p>
+          }
           className="mb-5 md:mb-0"
         >
           <div className="rounded-lg py-1 bg-gray-50">
@@ -392,7 +459,7 @@ const Dashboard = () => {
               </li>
               <li className="p-1 px-2 font-medium liborder mt-2">Auto Renew</li>
               <li className="p-1 text-[#172A6E] liborder font-semibold text-end me-2">
-                <label className="toggle-switch mt-1">
+                <label className={` toggle-switch mt-1`}>
                   <input
                     type="checkbox"
                     value={autoRenew}
@@ -415,7 +482,11 @@ const Dashboard = () => {
       <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-0 mb-8  mx:m-0">
         <InfoCard
           title="Recent Calls"
-          titleRight={<p className="text-blue-400">See All</p>}
+          titleRight={
+            <p className="text-blue-400">
+              <Link to="/calls/callhistory">See All</Link>
+            </p>
+          }
           className="mb-5 md:mb-0"
         >
           {RecentCall.map((info, i) => (
@@ -454,7 +525,11 @@ const Dashboard = () => {
         </InfoCard>
         <InfoCard
           title="Recent Messages"
-          titleRight={<p className="text-blue-400">See All</p>}
+          titleRight={
+            <p className="text-blue-400">
+              <Link to="/messages">See All</Link>
+            </p>
+          }
           className="mb-5 md:mb-0"
         >
           {RecentMessages.map((info, i) => (
@@ -473,7 +548,7 @@ const Dashboard = () => {
                   </p>
 
                   <p className="ps-1 text-gray-400 lg:hidden xl:block text-[17px] weight-[500] ">
-                    {info.msg.slice(0, 50)}..
+                    {info.msg.slice(0, 38)}..
                   </p>
                   <p className="ps-1 text-gray-400 lg:block hidden xl:hidden 2xl:hidden text-[17px] weight-[500] ">
                     {info.msg.slice(0, 20)}..
@@ -529,7 +604,11 @@ const Dashboard = () => {
 
         <InfoCard
           title="Recent Most Used Apps"
-          titleRight={<p className="text-blue-400">See All</p>}
+          titleRight={
+            <p className="text-blue-400">
+              <Link to="/Apps/screentime">See All</Link>{" "}
+            </p>
+          }
           className="mb-5 md:mb-0"
         >
           <div className="rounded-lg p-2 bg-gray-50">
@@ -564,7 +643,11 @@ const Dashboard = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
         <InfoCard
           title="Recent Alert & Notifications"
-          titleRight={<p className="text-blue-400">See All</p>}
+          titleRight={
+            <p className="text-blue-400">
+              <Link to="/Alert&Notification/AllAllerts">See All</Link>
+            </p>
+          }
           className="mb-5 md:mb-0"
         >
           <div>
@@ -589,7 +672,11 @@ const Dashboard = () => {
         </InfoCard>
         <InfoCard
           title="Recent KeyLogger"
-          titleRight={<p className="text-blue-400">See All</p>}
+          titleRight={
+            <p className="text-blue-400">
+              <Link to="/KeyLogger">See All</Link>
+            </p>
+          }
           className="mb-5 md:mb-0"
         >
           <div>
@@ -614,7 +701,11 @@ const Dashboard = () => {
         </InfoCard>
         <InfoCard
           title="Recent Browser Histroy"
-          titleRight={<p className="text-blue-400">See All</p>}
+          titleRight={
+            <p className="text-blue-400">
+              <Link to="/Browser/browserhistory">See All</Link>
+            </p>
+          }
           className="mb-5 md:mb-0"
         >
           <div>
