@@ -11,7 +11,7 @@ export const Table = ({ children,className=" ",...restProps }) => {
 
 const Header = ({ children, className = " ", ...restProps }) => {
   return (
-   <div {...restProps}   className={twMerge('p-[16px] font-medium sm:border-[0px] border-b-[1px] border-t-[1px]  border-[#DDDDDD] ', className)}>
+   <div {...restProps}   className={twMerge('p-[16px] font-medium sm:border-t-[1px] border-b-[1px] border-t-[1px]  border-[#DDDDDD] ', className)}>
      {children}
   </div>
 )};

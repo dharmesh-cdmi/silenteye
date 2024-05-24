@@ -71,7 +71,7 @@ const AppPermission = () => {
           </Table.Header>
           <Table.Body>
             <Table className="  ">
-              <Table.Header className="font-[16px] border-t-[1px] opacity-[50%]   border-[#DDDDDD]">
+              <Table.Header className="font-[16px]  opacity-[50%]  ">
                  Allowed
               </Table.Header>
               <Table.Body>
@@ -84,7 +84,7 @@ const AppPermission = () => {
               </Table.Body>
             </Table>
             <Table className="">
-              <Table.Header className="font-[16px] border-t-[1px] opacity-[50%]  border-[#DDDDDD]">
+              <Table.Header className="font-[16px]  opacity-[50%]  ">
                 Denied
               </Table.Header>
               <Table.Body>
