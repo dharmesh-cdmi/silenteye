@@ -17,17 +17,19 @@ const Payment = () => {
   };
 
   return (
-    <div className="main ps-3 pe-3 pt-4">
+    <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
       <Header heading="Saved Payment Methods" />
-      <div className="grid  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1   my-8 gap-4">
-        <img src={visa} alt="visa" />
-        <img src={green} alt="green" />
-        <img src={american} alt="green" />
-        <img src={capital} alt="capital" />
-        <img src={discover} alt="discover" />
-        <img src={amazon} alt="amazon" />
+      <div className="mt-4 mx-4">
+      <div className="grid  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:my-10 my-2 gap-4">
+        <img src={visa} alt="visa"  className="w-full"/>
+        <img src={green} alt="green" className="w-full" />
+        <img src={american} alt="green" className="w-full"/>
+        <img src={capital} alt="capital" className="w-full"/>
+        <img src={discover} alt="discover" className="w-full"/>
+        <img src={amazon} alt="amazon" className="w-full"/>
       </div>
-      <div className="flex justify-center mb-12">
+      </div>
+      <div className="flex justify-center mb-12 mt-6">
       <Modal>
           <Modal.Toggle toggleName="viewMore-Payment">
             <Button

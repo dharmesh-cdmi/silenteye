@@ -9,9 +9,9 @@ const Search = ({ className = " ", onClick, placeholder }) => {
         type="search"
         onClick={onClick}
         className={twMerge(
-          "border-[#D0D5DD]  deleteKeyLogger ",
+          "border-[#D0D5DD]  deleteKeyLogger",
           className
-        )}
+        )} 
         placeholder={placeholder}
       />
     </div>
