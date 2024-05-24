@@ -27,12 +27,12 @@ const CallsHead = (props) => {
     <div className="flex md:flex-row  justify-between  items-start  md:items-center mx-2 md:mx-0">
       <div className="item-one flex flex-row items-center ">
         <div
-          className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] p-[10px]  border-[#D0D5DD] border-[1px] cursor-pointer  rounded-[8px]"
+          className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] p-[6px]   cursor-pointer "
           onClick={moveBacks}
         >
           <img src={moveBack} alt="move-Back" />
         </div>
-        <span className="text-[15px] md:text-[20px]   text-[#000000] ps-3 font-[600]">
+        <span className="text-[15px] md:text-[20px]   text-[#000000] ps-1 font-[600]">
           {props.heading}
         </span>
       </div>
@@ -54,7 +54,7 @@ const CallsHead = (props) => {
         <div className="me-3 md:hidden ">
           <Button
             onClick={handleSearch}
-            className="text-[18px] font-medium px-[11px]  py-[10px] text-[#101828] text-center"
+            className="text-[18px] font-medium px-[6px]  py-[6px] text-[#101828] text-center"
           >
             <IoIosSearch />
           </Button>
@@ -78,7 +78,7 @@ const CallsHead = (props) => {
         <div className="me-3 md:hidden ">
           <Button
             onClick={exportKeyLogger}
-            className="text-[18px] font-medium px-[11px] shadow-[0px_0px_56px_0px_#00000014] py-[10px] text-[#101828] text-center"
+            className="text-[18px] font-medium px-[6px] shadow-[0px_0px_56px_0px_#00000014] py-[6px] text-[#101828] text-center"
           >
             <img src={exportIcon} alt="export" className="h-[18px]" />
           </Button>
@@ -103,7 +103,7 @@ const CallsHead = (props) => {
         <div className=" md:hidden ">
           <Button
             onClick={filterKeyLooger}
-            className="text-[18px] font-medium px-[11px] shadow-[0px_0px_56px_0px_#00000014] py-[10px] text-[#101828] text-center"
+            className="text-[18px] font-medium px-[6px] shadow-[0px_0px_56px_0px_#00000014] py-[6px] text-[#101828] text-center"
           >
             <img src={filterIcon} alt="delete" className="h-[18px]" />
           </Button>
