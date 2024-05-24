@@ -6,7 +6,6 @@ import Upgrade from "../Shared/Upgrade";
 
 const PageExportBtn=()=>{
   return(
-
     
             <Modal>
           <Modal.Toggle toggleName="Upgrade">
