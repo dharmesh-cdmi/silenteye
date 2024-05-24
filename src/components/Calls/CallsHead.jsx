@@ -27,12 +27,12 @@ const CallsHead = (props) => {
     <div className="flex md:flex-row  justify-between  items-start  md:items-center mx-2 md:mx-0">
       <div className="item-one flex flex-row items-center ">
         <div
-          className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] p-[6px]   cursor-pointer "
+          className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
           onClick={moveBacks}
         >
           <img src={moveBack} alt="move-Back" />
         </div>
-        <span className="text-[15px] md:text-[20px]   text-[#000000] ps-1 font-[600]">
+        <span className="text-[15px] md:text-[20px]   text-[#000000] md:ps-3 ps-1 font-[600]">
           {props.heading}
         </span>
       </div>
