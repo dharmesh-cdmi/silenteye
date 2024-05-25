@@ -42,11 +42,11 @@ import VideosMain from "./components/media/videos/VideosMain";
 import AlbumMain from "./components/media/albums/AlbumMain";
 import CalenderMain from "./components/calender/CalenderMain";
 import ScreenShotsMain from "./components/media/screenshots/ScreenShotsMain";
-import AllFiles from "./Pages/Files/AllFiles.js"
-import FilesDownload from "./Pages/Files/FilesDownload.js"
-import Appsnotification from "./Pages/Apps/Appsnotification.js"
-import Appsscreentime from "./Pages/Apps/AppScreentimem.js"
-
+import AllFiles from "./Pages/Files/AllFiles.js";
+import FilesDownload from "./Pages/Files/FilesDownload.js";
+import Appsnotification from "./Pages/Apps/Appsnotification.js";
+import Appsscreentime from "./Pages/Apps/AppScreentimem.js";
+import CallProfile from "./Pages/Calls/CallProfile.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -68,6 +68,10 @@ function App() {
           element: <Callhistory />,
         },
         {
+          path: "/call/callprofile",
+          element: <CallProfile />,
+        },
+        {
           path: "/calls/blockedcalls",
           element: <BlockedCalls />,
         },
@@ -84,7 +88,7 @@ function App() {
           path: "/contacts/contactslist",
           element: <ContactList />,
         },
-        { path: "messages", element: <MessagesMain /> },
+        { path: "/messages", element: <MessagesMain /> },
         { path: "/network/mobile-network", element: <MobileMain /> },
         { path: "/network/wifi-network", element: <WifiMain /> },
         { path: "/network/data-usage", element: <DataMain /> },
@@ -280,24 +284,22 @@ function App() {
           element: <datausage />,
         },
 
-
-        
-{
-  path: "/files/allfiles",
-  element: <AllFiles />,
-},
-{
-  path: "/files/downloads",
-  element: <FilesDownload />,
-},
-{
-  path: "/apps/notification",
-  element: <Appsnotification />,
-},
-{
-  path: "/apps/screentime",
-  element: <Appsscreentime />,
-}
+        {
+          path: "/files/allfiles",
+          element: <AllFiles />,
+        },
+        {
+          path: "/files/downloads",
+          element: <FilesDownload />,
+        },
+        {
+          path: "/apps/notification",
+          element: <Appsnotification />,
+        },
+        {
+          path: "/apps/screentime",
+          element: <Appsscreentime />,
+        },
       ],
     },
   ]);
