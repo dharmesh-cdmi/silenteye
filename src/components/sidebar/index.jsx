@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import { useRef } from "react";
-import  { SubMenu2 } from "./SubMenu";
+import { SubMenu2 } from "./SubMenu";
 import { motion } from "framer-motion";
-import SubMenu from "./SubMenu"
+import SubMenu from "./SubMenu";
 
 // * React icons
 import { IoLocationOutline } from "react-icons/io5";
-
 
 import { SlSettings } from "react-icons/sl";
 
@@ -21,7 +20,7 @@ import Calls from "../../assests/images/sideicon/Calls.svg";
 import Camera from "../../assests/images/sideicon/Camera.svg";
 import Contacts from "../../assests/images/sideicon/Contacts.svg";
 import DeviceControl from "../../assests/images/sideicon/Device Control.svg";
-import  Home from "../../assests/images/sideicon/Home.svg";
+import Home from "../../assests/images/sideicon/Home.svg";
 import Media from "../../assests/images/sideicon/Media.svg";
 import Messages from "../../assests/images/sideicon/Messages.svg";
 import Network from "../../assests/images/sideicon/Network.svg";
@@ -82,7 +81,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
     ? {
         open: {
           x: 0,
-          width: "260px",         
+          width: "100%",
           transition: {
             damping: 40,
           },
@@ -111,15 +110,10 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
       };
 
-
-
-
-
-
   const subMenusList1 = [
     {
       name: "Calls",
-      icon: Calls,  
+      icon: Calls,
       subMenu: [
         {
           name: "Call History",
@@ -127,7 +121,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Live Call",
-          link: false
+          link: false,
         },
         {
           name: "Blocked Calls",
@@ -146,7 +140,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
           link: false,
         },
       ],
-      icon: Calls,  
+      icon: Calls,
       subMenu: [
         {
           name: "Call History",
@@ -154,7 +148,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Live Call",
-          link: false
+          link: false,
         },
         {
           name: "Blocked Calls",
@@ -176,7 +170,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
     },
     {
       name: "Contacts",
-      icon: Contacts,     
+      icon: Contacts,
       subMenu: [
         {
           name: "Contacts List",
@@ -184,18 +178,15 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Blocked Contacts",
-          link: "blockedcontacts"
+          link: "blockedcontacts",
         },
-     
       ],
     },
-   
   ];
   const subMenusList2 = [
-   
     {
       name: "network",
-      icon: Network,     
+      icon: Network,
       subMenu: [
         {
           name: "Mobile Network",
@@ -203,18 +194,17 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Wifi Network",
-          link: "wifi-network"
+          link: "wifi-network",
         },
         {
           name: "Data Usage",
           link: "data-usage",
-        },       
-     
+        },
       ],
     },
     {
       name: "Camera",
-      icon: Camera,     
+      icon: Camera,
       subMenu: [
         {
           name: "Front Camera",
@@ -222,7 +212,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Back Camera",
-          link: false
+          link: false,
         },
         {
           name: "Video Camera",
@@ -232,13 +222,11 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
           name: "All Captures",
           link: "",
         },
-       
-     
       ],
     },
     {
       name: "media",
-      icon: Media,     
+      icon: Media,
       subMenu: [
         {
           name: "Photos",
@@ -255,35 +243,27 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         {
           name: "Albums",
           link: "albums",
-          
         },
         {
           name: "Screen Recordings",
           link: false,
-         
         },
         {
           name: "Recently Deleted",
           link: false,
-         
-
         },
         {
           name: "Hidden",
           link: false,
         },
-       
-     
       ],
     },
-   
   ];
 
-
-  const subMenusList3 = [    
+  const subMenusList3 = [
     {
       name: "Apps",
-      icon: Apps,     
+      icon: Apps,
       subMenu: [
         {
           name: "All Apps",
@@ -291,7 +271,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Installed App",
-          link: "installedapp"
+          link: "installedapp",
         },
         {
           name: "Uninstalled App",
@@ -299,7 +279,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Blocked App",
-          link: "blockedapp"
+          link: "blockedapp",
         },
         {
           name: "App Notifications",
@@ -311,14 +291,13 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Login & Passwords",
-        link: false,
+          link: false,
         },
-     
       ],
     },
     {
       name: "Browser",
-      icon: Browser,     
+      icon: Browser,
       subMenu: [
         {
           name: "Browser History",
@@ -326,11 +305,11 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Web Filters",
-          link: "webfilters"
+          link: "webfilters",
         },
         {
           name: "Blocked Websites",
-         link: false,
+          link: false,
         },
         {
           name: "Bookmarked Websites",
@@ -342,18 +321,17 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Data Usage",
-          link: "datausage"
+          link: "datausage",
         },
         {
           name: "Screen Time",
-          link: "screentime"
+          link: "screentime",
         },
-     
       ],
     },
     {
       name: "Files",
-      icon: Files,     
+      icon: Files,
       subMenu: [
         {
           name: "All Files",
@@ -369,19 +347,17 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Documents",
-         link: false,
+          link: false,
         },
         {
           name: "Recently Deleted",
           link: false,
         },
-       
-     
       ],
     },
     {
       name: "Location",
-      icon: Location,     
+      icon: Location,
       subMenu: [
         {
           name: "Live Location",
@@ -389,7 +365,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Location History",
-          link: "locationhistory"
+          link: "locationhistory",
         },
         {
           name: "GeoFence",
@@ -397,19 +373,15 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Wifi Logger",
-           link: false
+          link: false,
         },
-       
-     
       ],
     },
-   
   ];
   const subMenusList4 = [
-   
     {
       name: "Privacy&Security",
-      icon: Shield,     
+      icon: Shield,
       subMenu: [
         {
           name: "Saved Passwords",
@@ -417,18 +389,17 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "App Permissions",
-          link: "AppPermisions"
+          link: "AppPermisions",
         },
         {
           name: "Saved Payment Methods",
           link: "Payment",
-        },       
-     
+        },
       ],
     },
     {
       name: "Alert&Notification",
-      icon: Bell,     
+      icon: Bell,
       subMenu: [
         {
           name: "All Alert & Notification",
@@ -436,7 +407,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Blocked/Hidden Notification",
-          link: false
+          link: false,
         },
         {
           name: "Notification Setting",
@@ -446,19 +417,14 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
           name: "Intant Alerts",
           link: "InstantAlerts",
         },
-       
-     
       ],
     },
-   
-   
   ];
   const subMenusList5 = [
-   
     {
       name: "SocialApps",
-      icon: Chat, 
-      link:"SocialApps",    
+      icon: Chat,
+      link: "SocialApps",
       subMenu: [
         {
           name: "WhatsApp",
@@ -467,7 +433,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Facebook ",
-          name2:"Messenger",
+          name2: "Messenger",
           link: false,
           icon: FacebookMessenger,
         },
@@ -493,7 +459,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Microsoft ",
-          name2:"Teams",
+          name2: "Teams",
           link: false,
           icon: MicrosoftTeams,
         },
@@ -582,13 +548,8 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
           link: false,
           icon: Zolo,
         },
-           
-     
       ],
     },
- 
-   
-   
   ];
   return (
     <div className="h-screen fixed left-0 ">
@@ -603,20 +564,31 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         variants={Nav_animation}
         initial={{ x: isTabletMid ? -250 : 0 }}
         animate={open ? "open" : "closed"}
-        className=" bg-white text-gray shadow-xl z-[999]  max-w-[16rem] border-r-2 border-solid  w-[16rem] 
+        className=" bg-white text-gray shadow-xl z-[999]  md:max-w-[16rem] border-r-2 border-solid  md:w-[16rem] 
             overflow-hidden md:relative fixed
          h-screen "
       >
-        <div className="flex justify-center gap-2.5 font-medium border-b pt-[1.12rem] md:py-[1.12rem]  border-slate-300">
-         {open ? <img src={logo} className=" h-[2rem] w-[10rem] object-cover" width={60} alt="logo" /> : <img src={logo2} width={38} alt="logo" className="md:py-[0.25rem]"  />} 
-        
-          
+        <div className="flex justify-center gap-2.5 font-medium border-b pt-[1.12rem] md:pt-[1rem] md:pb-[1.1rem]  border-slate-300">
+          {open ? (
+            <img
+              src={logo}
+              className=" h-[2rem] w-[10rem] object-cover"
+              width={60}
+              alt="logo"
+            />
+          ) : (
+            <img
+              src={logo2}
+              width={38}
+              alt="logo"
+              className="md:py-[0.25rem]"
+            />
+          )}
         </div>
-       
 
-        <div className="flex flex-col  h-full ">
+        <div className="flex flex-col mt-4 md:mt-[4px] h-full ">
           {open && (
-            <div className="mx-3 hidden md:block">
+            <div className="mx-3 ">
               <p className="text-base text-left font-medium">demo@domain.com</p>
               <p className=" text-left tsecondary text-sm font-normal">
                 Updated: Apr 24 2024 16:30:22 
@@ -628,108 +600,79 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
                 <IoMdAdd className="mx-2" />
                 Add Devices
               </button>
-              
             </div>
           )}
 
-          <ul className="whitespace-pre liborder border-t text-[18px] weight-[500] no-scrollbar  mt-2 md:mt-0 flex flex-col   font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100   md:h-[75%] h-[90%]">
+          <ul className="whitespace-pre liborder border-t text-[18px] weight-[500] no-scrollbar  mt-2 md:mt-0 flex flex-col   font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100 xl:h-[82%]  lg:h-[78%] h-[70%]">
             <li className="liborder">
               <NavLink to={"/"} className="link ">
-         
-              <img
-                  className="h-5 "
-                  src={Home}
-                  alt
-                />
-
+                <img className="h-5 " src={Home} alt />
                 Dashboard
-                
               </NavLink>
             </li>
             <li className="liborder">
               <NavLink to={"/devicecontrol"} className="link">
-              <img
-                  className="h-5 "
-                  src={DeviceControl}
-                  alt
-                />
+                <img className="h-5 " src={DeviceControl} alt />
                 Device Control
               </NavLink>
             </li>
 
-            
-              <div className="  border-slate-300 ">
-                {subMenusList1?.map((menu,i) => (
-                  <div key={i} className="flex flex-col  ">
-                    <SubMenu data={menu} />
-                  </div>
-                ))}
-              </div>
-           
+            <div className="  border-slate-300 ">
+              {subMenusList1?.map((menu, i) => (
+                <div key={i} className="flex flex-col  ">
+                  <SubMenu data={menu} open={open} />
+                </div>
+              ))}
+            </div>
+
             <li className="liborder">
               <NavLink to={"/messages"} className="link">
-              <img
-                  className="h-5 "
-                  src={Messages}
-                  alt
-                />
+                <img className="h-5 " src={Messages} alt />
                 Messages
               </NavLink>
             </li>
-           
-              <div className="  border-slate-300 ">
-                {subMenusList2?.map((menu,i) => (
-                  <div key={i} className="flex flex-col  ">
-                    <SubMenu data={menu} />
-                  </div>
-                ))}
-              </div>
-         
-              <li className="liborder">
+
+            <div className="  border-slate-300 ">
+              {subMenusList2?.map((menu, i) => (
+                <div key={i} className="flex flex-col  ">
+                  <SubMenu data={menu} open={open} />
+                </div>
+              ))}
+            </div>
+
+            <li className="liborder">
               <NavLink to={"/calendar"} className="link">
-              <img
-                  className="h-5 "
-                  src={Calendar}
-                  alt
-                />
+                <img className="h-5 " src={Calendar} alt />
                 Calendar
               </NavLink>
             </li>
             {/* NOTES */}
             <li className="liborder">
               <NavLink to={"/notes"} className="link">
-              <img
-                  className="h-5  "
-                  src={notes}
-                  alt
-                />
+                <img className="h-5  " src={notes} alt />
                 Notes
               </NavLink>
             </li>
             <div className="  border-slate-300 ">
-                {subMenusList3?.map((menu,i) => (
-                  <div key={i} className="flex flex-col  ">
-                    <SubMenu data={menu} />
-                  </div>
-                ))}
-              </div>
+              {subMenusList3?.map((menu, i) => (
+                <div key={i} className="flex flex-col  ">
+                  <SubMenu data={menu} open={open} />
+                </div>
+              ))}
+            </div>
             <li className="liborder">
               <NavLink to={"/KeyLogger"} className="link">
-                <img
-                  className="h-5 "
-                  src={KeyLogger}
-                  alt
-                />
+                <img className="h-5 " src={KeyLogger} alt />
                 KeyLogger
               </NavLink>
             </li>
             <div className="  border-slate-300 ">
-                {subMenusList4?.map((menu,i) => (
-                  <div key={i} className="flex flex-col  ">
-                    <SubMenu data={menu} />
-                  </div>
-                ))}
-              </div>
+              {subMenusList4?.map((menu, i) => (
+                <div key={i} className="flex flex-col  ">
+                  <SubMenu data={menu} open={open} />
+                </div>
+              ))}
+            </div>
             {/* <li className="liborder">
               <NavLink to={"/SavedPassword"} className="link">
                 <SlSettings size={23} className="min-w-max" />
@@ -737,32 +680,23 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
               </NavLink>
             </li> */}
 
-<div className="  border-slate-300 ">
-                {subMenusList5?.map((menu,i) => (
-                  <div key={i} className="flex flex-col  ">
-                    <SubMenu2 data={menu} />
-                  </div>
-                ))}
-              </div>
+            <div className="  border-slate-300 ">
+              {subMenusList5?.map((menu, i) => (
+                <div key={i} className="flex flex-col  ">
+                  <SubMenu2 data={menu} open={open} />
+                </div>
+              ))}
+            </div>
 
-         
             <li className="liborder">
               <NavLink to={"/Export"} className="link">
-                <img
-                  className="h-5 "
-                  src={Export}
-                  alt
-                />
+                <img className="h-5 " src={Export} alt />
                 Data Export
               </NavLink>
             </li>
             <li className="liborder">
               <NavLink to={"/logout"} className="link">
-              <img
-                  className="h-5 "
-                  src={Logout}
-                  alt
-                />
+                <img className="h-5 " src={Logout} alt />
                 Logout
               </NavLink>
             </li>
