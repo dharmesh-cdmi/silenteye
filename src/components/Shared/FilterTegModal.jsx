@@ -23,14 +23,14 @@ const FilterTegModal = () => {
 
       <div className="  overflow-y-auto h-96 mx-4 no-scrollbar">
         <div>
-          <ul className=" space-y-1  list-inside dark:text-gray-400">
+          <ul className=" space-y-1  list-inside ">
             <li className="flex items-center mt-4 border-b">
               <div className="flex items-center mb-4">
                 <input
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -46,7 +46,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -62,7 +62,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -78,7 +78,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -94,7 +94,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -110,7 +110,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -126,7 +126,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -142,7 +142,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -158,7 +158,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -174,7 +174,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -190,7 +190,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -206,7 +206,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"
@@ -222,7 +222,7 @@ const FilterTegModal = () => {
                   id="default-checkbox"
                   type="checkbox"
                   defaultValue
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
                   htmlFor="default-checkbox"

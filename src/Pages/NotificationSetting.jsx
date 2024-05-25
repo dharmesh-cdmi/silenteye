@@ -64,11 +64,11 @@ const NotificationSetting = () => {
 
   };
   return (
-    <div className="main ps-3 pe-3 pt-4">
+    <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
       <Header heading="Notification Settings" />
-      <div className="my-10">
-        <Table className="border-[#DDDDDD] border-[1px] rounded-lg">
-          <Table.Header className="font-[16px] opacity-[50%]">
+      <div className="sm:my-10 my-2">
+        <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
+          <Table.Header className="font-[16px] ">
             Hide Notifications (All Apps)
           </Table.Header>
           <Table.Body>
@@ -78,7 +78,7 @@ const NotificationSetting = () => {
             </Table.Body>
         </Table>
       </div>
-      <div className="flex justify-center mb-12">
+      <div className="flex justify-center mb-12 mt-3">
       <Modal>
           <Modal.Toggle toggleName="viewMore-NotificationSettings">
             <Button

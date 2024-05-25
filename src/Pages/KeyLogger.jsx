@@ -81,11 +81,11 @@ function KeyLogger() {
     //View More Logic Here
   };
   return (
-    <div className="main ps-3 pe-3 pt-4">
+    <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
       <KeyLoggerHeader />
       {keyloggerData.map((keyloggerData, index) => (
-        <div key={index} className="my-10">
-          <Table className="border-[#DDDDDD] border-[1px] rounded-lg">
+        <div key={index} className="sm:my-10 my-2">
+          <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
             <Table.Header className="font-[16px]  opacity-[50%]">
               Monday, {index + 11} Jan, 2023
             </Table.Header>
@@ -97,7 +97,7 @@ function KeyLogger() {
           </Table>
         </div>
       ))}
-      <div className="flex justify-center mb-12">
+      <div className="flex justify-center mb-12 mt-3 ">
         <Modal>
           <Modal.Toggle toggleName="viewMore-keylogger">
             <Button

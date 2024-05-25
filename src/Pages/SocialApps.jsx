@@ -184,16 +184,16 @@ const SocialApps = () => {
   };
 
   return (
-    <div className="main ps-3 pe-3 pt-4">
+    <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
       <SocialAppsHeader />
-      <ul className="grid xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-4 grid-cols-3   mt-10">
+      <ul className="grid xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-4   sm:grid-cols-4 grid-cols-4 ">
         {SocialAppsData.map((SocialApps, key) => (
-          <li key={SocialApps.id} className="my-4">
+          <li key={SocialApps.id} className="my-4 pe-5 sm:pe-0 sm:ps-0 ps-5">
             <SocialApp SocialApps={SocialApps} />
           </li>
         ))}
       </ul>
-      <div className="flex justify-center mt-12 mb-12">
+      <div className="flex justify-center mt-4 mb-12">
         <Modal>
           <Modal.Toggle toggleName="viewMore-keylogger">
             <Button
