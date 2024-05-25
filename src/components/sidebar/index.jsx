@@ -552,7 +552,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
     },
   ];
   return (
-    <div className="h-screen fixed left-0 ">
+    <div className="h-screen fixed left-0 z-10">
       <div
         onClick={() => setOpen(false)}
         className={`md:hidden fixed inset-0 max-h-screen  bg-black/50 ${
