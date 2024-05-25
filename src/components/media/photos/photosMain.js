@@ -1,7 +1,7 @@
-import React from 'react'
-import Gallery from './components/Gallery'
-import Card from '../../../UI/Card'
-import LocationHead from '../../../UI/HeaderTab';
+import React from "react";
+import Gallery from "./components/Gallery";
+import Card from "../../../UI/Card";
+import LocationHead from "../../../UI/HeaderTab";
 
 function mediaMain() {
   const headerData = {
@@ -10,11 +10,10 @@ function mediaMain() {
   };
   return (
     <Card>
-              <LocationHead data={headerData}/>
-
-        <Gallery/>
+      <LocationHead data={headerData} />
+      <Gallery />
     </Card>
-  )
+  );
 }
 
-export default mediaMain
+export default mediaMain;

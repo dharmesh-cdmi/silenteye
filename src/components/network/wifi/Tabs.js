@@ -9,11 +9,12 @@ import { TiTick } from "react-icons/ti";
 
 
 
+
 function Tabs() {
   return (
-    <div className="lg:mx-4 mx-5 mt-10">
-      <section className="grid lg:grid-cols-4 grid-cols-1 border-2 border-gray-50 rounded-xl ">
-        <div className="py-2 px-2 border-r-2">
+    <div className="lg:mx-4 mx-0 lg:mt-10 mt-0">
+      <section className="grid lg:grid-cols-4 grid-cols-1 border-0 lg:border-2 border-gray-50 rounded-xl ">
+        <div className="py-2 px-2 lg:border-r-2 border-b-2">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -28,7 +29,7 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-2 px-2 border-r-2">
+        <div className="py-2 px-2 lg:border-r-2 border-b-2">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -46,7 +47,7 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-2 px-2 border">
+        <div className="py-2 px-2 lg:border-r-2 border-b-2">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex ">
@@ -54,14 +55,14 @@ function Tabs() {
                 <h3 className="font-semibold text-md">Uploaded</h3>
               </div>
               <p className=" text-sm">
-                130.77 GB
-                <span className="text-gray-500 text-xs">Data Uploaded</span>
+                130.77 GB{" "}
+                <span className="text-gray-500 text-xs">{" Data Uploaded"}</span>
               </p>
             </div>
           </div>
         </div>
 
-        <div className="py-2 px-2 border">
+        <div className="py-2 px-2 lg:border-r-2 border-b-2">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex ">
@@ -70,7 +71,7 @@ function Tabs() {
               </div>
               <p className=" text-sm">
                 130.77 GB{" "}
-                <span className="text-gray-500 text-xs">Data Downloaded</span>
+                <span className="text-gray-500 text-xs ">Data Downloaded</span>
               </p>
             </div>
           </div>

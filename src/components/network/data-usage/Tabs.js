@@ -4,8 +4,8 @@ import { AiOutlineDownload } from "react-icons/ai";
 
 function Tabs() {
   return (
-    <div className="lg:mx-4 mx-5 mt-10">
-      <section className="grid lg:grid-cols-4 grid-cols-1 border-2 border-gray-50 rounded-xl ">
+    <div className="lg:mx-4 mx-0 lg:mt-10 mt-0">
+      <section className="grid lg:grid-cols-4 grid-cols-1 lg:border-2 border-0 border-gray-50 rounded-xl ">
         <div className="py-2 px-2 border">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
@@ -45,7 +45,7 @@ function Tabs() {
                 <h3 className="font-semibold text-md">Uploaded</h3>
               </div>
               <p className=" text-sm">
-                130.77 GB
+                130.77 GB{" "}
                 <span className="text-gray-500 text-xs">Data Uploaded</span>
               </p>
             </div>
