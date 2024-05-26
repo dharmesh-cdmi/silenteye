@@ -21,7 +21,7 @@ function RootLayout() {
       >
         <Alert />
         <Navbar open={open} setOpen={setOpen} isTabletMid={isTabletMid} />
-        <div className=" flex-1 md:mx-auto py-0 md:py-4 mt-16 md:mt-32 mx-2 md:p-10">
+        <div className=" flex-1 md:mx-auto py-0 md:py-4 mt-16 md:mt-32 sm:mx-2 md:p-10">
           <Outlet />
         </div>
       </main>
