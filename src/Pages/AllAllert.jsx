@@ -22,14 +22,15 @@ const AllAllertsData = [
       subheading: "Do you want to go see a movie tonight?",
       time: "09:10 AM",
     },
-    
     {
       id: "2",
-      img: youtube,
-      heading: "Watch Now : Tll News New Video",
-      subheading: "How you feel about new video?",
-      time: "08:44 AM",
+      img: snapchat,
+      heading: "Snap from King A",
+      subheading: "New Snap ! Check it Out",
+      time: "11:38 PM",
     },
+    
+    
     {
       id: "3",
       img: messenger,
