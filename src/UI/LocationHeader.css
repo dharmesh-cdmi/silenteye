@@ -3,8 +3,8 @@
 }
 .Location-nav-left {
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+    /* gap: 1rem; */
+    /* padding: 1rem; */
     font-weight: 500;
 }
 .LocationNavLeftIcon {

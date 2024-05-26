@@ -9,9 +9,9 @@ import sim2 from "../../../../assests/images/DashControl/Verizon.png";
 
 function Tabs() {
   return (
-    <div className="lg:mx-4 mx-5 mt-10">
-      <section className="grid lg:grid-cols-4 grid-cols-1 border-2 border-gray-50 rounded-xl ">
-        <div className="py-3 px-2 border">
+    <div className="lg:mx-4 mx-0 lg:mt-10 mt-0">
+      <section className="grid lg:grid-cols-4 grid-cols-1 lg:border-2 border-0 border-gray-50 rounded-xl ">
+        <div className="py-3 px-2 lg:border border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -29,7 +29,7 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-3 px-2 border">
+        <div className="py-3 px-2 lg:border border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -47,7 +47,7 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-2 border px-2">
+        <div className="py-2 lg:border border-b px-2">
           <div className="flex justify-start flex-col">
             <p className="text-gray-500 text-sm">Default for Calls</p>
             <div className="grid grid-cols-3 bg-gray-300 h-10 rounded-lg cursor-pointer">
@@ -75,7 +75,7 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="p-2 border ">
+        <div className="p-2 lg:border border-b ">
           <div className="flex justify-start flex-col">
             <p className="text-gray-500 text-sm">Default for Internet Data</p>
             <div className="grid grid-cols-2 bg-gray-300 h-10 rounded-lg cursor-pointer">
