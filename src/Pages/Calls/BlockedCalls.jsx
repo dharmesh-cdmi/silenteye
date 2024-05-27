@@ -12,11 +12,23 @@ import { FaArrowLeft } from "react-icons/fa";
 import Upgrade from "../../components/Shared/Upgrade";
 import Modal from "../../components/Shared/Modal";
 import Delete from "../../assests/images/delete.png";
+import { useMoveBack } from "../../hooks/useMoveBack";
+import moveBack from "../../assests/images/Header/arrow.png";
+import Oval1 from "../../assests/images/profile/Oval-1.png";
+import Oval2 from "../../assests/images/profile/Oval-2.png";
+import Oval3 from "../../assests/images/profile/Oval-3.png";
+import Oval4 from "../../assests/images/profile/Oval-4.png";
+import Oval5 from "../../assests/images/profile/Oval-5.png";
+import Oval6 from "../../assests/images/profile/Oval-6.png";
+import Oval7 from "../../assests/images/profile/Oval-7.png";
+import Oval from "../../assests/images/profile/Oval.png";
 
 const BlockedCalls = () => {
+  const moveBacks = useMoveBack();
+
   const callBlockeddata = [
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval1,
       name: "Sara Smith",
       callIcon: callicon,
       callNo: "(415) 555-0192",
@@ -24,7 +36,7 @@ const BlockedCalls = () => {
       time: "10:15 AM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval2,
       name: "John Doe",
       callIcon: callicon,
       callNo: "(702) 555-0763",
@@ -32,7 +44,7 @@ const BlockedCalls = () => {
       time: "1:30 PM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval3,
       name: "Emily Johnson",
       callIcon: callicon,
       callNo: "(212) 555-0345",
@@ -40,7 +52,7 @@ const BlockedCalls = () => {
       time: "5:45 PM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval4,
       name: "Michael Brown",
       callIcon: callicon,
       callNo: "(615) 555-0887",
@@ -48,7 +60,7 @@ const BlockedCalls = () => {
       time: "8:20 AM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval5,
       name: "Sophia Martinez",
       callIcon: callicon,
       callNo: "(832) 555-0629",
@@ -58,10 +70,41 @@ const BlockedCalls = () => {
   ];
   return (
     <div>
-      <CallsHead
-        heading="Blocked Calls"
-        placeholder="Search by Name or Phone Number"
-      />
+      <div className="hidden md:block">
+        <CallsHead
+          heading="Blocked Calls"
+          placeholder="Search by Name or Phone Number"
+        />
+      </div>
+
+      <div className="flex md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0">
+        <div className="item-one flex flex-row items-center ">
+          <div
+            className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
+            onClick={moveBacks}
+          >
+            <img src={moveBack} alt="move-Back" />
+          </div>
+          <span className="text-[15px] md:text-[20px]   text-[#000000] md:ps-3 ps-1 font-[600]">
+            Blocked Calls
+          </span>
+        </div>
+        <div className="item-two flex flex-row items-center md:mt-0 ">
+          <div className="me-1 md:hidden ">
+            <button
+              type="button"
+              class="text-white gap-2 bg-red-500  border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+            >
+              <RiUserForbidLine />
+              Unblock
+            </button>
+          </div>
+
+          <div className="me-1 mb-2 p-1 md:hidden rounded-[8px] border">
+            <img className="h-5  cursor-pointer" src={Delete} alt />
+          </div>
+        </div>
+      </div>
       <div className="md:border md:rounded-xl md:my-8 my-2 border-t shadow ">
         <div className="grid grid-cols-1 md:grid-cols-2 ">
           {/* first column */}
@@ -77,13 +120,13 @@ const BlockedCalls = () => {
                 <li className="flex-none w-14 pt-2">
                   <img
                     className="w-10 h-10 rounded-full m-auto"
-                    src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                    src={Oval7}
                     alt
                   />
                 </li>
                 <li className="p-1 flex-1 w-64 font-semibold">
                   <div>
-                    "Hewie Gamage"
+                    Hendrick Guice
                     <div className="text-gray-400 flex">
                       <p className="my-auto ">
                         <img className="h-4 " src={callicon} alt />
@@ -145,13 +188,13 @@ const BlockedCalls = () => {
                   <li className="flex-none w-20 pt-2 border-none">
                     <img
                       className="w-20 h-20 rounded-full m-auto"
-                      src="https://xsgames.co/randomusers/avatar.php?g=male"
+                      src={Oval7}
                       alt="img"
                     />
                   </li>
                   <li className="p-1 flex-1 w-64 font-semibold border-none">
                     <div>
-                      <p className="text-lg">Hewie Gamage</p>
+                      <p className="text-lg">Hendrick Guice</p>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
                           <VscCallOutgoing />
@@ -163,7 +206,7 @@ const BlockedCalls = () => {
                           <IoIosMailOpen className="text-gray-400" />
                         </p>
                         <p className="ps-1 text-sm md:text-base">
-                          hewiegamage@gmail.com
+                          hendrickguice@gmail.com
                         </p>
                       </div>
                     </div>

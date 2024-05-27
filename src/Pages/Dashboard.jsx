@@ -30,6 +30,16 @@ import gps from "../assests/images/dashboard/gps.png";
 import image from "../assests/images/dashboard/image.png";
 import other from "../assests/images/dashboard/other.png";
 import video from "../assests/images/dashboard/video.png";
+import Oval1 from "../assests/images/profile/Oval-1.png";
+import Oval2 from "../assests/images/profile/Oval-2.png";
+import Oval3 from "../assests/images/profile/Oval-3.png";
+import Oval4 from "../assests/images/profile/Oval-4.png";
+import Oval6 from "../assests/images/profile/Oval-6.png";
+
+import Oval7 from "../assests/images/profile/Oval-7.png";
+
+import Oval from "../assests/images/profile/Oval.png";
+
 import { CiMobile3 } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 import Modal from "../components/Shared/Modal";
@@ -138,14 +148,14 @@ const Dashboard = () => {
   ];
   const RecentCall = [
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval,
       name: "Hewie Gamage",
       callIcon: <VscCallOutgoing />,
       callStatus: "outgoing",
       date: "21/05/2024",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval1,
       name: "Tommi Osayande",
       callIcon: <MdPhoneCallback />,
       callStatus: "missed",
@@ -153,21 +163,21 @@ const Dashboard = () => {
     },
     ,
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval2,
       name: "Morty Zumalt",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "outgoing",
       date: "21/05/2024",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval3,
       name: "Sander Margotta",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "incoming",
       date: "21/05/2024",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval4,
       name: "Ramona Bea",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "incoming",
@@ -176,7 +186,7 @@ const Dashboard = () => {
   ];
   const RecentMessages = [
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval7,
       name: "Riyah Webflow",
       msg: "Little brother, I'm lonely and I'm looking for company. My Telegram ID: Tindf202",
       time: "9:41 am",
@@ -194,7 +204,7 @@ const Dashboard = () => {
       time: "9:41 am",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval6,
       name: "(319) 555-0115",
       msg: "Verfication code 759028, valid for 10 minutes",
       time: "9:41 am",

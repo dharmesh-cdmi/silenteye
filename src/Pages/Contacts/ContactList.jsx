@@ -18,11 +18,20 @@ import { AiOutlineMessage } from "react-icons/ai";
 import Modal from "../../components/Shared/Modal";
 import Upgrade from "../../components/Shared/Upgrade";
 import Delete from "../../assests/images/delete.png";
+import Oval1 from "../../assests/images/profile/Oval-1.png";
+import Oval2 from "../../assests/images/profile/Oval-2.png";
+import Oval3 from "../../assests/images/profile/Oval-3.png";
+import Oval4 from "../../assests/images/profile/Oval-4.png";
+import Oval5 from "../../assests/images/profile/Oval-5.png";
+import Oval6 from "../../assests/images/profile/Oval-6.png";
+import Oval7 from "../../assests/images/profile/Oval-7.png";
+import Oval from "../../assests/images/profile/Oval.png";
+import { Link } from "react-router-dom";
 
 const ContactList = () => {
   const contactlistdata = [
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval1,
       name: "Adam Smith",
       callIcon: callicon,
       callNo: "(415) 555-0192",
@@ -30,7 +39,7 @@ const ContactList = () => {
       time: "10:15 AM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval2,
       name: "Alex Doe",
       callIcon: callicon,
       callNo: "(702) 555-0763",
@@ -38,7 +47,7 @@ const ContactList = () => {
       time: "1:30 PM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval3,
       name: "Anna Johnson",
       callIcon: callicon,
       callNo: "(212) 555-0345",
@@ -46,7 +55,7 @@ const ContactList = () => {
       time: "5:45 PM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval4,
       name: "Aaron Brown",
       callIcon: callicon,
       callNo: "(615) 555-0887",
@@ -81,31 +90,59 @@ const ContactList = () => {
               {/* body */}
               <div className="overflow-y-scroll h-96 no-scrollbar">
                 <p className="border-b text-gray-400  p-1">A</p>
-
-                <ul className="flex p-2 liborder cursor-pointer md:bg-gray-100">
-                  <li className="flex-none w-14 pt-2">
-                    <img
-                      className="w-10 h-10 rounded-full m-auto"
-                      src={"https://xsgames.co/randomusers/avatar.php?g=male"}
-                      alt
-                    />
-                  </li>
-                  <li className="p-1 flex-1 w-64 font-semibold">
-                    <div>
-                      Alice Gamage
-                      <div className="text-gray-400 flex">
-                        <p className="my-auto ">
-                          <VscCallOutgoing />
-                        </p>
-                        <p className="ps-1">(308) 555-0121</p>
+                <div className="hidden md:block">
+                  <ul className="flex p-2 liborder cursor-pointer  md:bg-gray-100">
+                    <li className="flex-none w-14 pt-2">
+                      <img
+                        className="w-10 h-10 rounded-full m-auto"
+                        src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                        alt
+                      />
+                    </li>
+                    <li className="p-1 flex-1 w-64 font-semibold">
+                      <div>
+                        Alice Gamage
+                        <div className="text-gray-400 flex">
+                          <p className="my-auto ">
+                            <VscCallOutgoing />
+                          </p>
+                          <p className="ps-1">(308) 555-0121</p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
-                    Tue, May 21, 2024 <br />
-                    3:58 AM
-                  </li>
-                </ul>
+                    </li>
+                    <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
+                      Tue, May 21, 2024 <br />
+                      3:58 AM
+                    </li>
+                  </ul>
+                </div>
+
+                <Link to="/contacts/contactprofile">
+                  <ul className="flex p-2 liborder cursor-pointer md:bg-gray-100 md:hidden">
+                    <li className="flex-none w-14 pt-2">
+                      <img
+                        className="w-10 h-10 rounded-full m-auto"
+                        src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                        alt
+                      />
+                    </li>
+                    <li className="p-1 flex-1 w-64 font-semibold">
+                      <div>
+                        Alice Gamage
+                        <div className="text-gray-400 flex">
+                          <p className="my-auto ">
+                            <VscCallOutgoing />
+                          </p>
+                          <p className="ps-1">(308) 555-0121</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
+                      Tue, May 21, 2024 <br />
+                      3:58 AM
+                    </li>
+                  </ul>
+                </Link>
 
                 {contactlistdata.map((info, i) => (
                   <Modal.Toggle toggleName="Update">
@@ -139,63 +176,71 @@ const ContactList = () => {
                   </Modal.Toggle>
                 ))}
                 <p className="border-b text-gray-400  p-1">B</p>
+                <Modal.Toggle toggleName="Update">
+                  <ul className="flex p-2 liborder cursor-pointer">
+                    <li className="flex-none w-14 pt-2">
+                      <img
+                        className="w-10 h-10 rounded-full m-auto"
+                        src={
+                          "https://xsgames.co/randomusers/avatar.php?g=female"
+                        }
+                        alt
+                      />
+                    </li>
+                    <li className="p-1 flex-1 w-64 font-semibold">
+                      <div>
+                        Barrett Aschenbrenner
+                        <div className="text-gray-400 flex">
+                          <p className="my-auto ">
+                            <VscCallOutgoing />
+                          </p>
+                          <p className="ps-1">+9198989898</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
+                      Tue, May 21, 2024 <br />
+                      3:58 AM
+                    </li>
+                  </ul>
+                </Modal.Toggle>
+                <Modal.Toggle toggleName="Update">
+                  <ul className="flex p-2 liborder cursor-pointer ">
+                    <li className="flex-none w-14 pt-2">
+                      <img
+                        className="w-10 h-10 rounded-full m-auto"
+                        src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                        alt
+                      />
+                    </li>
+                    <li className="p-1 flex-1 w-64 font-semibold">
+                      <div>
+                        Bob Gamage
+                        <div className="text-gray-400 flex">
+                          <p className="my-auto ">
+                            <VscCallOutgoing />
+                          </p>
+                          <p className="ps-1">(308) 555-0121</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
+                      Tue, May 21, 2024 <br />
+                      3:58 AM
+                    </li>
+                  </ul>
+                </Modal.Toggle>
 
-                <ul className="flex p-2 liborder cursor-pointer">
-                  <li className="flex-none w-14 pt-2">
-                    <img
-                      className="w-10 h-10 rounded-full m-auto"
-                      src={"https://xsgames.co/randomusers/avatar.php?g=female"}
-                      alt
-                    />
-                  </li>
-                  <li className="p-1 flex-1 w-64 font-semibold">
-                    <div>
-                      Barrett Aschenbrenner
-                      <div className="text-gray-400 flex">
-                        <p className="my-auto ">
-                          <VscCallOutgoing />
-                        </p>
-                        <p className="ps-1">+9198989898</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
-                    Tue, May 21, 2024 <br />
-                    3:58 AM
-                  </li>
-                </ul>
-                <ul className="flex p-2 liborder cursor-pointer ">
-                  <li className="flex-none w-14 pt-2">
-                    <img
-                      className="w-10 h-10 rounded-full m-auto"
-                      src={"https://xsgames.co/randomusers/avatar.php?g=male"}
-                      alt
-                    />
-                  </li>
-                  <li className="p-1 flex-1 w-64 font-semibold">
-                    <div>
-                      Bob Gamage
-                      <div className="text-gray-400 flex">
-                        <p className="my-auto ">
-                          <VscCallOutgoing />
-                        </p>
-                        <p className="ps-1">(308) 555-0121</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
-                    Tue, May 21, 2024 <br />
-                    3:58 AM
-                  </li>
-                </ul>
                 <div className="flex justify-center my-2">
-                  <button
-                    type="button"
-                    class="text-gray-900 gap-2 bg-white  hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
-                  >
-                    <MdKeyboardDoubleArrowDown size={30} />
-                    View More
-                  </button>
+                  <Modal.Toggle toggleName="Update">
+                    <button
+                      type="button"
+                      class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
+                    >
+                      <MdKeyboardDoubleArrowDown size={30} />
+                      View More
+                    </button>
+                  </Modal.Toggle>
                 </div>
               </div>
             </div>

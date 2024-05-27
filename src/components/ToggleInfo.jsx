@@ -8,6 +8,8 @@ import fram2 from "../assests/images/nav/Frame-2.png";
 import fram4 from "../assests/images/nav/Frame-4.png";
 
 import { CiMobile3 } from "react-icons/ci";
+import Modal from "./Shared/Modal";
+import Upgrade from "./Shared/Upgrade";
 
 export function NotificationInfo(props) {
   const NotificationData = [
@@ -61,7 +63,7 @@ export function NotificationInfo(props) {
       tabIndex={-1}
       aria-hidden="true"
       className=" fixed  top-[3.7rem] md:top-[4.8rem] md:right-52 border shadow w-full md:w-fit  z-50 flex justify-center  items-center bg-white rounded-lg"
-      style={{ zIndex: 9999 }} // Adjust z-index here
+      // Adjust z-index here
     >
       <div class="relative bg-white md:rounded-lg md:shadow  mx-auto">
         <div>
@@ -242,7 +244,7 @@ const DeviceInfo = () => {
       tabIndex={-1}
       aria-hidden="true"
       className=" fixed top-[4.8rem] right-72 border shadow  z-50 flex justify-center  items-center bg-white rounded-lg"
-      style={{ zIndex: 9999 }} // Adjust z-index here
+      // Adjust z-index here
     >
       <div className="relative p-4 w-full max-w-2xl max-h-full">
         {/* Modal content */}
@@ -274,10 +276,17 @@ const DeviceInfo = () => {
               <p>iPhone 12 Pro</p>
             </div>
           </div>
-          <div className="bg-gray-100 text-left p-6 rounded-lg  flex justify-center items-center flex-col">
-            <TbDeviceMobilePlus />
-            <p>Add Device</p>
-          </div>
+          <Modal>
+            <Modal.Toggle toggleName="Update">
+              <div className="cursor-pointer bg-gray-100 text-left p-6 rounded-lg  flex justify-center items-center flex-col">
+                <TbDeviceMobilePlus />
+                <p>Add Device</p>
+              </div>
+            </Modal.Toggle>
+            <Modal.Window windowName="Update">
+              <Upgrade />
+            </Modal.Window>
+          </Modal>
         </div>
       </div>
     </div>

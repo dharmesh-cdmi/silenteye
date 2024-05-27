@@ -138,7 +138,11 @@ const DeviceControl = () => {
       <div className="border rounded-xl my-8">
         <div className="flex p-4 border-b">
           <div>
-            <img src={fram1} alt="img" className="object-contain mt-2" />
+            <img
+              src={fram1}
+              alt="img"
+              className="object-contain mt-2 md:w-auto w-6"
+            />
           </div>
           <div className="mx-2">
             <p className="font-semibold text-xl text-gray-900">
@@ -153,7 +157,11 @@ const DeviceControl = () => {
           <div className="p-4 md:border-r">
             <div className="flex ">
               <div className="flex-none w-8">
-                <img src={fram2} alt="img" className="object-contain h-8" />
+                <img
+                  src={fram2}
+                  alt="img"
+                  className="object-contain h-8 md:w-auto w-6"
+                />
               </div>
               <div className=" w-72">
                 <p className="font-semibold ms-2 text-xl text-gray-900">
@@ -285,7 +293,7 @@ const DeviceControl = () => {
       <div className="border rounded-xl my-8">
         <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-0 ">
           <div className="flex p-4 col-span-2">
-            <div>
+            <div className="w-12 md:w-auto">
               <img src={fram6} alt="img" className="object-contain mt-2" />
             </div>
             <div className="mx-2 w-70">
@@ -307,7 +315,7 @@ const DeviceControl = () => {
       <div className="border rounded-xl my-8">
         <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-0 ">
           <div className="flex p-4 col-span-2">
-            <div>
+            <div className="w-12 md:w-auto">
               <img src={fram7} alt="img" className="object-contain mt-2" />
             </div>
             <div className="mx-2 w-70">
@@ -321,7 +329,7 @@ const DeviceControl = () => {
             <img
               src={switc}
               alt="img"
-              className="object-contain h-12 md:hidden block"
+              className="object-contain h-9 md:hidden block"
             />
           </div>
           <div className="flex p-4  justify-center md:justify-end">

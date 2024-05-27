@@ -47,6 +47,9 @@ import FilesDownload from "./Pages/Files/FilesDownload.js";
 import Appsnotification from "./Pages/Apps/Appsnotification.js";
 import Appsscreentime from "./Pages/Apps/AppScreentimem.js";
 import CallProfile from "./Pages/Calls/CallProfile.jsx";
+import ContactProfile, {
+  BlockedContactProfile,
+} from "./Pages/Contacts/ContactProfile.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -87,6 +90,14 @@ function App() {
         {
           path: "/contacts/contactslist",
           element: <ContactList />,
+        },
+        {
+          path: "/contacts/contactprofile",
+          element: <ContactProfile />,
+        },
+        {
+          path: "/contacts/blockedcontactprofile",
+          element: <BlockedContactProfile />,
         },
         { path: "/messages", element: <MessagesMain /> },
         { path: "/network/mobile-network", element: <MobileMain /> },

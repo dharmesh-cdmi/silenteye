@@ -8,7 +8,7 @@ const Alert = () => {
       <div
         id="alert-4"
         style={{ width: "inherit", top: "66px" }}
-        className=" items-center hidden border-t sm:hidden md:block  z-10 mb-2 px-4 fixed   pt-2 text-black  bg-[#FFEAB5]  "
+        className=" items-center hidden border-t sm:hidden md:block  z-10 mb-2 px-4 fixed   pt-2 text-black  bg-[#FFEAB5] py-2 "
         role="alert"
       >
         <div className="flex mx-3">
@@ -25,7 +25,7 @@ const Alert = () => {
               Upgrade to Unlock Full Access.
             </a>
           </div>
-          <button
+          {/* <button
             type="button"
             className="ms-auto  text-black  bg-[#FFEAB5] focus:ring-2 focus:ring-yellow-400 p-1.5 hover:bg-yellow-200 inline-flex items-center justify-center h-8 w-8"
             data-dismiss-target="#alert-4"
@@ -33,7 +33,7 @@ const Alert = () => {
           >
             <span className="sr-only">Close</span>
             <IoIosClose />
-          </button>
+          </button> */}
         </div>
       </div>
     </>
