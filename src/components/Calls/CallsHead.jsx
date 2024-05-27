@@ -52,12 +52,19 @@ const CallsHead = (props) => {
           </Modal>
         </div>
         <div className="me-3 md:hidden ">
-          <Button
-            onClick={handleSearch}
-            className="text-[18px] font-medium px-[6px]  py-[6px] text-[#101828] text-center"
-          >
-            <IoIosSearch />
-          </Button>
+          <Modal>
+            <Modal.Toggle toggleName="searchcall">
+              <Button
+                onClick={handleSearch}
+                className="text-[18px] font-medium px-[6px]  py-[6px] text-[#101828] text-center"
+              >
+                <IoIosSearch />
+              </Button>
+            </Modal.Toggle>
+            <Modal.Window windowName="searchcall">
+              <Upgrade />
+            </Modal.Window>
+          </Modal>
         </div>
         <div className="me-3 hidden md:block">
           <Modal>
@@ -76,12 +83,19 @@ const CallsHead = (props) => {
           </Modal>
         </div>
         <div className="me-3 md:hidden ">
-          <Button
-            onClick={exportKeyLogger}
-            className="text-[18px] font-medium px-[6px] shadow-[0px_0px_56px_0px_#00000014] py-[6px] text-[#101828] text-center"
-          >
-            <img src={exportIcon} alt="export" className="h-[18px]" />
-          </Button>
+          <Modal>
+            <Modal.Toggle toggleName="searchcall">
+              <Button
+                onClick={exportKeyLogger}
+                className="text-[18px] font-medium px-[6px] shadow-[0px_0px_56px_0px_#00000014] py-[6px] text-[#101828] text-center"
+              >
+                <img src={exportIcon} alt="export" className="h-[18px]" />
+              </Button>
+            </Modal.Toggle>
+            <Modal.Window windowName="searchcall">
+              <Upgrade />
+            </Modal.Window>
+          </Modal>
         </div>
 
         <div className="me-3 hidden md:block">
@@ -101,12 +115,19 @@ const CallsHead = (props) => {
           </Modal>
         </div>
         <div className=" md:hidden ">
-          <Button
-            onClick={filterKeyLooger}
-            className="text-[18px] font-medium px-[6px] shadow-[0px_0px_56px_0px_#00000014] py-[6px] text-[#101828] text-center"
-          >
-            <img src={filterIcon} alt="delete" className="h-[18px]" />
-          </Button>
+          <Modal>
+            <Modal.Toggle toggleName="searchcall">
+              <Button
+                onClick={filterKeyLooger}
+                className="text-[18px] font-medium px-[6px] shadow-[0px_0px_56px_0px_#00000014] py-[6px] text-[#101828] text-center"
+              >
+                <img src={filterIcon} alt="delete" className="h-[18px]" />
+              </Button>
+            </Modal.Toggle>
+            <Modal.Window windowName="searchcall">
+              <Upgrade />
+            </Modal.Window>
+          </Modal>
         </div>
       </div>
     </div>

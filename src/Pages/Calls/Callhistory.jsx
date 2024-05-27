@@ -13,12 +13,20 @@ import { FaArrowLeft } from "react-icons/fa";
 import Upgrade from "../../components/Shared/Upgrade";
 import Modal from "../../components/Shared/Modal";
 import Delete from "../../assests/images/delete.png";
+import Oval1 from "../../assests/images/profile/Oval-1.png";
+import Oval2 from "../../assests/images/profile/Oval-2.png";
+import Oval3 from "../../assests/images/profile/Oval-3.png";
+import Oval4 from "../../assests/images/profile/Oval-4.png";
+import Oval5 from "../../assests/images/profile/Oval-5.png";
+import Oval6 from "../../assests/images/profile/Oval-6.png";
+import Oval7 from "../../assests/images/profile/Oval-7.png";
+import Oval from "../../assests/images/profile/Oval.png";
 import { Link } from "react-router-dom";
 
 const Callhistory = () => {
   const callhistoryData = [
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval1,
       name: "Tommi Osayande",
       callIcon: <MdPhoneCallback />,
       callStatus: "incoming",
@@ -26,51 +34,51 @@ const Callhistory = () => {
     },
     ,
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval2,
       name: "Sander Margotta",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
       date: "21/05/2024",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval3,
       name: "Morty Zumalt",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
       date: "21/05/2024",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
-      name: "Ramona Bea",
+      img: Oval4,
+      name: "Ramona Beabrun",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
       date: "21/05/2024",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
-      name: "Tommi Osayande",
+      img: Oval5,
+      name: "Garfinkel Groberg",
       callIcon: <MdPhoneCallback />,
       callStatus: "incoming",
       date: "21/05/2024",
     },
     ,
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
-      name: "Sander Margotta",
+      img: Oval6,
+      name: "Ellie Thaemert",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
       date: "21/05/2024",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
-      name: "Morty Zumalt",
+      img: Oval7,
+      name: "Larina Vanderveen",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
       date: "21/05/2024",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
-      name: "Ramona Bea",
+      img: Oval2,
+      name: "Elissa Bradfute",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
       date: "21/05/2024",
@@ -98,13 +106,13 @@ const Callhistory = () => {
                 <li className="flex-none w-14 pt-2">
                   <img
                     className="w-10 h-10 rounded-full m-auto"
-                    src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                    src={Oval}
                     alt
                   />
                 </li>
                 <li className="p-1 flex-1 w-64 font-semibold">
                   <div>
-                    "Hewie Gamage"
+                    Hewie Gamage
                     <div className="text-gray-400 flex">
                       <p className="my-auto ">
                         <VscCallOutgoing />
@@ -114,7 +122,7 @@ const Callhistory = () => {
                   </div>
                 </li>
                 <li className="p-1 text-gray-400 font-semibold pt-4">
-                  "21/05/2024"
+                  21/05/2024
                 </li>
               </ul>
               {callhistoryData.map((info, i) => (
@@ -172,13 +180,13 @@ const Callhistory = () => {
                   <li className="flex-none w-14 pt-2">
                     <img
                       className="w-10 h-10 rounded-full m-auto"
-                      src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                      src={Oval}
                       alt
                     />
                   </li>
                   <li className="p-1 flex-1 w-64 font-semibold">
                     <div>
-                      "Hewie Gamage"
+                      Hewie Gamage
                       <div className="text-gray-400 flex">
                         <p className="my-auto ">
                           <VscCallOutgoing />
@@ -188,7 +196,7 @@ const Callhistory = () => {
                     </div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-4">
-                    "21/05/2024"
+                    21/05/2024
                   </li>
                 </ul>
               </Link>
@@ -242,7 +250,7 @@ const Callhistory = () => {
                   <li className="flex-none w-20 pt-2 border-none ">
                     <img
                       className="w-20 h-20 rounded-full m-auto"
-                      src="https://xsgames.co/randomusers/avatar.php?g=male"
+                      src={Oval}
                       alt="img"
                     />
                   </li>

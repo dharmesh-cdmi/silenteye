@@ -11,6 +11,7 @@ import { RiMenu2Fill } from "react-icons/ri";
 import bell from "../assests/images/Bell.png";
 import DeviceInfo, { NotificationInfo } from "./ToggleInfo";
 import logo from "../assests/images/Logo.svg";
+import Oval from "../assests/images/profile/Oval.png";
 
 const Navbar = ({ isTabletMid, open, setOpen }) => {
   const [showModal, setShowModal] = useState(false);
@@ -104,11 +105,7 @@ const Navbar = ({ isTabletMid, open, setOpen }) => {
               Try Now
             </button>
             <div className="relative">
-              <img
-                className="w-10 h-10 rounded-full"
-                src="https://xsgames.co/randomusers/avatar.php?g=male"
-                alt
-              />
+              <img className="w-10 h-10 rounded-full" src={Oval} alt />
               <span className="bottom-[10px] left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white  rounded-full" />
             </div>
           </div>

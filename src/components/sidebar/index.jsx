@@ -588,16 +588,16 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
 
         <div className="flex flex-col mt-4 md:mt-[4px] h-full ">
           {open && (
-            <div className="mx-3 ">
-              <p className="text-base text-left font-medium">demo@domain.com</p>
-              <p className=" text-left tsecondary text-sm font-normal">
-                Updated: Apr 24 2024 16:30:22 
+            <div class="mx-3">
+              <p class="text-base text-left font-medium">demo@domain.com</p>
+              <p class="text-left text-secondary text-sm font-normal">
+                Updated: Apr 24 2024 16:30:22
               </p>
               <button
                 type="button"
-                className="text-white my-2  bg-[#172A6E]  focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-12 py-2 text-center inline-flex items-center me-2 mb-2 w-full"
+                class="max-w text-white my-2 bg-[#172A6E] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm md:px-12 py-2 text-center flex items-center justify-center w-full"
               >
-                <IoMdAdd className="mx-2" />
+                <IoMdAdd class="mx-2" />
                 Add Devices
               </button>
             </div>

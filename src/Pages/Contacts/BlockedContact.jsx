@@ -18,17 +18,10 @@ import { AiOutlineMessage } from "react-icons/ai";
 import Modal from "../../components/Shared/Modal";
 import Upgrade from "../../components/Shared/Upgrade";
 import Delete from "../../assests/images/delete.png";
+import { Link } from "react-router-dom";
 
 const BlockedContact = () => {
   const callBlockeddata = [
-    {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
-      name: "Alice Gamage",
-      callIcon: callicon,
-      callNo: "(308) 555-0121",
-      date: "Tue, May 21, 2024",
-      time: "3:58 AM",
-    },
     {
       img: "https://xsgames.co/randomusers/avatar.php?g=female",
       name: "Adam Smith",
@@ -89,32 +82,58 @@ const BlockedContact = () => {
               {/* body */}
               <div className="overflow-y-scroll h-96 no-scrollbar">
                 <p className="border-b text-gray-400  p-1">A</p>
-
-                <ul className="flex p-2 liborder cursor-pointer md:bg-gray-100">
-                  <li className="flex-none w-14 pt-2">
-                    <img
-                      className="w-10 h-10 rounded-full m-auto"
-                      src={"https://xsgames.co/randomusers/avatar.php?g=male"}
-                      alt
-                    />
-                  </li>
-                  <li className="p-1 flex-1 w-64 font-semibold">
-                    <div>
-                      Alice Gamage
-                      <div className="text-gray-400 flex">
-                        <p className="my-auto ">
-                          <VscCallOutgoing />
-                        </p>
-                        <p className="ps-1">(308) 555-0121</p>
+                <div className="hidden md:block">
+                  <ul className="flex p-2 liborder cursor-pointer md:bg-gray-100">
+                    <li className="flex-none w-14 pt-2">
+                      <img
+                        className="w-10 h-10 rounded-full m-auto"
+                        src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                        alt
+                      />
+                    </li>
+                    <li className="p-1 flex-1 w-64 font-semibold">
+                      <div>
+                        Alice Gamage
+                        <div className="text-gray-400 flex">
+                          <p className="my-auto ">
+                            <VscCallOutgoing />
+                          </p>
+                          <p className="ps-1">(308) 555-0121</p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
-                    Tue, May 21, 2024 <br />
-                    3:58 AM
-                  </li>
-                </ul>
-
+                    </li>
+                    <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
+                      Tue, May 21, 2024 <br />
+                      3:58 AM
+                    </li>
+                  </ul>
+                </div>
+                <Link to="/contacts/blockedcontactprofile">
+                  <ul className="flex p-2 liborder md:hidden cursor-pointer md:bg-gray-100">
+                    <li className="flex-none w-14 pt-2">
+                      <img
+                        className="w-10 h-10 rounded-full m-auto"
+                        src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                        alt
+                      />
+                    </li>
+                    <li className="p-1 flex-1 w-64 font-semibold">
+                      <div>
+                        Alice Gamage
+                        <div className="text-gray-400 flex">
+                          <p className="my-auto ">
+                            <VscCallOutgoing />
+                          </p>
+                          <p className="ps-1">(308) 555-0121</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
+                      Tue, May 21, 2024 <br />
+                      3:58 AM
+                    </li>
+                  </ul>
+                </Link>
                 {callBlockeddata.map((info, i) => (
                   <Modal.Toggle toggleName="Update">
                     <ul key={i} className="flex p-2 liborder cursor-pointer">
