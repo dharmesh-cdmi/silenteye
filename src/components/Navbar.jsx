@@ -12,6 +12,7 @@ import bell from "../assests/images/Bell.png";
 import DeviceInfo, { NotificationInfo } from "./ToggleInfo";
 import logo from "../assests/images/Logo.svg";
 import Oval from "../assests/images/profile/Oval.png";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ isTabletMid, open, setOpen }) => {
   const [showModal, setShowModal] = useState(false);
@@ -49,11 +50,13 @@ const Navbar = ({ isTabletMid, open, setOpen }) => {
                 <RiMenu2Fill className="text-black" />
               )}
             </button>
-            <img
-              src={logo}
-              className=" h-[1.5rem] object-cover mt-2"
-              alt="logo"
-            />
+            <Link to="/">
+              <img
+                src={logo}
+                className=" h-[1.5rem] object-cover mt-2 cursor-pointer"
+                alt="logo"
+              />{" "}
+            </Link>
           </div>
           <div className="hidden md:block">
             <button

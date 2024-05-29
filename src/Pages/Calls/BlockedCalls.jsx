@@ -85,7 +85,7 @@ const BlockedCalls = () => {
           >
             <img src={moveBack} alt="move-Back" />
           </div>
-          <span className="text-[15px] md:text-[20px]   text-[#000000] md:ps-3 ps-1 font-[600]">
+          <span className="text-[15px] md:text-[20px]  text-black/50 md:text-[#000000] md:ps-3 ps-1 font-[600]">
             Blocked Calls
           </span>
         </div>
@@ -203,7 +203,7 @@ const BlockedCalls = () => {
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
-                          <IoIosMailOpen className="text-gray-400" />
+                          <IoIosMailOpen className="text-gray-400 hidden md:block" />
                         </p>
                         <p className="ps-1 text-sm md:text-base">
                           hendrickguice@gmail.com
@@ -240,7 +240,7 @@ const BlockedCalls = () => {
               </div>
               <hr />
               {/* body */}
-              <div className="overflow-y-scroll h-96 no-scrollbar">
+              <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
                 <p className="border-b text-gray-400  p-2">
                   All Blocked Calls History
                 </p>
@@ -259,7 +259,7 @@ const BlockedCalls = () => {
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
-                          <IoIosMailOpen className="text-gray-400" />
+                          <IoIosMailOpen className="text-gray-400 hidden md:block" />
                         </p>
                         <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
                       </div>
@@ -268,7 +268,7 @@ const BlockedCalls = () => {
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
                       <Modal.Toggle toggleName="Update">
-                        <div className="hidden md:block">
+                        <div>
                           <img
                             className="h-6 cursor-pointer"
                             src={Delete}
@@ -294,7 +294,7 @@ const BlockedCalls = () => {
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
-                          <IoIosMailOpen className="text-gray-400" />
+                          <IoIosMailOpen className="text-gray-400 hidden md:block" />
                         </p>
                         <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
                       </div>
@@ -303,7 +303,7 @@ const BlockedCalls = () => {
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
                       <Modal.Toggle toggleName="Update">
-                        <div className="hidden md:block">
+                        <div>
                           <img
                             className="h-6 cursor-pointer"
                             src={Delete}
@@ -329,7 +329,7 @@ const BlockedCalls = () => {
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
-                          <IoIosMailOpen className="text-gray-400" />
+                          <IoIosMailOpen className="text-gray-400 hidden md:block" />
                         </p>
                         <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
                       </div>
@@ -338,7 +338,7 @@ const BlockedCalls = () => {
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
                       <Modal.Toggle toggleName="Update">
-                        <div className="hidden md:block">
+                        <div>
                           <img
                             className="h-6 cursor-pointer"
                             src={Delete}
@@ -364,16 +364,17 @@ const BlockedCalls = () => {
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
-                          <IoIosMailOpen className="text-gray-400" />
+                          <IoIosMailOpen className="text-gray-400 hidden md:block" />
                         </p>
                         <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
                       </div>
                     </div>
                   </li>
+
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
                       <Modal.Toggle toggleName="Update">
-                        <div className="hidden md:block">
+                        <div>
                           <img
                             className="h-6 cursor-pointer"
                             src={Delete}
@@ -436,7 +437,7 @@ const BlockedCalls = () => {
 
                   <div className="m-auto md:m-0">
                     <Modal.Toggle toggleName="Update">
-                      <div className="hidden md:block">
+                      <div className="">
                         <button
                           type="button"
                           class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"

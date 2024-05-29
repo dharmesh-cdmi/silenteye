@@ -10,11 +10,19 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import Modal from "../../components/Shared/Modal";
 import Upgrade from "../../components/Shared/Upgrade";
 import Delete from "../../assests/images/delete.png";
+import Oval1 from "../../assests/images/profile/Oval-1.png";
+import Oval2 from "../../assests/images/profile/Oval-2.png";
+import Oval3 from "../../assests/images/profile/Oval-3.png";
+import Oval4 from "../../assests/images/profile/Oval-4.png";
+import Oval5 from "../../assests/images/profile/Oval-5.png";
+import Oval6 from "../../assests/images/profile/Oval-6.png";
+import Oval7 from "../../assests/images/profile/Oval-7.png";
+import Oval from "../../assests/images/profile/Oval.png";
 
 const ForwardCalls = () => {
   const forwordcalldata = [
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval,
       name: "Hewie Gamage",
       mobile: "(201) 555-0124",
       callIcon: <VscCallOutgoing />,
@@ -24,7 +32,7 @@ const ForwardCalls = () => {
       duration: "00:12:32",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval1,
       name: "Tommi Osayande",
       mobile: "(308) 555-0192",
       callIcon: <MdPhoneCallback />,
@@ -34,7 +42,7 @@ const ForwardCalls = () => {
       duration: "00:08:45",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval2,
       name: "Ramona Bea",
       mobile: "(702) 555-0763",
       callIcon: <HiPhoneMissedCall />,
@@ -44,7 +52,7 @@ const ForwardCalls = () => {
       duration: "00:20:18",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval3,
       name: "Sara Smith",
       mobile: "(212) 555-0345",
       callIcon: <VscCallOutgoing />,
@@ -54,7 +62,7 @@ const ForwardCalls = () => {
       duration: "00:15:03",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval4,
       name: "John Doe",
       mobile: "(615) 555-0887",
       callIcon: <MdPhoneCallback />,
@@ -64,7 +72,7 @@ const ForwardCalls = () => {
       duration: "00:09:57",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval5,
       name: "Emily Johnson",
       mobile: "(832) 555-0629",
       callIcon: <HiPhoneMissedCall />,
@@ -144,7 +152,7 @@ const ForwardCalls = () => {
         </div>
 
         <div className=" overflow-x-auto shadow-md rounded-lg border ">
-          <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
+          <table className="w-full text-sm text-left rtl:text-right text-gray-500 whitespace-nowrap">
             <thead className="text-xs text-gray-700 uppercase border-b ">
               <tr>
                 <th scope="col" className="px-6 py-3">
@@ -212,7 +220,7 @@ const ForwardCalls = () => {
                   <td className="px-6 py-4">{calldata.duration}</td>
                   <td className="px-6 py-4">
                     <Modal.Toggle toggleName="Update">
-                      <div className="hidden md:block">
+                      <div>
                         <img className="h-6 cursor-pointer" src={Delete} alt />
                       </div>
                     </Modal.Toggle>

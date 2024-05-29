@@ -19,11 +19,19 @@ import Modal from "../../components/Shared/Modal";
 import Upgrade from "../../components/Shared/Upgrade";
 import Delete from "../../assests/images/delete.png";
 import { Link } from "react-router-dom";
+import Oval7 from "../../assests/images/profile/Oval-6.png";
+import dp1 from "../../assests/images/profile/dp (1).png";
+import dp2 from "../../assests/images/profile/dp (2).png";
+import dp3 from "../../assests/images/profile/dp (3).png";
+import dp4 from "../../assests/images/profile/dp (4).png";
+import dp5 from "../../assests/images/profile/dp (5).png";
+import dp6 from "../../assests/images/profile/dp (6).png";
+import dp7 from "../../assests/images/profile/dp (7).png";
 
 const BlockedContact = () => {
   const callBlockeddata = [
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: Oval7,
       name: "Adam Smith",
       callIcon: callicon,
       callNo: "(415) 555-0192",
@@ -31,7 +39,7 @@ const BlockedContact = () => {
       time: "10:15 AM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: dp4,
       name: "Alex Doe",
       callIcon: callicon,
       callNo: "(702) 555-0763",
@@ -39,7 +47,7 @@ const BlockedContact = () => {
       time: "1:30 PM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: dp3,
       name: "Anna Johnson",
       callIcon: callicon,
       callNo: "(212) 555-0345",
@@ -47,7 +55,7 @@ const BlockedContact = () => {
       time: "5:45 PM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: dp2,
       name: "Aaron Brown",
       callIcon: callicon,
       callNo: "(615) 555-0887",
@@ -55,7 +63,7 @@ const BlockedContact = () => {
       time: "8:20 AM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: dp1,
       name: "Amelia Martinez",
       callIcon: callicon,
       callNo: "(832) 555-0629",
@@ -66,7 +74,7 @@ const BlockedContact = () => {
   return (
     <div>
       <CallsHead
-        heading="Contacts List"
+        heading="Blocked Contacts"
         placeholder="Search by Name or Phone Number"
       />
       <Modal>
@@ -80,14 +88,14 @@ const BlockedContact = () => {
               </div>
               <hr />
               {/* body */}
-              <div className="overflow-y-scroll h-96 no-scrollbar">
+              <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
                 <p className="border-b text-gray-400  p-1">A</p>
                 <div className="hidden md:block">
                   <ul className="flex p-2 liborder cursor-pointer md:bg-gray-100">
                     <li className="flex-none w-14 pt-2">
                       <img
                         className="w-10 h-10 rounded-full m-auto"
-                        src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                        src={dp5}
                         alt
                       />
                     </li>
@@ -113,7 +121,7 @@ const BlockedContact = () => {
                     <li className="flex-none w-14 pt-2">
                       <img
                         className="w-10 h-10 rounded-full m-auto"
-                        src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                        src={dp5}
                         alt
                       />
                     </li>
@@ -195,7 +203,7 @@ const BlockedContact = () => {
                   <li className="flex-none w-14 pt-2">
                     <img
                       className="w-10 h-10 rounded-full m-auto"
-                      src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                      src={dp4}
                       alt
                     />
                   </li>
@@ -235,7 +243,7 @@ const BlockedContact = () => {
                   <li className="flex-none w-20 pt-2 border-none">
                     <img
                       className="w-20 h-20 rounded-full m-auto"
-                      src="https://xsgames.co/randomusers/avatar.php?g=male"
+                      src={dp5}
                       alt="img"
                     />
                   </li>

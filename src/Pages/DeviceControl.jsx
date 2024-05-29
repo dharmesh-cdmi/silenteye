@@ -30,8 +30,8 @@ const DeviceControl = () => {
     <div>
       <CallsHead heading="Device Control" placeholder="Search " />
 
-      <div className="border rounded-xl my-8">
-        <div className="flex p-4 border-b">
+      <div className="border-y md:border md:rounded-xl mt-2 md:my-8">
+        <div className="flex md:p-4 py-4 px-2 border-b">
           <div>
             <img src={data} alt="img" className="object-contain mt-2" />
           </div>
@@ -45,7 +45,7 @@ const DeviceControl = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
-          <div className="p-4 md:border-r">
+          <div className="md:p-4 py-4 px-2 md:border-r">
             <div className="flex ">
               <div className="flex-none w-8">
                 <img src={sim1} alt="img" className="object-contain h-8" />
@@ -89,7 +89,7 @@ const DeviceControl = () => {
               </div>
             </div>
           </div>
-          <div className="p-4">
+          <div className="md:p-4 py-4 px-2">
             <div className="flex ">
               <div className="flex-none w-8">
                 <img src={sim2} alt="img" className="object-contain h-8" />
@@ -135,8 +135,8 @@ const DeviceControl = () => {
           </div>
         </div>
       </div>
-      <div className="border rounded-xl my-8">
-        <div className="flex p-4 border-b">
+      <div className="border-y md:border md:rounded-xl md:my-8">
+        <div className="flex md:p-4 py-4 px-2 border-b">
           <div>
             <img
               src={fram1}
@@ -154,7 +154,7 @@ const DeviceControl = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
-          <div className="p-4 md:border-r">
+          <div className="md:p-4 py-4 px-2 md:border-r">
             <div className="flex ">
               <div className="flex-none w-8">
                 <img
@@ -202,7 +202,7 @@ const DeviceControl = () => {
               </div>
             </div>
           </div>
-          <div className="p-4">
+          <div className="md:p-4 py-4 px-2">
             <div className="flex ">
               <div className="flex-none w-8">
                 <img src={fram3} alt="img" className="object-contain h-8 " />
@@ -237,9 +237,9 @@ const DeviceControl = () => {
         </div>
       </div>
 
-      <div className="border rounded-xl my-8">
+      <div className="border-y md:border md:rounded-xl md:my-8">
         <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
-          <div className="flex p-4">
+          <div className="flex md:p-4 py-4 px-2">
             <div>
               <img src={fram4} alt="img" className="object-contain mt-2" />
             </div>
@@ -255,16 +255,16 @@ const DeviceControl = () => {
               <img src={devices} alt="img" className="object-contain mt-2" />
             </div>
           </div>
-          <div className="flex p-4 justify-end">
+          <div className="flex md:p-4 py-4 px-2 justify-end">
             <div className="w-14 h-14  hidden md:block">
               <img src={devices} alt="img" className="object-contain mt-2" />
             </div>
           </div>
         </div>
       </div>
-      <div className="border rounded-xl my-8">
+      <div className="border-y md:border md:rounded-xl md:my-8">
         <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
-          <div className="flex p-4">
+          <div className="flex md:p-4 py-4 px-2">
             <div>
               <img src={fram5} alt="img" className="object-contain mt-2" />
             </div>
@@ -277,7 +277,7 @@ const DeviceControl = () => {
               </p>
             </div>
           </div>
-          <div className="flex p-4 md:justify-end justify-center">
+          <div className="flex md:p-4 py-4 px-2 md:justify-end justify-center">
             <div>
               <button
                 type="button"
@@ -290,9 +290,9 @@ const DeviceControl = () => {
           </div>
         </div>
       </div>
-      <div className="border rounded-xl my-8">
+      <div className="border-y md:border md:rounded-xl md:my-8">
         <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-0 ">
-          <div className="flex p-4 col-span-2">
+          <div className="flex md:p-4 py-4 px-2 col-span-2">
             <div className="w-12 md:w-auto">
               <img src={fram6} alt="img" className="object-contain mt-2" />
             </div>
@@ -305,16 +305,16 @@ const DeviceControl = () => {
               </p>
             </div>
           </div>
-          <div className="flex p-4 md:justify-end justify-center">
+          <div className="flex md:p-4 py-4 px-2 md:justify-end justify-center">
             <div>
               <img src={menu} alt="img" className="object-contain h-12" />
             </div>
           </div>
         </div>
       </div>
-      <div className="border rounded-xl my-8">
+      <div className="border-y md:border md:rounded-xl md:my-8">
         <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-0 ">
-          <div className="flex p-4 col-span-2">
+          <div className="flex md:p-4 py-4 px-2 col-span-2">
             <div className="w-12 md:w-auto">
               <img src={fram7} alt="img" className="object-contain mt-2" />
             </div>
@@ -332,7 +332,7 @@ const DeviceControl = () => {
               className="object-contain h-9 md:hidden block"
             />
           </div>
-          <div className="flex p-4  justify-center md:justify-end">
+          <div className="flex md:p-4 py-4 px-2  justify-center md:justify-end">
             <div className="md:flex ">
               <img
                 src={menu2}
@@ -356,9 +356,9 @@ const DeviceControl = () => {
           </div>
         </div>
       </div>
-      <div className="border rounded-xl my-8">
+      <div className="border-y md:border md:rounded-xl md:my-8">
         <div className="grid grid-cols-1 md:grid-cols-3  ">
-          <div className="flex p-4 col-span-2">
+          <div className="flex md:p-4 py-4 px-2 col-span-2">
             <div>
               <img
                 src={frame87}
@@ -392,7 +392,7 @@ const DeviceControl = () => {
                 <img
                   src={safemode}
                   alt="img"
-                  className="object-contain h-12 block md:hidden"
+                  className="object-contain h-10 block md:hidden"
                 />
               </div>
               <p className="text-sm font-medium text-gray-400">
@@ -420,7 +420,7 @@ const DeviceControl = () => {
               </div>
             </div>
           </div>
-          <div className="flex p-4 mt-4 justify-end">
+          <div className="flex md:p-4 py-4 px-2 mt-4 justify-end">
             <div>
               <img
                 src={safemode}

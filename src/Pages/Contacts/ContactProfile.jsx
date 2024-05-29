@@ -21,6 +21,14 @@ import Upgrade from "../../components/Shared/Upgrade";
 import Delete from "../../assests/images/delete.png";
 import { useMoveBack } from "../../hooks/useMoveBack";
 import moveBack from "../../assests/images/Header/arrow.png";
+import dp1 from "../../assests/images/profile/dp (1).png";
+import dp2 from "../../assests/images/profile/dp (2).png";
+import dp3 from "../../assests/images/profile/dp (3).png";
+import dp4 from "../../assests/images/profile/dp (4).png";
+import dp5 from "../../assests/images/profile/dp (5).png";
+import dp6 from "../../assests/images/profile/dp (6).png";
+import dp7 from "../../assests/images/profile/dp (7).png";
+
 export function BlockedContactProfile() {
   const moveBacks = useMoveBack();
 
@@ -34,8 +42,8 @@ export function BlockedContactProfile() {
           >
             <img src={moveBack} alt="move-Back" />
           </div>
-          <span className="text-[15px] md:text-[20px]   text-[#000000] md:ps-3 ps-1 font-[600]">
-            Blocked Calls
+          <span className="text-[15px] md:text-[20px]   text-black/50 md:ps-3 ps-1 font-[600]">
+            Blocked Contacts
           </span>
         </div>
         <div className="item-two flex flex-row items-center md:mt-0 ">
@@ -62,7 +70,7 @@ export function BlockedContactProfile() {
               <li className="flex-none w-20 pt-2 border-none">
                 <img
                   className="w-20 h-20 rounded-full m-auto"
-                  src="https://xsgames.co/randomusers/avatar.php?g=male"
+                  src={dp5}
                   alt="img"
                 />
               </li>
@@ -104,7 +112,7 @@ export function BlockedContactProfile() {
           </div>
           <hr />
           {/* body */}
-          <div className="overflow-y-scroll h-96 no-scrollbar">
+          <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
             <div className="grid grid-cols-5  p-2 divide-x border-b">
               <div className=" mx-auto">
                 <div className="flex gap-2 p-1 flex-col md:flex-row">
@@ -363,8 +371,8 @@ const ContactProfile = () => {
           >
             <img src={moveBack} alt="move-Back" />
           </div>
-          <span className="text-[15px] md:text-[20px]   text-[#000000] md:ps-3 ps-1 font-[600]">
-            Blocked Calls
+          <span className="text-[15px] md:text-[20px]   text-black/50 md:ps-3 ps-1 font-[600]">
+            Contacts
           </span>
         </div>
         <div className="item-two flex flex-row items-center md:mt-0 ">
@@ -385,7 +393,7 @@ const ContactProfile = () => {
               <li className="flex-none w-20 pt-2 border-none">
                 <img
                   className="w-20 h-20 rounded-full m-auto"
-                  src="https://xsgames.co/randomusers/avatar.php?g=male"
+                  src={dp5}
                   alt="img"
                 />
               </li>
@@ -427,7 +435,7 @@ const ContactProfile = () => {
           </div>
           <hr />
           {/* body */}
-          <div className="overflow-y-scroll h-96 no-scrollbar">
+          <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
             <div className="grid grid-cols-5  p-2 divide-x border-b">
               <div className=" mx-auto">
                 <div className="flex gap-2 p-1 flex-col md:flex-row">
@@ -485,6 +493,64 @@ const ContactProfile = () => {
                 </div>
               </div>
             </div>
+            <ul className="flex p-2 liborder ">
+              <li className="p-1 flex-1 w-64 font-semibold ">
+                <div>
+                  <div className={`text-gray-400  font-normal`}>
+                    <p className="ps-1">Mobile</p>
+                  </div>
+                  <div className={` flex `}>
+                    <p className="my-auto ">
+                      <img
+                        className="w-4 h-4 rounded-full m-auto"
+                        src={callicon}
+                        alt
+                      />
+                    </p>
+                    <p className="ps-1">(270) 555-0117</p>
+                  </div>
+                </div>
+              </li>
+              <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                <div className="flex gap-4 mt-2">
+                  <Modal.Toggle toggleName="Update">
+                    <CgRemove
+                      className="text-red-900 cursor-pointer"
+                      size={25}
+                    />
+                  </Modal.Toggle>
+                </div>
+              </li>
+            </ul>
+            <ul className="flex p-2 liborder ">
+              <li className="p-1 flex-1 w-64 font-semibold ">
+                <div>
+                  <div className={`text-gray-400  font-normal`}>
+                    <p className="ps-1">business</p>
+                  </div>
+                  <div className={` flex `}>
+                    <p className="my-auto ">
+                      <img
+                        className="w-4 h-4 rounded-full m-auto"
+                        src={callicon}
+                        alt
+                      />
+                    </p>
+                    <p className="ps-1">(270) 555-4578</p>
+                  </div>
+                </div>
+              </li>
+              <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                <div className="flex gap-4 mt-2">
+                  <Modal.Toggle toggleName="Update">
+                    <CgRemove
+                      className="text-red-900 cursor-pointer"
+                      size={25}
+                    />
+                  </Modal.Toggle>
+                </div>
+              </li>
+            </ul>
             <ul className="flex p-2 liborder ">
               <li className="p-1 flex-1 w-64 font-semibold ">
                 <div>

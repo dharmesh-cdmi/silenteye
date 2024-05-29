@@ -173,7 +173,7 @@ const Callhistory = () => {
             </div>
             <hr />
             {/* body */}
-            <div className="overflow-y-scroll h-96 no-scrollbar">
+            <div className="overflow-y-scroll h-4/5 no-scrollbar">
               <Link to="/call/callprofile">
                 {" "}
                 <ul className="flex p-2 liborder cursor-pointer bg-gray-100 ">
