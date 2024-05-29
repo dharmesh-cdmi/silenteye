@@ -5,6 +5,7 @@ import { FaApple } from "react-icons/fa";
 import { VscCallOutgoing } from "react-icons/vsc";
 import InfoCard from "../components/Cards/InfoCard";
 import liveimg from "../assests/images/liveloca.png";
+import liveimg2 from "../assests/images/liveloca2.png";
 import { MdKeyboardDoubleArrowDown, MdPhoneCallback } from "react-icons/md";
 import { HiPhoneMissedCall } from "react-icons/hi";
 import YT from "../assests/images/yt.png";
@@ -132,6 +133,7 @@ const Dashboard = () => {
     {
       name: "Device Model",
       details: "iPhone 11",
+      icon: apple,
     },
     {
       name: "Version",
@@ -341,7 +343,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className="md:hidden border-b mx-2 mb-2 rounded-lg pt-2 bg-gray-50 mt-20">
+      <div className="md:hidden border-b mx-2 mb-2 rounded-lg  bg-gray-50 mt-20">
         <ul
           className="grid grid-cols-2  mb-2 cursor-pointer"
           onClick={handletoggle}
@@ -435,8 +437,10 @@ const Dashboard = () => {
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
               <ul key={i} className="grid grid-cols-2 liborder ">
-                <li className="py-3 px-2 font-medium  ">{info.name}</li>
-                <li className="py-3  text-[#172A6E]  sm:font-medium md:font-semibold">
+                <li className="py-3 px-2 font-medium text-base md:text-lg  ">
+                  {info.name}
+                </li>
+                <li className=" py-3 text-end pe-2 font-semibold text-[#172A6E] text-base md:text-lg sm:font-medium md:font-semibold">
                   {info.details}
                 </li>
               </ul>
@@ -452,23 +456,32 @@ const Dashboard = () => {
           }
           className="mb-5 md:mb-0"
         >
-          <div className="rounded-lg py-1 bg-gray-50">
+          <div className="rounded-lg py-1 bg-gray-50 hidden md:block">
             <img src={liveimg} alt="img" className="object-cover h-52 w-96" />
+          </div>
+          <div className="rounded-lg py-1 bg-gray-50 md:hidden">
+            <img src={liveimg2} alt="img" className="object-cover h-52 w-96" />
           </div>
         </InfoCard>
         <InfoCard title="Account Info " className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             <ul className="grid grid-cols-2 place-content-between ">
-              <li className="py-3 px-2 font-medium liborder">Membership</li>
-              <li className="py-3 text-[#172A6E] font-semibold liborder text-end me-2">
+              <li className="py-3 px-2 font-medium text-base md:text-lg  liborder">
+                Membership
+              </li>
+              <li className="py-3 text-[#172A6E] text-base md:text-lg  font-semibold liborder text-end me-2">
                 Premium
               </li>
-              <li className="py-3 px-2 font-medium liborder">Duration</li>
-              <li className="py-3 text-[#172A6E] liborder font-semibold text-end me-2">
+              <li className="py-3 px-2 font-medium text-base md:text-lg  liborder">
+                Duration
+              </li>
+              <li className="py-3 text-[#172A6E] text-base md:text-lg  liborder font-semibold text-end me-2">
                 Yearly
               </li>
-              <li className="p-1 px-2 font-medium liborder mt-2">Auto Renew</li>
-              <li className="p-1 text-[#172A6E] liborder font-semibold text-end me-2">
+              <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+                Auto Renew
+              </li>
+              <li className="p-1 text-[#172A6E] liborder text-base md:text-lg  font-semibold text-end me-2">
                 <label className={` toggle-switch mt-1`}>
                   <input
                     type="checkbox"
@@ -480,8 +493,10 @@ const Dashboard = () => {
                   </div>
                 </label>
               </li>
-              <li className="py-3 px-2 font-medium liborder">Expiry Date</li>
-              <li className="py-3 text-[#172A6E] liborder font-semibold text-end me-2">
+              <li className="py-3 px-2 font-medium liborder text-base md:text-lg  ">
+                Expiry Date
+              </li>
+              <li className="py-3 text-[#172A6E] liborder  text-base md:text-lg  font-semibold text-end me-2">
                 Dec 28,2024 2:28
               </li>
             </ul>
@@ -527,7 +542,7 @@ const Dashboard = () => {
                   </div>
                 </div>
               </li>
-              <li className="p-1 text-gray-400 font-semibold pt-4">
+              <li className="p-1 text-[16px] md:text-[18px] text-gray-400 font-medium md:font-semibold pt-4">
                 {info.date}
               </li>
             </ul>
@@ -565,7 +580,7 @@ const Dashboard = () => {
                   </p>
                 </div>
               </li>
-              <li className="p-1 text-gray-400 font-semibold pt-4">
+              <li className="p-1 text-[16px] md:text-[18px] text-gray-400 font-medium md:font-semibold pt-4">
                 {info.time}
               </li>
             </ul>
@@ -635,7 +650,7 @@ const Dashboard = () => {
                   <li className="p-1 flex-1 w-64 font-semibold text-xl mt-2 text-gray-900 border-none">
                     <div>{info.name}</div>
                   </li>
-                  <li className="p-1 text-gray-400 font-semibold pt-4 border-none">
+                  <li className="p-1 text-[16px] md:text-[18px] text-gray-400 font-medium md:font-semibold pt-4 border-none">
                     {info.time}
                   </li>
                 </ul>
@@ -667,10 +682,10 @@ const Dashboard = () => {
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
                   </li>
-                  <li className="p-1 flex-1 w-64 font-semibold text-xl  text-gray-900 border-none">
+                  <li className="p-1 flex-1 w-64 font-semibold text-lg md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 20)}</div>
                   </li>
-                  <li className="p-1 text-gray-400 font-semibold  text-sm border-none">
+                  <li className="p-1 text-gray-400  font-medium md:font-semibold  text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
@@ -696,10 +711,10 @@ const Dashboard = () => {
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
                   </li>
-                  <li className="p-1 flex-1 w-64 font-semibold text-xl  text-gray-900 border-none">
+                  <li className="p-1 flex-1 w-64 font-semibold text-lg md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
                   </li>
-                  <li className="p-1 text-gray-400 font-semibold text-sm border-none">
+                  <li className="p-1 text-gray-400 font-medium md:font-semibold text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
@@ -725,10 +740,10 @@ const Dashboard = () => {
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
                   </li>
-                  <li className="p-1 flex-1 w-64 font-semibold text-xl  text-gray-900 border-none">
+                  <li className="p-1 flex-1 w-64 font-semibold text-lg md:text-xl text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
                   </li>
-                  <li className="p-1 text-gray-400 font-semibold text-sm border-none">
+                  <li className="p-1 text-gray-400 font-medium md:font-semibold text-sm border-none">
                     {info.time}
                   </li>
                 </ul>

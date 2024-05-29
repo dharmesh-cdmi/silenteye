@@ -25,13 +25,19 @@ import Oval4 from "../../assests/images/profile/Oval-4.png";
 import Oval5 from "../../assests/images/profile/Oval-5.png";
 import Oval6 from "../../assests/images/profile/Oval-6.png";
 import Oval7 from "../../assests/images/profile/Oval-7.png";
-import Oval from "../../assests/images/profile/Oval.png";
+import dp1 from "../../assests/images/profile/dp (1).png";
+import dp2 from "../../assests/images/profile/dp (2).png";
+import dp3 from "../../assests/images/profile/dp (3).png";
+import dp4 from "../../assests/images/profile/dp (4).png";
+import dp5 from "../../assests/images/profile/dp (5).png";
+import dp6 from "../../assests/images/profile/dp (6).png";
+import dp7 from "../../assests/images/profile/dp (7).png";
 import { Link } from "react-router-dom";
 
 const ContactList = () => {
   const contactlistdata = [
     {
-      img: Oval1,
+      img: dp7,
       name: "Adam Smith",
       callIcon: callicon,
       callNo: "(415) 555-0192",
@@ -39,7 +45,7 @@ const ContactList = () => {
       time: "10:15 AM",
     },
     {
-      img: Oval2,
+      img: dp2,
       name: "Alex Doe",
       callIcon: callicon,
       callNo: "(702) 555-0763",
@@ -47,7 +53,7 @@ const ContactList = () => {
       time: "1:30 PM",
     },
     {
-      img: Oval3,
+      img: dp3,
       name: "Anna Johnson",
       callIcon: callicon,
       callNo: "(212) 555-0345",
@@ -63,7 +69,7 @@ const ContactList = () => {
       time: "8:20 AM",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=female",
+      img: dp7,
       name: "Amelia Martinez",
       callIcon: callicon,
       callNo: "(832) 555-0629",
@@ -74,7 +80,7 @@ const ContactList = () => {
   return (
     <div>
       <CallsHead
-        heading="Contacts List"
+        heading="Contacts"
         placeholder="Search by Name or Phone Number"
       />
       <Modal>
@@ -88,14 +94,14 @@ const ContactList = () => {
               </div>
               <hr />
               {/* body */}
-              <div className="overflow-y-scroll h-96 no-scrollbar">
+              <div className="overflow-y-scroll  no-scrollbar  h-[calc(100%-8rem)]">
                 <p className="border-b text-gray-400  p-1">A</p>
                 <div className="hidden md:block">
                   <ul className="flex p-2 liborder cursor-pointer  md:bg-gray-100">
                     <li className="flex-none w-14 pt-2">
                       <img
                         className="w-10 h-10 rounded-full m-auto"
-                        src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                        src={dp5}
                         alt
                       />
                     </li>
@@ -122,7 +128,7 @@ const ContactList = () => {
                     <li className="flex-none w-14 pt-2">
                       <img
                         className="w-10 h-10 rounded-full m-auto"
-                        src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                        src={dp5}
                         alt
                       />
                     </li>
@@ -181,9 +187,7 @@ const ContactList = () => {
                     <li className="flex-none w-14 pt-2">
                       <img
                         className="w-10 h-10 rounded-full m-auto"
-                        src={
-                          "https://xsgames.co/randomusers/avatar.php?g=female"
-                        }
+                        src={Oval2}
                         alt
                       />
                     </li>
@@ -209,7 +213,7 @@ const ContactList = () => {
                     <li className="flex-none w-14 pt-2">
                       <img
                         className="w-10 h-10 rounded-full m-auto"
-                        src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                        src={Oval5}
                         alt
                       />
                     </li>
@@ -253,7 +257,7 @@ const ContactList = () => {
                   <li className="flex-none w-20 pt-2 border-none">
                     <img
                       className="w-20 h-20 rounded-full m-auto"
-                      src="https://xsgames.co/randomusers/avatar.php?g=male"
+                      src={dp5}
                       alt="img"
                     />
                   </li>
@@ -295,7 +299,7 @@ const ContactList = () => {
               </div>
               <hr />
               {/* body */}
-              <div className="overflow-y-scroll h-96 no-scrollbar">
+              <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
                 <div className="grid grid-cols-5  p-2 divide-x border-b">
                   <div className=" mx-auto">
                     <div className="flex gap-2 p-1 flex-col md:flex-row">
@@ -397,6 +401,64 @@ const ContactList = () => {
                           />
                         </p>
                         <p className="ps-1">(270) 555-4578</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <CgRemove
+                          className="text-red-900 cursor-pointer"
+                          size={25}
+                        />
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2  liborder">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-gray-400  font-normal`}>
+                        <p className="ps-1">home</p>
+                      </div>
+                      <div className={` flex `}>
+                        <p className="my-auto ">
+                          <img
+                            className="w-4 h-4 rounded-full m-auto"
+                            src={callicon}
+                            alt
+                          />
+                        </p>
+                        <p className="ps-1">(270) 478-0117</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <CgRemove
+                          className="text-red-900 cursor-pointer"
+                          size={25}
+                        />
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-gray-400  font-normal`}>
+                        <p className="ps-1">business</p>
+                      </div>
+                      <div className={` flex `}>
+                        <p className="my-auto ">
+                          <img
+                            className="w-4 h-4 rounded-full m-auto"
+                            src={callicon}
+                            alt
+                          />
+                        </p>
+                        <p className="ps-1">(417) 555-4578</p>
                       </div>
                     </div>
                   </li>
