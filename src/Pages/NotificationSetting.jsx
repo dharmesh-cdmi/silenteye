@@ -65,8 +65,8 @@ const NotificationSetting = () => {
   };
   return (
     <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
-      <Header heading="Notification Settings" />
-      <div className="sm:my-10 my-2">
+      <Header heading="Notification Settings"/>  
+      <div className="sm:my-10 mb-2">
         <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
           <Table.Header className="font-[16px] ">
             Hide Notifications (All Apps)

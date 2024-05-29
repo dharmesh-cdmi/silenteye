@@ -50,11 +50,11 @@ const AllAllertsHeader = () => {
             </Modal.Window>
           </Modal>
         </div>
-        <div className="me-3 sm:hidden block">
+        <div className="sm:me-3 me-2 sm:hidden block">
         <Modal>
             <Modal.Toggle toggleName="search-keylogger">
               <Button
-                className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium px-[12px]    py-[10px] text-[#101828] text-center"
+                className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium sm:px-[12px] p-[8px]  sm:py-[10px] text-[#101828] text-center"
               >
                 <img src={searchIcon} alt="delete" className="sm:pe-2" />
                 <span className="hidden sm:block">Deleted</span>
@@ -70,7 +70,7 @@ const AllAllertsHeader = () => {
               <Modal.Toggle toggleName="export-allAlert">
                 <Button
                   onClick={exportAllAlerts}
-                  className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium px-[12px]    py-[10px] text-[#101828] text-center"
+                  className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium sm:px-[12px] p-[8px]  sm:py-[10px] text-[#101828] text-center"
                 >
                   <img src={exportIcon} alt="export" className="sm:pe-2" />
                   <span className="hidden sm:block">Export</span> 
@@ -86,7 +86,7 @@ const AllAllertsHeader = () => {
               <Modal.Toggle toggleName="export-allAlert">
                 <Button
                   onClick={settingsAllAlerts}
-                  className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]  font-medium px-[12px]    py-[10px] text-[#101828] text-center"
+                  className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]  font-medium sm:px-[12px] p-[8px]  sm:py-[10px] text-[#101828] text-center"
                 >
                   <img src={settingIcon} alt="setting" className="sm:pe-2" />
                    <span className="hidden sm:block">Setting</span>

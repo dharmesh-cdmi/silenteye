@@ -84,7 +84,7 @@ function KeyLogger() {
     <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
       <KeyLoggerHeader />
       {keyloggerData.map((keyloggerData, index) => (
-        <div key={index} className="sm:my-10 my-2">
+        <div key={index} className="sm:my-10 mb-2">
           <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
             <Table.Header className="font-[16px]  opacity-[50%]">
               Monday, {index + 11} Jan, 2023

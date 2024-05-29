@@ -3,7 +3,6 @@ import { Table } from "../components/Shared/Table";
 import messenger from "../../src/assests/images/SavedPasswords/messenger.png"
 import amazon from "../../src/assests/images/SavedPasswords/amazon.png"
 import dribble from "../../src/assests/images/SavedPasswords/dribble.png"
-import ebay from "../../src/assests/images/SavedPasswords/ebay.png"
 import facebook from "../../src/assests/images/SavedPasswords/facebook.png"
 import snapchat from "../../src/assests/images/SavedPasswords/snapchat.png"
 import instagram from "../../src/assests/images/SavedPasswords/instagram.png"
@@ -85,7 +84,7 @@ export const SavedPassword = () => {
     <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
       <Header heading="Saved Passwords"/>
       {SavedPasswordsData.map((SavedPasswordsData, index) => (
-        <div key={index} className="sm:my-10 my-2">
+        <div key={index} className="sm:my-10 mb-2">
           <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
             <Table.Header className="font-[16px] opacity-[50%]">
               Monday, {index + 11} Jan, 2023

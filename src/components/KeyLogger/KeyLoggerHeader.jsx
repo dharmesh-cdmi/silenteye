@@ -34,7 +34,7 @@ const KeyLoggerHeader = () => {
           className="image-wrappe sm:shadow-[0px_0px_56px_0px_#00000014]  p-[10px]  sm:border-[#D0D5DD] sm:border-[1px] cursor-pointer  rounded-[8px]"
           onClick={moveBacks}
         >
-          <img src={moveBack} alt="move-Back" />
+          <img src={moveBack} alt="move-Back"   onClick={moveBacks}/>
         </div>
         <span className="sm:text-[20px] text-[16px]  text-[#000000]  opacity-[50%] sm:opacity-[100%]  sm:ps-3 ps-1 sm:font-[600] font-[500]">
           KeyLogger
