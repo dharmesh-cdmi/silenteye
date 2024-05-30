@@ -2,10 +2,10 @@ import React from "react";
 import moveBack from "../../assests/images/Header/arrow.png";
 import { useMoveBack } from "../../hooks/useMoveBack";
 import Button from "../Shared/Button";
-import filterIcon from "../../assests/images/Header/Filter.png";
 import historyicon from "../../assests/images/Export/history.png";
 import Modal from "../Shared/Modal";
 import Upgrade from "../Shared/Upgrade";
+import backupIcon from "../../../src/assests/images/Export/backup.png"
 
 const ExportHeader = ({ heading }) => {
   const moveBacks = useMoveBack();
@@ -32,7 +32,7 @@ const ExportHeader = ({ heading }) => {
         </span>
       </div>
       <div className="item-two flex flex-row mt-0">
-        <div className="me-3">
+        <div className="sm:me-3 me-2">
           <Modal>
             <Modal.Toggle toggleName="history">
               <Button
@@ -48,14 +48,14 @@ const ExportHeader = ({ heading }) => {
             </Modal.Window>
           </Modal>
         </div>
-        <div className="me-3 ">
+        <div className="sm:me-3 me-2">
           <Modal>
             <Modal.Toggle toggleName="backup">
               <Button
                 onClick={backup}
                 className="text-[18px] shadow-[0px_0px_56px_0px_#00000014] font-medium px-[12px] py-[10px] text-[#101828] text-center"
               >
-                <img src={filterIcon} alt="delete" className="sm:pe-2"/>
+                <img src={backupIcon} alt="delete" className="sm:pe-2"/>
                  <span className="hidden sm:block">Backup</span> 
               </Button>
             </Modal.Toggle>

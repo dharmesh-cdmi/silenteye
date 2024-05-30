@@ -51,7 +51,7 @@ const Header = ({ heading }) => {
             </Modal.Window>
           </Modal>
         </div>
-        <div className="me-3 sm:hidden block">
+        <div className="sm:me-3 me-2 sm:hidden block">
         <Modal>
             <Modal.Toggle toggleName="search-keylogger">
               <Button

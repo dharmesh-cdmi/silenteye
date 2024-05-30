@@ -51,7 +51,7 @@ const SocialAppsHeader = () => {
             </Modal.Window>
           </Modal>
         </div>
-        <div className="me-3 sm:hidden block">
+        <div className="sm:me-3 me-2 sm:hidden block">
         <Modal>
             <Modal.Toggle toggleName="search-keylogger">
               <Button
@@ -66,12 +66,12 @@ const SocialAppsHeader = () => {
             </Modal.Window>
           </Modal>
         </div>
-          <div className="me-3">
+          <div className="sm:me-3 me-2">
             <Modal>
               <Modal.Toggle toggleName="export-social">
                 <Button
                   onClick={exportKeyLogger}
-                  className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]  font-medium px-[12px]  py-[10px] text-[#101828] text-center"
+                  className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]  font-medium sm:px-[12px] p-[8px]  sm:py-[10px] text-[#101828] text-center"
                 >
                   <img src={exportIcon} alt="export" className="sm:pe-2" />
                   <span className="hidden sm:block">Export</span>
@@ -82,12 +82,12 @@ const SocialAppsHeader = () => {
               </Modal.Window>
             </Modal>
           </div>
-          <div className="me-3 sm:mt-0">
+          <div className="sm:me-3 me-2 sm:mt-0">
             <Modal>
               <Modal.Toggle toggleName="filter-social">
                 <Button
                   onClick={filterKeyLooger}
-                  className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]  font-medium px-[12px] py-[10px] text-[#101828] text-center"
+                  className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]  font-medium sm:px-[12px] p-[8px]  sm:py-[10px] text-[#101828] text-center"
                 >
                   <img src={filterIcon} alt="filter" className="sm:pe-2" />
                   <span className="hidden sm:block">Filter</span>                
