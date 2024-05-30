@@ -8,14 +8,15 @@ const FilterTegModal = () => {
   const moveBacks = useMoveBack();
   return (
     <div className="w-[310px] md:w-[37rem] h-[28rem]">
-      <div className="flex py-4 border-b-[#DDDDDD] px-[16px]     border-b-[1px]">
+      <div className="flex py-2 border-b-[#DDDDDD] px-[16px]     border-b-[1px]">
         <div
-          className="image-wrapper me-2  p-[8px] mb-1  border-[#D0D5DD] border-[1px] cursor-pointer  rounded-[8px]"
+          className="image-wrapper me-2  p-[10px] mb-1  border-[#D0D5DD] border-[1px] cursor-pointer  rounded-[8px]"
           onClick={moveBacks}
         >
           {/* <img src={moveBack} className="h-5" alt="move-Back" /> */}
           <MdOutlineKeyboardBackspace />
         </div>
+
         <div className=" w-72 mt-1">
           <p className="font-semibold text-xl text-gray-900">
             Select Filter Tegs

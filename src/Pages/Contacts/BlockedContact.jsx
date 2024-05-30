@@ -78,7 +78,7 @@ const BlockedContact = () => {
         placeholder="Search by Name or Phone Number"
       />
       <Modal>
-        <div className="md:border md:rounded-xl border-t my-2 md:my-8 shadow">
+        <div className="md:border md:rounded-xl border-t  md:my-8 shadow">
           <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0">
             {/* first column */}
             <div className=" md:border-r ">

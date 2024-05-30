@@ -90,7 +90,7 @@ const ForwardCalls = () => {
         placeholder="Search by Name or Phone Number"
       />
       <Modal>
-        <div className="md:border md:rounded-xl my-2 border-t md:my-8">
+        <div className="md:border md:rounded-xl  border-t md:my-8">
           <div className="grid md:grid-cols-5 grid-cols-1">
             <div className="md:border-r liborder ">
               <div className="p-2">
@@ -178,7 +178,7 @@ const ForwardCalls = () => {
             <tbody>
               {forwordcalldata.map((calldata, i) => (
                 <tr className=" border-b font-medium " key={i}>
-                  <td className="px-6 py-4">
+                  <td className="px-6 pt-4">
                     <div className="flex ">
                       <div class="flex-none w-14 h-14 ">
                         <img
@@ -190,7 +190,7 @@ const ForwardCalls = () => {
                       <div class="mt-3   ">{calldata.name}</div>
                     </div>
                   </td>
-                  <td className="px-6 py-4">
+                  <td className="px-6 pt-4">
                     <div className="flex">
                       <img
                         className="w-4 h-4 m-1 rounded-full "
@@ -200,7 +200,7 @@ const ForwardCalls = () => {
                       {calldata.mobile}
                     </div>
                   </td>
-                  <td className="px-6 py-4">
+                  <td className="px-6 pt-4">
                     <div
                       className={`${
                         calldata.callStatus == "outgoing" && "text-gray-400"
@@ -212,13 +212,13 @@ const ForwardCalls = () => {
                       <p className="ps-1">{calldata.callStatus}</p>
                     </div>
                   </td>
-                  <td className="px-6 py-4">
+                  <td className="px-6 pt-4">
                     {calldata.date}
                     <br />
                     {calldata.time}
                   </td>
-                  <td className="px-6 py-4">{calldata.duration}</td>
-                  <td className="px-6 py-4">
+                  <td className="px-6 pt-4">{calldata.duration}</td>
+                  <td className="px-6 pt-4">
                     <Modal.Toggle toggleName="Update">
                       <div>
                         <img className="h-6 cursor-pointer" src={Delete} alt />

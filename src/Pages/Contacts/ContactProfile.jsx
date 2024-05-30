@@ -34,35 +34,39 @@ export function BlockedContactProfile() {
 
   return (
     <>
-      <div className="flex md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0">
-        <div className="item-one flex flex-row items-center ">
-          <div
-            className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
-            onClick={moveBacks}
-          >
-            <img src={moveBack} alt="move-Back" />
-          </div>
-          <span className="text-[15px] md:text-[20px]   text-black/50 md:ps-3 ps-1 font-[600]">
-            Blocked Contacts
-          </span>
-        </div>
-        <div className="item-two flex flex-row items-center md:mt-0 ">
-          <div className="me-1   md:hidden ">
-            <button
-              type="button"
-              class="text-white gap-2 bg-red-500  border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
-            >
-              <RiUserForbidLine />
-              Unblock
-            </button>
-          </div>
-
-          <div className="me-1 mb-2 p-1 md:hidden rounded-[8px] border">
-            <img className="h-5  cursor-pointer" src={Delete} alt />
-          </div>
-        </div>
-      </div>
       <Modal>
+        <div className="flex md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0 ">
+          <div className="item-one flex flex-row items-center ">
+            <div
+              className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
+              onClick={moveBacks}
+            >
+              <img src={moveBack} alt="move-Back" className="h-6" />
+            </div>
+            <span className="text-[15px] md:text-[20px]   text-black/50 md:ps-3 ps-1 font-[600]">
+              Blocked Contacts
+            </span>
+          </div>
+          <div className="item-two flex flex-row items-center md:mt-0 mt-[2px] ">
+            <Modal.Toggle toggleName="Update">
+              <div className=" md:hidden ">
+                <button
+                  type="button"
+                  class="text-white gap-2 bg-red-500  border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                >
+                  <RiUserForbidLine />
+                  Unblock
+                </button>
+              </div>
+            </Modal.Toggle>
+            <Modal.Toggle toggleName="Update">
+              <div className="me-1 mb-2 p-1 md:hidden rounded-[8px] border">
+                <img className="h-5  cursor-pointer" src={Delete} alt />
+              </div>
+            </Modal.Toggle>
+          </div>
+        </div>
+
         <div className="border-t md:border-r ">
           {/* head */}
           <div className="text-lg font-bold p-2 ">
@@ -363,29 +367,36 @@ const ContactProfile = () => {
 
   return (
     <>
-      <div className="flex md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0">
-        <div className="item-one flex flex-row items-center ">
-          <div
-            className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
-            onClick={moveBacks}
-          >
-            <img src={moveBack} alt="move-Back" />
-          </div>
-          <span className="text-[15px] md:text-[20px]   text-black/50 md:ps-3 ps-1 font-[600]">
-            Contacts
-          </span>
-        </div>
-        <div className="item-two flex flex-row items-center md:mt-0 ">
-          <div className="me-1 mb-2 p-1 md:hidden rounded-[8px] border">
-            <BsPersonAdd className="text-slate-900 cursor-pointer" size={20} />
-          </div>
-
-          <div className="me-1 mb-2 p-1 md:hidden rounded-[8px] border">
-            <img className="h-5  cursor-pointer" src={Delete} alt />
-          </div>
-        </div>
-      </div>
       <Modal>
+        <div className="flex md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0">
+          <div className="item-one flex flex-row items-center ">
+            <div
+              className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
+              onClick={moveBacks}
+            >
+              <img src={moveBack} alt="move-Back" className="h-6" />
+            </div>
+            <span className="text-[15px] md:text-[20px]   text-black/50 md:ps-3 ps-1 font-[600]">
+              Contacts
+            </span>
+          </div>
+          <div className="item-two flex flex-row items-center md:mt-0  mt-[2px]">
+            <Modal.Toggle toggleName="Update">
+              <div className="me-1 mb-2 p-1 md:hidden rounded-[8px] border">
+                <BsPersonAdd
+                  className="text-slate-900 cursor-pointer"
+                  size={20}
+                />
+              </div>
+            </Modal.Toggle>
+            <Modal.Toggle toggleName="Update">
+              <div className="me-1 mb-2 p-1 md:hidden rounded-[8px] border">
+                <img className="h-5  cursor-pointer" src={Delete} alt />
+              </div>
+            </Modal.Toggle>
+          </div>
+        </div>
+
         <div className="border-t md:border-r ">
           {/* head */}
           <div className="text-lg font-bold p-2 ">

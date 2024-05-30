@@ -91,7 +91,7 @@ const Callhistory = () => {
         heading="Calls history"
         placeholder="Search by Name or Phone Number"
       />
-      <div className="md:border border-t md:rounded-xl md:my-8 my-2 shadow">
+      <div className="md:border border-t md:rounded-xl md:my-8  shadow">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* first column */}
           <div className="border-r hidden md:block">
