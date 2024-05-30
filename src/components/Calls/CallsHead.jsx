@@ -30,7 +30,7 @@ const CallsHead = (props) => {
           className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
           onClick={moveBacks}
         >
-          <img src={moveBack} alt="move-Back" />
+          <img src={moveBack} className="h-6 w-6" alt="move-Back" />
         </div>
         <span className="text-[15px] md:text-[20px] text-black/50  md:text-[#000000] md:ps-3 ps-1 font-[600]">
           {props.heading}
@@ -71,9 +71,9 @@ const CallsHead = (props) => {
             <Modal.Toggle toggleName="exportcall">
               <Button
                 onClick={exportKeyLogger}
-                className="text-[18px]  font-medium px-[12px] shadow-[0px_0px_56px_0px_#00000014]  py-[10px] text-[#101828] text-center"
+                className="text-[18px]  font-medium px-[18px] shadow-[0px_0px_56px_0px_#00000014]  py-[10px] text-[#101828] text-center"
               >
-                <img src={exportIcon} alt="export" className="pe-2" />
+                <img src={exportIcon} alt="export" className="pe-2 h-6 " />
                 Export
               </Button>
             </Modal.Toggle>
@@ -87,7 +87,7 @@ const CallsHead = (props) => {
             <Modal.Toggle toggleName="searchcall">
               <Button
                 onClick={exportKeyLogger}
-                className="text-[18px] font-medium px-[6px] shadow-[0px_0px_56px_0px_#00000014] py-[6px] text-[#101828] text-center"
+                className="md:text-[14px] xl:text-[18px] font-medium px-[6px] shadow-[0px_0px_56px_0px_#00000014] py-[6px] text-[#101828] text-center"
               >
                 <img src={exportIcon} alt="export" className="h-[18px]" />
               </Button>
@@ -103,9 +103,9 @@ const CallsHead = (props) => {
             <Modal.Toggle toggleName="filtercall">
               <Button
                 onClick={filterKeyLooger}
-                className="text-[18px]  font-medium px-[12px] shadow-[0px_0px_56px_0px_#00000014]    py-[10px] text-[#101828] text-center"
+                className=" md:text-[14px] xl:text-[18px]  font-medium px-[18px] shadow-[0px_0px_56px_0px_#00000014]    py-[10px] text-[#101828] text-center"
               >
-                <img src={filterIcon} alt="filter" className="pe-2" />
+                <img src={filterIcon} alt="filter" className="pe-2 h-6 " />
                 Filter
               </Button>
             </Modal.Toggle>

@@ -5,7 +5,7 @@ import Button from "../Shared/Button";
 import historyicon from "../../assests/images/Export/history.png";
 import Modal from "../Shared/Modal";
 import Upgrade from "../Shared/Upgrade";
-import backupIcon from "../../../src/assests/images/Export/backup.png"
+import backupIcon from "../../../src/assests/images/Export/backup.png";
 
 const ExportHeader = ({ heading }) => {
   const moveBacks = useMoveBack();
@@ -25,7 +25,7 @@ const ExportHeader = ({ heading }) => {
           className="image-wrappe sm:shadow-[0px_0px_56px_0px_#00000014]  p-[10px]  sm:border-[#D0D5DD] sm:border-[1px] cursor-pointer  rounded-[8px]"
           onClick={moveBacks}
         >
-          <img src={moveBack} alt="move-Back" />
+          <img src={moveBack} alt="move-Back" className="h-[18px] md:h-6" />
         </div>
         <span className="text-[20px] text-[#000000]  opacity-[50%] sm:opacity-[100%]  sm:ps-3 ps-1 sm:font-[600] font-[500]">
           Data Export
@@ -39,7 +39,11 @@ const ExportHeader = ({ heading }) => {
                 onClick={history}
                 className="text-[18px]  font-medium px-[12px] shadow-[0px_0px_56px_0px_#00000014]   py-[10px] text-[#101828] text-center"
               >
-                <img src={historyicon} alt="export" className="sm:pe-2" />
+                <img
+                  src={historyicon}
+                  alt="export"
+                  className="sm:pe-2 h-[18px] md:h-6"
+                />
                 <span className="hidden sm:block"> History</span>
               </Button>
             </Modal.Toggle>
@@ -55,8 +59,12 @@ const ExportHeader = ({ heading }) => {
                 onClick={backup}
                 className="text-[18px] shadow-[0px_0px_56px_0px_#00000014] font-medium px-[12px] py-[10px] text-[#101828] text-center"
               >
-                <img src={backupIcon} alt="delete" className="sm:pe-2"/>
-                 <span className="hidden sm:block">Backup</span> 
+                <img
+                  src={backupIcon}
+                  alt="delete"
+                  className="sm:pe-2 h-[18px] md:h-6"
+                />
+                <span className="hidden sm:block">Backup</span>
               </Button>
             </Modal.Toggle>
             <Modal.Window windowName="backup">

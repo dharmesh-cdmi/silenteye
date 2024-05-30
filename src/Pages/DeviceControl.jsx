@@ -33,7 +33,7 @@ const DeviceControl = () => {
       <div className="border-y md:border md:rounded-xl mt-2 md:my-8">
         <div className="flex md:p-4 py-4 px-2 border-b">
           <div>
-            <img src={data} alt="img" className="object-contain mt-2" />
+            <img src={data} alt="img" className="object-contain mt-2 h-8" />
           </div>
           <div className="mx-2">
             <p className="font-semibold text-xl text-gray-900">
@@ -141,7 +141,7 @@ const DeviceControl = () => {
             <img
               src={fram1}
               alt="img"
-              className="object-contain mt-2 md:w-auto w-6"
+              className="object-contain mt-2 md:w-auto h-8 w-6"
             />
           </div>
           <div className="mx-2">
@@ -160,7 +160,7 @@ const DeviceControl = () => {
                 <img
                   src={fram2}
                   alt="img"
-                  className="object-contain h-8 md:w-auto w-6"
+                  className="object-contain h-6 md:w-auto w-6"
                 />
               </div>
               <div className=" w-72">
@@ -205,7 +205,11 @@ const DeviceControl = () => {
           <div className="md:p-4 py-4 px-2">
             <div className="flex ">
               <div className="flex-none w-8">
-                <img src={fram3} alt="img" className="object-contain h-8 " />
+                <img
+                  src={fram3}
+                  alt="img"
+                  className="object-contain h-6 w-6 "
+                />
               </div>
               <div className=" w-72">
                 <p className="font-semibold ms-2 text-xl text-gray-900">
@@ -241,7 +245,7 @@ const DeviceControl = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
           <div className="flex md:p-4 py-4 px-2">
             <div>
-              <img src={fram4} alt="img" className="object-contain mt-2" />
+              <img src={fram4} alt="img" className="object-contain mt-2 h-8" />
             </div>
             <div className="mx-2">
               <p className="font-semibold text-xl text-gray-900">
@@ -266,7 +270,7 @@ const DeviceControl = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
           <div className="flex md:p-4 py-4 px-2">
             <div>
-              <img src={fram5} alt="img" className="object-contain mt-2" />
+              <img src={fram5} alt="img" className="object-contain mt-2 h-8" />
             </div>
             <div className="mx-2">
               <p className="font-semibold text-xl text-gray-900">
@@ -279,13 +283,20 @@ const DeviceControl = () => {
           </div>
           <div className="flex md:p-4 py-4 px-2 md:justify-end justify-center">
             <div>
-              <button
-                type="button"
-                class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
-              >
-                <CiMobile3 size={30} />
-                View Live Screen
-              </button>
+              <Modal>
+                <Modal.Toggle toggleName="Update">
+                  <button
+                    type="button"
+                    class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                  >
+                    <CiMobile3 size={30} />
+                    View Live Screen
+                  </button>
+                </Modal.Toggle>
+                <Modal.Window windowName="Update">
+                  <Verizon />
+                </Modal.Window>
+              </Modal>
             </div>
           </div>
         </div>
@@ -294,7 +305,7 @@ const DeviceControl = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-0 ">
           <div className="flex md:p-4 py-4 px-2 col-span-2">
             <div className="w-12 md:w-auto">
-              <img src={fram6} alt="img" className="object-contain mt-2" />
+              <img src={fram6} alt="img" className="object-contain mt-2 h-8" />
             </div>
             <div className="mx-2 w-70">
               <p className="font-semibold text-xl text-gray-900">
@@ -316,7 +327,7 @@ const DeviceControl = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-0 ">
           <div className="flex md:p-4 py-4 px-2 col-span-2">
             <div className="w-12 md:w-auto">
-              <img src={fram7} alt="img" className="object-contain mt-2" />
+              <img src={fram7} alt="img" className="object-contain mt-2 h-8" />
             </div>
             <div className="mx-2 w-70">
               <p className="font-semibold text-xl text-gray-900">
@@ -392,7 +403,7 @@ const DeviceControl = () => {
                 <img
                   src={safemode}
                   alt="img"
-                  className="object-contain h-10 block md:hidden"
+                  className="object-contain h-8 block md:hidden"
                 />
               </div>
               <p className="text-sm font-medium text-gray-400">
@@ -420,13 +431,29 @@ const DeviceControl = () => {
               </div>
             </div>
           </div>
-          <div className="flex md:p-4 py-4 px-2 mt-4 justify-end">
+          <div className="flex md:p-4 md:py-4 px-2 md:mt-4 justify-center md:justify-end">
             <div>
               <img
                 src={safemode}
                 alt="img"
                 className="object-contain h-12 hidden md:block"
               />
+              <div className=" md:hidden">
+                <Modal>
+                  <Modal.Toggle toggleName="Update">
+                    <button
+                      type="button"
+                      class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                    >
+                      <AiFillEdit />
+                      Edit Filters
+                    </button>
+                  </Modal.Toggle>
+                  <Modal.Window windowName="Update">
+                    <FilterTegModal />
+                  </Modal.Window>
+                </Modal>
+              </div>
             </div>
           </div>
         </div>

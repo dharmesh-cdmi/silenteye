@@ -2,17 +2,19 @@ import React from "react";
 import { useMoveBack } from "../../hooks/useMoveBack";
 import moveBack from "../../assests/images/Header/arrow.png";
 import sim1 from "../../assests/images/DashControl/Verizon.png";
+import { MdOutlineKeyboardBackspace } from "react-icons/md";
 
 const FilterTegModal = () => {
   const moveBacks = useMoveBack();
   return (
-    <div className="w-[37rem] h-[28rem]">
+    <div className="w-[310px] md:w-[37rem] h-[28rem]">
       <div className="flex py-4 border-b-[#DDDDDD] px-[16px]     border-b-[1px]">
         <div
-          className="image-wrapper me-2  p-[8px]  border-[#D0D5DD] border-[1px] cursor-pointer  rounded-[8px]"
+          className="image-wrapper me-2  p-[8px] mb-1  border-[#D0D5DD] border-[1px] cursor-pointer  rounded-[8px]"
           onClick={moveBacks}
         >
-          <img src={moveBack} alt="move-Back" />
+          {/* <img src={moveBack} className="h-5" alt="move-Back" /> */}
+          <MdOutlineKeyboardBackspace />
         </div>
         <div className=" w-72 mt-1">
           <p className="font-semibold text-xl text-gray-900">

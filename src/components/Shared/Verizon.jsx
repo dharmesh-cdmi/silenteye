@@ -33,7 +33,7 @@ const Verizon = () => {
       </div>
 
       <div className="  overflow-y-auto h-96 mx-4 no-scrollbar">
-        <div className="flex mt-10 flex-col md:flex-row justify-around">
+        <div className="flex mt-3 md:mt-8 flex-col md:flex-row justify-around">
           <div>
             <h4 className="font-[600] text-[20px]">
               Block Internet Connection

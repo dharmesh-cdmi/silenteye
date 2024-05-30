@@ -68,10 +68,10 @@ export function SubMenu2({ data, open }) {
                     <Modal>
                       <Modal.Toggle toggleName="Update">
                         <button
-                          className="link capitalize w-60"
+                          className="link capitalize w-full"
                           toggleName="Update"
                         >
-                          <div className="flex">
+                          <div className="flex w-full">
                             <div className="flex-none w-10">
                               <img
                                 className="h-5 w-5"
@@ -79,7 +79,7 @@ export function SubMenu2({ data, open }) {
                                 alt="LOGO"
                               />
                             </div>
-                            <div className=" w-24 ">
+                            <div className=" w-4/6 ">
                               <div className="text-start">
                                 <p className="break-word Weight-[500] ">
                                   {menu.name}
@@ -89,7 +89,7 @@ export function SubMenu2({ data, open }) {
                                 </p>
                               </div>
                             </div>
-                            <div className="flex-initial w-24 flex justify-center ">
+                            <div className="justify-end flex  w-1/3  order-last">
                               <img className="h-5 " src={Premium} alt="LOGO" />
                             </div>
                           </div>

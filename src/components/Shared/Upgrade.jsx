@@ -25,7 +25,7 @@ function Upgrade({ onCloseModal }) {
           Cancel
         </Button>
         <div className="ms-3">
-          <Button className="py-[10px] bg-green-100  border-green-500 border-[1px] font-[600] px-[14px] md:px-[70px] text-[18px] text-[#000000] ">
+          <Button className="py-[10px] bg-green-100  border-green-500 border-[1px] font-[600] px-[14px] md:px-[60px] text-[18px] text-[#000000] ">
             <img src={diamond} alt="diamond" className="pe-2" />
             Upgrade Now
           </Button>
