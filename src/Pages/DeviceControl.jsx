@@ -24,13 +24,14 @@ import CallsHead from "../components/Calls/CallsHead";
 import Verizon from "../components/Shared/Verizon";
 import Modal from "../components/Shared/Modal";
 import FilterTegModal from "../components/Shared/FilterTegModal";
+import FilterModal from "../components/Shared/FilterModal";
 
 const DeviceControl = () => {
   return (
     <div>
       <CallsHead heading="Device Control" placeholder="Search " />
 
-      <div className="border-y md:border md:rounded-xl mt-2 md:my-8">
+      <div className="border-y md:border md:rounded-xl  md:my-8">
         <div className="flex md:p-4 py-4 px-2 border-b">
           <div>
             <img src={data} alt="img" className="object-contain mt-2 h-8" />
@@ -256,7 +257,18 @@ const DeviceControl = () => {
               </p>
             </div>
             <div className="w-20 md:hidden ">
-              <img src={devices} alt="img" className="object-contain mt-2" />
+              <Modal>
+                <Modal.Toggle toggleName="Update">
+                  <img
+                    src={devices}
+                    alt="img"
+                    className="object-contain mt-2"
+                  />
+                </Modal.Toggle>
+                <Modal.Window windowName="Update">
+                  <Verizon />
+                </Modal.Window>
+              </Modal>
             </div>
           </div>
           <div className="flex md:p-4 py-4 px-2 justify-end">
@@ -337,11 +349,19 @@ const DeviceControl = () => {
                 Record video calls discreetly
               </p>
             </div>
-            <img
-              src={switc}
-              alt="img"
-              className="object-contain h-9 md:hidden block"
-            />
+
+            <Modal>
+              <Modal.Toggle toggleName="Update">
+                <img
+                  src={switc}
+                  alt="img"
+                  className="object-contain h-9 md:hidden block"
+                />
+              </Modal.Toggle>
+              <Modal.Window windowName="Update">
+                <Verizon />
+              </Modal.Window>
+            </Modal>
           </div>
           <div className="flex md:p-4 py-4 px-2  justify-center md:justify-end">
             <div className="md:flex ">
@@ -383,8 +403,8 @@ const DeviceControl = () => {
                   <p className="font-semibold text-xl text-gray-900">
                     Filter harmful content on Device{" "}
                     <div className="hidden md:block">
-                      <Modal>
-                        <Modal.Toggle toggleName="Update">
+                      <FilterModal>
+                        <FilterModal.Toggle toggleName="Update">
                           <button
                             type="button"
                             class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
@@ -392,19 +412,27 @@ const DeviceControl = () => {
                             <AiFillEdit />
                             Edit Filters
                           </button>
-                        </Modal.Toggle>
-                        <Modal.Window windowName="Update">
+                        </FilterModal.Toggle>
+                        <FilterModal.Window windowName="Update">
                           <FilterTegModal />
-                        </Modal.Window>
-                      </Modal>
+                        </FilterModal.Window>
+                      </FilterModal>
                     </div>
                   </p>
                 </div>
-                <img
-                  src={safemode}
-                  alt="img"
-                  className="object-contain h-8 block md:hidden"
-                />
+
+                <Modal>
+                  <Modal.Toggle toggleName="Update">
+                    <img
+                      src={safemode}
+                      alt="img"
+                      className="object-contain h-9 block md:hidden"
+                    />
+                  </Modal.Toggle>
+                  <Modal.Window windowName="Update">
+                    <Verizon />
+                  </Modal.Window>
+                </Modal>
               </div>
               <p className="text-sm font-medium text-gray-400">
                 Social Media Content Filter
@@ -439,8 +467,8 @@ const DeviceControl = () => {
                 className="object-contain h-12 hidden md:block"
               />
               <div className=" md:hidden">
-                <Modal>
-                  <Modal.Toggle toggleName="Update">
+                <FilterModal>
+                  <FilterModal.Toggle toggleName="Update">
                     <button
                       type="button"
                       class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
@@ -448,11 +476,11 @@ const DeviceControl = () => {
                       <AiFillEdit />
                       Edit Filters
                     </button>
-                  </Modal.Toggle>
-                  <Modal.Window windowName="Update">
+                  </FilterModal.Toggle>
+                  <FilterModal.Window windowName="Update">
                     <FilterTegModal />
-                  </Modal.Window>
-                </Modal>
+                  </FilterModal.Window>
+                </FilterModal>
               </div>
             </div>
           </div>
