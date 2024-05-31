@@ -50,28 +50,28 @@ function Gallery() {
     { img: ss5, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
   ];
   return (
-    <div className="mt-10">
-      <p className="py-7 text-gray-500 text-center text-xs">Today 8:02 AM</p>
+    <div className="lg:mt-10 mt-0">
+      <p className="pt-6 lg:py-7 text-gray-500 text-center text-xs">Today 8:02 AM</p>
 
-      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-2 mx-5 lg:mt-10 mt-20 ">
+      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-5 mx-0 lg:mt-10 mt-5 ">
         {imgs.map((img, index) => {
           return (
             <div className="flex flex-col justify-center" key={index}>
-              <img className="lg:h-32 lg:w-32 h-48 w-48 rounded-lg mx-auto" src={img.img} />
+              <img className="lg:h-32 lg:w-32 h-44 w-48 rounded-lg mx-auto" src={img.img} />
               <p className=" font-semibold text-sm mx-auto">{img.name}</p>
               <p className="lg:ml-4 text-xs text-gray-500 mx-auto">{img.desc}</p>
             </div>
           );
         })}
       </div>
-      <p className="py-7 text-gray-500 text-center text-xs">
+      <p className="lg:py-7 pt-6 text-gray-500 text-center text-xs">
         Yesterday 8:02 AM
       </p>
-      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-2 mx-5 lg:mt-10 mt-20 ">
+      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-5 mx-0 lg:mt-10 mt-5 ">
         {imgs2.map((img, index) => {
           return (
             <div className="flex flex-col justify-center" key={index}>
-              <img className="lg:h-32 lg:w-32 h-48 w-48 rounded-lg mx-auto" src={img.img} />
+              <img className="lg:h-32 lg:w-32 h-44 w-48 rounded-lg mx-auto" src={img.img} />
               <p className=" font-semibold text-sm mx-auto">{img.name}</p>
               <p className="lg:ml-4 text-xs text-gray-500 mx-auto">{img.desc}</p>
             </div>

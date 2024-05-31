@@ -28,11 +28,11 @@ function Matrix() {
   ];
 
   return (
-    <div className="mt-10 mx-4">
+    <div className="mt-10 lg:mx-4 mx-0">
       <div className="grid grid-cols-7 rounded-xl border">
         {days.map((day, idx) => {
           return (
-            <p className="p-3 text-gray-500 text-medium border " key={idx}>
+            <p className="lg:p-3 p-1 text-gray-500 text-sm lg:text-base text-medium border " key={idx}>
               {day}
             </p>
           );
@@ -52,10 +52,10 @@ function Matrix() {
           );
         })}
       </div>
-      <div className="grid grid-cols-1 rounded-xl border mt-9">
+      <div className="grid grid-cols-1 rounded-xl lg:border border-0 mt-9">
         {schedules.map((schedule, index) => {
           return (
-            <div className="p-4 flex flex-col border">
+            <div className="p-4 flex flex-col lg:border border-b">
               <p className="text-gray-500 text-sm">
                 <span className="px-2 mr-2  rounded-full bg-blue-950 font-normal"></span>
                 {schedule.time}

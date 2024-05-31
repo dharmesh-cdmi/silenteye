@@ -79,17 +79,17 @@ function Gallery() {
 
             <img
               src={img}
-              className=" absolute h-72 w-1/3 lg:left-1/3 z-30 rounded-none"
+              className=" absolute h-72 lg:w-1/3 lg:left-1/3 left-10 mx-auto z-30 rounded-none"
               style={{ opacity: 1 }} // Ensure full opacity for the image
               alt="Detailed View"
             />
           </div>
         </>
       )}
-      <p className="py-7 text-gray-500 text-center text-xs">
+      <p className="lg:py-7 pt-6 text-gray-500 text-center text-xs">
         Yesterday 8:02 AM
       </p>
-      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-2 mx-5 lg:mt-10 mt-20">
+      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-2 mx-0 lg:mt-10 mt-5">
         {imgs.map((img, index) => {
           return (
             <div
@@ -100,7 +100,7 @@ function Gallery() {
               }}
             >
               <img
-                className="lg:h-32 lg:w-32 h-48 w-48 rounded-lg mx-auto"
+                className="lg:h-32 lg:w-32 h-44 w-48 rounded-lg mx-auto"
                 src={img.img}
               />
               <p className=" font-semibold text-sm mx-auto">{img.name}</p>

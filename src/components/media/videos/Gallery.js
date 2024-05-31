@@ -40,15 +40,15 @@ function Gallery() {
   ];
   return (
     <>
-      <p className="py-7 text-gray-500 text-center text-xs">
+      <p className=" pt-6 lg:py-7 text-gray-500 text-center text-xs">
         Yesterday 8:02 AM
       </p>
-      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-2 mx-2 lg:mt-10 mt-20">
+      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-2 mx-0 lg:mt-10 mt-5">
         {vids.map((vid, index) => {
           return (
             <div className="flex flex-col justify-center" key={index}>
               <img
-                className="lg:h-32 lg:w-32 h-48 w-48 rounded-lg mx-auto"
+                className="lg:h-32 lg:w-32 h-44 w-48 rounded-lg mx-auto"
                 src={vid.vid}
               />
               <p className=" font-semibold text-sm mx-auto">{vid.name}</p>
