@@ -25,6 +25,7 @@ import Verizon from "../components/Shared/Verizon";
 import Modal from "../components/Shared/Modal";
 import FilterTegModal from "../components/Shared/FilterTegModal";
 import FilterModal from "../components/Shared/FilterModal";
+import Upgrade from "../components/Shared/Upgrade";
 
 const DeviceControl = () => {
   return (
@@ -266,14 +267,25 @@ const DeviceControl = () => {
                   />
                 </Modal.Toggle>
                 <Modal.Window windowName="Update">
-                  <Verizon />
+                  <Upgrade />
                 </Modal.Window>
               </Modal>
             </div>
           </div>
           <div className="flex md:p-4 py-4 px-2 justify-end">
             <div className="w-14 h-14  hidden md:block">
-              <img src={devices} alt="img" className="object-contain mt-2" />
+              <Modal>
+                <Modal.Toggle toggleName="Update">
+                  <img
+                    src={devices}
+                    alt="img"
+                    className="object-contain mt-2 cursor-pointer"
+                  />
+                </Modal.Toggle>
+                <Modal.Window windowName="Update">
+                  <Upgrade />
+                </Modal.Window>
+              </Modal>
             </div>
           </div>
         </div>
@@ -306,7 +318,7 @@ const DeviceControl = () => {
                   </button>
                 </Modal.Toggle>
                 <Modal.Window windowName="Update">
-                  <Verizon />
+                  <Upgrade />
                 </Modal.Window>
               </Modal>
             </div>
@@ -359,7 +371,7 @@ const DeviceControl = () => {
                 />
               </Modal.Toggle>
               <Modal.Window windowName="Update">
-                <Verizon />
+                <Upgrade />
               </Modal.Window>
             </Modal>
           </div>
@@ -380,7 +392,7 @@ const DeviceControl = () => {
                   />
                 </Modal.Toggle>
                 <Modal.Window windowName="Update">
-                  <Verizon />
+                  <Upgrade />
                 </Modal.Window>
               </Modal>
             </div>
@@ -430,7 +442,7 @@ const DeviceControl = () => {
                     />
                   </Modal.Toggle>
                   <Modal.Window windowName="Update">
-                    <Verizon />
+                    <Upgrade />
                   </Modal.Window>
                 </Modal>
               </div>

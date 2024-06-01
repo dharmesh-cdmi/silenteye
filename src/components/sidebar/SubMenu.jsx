@@ -80,11 +80,17 @@ export function SubMenu2({ data, open }) {
                               />
                             </div>
                             <div className=" w-4/6 ">
-                              <div className="text-start">
+                              <div className="text-start hidden md:block">
                                 <p className="break-word Weight-[500] ">
                                   {menu.name}
                                 </p>
-                                <p className="break-word Weight-[500]">
+                                <p className="break-word Weight-[500] ">
+                                  {menu.name2}
+                                </p>
+                              </div>
+                              <div className="text-start md:hidden">
+                                <p className="break-word Weight-[500] ">
+                                  {menu.name}
                                   {menu.name2}
                                 </p>
                               </div>
