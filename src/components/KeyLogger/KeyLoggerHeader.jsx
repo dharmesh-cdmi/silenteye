@@ -41,6 +41,16 @@ const KeyLoggerHeader = () => {
         </span>
       </div>
       <div className="item-two flex flex-row mt-0">
+      <div className="me-3 hidden xl:block">
+          <Modal>
+            <Modal.Toggle toggleName="search-keylogger">
+              <Search onClick={handleSearch} placeholder="Search"  />
+            </Modal.Toggle>
+            <Modal.Window windowName="search-keylogger">
+              <Upgrade />
+            </Modal.Window>
+          </Modal>
+        </div>
         <div className="sm:me-3 me-2">
           <Modal>
             <Modal.Toggle toggleName="delete-keylogger">
