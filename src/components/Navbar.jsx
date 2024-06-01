@@ -12,6 +12,7 @@ import bell from "../assests/images/Bell.png";
 import DeviceInfo, { NotificationInfo } from "./ToggleInfo";
 import logo from "../assests/images/Logo.svg";
 import Oval from "../assests/images/profile/Oval.png";
+import MenuIcon from "../assests/images/menu.png";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ isTabletMid, open, setOpen }) => {
@@ -45,9 +46,10 @@ const Navbar = ({ isTabletMid, open, setOpen }) => {
             >
               <span className="sr-only">Open main menu</span>
               {open ? (
-                <IoCloseSharp className="text-black" />
+                <IoCloseSharp className="text-black" size={20} />
               ) : (
-                <RiMenu2Fill className="text-black" />
+                // <RiMenu2Fill className="text-black" />
+                <img className="h-5  " src={MenuIcon} alt />
               )}
             </button>
             <Link to="/">
@@ -70,7 +72,7 @@ const Navbar = ({ isTabletMid, open, setOpen }) => {
               }}
             >
               <span className="sr-only">Open main menu</span>
-              <RiMenu2Fill className="text-black" />
+              <img className="h-5  " src={MenuIcon} alt />
             </button>
           </div>
           <div className="flex gap-4 md:mt-2">
