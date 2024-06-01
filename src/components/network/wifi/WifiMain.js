@@ -6,16 +6,16 @@ import LocationHead from "../../../UI/HeaderTab";
 import Modal from '../../Shared/Modal'
 import Upgrade from '../../Shared/Upgrade'
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
+import CallsHead from "../../Calls/CallsHead";
 import Button from '../../Shared/Button'
 
 function WifiMain() {
-  const headerData = {
-    location: "Wifi Network",
-    placeHolder: "Search by Wifi Name",
-  };
   return (
     <Card>
-      <LocationHead data={headerData} />
+       <CallsHead
+        heading={"Wifi Network"}
+        placeholder={"Search by Wifi Name"}
+      />
       <Tabs />
       <DataTable />
       <div className="flex justify-center mb-12">

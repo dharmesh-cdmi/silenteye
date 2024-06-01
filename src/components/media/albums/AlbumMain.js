@@ -5,16 +5,17 @@ import LocationHead from "../../../UI/HeaderTab";
 import Upgrade from "../../Shared/Upgrade";
 import Modal from "../../Shared/Modal";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import CallsHead from "../../Calls/CallsHead";
+
 
 function AlbumMain() {
-  const headerData = {
-    location: "Albums",
-    placeHolder: "Search Photos",
-  };
+ 
   return (
     <Card>
-      <LocationHead data={headerData} />
-      <Gallery />
+ <CallsHead
+        heading={"Albums"}
+        placeholder={"Search Photos"}
+      />      <Gallery />
       <Modal>
         <Modal.Toggle toggleName="Update">
           <div className="flex justify-center align middle my-10  ">

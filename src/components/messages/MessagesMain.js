@@ -2,6 +2,7 @@ import React from "react";
 import Messages from "./components/Messages";
 import Card from "../../UI/Card";
 import LocationHead from "../../UI/HeaderTab";
+import CallsHead from "../Calls/CallsHead";
 
 function MessagesMain() {
   const headerData = {
@@ -10,7 +11,10 @@ function MessagesMain() {
   };
   return (
     <Card>
-      <LocationHead data={headerData} />
+      <CallsHead
+        heading={"Messages"}
+        placeholder={"Search by Name or Phone Number"}
+      />
       <Messages />
     </Card>
   );
