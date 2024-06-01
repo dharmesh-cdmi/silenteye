@@ -6,6 +6,8 @@ import Modal from "../../../Shared/Modal";
 import Upgrade from "../../../Shared/Upgrade";
 import sim from "../../../../assests/images/DashControl/T-Mobile.png";
 import sim2 from "../../../../assests/images/DashControl/Verizon.png";
+import { FaPhoneAlt } from "react-icons/fa";
+
 
 function Tabs() {
   return (
@@ -19,7 +21,8 @@ function Tabs() {
                 <h3 className="font-semibold text-lg">Verizon</h3>
               </div>
               <div className="flex">
-                <img className="w-3 h-3"></img>
+              <FaPhoneAlt className="h-2 w-2 mt-2 mr-2 text-gray-500" />
+
                 <p className="text-gray-400 text-sm">+91 98989898</p>
               </div>
             </div>
@@ -37,7 +40,7 @@ function Tabs() {
                 <h3 className="font-semibold text-lg">T-Mobile</h3>
               </div>
               <div className="flex">
-                <img className="w-3 h-3"></img>
+              <FaPhoneAlt className="h-2 w-2 mt-2 mr-2 text-gray-500" />
                 <p className="text-gray-400 text-sm">+91 98989898</p>
               </div>
             </div>

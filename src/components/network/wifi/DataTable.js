@@ -83,7 +83,8 @@ function DataTable() {
   ];
   return (
     <>
-      <div className="lg:hidden  mt-5">
+      <div className="lg:hidden  mt-1">
+        <p className=" border-b-2 text-gray-500">Wifi Network History</p>
         {contents.map((content) => {
           return (
             <div className="mt-4">

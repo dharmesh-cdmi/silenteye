@@ -9,12 +9,12 @@ import "../../../UI/LocationHeader.css";
 
 const Header = (props) => {
   return (
-    <div className="Location-nav flex justify-between align-middle mr-10">
+    <div className="Location-nav flex justify-between align-middle lg:mr-10 mr-0">
       <div className="Location-nav-left flex justify-center align-bottom">
         <button className="notNavLeftIcon border-2 p-2 rounded-md shadow-lg">
           <IoIosArrowRoundBack />
         </button>
-        <span className="font-semibold text-lg">{props.data.location}</span>
+        <span className="font-semibold lg:text-lg text-sm ">{props.data.location}</span>
       </div>
 
       <div className="Location-nav-right flex justify-center items-center p-4">
