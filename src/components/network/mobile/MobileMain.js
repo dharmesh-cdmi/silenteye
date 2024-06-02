@@ -7,16 +7,17 @@ import Modal from '../../Shared/Modal'
 import Upgrade from '../../Shared/Upgrade'
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
 import Button from '../../Shared/Button'
+import CallsHead from "../../Calls/CallsHead";
 
 function MobileMain() {
-  const headerData = {
-    location: "Mobile Network",
-    placeHolder: "Search by App or Website Name",
-  };
+
 
   return (
     <Card>
-      <LocationHead data={headerData} />
+       <CallsHead
+        heading={"Mobile Network"}
+        placeholder={"Search by App or Website Name"}
+      />
       <Tabs />
       <Table />
       <div className="flex justify-center mb-12">

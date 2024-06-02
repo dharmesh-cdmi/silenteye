@@ -83,11 +83,11 @@ function DataTable() {
   ];
   return (
     <>
-      <div className="lg:hidden  mt-1">
-        <p className=" border-b-2 text-gray-500">Wifi Network History</p>
+      <div className="lg:hidden mt-1 ">
+        <p className=" border-b text-gray-500">Wifi Network History</p>
         {contents.map((content) => {
           return (
-            <div className="mt-4">
+            <div className="mt-4 border-b">
               <div className="flex justify-between ">
                 <h3 className="text-md font-semibold text-start">
                   Hot Wifi 4G
@@ -135,7 +135,7 @@ function DataTable() {
           );
         })}
       </div>
-      <div className="lg:grid lg:grid-cols-6 grid-cols-6 mt-10 lg:border border-0 rounded-lg lg:mx-4 mx-0 hidden">
+      <div className="lg:grid lg:grid-cols-6 grid-cols-6 mt-10 lg:border border-b rounded-lg lg:mx-4 mx-0 hidden">
         <p className="text-center text-gray-500 p-2 border-b-2">Name</p>
         <div className="flex border-b-2">
           <span>

@@ -3,6 +3,8 @@ import Switch from '../../../UI/Switch'
 import { CiLock } from "react-icons/ci";
 import { FaWifi } from "react-icons/fa6";
 import { AiOutlineDownload } from "react-icons/ai";
+import { MdOutlineFileUpload } from "react-icons/md";
+
 import del from '../../../assests/images/delete.png'
 import { TiTick } from "react-icons/ti";
 
@@ -12,9 +14,9 @@ import { TiTick } from "react-icons/ti";
 
 function Tabs() {
   return (
-    <div className="lg:mx-4 mx-0 lg:mt-10 mt-0">
+    <div className="lg:mx-4 mx-0 lg:mt-10 mt-4 border-t">
       <section className="grid lg:grid-cols-4 grid-cols-1 border-0 lg:border-2 border-gray-50 rounded-xl ">
-        <div className="py-2 px-2 lg:border-r-2 border-b-2">
+        <div className="py-2 px-2 lg:border-r-2 lg:border-b-2 border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -29,7 +31,7 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-2 px-2 lg:border-r-2 border-b-2">
+        <div className="py-2 px-2 lg:border-r-2 lg:border-b-2 border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -47,12 +49,12 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-2 px-2 lg:border-r-2 border-b-2">
+        <div className="py-2 px-2 lg:border-r-2 lg:border-b-2 border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex ">
                 <AiOutlineDownload className="h-6 w-6" />
-                <h3 className="font-semibold text-md">Uploaded</h3>
+                <h3 className="font-semibold text-md">Downloaded</h3>
               </div>
               <p className=" text-sm">
                 130.77 GB{" "}
@@ -62,12 +64,12 @@ function Tabs() {
           </div>
         </div>
 
-        <div className="py-2 px-2 lg:border-r-2 border-b-2">
+        <div className="py-2 px-2 lg:border-r-2 lg:border-b-2 border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex ">
-                <AiOutlineDownload className="h-6 w-6" />
-                <h3 className="font-semibold text-md">Downloaded</h3>
+                <MdOutlineFileUpload className="h-6 w-6" />
+                <h3 className="font-semibold text-md">Uploaded</h3>
               </div>
               <p className=" text-sm">
                 130.77 GB{" "}
