@@ -2,7 +2,6 @@ import React from "react";
 import { Table } from "../components/Shared/Table";
 import KeyLoggers from "../components/KeyLogger/KeyLoggers";
 import google from "../../src/assests/images/KeyLogger/google.png";
-import photos from "../../src/assests/images/KeyLogger/photos.png";
 import whatsapp from "../../src/assests/images/KeyLogger/whatsapp.png";
 import Messenger from "../../src/assests/images/KeyLogger/messenger.png";
 import instagram from "../../src/assests/images/KeyLogger/instagram.png";
