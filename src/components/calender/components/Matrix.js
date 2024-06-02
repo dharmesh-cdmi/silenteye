@@ -67,7 +67,7 @@ function Matrix() {
                 <span className="px-2 mr-2  rounded-full bg-blue-950 font-normal"></span>
                 {schedule.time}
               </p>
-              <p className="text-lg font-medium ">{schedule.main}</p>
+              <p  className="text-lg font-medium ">{schedule.main}</p>
               <p className="text-gray-500 text-sm ">{schedule.desc}</p>
             </div>
           );
