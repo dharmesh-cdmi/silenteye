@@ -68,7 +68,7 @@ function Matrix() {
                 {schedule.time}
               </p>
               <p  className="text-lg font-medium ">{schedule.main}</p>
-              <p className="text-gray-500 text-sm ">{schedule.desc}</p>
+              <p  className="text-gray-500 text-sm ">{schedule.desc}</p>
             </div>
           );
         })}
