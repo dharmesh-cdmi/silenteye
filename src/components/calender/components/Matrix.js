@@ -3,7 +3,6 @@ import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Modal from "../../Shared/Modal";
 import Upgrade from "../../Shared/Upgrade";
 
-
 function Matrix() {
   const days = ["SUN", "MON", "TUE", "WED", "THUR", "FRI", "SAT"];
   const i = Array.from({ length: 35 }, (_, index) => index + 1);
@@ -24,15 +23,17 @@ function Matrix() {
       main: "Workout with Ella",
       desc: "We will do the legs and backend workout",
     },
-  
   ];
 
   return (
-    <div className="mt-10 lg:mx-4 mx-0">
-      <div className="grid grid-cols-7 rounded-xl border">
+    <div className="mt-10 lg:mx-4 mx-0 lg:ms-0 ms-3.5">
+      <div className="grid grid-cols-7 rounded-xl lg:border border-t border-b">
         {days.map((day, idx) => {
           return (
-            <p className="lg:p-3 p-1 text-gray-500 text-sm lg:text-base text-medium border " key={idx}>
+            <p
+              className="lg:p-3 p-1 text-gray-500 text-sm lg:text-base text-medium border "
+              key={idx}
+            >
               {day}
             </p>
           );
@@ -41,7 +42,13 @@ function Matrix() {
           return (
             <div className="p-2 pb-1  border font-medium" key={index}>
               {num % 32}
-              {(num === 4 || num === 5 || num === 31 || num === 8 || num === 14 || num === 17 || num === 27) && (
+              {(num === 4 ||
+                num === 5 ||
+                num === 31 ||
+                num === 8 ||
+                num === 14 ||
+                num === 17 ||
+                num === 27) && (
                 <div className="flex mt-1">
                   <div className="bg-green-800  h-2 w-2 rounded-full mr-1"></div>
                   <div className="bg-blue-900 h-2 w-2 rounded-full mr-1"></div>
@@ -67,18 +74,17 @@ function Matrix() {
         })}
       </div>
       <Modal>
-      <Modal.Toggle toggleName="Update">
-      <div className="flex justify-center align middle my-10  ">
-        <button className="mx-auto border-2 shadow-lg px-5 py-1.5 rounded-lg flex ">
-          View More
-          <MdKeyboardDoubleArrowDown className="mt-1 h-4 w-4" />
-
-        </button>
-      </div>
-      </Modal.Toggle>
-      <Modal.Window windowName="Update">
-                      <Upgrade/>
-                    </Modal.Window>
+        <Modal.Toggle toggleName="Update">
+          <div className="flex justify-center align middle my-10  ">
+            <button className="mx-auto border-2 shadow-lg px-5 py-1.5 rounded-lg flex ">
+              View More
+              <MdKeyboardDoubleArrowDown className="mt-1 h-4 w-4" />
+            </button>
+          </div>
+        </Modal.Toggle>
+        <Modal.Window windowName="Update">
+          <Upgrade />
+        </Modal.Window>
       </Modal>
     </div>
   );
