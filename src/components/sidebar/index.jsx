@@ -59,8 +59,12 @@ import Twitter from "../../assests/images/sideicon/SideBar/Twitter.png";
 import Viber from "../../assests/images/sideicon/SideBar/Viber.png";
 import Zolo from "../../assests/images/sideicon/SideBar/Zolo.png";
 import whatsapp from "../../assests/images/sideicon/SideBar/whatsapp.png";
+import support from "../../assests/images/sideicon/1.png";
+import refund from "../../assests/images/sideicon/2.png";
 
 import { IoMdAdd } from "react-icons/io";
+import Modal from "../Shared/Modal";
+import Upgrade from "../Shared/Upgrade";
 const Sidebar = ({ isTabletMid, open, setOpen }) => {
   const sidebarRef = useRef();
   const { pathname } = useLocation();
@@ -609,6 +613,33 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
                 <img className="h-5 " src={Home} alt />
                 Dashboard
               </NavLink>
+            </li>
+            <li className="liborder">
+              <Modal>
+                <Modal.Toggle toggleName="Update">
+                  <p className="link ">
+                    <img className="h-5 " src={support} alt />
+                    Support Ticket
+                  </p>
+                </Modal.Toggle>
+                <Modal.Window windowName="Update">
+                  <Upgrade />
+                </Modal.Window>
+              </Modal>
+            </li>
+
+            <li className="liborder">
+              <Modal>
+                <Modal.Toggle toggleName="Update">
+                  <p className="link ">
+                    <img className="h-5 " src={refund} alt />
+                    Refund Request
+                  </p>
+                </Modal.Toggle>
+                <Modal.Window windowName="Update">
+                  <Upgrade />
+                </Modal.Window>
+              </Modal>
             </li>
             <li className="liborder">
               <NavLink to={"/devicecontrol"} className="link">
