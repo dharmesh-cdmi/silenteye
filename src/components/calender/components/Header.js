@@ -6,6 +6,8 @@ import { IoIosSearch } from "react-icons/io";
 import Upgrade from "../../Shared/Upgrade";
 import Modal from "../../Shared/Modal";
 import deleteIcon from "../../../assests/images/Header/delete.png";
+import { FaChevronDown } from "react-icons/fa";
+
 import Search from "../../Shared/Search";
 
 const CallsHead = (props) => {
@@ -47,8 +49,11 @@ const CallsHead = (props) => {
         <div className="me-3 md:hidden ">
           <Modal>
             <Modal.Toggle toggleName="searchcall">
-            <p className="font-medium text-black">2024</p>
-
+              <div className="flex">
+            <p className="font-medium text-black ">2024</p>
+            <FaChevronDown className="mt-1.5 ml-0.5 w-3 h-3" />
+            
+            </div>
             </Modal.Toggle>
             <Modal.Window windowName="searchcall">
               <Upgrade />
@@ -74,7 +79,11 @@ const CallsHead = (props) => {
         <div className="me-3 md:hidden ">
           <Modal>
             <Modal.Toggle toggleName="searchcall">
-              <p className="font-medium text-black">Apr</p>
+            <div className="flex ">
+            <p className="font-medium text-black ">Apr</p>
+            <FaChevronDown className="mt-1.5 ml-0.5 w-3 h-3" />
+            
+            </div>
             </Modal.Toggle>
             <Modal.Window windowName="searchcall">
               <Upgrade />
@@ -102,7 +111,11 @@ const CallsHead = (props) => {
         <div className=" md:hidden ">
           <Modal>
             <Modal.Toggle toggleName="searchcall">
-              <p className="font-medium text-black">Month</p>
+            <div className="flex">
+            <p className="font-medium text-black">Month</p>
+            <FaChevronDown className="mt-1.5 ml-0.5 w-3 h-3" />
+            
+            </div>
             </Modal.Toggle>
             <Modal.Window windowName="searchcall">
               <Upgrade />
