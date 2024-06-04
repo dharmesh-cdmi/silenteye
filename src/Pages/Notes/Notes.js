@@ -1,19 +1,19 @@
-import {useState} from 'react'
-import "./Notes.css"
-import "../../components/BrowserHead/BrowserHead.css"
-import {notesData} from "./Notes-data.js"
+import { useState } from "react";
+import "./Notes.css";
+import "../../components/BrowserHead/BrowserHead.css";
+import { notesData } from "./Notes-data.js";
 import { IoFilterSharp } from "react-icons/io5";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaGripLines } from "react-icons/fa6";
 import { TbFileExport } from "react-icons/tb";
 import { IoIosSearch } from "react-icons/io";
 import { IoCreateOutline } from "react-icons/io5";
-import { MdDeleteOutline } from "react-icons/md";
-import PageExportBtn from '../../components/pageExportBtn/PageExportBtn.jsx';
+import { MdDeleteOutline, MdKeyboardDoubleArrowDown } from "react-icons/md";
+import PageExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx";
 import imgg from "../../assests/images/imgg.png";
 import Convo from "../../components/messages/components/Convo";
 import delet from "../../assests/images/delete.png";
-import man from "../../assests/images/man.png";
+import man from "../../assests/images/edit button.png";
 import Tabs from "../../components/messages/components/Tabs";
 import Card from "../../UI/Card";
 import LocationHead from "../../UI/HeaderTab";
@@ -21,6 +21,9 @@ import LocationHead from "../../UI/HeaderTab";
 import Upgrade from "../../components/Shared/Upgrade";
 import Modal from "../../components/Shared/Modal";
 import { useMoveBack } from "../../hooks/useMoveBack.js";
+import CallsHead from "../../components/Calls/CallsHead.jsx";
+import Button from "../../components/Shared/Button.jsx";
+import { Link } from "react-router-dom";
 
 function Messages() {
   const moveBacks = useMoveBack();
@@ -32,10 +35,13 @@ function Messages() {
 
   const msgData = [
     {
-      name: "Recent Rally",
-      text: "We are going to rally on saturday...",
+      name: "Mode of Transportation",
+      text: "We are going to hold a rally on Saturday..",
+    },
 
-      active: true,
+    {
+      name: "Housewarming party",
+      text: "We are going to hold a rally on Saturday. Items to prepare. lemonade dispenserPicnic table clothExtra outdoor lights,e",
     },
     {
       name: "Hawaii",
@@ -46,76 +52,63 @@ function Messages() {
       text: "Little brother, I am lonely and I amm looking for compa...",
     },
     {
-      name: "Hawaii",
-      text: "Things to bring, I am lonely and I amm looking for compa...",
+      name: "2-Feb Transaction",
+      text: "200 - Ikea, 110 - Photography, 29 - WorkEx ",
     },
     {
-      name: "Bike Wish List",
-      text: "Little brother, I am lonely and I amm looking for compa...",
+      name: "Home renovation project",
+      text: "Project timeline: 4 months",
     },
-    {
-      name: "Bike Wish List",
-      text: "Little brother, I am lonely and I amm looking for compa...",
-    },
-  
   ];
   return (
     <Card>
-   {/* NOTES HEADER */}
-    <div className="Browser-nav flex justify-between align-middle">
-    {/* nav left*/}
-    <div className="Browser-nav-left flex justify-center align-bottom">
-         <button onClick={moveBacks} className="notNavLeftIcon shadow-lg "><FaArrowLeftLong /></button>
-       <span>Notes</span>
-    </div>
-   
-    {/* nav right*/}
-  <div className="Browser-nav-right flex justify-center items-center p-4">
-      {/* Search */}
-      <span className="flex items-center BrowserNavRightSearch cursor-pointer shadow-lg ">
-        <IoIosSearch />
-        <input type="text" placeholder="Search Notes" />
-      </span>
+      {/* NOTES HEADER */}
 
-      {/* Export */}
-          <Modal>
-           <Modal.Toggle toggleName="Upgrade">
-      <span className="flex items-center LocationNavRightExportIcon cursor-pointer shadow-lg ">
-        <TbFileExport />
-        <span className="responsiveTitleHide">Export</span>
-      </span>
-         </Modal.Toggle>
-          <Modal.Window windowName="Upgrade">
-            <Upgrade />
-          </Modal.Window>
-          </Modal>
+      <CallsHead heading="Notes" placeholder="Search Notes" />
 
-      {/* Filter */}
-      <span className="flex items-center BrowserNavRightFilterIcon cursor-pointer shadow-lg ">
-        <IoFilterSharp />
-        <span className="responsiveTitleHide">Filter</span>
-      </span>
-    </div>
-    </div>
-    
-   {/* " <LocationHead data={headerData} /> */}
-      <div className="grid lg:grid-cols-2 grid-cols-1 rounded-lg border-2 mx-4  border-gray-200 mt-10">
+      {/* " <LocationHead data={headerData} /> */}
+      <div className="grid lg:grid-cols-2 grid-cols-1 md:rounded-lg border-2 md:mx-4  border-gray-200 md:mt-10">
         <div className="">
-          <p className="py-4 ps-3 font-semibold border-b-2 ">Recent Notes</p>
+          <p className="py-4 ps-3 text-lg font-bold border-b-2 hidden md:block">
+            Recent Notes
+          </p>
+          <p className="py-4  ps-3 font-semibold border-b-2 md:hidden text-black/50">
+            Recent Notes
+          </p>
+          <Link to="/notesprofile">
+            <div className="md:hidden bg-gray-100 flex py-4 border-b-2 cursor-pointer justify-between md:px-4">
+              <div className="flex align-middle flex-col px-3 w-4/5">
+                <h3 className="font-semibold text-xl ">Recent Rally</h3>
+                <p className="font-semibold text-black/50">
+                  We are going to rally
+                </p>
+              </div>
+              <div>
+                <p className="text-gray-500 text-base text-end mt-4 me-2 font-semibold ">
+                  9:41 PM
+                </p>
+              </div>
+            </div>
+          </Link>
           {msgData.map((msg, index) => {
             return (
               <Modal>
                 <Modal.Toggle toggleName="Update">
-                  <div
-                    className={` ${
-                      msg.active ? "bg-gray-200" : ""
-                    } flex py-4 border-b-2 cursor-pointer `}
-                  >
-                    <div className="flex align-middle flex-col px-3">
-                      <h3 className="font-semibold">{msg.name}</h3>
-                      <p className="">{msg.text}</p>
+                  <div className="flex py-4 border-b-2 cursor-pointer justify-between md:px-4">
+                    <div className="flex align-middle flex-col px-3 w-4/5">
+                      <h3 className="font-semibold text-xl ">{msg.name}</h3>
+                      <p className="md:hidden font-semibold text-black/50">
+                        {msg.text.slice(0, 30)}..
+                      </p>
+                      <p className="hidden md:block text-[17px] font-semibold text-black/50">
+                        {msg.text.slice(0, 50)}..
+                      </p>
                     </div>
-                    <p className="text-gray-500 text-end mt-4">9:41 PM</p>
+                    <div>
+                      <p className="text-gray-500 text-base text-end mt-4 me-2 font-semibold ">
+                        9:41 PM
+                      </p>
+                    </div>
                   </div>
                 </Modal.Toggle>
                 <Modal.Window windowName="Update">
@@ -125,11 +118,15 @@ function Messages() {
             );
           })}
         </div>
-        <div className="border-l-2 ">
+        <div className="border-l-2  hidden md:block">
           <div className="border-b-2 flex py-3 ps-3 align-middle  ">
             <div className="ml-3">
-              <h3 className="font-bold text-xl text-nowrap ">Mode Of Transportation</h3>
-              <p className="text-slate-500 text-nowrap">Created:Yesterday 8:23 AM</p>
+              <h3 className="font-bold text-2xl text-nowrap ">
+                Mode Of Transportation
+              </h3>
+              <p className="text-slate-500 text-[17px] text-black/50 text-nowrap">
+                Created:Yesterday 8:23 AM
+              </p>
             </div>
             <div className="flex justify-end align-middle ml-44 mt-5">
               <Modal>
@@ -154,56 +151,70 @@ function Messages() {
             </div>
           </div>
           <>
-      <div className="text-center text-slate-500 text-sm">Last Edit: Yesterday 8:23 AM</div>
-      <div className="px-2 mt-3">
-        <div className=" ">
-          <div className="text-black     rounded-xl w-56 px-4 font-bold text-xl text-nowrap">
-          Mode Of Transportation
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          We are going to rally on saturday
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          Items to prepare
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          We are going to rally on saturday
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          We are going to rally on saturday
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          We are going to rally on saturday
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          We are going to rally on saturday
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          We are going to rally on saturday
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          We are going to rally on saturday
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          We are going to rally on saturday
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          We are going to rally on saturday
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          We are going to rally on saturday
-          </div>
-          <div className="text-black   rounded-xl w-56 px-4 font-medium text-md text-nowrap">
-          We are going to rally on saturday
-          </div>
-          <div className="text-black     rounded-xl w-56 px-4 font-bold text-xl text-nowrap">
-          </div>
-         
-     
+            <div className="text-center mt-4 text-slate-500 text-sm">
+              Last Edit: Yesterday 8:23 AM
+            </div>
+            <div className="px-2 mt-3">
+              <div className=" ">
+                <div className="text-black     rounded-xl w-56 px-4 font-bold text-2xl text-nowrap">
+                  Mode Of Transportation
+                </div>
+                <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+                  We are going to hold a rally on Saturday.
+                  <br /> Items to prepare:
+                  <br />
+                  lemonade dispenserPicnic table clothExtra outdoor
+                  lights,elastic
+                  <br /> balls and heavy toys, large refrigerators for drinks,
+                  loudspeakers <br />
+                  for music
+                </div>
+                <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+                  Items to prepare
+                </div>
+                <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+                  1.The Ulrick family
+                </div>
+                <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+                  2. The Tilmon family
+                </div>
+                <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+                  3.o'Malley
+                </div>
+                <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+                  4. Swanson Family
+                </div>
+                <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+                  5. Lee's Family
+                </div>
+                <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+                  6. Shaw FamilyThe
+                </div>
+                <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+                  7 Dean family
+                </div>
+                <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+                  8. The Roberts
+                </div>
+
+                <div className="text-black     rounded-xl w-56 px-4 font-bold text-xl text-nowrap"></div>
+              </div>
+            </div>
+          </>
         </div>
       </div>
-    </>
-        </div>
+      <div className="flex justify-center my-6">
+        <Modal>
+          <Modal.Toggle toggleName="viewMore-keylogger">
+            <Button className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-semibold px-[32px]  py-[10px] text-[#101828] text-center">
+              View More
+              <MdKeyboardDoubleArrowDown size={18} />
+            </Button>
+          </Modal.Toggle>
+          <Modal.Window windowName="viewMore-keylogger">
+            <Upgrade />
+          </Modal.Window>
+        </Modal>
       </div>
     </Card>
   );

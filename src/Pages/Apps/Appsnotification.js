@@ -22,77 +22,99 @@ import telegramiconIcon from "../../assests/images/telegram.svg";
 import tiktokicon from "../../assests/images/tiktok.svg";
 import tindericon from "../../assests/images/tinder.svg";
 import twittericon from "../../assests/images/twitter.svg";
+import yt from "../../assests/images/yt.png";
+import crome from "../../assests/images/crome.png";
+import fb from "../../assests/images/fb.png";
+import msgngr from "../../assests/images/msgngr.png";
 
-import Modal from '../../components/Shared/Modal.jsx';
-import Upgrade from '../../components/Shared/Upgrade.jsx';
+import Modal from "../../components/Shared/Modal.jsx";
+import Upgrade from "../../components/Shared/Upgrade.jsx";
+import CallsHead from "../../components/Calls/CallsHead.jsx";
+import Checkbox from "../../components/Shared/Checkbox.jsx";
 
 const Appsnotification = () => {
   return (
     <>
       {/* Navigations, search*/}
-      <div className="Apps-nav flex justify-between align-middle">
-        {/* nav left*/}
-        <div className="Apps-nav-left flex justify-center align-bottom">
-          <button className="notNavLeftIcon shadow-lg">
-            <FaArrowLeftLong />
-          </button>
-          <span className="mr-3">Apps</span>
-        </div>
-
-        {/* nav right*/}
-        <div className="Apps-nav-right flex justify-center items-center p-4">
-          {/* Search */}
-          <span className="flex items-center appsNavRightSearch cursor-pointer shadow-lg">
-            <IoIosSearch />
-            <input type="text" placeholder="Search Apps" />
-          </span>
-
-          {/* Export */}
-        <Modal>
-           <Modal.Toggle toggleName="Upgrade">
-      <span className="flex items-center LocationNavRightExportIcon cursor-pointer shadow-lg ">
-        <TbFileExport />
-        <span className="responsiveTitleHide">Export</span>
-      </span>
-         </Modal.Toggle>
-          <Modal.Window windowName="Upgrade">
-            <Upgrade />
-          </Modal.Window>
-          </Modal>
-
-          {/* Filter */}
-          <span className="flex items-center appsNavRightFilterIcon cursor-pointer shadow-lg">
-            <IoFilterSharp />
-            <span className="responsiveTitleHide">Filter</span>
-          </span>
-        </div>
-      </div>
+      <CallsHead heading="Apps Notifications" placeholder="Search Notes" />
 
       {/* ====== NOTIFICATION ====== */}
 
-      <section className="browserContainer flex flex-col">
+      <section className="md:browserContainer flex flex-col md:my-8">
         {/* Browser Header */}
-        <div className="browserHeader appnotificationheader border-2 border-b-0 rounded-t-lg border-slate-300 flex justify-between">
+        <div className="browserHeader appnotificationheader md:border-2 md:border-b-0 md:rounded-t-lg border-slate-300 flex justify-between border-t">
           <h3 className="font-semibold text-lg">
             Hide Notifications (All apps)
           </h3>
 
-          <img src={switchIcon} />
+          <Checkbox />
         </div>
 
         {/* Browser Header */}
         <div className="browseHistoryCon flex flex-col">
-          <div className="browseHistoryCol flex ">
+          <div className="browseHistoryCol  flex ">
+            <div className="browseHistoryDes notificationappdesicon flex flex-col">
+              <h3 className="flex align-middle items-center font-semibold">
+                <span className="mr-3 w-10 ms-2 ">
+                  <img src={yt} />
+                </span>
+                Youtube
+              </h3>
+            </div>
+            <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
+              <Checkbox />
+            </div>
+          </div>
+          <div className="browseHistoryCol  flex ">
+            <div className="browseHistoryDes notificationappdesicon flex flex-col">
+              <h3 className="flex align-middle items-center font-semibold">
+                <span className="mr-3 w-10 ms-2">
+                  <img src={crome} className="h-10" />
+                </span>
+                Chrome
+              </h3>
+            </div>
+            <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
+              <Checkbox />
+            </div>
+          </div>
+          <div className="browseHistoryCol  flex ">
+            <div className="browseHistoryDes notificationappdesicon flex flex-col">
+              <h3 className="flex align-middle items-center font-semibold">
+                <span className="mr-3 w-10 ms-2">
+                  <img src={fb} className="h-10" />
+                </span>
+                Facebook
+              </h3>
+            </div>
+            <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
+              <Checkbox />
+            </div>
+          </div>
+          <div className="browseHistoryCol  flex ">
+            <div className="browseHistoryDes notificationappdesicon flex flex-col">
+              <h3 className="flex align-middle items-center font-semibold">
+                <span className="mr-3 w-10 ms-2">
+                  <img src={msgngr} />
+                </span>
+                Messenger
+              </h3>
+            </div>
+            <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
+              <Checkbox />
+            </div>
+          </div>
+          <div className="browseHistoryCol  flex ">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
                 <span className="mr-3">
-                  <img src={snapchaticon} />
+                  <img src={snapchaticon} className="h-10" />
                 </span>
                 Snapchat
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
-              <img src={switchIcon} />
+              <Checkbox />
             </div>
           </div>
 
@@ -100,13 +122,13 @@ const Appsnotification = () => {
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
                 <span className="mr-3">
-                  <img src={telegramiconIcon} />
+                  <img src={telegramiconIcon} className="h-10" />
                 </span>
                 Telegram
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
-              <img src={switchIcon} />
+              <Checkbox />
             </div>
           </div>
 
@@ -114,13 +136,13 @@ const Appsnotification = () => {
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
                 <span className="mr-3">
-                  <img src={tiktokicon} />
+                  <img src={tiktokicon} className="h-10" />
                 </span>
                 Tiktok
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
-              <img src={switchIcon} />
+              <Checkbox />
             </div>
           </div>
 
@@ -128,13 +150,13 @@ const Appsnotification = () => {
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
                 <span className="mr-3">
-                  <img src={tindericon} />{" "}
+                  <img src={tindericon} className="h-10" />{" "}
                 </span>
                 Tinder
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
-              <img src={switchIcon} />
+              <Checkbox />
             </div>
           </div>
 
@@ -142,13 +164,13 @@ const Appsnotification = () => {
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold ">
                 <span className="mr-3">
-                  <img src={twittericon} />{" "}
+                  <img src={twittericon} className="h-10" />{" "}
                 </span>
                 Twitter
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
-              <img src={switchIcon} />
+              <Checkbox />
             </div>
           </div>
         </div>

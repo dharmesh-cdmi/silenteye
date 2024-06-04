@@ -1,79 +1,139 @@
 import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx";
 import BrowserHead from "../../components/BrowserHead/BrowserHead.js";
 
-import { FaApple,FaFacebook,FaWhatsapp } from "react-icons/fa";
+import { FaApple, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import fb from "../../assests/images/fb.png";
+import whatsapp from "../../assests/images/KeyLogger/whatsapp.png";
+import apple from "../../assests/images/apple2.png";
+import cmath from "../../assests/images/cymath2.png";
+import robo from "../../assests/images/robo2.png";
+import buzz from "../../assests/images/SocialApps/SilentEye-DemoDashboard/17.Browser/image 5-1.png";
+import yahoo from "../../assests/images//SocialApps/SilentEye-DemoDashboard/17.Browser/image 5.png";
 
 import "./Browser.css";
+import CallsHead from "../../components/Calls/CallsHead.jsx";
 
 const BrowseHistory = () => {
+  const RecentBrowserHistory = [
+    {
+      img: apple,
+      name: "Apple ",
+      des: "https://www.apple.com",
+      time: "9:10 AM",
+    },
+    {
+      img: fb,
+      name: "Facebook ",
+      des: "https://www.facebook.com",
+      time: "9:10 AM",
+    },
+    {
+      img: whatsapp,
+      name: "WhatsApp ",
+      des: "https://www.web.whatsapp.com",
+      time: "9:10 AM",
+    },
+    {
+      img: robo,
+      name: "Roblox ",
+      des: "https://www.roblox.com",
+      time: "9:10 AM",
+    },
+    {
+      img: cmath,
+      name: "C Cymath ",
+      des: "https://www.cymath.com",
+      time: "9:10 AM",
+    },
+  ];
+  const RecentBrowserHistory2 = [
+    {
+      img: yahoo,
+      name: "Yahoo ",
+      des: "https://www.yahoo.com",
+      time: "9:10 AM",
+    },
+    {
+      img: buzz,
+      name: "BuzzFeed ",
+      des: "https://www.buzzfeed.com",
+      time: "9:10 AM",
+    },
+    {
+      img: whatsapp,
+      name: "WhatsApp ",
+      des: "https://www.web.whatsapp.com",
+      time: "9:10 AM",
+    },
+    {
+      img: robo,
+      name: "Roblox ",
+      des: "https://www.roblox.com",
+      time: "9:10 AM",
+    },
+    {
+      img: cmath,
+      name: "C Cymath ",
+      des: "https://www.cymath.com",
+      time: "9:10 AM",
+    },
+  ];
   return (
     <>
-      <BrowserHead />
-
-      <section className="browserContainer flex flex-col">
-        <div className="browseHistoryCon flex flex-col">
+      <CallsHead heading="Browser History" placeholder="Search " />
+      <section className="browserContainer md:p-4  flex flex-col md:my-6">
+        <div className="browseHistoryCon md:rounded-lg flex flex-col">
           <h3 className="border-b-2 w-full p-3 text-sm text-slate-500">
             Today, 12 Jan 2024
           </h3>
+          <div className="w-full ">
+            {RecentBrowserHistory.map((info, i) => (
+              <div className="border-b border-slate-300 px-2">
+                <ul key={i} className="flex ">
+                  <li className="flex-none w-6 pt-2 border-none">
+                    <img className="w-5 h-5 " src={info.img} alt="logo" />
+                  </li>
+                  <li className="p-1 flex-1 w-64 font-semibold text-lg md:text-xl text-gray-900 border-none">
+                    <div>{info.name.slice(0, 25)}</div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-medium md:font-semibold text-sm border-none">
+                    {info.time}
+                  </li>
+                </ul>
 
-          <div className="browseHistoryCol  flex">
-            <div className="browseHistoryDes flex flex-col">
-              <h3 className="font-bold text-md flex">
-                <span className="mr-1">
-                  <FaApple />
-                </span>
-                Apple
-              </h3>
-              <p className="text-sm text-slate-500">https://www.apple.com</p>
-            </div>
-            <div className="browseHistoryDate flex flex-col">
-              <p className="text-sm text-slate-500">09:10 AM</p>
-            </div>
-          </div>
-          <div className="browseHistoryCol flex">
-            <div className="browseHistoryDes flex flex-col">
-              <h3 className="font-semibold text-md flex">
-                <span className="mr-1">
-                  <FaFacebook />
-                </span>
-                Facebook
-              </h3>
-              <p className="text-sm text-slate-500">https://www.apple.com</p>
-            </div>
-            <div className="browseHistoryDate flex flex-col">
-              <p className="text-sm text-slate-500">09:10 AM</p>
-            </div>
-          </div>
-          <div className="browseHistoryCol flex ">
-            <div className="browseHistoryDes flex flex-col">
-              <h3 className="font-semibold text-md flex">
-                <span className="mr-1">
-                  <FaWhatsapp />
-                </span>
-                Whatsapp
-              </h3>
-              <p className="text-sm text-slate-500">https://www.apple.com</p>
-            </div>
-            <div className="browseHistoryDate flex flex-col">
-              <p className="text-sm text-slate-500">09:10 AM</p>
-            </div>
-          </div>
-          <div className="browseHistoryCol flex ">
-            <div className="browseHistoryDes ">
-              <h3 className="font-semibold text-md flex">
-                <span className="mr-1">
-                  <FaApple />
-                </span>
-                Roblox
-              </h3>
-              <p className="text-sm text-slate-500">https://www.apple.com</p>
-            </div>
-            <div className="browseHistoryDate flex flex-col">
-              <p className="text-sm text-slate-500">09:10 AM</p>
-            </div>
+                <p className="text-sm pb-2 text-gray-400">{info.des}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+      <section className="browserContainer md:p-4 mt-6 flex flex-col md:my-6">
+        <div className="browseHistoryCon md:rounded-lg flex flex-col">
+          <h3 className="border-b-2 w-full p-3 text-sm text-slate-500">
+            Monday , 20 May 2024
+          </h3>
+          <div className="w-full ">
+            {RecentBrowserHistory2.map((info, i) => (
+              <div className="border-b md:border-slate-300 px-2">
+                <ul key={i} className="flex ">
+                  <li className="flex-none w-6 pt-2 border-none">
+                    <img className="w-5 h-5 " src={info.img} alt="logo" />
+                  </li>
+                  <li className="p-1 flex-1 w-64 font-semibold text-lg md:text-xl text-gray-900 border-none">
+                    <div>{info.name.slice(0, 25)}</div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-medium md:font-semibold text-sm border-none">
+                    {info.time}
+                  </li>
+                </ul>
+
+                <p className="text-sm pb-2 text-gray-400">{info.des}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ExportBtn />
     </>
   );

@@ -1,80 +1,145 @@
-import { Link } from 'react-router-dom';
-import "../Browser/ScreenTime.css"
-import "../../components/AppsRoutesHeader/AppsRoutesHeader.css"
+import { Link } from "react-router-dom";
+import "../Browser/ScreenTime.css";
+import "../../components/AppsRoutesHeader/AppsRoutesHeader.css";
+import YT from "../../assests/images/yt.png";
+import crome from "../../assests/images/crome.png";
+import mgngr from "../../assests/images/msgngr.png";
+import fb from "../../assests/images/fb.png";
 
-import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx"
+import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx";
 
 import { IoAddOutline } from "react-icons/io5";
 
-import ScreenTimeImage from "../Browser/screenTime.png"
-import DataUsageImage from "../Browser/appUsage.png"
+import ScreenTimeImage from "../Browser/screenTime.png";
+import DataUsageImage from "../Browser/appUsage.png";
 
 import { IoFilterSharp } from "react-icons/io5";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { TbFileExport } from "react-icons/tb";
 import { IoIosSearch } from "react-icons/io";
 
-import Modal from '../../components/Shared/Modal.jsx';
-import Upgrade from '../../components/Shared/Upgrade.jsx';
+import Modal from "../../components/Shared/Modal.jsx";
+import Upgrade from "../../components/Shared/Upgrade.jsx";
+import CallsHead from "../../components/Calls/CallsHead.jsx";
+import InfoCard from "../../components/Cards/InfoCard";
+import graph from "../../assests/images/graph2.png";
 
-const Appsscreentime =()=>{
-  return(
+const Appsscreentime = () => {
+  const MostUsedApp = [
+    {
+      img: YT,
+      name: "Youtube",
+      bar: "70%",
+      time: "10m",
+    },
+    {
+      img: crome,
+      name: "Chrome",
+      bar: "55%",
+      time: "9m",
+    },
+    {
+      img: fb,
+      name: "Facebook",
+      bar: "40%",
+      time: "8m",
+    },
+    {
+      img: mgngr,
+      name: "Messenger",
+      bar: "35%",
+      time: "7m",
+    },
+  ];
+  return (
     <>
-  {/* Navigations, search*/}
-      <div className="Apps-nav flex justify-between align-middle">
-        {/* nav left*/}
-        <div className="Apps-nav-left flex justify-center align-bottom">
-          <button className="notNavLeftIcon shadow-lg">
-            <FaArrowLeftLong />
-          </button>
-          <span>Apps</span>
+      {/* Navigations, search*/}
+      <CallsHead
+        heading="Screen Time"
+        // placeholder="Search by Name or Phone Number"
+      />
+      <hr class="h-px mb-2 md:hidden bg-gray-200 border-0 dark:bg-gray-700" />
+      <div className="grid grid-cols-1 md:grid-cols-1 md:my-8 lg:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
+        <div className="border border-slate-300 rounded-lg p-4 mb-5 md:mb-0">
+          <h4 className="text-gray-400 text-lg font-normal">
+            App Usage : Daily Average
+          </h4>
+          <div className="flex justify-between">
+            <h1 className="text-2xl font-bold">7h 24m</h1>
+            <p className="text-gray-400">18% from last week</p>
+          </div>
+          <div>
+            <img src={graph} alt="graph" />
+          </div>
+          <div className="flex justify-between">
+            <div>
+              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-blue-500">
+                Productivity & Finance
+              </h1>
+              <h1 className=" lg:text-xl md:text-lg text-base font-medium">
+                10h 49m
+              </h1>
+            </div>
+            <div>
+              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-cyan-600">
+                Other
+              </h1>
+              <h1 className=" lg:text-xl md:text-lg text-base font-medium ">
+                8h 32m
+              </h1>
+            </div>
+            <div>
+              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-orange-700">
+                Social
+              </h1>
+              <h1 className=" lg:text-xl md:text-lg text-base font-medium ">
+                5h 44m
+              </h1>
+            </div>
+          </div>
         </div>
-
-        {/* nav right*/}
-        <div className="Apps-nav-right flex justify-center items-center p-4">
-          {/* Search */}
-          <span className="flex items-center appsNavRightSearch cursor-pointer shadow-lg">
-            <IoIosSearch />
-            <input type="text" placeholder="Search Apps" />
-          </span>
-
-          {/* Export */}
-          <Modal>
-           <Modal.Toggle toggleName="Upgrade">
-      <span className="flex items-center LocationNavRightExportIcon cursor-pointer shadow-lg ">
-        <TbFileExport />
-        <span className="responsiveTitleHide">Export</span>
-      </span>
-         </Modal.Toggle>
-          <Modal.Window windowName="Upgrade">
-            <Upgrade />
-          </Modal.Window>
-          </Modal>
-
-          {/* Filter */}
-          <span className="flex items-center appsNavRightFilterIcon cursor-pointer shadow-lg">
-            <IoFilterSharp />
-            <span className="responsiveTitleHide">Filter</span>
-          </span>
-        </div>
+        <hr class="h-px mb-2 md:hidden bg-gray-200 border-0 dark:bg-gray-700" />
+        <InfoCard
+          title="Recent Most Used Apps"
+          titleRight={
+            <p className="text-blue-400 hidden md:block">
+              <Link to="/Apps/screentime">See All</Link>{" "}
+            </p>
+          }
+          className="mb-5 md:mb-0"
+        >
+          <div className="rounded-lgs md:p-2 md:bg-gray-50">
+            {MostUsedApp.map((info, i) => (
+              <div className="border-b border-slate-300">
+                <ul key={i} className="flex  mb-2">
+                  <li className="flex-none w-14 pt-2 border-none">
+                    <img
+                      className="w-10 h-10  m-auto"
+                      src={info.img}
+                      alt="logo"
+                    />
+                  </li>
+                  <li className="p-1 flex-1 w-64 font-semibold text-xl mt-2 text-gray-900 border-none">
+                    <div>{info.name}</div>
+                  </li>
+                  <li className="p-1 text-[16px] md:text-[18px] text-gray-400 font-medium md:font-semibold pt-4 border-none">
+                    {info.time}
+                  </li>
+                </ul>
+                <div className="w-full  rounded-full h-1.5 mb-2  mx-2">
+                  <div
+                    className="bg-gray-300 h-1.5 rounded-full "
+                    style={{ width: info.bar }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </InfoCard>
       </div>
-    
-    <section className="screenTimeWrapper flex">
-    {/* LEFT SECTION */}
-    <div className="screenTimeLeft flex">
-    <img src={ScreenTimeImage} />
-    </div>
-    
-    {/* RIGHT SECTION */}
-    <div className="screenTimeRight flex flex-col">
-    <h3>Recent Most Used Apps</h3>
-    <img src={DataUsageImage} />
-    </div>
-    
-    </section>
-    <ExportBtn />
+      <ExportBtn />
     </>
-    )
-}
+  );
+};
 
 export default Appsscreentime;

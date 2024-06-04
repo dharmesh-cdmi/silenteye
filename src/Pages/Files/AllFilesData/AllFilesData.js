@@ -8,45 +8,37 @@ export const AllFilesData = [
     id: 1,
     title: "Cloud",
     size: "120 items",
-    icon: <img src={file1} alt="Cloud" />,
+    icon: file1,
   },
   {
     id: 2,
     title: "Files",
     size: "20 items",
-    icon: <img src={file1} alt="Files" />,
+    icon: file1,
   },
-  {
-    id: 3,
-    title: "Download",
-    size: "29 items",
-    icon: <img src={file1} alt="Download" />,
-  },
+
   {
     id: 4,
     title: "Docs",
     size: "229 items",
-    icon: <img src={file1} alt="Docs" />,
+    icon: file1,
   },
   {
     id: 5,
     title: "Documents",
     size: "95 items",
-    icon: <img src={file1} alt="Documents" />,
+    icon: file1,
   },
   {
     id: 6,
     title: "Images",
     size: "50 items",
-    icon: <img src={file1} alt="Images" />,
+    icon: file1,
   },
   {
     id: 7,
     title: "Images",
     size: "50 items",
-    icon: <img src={file1} alt="Images" />,
+    icon: file1,
   },
-
-
-
 ];

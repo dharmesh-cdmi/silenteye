@@ -295,7 +295,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Login & Passwords",
-          link: false,
+          link: "loginandpassword",
         },
       ],
     },
@@ -377,7 +377,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "Wifi Logger",
-          link: false,
+          link: "wifilogger",
         },
       ],
     },
