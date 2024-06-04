@@ -15,7 +15,6 @@ function VideosMain() {
   return (
     <Card>
      <CallsHead heading={"Videos"} placeholder={"Search Videos"} />
-
       <Gallery />
       <Modal>
         <Modal.Toggle toggleName="Update">

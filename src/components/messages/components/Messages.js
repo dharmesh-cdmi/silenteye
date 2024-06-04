@@ -65,6 +65,7 @@ function Messages() {
   };
   return (
     <>
+    <div className="lg:hidden">
       <div className="grid lg:grid-cols-2 grid-cols-1 rounded-lg lg:border-2 border-t lg:mx-0 mx-0  border-gray-200 lg:mt-10 mt-2">
         {!isConvo && (
           <div className="">
@@ -110,6 +111,54 @@ function Messages() {
           </div>
         )}
       </div>
+    </div>
+    <div className="lg:block hidden">
+      <div className="grid lg:grid-cols-2 grid-cols-1 rounded-lg lg:border-2 border-t lg:mx-0 mx-0  border-gray-200 lg:mt-10 mt-2">
+        {  (
+          <div className="">
+            <p className="py-4 ps-3 font-semibold lg:border-b-2 border-0 ">
+              Recent Messages
+            </p>
+            {msgData.map((msg, index) => {
+              return <Tabs msg={msg}  />;
+            })}
+          </div>
+        )}
+        { (
+          <div className="lg:border-l-2 border-0">
+            <div className="border-b-2 flex py-3 ps-3 align-middle  ">
+              <img className="h-10 w-10 rounded-full mt-2 " src={imgg}></img>
+              <div className="ml-3">
+                <h3 className="font-bold text-xl text-nowrap ">Riyah Zoik</h3>
+                <p className="text-slate-500 text-nowrap">(480) 555-0109</p>
+              </div>
+              <div className="flex justify-end align-middle lg:ml-52 ml-32 mt-2">
+                <Modal>
+                  <Modal.Toggle toggleName="Update">
+                    <img
+                      src={man}
+                      className="h-8 w-8 mr-3 cursor-pointer border rounded-lg p-2 shadow-[0px_0px_56px_0px_#00000014]   "
+                      onClick={() => setModal(true)}
+                    ></img>
+                  </Modal.Toggle>
+                  <Modal.Toggle toggleName="Update">
+                    <img
+                      src={delet}
+                      className="h-8 w-8 mr-3 cursor-pointer border rounded-lg p-2 shadow-[0px_0px_56px_0px_#00000014]"
+                      onClick={() => setModal(true)}
+                    ></img>
+                  </Modal.Toggle>
+                  <Modal.Window windowName="Update">
+                    <Upgrade />
+                  </Modal.Window>
+                </Modal>
+              </div>
+            </div>
+            <Convo />
+          </div>
+        )}
+      </div>
+    </div>
     </>
   );
 }
