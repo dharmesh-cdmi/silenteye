@@ -132,7 +132,7 @@ function Messages() {
                 <h3 className="font-bold text-xl text-nowrap ">Riyah Zoik</h3>
                 <p className="text-slate-500 text-nowrap">(480) 555-0109</p>
               </div>
-              <div className="flex justify-end align-middle lg:ml-52 ml-32 mt-2">
+              <div className="flex justify-end align-middle lg:ml-52 xl:ml-64 ml-32 mt-2">
                 <Modal>
                   <Modal.Toggle toggleName="Update">
                     <img

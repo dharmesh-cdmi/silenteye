@@ -51,7 +51,7 @@ function Gallery() {
   ];
   return (
     <div className="lg:mt-10 mt-0">
-      <p className="pt-6 lg:py-7 text-gray-500 text-center text-xs">Today 8:02 AM</p>
+      <p className="pt-6 lg:py-7 lg:border-0 border-t text-gray-500 text-center text-xs">Today 8:02 AM</p>
 
       <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:ms-0 ms-2.5 lg:mx-5 mx-0 lg:mt-10 mt-5 ">
         {imgs.map((img, index) => {

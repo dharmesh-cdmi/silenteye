@@ -11,7 +11,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 function Tabs() {
   return (
-    <div className="lg:mx-4 mx-0 lg:mt-10 mt-3">
+    <div className="lg:mx-4 mx-0 lg:mt-10 mt-1">
       <section className="grid lg:grid-cols-4 grid-cols-1 lg:border-2 border-0 border-gray-50 rounded-xl ">
         <div className="py-3 px-2 lg:border border-b border-t">
           <div className="flex justify-between align-middle">

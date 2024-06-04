@@ -56,15 +56,9 @@ function Gallery() {
           ></div>
 
           <div className="">
-            <FaChevronLeft
-              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full lg:left-28 left-2 lg:top-2/4 top-1/3"
-              
-            />
-            <FaChevronRight
-              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full lg:right-28 right-3 lg:top-2/4 top-1/3"
-            />
+        
             <RxCross2
-              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full lg:right-28 right-10 cursor-pointer lg:top-24 top-10"
+              className="bg-gray-300 absolute h-12 w-12  p-2  z-50  rounded-full lg:right-36 right-10 cursor-pointer lg:top-16 top-10"
               onClick={() => {
                 setBackdrop(false);
               }}
@@ -72,7 +66,7 @@ function Gallery() {
 
             <img
               src={vi}
-              className=" absolute h-96 lg:w-3/4 lg:left-2/4 -translate-x-1/2  left-10 mx-auto z-30 rounded-none top-32 "
+              className=" absolute lg:h-full h-2/4 lg:w-full w-full lg:left-2/4 -translate-x-1/2  left-2/4 mx-auto z-30 rounded-none top-2/4 -translate-y-1/2 "
               style={{ opacity: 1 }} // Ensure full opacity for the image
               alt="Detailed View"
             />
