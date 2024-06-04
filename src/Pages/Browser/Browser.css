@@ -1,5 +1,5 @@
 .browserContainer{
-  padding: 1rem;
+ 
   align-items: center;
 }
 .browserHeader{
@@ -19,7 +19,7 @@
   width: 100%;
   align-items: center;
   border: 1.5px solid #d0d4dd;
-  border-radius: 8px;
+  
 }
 .browseHistoryCol{
   width: 100%;

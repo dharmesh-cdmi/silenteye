@@ -32,121 +32,120 @@ export const AllAppsData = [
     id: 1,
     title: "Blogger",
     size: "10 MB",
-    icon: <img src={bloggericon} alt="Blogger" />,
+    icon: bloggericon,
   },
   {
     id: 2,
     title: "Calendar",
     size: "15 MB",
-    icon: <img src={calendaricon} alt="Calendar" />,
+    icon: calendaricon,
   },
- {
+  {
     id: 3,
     title: "Chrome",
     size: "20 MB",
-    icon: <img src={chromeicon} alt="Chrome" />,
+    icon: chromeicon,
   },
-   {
+  {
     id: 4,
     title: "Discord",
     size: "25 MB",
-    icon: <img src={discordicon} alt="Discord" />,
+    icon: discordicon,
   },
-   {
+  {
     id: 5,
     title: "Docs",
     size: "30 MB",
-    icon: <img src={docsicon} alt="Docs" />,
+    icon: docsicon,
   },
- {
+  {
     id: 6,
     title: "Drive",
     size: "35 MB",
-    icon: <img src={driveicon} alt="Drive" />,
+    icon: driveicon,
   },
-   {
+  {
     id: 7,
     title: "Facebook",
     size: "40 MB",
-    icon: <img src={facebookicon} alt="Facebook" />,
+    icon: facebookicon,
   },
-   {
+  {
     id: 8,
     title: "Form",
     size: "45 MB",
-    icon: <img src={formicon} alt="Form" />,
+    icon: formicon,
   },
- {
+  {
     id: 9,
     title: "Gmail",
     size: "50 MB",
-    icon: <img src={gmailicon} alt="Gmail" />,
+    icon: gmailicon,
   },
   {
     id: 10,
     title: "Hangout",
     size: "55 MB",
-    icon: <img src={hangouticon} alt="Hangout" />,
+    icon: hangouticon,
   },
-   {
+  {
     id: 11,
     title: "Hangouts",
     size: "60 MB",
-    icon: <img src={hangoutsicon} alt="Hangouts" />,
+    icon: hangoutsicon,
   },
   {
     id: 12,
     title: "Instagram",
     size: "65 MB",
-    icon: <img src={instagramicon} alt="Instagram" />,
+    icon: instagramicon,
   },
   {
     id: 13,
     title: "Keep",
     size: "70 MB",
-    icon: <img src={keepicon} alt="Keep" />,
+    icon: keepicon,
   },
- {
+  {
     id: 14,
     title: "Kik",
     size: "75 MB",
-    icon: <img src={kikicon} alt="Kik" />,
+    icon: kikicon,
   },
   {
     id: 15,
     title: "Lightroom",
     size: "80 MB",
-    icon: <img src={lightroomicon} alt="Lightroom" />,
+    icon: lightroomicon,
   },
   {
     id: 16,
     title: "Line",
     size: "85 MB",
-    icon: <img src={lineicon} alt="Line" />,
+    icon: lineicon,
   },
   {
     id: 17,
     title: "Instagram",
     size: "65 MB",
-    icon: <img src={instagramicon} alt="Instagram" />,
+    icon: instagramicon,
   },
   {
     id: 18,
     title: "Keep",
     size: "70 MB",
-    icon: <img src={keepicon} alt="Keep" />,
+    icon: keepicon,
   },
- {
+  {
     id: 19,
     title: "Kik",
     size: "75 MB",
-    icon: <img src={kikicon} alt="Kik" />,
+    icon: kikicon,
   },
   {
     id: 20,
     title: "Lightroom",
     size: "80 MB",
-    icon: <img src={lightroomicon} alt="Lightroom" />,
+    icon: lightroomicon,
   },
-
-]
+];

@@ -6,22 +6,22 @@ import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx";
 import { IoIosArrowDropright } from "react-icons/io";
 
 import Map from "../../assests/images/map.png";
+import CallsHead from "../../components/Calls/CallsHead.jsx";
 
 const Location = () => {
   return (
     <div className="Location-wrapper">
       <div className="Location-container flex flex-col justify-center align-middle ">
-
         {/*  LIVE LOCATION HEADER */}
         {/* <div className="locationHeader flex justify-center">
     <h3>Live Location</h3>
     <Link to="#">view more</Link>
     </div> */}
-        <LocationHead />
+        <CallsHead heading="Live Location" placeholder="Search " />
 
         {/*  LIVE LOCATION MAP */}
-        <div className="LocationMapCon flex justify-center">
-          <img src={Map} alt={"map"} className="h-full" />
+        <div className=" md:mt-8 flex justify-center ">
+          <img src={Map} alt={"map"} className="h-full " />
           {/* <Link><button className="LocationMapConBtn flex justify-center">Live Tracking <IoIosArrowDropright /></button></Link> */}
         </div>
 

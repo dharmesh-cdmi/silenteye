@@ -50,6 +50,10 @@ import CallProfile from "./Pages/Calls/CallProfile.jsx";
 import ContactProfile, {
   BlockedContactProfile,
 } from "./Pages/Contacts/ContactProfile.jsx";
+import NotesProfile from "./Pages/Notes/NotesProfile.jsx";
+import LoginAndPassword from "./Pages/Apps/LoginAndPassword.jsx";
+import WifiLogger from "./Pages/Location/WifiLogger.jsx";
+import AppInformation from "./Pages/Apps/AppInformation.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -248,6 +252,10 @@ function App() {
           element: <BlockedApp />,
         },
         {
+          path: "/apps/loginandpassword",
+          element: <LoginAndPassword />,
+        },
+        {
           path: "/location",
           element: <Location />,
         },
@@ -266,8 +274,16 @@ function App() {
           element: <GeoFence />,
         },
         {
+          path: "/location/wifilogger",
+          element: <WifiLogger />,
+        },
+        {
           path: "/notes",
           element: <Notes />,
+        },
+        {
+          path: "/notesprofile",
+          element: <NotesProfile />,
         },
 
         {
@@ -310,6 +326,10 @@ function App() {
         {
           path: "/apps/screentime",
           element: <Appsscreentime />,
+        },
+        {
+          path: "/apps/appinformation",
+          element: <AppInformation />,
         },
       ],
     },
