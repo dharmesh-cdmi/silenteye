@@ -1,10 +1,12 @@
 import React from "react";
 import Switch from "../../../UI/Switch";
 import { AiOutlineDownload } from "react-icons/ai";
+import { MdOutlineFileUpload } from "react-icons/md";
+
 
 function Tabs() {
   return (
-    <div className="lg:mx-4 mx-0 lg:mt-10 mt-0">
+    <div className="lg:mx-4 mx-0 lg:mt-10 mt-4 lg:border-0 border-t">
       <section className="grid lg:grid-cols-4 grid-cols-1 lg:border-2 border-0 border-gray-50 rounded-xl ">
         <div className="py-2 px-2 lg:border border-b ">
           <div className="flex justify-between align-middle">
@@ -42,7 +44,7 @@ function Tabs() {
             <div className="flex flex-col">
               <div className="flex ">
                 <AiOutlineDownload className="h-6 w-6" />
-                <h3 className="font-semibold text-md">Uploaded</h3>
+                <h3 className="font-semibold text-md">Downloaded</h3>
               </div>
               <p className=" text-sm">
                 130.77 GB{" "}
@@ -56,8 +58,8 @@ function Tabs() {
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex ">
-                <AiOutlineDownload className="h-6 w-6" />
-                <h3 className="font-semibold text-md">Downloaded</h3>
+                <MdOutlineFileUpload className="h-6 w-6" />
+                <h3 className="font-semibold text-md">Uploaded</h3>
               </div>
               <p className=" text-sm">
                 130.77 GB{" "}

@@ -18,7 +18,7 @@ function Gallery() {
   return (
     <div className="mt-10 lg:mx-4 mx-0">
       <p className="lg:p-4 p-1 text-gray-500 text-md">My Albums</p>
-      <div className="grid lg:grid-cols-5 grid-cols-2 gap-6 lg:mx-0  lg:mt-10 mt-5">
+      <div className="grid lg:grid-cols-5 grid-cols-2 gap-6 lg:mx-0 ms-2.5 lg:ms-0  lg:mt-10 mt-5">
         {albums.map((album, index) => {
           return (
             <div className="flex flex-col justify-center" key={index}>
@@ -35,7 +35,7 @@ function Gallery() {
         })}
       </div>
       <p className="p-4 text-gray-600 mt-7 text-md ">Media Types</p>
-      <div className="grid lg:grid-cols-5 grid-cols-2 gap-5 lg:mx-10 lg:mt-10 mt-5">
+      <div className="grid lg:grid-cols-5 grid-cols-2 gap-6 ms-2.5 lg:ms-0  lg:mx-0 lg:mt-10 mt-5">
         {albums.splice(3).map((album, index) => {
           return (
             <div className="flex flex-col justify-center" key={index}>
@@ -51,13 +51,7 @@ function Gallery() {
           );
         })}
       </div>
-      <button
-        type="button"
-        className="text-gray-900 gap-2   bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mb-2 mx-auto"
-      >
-        <MdKeyboardDoubleArrowDown size={30} />
-        View More
-      </button>
+   
     </div>
   );
 }

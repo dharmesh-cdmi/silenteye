@@ -27,26 +27,27 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 function Gallery() {
   const [backdrop, setBackdrop] = useState(false);
+  const [idx,setIdx]=useState('')
   const imgs = [
-    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph1, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph3, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph4, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph5, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph21, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph22, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph23, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph24, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph25, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph26, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph27, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph1, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph29, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph3, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph4, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph5, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ph1, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB",id:1 },
+    { img: ph1, name: "nature-3076878.jpg", desc: "20.052024-422.64 KB",id:2 },
+    { img: ph2, name: "nature-3076879.jpg", desc: "20.052024-422.64 KB",id:3 },
+    { img: ph3, name: "nature-3076880.jpg", desc: "20.052024-422.64 KB",id:4 },
+    { img: ph4, name: "nature-3076881.jpg", desc: "20.052024-422.64 KB",id:5 },
+    { img: ph5, name: "nature-3076882.jpg", desc: "20.052024-422.64 KB",id:6 },
+    { img: ph21, name: "nature-3076883.jpg", desc: "20.052024-422.64 KB",id:7 },
+    { img: ph22, name: "nature-3076884.jpg", desc: "20.052024-422.64 KB",id:8 },
+    { img: ph23, name: "nature-3076885.jpg", desc: "20.052024-422.64 KB",id:9 },
+    { img: ph24, name: "nature-3076886.jpg", desc: "20.052024-422.64 KB",id:10 },
+    { img: ph25, name: "nature-3076887.jpg", desc: "20.052024-422.64 KB",id:11 },
+    { img: ph26, name: "nature-3076888.jpg", desc: "20.052024-422.64 KB",id:12 },
+    { img: ph27, name: "nature-3076889.jpg", desc: "20.052024-422.64 KB",id:13 },
+    { img: ph1, name: "nature-3076890.jpg", desc: "20.052024-422.64 KB",id:14 },
+    { img: ph29, name: "nature-3076891.jpg", desc: "20.052024-422.64 KB",id:15 },
+    { img: ph3, name: "nature-3076892.jpg", desc: "20.052024-422.64 KB",id:15 },
+    { img: ph4, name: "nature-3076893.jpg", desc: "20.052024-422.64 KB",id:16 },
+    { img: ph5, name: "nature-3076894.jpg", desc: "20.052024-422.64 KB",id:17 },
+    { img: ph1, name: "nature-3076895.jpg", desc: "20.052024-422.64 KB",id:18 },
   ];
   return (
     <>
@@ -62,34 +63,32 @@ function Gallery() {
 
           <div className="">
             <FaChevronLeft
-              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full left-1/4"
-              style={{ top: "21rem" }}
+              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full lg:left-1/4 left-2 lg:top-2/4 top-1/3"
+              
             />
             <FaChevronRight
-              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full right-1/4"
-              style={{ top: "21rem" }}
+              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full lg:right-1/4 right-3 lg:top-2/4 top-1/3"
             />
             <RxCross2
-              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full right-36 cursor-pointer"
-              style={{ top: "7rem" }}
+              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full lg:right-36 right-10 cursor-pointer lg:top-24 top-10"
               onClick={() => {
                 setBackdrop(false);
               }}
             />
 
             <img
-              src={img}
-              className=" absolute h-72 lg:w-1/3 lg:left-1/3 left-10 mx-auto z-30 rounded-none"
+              src={idx}
+              className=" absolute h-72 lg:w-1/3 lg:left-1/3 left-10 mx-auto z-30 rounded-none "
               style={{ opacity: 1 }} // Ensure full opacity for the image
               alt="Detailed View"
             />
           </div>
         </>
       )}
-      <p className="lg:py-7 pt-6 text-gray-500 text-center text-xs">
+      <p className="lg:py-7 pt-6 text-gray-500 text-center text-xs border-t lg:border-0 mt-2">
         Yesterday 8:02 AM
       </p>
-      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-2 mx-0 lg:mt-10 mt-5">
+      <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-2 mx-0 lg:ms-0 ms-2.5 lg:mt-10 mt-5">
         {imgs.map((img, index) => {
           return (
             <div
@@ -97,6 +96,7 @@ function Gallery() {
               key={index}
               onClick={() => {
                 setBackdrop(true);
+                setIdx(img.img)
               }}
             >
               <img

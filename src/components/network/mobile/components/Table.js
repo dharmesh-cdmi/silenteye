@@ -25,7 +25,7 @@ function Table() {
     { name: "wikipedia.org", data: "898 Mb", img: crome },
   ];
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:mx-4 mx-0 lg:border-2 border-0 border-b-0 rounded-lg mt-7">
+    <div className="grid lg:grid-cols-2 grid-cols-1 lg:mx-4 mx-0 lg:border-2 border-0 border-b-0 rounded-lg mt-2 lg:mt-7">
       <div className="lg:border-r-2 border-r-0 border-b-2   ">
         <p className="text-2xl font-bold pt-3 px-3">
           1.42 GB
@@ -52,7 +52,7 @@ function Table() {
           );
         })}
       </div>
-      <div className="  border-b-2 ">
+      <div className="  border-b-2 lg:grid hidden ">
         <p className="text-2xl font-bold pt-3 px-3">
           702 MB
           <span className=" ml-2 text-lg">of Website Data used</span>
