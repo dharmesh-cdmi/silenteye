@@ -14,7 +14,7 @@ import { TiTick } from "react-icons/ti";
 
 function Tabs() {
   return (
-    <div className="lg:mx-4 mx-0 lg:mt-10 mt-4 border-t">
+    <div className="lg:mx-4 mx-0 lg:mt-10 mt-1 border-t">
       <section className="grid lg:grid-cols-4 grid-cols-1 border-0 lg:border-2 border-gray-50 rounded-xl ">
         <div className="py-2 px-2 lg:border-r-2 lg:border-b-2 border-b">
           <div className="flex justify-between align-middle">

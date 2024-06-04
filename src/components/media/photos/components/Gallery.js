@@ -63,11 +63,11 @@ function Gallery() {
 
           <div className="">
             <FaChevronLeft
-              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full lg:left-1/4 left-2 lg:top-2/4 top-1/3"
+              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full lg:left-1/4 left-2 lg:top-2/4 top-2/4"
               
             />
             <FaChevronRight
-              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full lg:right-1/4 right-3 lg:top-2/4 top-1/3"
+              className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full lg:right-1/4 right-3 lg:top-2/4 top-2/4"
             />
             <RxCross2
               className="bg-gray-300 absolute h-8 w-8  p-2  z-50  rounded-full lg:right-36 right-10 cursor-pointer lg:top-24 top-10"
@@ -78,7 +78,7 @@ function Gallery() {
 
             <img
               src={idx}
-              className=" absolute h-72 lg:w-1/3 lg:left-1/3 left-10 mx-auto z-30 rounded-none "
+              className=" absolute h-72 lg:w-1/3 w-2/3 top-1/2 -translate-y-1/2   lg:left-1/3 left-1/2 -translate-x-1/2 mx-auto z-30 rounded-none "
               style={{ opacity: 1 }} // Ensure full opacity for the image
               alt="Detailed View"
             />
