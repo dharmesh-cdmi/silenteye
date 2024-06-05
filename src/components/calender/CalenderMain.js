@@ -11,10 +11,10 @@ function CalenderMain() {
   };
   return (
     <Card>
-      <CallsHead heading={"Calendar"} placeholder="Search" />
       <div className="md:hidden block">
-        <Header data={headerData} />
+        <CallsHead heading={"May 2022"} placeholder="Search" />
       </div>
+      <Header heading="May,2022" data={headerData} />
       <Matrix />
     </Card>
   );
