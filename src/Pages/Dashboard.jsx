@@ -47,6 +47,7 @@ import Modal from "../components/Shared/Modal";
 import Upgrade from "../components/Shared/Upgrade";
 import Button from "../components/Shared/Button";
 import { Link } from "react-router-dom";
+import { PiGreaterThanBold } from "react-icons/pi";
 
 const Dashboard = () => {
   const [autoRenew, setAutoReNew] = useState(true);
@@ -343,7 +344,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className="md:hidden border-b mx-2 mb-2 rounded-lg  bg-gray-50 mt-20">
+      <div className="md:hidden border-b mx-4  mb-2 rounded-lg  bg-gray-50 mt-20">
         <ul
           className="grid grid-cols-2  mb-2 cursor-pointer"
           onClick={handletoggle}
@@ -366,7 +367,7 @@ const Dashboard = () => {
       </div>
       {toggle && (
         <div
-          className="  mx-2  rounded-lg mb-6 cursor-pointer bg-gray-50"
+          className="  mx-4  rounded-lg mb-6 cursor-pointer bg-gray-50"
           onClick={handletoggle}
         >
           <ul className="grid grid-cols-2  liborder ">
@@ -407,7 +408,7 @@ const Dashboard = () => {
         </div>
       )}
 
-      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 md:gap-4 my-8 md:my-2 ">
+      <div className="grid grid-cols-4 mx-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 md:gap-4 my-8 md:my-2 ">
         {DashIcons.map((data, i) => (
           <div
             className="flex items-center justify-center text-center mb-4 md:mb-6"
@@ -432,7 +433,7 @@ const Dashboard = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8  mx:m-0 ">
+      <div className="grid grid-cols-1 mx-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8  md:mx-0 ">
         <InfoCard title="Device Info" className="mb-5 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
@@ -504,7 +505,7 @@ const Dashboard = () => {
         </InfoCard>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-0 mb-8  mx:m-0">
+      <div className="grid grid-cols-1 mx-4 md:grid-cols-1  lg:grid-cols-2 gap-0 mb-8  md:mx-0">
         <InfoCard
           title="Recent Calls"
           titleRight={
@@ -572,7 +573,7 @@ const Dashboard = () => {
                     {info.name}
                   </p>
 
-                  <p className="ps-1 text-gray-400 lg:hidden xl:block text-[17px] weight-[500] ">
+                  <p className="ps-1 text-gray-400 lg:hidden xl:block text-[14px] md:text-[17px] weight-[500] ">
                     {info.msg.slice(0, 38)}..
                   </p>
                   <p className="ps-1 text-gray-400 lg:block hidden xl:hidden 2xl:hidden text-[17px] weight-[500] ">
@@ -587,7 +588,7 @@ const Dashboard = () => {
           ))}
         </InfoCard>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
+      <div className="grid  grid-cols-1 md:grid-cols-1  lg:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
         <div className="border border-slate-300 rounded-lg p-4 mb-5 md:mb-0">
           <h4 className="text-gray-400 text-lg font-normal">
             App Usage : Daily Average
@@ -640,9 +641,9 @@ const Dashboard = () => {
             {MostUsedApp.map((info, i) => (
               <div className="border-b border-slate-300">
                 <ul key={i} className="flex  mb-2">
-                  <li className="flex-none w-14 pt-2 border-none">
+                  <li className="flex-none w-14  pt-[14.4px] md:pt-2 border-none">
                     <img
-                      className="w-10 h-10  m-auto"
+                      className="w-6 h-6 md:h-10 md:w-10 m-auto "
                       src={info.img}
                       alt="logo"
                     />
@@ -650,8 +651,11 @@ const Dashboard = () => {
                   <li className="p-1 flex-1 w-64 font-semibold text-xl mt-2 text-gray-900 border-none">
                     <div>{info.name}</div>
                   </li>
-                  <li className="p-1 text-[16px] md:text-[18px] text-gray-400 font-medium md:font-semibold pt-4 border-none">
-                    {info.time}
+                  <li className="p-1 text-[#172A6E] flex text-[16px] md:text-[18px]  font-medium md:font-semibold pt-4 border-none">
+                    {info.time}&nbsp;
+                    <span className="mt-[6px]">
+                      <PiGreaterThanBold size={15} />
+                    </span>
                   </li>
                 </ul>
                 <div className="w-full  rounded-full h-1.5 mb-2  mx-2">
@@ -665,7 +669,7 @@ const Dashboard = () => {
           </div>
         </InfoCard>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
+      <div className="grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-4 gap-0 mb-8 mx-4 md:mx-0">
         <InfoCard
           title="Recent Alert & Notifications"
           titleRight={
@@ -757,7 +761,7 @@ const Dashboard = () => {
       <div className="flex justify-center mb-12">
         <Modal>
           <Modal.Toggle toggleName="viewMore-keylogger">
-            <Button className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium px-[32px]  py-[10px] text-[#101828] text-center">
+            <Button className="hidden md:block  text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium px-[32px]  py-[10px] text-[#101828] text-center">
               View More
               <MdKeyboardDoubleArrowDown size={18} />
             </Button>
