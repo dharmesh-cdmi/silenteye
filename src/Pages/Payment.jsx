@@ -17,11 +17,11 @@ const Payment = () => {
   };
 
   return (
-    <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
+    <div className="main sm:ps-3 sm:pe-3 sm:pt-0">
       <div className="border-b-[1px]   sm:border-[0px]  border-[#DDDDDD]">
       <Header heading="Saved Payment Methods" />
       </div>
-      <div className="mt-4 mx-4  ">
+      <div className="mt-3 mx-4  ">
         <div className="grid  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:my-10 my-2 gap-4">
           <img src={visa} alt="visa" className="w-full" />
           <img src={green} alt="green" className="w-full" />
