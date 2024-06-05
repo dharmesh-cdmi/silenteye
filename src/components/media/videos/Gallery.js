@@ -76,7 +76,7 @@ function Gallery() {
       <p className=" pt-6 lg:py-7 text-gray-500 text-center text-xs lg:border-0  border-t  ">
         Yesterday 8:02 AM
       </p>
-      <div className="grid lg:grid-cols-6 grid-cols-2 lg:ms-0 ms-2.5 gap-6  lg:mx-2 mx-0 lg:mt-10 mt-5">
+      <div className="grid lg:grid-cols-6 grid-cols-2 lg:ms-0 ms-2.5 gap-6 lg:me-0 me-2.5  lg:mx-2 mx-0 lg:mt-10 mt-5">
         {vids.map((vid, index) => {
           return (
             <div className="flex flex-col justify-center cursor-pointer" key={index}  onClick={() => {
