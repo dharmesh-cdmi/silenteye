@@ -48,6 +48,7 @@ import Upgrade from "../components/Shared/Upgrade";
 import Button from "../components/Shared/Button";
 import { Link } from "react-router-dom";
 import { PiGreaterThanBold } from "react-icons/pi";
+import { FcAndroidOs } from "react-icons/fc";
 
 const Dashboard = () => {
   const [autoRenew, setAutoReNew] = useState(true);
@@ -389,6 +390,7 @@ const Dashboard = () => {
                 type="button"
                 class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
               >
+                <FcAndroidOs />
                 Samsung 12
               </button>
             </li>
@@ -441,8 +443,12 @@ const Dashboard = () => {
                 <li className="py-3 px-2 font-medium text-base md:text-lg  ">
                   {info.name}
                 </li>
-                <li className=" py-3 text-end pe-2 font-semibold text-[#172A6E] text-base md:text-lg sm:font-medium md:font-semibold">
-                  {info.details}
+                <li className=" flex justify-end py-3 text-end pe-2 font-semibold text-[#172A6E] text-base md:text-lg sm:font-medium md:font-semibold">
+                  <img
+                    src={info.icon}
+                    className="h-4 md:mt-[6px] mt-[3px] mx-1"
+                  />{" "}
+                  <span>{info.details}</span>
                 </li>
               </ul>
             ))}
@@ -653,7 +659,7 @@ const Dashboard = () => {
                   </li>
                   <li className="p-1 text-[#172A6E] flex text-[16px] md:text-[18px]  font-medium md:font-semibold pt-4 border-none">
                     {info.time}&nbsp;
-                    <span className="mt-[6px]">
+                    <span className="mt-[5px] md:mt-[6px]">
                       <PiGreaterThanBold size={15} />
                     </span>
                   </li>
@@ -761,10 +767,13 @@ const Dashboard = () => {
       <div className="flex justify-center mb-12">
         <Modal>
           <Modal.Toggle toggleName="viewMore-keylogger">
-            <Button className="hidden md:block  text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium px-[32px]  py-[10px] text-[#101828] text-center">
+            <button
+              type="button"
+              class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-semibold rounded-lg text-lg px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+            >
               View More
-              <MdKeyboardDoubleArrowDown size={18} />
-            </Button>
+              <MdKeyboardDoubleArrowDown size={22} />
+            </button>
           </Modal.Toggle>
           <Modal.Window windowName="viewMore-keylogger">
             <Upgrade />
