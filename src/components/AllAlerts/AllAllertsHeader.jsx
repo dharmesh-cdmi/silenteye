@@ -28,7 +28,7 @@ const AllAllertsHeader = () => {
     <div className="flex flex-row  justify-between items-start  py-[8px] px-[8px]  sm:border-[0px]">
       <div className="item-one flex flex-row items-center ">
         <div
-          className="image-wrappe sm:shadow-[0px_0px_56px_0px_#00000014]   p-[10px]  sm:border-[#D0D5DD] sm:border-[1px] cursor-pointer  rounded-[8px]"
+          className="image-wrappe sm:shadow-[0px_0px_56px_0px_#00000014]  p-[10px]  sm:border-[#D0D5DD] sm:border-[1px] cursor-pointer  rounded-[8px]"
           onClick={moveBacks}
         >
           <img src={moveBack} alt="move-Back" className="h-[18px] md:h-6" />
