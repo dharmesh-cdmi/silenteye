@@ -17,7 +17,7 @@ function Upgrade({ onCloseModal }) {
           No Activities can be performed here.
         </h3>
       </div>
-      <div className="mt-3 flex flex-row  px-[16px] pb-[12px] ">
+      <div className="justify-center mt-3 flex flex-row  px-[16px] pb-[12px] ">
         <Button
           className="py-[10px] px-4 md:px-[32px] text-[18px] font-[600] text-[#000000] "
           onClick={onCloseModal}
@@ -25,7 +25,7 @@ function Upgrade({ onCloseModal }) {
           Cancel
         </Button>
         <div className="ms-3">
-          <Button className="py-[10px] bg-green-100  border-green-500 border-[1px] font-[600] px-[14px] md:px-[60px] text-[16px] md:text-[18px] text-[#000000] ">
+          <Button className="py-[10px] bg-green-100  border-green-500 border-[1px] font-[600] px-[14px] md:px-[70px] text-[16px] md:text-[18px] text-[#000000] ">
             <img src={diamond} alt="diamond" className="pe-2" />
             Upgrade Now
           </Button>

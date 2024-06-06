@@ -52,7 +52,7 @@ const Verizon = () => {
           </div>
         </div>
         <div class="inline-flex items-center justify-center w-full">
-          <hr class="w-[35rem] h-px my-8 bg-gray-200 border-0 " />
+          <hr class="w-[35rem] h-px my-2 mb-4 bg-gray-200 border-0 " />
           {/* <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
             or
           </span> */}

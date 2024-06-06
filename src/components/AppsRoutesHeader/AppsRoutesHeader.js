@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AppsRoutesHeader.css";
 import { Link } from "react-router-dom";
 
@@ -11,6 +11,7 @@ import Upgrade from "../Shared/Upgrade";
 import CallsHead from "../Calls/CallsHead";
 
 const AppsRoutesHeader = () => {
+  const [screen, setScreen] = useState(1);
   return (
     <>
       {/* Navigations, search*/}
@@ -61,6 +62,7 @@ const AppsRoutesHeader = () => {
           </div>
         </Link>
       </div>
+
       <hr class="h-px mt-2  md:hidden bg-gray-200 border-0 dark:bg-gray-700"></hr>
     </>
   );
