@@ -263,7 +263,7 @@ const DeviceControl = () => {
                   <img
                     src={devices}
                     alt="img"
-                    className="object-contain mt-2"
+                    className="object-contain ms-[2px] mt-2 h-8"
                   />
                 </Modal.Toggle>
                 <Modal.Window windowName="Update">
@@ -349,7 +349,7 @@ const DeviceControl = () => {
       </div>
       <div className="border-y md:border md:rounded-xl md:my-8">
         <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-0 ">
-          <div className="flex md:p-4 py-4 px-2 col-span-2">
+          <div className="flex md:p-4 md:py-4 py-2 px-2 col-span-2">
             <div className="w-12 md:w-auto">
               <img src={fram7} alt="img" className="object-contain mt-2 h-8" />
             </div>
@@ -406,7 +406,7 @@ const DeviceControl = () => {
               <img
                 src={frame87}
                 alt="img"
-                className="object-contain mt-2 sm:w-24"
+                className="object-contain mt-2 w-24 md:w-20"
               />
             </div>
             <div className="mx-2 w-70">
@@ -438,7 +438,7 @@ const DeviceControl = () => {
                     <img
                       src={safemode}
                       alt="img"
-                      className="object-contain h-9 block md:hidden"
+                      className="object-contain h-12 block md:hidden"
                     />
                   </Modal.Toggle>
                   <Modal.Window windowName="Update">
