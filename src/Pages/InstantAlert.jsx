@@ -41,9 +41,9 @@ const InstantAlert = () => {
 
   };
   return (
-    <div className='main sm:ps-3 sm:pe-3 sm:pt-4'>
+    <div className='main sm:ps-3 sm:pe-3 sm:pt-0'>
         <Header heading="Instant Alerts" />
-        <div className="sm:my-10 my-2">
+        <div className="sm:my-7 my-2">
         <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
           <Table.Header className="font-[16px] opacity-[50%]">
              Instant Alerts

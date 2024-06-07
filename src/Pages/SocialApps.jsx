@@ -184,7 +184,7 @@ const SocialApps = () => {
   };
 
   return (
-    <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
+    <div className="main sm:ps-3 sm:pe-3 sm:pt-0">
       <SocialAppsHeader />
       <ul className="grid xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-4   sm:grid-cols-4 grid-cols-4 ">
         {SocialAppsData.map((SocialApps, key) => (

@@ -91,7 +91,7 @@ const ExportForm = () => {
             type="submit"
             className="bg-[#172A6E] w-full mt-5 p-[12px] text-[#ffffff] text-[20px] rounded-[8px] "
           >
-            <img src={exporticon} alt="exporticon" className="pe-3" />
+            <img src={exporticon} alt="exporticon" className="pe-3 h-6"  />
             Export Data
           </Button>
         </Modal.Toggle>
