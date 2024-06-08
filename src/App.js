@@ -54,6 +54,7 @@ import NotesProfile from "./Pages/Notes/NotesProfile.jsx";
 import LoginAndPassword from "./Pages/Apps/LoginAndPassword.jsx";
 import WifiLogger from "./Pages/Location/WifiLogger.jsx";
 import AppInformation from "./Pages/Apps/AppInformation.jsx";
+import AppPermissions from "./components/AppPermissions/AppPermissions.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -185,7 +186,7 @@ function App() {
         },
         {
           path: "/Privacy&Security/AppPermisions",
-          element: <AppPermission />,
+          element: <PermisionManager />,
         },
         {
           path: "/Alert&Notification/InstantAlerts",
