@@ -8,7 +8,7 @@ import facebookicon from "../../../assests/images/facebook.svg";
 import formicon from "../../../assests/images/form.svg";
 import gmailicon from "../../../assests/images/gmail.svg";
 import hangouticon from "../../../assests/images/hangout.svg";
-import hangoutsicon from "../../../assests/images/hangouts.svg";
+
 import instagramicon from "../../../assests/images/instagram.svg";
 import keepicon from "../../../assests/images/keeps.svg";
 import kikicon from "../../../assests/images/kik.svg";
@@ -26,126 +26,196 @@ import telegramiconIcon from "../../../assests/images/telegram.svg";
 import tiktokicon from "../../../assests/images/tiktok.svg";
 import tindericon from "../../../assests/images/tinder.svg";
 import twittericon from "../../../assests/images/twitter.svg";
+import yticon from "../../../assests/images/SocialApps/yt.png";
+import viber from "../../../assests/images/SocialApps/viber.png";
+import vimeo from "../../../assests/images/SocialApps/vimeo.png";
+import twitch from "../../../assests/images/SocialApps/twitch.png";
 
 export const AllAppsData = [
   {
     id: 1,
-    title: "Blogger",
+    title: "Snapchat",
     size: "10 MB",
-    icon: bloggericon,
+    icon: snapchaticon,
   },
   {
     id: 2,
-    title: "Calendar",
+    title: "Instagram",
     size: "15 MB",
-    icon: calendaricon,
+    icon: instagramicon,
   },
   {
     id: 3,
-    title: "Chrome",
-    size: "20 MB",
-    icon: chromeicon,
-  },
-  {
-    id: 4,
-    title: "Discord",
-    size: "25 MB",
-    icon: discordicon,
-  },
-  {
-    id: 5,
-    title: "Docs",
-    size: "30 MB",
-    icon: docsicon,
-  },
-  {
-    id: 6,
-    title: "Drive",
-    size: "35 MB",
-    icon: driveicon,
-  },
-  {
-    id: 7,
     title: "Facebook",
-    size: "40 MB",
+    size: "20 MB",
     icon: facebookicon,
   },
   {
+    id: 4,
+    title: "Tinder",
+    size: "25 MB",
+    icon: tindericon,
+  },
+  {
+    id: 5,
+    title: "Youtube",
+    size: "30 MB",
+    icon: yticon,
+  },
+  {
+    id: 6,
+    title: "Tiktok",
+    size: "35 MB",
+    icon: tiktokicon,
+  },
+  {
+    id: 7,
+    title: "Twitter",
+    size: "40 MB",
+    icon: twittericon,
+  },
+  {
     id: 8,
-    title: "Form",
+    title: "Viber",
     size: "45 MB",
-    icon: formicon,
+    icon: viber,
   },
   {
     id: 9,
-    title: "Gmail",
+    title: "Kik",
     size: "50 MB",
-    icon: gmailicon,
+    icon: kikicon,
   },
   {
     id: 10,
-    title: "Hangout",
+    title: "Skype",
     size: "55 MB",
-    icon: hangouticon,
+    icon: skypeicon,
   },
   {
     id: 11,
-    title: "Hangouts",
+    title: "Crome",
     size: "60 MB",
-    icon: hangoutsicon,
+    icon: chromeicon,
   },
   {
     id: 12,
-    title: "Instagram",
+    title: "Telegram",
     size: "65 MB",
-    icon: instagramicon,
+    icon: telegramiconIcon,
   },
   {
     id: 13,
-    title: "Keep",
+    title: "Pinterest",
     size: "70 MB",
-    icon: keepicon,
+    icon: pinteresticon,
   },
   {
     id: 14,
-    title: "Kik",
+    title: "Blogger",
     size: "75 MB",
-    icon: kikicon,
+    icon: bloggericon,
   },
   {
     id: 15,
-    title: "Lightroom",
+    title: "Messenger",
     size: "80 MB",
-    icon: lightroomicon,
+    icon: messengericon,
   },
   {
     id: 16,
-    title: "Line",
+    title: "Vimeo",
     size: "85 MB",
-    icon: lineicon,
+    icon: vimeo,
   },
   {
     id: 17,
-    title: "Instagram",
+    title: "Line",
     size: "65 MB",
-    icon: instagramicon,
+    icon: lineicon,
   },
   {
     id: 18,
-    title: "Keep",
+    title: "Discord",
     size: "70 MB",
-    icon: keepicon,
+    icon: discordicon,
   },
   {
     id: 19,
-    title: "Kik",
+    title: "Twitch",
     size: "75 MB",
-    icon: kikicon,
+    icon: twitch,
+  },
+  {
+    id: 20,
+    title: "Gmail",
+    size: "80 MB",
+    icon: gmailicon,
+  },
+  {
+    id: 20,
+    title: "Drive",
+    size: "80 MB",
+    icon: driveicon,
+  },
+  {
+    id: 20,
+    title: "Meet",
+    size: "80 MB",
+    icon: meeticon,
+  },
+  {
+    id: 20,
+    title: "Calendar",
+    size: "80 MB",
+    icon: calendaricon,
+  },
+  {
+    id: 20,
+    title: "Sheets",
+    size: "80 MB",
+    icon: sheeticon,
+  },
+  {
+    id: 20,
+    title: "Docs",
+    size: "80 MB",
+    icon: docsicon,
+  },
+  {
+    id: 20,
+    title: "Slides",
+    size: "80 MB",
+    icon: slidesicon,
+  },
+  {
+    id: 20,
+    title: "Keeps",
+    size: "80 MB",
+    icon: keepicon,
+  },
+  {
+    id: 20,
+    title: "Forms",
+    size: "80 MB",
+    icon: formicon,
+  },
+  {
+    id: 20,
+    title: "Hangouts",
+    size: "80 MB",
+    icon: hangouticon,
   },
   {
     id: 20,
     title: "Lightroom",
     size: "80 MB",
     icon: lightroomicon,
+  },
+  {
+    id: 20,
+    title: "Photoshop",
+    size: "80 MB",
+    icon: photoshopicon,
   },
 ];

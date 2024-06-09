@@ -10,60 +10,76 @@ import Modal from "../Shared/Modal";
 import Upgrade from "../Shared/Upgrade";
 import CallsHead from "../Calls/CallsHead";
 
-const AppsRoutesHeader = () => {
-  const [screen, setScreen] = useState(1);
+const AppsRoutesHeader = (props) => {
+  const [screen, setScreen] = useState(props.data);
   return (
     <>
       {/* Navigations, search*/}
-
       <CallsHead heading="Apps" placeholder="Search Notes" />
-      <hr class="h-px mb-2 md:hidden bg-gray-200 border-0 dark:bg-gray-700"></hr>
-
-      <div className="grid md:grid-cols-4 grid-cols-3 md:my-8 md:mx-0 mx-2 border-2 border-t rounded-lg md:rounded-xl md:mt-6">
-        <Link to="/apps/allapps">
-          <div className="md:mx-3 mx-1 my-1 border-r-2 ">
-            <div className=" flex flex-col justify-center">
-              <h3 className="font-semibold md:text-base text-xs">All Apps</h3>
+      <hr class="h-px mb-2 md:hidden bg-gray-200 border-0 dark:bg-gray-700" />
+      <ul class=" text-sm font-medium text-center md:mt-10 text-gray-500 rounded-lg shadow flex overflow-x-auto md:w-full mx-2 .no-scrollbar ">
+        <li class="w-[5rem] md:w-full ">
+          <Link
+            to="/apps/allapps"
+            className={`${
+              screen == 1 && "bg-[#E9EBFF]"
+            } inline-block w-full p-2 text-gray-900  border-r border-gray-200 rounded-s-lg`}
+            aria-current="page"
+          >
+            <div className=" flex flex-col justify-center text-left md:px-4">
+              <h3 className="font-semibold md:text-base text-xs w-24 md:w-32 lg:w-44 xl:w-full">
+                All Apps
+              </h3>
               <p className="md:text-base text-xs">134 Apps</p>
             </div>
-          </div>
-        </Link>
-
-        <Link to="/apps/installedapp">
-          <div className=" md:mx-3 mx-1 my-1 border-r-2">
-            <div className=" flex flex-col justify-center">
-              <h3 className="font-semibold md:text-base text-xs">
+          </Link>
+        </li>
+        <li class="w-[6rem] md:w-full ">
+          <Link
+            to="/apps/installedapp"
+            className={`${
+              screen == 2 && "bg-[#E9EBFF]"
+            } inline-block w-full p-2 text-gray-900  border-r border-gray-200 `}
+          >
+            <div className=" flex flex-col justify-center text-left md:px-4">
+              <h3 className="font-semibold md:text-base text-xs w-24 md:w-32 lg:w-44 xl:w-full">
                 Installed Apps
               </h3>
               <p className="md:text-base text-xs">120 Apps</p>
             </div>
-          </div>
-        </Link>
-
-        <Link to="/apps/uninstalledapp">
-          <div className="md:mx-3 mx-1 my-1 md:border-r-2">
-            <div className=" flex flex-col justify-center">
-              <h3 className="font-semibold md:text-base text-xs">
-                Uninstalled
+          </Link>
+        </li>
+        <li class="w-[7rem] md:w-full ">
+          <Link
+            to="/apps/uninstalledapp"
+            className={`${
+              screen == 3 && "bg-[#E9EBFF]"
+            } inline-block w-full p-2 text-gray-900  border-r border-gray-200 `}
+          >
+            <div className=" flex flex-col justify-center text-left md:px-4">
+              <h3 className="font-semibold md:text-base text-xs w-24 md:w-32 lg:w-44 xl:w-full">
+                Uninstalled Apps
               </h3>
-              <p className=" md:text-base text-xs">14 Apps</p>
+              <p className="md:text-base text-xs">14 Apps</p>
             </div>
-          </div>
-        </Link>
-
-        <Link to="/apps/blockedapp">
-          <div className="lastAppsbox md:mx-3 mx-1 my-1 hidden md:block">
-            <div className="flex flex-col  justify-start">
-              <h3 className="font-semibold md:text-base text-xs">
+          </Link>
+        </li>
+        <li class="w-[7rem] md:w-full ">
+          <Link
+            to="/apps/blockedapp"
+            className={`${
+              screen == 4 && "bg-[#E9EBFF]"
+            } inline-block w-full p-2 text-gray-900  border-r border-gray-200 rounded-e-lg`}
+          >
+            <div className=" flex flex-col justify-center text-left md:px-4">
+              <h3 className="font-semibold md:text-base text-xs w-24 md:w-32 lg:w-44 xl:w-full">
                 Blocked Apps
               </h3>
               <p className="md:text-base text-xs">2 Apps</p>
             </div>
-          </div>
-        </Link>
-      </div>
-
-      <hr class="h-px mt-2  md:hidden bg-gray-200 border-0 dark:bg-gray-700"></hr>
+          </Link>
+        </li>
+      </ul>
     </>
   );
 };

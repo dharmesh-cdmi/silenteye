@@ -9,7 +9,7 @@ import moveBack from "../../assests/images/Header/arrow.png";
 
 import { IoFilterSharp } from "react-icons/io5";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import { MdDeleteOutline } from "react-icons/md";
+import { MdDeleteOutline, MdKeyboardBackspace } from "react-icons/md";
 import { TbFileExport } from "react-icons/tb";
 import { IoIosSearch } from "react-icons/io";
 import filterIcon from "../../assests/images/Header/Filter.png";
@@ -40,9 +40,10 @@ const AllFilesHead = (props) => {
             className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
             onClick={moveBacks}
           >
-            <img src={moveBack} alt="move-Back" className="h-6" />
+            {/* <img src={moveBack}  /> */}
+            <MdKeyboardBackspace className="h-6 w-6" />
           </div>
-          <span className="text-[15px] md:text-[20px]  text-black/50 md:text-[#000000] md:ps-3 ps-1 font-[600]">
+          <span className="text-[15px] xl:text-[20px] hidden lg:block text-black/50 md:text-[#000000] md:ps-3 ps-1 font-[600]">
             {props.headding}
           </span>
         </div>

@@ -18,6 +18,12 @@ import { AiOutlineMessage } from "react-icons/ai";
 import Modal from "../../components/Shared/Modal";
 import Upgrade from "../../components/Shared/Upgrade";
 import Delete from "../../assests/images/delete.png";
+import msg from "../../assests/images/calls/Contacts/Frame.png";
+import video from "../../assests/images/calls/Contacts/Frame-1.png";
+import mail from "../../assests/images/calls/Contacts/Frame-2.png";
+import doller from "../../assests/images/calls/Contacts/Frame-3.png";
+import callpng from "../../assests/images/calls/Contacts/Vector.png";
+import unblock from "../../assests/images/calls/Menu.png";
 import { Link } from "react-router-dom";
 import Oval7 from "../../assests/images/profile/Oval-6.png";
 import dp1 from "../../assests/images/profile/dp (1).png";
@@ -254,22 +260,25 @@ const BlockedContact = () => {
                         <p className="my-auto ">
                           <VscCallOutgoing />
                         </p>
-                        <p className="ps-1">(308) 555-0121</p>
+                        <p className="ps-1 text-[17px]">(308) 555-0121</p>
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
                           <IoIosMailOpen className="text-gray-400" />
                         </p>
-                        <p className="ps-1">hewiegamage@gmail.com</p>
+                        <p className="ps-1 text-[17px]">
+                          hewiegamage@gmail.com
+                        </p>
                       </div>
                     </div>
                   </li>
-                  <li className="p-1 text-gray-400 font-semibold pt-4 border-none hidden md:block">
+                  <li className="p-1 text-gray-400 font-semibold pt-4 border-none hidden xl:block">
                     <div className="flex gap-2 mt-6">
                       <Modal.Toggle toggleName="Update">
-                        <BsPersonAdd
-                          className="text-slate-900 cursor-pointer"
-                          size={25}
+                        <img
+                          className=" h-8  m-auto cursor-pointer"
+                          src={unblock}
+                          alt
                         />
                       </Modal.Toggle>
                       <Modal.Toggle toggleName="Update">
@@ -285,64 +294,70 @@ const BlockedContact = () => {
               </div>
               <hr />
               {/* body */}
-              <div className="overflow-y-scroll h-96 no-scrollbar">
-                <div className="grid grid-cols-5  p-2 divide-x border-b">
-                  <div className=" mx-auto">
-                    <div className="flex gap-2 p-1 flex-col md:flex-row">
+              <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
+                <div class="grid grid-cols-5 mx-auto p-2 gap-1 divide-x border-b overflow-x-auto">
+                  <div class="flex items-center   justify-center">
+                    <div class="flex gap-1 p-1 flex-col md:flex-row">
                       <Modal.Toggle toggleName="Update">
-                        <AiOutlineMessage
-                          size={25}
-                          className="m-auto cursor-pointer"
+                        <img
+                          className=" h-5  m-auto cursor-pointer"
+                          src={msg}
+                          alt
                         />
                       </Modal.Toggle>
-                      <p className="font-medium">Message</p>
+                      <p class="font-medium hidden xl:block">Message</p>
                     </div>
                   </div>
-                  <div className=" mx-auto">
-                    <div className="flex gap-2 p-1 flex-col md:flex-row ">
+                  <div class="flex items-center   justify-center">
+                    <div class="flex gap-1 p-1 flex-col md:flex-row">
                       <Modal.Toggle toggleName="Update">
-                        <IoIosCall
-                          size={25}
-                          className="m-auto cursor-pointer"
+                        <img
+                          className=" h-5  m-auto cursor-pointer"
+                          src={callpng}
+                          alt
                         />
                       </Modal.Toggle>
-                      <p className="font-medium">Call</p>
+                      <p class="font-medium hidden xl:block">Call</p>
                     </div>
                   </div>
-                  <div className=" mx-auto">
-                    <div className="flex gap-2 p-1 flex-col md:flex-row">
+                  <div class="flex items-center   justify-center">
+                    <div class="flex gap-1 p-1 flex-col md:flex-row">
                       <Modal.Toggle toggleName="Update">
-                        <IoVideocamOutline
-                          size={25}
-                          className="m-auto cursor-pointer"
+                        <img
+                          className=" h-5  m-auto cursor-pointer"
+                          src={video}
+                          alt
                         />
                       </Modal.Toggle>
-                      <p className="font-medium">Facetime</p>
+                      <p class="font-medium hidden xl:block">Facetime</p>
                     </div>
                   </div>
-                  <div className=" mx-auto">
-                    <div className="flex gap-2 p-1 flex-col md:flex-row">
+                  <div class="flex items-center   justify-center">
+                    <div class="flex gap-1 p-1 flex-col md:flex-row">
                       <Modal.Toggle toggleName="Update">
-                        <MdOutlineMailOutline
-                          size={25}
-                          className="m-auto cursor-pointer"
+                        <img
+                          className=" h-5  m-auto cursor-pointer"
+                          src={mail}
+                          alt
                         />
                       </Modal.Toggle>
-                      <p className="font-medium">Mail</p>
+                      <p class="font-medium hidden xl:block">Mail</p>
                     </div>
                   </div>
-                  <div className=" mx-auto">
-                    <div className="flex gap-2 p-1 flex-col md:flex-row">
+                  <div class="flex items-center   justify-center">
+                    <div class="flex gap-1 p-1 flex-col md:flex-row">
                       <Modal.Toggle toggleName="Update">
-                        <BsCurrencyDollar
-                          size={25}
-                          className="m-auto cursor-pointer"
+                        <img
+                          className=" h-5  m-auto cursor-pointer"
+                          src={doller}
+                          alt
                         />
                       </Modal.Toggle>
-                      <p className="font-medium">Pay</p>
+                      <p class="font-medium hidden xl:block">Pay</p>
                     </div>
                   </div>
                 </div>
+
                 <ul className="flex p-2 liborder ">
                   <li className="p-1 flex-1 w-64 font-semibold ">
                     <div>
@@ -365,7 +380,7 @@ const BlockedContact = () => {
                     <div className="flex gap-4 mt-2">
                       <Modal.Toggle toggleName="Update">
                         <CgRemove
-                          className="text-red-900 cursor-pointer"
+                          className="text-[#F10404] cursor-pointer"
                           size={25}
                         />
                       </Modal.Toggle>
@@ -394,7 +409,7 @@ const BlockedContact = () => {
                     <div className="flex gap-4 mt-2">
                       <Modal.Toggle toggleName="Update">
                         <CgRemove
-                          className="text-red-900 cursor-pointer"
+                          className="text-[#F10404] cursor-pointer"
                           size={25}
                         />
                       </Modal.Toggle>
@@ -423,7 +438,7 @@ const BlockedContact = () => {
                     <div className="flex gap-4 mt-2">
                       <Modal.Toggle toggleName="Update">
                         <CgRemove
-                          className="text-red-900 cursor-pointer"
+                          className="text-[#F10404] cursor-pointer"
                           size={25}
                         />
                       </Modal.Toggle>
@@ -452,7 +467,65 @@ const BlockedContact = () => {
                     <div className="flex gap-4 mt-2">
                       <Modal.Toggle toggleName="Update">
                         <CgRemove
-                          className="text-red-900 cursor-pointer"
+                          className="text-[#F10404] cursor-pointer"
+                          size={25}
+                        />
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2  liborder">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-gray-400  font-normal`}>
+                        <p className="ps-1">home</p>
+                      </div>
+                      <div className={` flex `}>
+                        <p className="my-auto ">
+                          <img
+                            className="w-4 h-4 rounded-full m-auto"
+                            src={callicon}
+                            alt
+                          />
+                        </p>
+                        <p className="ps-1">(270) 478-0117</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <CgRemove
+                          className="text-[#F10404] cursor-pointer"
+                          size={25}
+                        />
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-gray-400  font-normal`}>
+                        <p className="ps-1">business</p>
+                      </div>
+                      <div className={` flex `}>
+                        <p className="my-auto ">
+                          <img
+                            className="w-4 h-4 rounded-full m-auto"
+                            src={callicon}
+                            alt
+                          />
+                        </p>
+                        <p className="ps-1">(417) 555-4578</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <CgRemove
+                          className="text-[#F10404] cursor-pointer"
                           size={25}
                         />
                       </Modal.Toggle>
@@ -514,7 +587,7 @@ const BlockedContact = () => {
                     <Modal.Toggle toggleName="Update">
                       <button
                         type="button"
-                        class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
+                        class="text-gray-900 gap-1  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
                       >
                         <MdKeyboardDoubleArrowDown size={30} />
                         View More

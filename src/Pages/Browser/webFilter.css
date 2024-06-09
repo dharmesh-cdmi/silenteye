@@ -1,14 +1,14 @@
 
 .webFilterContainer{
   width: 100%;
-  border: 1.5px solid  #d0d4dd;
+
   
 }
 .webFilterHeader{
   width: 100%;
   align-items: center;
   padding: 1rem;
-  border-bottom: 1.5px solid  #d0d4dd;
+  border-bottom: 1px solid  #d0d4dd;
 }
 .webFilterHeader h3{
   color: red;
@@ -16,7 +16,7 @@
   font-weight: 500;
 }
 .webFilterHeader button{
-background-color: #1f1057;
+background-color: #172A6E;
 color: #fff;
 font-size: 1rem;
 padding: 10px;

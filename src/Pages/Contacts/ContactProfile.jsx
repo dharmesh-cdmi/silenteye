@@ -16,6 +16,12 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 import { CgRemove } from "react-icons/cg";
 import { AiOutlineMessage } from "react-icons/ai";
+import msg from "../../assests/images/calls/Contacts/Frame.png";
+import video from "../../assests/images/calls/Contacts/Frame-1.png";
+import mail from "../../assests/images/calls/Contacts/Frame-2.png";
+import doller from "../../assests/images/calls/Contacts/Frame-3.png";
+import callpng from "../../assests/images/calls/Contacts/Vector.png";
+import mailicon from "../../assests/images/calls/Contacts/mail.png";
 import Modal from "../../components/Shared/Modal";
 import Upgrade from "../../components/Shared/Upgrade";
 import Delete from "../../assests/images/delete.png";
@@ -117,60 +123,65 @@ export function BlockedContactProfile() {
           <hr />
           {/* body */}
           <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
-            <div className="grid grid-cols-5  p-2 divide-x border-b">
-              <div className=" mx-auto">
-                <div className="flex gap-2 p-1 flex-col md:flex-row">
+            <div class="grid grid-cols-5 mx-auto p-2 gap-1 divide-x border-b overflow-x-auto">
+              <div class="flex items-center   justify-center">
+                <div class="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
-                    <AiOutlineMessage
-                      size={25}
-                      className="m-auto h-5 md:h-auto cursor-pointer"
+                    <img
+                      className=" h-5  m-auto cursor-pointer"
+                      src={msg}
+                      alt
                     />
                   </Modal.Toggle>
-                  <p className="text-sm md:font-medium">Message</p>
+                  <p class="font-medium ">Message</p>
                 </div>
               </div>
-              <div className=" mx-auto">
-                <div className="flex gap-2 p-1 flex-col md:flex-row ">
+              <div class="flex items-center   justify-center">
+                <div class="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
-                    <IoIosCall
-                      size={25}
-                      className="m-auto h-5 md:h-auto cursor-pointer"
+                    <img
+                      className=" h-5  m-auto cursor-pointer"
+                      src={callpng}
+                      alt
                     />
                   </Modal.Toggle>
-                  <p className="text-sm md:font-medium">Call</p>
+                  <p class="font-medium ">Call</p>
                 </div>
               </div>
-              <div className=" mx-auto">
-                <div className="flex gap-2 p-1 flex-col md:flex-row">
+              <div class="flex items-center   justify-center">
+                <div class="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
-                    <IoVideocamOutline
-                      size={25}
-                      className="m-auto h-5 md:h-auto cursor-pointer"
+                    <img
+                      className=" h-5  m-auto cursor-pointer"
+                      src={video}
+                      alt
                     />
                   </Modal.Toggle>
-                  <p className="text-sm md:font-medium">Facetime</p>
+                  <p class="font-medium ">Facetime</p>
                 </div>
               </div>
-              <div className=" mx-auto">
-                <div className="flex gap-2 p-1 flex-col md:flex-row">
+              <div class="flex items-center   justify-center">
+                <div class="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
-                    <MdOutlineMailOutline
-                      size={25}
-                      className="m-auto h-5 md:h-auto cursor-pointer"
+                    <img
+                      className=" h-5  m-auto cursor-pointer"
+                      src={mail}
+                      alt
                     />
                   </Modal.Toggle>
-                  <p className="text-sm md:font-medium">Mail</p>
+                  <p class="font-medium ">Mail</p>
                 </div>
               </div>
-              <div className=" mx-auto ">
-                <div className="flex gap-2 p-1 flex-col md:flex-row">
+              <div class="flex items-center   justify-center">
+                <div class="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
-                    <BsCurrencyDollar
-                      size={25}
-                      className="m-auto h-5 md:h-auto cursor-pointer"
+                    <img
+                      className=" h-5  m-auto cursor-pointer"
+                      src={doller}
+                      alt
                     />
                   </Modal.Toggle>
-                  <p className="text-sm md:font-medium">Pay</p>
+                  <p class="font-medium ">Pay</p>
                 </div>
               </div>
             </div>
@@ -196,7 +207,7 @@ export function BlockedContactProfile() {
                 <div className="flex gap-4 mt-2">
                   <Modal.Toggle toggleName="Update">
                     <CgRemove
-                      className="text-red-900 cursor-pointer"
+                      className="text-[#F10404] cursor-pointer"
                       size={25}
                     />
                   </Modal.Toggle>
@@ -225,7 +236,7 @@ export function BlockedContactProfile() {
                 <div className="flex gap-4 mt-2">
                   <Modal.Toggle toggleName="Update">
                     <CgRemove
-                      className="text-red-900 cursor-pointer"
+                      className="text-[#F10404] cursor-pointer"
                       size={25}
                     />
                   </Modal.Toggle>
@@ -254,7 +265,7 @@ export function BlockedContactProfile() {
                 <div className="flex gap-4 mt-2">
                   <Modal.Toggle toggleName="Update">
                     <CgRemove
-                      className="text-red-900 cursor-pointer"
+                      className="text-[#F10404] cursor-pointer"
                       size={25}
                     />
                   </Modal.Toggle>
@@ -283,7 +294,7 @@ export function BlockedContactProfile() {
                 <div className="flex gap-4 mt-2">
                   <Modal.Toggle toggleName="Update">
                     <CgRemove
-                      className="text-red-900 cursor-pointer"
+                      className="text-[#F10404] cursor-pointer"
                       size={25}
                     />
                   </Modal.Toggle>
@@ -447,60 +458,65 @@ const ContactProfile = () => {
           <hr />
           {/* body */}
           <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
-            <div className="grid grid-cols-5  p-2 divide-x border-b">
-              <div className=" mx-auto">
-                <div className="flex gap-2 p-1 flex-col md:flex-row">
+            <div class="grid grid-cols-5 mx-auto p-2 gap-1 divide-x border-b overflow-x-auto">
+              <div class="flex items-center   justify-center">
+                <div class="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
-                    <AiOutlineMessage
-                      size={25}
-                      className="m-auto h-5 md:h-auto cursor-pointer"
+                    <img
+                      className=" h-5  m-auto cursor-pointer"
+                      src={msg}
+                      alt
                     />
                   </Modal.Toggle>
-                  <p className="text-sm md:font-medium">Message</p>
+                  <p class="font-medium ">Message</p>
                 </div>
               </div>
-              <div className=" mx-auto">
-                <div className="flex gap-2 p-1 flex-col md:flex-row ">
+              <div class="flex items-center   justify-center">
+                <div class="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
-                    <IoIosCall
-                      size={25}
-                      className="m-auto h-5 md:h-auto cursor-pointer"
+                    <img
+                      className=" h-5  m-auto cursor-pointer"
+                      src={callpng}
+                      alt
                     />
                   </Modal.Toggle>
-                  <p className="text-sm md:font-medium">Call</p>
+                  <p class="font-medium ">Call</p>
                 </div>
               </div>
-              <div className=" mx-auto">
-                <div className="flex gap-2 p-1 flex-col md:flex-row">
+              <div class="flex items-center   justify-center">
+                <div class="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
-                    <IoVideocamOutline
-                      size={25}
-                      className="m-auto h-5 md:h-auto cursor-pointer"
+                    <img
+                      className=" h-5  m-auto cursor-pointer"
+                      src={video}
+                      alt
                     />
                   </Modal.Toggle>
-                  <p className="text-sm md:font-medium">Facetime</p>
+                  <p class="font-medium ">Facetime</p>
                 </div>
               </div>
-              <div className=" mx-auto">
-                <div className="flex gap-2 p-1 flex-col md:flex-row">
+              <div class="flex items-center   justify-center">
+                <div class="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
-                    <MdOutlineMailOutline
-                      size={25}
-                      className="m-auto h-5 md:h-auto cursor-pointer"
+                    <img
+                      className=" h-5  m-auto cursor-pointer"
+                      src={mail}
+                      alt
                     />
                   </Modal.Toggle>
-                  <p className="text-sm md:font-medium">Mail</p>
+                  <p class="font-medium ">Mail</p>
                 </div>
               </div>
-              <div className=" mx-auto ">
-                <div className="flex gap-2 p-1 flex-col md:flex-row">
+              <div class="flex items-center   justify-center">
+                <div class="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
-                    <BsCurrencyDollar
-                      size={25}
-                      className="m-auto h-5 md:h-auto cursor-pointer"
+                    <img
+                      className=" h-5  m-auto cursor-pointer"
+                      src={doller}
+                      alt
                     />
                   </Modal.Toggle>
-                  <p className="text-sm md:font-medium">Pay</p>
+                  <p class="font-medium ">Pay</p>
                 </div>
               </div>
             </div>
@@ -526,7 +542,7 @@ const ContactProfile = () => {
                 <div className="flex gap-4 mt-2">
                   <Modal.Toggle toggleName="Update">
                     <CgRemove
-                      className="text-red-900 cursor-pointer"
+                      className="text-[#F10404] cursor-pointer"
                       size={25}
                     />
                   </Modal.Toggle>
@@ -555,7 +571,7 @@ const ContactProfile = () => {
                 <div className="flex gap-4 mt-2">
                   <Modal.Toggle toggleName="Update">
                     <CgRemove
-                      className="text-red-900 cursor-pointer"
+                      className="text-[#F10404] cursor-pointer"
                       size={25}
                     />
                   </Modal.Toggle>
@@ -584,7 +600,7 @@ const ContactProfile = () => {
                 <div className="flex gap-4 mt-2">
                   <Modal.Toggle toggleName="Update">
                     <CgRemove
-                      className="text-red-900 cursor-pointer"
+                      className="text-[#F10404] cursor-pointer"
                       size={25}
                     />
                   </Modal.Toggle>
@@ -613,7 +629,7 @@ const ContactProfile = () => {
                 <div className="flex gap-4 mt-2">
                   <Modal.Toggle toggleName="Update">
                     <CgRemove
-                      className="text-red-900 cursor-pointer"
+                      className="text-[#F10404] cursor-pointer"
                       size={25}
                     />
                   </Modal.Toggle>
@@ -642,7 +658,7 @@ const ContactProfile = () => {
                 <div className="flex gap-4 mt-2">
                   <Modal.Toggle toggleName="Update">
                     <CgRemove
-                      className="text-red-900 cursor-pointer"
+                      className="text-[#F10404] cursor-pointer"
                       size={25}
                     />
                   </Modal.Toggle>
@@ -671,7 +687,7 @@ const ContactProfile = () => {
                 <div className="flex gap-4 mt-2">
                   <Modal.Toggle toggleName="Update">
                     <CgRemove
-                      className="text-red-900 cursor-pointer"
+                      className="text-[#F10404] cursor-pointer"
                       size={25}
                     />
                   </Modal.Toggle>

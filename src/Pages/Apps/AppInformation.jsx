@@ -85,25 +85,25 @@ const AppInformation = () => {
               <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
                 Category
               </li>
-              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-end text-base md:text-lg  mt-2">
                 Social
               </li>
               <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
                 Age
               </li>
-              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-end text-base md:text-lg  mt-2">
                 12+
               </li>
               <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
                 Status
               </li>
-              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-end text-base md:text-lg  mt-2">
                 Installed
               </li>
               <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
                 Developer
               </li>
-              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-end text-base md:text-lg  mt-2">
                 WhatsApp Inc.
               </li>
             </ul>
@@ -154,13 +154,13 @@ const AppInformation = () => {
             <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
               Daily Average
             </li>
-            <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-base md:text-lg  mt-2">
+            <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-end text-base md:text-lg  mt-2">
               31m
             </li>
             <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
               Notifications
             </li>
-            <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-base md:text-lg  mt-2">
+            <li className="p-1 text-[#172A6E]  px-2 font-medium text-end liborder text-base md:text-lg  mt-2">
               11
             </li>
           </ul>
@@ -171,7 +171,7 @@ const AppInformation = () => {
               <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
                 Daily Usage Limit
               </li>
-              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 text-[#172A6E]  px-2 font-medium text-end liborder text-base md:text-lg  mt-2">
                 10 min
               </li>
             </ul>

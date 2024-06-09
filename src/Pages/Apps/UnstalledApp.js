@@ -13,10 +13,13 @@ const UnstalledApp = () => {
 
   return (
     <>
-      <div>
+      <div className="Apps-container">
+        <AppsRoutesHeader data="3" />
+        <hr class="h-px mt-2  md:hidden bg-gray-200 border-0 dark:bg-gray-700" />
+
         <div className="appsComponentsContainer flex">
           <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 mt-4 md:mt-8 gap-[7px] md:gap-8">
-            <div className="appBox mb-4 flex flex-col justify-center">
+            <div className="appBox  flex flex-col justify-center">
               <span className="appBoxicon">
                 <img
                   className="w-12 md:w-16 md:h-16 lg:w-20 lg:h-20 h-12 m-auto"
@@ -35,7 +38,7 @@ const UnstalledApp = () => {
                   <Modal.Toggle toggleName="Upgrade">
                     <div
                       key={i}
-                      className="appBox mb-4 flex flex-col justify-center"
+                      className="appBox  flex flex-col justify-center"
                     >
                       <span className="appBoxicon">
                         {/* <span className="appBoxicon">{v.icon}</span> */}

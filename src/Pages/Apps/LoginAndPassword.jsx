@@ -14,6 +14,10 @@ import Upgrade from "../../components/Shared/Upgrade";
 import Modal from "../../components/Shared/Modal";
 import Delete from "../../assests/images/delete.png";
 import Instagram from "../../assests/images/SocialApps/Instagram.png";
+import chromeicon from "../../assests/images/crome.svg";
+import pinteresticon from "../../assests/images/pintrest.svg";
+import tiktokicon from "../../assests/images/tiktok.svg";
+import twittericon from "../../assests/images/twitter.svg";
 
 import facebook from "../../assests/images/SocialApps/facebook.png";
 
@@ -37,13 +41,12 @@ import { FaLocationDot } from "react-icons/fa6";
 const LoginAndPassword = () => {
   const LoginAndPasswordData = [
     {
-      img: Instagram,
-      name: "Instagram",
-    },
-    ,
-    {
       img: snapchat,
       name: "Snapchat",
+    },
+    {
+      img: Instagram,
+      name: "Instagram",
     },
     {
       img: facebook,
@@ -59,34 +62,36 @@ const LoginAndPassword = () => {
       name: "Youtube",
     },
     {
-      img: telegram,
-      name: "Telegram",
+      img: tiktokicon,
+      name: "Tiktok",
     },
     {
-      img: skype,
-      name: "Skype",
-      callIcon: <HiPhoneMissedCall />,
+      img: twittericon,
+      name: "Twitter",
     },
     {
-      img: imo,
-      name: "Imo",
-      callIcon: <HiPhoneMissedCall />,
+      img: viber,
+      name: "Viber",
     },
     {
       img: kik,
       name: "kik",
     },
     {
-      img: signal,
-      name: "Signal",
+      img: skype,
+      name: "Skype",
     },
     {
-      img: tango,
-      name: "tango",
+      img: chromeicon,
+      name: "Crome",
     },
     {
-      img: viber,
-      name: "Viber",
+      img: telegram,
+      name: "Telegram",
+    },
+    {
+      img: pinteresticon,
+      name: "Pinterest",
     },
   ];
 
@@ -107,7 +112,7 @@ const LoginAndPassword = () => {
             <hr />
 
             {/* body */}
-            <div className="overflow-y-scroll h-96 no-scrollbar">
+            <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
               <ul className="flex p-2 liborder cursor-pointer bg-gray-100">
                 <li className="flex-none w-14 pt-2">
                   <img
@@ -130,11 +135,7 @@ const LoginAndPassword = () => {
                   <Modal.Toggle toggleName="Update">
                     <ul key={i} className="flex p-2 liborder cursor-pointer">
                       <li className="flex-none w-14 pt-2">
-                        <img
-                          className="w-10 h-10 rounded-full m-auto"
-                          src={info.img}
-                          alt
-                        />
+                        <img className="w-10 h-10  m-auto" src={info.img} alt />
                       </li>
                       <li className="p-1 flex-1 w-64 font-semibold">
                         <div>
@@ -163,7 +164,7 @@ const LoginAndPassword = () => {
                 <ul className="flex p-2 ">
                   <li className="flex-none w-20 pt-2 border-none ">
                     <img
-                      className="w-20 h-20 rounded-full m-auto"
+                      className="w-20 h-20  m-auto"
                       src={whatsapp}
                       alt="img"
                     />
@@ -202,7 +203,7 @@ const LoginAndPassword = () => {
               </div>
               <hr />
               {/* body */}
-              <div className="overflow-y-scroll h-96 no-scrollbar">
+              <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
                 <p className="border-b text-gray-400  p-2">Login Activity</p>
                 <ul className="flex p-2 liborder ">
                   <li className="p-1 flex-1 w-64 font-semibold ">

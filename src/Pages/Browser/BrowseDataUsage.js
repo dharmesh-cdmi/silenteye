@@ -17,7 +17,7 @@ const BrowseDataUsage = () => {
       <section className="browserContainer  flex flex-col md:my-6">
         <div className="p-4 w-full md:rounded-t-md rounded-none border border-slate-200   ">
           <h3 className="flex font-semibold text-lg">
-            <span className="text-2xl font-extrabold">102 MB</span>&nbsp; of
+            <span className="text-2xl font-extrabold">702 MB</span>&nbsp; of
             Website data used
           </h3>
           <p className="text-black/50">Today</p>
