@@ -11,8 +11,8 @@ const KeyLoggers = ({ keyLogger }) => {
         <div className={`${borderClasses}`}>
           <div className="flex flex-row justify-between  py-[12px] ">
             <div className="flex flex-col">
-              <div className="flex flex-row">
-                <img src={img} alt="google" className="h-auto max-w-[100%]" />
+              <div className="flex flex-row items-center">
+                <img src={img} alt="google" className="h-4" />
                 <h1 className="ms-2 sm:text-[20px] text-[18px] text-[#000000]  font-[600]">
                   {heading}
                 </h1>
