@@ -11,8 +11,8 @@ const AllAlerts = ({ AllAlert }) => {
         <div className={`${borderClasses}`}>
           <div className="flex flex-row justify-between p-[16px]">
             <div className="flex flex-col">
-              <div className="flex flex-row">
-                <img src={img} alt="google" className=" h-auto max-w-[100%]" />
+              <div className="flex flex-row items-center">
+                <img src={img} alt="google" className=" h-5" />
                 <h1 className="ms-2 text-[20px] text-[#000000]  font-[600]">
                   {heading}
                 </h1>
