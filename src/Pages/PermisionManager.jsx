@@ -75,7 +75,7 @@ const PermisionManager = () => {
     <div className="main sm:ps-3 sm:pe-3 sm:pt-0">
       <Header heading="Permission Manager" />
       <div className="sm:my-7 mb-2">
-        <Table className="sm:border-[#DDDDDD] wm:border-[1px] wm:rounded-lg">
+        <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
           <Table.Header className="font-[16px] opacity-[50%]">
             All Permission
           </Table.Header>
