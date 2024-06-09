@@ -14,6 +14,8 @@ import ph22 from "../../../../assests/images/DashControl/ph2.2.png";
 import ph23 from "../../../../assests/images/DashControl/ph2.3.png";
 import ph24 from "../../../../assests/images/DashControl/ph2.4.png";
 import ph25 from "../../../../assests/images/DashControl/ph2.5.png";
+import dogbook from "../../../../assests/images/dogbook.png";
+import racoon from "../../../../assests/images/racoon.png";
 
 import ph26 from "../../../../assests/images/DashControl/ph2.6.png";
 import ph27 from "../../../../assests/images/DashControl/ph2.7.png";
@@ -30,18 +32,35 @@ function Gallery() {
   const [idx,setIdx]=useState('')
   const imgs = [
     { img: img, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB",id:1 },
-    { img: ph1, name: "nature-3076878.jpg", desc: "20.052024-422.64 KB",id:2 },
     { img: ph2, name: "nature-3076879.jpg", desc: "20.052024-422.64 KB",id:3 },
     { img: ph3, name: "nature-3076880.jpg", desc: "20.052024-422.64 KB",id:4 },
     { img: ph4, name: "nature-3076881.jpg", desc: "20.052024-422.64 KB",id:5 },
+    { img: ph1, name: "nature-3076878.jpg", desc: "20.052024-422.64 KB",id:2 },
     { img: ph5, name: "nature-3076882.jpg", desc: "20.052024-422.64 KB",id:6 },
-    { img: ph21, name: "nature-3076883.jpg", desc: "20.052024-422.64 KB",id:7 },
+
+    { img: racoon, name: "nature-3076883.jpg", desc: "20.052024-422.64 KB",id:7 },
+    { img: dogbook, name: "nature-3076887.jpg", desc: "20.052024-422.64 KB",id:11 },
+    { img: ph21, name: "nature-3076888.jpg", desc: "20.052024-422.64 KB",id:12 },
     { img: ph22, name: "nature-3076884.jpg", desc: "20.052024-422.64 KB",id:8 },
     { img: ph23, name: "nature-3076885.jpg", desc: "20.052024-422.64 KB",id:9 },
     { img: ph24, name: "nature-3076886.jpg", desc: "20.052024-422.64 KB",id:10 },
-    { img: ph25, name: "nature-3076887.jpg", desc: "20.052024-422.64 KB",id:11 },
-    { img: ph26, name: "nature-3076888.jpg", desc: "20.052024-422.64 KB",id:12 },
-    { img: ph27, name: "nature-3076889.jpg", desc: "20.052024-422.64 KB",id:13 },
+
+    { img: ph25, name: "nature-3076889.jpg", desc: "20.052024-422.64 KB",id:13 },
+    { img: ph1, name: "nature-3076890.jpg", desc: "20.052024-422.64 KB",id:14 },
+    { img: ph29, name: "nature-3076891.jpg", desc: "20.052024-422.64 KB",id:15 },
+    { img: ph3, name: "nature-3076892.jpg", desc: "20.052024-422.64 KB",id:15 },
+    { img: ph4, name: "nature-3076893.jpg", desc: "20.052024-422.64 KB",id:16 },
+    { img: ph5, name: "nature-3076894.jpg", desc: "20.052024-422.64 KB",id:17 },
+    { img: ph1, name: "nature-3076895.jpg", desc: "20.052024-422.64 KB",id:18 },
+
+    { img: racoon, name: "nature-3076883.jpg", desc: "20.052024-422.64 KB",id:7 },
+    { img: dogbook, name: "nature-3076887.jpg", desc: "20.052024-422.64 KB",id:11 },
+    { img: ph21, name: "nature-3076888.jpg", desc: "20.052024-422.64 KB",id:12 },
+    { img: ph22, name: "nature-3076884.jpg", desc: "20.052024-422.64 KB",id:8 },
+    { img: ph23, name: "nature-3076885.jpg", desc: "20.052024-422.64 KB",id:9 },
+    { img: ph24, name: "nature-3076886.jpg", desc: "20.052024-422.64 KB",id:10 },
+
+    { img: ph25, name: "nature-3076889.jpg", desc: "20.052024-422.64 KB",id:13 },
     { img: ph1, name: "nature-3076890.jpg", desc: "20.052024-422.64 KB",id:14 },
     { img: ph29, name: "nature-3076891.jpg", desc: "20.052024-422.64 KB",id:15 },
     { img: ph3, name: "nature-3076892.jpg", desc: "20.052024-422.64 KB",id:15 },
@@ -78,7 +97,7 @@ function Gallery() {
 
             <img
               src={idx}
-              className=" absolute h-72 lg:w-1/3 w-2/3 top-1/2 -translate-y-1/2   lg:left-1/3 left-1/2 -translate-x-1/2 mx-auto z-30 rounded-none "
+              className=" absolute h-72 lg:w-1/3 w-2/3 top-1/2 -translate-y-1/2   lg:left-2/4 left-1/2 -translate-x-1/2 mx-auto z-30 rounded-none "
               style={{ opacity: 1 }} // Ensure full opacity for the image
               alt="Detailed View"
             />
@@ -104,7 +123,7 @@ function Gallery() {
                 src={img.img}
               />
               <p className=" font-semibold text-sm mx-auto">{img.name}</p>
-              <p className="lg:ml-2  text-xs text-gray-500 mx-auto">
+              <p className="lg:ml-3 xl:ml-5  text-xs text-gray-500 mx-auto">
                 {img.desc}
               </p>
             </div>

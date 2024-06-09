@@ -125,14 +125,14 @@ function Messages() {
           </div>
         )}
         { (
-          <div className="lg:border-l-2 border-0">
+          <div className="lg:border-l-2 relative border-0">
             <div className="border-b-2 flex py-3 ps-3 align-middle  ">
-              <img className="h-10 w-10 rounded-full mt-2 " src={imgg}></img>
+              <img className="h-10 w-10 rounded-full mt-2 " src={imgg}/>
               <div className="ml-3">
                 <h3 className="font-bold text-xl text-nowrap ">Riyah Zoik</h3>
                 <p className="text-slate-500 text-nowrap">(480) 555-0109</p>
               </div>
-              <div className="flex justify-end align-middle lg:ml-52 xl:ml-64 ml-32 mt-2">
+              <div className="flex justify-end align-middle  absolute   right-3 top-5">
                 <Modal>
                   <Modal.Toggle toggleName="Update">
                     <img

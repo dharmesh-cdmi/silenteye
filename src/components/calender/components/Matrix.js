@@ -26,12 +26,12 @@ function Matrix() {
   ];
 
   return (
-    <div className="mt-10 lg:mx-4 mx-0 lg:ms-0 ms-3.5">
-      <div className="grid grid-cols-7 rounded-xl lg:border border-t border-b">
+    <div className="mt-10 lg:mx-4 mx-0 lg:ms-0 ">
+      <div className="grid grid-cols-7 rounded-xl lg:border-2 border-t border-b">
         {days.map((day, idx) => {
           return (
             <p
-              className="lg:p-3 p-1 text-gray-500 text-sm lg:text-base text-medium border "
+              className="lg:p-3 p-1 text-gray-500 text-sm lg:text-base text-medium border lg:border-r-0 lg:border-t-0  "
               key={idx}
             >
               {day}
@@ -40,7 +40,7 @@ function Matrix() {
         })}
         {i.map((num, index) => {
           return (
-            <div className="p-2 pb-1  border font-medium" key={index}>
+            <div className="p-2 pb-1  border lg:border-r lg:border-t-0 lg:border-l-0 lg:border-b-2 font-medium" key={index}>
               {num % 32}
               {(num === 4 ||
                 num === 5 ||
@@ -59,10 +59,10 @@ function Matrix() {
           );
         })}
       </div>
-      <div className="grid grid-cols-1 rounded-xl lg:border border-0 mt-9">
+      <div className="grid grid-cols-1 rounded-xl lg:border-2  border-0 mt-9">
         {schedules.map((schedule, index) => {
           return (
-            <div className="p-4 flex flex-col lg:border border-b">
+            <div className="p-4 flex flex-col lg:border-b-2 border-b">
               <p className="text-gray-500 text-sm">
                 <span className="px-2 mr-2  rounded-full bg-blue-950 font-normal"></span>
                 {schedule.time}

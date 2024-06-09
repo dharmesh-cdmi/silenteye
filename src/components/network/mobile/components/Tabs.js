@@ -12,8 +12,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 function Tabs() {
   return (
     <div className="lg:mx-4 mx-0 lg:mt-10 mt-1">
-      <section className="grid lg:grid-cols-4 grid-cols-1 lg:border-2 border-0 border-gray-50 rounded-xl ">
-        <div className="py-3 px-2 lg:border border-b border-t">
+      <section className="grid lg:grid-cols-4 grid-cols-1 lg:border-2 border-0 border-gray-200 rounded-xl ">
+        <div className="py-3 px-2 lg:border-r-2 border-b lg:border-b-0  lg:border-t-0 border-t">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -23,7 +23,7 @@ function Tabs() {
               <div className="flex">
               <FaPhoneAlt className="h-2 w-2 mt-2 mr-2 text-gray-500" />
 
-                <p className="text-gray-400 text-sm">+91 98989898</p>
+                <p className="text-gray-400 text-sm">+91 98989 98989</p>
               </div>
             </div>
             <div className="mt-1">
@@ -32,7 +32,7 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-3 px-2 lg:border border-b">
+        <div className="py-3 px-2 lg:border-r-2 lg:border-b-0  border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -41,7 +41,7 @@ function Tabs() {
               </div>
               <div className="flex">
               <FaPhoneAlt className="h-2 w-2 mt-2 mr-2 text-gray-500" />
-                <p className="text-gray-400 text-sm">+91 98989898</p>
+                <p className="text-gray-400 text-sm">+91 98989 98989</p>
               </div>
             </div>
             <div className="mt-1">
@@ -50,13 +50,13 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-2 lg:border border-b px-2">
+        <div className="py-2 lg:border-r-2 lg:border-b-0 border-b px-2">
           <div className="flex justify-start flex-col">
             <p className="text-gray-500 text-sm">Default for Calls</p>
             <div className="grid grid-cols-3 bg-gray-300 h-10 rounded-lg cursor-pointer">
               <Modal>
                 <Modal.Toggle toggleName="Update">
-                  <div className="bg-green-600 rounded-lg m-1 flex justify-center items-center">
+                  <div className="bg-green-400 rounded-lg m-1 flex justify-center items-center">
                     <RiDualSim1Fill className="w-7 h-7 " />
                   </div>
                 </Modal.Toggle>
@@ -78,13 +78,13 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="p-2 lg:border border-b ">
+        <div className="p-2 lg:border-0  border-b">
           <div className="flex justify-start flex-col">
             <p className="text-gray-500 text-sm">Default for Internet Data</p>
             <div className="grid grid-cols-2 bg-gray-300 h-10 rounded-lg cursor-pointer">
               <Modal>
                 <Modal.Toggle toggleName="Update">
-                  <div className="bg-green-600 rounded-lg m-1 flex justify-center">
+                  <div className="bg-green-400 rounded-lg m-1 flex justify-center">
                     <RiDualSim1Fill className="w-7 h-7 " />
                   </div>
                 </Modal.Toggle>
@@ -100,13 +100,13 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="p-2 lg:border border-b lg:hidden ">
+        <div className="p-2 lg:border-b-0 lg:border-t-0 lg:border-r-0  border-b lg:hidden ">
           <div className="flex justify-start flex-col">
             <p className="text-gray-500 text-sm">Data Usage</p>
             <div className="grid grid-cols-2 bg-gray-300 h-10 rounded-lg cursor-pointer">
               <Modal>
                 <Modal.Toggle toggleName="Update">
-                  <div className="bg-green-600 rounded-lg m-1 flex justify-center text-white items-center">
+                  <div className="bg-green-400 rounded-lg m-1 flex justify-center text-white items-center">
                     App
                   </div>
                 </Modal.Toggle>
