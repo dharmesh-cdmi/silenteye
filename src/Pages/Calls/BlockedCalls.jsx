@@ -87,7 +87,7 @@ const BlockedCalls = () => {
           >
             <img src={moveBack} alt="move-Back" className="h-6" />
           </div>
-          <span className="text-[15px] md:text-[20px]  text-black/50 md:text-[#000000] md:ps-3 ps-1 font-[600]">
+          <span className="text-[16px] md:text-[20px]  text-black/50 md:text-[#000000] md:ps-3 ps-1 font-[600]">
             Blocked Calls
           </span>
         </div>

@@ -32,7 +32,7 @@ const CallsHead = (props) => {
         >
           <img src={moveBack} className="h-6 w-6" alt="move-Back" />
         </div>
-        <span className="text-[15px] md:text-[20px] text-black/50  md:text-[#000000] md:ps-3 ps-1 font-[600]">
+        <span className="text-[16px] md:text-[20px] text-black/50  md:text-[#000000] md:ps-3 ps-1 font-[600]">
           {props.heading}
         </span>
       </div>

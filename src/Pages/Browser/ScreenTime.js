@@ -123,7 +123,7 @@ const ScreenTime = () => {
                       <li className="p-1 flex-1 w-64 font-semibold text-xl mt-2 text-gray-900 border-none">
                         <div>{info.name}</div>
                       </li>
-                      <li className="p-1 text-[16px] md:text-[18px] text-gray-400 font-medium md:font-semibold pt-4 border-none">
+                      <li className="p-1 text-[16px] md:text-[18px] text-[#172A6E] font-medium md:font-semibold pt-4 border-none">
                         {info.time}
                       </li>
                     </ul>

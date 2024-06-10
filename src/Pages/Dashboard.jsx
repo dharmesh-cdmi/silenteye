@@ -19,19 +19,19 @@ import cmath from "../assests/images/cymath2.png";
 import robo from "../assests/images/robo2.png";
 import photos from "../assests/images/KeyLogger/photos.png";
 import location from "../assests/images/location.png";
-import wifi from "../assests/images/dashboard/wifi.png";
-import Apps from "../assests/images/dashboard/Apps.png";
-import Network from "../assests/images/dashboard/Network.png";
-import audio from "../assests/images/dashboard/audio.png";
-import battery from "../assests/images/dashboard/battery.png";
-import device from "../assests/images/dashboard/device storage.png";
-import document from "../assests/images/dashboard/document.png";
+import wifi from "../assests/images/dashboard/wifi.svg";
+import Apps from "../assests/images/dashboard/Apps.svg";
+import Network from "../assests/images/dashboard/Network.svg";
+import audio from "../assests/images/dashboard/audio.svg";
+import battery from "../assests/images/dashboard/battery.svg";
+import device from "../assests/images/dashboard/device storage.svg";
+import document from "../assests/images/dashboard/document.svg";
 import drive from "../assests/images/dashboard/drive.svg.png";
-import freespace from "../assests/images/dashboard/free space.png";
-import gps from "../assests/images/dashboard/gps.png";
-import image from "../assests/images/dashboard/image.png";
-import other from "../assests/images/dashboard/other.png";
-import video from "../assests/images/dashboard/video.png";
+import freespace from "../assests/images/dashboard/free space.svg";
+import gps from "../assests/images/dashboard/gps.svg";
+import image from "../assests/images/dashboard/image.svg";
+import other from "../assests/images/dashboard/other.svg";
+import video from "../assests/images/dashboard/video.svg";
 import Oval1 from "../assests/images/profile/Oval-1.png";
 import Oval2 from "../assests/images/profile/Oval-2.png";
 import Oval3 from "../assests/images/profile/Oval-3.png";
@@ -768,13 +768,15 @@ const Dashboard = () => {
       <div className="flex justify-center mb-12">
         <Modal>
           <Modal.Toggle toggleName="viewMore-keylogger">
-            <button
-              type="button"
-              class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-semibold rounded-lg text-lg px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
-            >
-              View More
-              <MdKeyboardDoubleArrowDown size={22} />
-            </button>
+            <div className="hidden md:block">
+              <button
+                type="button"
+                class=" text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-semibold rounded-lg text-lg px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+              >
+                View More
+                <MdKeyboardDoubleArrowDown size={22} />
+              </button>
+            </div>
           </Modal.Toggle>
           <Modal.Window windowName="viewMore-keylogger">
             <Upgrade />

@@ -41,7 +41,7 @@ const Location = () => {
                     borderBottom: "1.5px solid #d0d4dd",
                   }}
                 >
-                  <p className="flex justify-start gap-4">
+                  <p className="flex justify-start ">
                     <span className="LiveCircleIcon clear-starttext-md text-gray-500" />
                     {v.des}
                   </p>
