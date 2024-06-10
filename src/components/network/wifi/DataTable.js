@@ -83,7 +83,7 @@ function DataTable() {
   ];
   return (
     <>
-      <div className="lg:hidden mt-1 ">
+      <div className="lg:hidden mt-1 px-1.5 ">
         <p className=" border-b text-gray-500">Wifi Network History</p>
         {contents.map((content) => {
           return (
@@ -137,31 +137,31 @@ function DataTable() {
       </div>
       <div className="lg:grid lg:grid-cols-6 grid-cols-6 mt-10 lg:border border-b rounded-lg lg:mx-4 mx-0 hidden">
         <p className="text-center text-gray-500 p-2 border-b-2">Name</p>
-        <div className="flex border-b-2">
+        <div className="flex  justify-center border-b-2">
           <span>
             <MdOutlineCastConnected className="mt-3 w-4 h-4  mr-1 text-gray-500" />
           </span>
-          <p className="text-center text-gray-500 p-2 ">Connected At</p>
+          <p className="text-end text-gray-500 p-2 ">Connected At</p>
         </div>
-        <div className="flex border-b-2">
+        <div className="flex  justify-center border-b-2">
           <span>
             <IoMdTime className="mt-3 w-4 h-4  mr-1 text-gray-500" />
           </span>
-          <p className="text-center text-gray-500 p-2 ">Usage Time</p>
+          <p className="text-end text-gray-500 p-2 ">Usage Time</p>
         </div>
-        <div className="flex border-b-2">
+        <div className="flex  justify-center border-b-2">
           <span>
             <TbWorldLatitude className="mt-3 w-4 h-4  mr-1 text-gray-500" />
           </span>
-          <p className="text-center text-gray-500 p-2 ">Latitude</p>
+          <p className="text-end text-gray-500 p-2 ">Latitude</p>
         </div>
-        <div className="flex border-b-2">
+        <div className="flex justify-center border-b-2">
           <span>
             <TbWorldLongitude className="mt-3 w-4 h-4  mr-1 text-gray-500" />
           </span>
-          <p className="text-center text-gray-500 p-2 ">Longitude</p>
+          <p className="text-start text-gray-500 p-2 ">Longitude</p>
         </div>
-        <p className="text-center text-gray-500 p-2 border-b-2">Action</p>
+        <p className="text-end pe-4 text-gray-500 p-2 border-b-2">Action</p>
 
         {contents.map((content, index) => {
           return (
@@ -184,7 +184,7 @@ function DataTable() {
                   <p className="font-medium">{content.longitude}</p>
                 </div>
                 <Modal.Toggle toggleName="Update">
-                  <div className="flex justify-center py-4 cursor-pointer">
+                  <div className="flex justify-end pe-5 py-4 cursor-pointer">
                     <img className="h-8 w-8" src={del}></img>
                   </div>
                 </Modal.Toggle>

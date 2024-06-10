@@ -9,45 +9,49 @@ import ss3 from '../../../../assests/images/ss3.png'
 import ss4 from '../../../../assests/images/ss4.png'
 import ss5 from '../../../../assests/images/ss5.png'
 import ss6 from '../../../../assests/images/sss5.png'
-
+import options from '../../../../assests/images/options.png'
+import ss from '../../../../assests/images/screeenshot.png'
+import red from '../../../../assests/images/redd.png'
+import bl from '../../../../assests/images/blmsg.png'
+import black from '../../../../assests/images/black.png'
+import mob from '../../../../assests/images/mob.png'
 
 
 
 function Gallery() {
   const imgs = [
     {
-      img: s,
+      img: s2,
       name: "nature-3076877.jpg",
       desc: "20.052024-422.64 KB",
     },
-    { img: s2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ss2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ss3, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: s, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ss, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: options, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: bl, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: red, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
 
-    {
-      img: ss4,
-      name: "nature-3076877.jpg",
-      desc: "20.052024-422.64 KB",
-    },
-    { img: ss5, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+  
   ];
 
   const imgs2= [
     {
-      img: ss6,
+      img: ss5,
       name: "nature-3076877.jpg",
       desc: "20.052024-422.64 KB",
     },
     { img: s2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ss2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
     { img: ss3, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ss2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
 
     {
-      img: ss4,
+      img: mob,
       name: "nature-3076877.jpg",
       desc: "20.052024-422.64 KB",
     },
-    { img: ss5, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: black, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ss, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: options, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
   ];
   return (
     <div className="lg:mt-10 mt-0">

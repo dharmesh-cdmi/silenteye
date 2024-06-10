@@ -16,18 +16,20 @@ import a5 from "../../../../assests/images/al5.png";
 import a6 from "../../../../assests/images/al6.png";
 import a7 from "../../../../assests/images/al7.png";
 import plants from "../../../../assests/images/plants.png";
+import dogbook from "../../../../assests/images/dogbook.png";
 
 function Gallery() {
   const navigate = useNavigate();
   const albums = [
-    { img: img, text: "Recents", desc: "1264 Photos, 164 Videos" },
+    { img: alb, text: "Recents", desc: "1264 Photos, 164 Videos" },
     { img: alb2, text: "Nature", desc: "100 Photos, 5 Videos" },
-    { img: alb, text: "Animals", desc: "100 Photos, 20 Videos" },
+    { img: dogbook, text: "Animals", desc: "100 Photos, 20 Videos" },
     { img: alb3, text: "Architecture", desc: "213 Photos, 90 Videos" },
     { img: plants, text: "Plants", desc: "83 Photos, 10 Videos" },
-    { img: a5, text: "Food", desc: "124 Photos, 164 Videos" },
     { img: a6, text: "Interior", desc: "1264 Photos, 190 Videos" },
     { img: a7, text: "Wallpapers", desc: "14 Photos, 164 Videos" },
+    { img: a5, text: "Food", desc: "124 Photos, 164 Videos" },
+ 
   ];
   const albumss = [
     { img: a1, text: "Videos", desc: "164 Videos" },

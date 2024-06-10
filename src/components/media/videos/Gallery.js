@@ -20,6 +20,8 @@ import v6 from '../.././../assests/images/vid2.6.png'
 import v7 from '../.././../assests/images/vid2.7.png'
 import v8 from '../.././../assests/images/vid2.8.png'
 import v9 from '../.././../assests/images/vid2.9.png'
+import office from '../.././../assests/images/office.png'
+import dharti from '../.././../assests/images/dharti.png'
 
 
 
@@ -28,18 +30,20 @@ function Gallery() {
   const [backdrop, setBackdrop] = useState(false);
   const [idx,setIdx]=useState('')
   const vids = [
-    { vid: v, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: v, name: "food-3076877.jpg", desc: "20.052024-422.64 KB" },
     { vid: v2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v22, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v3, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v4, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v5, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v6, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v7, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v8, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v9, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v5, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { vid: v4, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: office, name: "office-4126712.jpg", desc: "20.052024-422.64 KB" },
+    { vid: v22, name: "business-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: v3, name: "mountain-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: v4, name: "wow-3076877.jpg", desc: "20.052024-422.64 KB" },
+
+    { vid: v5, name: "mys-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: v6, name: "reel-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: v7, name: "animal-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: dharti, name: "space-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: v8, name: "jungle-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { vid: v9, name: "taps-3076877.jpg", desc: "20.052024-422.64 KB" },
+  
 
 
   ];
