@@ -6,6 +6,7 @@ import whatsapp from "../../src/assests/images/KeyLogger/whatsapp.png";
 import Messenger from "../../src/assests/images/KeyLogger/messenger.png";
 import instagram from "../../src/assests/images/KeyLogger/instagram.png";
 import snapchat from "../../src/assests/images/KeyLogger/snapchat.png";
+import photos from "../../src/assests/images/KeyLogger/photos.png"
 import KeyLoggerHeader from "../components/KeyLogger/KeyLoggerHeader";
 import Button from "../components/Shared/Button";
 import More from "../assests/images/more.png";
@@ -23,20 +24,27 @@ const keyloggerData = [
     },
     {
       id: "2",
+      img: photos,
+      heading: "Photos",
+      subheading: "should we meet up tomorrow before classes?",
+      time: "08:58 AM",
+    },
+    {
+      id: "3",
       img: whatsapp,
       heading: "WhatsApp",
       subheading: "hey, how are you doing?",
       time: "08:44 AM",
     },
     {
-      id: "3",
+      id: "4",
       img: whatsapp,
       heading: "WhatsApp",
       subheading: "idk, maybe in an hour or so",
       time: "08:43 AM",
     },
     {
-      id: "4",
+      id: "5",
       img: Messenger,
       heading: "Messenger",
       subheading: "did she say anything to you? or dad?",

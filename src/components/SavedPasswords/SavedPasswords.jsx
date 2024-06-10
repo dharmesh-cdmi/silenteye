@@ -14,8 +14,8 @@ const SavedPasswords = ({ SavedPassword }) => {
           <Accordion>
             <Accordion.Item>
               <Accordion.Header>
-                <div className="flex flex-row">
-                  <img src={icon} className="h-auto  max-w-[100%]" />
+                <div className="flex flex-row  items-center">
+                  <img src={icon} className="h-5" />
                   <span className="ms-2 text-[#000000] font-[600] text-[20px]">
                     {heading}
                   </span>

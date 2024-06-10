@@ -1,6 +1,5 @@
 import React from "react";
 import { Table } from "../components/Shared/Table";
-import messenger from "../../src/assests/images/SavedPasswords/messenger.png"
 import amazon from "../../src/assests/images/SavedPasswords/amazon.png"
 import dribble from "../../src/assests/images/SavedPasswords/dribble.png"
 import facebook from "../../src/assests/images/SavedPasswords/facebook.png"
@@ -13,13 +12,15 @@ import Button from "../components/Shared/Button";
 import More from "../assests/images/more.png";
 import Modal from "../components/Shared/Modal";
 import Upgrade from "../components/Shared/Upgrade"
+import adobe from "../../src/assests/images/SavedPasswords/adope.png"
+import ebay from "../../src/assests/images/SavedPasswords/ebay.png"
 
 const SavedPasswordsData = [
   [
     {
       id: "1",
-      icon: messenger,
-      heading: "messenger.com",
+      icon: adobe,
+      heading: "adobe.com",
       identity: "Test123",
       password: "Testing4Pass@9900",
     },
@@ -37,9 +38,15 @@ const SavedPasswordsData = [
       identity: "Test125",
       password: "Testing6Pass@9900",
     },
-   
     {
       id: "4",
+      icon:  ebay,
+      heading: "ebay.com",
+      identity: "Test125",
+      password: "Testing6Pass@9900",
+    },
+    {
+      id: "5",
       icon: facebook,
       heading: "facebook.com",
       identity: "Test127",

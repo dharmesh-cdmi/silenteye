@@ -24,22 +24,27 @@ const AllAllertsData = [
     },
     {
       id: "2",
-      img: snapchat,
-      heading: "Snap from King A",
-      subheading: "New Snap ! Check it Out",
-      time: "11:38 PM",
-    },
-    
-    
+      img: location,
+      heading: "Asher is Out of Location",
+      subheading: "Location Alert ! GeoFencer.",
+      time: "08:58 AM",
+    },   
     {
       id: "3",
+      img: youtube,
+      heading: "Watch Now:Tll News Video",
+      subheading: "How you feel about new video?",
+      time: "08:44 AM",
+    },
+    {
+      id: "4",
       img: messenger,
       heading: "Yoknin Yossee",
       subheading: "Hey ! How are you?",
       time: "08:43 AM",
     },
     {
-      id: "4",
+      id: "5",
       img: whatsapp,
       heading: "Moon & Urus",
       subheading: "New Office Table Available Now !",
@@ -61,6 +66,14 @@ const AllAllertsData = [
       subheading: "New Snap ! Check it Out",
       time: "11:32 PM",
     },
+    {
+      id: "3",
+      img: instagram,
+      heading: "Hawai Babe",
+      subheading: "I thought you already talked to her",
+      time: "11:28 PM",
+    },
+
   ],
 ];
 const AllAllert = () => {
