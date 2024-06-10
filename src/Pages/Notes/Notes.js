@@ -35,11 +35,6 @@ function Messages() {
 
   const msgData = [
     {
-      name: "Mode of Transportation",
-      text: "We are going to hold a rally on Saturday..",
-    },
-
-    {
       name: "Housewarming party",
       text: "We are going to hold a rally on Saturday. Items to prepare. lemonade dispenserPicnic table clothExtra outdoor lights,e",
     },
@@ -76,11 +71,13 @@ function Messages() {
             Recent Notes
           </p>
           <Link to="/notesprofile">
-            <div className="md:hidden bg-gray-100 flex py-4 border-b-2 cursor-pointer justify-between md:px-4">
+            <div className=" bg-gray-100 md:hidden flex py-4 border-b-2 cursor-pointer justify-between md:px-4">
               <div className="flex align-middle flex-col px-3 w-4/5">
-                <h3 className="font-semibold text-xl ">Recent Rally</h3>
+                <h3 className="font-semibold text-xl ">
+                  Mode of Transportation
+                </h3>
                 <p className="font-semibold text-black/50">
-                  We are going to rally
+                  We are going to hold a rally on Saturday...
                 </p>
               </div>
               <div>
@@ -90,6 +87,23 @@ function Messages() {
               </div>
             </div>
           </Link>
+          <div className="hidden md:block ">
+            <div className=" bg-gray-100 flex py-4 border-b-2 cursor-pointer justify-between md:px-4">
+              <div className="flex align-middle flex-col px-3 w-4/5">
+                <h3 className="font-semibold text-xl ">
+                  Mode of Transportation
+                </h3>
+                <p className="font-semibold text-black/50">
+                  We are going to hold a rally on Saturday...
+                </p>
+              </div>
+              <div>
+                <p className="text-gray-500 text-base text-end mt-4 me-2 font-semibold ">
+                  9:41 PM
+                </p>
+              </div>
+            </div>
+          </div>
           {msgData.map((msg, index) => {
             return (
               <Modal>

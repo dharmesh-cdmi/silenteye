@@ -12,6 +12,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import Upgrade from "../../components/Shared/Upgrade";
 import Modal from "../../components/Shared/Modal";
 import Delete from "../../assests/images/delete.png";
+import block from "../../assests/images/calls/block.png";
 import Oval1 from "../../assests/images/profile/Oval-1.png";
 import Oval2 from "../../assests/images/profile/Oval-2.png";
 import Oval3 from "../../assests/images/profile/Oval-3.png";
@@ -197,9 +198,10 @@ const FaceTime = () => {
                     <div className="flex gap-4 mt-6 ">
                       <Modal.Toggle toggleName="Update">
                         <div className="hidden md:block">
-                          <BsPersonAdd
-                            className="text-slate-900 cursor-pointer"
-                            size={25}
+                          <img
+                            className=" h-6  m-auto cursor-pointer"
+                            src={block}
+                            alt
                           />
                         </div>
                       </Modal.Toggle>

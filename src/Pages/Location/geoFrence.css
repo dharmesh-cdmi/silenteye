@@ -47,8 +47,15 @@
   /* font-size: 1.1rem; */
 }
 .geoRightMap{
-  height: 15.5rem;
+  height: 17rem;
  background: url("../../assests/images/map.png");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+.geoRightMap2{
+  height: 15.5rem;
+ background: url("../../assests/images/Location4.png");
  background-size: cover;
  background-position: center;
  background-repeat: no-repeat;
@@ -104,10 +111,10 @@ flex-direction: column;
   padding: 5px 10px;
 }
 .LocationHistoryCol p{
-  font-size: 0.7rem;
+  font-size: 0.875rem;
 }
 .LocationHistoryCol h3{
-  font-size: 0.8rem;
+  font-size: 18px;
 }
 /* geo right */
 .geoFrenceConRight{

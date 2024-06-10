@@ -12,6 +12,8 @@ import { FaArrowLeft } from "react-icons/fa";
 import Upgrade from "../../components/Shared/Upgrade";
 import Modal from "../../components/Shared/Modal";
 import Delete from "../../assests/images/delete.png";
+import unblock from "../../assests/images/calls/Menu.png";
+
 import { useMoveBack } from "../../hooks/useMoveBack";
 import moveBack from "../../assests/images/Header/arrow.png";
 import Oval1 from "../../assests/images/profile/Oval-1.png";
@@ -93,13 +95,11 @@ const BlockedCalls = () => {
           <Modal>
             <Modal.Toggle toggleName="Update">
               <div className="me-1 md:hidden ">
-                <button
-                  type="button"
-                  class="text-white gap-2 bg-red-500  border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
-                >
-                  <RiUserForbidLine />
-                  Unblock
-                </button>
+                <img
+                  className=" h-[30px] mb-2  m-auto cursor-pointer"
+                  src={unblock}
+                  alt
+                />
               </div>
             </Modal.Toggle>
             <Modal.Window windowName="Update">
@@ -118,7 +118,8 @@ const BlockedCalls = () => {
           </Modal>
         </div>
       </div>
-      <div className="md:border md:rounded-xl md:my-8 my-2 border-t shadow ">
+      <hr class="h-px md:hidden bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <div className="md:border md:rounded-xl md:my-8 my-1  shadow ">
         <div className="grid grid-cols-1 md:grid-cols-2 ">
           {/* first column */}
           <div className="border-r hidden md:block">
@@ -148,7 +149,7 @@ const BlockedCalls = () => {
                     </div>
                   </div>
                 </li>
-                <li className="p-1 text-gray-400 font-semibold pt-4">
+                <li className="p-1 text-gray-400 font-semibold pt-4 text-end">
                   21/05/2024 <br />
                   3:58 AM
                 </li>
@@ -218,7 +219,7 @@ const BlockedCalls = () => {
                         <p className="my-auto ">
                           <IoIosMailOpen className="text-gray-400 hidden md:block" />
                         </p>
-                        <p className="ps-1 text-sm md:text-base">
+                        <p className="ps-1 text-base ">
                           hendrickguice@gmail.com
                         </p>
                       </div>
@@ -228,18 +229,16 @@ const BlockedCalls = () => {
                     <div className="flex gap-2 mt-6">
                       <Modal.Toggle toggleName="Update">
                         <div className="hidden md:block">
-                          <button
-                            type="button"
-                            class="text-white gap-2 bg-red-500  border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
-                          >
-                            <RiUserForbidLine />
-                            Unblock
-                          </button>
+                          <img
+                            className=" h-8  m-auto cursor-pointer"
+                            src={unblock}
+                            alt
+                          />
                         </div>
                       </Modal.Toggle>
 
                       <Modal.Toggle toggleName="Update">
-                        <div className="hidden md:block">
+                        <div className="hidden md:block mt-1">
                           <img
                             className="h-6 cursor-pointer"
                             src={Delete}

@@ -15,27 +15,27 @@ const AllFiles = () => {
   return (
     <>
       <Modal>
-        <AllFilesHead headding="All Files" />
+        <AllFilesHead headding="All Files " />
         <hr class="h-px md:hidden  mb-4 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-        <div className="Apps-container">
+        <div className="Apps-container mx-2">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 justify-items-center md:justify-items-start">
             <div className="appBox flex flex-col justify-center mx-3 mb-3">
               <span className="appBoxicon relative">
                 <input
                   type="checkbox"
-                  className="h-4 w-4 absolute top-0 left-2 b"
+                  className="h-5 w-8 absolute top-0 left-[-1.5rem] md:left-12"
                 ></input>
                 <Link to="/Files/downloads">
                   {" "}
                   <img
                     src={file1}
                     alt="Download"
-                    className="md:h-20 h-[59px] w-20"
+                    className="md:h-20 h-[80px] w-[80px]"
                   />
                 </Link>
               </span>
               <div className="-my-3 text-sm  font-semibold text-center flex flex-col justify-center">
-                <h3>Download</h3>
+                <h3 className="text-base">Download</h3>
                 <p className="text-slate-600 text-nowrap">29 items</p>
               </div>
             </div>
@@ -49,17 +49,17 @@ const AllFiles = () => {
                     <span className="appBoxicon relative">
                       <input
                         type="checkbox"
-                        className="h-4 w-4 absolute top-0 left-2 b"
+                        className="h-5 w-8 absolute top-0 left-[-1.5rem] md:left-12 "
                       ></input>
 
                       <img
                         src={v.icon}
                         alt="Download"
-                        className="md:h-20 h-[59px] w-20"
+                        className="md:h-20 h-[80px] w-20"
                       />
                     </span>
                     <div className="-my-3 text-sm  font-semibold text-center flex flex-col justify-center">
-                      <h3>{v.title}</h3>
+                      <h3 className="text-base">{v.title}</h3>
                       <p className="text-slate-600 text-nowrap">{v.size}</p>
                     </div>
                   </div>

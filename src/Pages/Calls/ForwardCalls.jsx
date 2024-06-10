@@ -10,6 +10,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import Modal from "../../components/Shared/Modal";
 import Upgrade from "../../components/Shared/Upgrade";
 import Delete from "../../assests/images/delete.png";
+import edit from "../../assests/images/calls/edit.png";
 import Oval1 from "../../assests/images/profile/Oval-1.png";
 import Oval2 from "../../assests/images/profile/Oval-2.png";
 import Oval3 from "../../assests/images/profile/Oval-3.png";
@@ -18,6 +19,7 @@ import Oval5 from "../../assests/images/profile/Oval-5.png";
 import Oval6 from "../../assests/images/profile/Oval-6.png";
 import Oval7 from "../../assests/images/profile/Oval-7.png";
 import Oval from "../../assests/images/profile/Oval.png";
+import Checkbox from "../../components/Shared/Checkbox";
 
 const ForwardCalls = () => {
   const forwordcalldata = [
@@ -90,7 +92,7 @@ const ForwardCalls = () => {
         placeholder="Search by Name or Phone Number"
       />
       <Modal>
-        <div className="md:border md:rounded-xl  border-t md:my-8">
+        <div className="md:border md:rounded-xl px-4 md:mx-0 border-t md:my-8">
           <div className="grid md:grid-cols-5 grid-cols-1">
             <div className="md:border-r liborder ">
               <div className="p-2">
@@ -99,13 +101,9 @@ const ForwardCalls = () => {
                     <p>Always Forward</p>
                     <p className="text-gray-300">Off</p>
                   </div>
+
                   <div className="flex-1 text-end mt-2">
-                    <label className="toggle-switch">
-                      <input type="checkbox" />
-                      <div className="toggle-switch-background">
-                        <div className="toggle-switch-handle" />
-                      </div>
-                    </label>
+                    <Checkbox />
                   </div>
                 </div>
               </div>
@@ -142,7 +140,7 @@ const ForwardCalls = () => {
                     type="button"
                     class="inline-flex justify-center  text-gray-900 h-full  md:border-0 border bg-white md:border-l  w-full hover:bg-gray-100   font-medium rounded-xl text-sm px-16 py-3 md:py-5 text-center  items-center  me-2 mb-2"
                   >
-                    <FiEdit size={20} className="ms-2" />
+                    <img className=" h-5 mx-2 cursor-pointer" src={edit} alt />
                     Edit
                   </button>
                 </div>

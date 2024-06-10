@@ -57,7 +57,7 @@ const GeoFrence = () => {
                         <span className="LiveCircleIcon iconBlue" />
                         {v.des}
                       </p>
-                      <h3 className="text-lg font-bold">{v.title}</h3>
+                      <h3 className="text-lg  font-bold">{v.title}</h3>
                       <p className="flex justify-start gap-4 text-slate-500 text-sm">
                         {v.date + " 10:45 AM"}{" "}
                       </p>
@@ -73,9 +73,9 @@ const GeoFrence = () => {
           {/* GEOFRENCE RIGHT CONTAINERS */}
 
           <div className="geoFrenceConRight pt-1 flex flex-col justify-center">
-            <div className=" flex ms-4 p-[.3rem] justify-start items-center gap-4 md:hidden ">
+            <div className=" flex ms-4 pt-[.3rem] justify-start items-center gap-4 md:hidden ">
               <Link to={"#"}>
-                <button className="active text-slate-500 py-1 px-2 rounded">
+                <button className="active text-slate-500 py-1 px-3 rounded">
                   All
                 </button>
               </Link>
@@ -90,23 +90,24 @@ const GeoFrence = () => {
               </Link>
             </div>
             <hr class="h-px my-2 md:hidden bg-gray-200 border-0 dark:bg-gray-700"></hr>
-            <div className="md:p-4 p-2 flex flex-col">
+            <div className="md:p-2  pb-2 flex flex-col">
               <h3 className=" text-slate-500 mx-3 text-base font-medium">
                 Location History
               </h3>
             </div>
 
-            <div className="geoRightMap " />
+            <div className="geoRightMap hidden md:block" />
+            <div className="geoRightMap2 md:hidden" />
 
             <div className="LocationHistoryCols flex gap-16 justify-start cursor-pointer">
               <div className="locationhistoryImg ml-2" />
               <div className="LocationHistoryCol flex flex-col justify-start cursor-pointer">
                 <p className="flex justify-start text-slate-500 text-sm">
-                  <span className="LiveCircleIcon mr-2" />
+                  <span className="LiveCircleIcon mr-2 text-[18px] font-medium" />
                   41.3130335
                 </p>
                 <h3 className="font-semibold text-lg">S Mainsp</h3>
-                <p className="flex justify-start text-slate-500 text-sm">
+                <p className="flex justify-start text-slate-500 text-sm font-medium">
                   Mon, May 2024 10:45 AM
                 </p>
               </div>

@@ -446,23 +446,49 @@ const DeviceControl = () => {
                   </Modal.Window>
                 </Modal>
               </div>
-              <p className="text-sm font-medium text-gray-400">
+              <p className="hidden md:block text-sm font-medium text-gray-400">
                 Social Media Content Filter
               </p>
-              <div className="flex flex-wrap gap-2">
-                <span class="bg-blue-100 text-slate-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <div className="hidden md:block">
+                <div className=" flex flex-wrap gap-2">
+                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                    Nudity
+                  </span>
+                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                    Hate
+                  </span>
+                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                    Violence
+                  </span>
+                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                    Self-harm
+                  </span>
+                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                    Bullying/Harassment
+                  </span>
+                  <span class="bg-[#172A6E] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                    +25 More Tags
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className=" md:hidden">
+              <div className=" flex flex-wrap justify-start mx-4 gap-2">
+                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Nudity
                 </span>
-                <span class="bg-blue-100 text-slate-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Hate
                 </span>
-                <span class="bg-blue-100 text-slate-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Violence
                 </span>
-                <span class="bg-blue-100 text-slate-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Self-harm
                 </span>
-                <span class="bg-blue-100 text-slate-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Bullying/Harassment
                 </span>
                 <span class="bg-[#172A6E] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
@@ -470,29 +496,29 @@ const DeviceControl = () => {
                 </span>
               </div>
             </div>
-          </div>
-          <div className="flex md:p-4 md:py-4 px-2 md:mt-4 justify-center md:justify-end">
-            <div>
-              <img
-                src={safemode}
-                alt="img"
-                className="object-contain h-12 hidden md:block"
-              />
-              <div className=" md:hidden">
-                <FilterModal>
-                  <FilterModal.Toggle toggleName="Update">
-                    <button
-                      type="button"
-                      class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
-                    >
-                      <AiFillEdit />
-                      Edit Filters
-                    </button>
-                  </FilterModal.Toggle>
-                  <FilterModal.Window windowName="Update">
-                    <FilterTegModal />
-                  </FilterModal.Window>
-                </FilterModal>
+            <div className="flex mt-4 md:p-4 md:py-4 px-2 md:mt-4 justify-center md:justify-end">
+              <div>
+                <img
+                  src={safemode}
+                  alt="img"
+                  className="object-contain h-12 hidden md:block"
+                />
+                <div className=" md:hidden">
+                  <FilterModal>
+                    <FilterModal.Toggle toggleName="Update">
+                      <button
+                        type="button"
+                        class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                      >
+                        <AiFillEdit />
+                        Edit Filters
+                      </button>
+                    </FilterModal.Toggle>
+                    <FilterModal.Window windowName="Update">
+                      <FilterTegModal />
+                    </FilterModal.Window>
+                  </FilterModal>
+                </div>
               </div>
             </div>
           </div>

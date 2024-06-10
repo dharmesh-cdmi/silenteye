@@ -6,6 +6,7 @@ import ExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx";
 import { IoIosArrowDropright } from "react-icons/io";
 
 import Map from "../../assests/images/map.png";
+import Map2 from "../../assests/images/map2.png";
 import CallsHead from "../../components/Calls/CallsHead.jsx";
 
 const Location = () => {
@@ -21,32 +22,40 @@ const Location = () => {
 
         {/*  LIVE LOCATION MAP */}
         <div className=" md:mt-8 flex justify-center ">
-          <img src={Map} alt={"map"} className="h-full " />
+          <img src={Map} alt={"map"} className="h-full hidden md:block" />
+          <img src={Map2} alt={"map"} className="h-full md:hidden" />
           {/* <Link><button className="LocationMapConBtn flex justify-center">Live Tracking <IoIosArrowDropright /></button></Link> */}
         </div>
 
         {/*  LIVE LOCATION HISTORY HEADER */}
 
         {/*  LIVE LOCATION HISTORY BODY */}
-        <div className="LocationHistoryBody flex flex-col justify-start">
-          {LocationData.length > 0 ? (
-            LocationData.map((v, i) => (
-              <div
-                className="LocationHistoryCol flex flex-col justify-start cursor-pointer"
-                style={{ padding: "1rem", borderBottom: "1.5px solid #d0d4dd" }}
-              >
-                <p className="flex justify-start gap-4">
-                  <span className="LiveCircleIcon clear-starttext-md text-gray-500" />
-                  {v.des}
-                </p>
-                <h3 className="text-lg mt-2">{v.title}</h3>
-              </div>
-            ))
-          ) : (
-            <h3>no data found</h3>
-          )}
+        <div className="LocationHistoryBody flex flex-col justify-start ">
+          <div className="hidden md:block">
+            {LocationData.length > 0 ? (
+              LocationData.map((v, i) => (
+                <div
+                  className="LocationHistoryCol flex flex-col justify-start cursor-pointer"
+                  style={{
+                    padding: "1rem",
+                    borderBottom: "1.5px solid #d0d4dd",
+                  }}
+                >
+                  <p className="flex justify-start gap-4">
+                    <span className="LiveCircleIcon clear-starttext-md text-gray-500" />
+                    {v.des}
+                  </p>
+                  <h3 className="text-lg mt-2">{v.title}</h3>
+                </div>
+              ))
+            ) : (
+              <h3>no data found</h3>
+            )}
+          </div>
         </div>
-        <ExportBtn />
+        <div className="hidden md:block">
+          <ExportBtn />
+        </div>
       </div>
     </div>
   );

@@ -13,6 +13,7 @@ import Modal from "../../components/Shared/Modal";
 import Delete from "../../assests/images/delete.png";
 import { useMoveBack } from "../../hooks/useMoveBack";
 import moveBack from "../../assests/images/Header/arrow.png";
+import Oval from "../../assests/images/profile/Oval.png";
 
 const CallProfile = () => {
   const moveBacks = useMoveBack();
@@ -56,7 +57,7 @@ const CallProfile = () => {
               <li className="flex-none w-20 pt-2 border-none ">
                 <img
                   className="w-20 h-20 rounded-full m-auto"
-                  src="https://xsgames.co/randomusers/avatar.php?g=male"
+                  src={Oval}
                   alt="img"
                 />
               </li>

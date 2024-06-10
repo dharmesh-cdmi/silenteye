@@ -11,8 +11,9 @@ const WebFilter = () => {
   return (
     <>
       <CallsHead heading="Web Filters" placeholder="Search " />
+      <hr class="h-px  bg-gray-200 border-0 dark:bg-gray-700"></hr>
 
-      <section className="webFilterwrapper md:p-4  flex flex-col md:my-6">
+      <section className="webFilterwrapper md:border rounded-lg md:p-4  flex flex-col md:my-6">
         <div className="webFilterContainer md:rounded-lg rounded-none flex flex-col">
           {/* Browser Header */}
           <div className="webFilterHeader flex justify-between">
@@ -23,44 +24,73 @@ const WebFilter = () => {
           </div>
 
           {/* Browser  DATA COLUMNS */}
-          <div className="browseHistoryCol  flex">
-            <div className="browseHistoryDes flex flex-col">
-              <h3 className="font-semibold lg:text-lg text-sm">
-                https://www.apple.com
-              </h3>
-              <p>website blocked</p>
-            </div>
-            <div className="browseHistoryDate flex flex-col">
-              <p className="text-slate-500 text-sm">May 13, 09:10 AM</p>
-            </div>
-          </div>
           <div className="browseHistoryCol flex">
             <div className="browseHistoryDes flex flex-col">
-              <h3 className="font-semibold lg:text-lg text-sm">
+              <h3 className="font-semibold text-lg lg:text-lg ">
                 https://www.facebook.com
               </h3>
-              <p>website blocked</p>
+              <div className="flex justify-between">
+                <p className="text-black/50 font-normal">website blocked</p>
+              </div>
             </div>
-            <div className="browseHistoryDate flex flex-col">
-              <p className="text-slate-500 text-sm">May 13, 09:10 AM</p>
-            </div>
-          </div>
-          <div className="browseHistoryCol flex">
-            <div className="browseHistoryDes flex flex-col">
-              <h3 className="font-semibold lg:text-lg text-sm">Pen Vape</h3>
-              <p>website blocked</p>
-            </div>
-            <div className="browseHistoryDate flex flex-col">
-              <p className="text-slate-500 text-sm">May 13, 09:10 AM</p>
+            <div className="browseHistoryDate flex flex-col ">
+              <p className="text-slate-500 text-sm hidden md:block">
+                May 13, 09:10 AM
+              </p>
+              <p className="text-slate-500 text-sm md:hidden mt-8">
+                2019-10-17 02:25:09
+              </p>
             </div>
           </div>
           <div className="browseHistoryCol flex">
             <div className="browseHistoryDes flex flex-col">
-              <h3 className="font-semibold lg:text-lg text-sm">Pen Vape</h3>
-              <p>website blocked</p>
+              <h3 className="font-semibold text-lg lg:text-lg ">Pen Vape</h3>
+              <div className="flex justify-between">
+                <p className="text-black/50 font-normal">website blocked</p>
+              </div>
             </div>
-            <div className="browseHistoryDate flex flex-col">
-              <p className="text-slate-500 text-sm">May 13, 09:10 AM</p>
+            <div className="browseHistoryDate flex flex-col ">
+              <p className="text-slate-500 text-sm hidden md:block">
+                May 13, 09:10 AM
+              </p>
+              <p className="text-slate-500 text-sm md:hidden mt-8">
+                2019-10-17 02:25:09
+              </p>
+            </div>
+          </div>
+          <div className="browseHistoryCol flex">
+            <div className="browseHistoryDes flex flex-col">
+              <h3 className="font-semibold text-lg lg:text-lg ">
+                https://www.apple.com
+              </h3>
+              <div className="flex justify-between">
+                <p className="text-black/50 font-normal">website blocked</p>
+              </div>
+            </div>
+            <div className="browseHistoryDate flex flex-col ">
+              <p className="text-slate-500 text-sm hidden md:block">
+                May 13, 09:10 AM
+              </p>
+              <p className="text-slate-500 text-sm md:hidden mt-8">
+                2019-10-17 02:25:09
+              </p>
+            </div>
+          </div>
+
+          <div className="browseHistoryCol flex">
+            <div className="browseHistoryDes flex flex-col">
+              <h3 className="font-semibold text-lg lg:text-lg ">Nudity</h3>
+              <div className="flex justify-between">
+                <p className="text-black/50 font-normal">Keyword blocked</p>
+              </div>
+            </div>
+            <div className="browseHistoryDate flex flex-col ">
+              <p className="text-slate-500 text-sm hidden md:block">
+                May 13, 09:10 AM
+              </p>
+              <p className="text-slate-500 text-sm md:hidden mt-8">
+                2019-10-17 02:25:09
+              </p>
             </div>
           </div>
         </div>

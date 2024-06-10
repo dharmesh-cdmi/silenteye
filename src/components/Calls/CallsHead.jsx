@@ -36,7 +36,7 @@ const CallsHead = (props) => {
           {props.heading}
         </span>
       </div>
-      <div className="item-two flex flex-row items-center md:mt-0 ">
+      <div className="item-two mb-1 flex flex-row items-center md:mt-0 ">
         <div className="me-3 mx-auto md:w-80 hidden md:block">
           <Modal>
             <Modal.Toggle toggleName="searchcall">
@@ -58,7 +58,7 @@ const CallsHead = (props) => {
                 onClick={handleSearch}
                 className="text-[18px] font-medium px-[6px]  py-[6px] text-[#101828] text-center"
               >
-                <IoIosSearch />
+                <IoIosSearch size={22} />
               </Button>
             </Modal.Toggle>
             <Modal.Window windowName="searchcall">
@@ -89,7 +89,7 @@ const CallsHead = (props) => {
                 onClick={exportKeyLogger}
                 className="md:text-[14px] xl:text-[18px] font-medium px-[6px] shadow-[0px_0px_56px_0px_#00000014] py-[6px] text-[#101828] text-center"
               >
-                <img src={exportIcon} alt="export" className="h-[18px]" />
+                <img src={exportIcon} alt="export" className="h-[22px]" />
               </Button>
             </Modal.Toggle>
             <Modal.Window windowName="searchcall">
@@ -121,7 +121,7 @@ const CallsHead = (props) => {
                 onClick={filterKeyLooger}
                 className="text-[18px] font-medium px-[6px] shadow-[0px_0px_56px_0px_#00000014] py-[6px] text-[#101828] text-center"
               >
-                <img src={filterIcon} alt="delete" className="h-[18px]" />
+                <img src={filterIcon} alt="delete" className="h-[22px]" />
               </Button>
             </Modal.Toggle>
             <Modal.Window windowName="searchcall">

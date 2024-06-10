@@ -26,6 +26,7 @@ import audio from "../assests/images/dashboard/audio.png";
 import battery from "../assests/images/dashboard/battery.png";
 import device from "../assests/images/dashboard/device storage.png";
 import document from "../assests/images/dashboard/document.png";
+import drive from "../assests/images/dashboard/drive.svg.png";
 import freespace from "../assests/images/dashboard/free space.png";
 import gps from "../assests/images/dashboard/gps.png";
 import image from "../assests/images/dashboard/image.png";
@@ -102,7 +103,7 @@ const Dashboard = () => {
     },
     {
       icon: image,
-      name: "Image",
+      name: "Images",
       status: "4.57 GB",
       link: "",
     },
@@ -436,7 +437,7 @@ const Dashboard = () => {
       </div>
 
       <div className="grid grid-cols-1 mx-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8  md:mx-0 ">
-        <InfoCard title="Device Info" className="mb-5 md:mb-0">
+        <InfoCard title="Device Info" className="mb-2 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
               <ul key={i} className="grid grid-cols-2 liborder ">
@@ -461,7 +462,7 @@ const Dashboard = () => {
               <Link to="/location">View More</Link>
             </p>
           }
-          className="mb-5 md:mb-0"
+          className="mb-2 md:mb-0"
         >
           <div className="rounded-lg py-1 bg-gray-50 hidden md:block">
             <img src={liveimg} alt="img" className="object-cover h-52 w-96" />
@@ -470,7 +471,7 @@ const Dashboard = () => {
             <img src={liveimg2} alt="img" className="object-cover h-52 w-96" />
           </div>
         </InfoCard>
-        <InfoCard title="Account Info " className="mb-5 md:mb-0">
+        <InfoCard title="Account Info " className="mb-2 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             <ul className="grid grid-cols-2 place-content-between ">
               <li className="py-3 px-2 font-medium text-base md:text-lg  liborder">
@@ -659,8 +660,8 @@ const Dashboard = () => {
                   </li>
                   <li className="p-1 text-[#172A6E] flex text-[16px] md:text-[18px]  font-medium md:font-semibold pt-4 border-none">
                     {info.time}&nbsp;
-                    <span className="mt-[5px] md:mt-[6px]">
-                      <PiGreaterThanBold size={15} />
+                    <span className="mt-[2px] md:mt-[4px]">
+                      <img className="w-5 h-5  " src={drive} alt="logo" />
                     </span>
                   </li>
                 </ul>
@@ -695,7 +696,7 @@ const Dashboard = () => {
                   <li className="p-1 flex-1 w-64 font-semibold text-lg md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 20)}</div>
                   </li>
-                  <li className="p-1 text-gray-400  font-medium md:font-semibold  text-sm border-none">
+                  <li className="p-1 text-gray-400  font-medium md:font-semibold mt-2 text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
@@ -724,7 +725,7 @@ const Dashboard = () => {
                   <li className="p-1 flex-1 w-64 font-semibold text-lg md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
                   </li>
-                  <li className="p-1 text-gray-400 font-medium md:font-semibold text-sm border-none">
+                  <li className="p-1 mt-2  text-gray-400 font-medium md:font-semibold text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
@@ -753,7 +754,7 @@ const Dashboard = () => {
                   <li className="p-1 flex-1 w-64 font-semibold text-lg md:text-xl text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
                   </li>
-                  <li className="p-1 text-gray-400 font-medium md:font-semibold text-sm border-none">
+                  <li className="p-1 mt-2  text-gray-400 font-medium md:font-semibold text-sm border-none">
                     {info.time}
                   </li>
                 </ul>

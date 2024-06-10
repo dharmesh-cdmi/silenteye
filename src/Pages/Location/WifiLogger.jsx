@@ -33,10 +33,10 @@ const WifiLogger = () => {
                     <span className="LiveCircleIcon" />
                     {v.des}
                   </p>
-                  <p className="flex justify-start gap-4 text-slate-700  font-semibold text-lg">
-                    <FaWifi />
+                  <h6 className="flex justify-start gap-2 text-slate-700  font-semibold text-[1.0625rem]">
+                    <FaWifi className="mt-1" />
                     {v.title}
-                  </p>
+                  </h6>
                   <p className="flex justify-start gap-4 ml-0 text-sm text-slate-500 ">
                     {v.date + " 10:38 AM"}
                   </p>

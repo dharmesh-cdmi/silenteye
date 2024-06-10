@@ -100,21 +100,21 @@ const Appsscreentime = () => {
         </div>
         <hr class="h-px mb-2 md:hidden bg-gray-200 border-0 dark:bg-gray-700" />
         <InfoCard
+          className="w-full mb-5 md:mb-0"
           title="Recent Most Used Apps"
           titleRight={
             <p className="text-blue-400 hidden md:block">
               <Link to="/Apps/screentime">See All</Link>{" "}
             </p>
           }
-          className="mb-5 md:mb-0"
         >
-          <div className="rounded-lgs md:p-2 md:bg-gray-50">
+          <div className="rounded-lgs md:p-2 ">
             {MostUsedApp.map((info, i) => (
               <div className="border-b border-slate-300">
                 <ul key={i} className="flex  mb-2">
-                  <li className="flex-none w-14 pt-2 border-none">
+                  <li className="flex-none w-14  pt-[14.4px] md:pt-2 border-none">
                     <img
-                      className="w-10 h-10  m-auto"
+                      className="w-6 h-6 md:h-10 md:w-10 m-auto "
                       src={info.img}
                       alt="logo"
                     />
@@ -122,7 +122,7 @@ const Appsscreentime = () => {
                   <li className="p-1 flex-1 w-64 font-semibold text-xl mt-2 text-gray-900 border-none">
                     <div>{info.name}</div>
                   </li>
-                  <li className="p-1 text-[16px] md:text-[18px] text-gray-400 font-medium md:font-semibold pt-4 border-none">
+                  <li className="p-1 text-[#172A6E] flex text-[16px] md:text-[18px]  font-medium md:font-semibold pt-4 border-none">
                     {info.time}
                   </li>
                 </ul>

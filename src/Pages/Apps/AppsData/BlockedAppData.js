@@ -1,17 +1,19 @@
 import bloggericon from "../../../assests/images/blogger.svg";
 import calendaricon from "../../../assests/images/calendar.svg";
+import twittericon from "../../../assests/images/twitter.svg";
+import tiktokicon from "../../../assests/images/tiktok.svg";
 
 export const BlockedAppData = [
   {
     id: 1,
-    title: "Blogger",
+    title: "Tiktok",
     size: "10 MB",
-    icon: bloggericon,
+    icon: tiktokicon,
   },
   {
     id: 2,
-    title: "Calendar",
+    title: "Twitter",
     size: "15 MB",
-    icon: calendaricon,
+    icon: twittericon,
   },
 ];

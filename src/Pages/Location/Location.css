@@ -58,7 +58,7 @@
 }
 .LocationHistoryCols .locationhistoryImg{
  width: 5rem; 
- height: 5rem;
+ height: 4rem;
  border-radius: 8px;
  background: url("../../assests/images/map.png");
  background-position: center;

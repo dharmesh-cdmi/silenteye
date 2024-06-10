@@ -44,58 +44,59 @@ const NotesProfile = () => {
             </Modal.Toggle>
           </div>
         </div>
-        <div className="border-l-2  ">
-          <div className="border-b-2 flex py-3 ps-3 align-middle  ">
-            <div className="ml-3">
-              <h3 className="font-bold text-lg text-nowrap ">
-                Mode Of Transportation
-              </h3>
-              <p className="text-slate-500 text-[14px] text-black/50 text-nowrap">
-                Created:Yesterday 8:23 AM
-              </p>
-            </div>
+        <div className=" ">
+          <div className="border-y py-4">
+            <p className="text-black   px-4  w-56  font-bold text-2xl text-nowrap">
+              Mode Of Transportation
+            </p>
+            <p className="text-black/50 font-medium px-4">
+              Created : Yesterday 8:23 AM
+            </p>
           </div>
-          <>
-            <div className="text-center mt-4 text-slate-500 text-sm font-semibold">
-              Last Edit: Yesterday 8:23 AM
-            </div>
-            <div className="px-2 mt-3">
-              <div className=" ">
-                <div className="text-black   rounded-xl w-56 px-4 font-medium text-lg text-nowrap">
-                  We are going to rally on saturday
-                </div>
-                <div className="text-black   rounded-xl w-56 px-4 font-medium text-lg text-nowrap">
-                  Items to prepare
-                </div>
-                <div className="text-black   rounded-xl w-56 px-4 font-medium text-lg text-nowrap">
-                  We are going to rally on saturday
-                </div>
-                <div className="text-black   rounded-xl w-56 px-4 font-medium text-lg text-nowrap">
-                  We are going to rally on saturday
-                </div>
-                <div className="text-black   rounded-xl w-56 px-4 font-medium text-lg text-nowrap">
-                  We are going to rally on saturday
-                </div>
-                <div className="text-black   rounded-xl w-56 px-4 font-medium text-lg text-nowrap">
-                  We are going to rally on saturday
-                </div>
-                <div className="text-black   rounded-xl w-56 px-4 font-medium text-lg text-nowrap">
-                  We are going to rally on saturday
-                </div>
-                <div className="text-black   rounded-xl w-56 px-4 font-medium text-lg text-nowrap">
-                  We are going to rally on saturday
-                </div>
-                <div className="text-black   rounded-xl w-56 px-4 font-medium text-lg text-nowrap">
-                  We are going to rally on saturday
-                </div>
-                <div className="text-black   rounded-xl w-56 px-4 font-medium text-lg text-nowrap">
-                  We are going to rally on saturday
-                </div>
+          <div className="text-center py-3">
+            <p className="text-black/50 font-semibold ">
+              Last Edit : Yesterday 9:41 PM
+            </p>
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+            We are going to hold a rally on Saturday.
+            <br /> Items to prepare:
+            <br />
+            lemonade dispenserPicnic table clothExtra <br /> outdoor
+            lights,elastic
+            <br /> balls and heavy toys,
+            <br /> large refrigerators for drinks, loudspeakers <br />
+            for music
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+            Items to prepare
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+            1.The Ulrick family
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+            2. The Tilmon family
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+            3.o'Malley
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+            4. Swanson Family
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+            5. Lee's Family
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+            6. Shaw FamilyThe
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+            7 Dean family
+          </div>
+          <div className="text-black   rounded-xl w-56 px-4 font-semibold text-lg text-nowrap">
+            8. The Roberts
+          </div>
 
-                <div className="text-black     rounded-xl w-56 px-4 font-bold text-xl text-nowrap"></div>
-              </div>
-            </div>
-          </>
+          <div className="text-black     rounded-xl w-56 px-4 font-bold text-xl text-nowrap"></div>
         </div>
         <Modal.Window windowName="Update">
           <Upgrade />
