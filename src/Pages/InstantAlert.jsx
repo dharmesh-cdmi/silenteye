@@ -48,8 +48,8 @@ const InstantAlert = () => {
         <Header heading="Instant Alerts" />
         <div className="sm:my-7 mb-2">
         <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
-          <Table.Header className="text-[16px] opacity-[50%]  ">
-            <div className='flex flex-row justify-between items-center px-[12px] font-extrabold'>
+          <Table.Header className="text-[16px]">
+            <div className='flex flex-row justify-between items-center px-[11px] font-extrabold'>
              Instant Alerts
              <Checkbox />
             </div>
