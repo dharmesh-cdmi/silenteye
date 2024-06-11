@@ -42,35 +42,35 @@ const LocationHistory = () => {
             <Link to="/location">View More</Link>
           </p>
         }
-        className="mb-5 md:mb-0 md:mt-8 text-base font-medium"
+        className="mb-2 md:mb-0 md:mt-8 text-base font-medium px-2"
       >
-        <div className="rounded-xl py-1 bg-gray-50 hidden md:block">
+        <div className="rounded-md py-1 bg-gray-50 hidden md:block">
           <img src={liveimg} alt="img" className="object-fill " />
         </div>
         <div className="rounded-xl py-1 bg-gray-50 md:hidden">
           <img src={liveimg2} alt="img" className="object-cover h-52 w-96" />
         </div>
       </InfoCard>
-      <section className="browserContainer md:p-4  flex flex-col md:my-6">
-        <div className="browseHistoryCon md:rounded-md flex flex-col">
-          <h3 className="border-y w-full p-3 text-base font-medium text-slate-500">
+      <section className="browserContainer  md:p-4  flex flex-col md:my-6">
+        <div className="browseHistoryCon border md:rounded-md flex flex-col">
+          <h3 className="border-b w-full p-3 text-base font-medium text-slate-500">
             Location History
           </h3>
           <div className="w-full ">
             {locationhistory.map((info, i) => (
               <div className="border-b md:border-slate-300 px-2">
                 <ul key={i} className="flex ">
-                  <li className="flex-none w-6 pt-2 border-none">
+                  <li className="flex-none  pt-[10px] border-none">
                     <GoDotFill className=" text-green-500" />
                   </li>
-                  <li className=" text-sm pb-2  text-gray-400 ">
+                  <li className=" text-[17px]  text-gray-400 ">
                     <div className="mt-[6px]">{info.name.slice(0, 25)}</div>
                   </li>
                 </ul>
                 <p className=" flex-1 w-64 font-semibold text-lg md:text-xl text-gray-900 border-none">
                   {info.des}
                 </p>
-                <p className="text-sm pb-2 text-gray-400">{info.time}</p>
+                <p className=" pb-2 text-gray-400 text-[17px]">{info.time}</p>
               </div>
             ))}
           </div>

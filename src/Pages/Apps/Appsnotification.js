@@ -37,18 +37,20 @@ const Appsnotification = () => {
     <>
       {/* Navigations, search*/}
       <CallsHead heading="Apps Notifications" placeholder="Search Notes" />
+      <hr class="h-px  md:hidden bg-gray-200 border-0 dark:bg-gray-700" />
 
       {/* ====== NOTIFICATION ====== */}
 
-      <section className="md:browserContainer flex flex-col md:my-8">
+      <section className="md:browserContainer md:border rounded-lg flex flex-col md:my-8">
         {/* Browser Header */}
-        <div className="browserHeader appnotificationheader md:border-2 md:border-b-0 md:rounded-t-lg border-slate-300 flex justify-between border-t">
-          <h3 className="font-semibold text-lg">
+        <div className="browserHeader appnotificationheader   border-slate-300 flex justify-between ">
+          <h3 className="font-semibold text-lg md:text-xl">
             Hide Notifications (All apps)
           </h3>
 
           <Checkbox />
         </div>
+        <hr class="h-px   bg-gray-200 border-0 dark:bg-gray-700" />
 
         {/* Browser Header */}
         <div className="browseHistoryCon flex flex-col">

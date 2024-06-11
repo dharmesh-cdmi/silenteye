@@ -73,25 +73,25 @@ const GeoFrence = () => {
           {/* GEOFRENCE RIGHT CONTAINERS */}
 
           <div className="geoFrenceConRight pt-1 flex flex-col justify-center">
-            <div className=" flex ms-4 pt-[.3rem] justify-start items-center gap-4 md:hidden ">
+            <div className=" flex ms-4 pt-[.3rem] justify-start items-center gap-4 md:hidden  font-semibold">
               <Link to={"#"}>
-                <button className="active text-slate-500 py-1 px-3 rounded">
+                <button className="active text-black/50 py-1 px-3 rounded">
                   All
                 </button>
               </Link>
               <Link to={"#"}>
-                <button className=" text-slate-500">Today</button>
+                <button className=" text-black/50">Today</button>
               </Link>
               <Link to={"#"}>
-                <button className=" text-slate-500">Yesterday</button>
+                <button className=" text-black/50">Yesterday</button>
               </Link>
               <Link to={"#"}>
-                <button className=" text-slate-500">Last 7 Day</button>
+                <button className=" text-black/50">Last 7 Day</button>
               </Link>
             </div>
             <hr class="h-px my-2 md:hidden bg-gray-200 border-0 dark:bg-gray-700"></hr>
             <div className="md:p-2  pb-2 flex flex-col">
-              <h3 className=" text-slate-500 mx-3 text-base font-medium">
+              <h3 className=" text-black/50 mx-3 text-base font-medium">
                 Location History
               </h3>
             </div>
@@ -103,7 +103,7 @@ const GeoFrence = () => {
               <div className="locationhistoryImg ml-2" />
               <div className="LocationHistoryCol flex flex-col justify-start cursor-pointer">
                 <p className="flex justify-start text-slate-500 text-sm">
-                  <span className="LiveCircleIcon mr-2 text-[18px] font-medium" />
+                  <span className="LiveCircleIcon  mr-2 text-[18px] font-medium" />
                   41.3130335
                 </p>
                 <h3 className="font-semibold text-lg">S Mainsp</h3>

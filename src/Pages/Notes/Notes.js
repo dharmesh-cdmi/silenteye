@@ -37,6 +37,7 @@ function Messages() {
     {
       name: "Housewarming party",
       text: "We are going to hold a rally on Saturday. Items to prepare. lemonade dispenserPicnic table clothExtra outdoor lights,e",
+      icon: true,
     },
     {
       name: "Hawaii",
@@ -53,6 +54,7 @@ function Messages() {
     {
       name: "Home renovation project",
       text: "Project timeline: 4 months",
+      icon: true,
     },
   ];
   return (
@@ -77,7 +79,7 @@ function Messages() {
                   Mode of Transportation
                 </h3>
                 <p className="font-semibold text-black/50">
-                  We are going to hold a rally on Saturday...
+                  We are going to hold a rally on Satu...
                 </p>
               </div>
               <div>
@@ -93,7 +95,8 @@ function Messages() {
                 <h3 className="font-semibold text-xl ">
                   Mode of Transportation
                 </h3>
-                <p className="font-semibold text-black/50">
+
+                <p className="font-semibold text-black/50 mx-1">
                   We are going to hold a rally on Saturday...
                 </p>
               </div>
@@ -111,12 +114,26 @@ function Messages() {
                   <div className="flex py-4 border-b-2 cursor-pointer justify-between md:px-4">
                     <div className="flex align-middle flex-col px-3 w-4/5">
                       <h3 className="font-semibold text-xl ">{msg.name}</h3>
-                      <p className="md:hidden font-semibold text-black/50">
-                        {msg.text.slice(0, 30)}..
-                      </p>
-                      <p className="hidden md:block text-[17px] font-semibold text-black/50">
-                        {msg.text.slice(0, 50)}..
-                      </p>
+
+                      <div className="flex ">
+                        {msg.icon === true && (
+                          <span class="w-2 h-2 bg-[#007AFF] md:hidden rounded-full 1  mt-2"></span>
+                        )}
+
+                        <p className="md:hidden font-semibold mx-1 text-black/50">
+                          {msg.text.slice(0, 30)}..
+                        </p>
+                      </div>
+
+                      <div className="flex ">
+                        {msg.icon === true && (
+                          <span class="w-2 h-2 bg-[#007AFF] hidden md:block rounded-full 1  mt-2"></span>
+                        )}
+
+                        <p className="hidden md:block text-[17px] font-semibold text-black/50 mx-1">
+                          {msg.text.slice(0, 50)}..
+                        </p>
+                      </div>
                     </div>
                     <div>
                       <p className="text-gray-500 text-base text-end mt-4 me-2 font-semibold ">

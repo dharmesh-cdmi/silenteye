@@ -97,9 +97,11 @@ const ForwardCalls = () => {
             <div className="md:border-r liborder ">
               <div className="p-2">
                 <div className="flex">
-                  <div className="text-sm font-medium ">
-                    <p>Always Forward</p>
-                    <p className="text-gray-300">Off</p>
+                  <div className=" font-medium ">
+                    <p className="text-lg">Always Forward</p>
+                    <p className="text-black/50 md:text-[16px] text-[17px ] font-medium">
+                      Off
+                    </p>
                   </div>
 
                   <div className="flex-1 text-end mt-2">
@@ -109,21 +111,27 @@ const ForwardCalls = () => {
               </div>
             </div>
             <div className="md:border-r liborder ">
-              <div className="text-sm font-medium p-2">
-                <p>When Busy</p>
-                <p className="text-gray-300">Forward to +91 98989 98989</p>
+              <div className="text-lg font-medium p-2">
+                <p className="text-lg">When Busy</p>
+                <p className="text-black/50 md:text-[16px] text-[17px] font-medium">
+                  Forward to +91 98989 98989
+                </p>
               </div>
             </div>
             <div className="md:border-r liborder ">
               <div className="text-sm font-medium p-2">
-                <p>When unanswered</p>
-                <p className="text-gray-300">Forward to +91 98989 98989</p>
+                <p className="text-lg">When unanswered</p>
+                <p className="text-black/50 md:text-[16px] text-[17px] font-medium">
+                  Forward to +91 98989 98989
+                </p>
               </div>
             </div>
             <div className="">
               <div className="text-sm font-medium p-2">
-                <p>When unreachable</p>
-                <p className="text-gray-300">Forward to +91 98989 98989</p>
+                <p className="text-lg">When unreachable</p>
+                <p className="text-black/50 md:text-[16px] text-[17px] font-medium">
+                  Forward to +91 98989 98989
+                </p>
               </div>
             </div>
             <div className="mx-2 ">

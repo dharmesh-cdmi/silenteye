@@ -49,7 +49,7 @@ export function BlockedContactProfile() {
             >
               <img src={moveBack} alt="move-Back" className="h-6" />
             </div>
-            <span className="text-[15px] md:text-[20px]   text-black/50 md:ps-3 ps-1 font-[600]">
+            <span className="text-[16px] md:text-[20px]   text-black/50 md:ps-3 ps-1 font-[600]">
               Blocked Contacts
             </span>
           </div>
@@ -149,7 +149,7 @@ export function BlockedContactProfile() {
                 </div>
               </div>
               <div class="flex items-center   justify-center">
-                <div class="flex gap-1 px-1 flex-col md:flex-row">
+                <div class="flex gap-1 ps-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
                     <img
                       className=" h-5  m-auto cursor-pointer"
@@ -387,7 +387,7 @@ const ContactProfile = () => {
             >
               <img src={moveBack} alt="move-Back" className="h-6" />
             </div>
-            <span className="text-[15px] md:text-[20px]   text-black/50 md:ps-3 ps-1 font-[600]">
+            <span className="text-[16px] md:text-[20px]   text-black/50 md:ps-3 ps-1 font-[600]">
               Contacts
             </span>
           </div>
@@ -460,7 +460,7 @@ const ContactProfile = () => {
           <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
             <div class="grid grid-cols-5 mx-auto p-2 gap-1 divide-x border-b overflow-x-auto">
               <div class="flex items-center   justify-center">
-                <div class="flex gap-1 px-1 flex-col md:flex-row">
+                <div class="flex gap-1 px-2 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
                     <img
                       className=" h-5  m-auto cursor-pointer"
@@ -484,7 +484,7 @@ const ContactProfile = () => {
                 </div>
               </div>
               <div class="flex items-center   justify-center">
-                <div class="flex gap-1 px-1 flex-col md:flex-row">
+                <div class="flex gap-1 m-auto ps-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
                     <img
                       className=" h-5  m-auto cursor-pointer"

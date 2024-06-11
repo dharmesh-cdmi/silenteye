@@ -28,7 +28,7 @@ const AppInformation = () => {
               <img src={moveBack} alt="move-Back" className="md:h-6 h-5" />
             </div>
             <img src={whatsapp} className="h-6" alt="" />
-            <span className="text-[15px] md:text-[20px]  text-black/50 md:text-[#000000] md:ps-3 ps-1 font-[600]">
+            <span className="text-[16px] md:text-[20px]  text-black/50 md:text-[#000000] md:ps-3 ps-1 font-[600]">
               Whatsapp
             </span>
           </div>

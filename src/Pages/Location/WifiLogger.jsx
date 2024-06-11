@@ -29,15 +29,15 @@ const WifiLogger = () => {
               <div className="LocationHistoryCols flex gap-16 justify-start cursor-pointer border-r-2 border-l-2">
                 <div className="locationhistoryImg" />
                 <div className="LocationHistoryCol flex flex-col justify-start cursor-pointer">
-                  <p className="flex justify-start gap-4 text-slate-500 text-sm">
+                  <p className="flex justify-start gap-4 font-medium text-slate-500 text-sm">
                     <span className="LiveCircleIcon" />
                     {v.des}
                   </p>
-                  <h6 className="flex justify-start gap-2 text-slate-700  font-semibold text-[1.0625rem]">
+                  <h6 className="flex justify-start font-medium gap-2 text-slate-700  font-semibold text-[1.0625rem]">
                     <FaWifi className="mt-1" />
                     {v.title}
                   </h6>
-                  <p className="flex justify-start gap-4 ml-0 text-sm text-slate-500 ">
+                  <p className="flex justify-start font-medium gap-4 ml-0 text-sm text-slate-500 ">
                     {v.date + " 10:38 AM"}
                   </p>
                 </div>

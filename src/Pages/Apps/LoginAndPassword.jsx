@@ -125,7 +125,9 @@ const LoginAndPassword = () => {
                   <div>
                     Whatsapp
                     <div className="font-normal">
-                      <p className="ps-1">Last Login 2:12 PM </p>
+                      <p className="ps-1 text-black/50 text-base md:text-[17px] font-medium">
+                        Last Login 2:12 PM{" "}
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -141,7 +143,9 @@ const LoginAndPassword = () => {
                         <div>
                           {info.name}
                           <div className="font-normal">
-                            <p className="ps-1">Last Login 2:12 PM </p>
+                            <p className="ps-1 text-black/50 text-base md:text-[17px] font-medium">
+                              Last Login 2:12 PM{" "}
+                            </p>
                           </div>
                         </div>
                       </li>
