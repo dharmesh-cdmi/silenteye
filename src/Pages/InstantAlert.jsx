@@ -10,6 +10,9 @@ import Button from "../components/Shared/Button";
 import More from "../assests/images/more.png";
 import Modal from "../components/Shared/Modal";
 import Upgrade from "../components/Shared/Upgrade"
+import Checkbox from "../components/Shared/Checkbox";
+
+
 
 const  InstantAlertsData=[
    {
@@ -45,8 +48,11 @@ const InstantAlert = () => {
         <Header heading="Instant Alerts" />
         <div className="sm:my-7 mb-2">
         <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
-          <Table.Header className="font-[16px] opacity-[50%]">
+          <Table.Header className="text-[16px] opacity-[50%]  ">
+            <div className='flex flex-row justify-between items-center px-[12px] font-extrabold'>
              Instant Alerts
+             <Checkbox />
+            </div>
           </Table.Header>
           <Table.Body>
               {InstantAlertsData.map((InstantAlert) => (
