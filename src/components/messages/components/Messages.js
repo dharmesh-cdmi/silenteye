@@ -79,7 +79,7 @@ function Messages() {
         )}
         {isConvo && (
           <div className="lg:border-l-2 border-0">
-            <div className="border-b-2 flex py-3 ps-3 align-middle  ">
+            <div className="border-b flex py-3 ps-3 align-middle  ">
               <img className="h-10 w-10 rounded-full mt-2 " src={imgg}></img>
               <div className="ml-3">
                 <h3 className="font-bold text-xl text-nowrap ">Riyah Zoik</h3>

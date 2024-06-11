@@ -8,9 +8,12 @@ import Modal from "../../Shared/Modal";
 import Upgrade from "../../Shared/Upgrade";
 import wi from "../../../assests/images/wif.png";
 import wif from "../../../assests/images/wifi.png";
-import { MdOutlineCastConnected } from "react-icons/md";
+import { MdOutlineCastConnected,MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { TbWorldLatitude } from "react-icons/tb";
 import { TbWorldLongitude } from "react-icons/tb";
+import { FaChevronLeft,FaChevronRight } from "react-icons/fa6";
+import Button from "../../Shared/Button";
+
 
 import { IoMdTime } from "react-icons/io";
 
@@ -38,7 +41,7 @@ function DataTable() {
       time: "10:48 PM",
       usage: "6d 1m 17s",
       latitude: 12.875,
-      longitude: -43.650,
+      longitude: -43.65,
     },
     {
       name: "Piper Lun",
@@ -135,9 +138,9 @@ function DataTable() {
           );
         })}
       </div>
-      <div className="lg:grid lg:grid-cols-6 grid-cols-6 mt-10 lg:border border-b rounded-lg lg:mx-4 mx-0 hidden">
+      <div className="lg:grid lg:grid-cols-6 grid-cols-6 mt-10 lg:border-2 border-b rounded-lg lg:mx-4 mx-0 hidden relative">
         <p className="text-center text-gray-500 p-2 border-b-2">Name</p>
-        <div className="flex  justify-center border-b-2">
+        <div className="flex justify-center border-b-2">
           <span>
             <MdOutlineCastConnected className="mt-3 w-4 h-4  mr-1 text-gray-500" />
           </span>
@@ -167,24 +170,24 @@ function DataTable() {
           return (
             <>
               <Modal>
-                <div className="flex py-4">
+                <div className="flex py-4 border-b-2">
                   <FaWifi className="h-5 w-5 ml-3 mt-1" />
                   <h3 className="font-semibold ml-2">{content.name}</h3>
                 </div>
-                <div className="flex justify-center py-4">
+                <div className="flex justify-center py-4 border-b-2">
                   <p className="font-medium">{content.connected}</p>
                 </div>
-                <div className="flex justify-center py-4">
+                <div className="flex justify-center py-4 border-b-2">
                   <p className="font-medium">{content.usage}</p>
                 </div>
-                <div className="flex justify-center py-4">
+                <div className="flex justify-center py-4 border-b-2">
                   <p className="font-medium">{content.latitude}</p>
                 </div>
-                <div className="flex justify-center py-4">
+                <div className="flex justify-center py-4 border-b-2">
                   <p className="font-medium">{content.longitude}</p>
                 </div>
                 <Modal.Toggle toggleName="Update">
-                  <div className="flex justify-end pe-5 py-4 cursor-pointer">
+                  <div className="flex justify-end pe-5 py-4 cursor-pointer border-b-2">
                     <img className="h-8 w-8" src={del}></img>
                   </div>
                 </Modal.Toggle>
@@ -195,6 +198,39 @@ function DataTable() {
             </>
           );
         })}
+        <div className="flex justify-between py-3 ">
+          <div className="flex ms-5 ">
+            <div className="h-10 w-10 border-2 mr-2 rounded-lg text-gray-400 items-center mx-auto text-center pt-2">
+              <FaChevronLeft className="w-4 h-4 mx-auto my-auto" />
+            </div>
+            <div className="h-10 w-10 border-2 mr-2 rounded-lg text-gray-900 bg-blue-50 border-blue-800 items-center mx-auto text-center pt-1.5">
+              1
+            </div>
+            <div className="h-10 w-10 border-2 mr-2 rounded-lg text-gray-400 items-center mx-auto text-center pt-1.5">
+              ...
+            </div>
+        
+            <div className="h-10 w-10 border-2 rounded-lg text-gray-900 items-center mx-auto text-center pt-1.5 ">
+              10
+            </div>
+            <div className="h-10 w-10 border-2 rounded-lg text-gray-400 items-center mx-auto text-center pt-2 ml-2 ">
+              <FaChevronRight className="h-4 w-4 m-auto"/>
+            </div>
+          </div>
+          <div className="absolute right-5 bottom-2 ">
+        <Modal>
+          <Modal.Toggle toggleName="viewMore-keylogger">
+            <Button className="text-[18px] shadow-[0px_0px_56px_0px_#00000014]   font-medium px-[32px]  py-[10px] text-[#101828] text-center ">
+              View More
+              <MdKeyboardDoubleArrowDown size={18} />
+            </Button>
+          </Modal.Toggle>
+          <Modal.Window windowName="viewMore-keylogger">
+            <Upgrade />
+          </Modal.Window>
+        </Modal>
+      </div>
+        </div>
       </div>
     </>
   );

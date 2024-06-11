@@ -75,7 +75,7 @@ function Tabs() {
               <h3 className="font-semibold text-md">Uploaded</h3>
               </div>
               <p className=" text-sm">
-                130.77 GB{" "}
+                1.20 GB{" "}
                 <span className="text-gray-500 text-xs ">Data Downloaded</span>
               </p>
             </div>

@@ -70,7 +70,7 @@ function Gallery() {
 
             <img
               src={vi}
-              className=" absolute lg:h-full h-2/4 lg:w-full w-full lg:left-2/4 -translate-x-1/2  left-2/4 mx-auto z-30 rounded-none top-2/4 -translate-y-1/2 "
+              className=" absolute lg:h-3/4 h-2/4 lg:w-2/3 w-full lg:left-2/4 -translate-x-1/2  left-2/4 mx-auto z-30 rounded-none top-2/4 -translate-y-1/2 "
               style={{ opacity: 1 }} // Ensure full opacity for the image
               alt="Detailed View"
             />
@@ -92,7 +92,7 @@ function Gallery() {
                 src={vid.vid}
               />
               <p className=" font-semibold text-sm mx-auto">{vid.name}</p>
-              <p className="lg:ml-2 text-xs text-gray-500 mx-auto">
+              <p className="text-center text-xs text-gray-500 mx-auto">
                 {vid.desc}
               </p>
             </div>
