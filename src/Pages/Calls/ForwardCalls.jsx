@@ -25,63 +25,73 @@ const ForwardCalls = () => {
   const forwordcalldata = [
     {
       img: Oval,
-      name: "Hewie Gamage",
+      name: "Anica Haslem",
       mobile: "(201) 555-0124",
       callIcon: <VscCallOutgoing />,
       callStatus: "outgoing",
-      date: "21/05/2024",
+      date: "Tue, May 21, 2024",
       time: "3:58 AM",
       duration: "00:12:32",
     },
     {
       img: Oval1,
-      name: "Tommi Osayande",
-      mobile: "(308) 555-0192",
+      name: "Lilllie Lokken",
+      mobile: "(316) 555-0116",
       callIcon: <MdPhoneCallback />,
       callStatus: "incoming",
-      date: "22/05/2024",
-      time: "10:15 AM",
-      duration: "00:08:45",
+      date: "Tue, May 21, 2024",
+      time: "3:57 AM",
+      duration: "-",
     },
     {
       img: Oval2,
-      name: "Ramona Bea",
-      mobile: "(702) 555-0763",
+      name: "Nicolette Dickey",
+      mobile: "(671) 555-0110",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "23/05/2024",
-      time: "1:30 PM",
-      duration: "00:20:18",
+      date: "Tue, May 21, 2024",
+      time: "3:01 AM",
+      duration: "-",
     },
     {
       img: Oval3,
-      name: "Sara Smith",
-      mobile: "(212) 555-0345",
+      name: "Alfonso Duree",
+      mobile: "(406) 555-0120",
       callIcon: <VscCallOutgoing />,
       callStatus: "outgoing",
-      date: "24/05/2024",
-      time: "5:45 PM",
-      duration: "00:15:03",
+      date: "Tue, May 21, 2024",
+      time: "1:40 AM",
+      duration: "01:12:29",
     },
     {
       img: Oval4,
-      name: "John Doe",
-      mobile: "(615) 555-0887",
+      name: "Nomi Giddins",
+      mobile: "(229) 555-0109",
       callIcon: <MdPhoneCallback />,
       callStatus: "incoming",
-      date: "25/05/2024",
-      time: "8:20 AM",
-      duration: "00:09:57",
+      date: "Tue, May 21, 2024",
+      time: "12:31 PM",
+      duration: "-",
     },
     {
       img: Oval5,
-      name: "Emily Johnson",
-      mobile: "(832) 555-0629",
+      name: "Francis Suran",
+      mobile: "(225) 555-0118",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "26/05/2024",
-      time: "11:55 PM",
-      duration: "00:25:40",
+      date: "Tue, May 21, 2024",
+      time: "11:16 PM",
+      duration: "-",
+    },
+    {
+      img: Oval6,
+      name: "Michele Suski",
+      mobile: "(252) 555-0126",
+      callIcon: <HiPhoneMissedCall />,
+      callStatus: "missed",
+      date: "Tue, May 21, 2024",
+      time: "11:12 PM",
+      duration: "00:30:04",
     },
   ];
 
@@ -193,7 +203,9 @@ const ForwardCalls = () => {
                           alt
                         />
                       </div>
-                      <div class="mt-3   ">{calldata.name}</div>
+                      <div class="mt-3 text-lg font-semibold  text-black">
+                        {calldata.name}
+                      </div>
                     </div>
                   </td>
                   <td className="px-6 pt-4">
@@ -203,7 +215,10 @@ const ForwardCalls = () => {
                         src={callicon}
                         alt
                       />
-                      {calldata.mobile}
+                      <p className="text-lg font-semibold text-black">
+                        {" "}
+                        {calldata.mobile}
+                      </p>
                     </div>
                   </td>
                   <td className="px-6 pt-4">
@@ -214,16 +229,22 @@ const ForwardCalls = () => {
                         calldata.callStatus == "incoming" && "text-green-600"
                       } flex `}
                     >
-                      <p className="my-auto ">{calldata.callIcon}</p>
-                      <p className="ps-1">{calldata.callStatus}</p>
+                      <p className="my-auto text-lg font-semibold">
+                        {calldata.callIcon}
+                      </p>
+                      <p className="ps-1 text-lg font-semibold">
+                        {calldata.callStatus}
+                      </p>
                     </div>
                   </td>
-                  <td className="px-6 pt-4">
+                  <td className="px-6 pt-4 text-lg font-semibold text-black">
                     {calldata.date}
                     <br />
                     {calldata.time}
                   </td>
-                  <td className="px-6 pt-4">{calldata.duration}</td>
+                  <td className="px-6 pt-4 text-lg font-semibold text-black">
+                    {calldata.duration}
+                  </td>
                   <td className="px-6 pt-4">
                     <Modal.Toggle toggleName="Update">
                       <div>

@@ -35,6 +35,8 @@ import dp5 from "../../assests/images/profile/dp (5).png";
 import dp6 from "../../assests/images/profile/dp (6).png";
 import dp7 from "../../assests/images/profile/dp (7).png";
 
+import notes from "../../assests/images/calls/Contacts/notes.png";
+
 export function BlockedContactProfile() {
   const moveBacks = useMoveBack();
 
@@ -86,18 +88,18 @@ export function BlockedContactProfile() {
               </li>
               <li className="p-1 flex-1 w-64 font-semibold border-none">
                 <div>
-                  <p className="text-lg">Alice Gamage</p>
+                  <p className="text-lg">Allan Taran</p>
                   <div className={`text-gray-400 flex font-normal`}>
                     <p className="my-auto ">
                       <VscCallOutgoing />
                     </p>
-                    <p className="ps-1">(308) 555-0121</p>
+                    <p className="ps-1">(270) 555-0117</p>
                   </div>
                   <div className={`text-gray-400 flex font-normal`}>
                     <p className="my-auto ">
                       <IoIosMailOpen className="text-gray-400" />
                     </p>
-                    <p className="ps-1 text-sm">hewiegamage@gmail.com</p>
+                    <p className="ps-1 text-sm">allantran@gmail.com</p>
                   </div>
                 </div>
               </li>
@@ -228,7 +230,7 @@ export function BlockedContactProfile() {
                         alt
                       />
                     </p>
-                    <p className="ps-1">(270) 555-4578</p>
+                    <p className="ps-1">(270) 555-0118</p>
                   </div>
                 </div>
               </li>
@@ -257,7 +259,7 @@ export function BlockedContactProfile() {
                         alt
                       />
                     </p>
-                    <p className="ps-1">(270) 478-0117</p>
+                    <p className="ps-1">(270) 478-0112</p>
                   </div>
                 </div>
               </li>
@@ -276,17 +278,126 @@ export function BlockedContactProfile() {
               <li className="p-1 flex-1 w-64 font-semibold ">
                 <div>
                   <div className={`text-gray-400  font-normal`}>
-                    <p className="ps-1">business</p>
+                    <p className="ps-1">Email</p>
                   </div>
                   <div className={` flex `}>
                     <p className="my-auto ">
-                      <img
-                        className="w-4 h-4 rounded-full m-auto"
-                        src={callicon}
-                        alt
-                      />
+                      <img className="w-4 h-4  m-auto" src={mailicon} alt />
                     </p>
-                    <p className="ps-1">(417) 555-4578</p>
+                    <p className="ps-1">allantran@gmail.com</p>
+                  </div>
+                </div>
+              </li>
+              <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                <div className="flex gap-4 mt-2">
+                  <Modal.Toggle toggleName="Update">
+                    <CgRemove
+                      className="text-[#F10404] cursor-pointer"
+                      size={25}
+                    />
+                  </Modal.Toggle>
+                </div>
+              </li>
+            </ul>
+            <ul className="flex p-2 liborder ">
+              <li className="p-1 flex-1 w-64 font-semibold ">
+                <div>
+                  <div className={`text-gray-400  font-normal`}>
+                    <p className="ps-1">Business Email</p>
+                  </div>
+                  <div className={` flex `}>
+                    <p className="my-auto ">
+                      <img className="w-4 h-4  m-auto" src={mailicon} alt />
+                    </p>
+                    <p className="ps-1">allantran@gmail.com</p>
+                  </div>
+                </div>
+              </li>
+              <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                <div className="flex gap-4 mt-2">
+                  <Modal.Toggle toggleName="Update">
+                    <CgRemove
+                      className="text-[#F10404] cursor-pointer"
+                      size={25}
+                    />
+                  </Modal.Toggle>
+                </div>
+              </li>
+            </ul>
+            {/* <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-gray-400  font-normal`}>
+                        <p className="ps-1">home</p>
+                      </div>
+                      <div className={` flex  mb-2`}>
+                        <p className="mt-1 ">
+                          <img
+                            className=" h-4  m-auto "
+                            src={locationicon}
+                            alt
+                          />
+                        </p>
+                        <p className="ps-1">
+                          2118 Thornridge <br /> Cir,Syracuse, <br />
+                          Connecticut 35624
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <img
+                        src={liveloca2}
+                        alt=""
+                        className="h-52 object-cover rounded-xl w-full mx-4"
+                      />
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <CgRemove
+                          className="text-[#F10404] cursor-pointer"
+                          size={25}
+                        />
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul> */}
+            <ul className="flex p-2 liborder ">
+              <li className="p-1 flex-1 w-64 font-semibold ">
+                <div>
+                  <div className={`text-gray-400  font-normal`}>
+                    <p className="ps-1">Notes</p>
+                  </div>
+                  <div className={` flex `}>
+                    <img className="w-4 h-4 mt-1" src={notes} alt />
+
+                    <p className="ps-1">
+                      We are going to hold a rally on Saturday. <br />
+                      <p className="my-1">Items to prepare:</p>
+                      <br />
+                      lemonade dispenserPicnic table clothExtra outdoor
+                      lights,elastic balls and heavy toys, large refrigerators
+                      for drinks, loudspeakers for music
+                      <br />
+                      <p className="my-[2px]">Invitation list:</p>
+                      <br />
+                      1.The Ulrick family
+                      <br />
+                      2. The Tilmon family
+                      <br />
+                      3.o'Malley
+                      <br />
+                      4. Swanson Family
+                      <br />
+                      5. Lee's Family
+                      <br />
+                      6. Shaw FamilyThe
+                      <br />
+                      7 Dean family
+                      <br />
+                      8. The Roberts
+                    </p>
                   </div>
                 </div>
               </li>
@@ -421,18 +532,18 @@ const ContactProfile = () => {
               </li>
               <li className="p-1 flex-1 w-64 font-semibold border-none">
                 <div>
-                  <p className="text-lg">Alice Gamage</p>
+                  <p className="text-lg">Allan Taran</p>
                   <div className={`text-gray-400 flex font-normal`}>
                     <p className="my-auto ">
                       <VscCallOutgoing />
                     </p>
-                    <p className="ps-1">(308) 555-0121</p>
+                    <p className="ps-1">(270) 555-0117</p>
                   </div>
                   <div className={`text-gray-400 flex font-normal`}>
                     <p className="my-auto ">
                       <IoIosMailOpen className="text-gray-400" />
                     </p>
-                    <p className="ps-1 text-sm">hewiegamage@gmail.com</p>
+                    <p className="ps-1 text-sm">allantran@gmail.com</p>
                   </div>
                 </div>
               </li>
@@ -563,65 +674,7 @@ const ContactProfile = () => {
                         alt
                       />
                     </p>
-                    <p className="ps-1">(270) 555-4578</p>
-                  </div>
-                </div>
-              </li>
-              <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                <div className="flex gap-4 mt-2">
-                  <Modal.Toggle toggleName="Update">
-                    <CgRemove
-                      className="text-[#F10404] cursor-pointer"
-                      size={25}
-                    />
-                  </Modal.Toggle>
-                </div>
-              </li>
-            </ul>
-            <ul className="flex p-2 liborder ">
-              <li className="p-1 flex-1 w-64 font-semibold ">
-                <div>
-                  <div className={`text-gray-400  font-normal`}>
-                    <p className="ps-1">Mobile</p>
-                  </div>
-                  <div className={` flex `}>
-                    <p className="my-auto ">
-                      <img
-                        className="w-4 h-4 rounded-full m-auto"
-                        src={callicon}
-                        alt
-                      />
-                    </p>
-                    <p className="ps-1">(270) 555-0117</p>
-                  </div>
-                </div>
-              </li>
-              <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                <div className="flex gap-4 mt-2">
-                  <Modal.Toggle toggleName="Update">
-                    <CgRemove
-                      className="text-[#F10404] cursor-pointer"
-                      size={25}
-                    />
-                  </Modal.Toggle>
-                </div>
-              </li>
-            </ul>
-            <ul className="flex p-2 liborder ">
-              <li className="p-1 flex-1 w-64 font-semibold ">
-                <div>
-                  <div className={`text-gray-400  font-normal`}>
-                    <p className="ps-1">business</p>
-                  </div>
-                  <div className={` flex `}>
-                    <p className="my-auto ">
-                      <img
-                        className="w-4 h-4 rounded-full m-auto"
-                        src={callicon}
-                        alt
-                      />
-                    </p>
-                    <p className="ps-1">(270) 555-4578</p>
+                    <p className="ps-1">(270) 555-0118</p>
                   </div>
                 </div>
               </li>
@@ -650,7 +703,7 @@ const ContactProfile = () => {
                         alt
                       />
                     </p>
-                    <p className="ps-1">(270) 478-0117</p>
+                    <p className="ps-1">(270) 478-0112</p>
                   </div>
                 </div>
               </li>
@@ -669,17 +722,126 @@ const ContactProfile = () => {
               <li className="p-1 flex-1 w-64 font-semibold ">
                 <div>
                   <div className={`text-gray-400  font-normal`}>
-                    <p className="ps-1">business</p>
+                    <p className="ps-1">Email</p>
                   </div>
                   <div className={` flex `}>
                     <p className="my-auto ">
-                      <img
-                        className="w-4 h-4 rounded-full m-auto"
-                        src={callicon}
-                        alt
-                      />
+                      <img className="w-4 h-4  m-auto" src={mailicon} alt />
                     </p>
-                    <p className="ps-1">(417) 555-4578</p>
+                    <p className="ps-1">allantran@gmail.com</p>
+                  </div>
+                </div>
+              </li>
+              <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                <div className="flex gap-4 mt-2">
+                  <Modal.Toggle toggleName="Update">
+                    <CgRemove
+                      className="text-[#F10404] cursor-pointer"
+                      size={25}
+                    />
+                  </Modal.Toggle>
+                </div>
+              </li>
+            </ul>
+            <ul className="flex p-2 liborder ">
+              <li className="p-1 flex-1 w-64 font-semibold ">
+                <div>
+                  <div className={`text-gray-400  font-normal`}>
+                    <p className="ps-1">Business Email</p>
+                  </div>
+                  <div className={` flex `}>
+                    <p className="my-auto ">
+                      <img className="w-4 h-4  m-auto" src={mailicon} alt />
+                    </p>
+                    <p className="ps-1">allantran@gmail.com</p>
+                  </div>
+                </div>
+              </li>
+              <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                <div className="flex gap-4 mt-2">
+                  <Modal.Toggle toggleName="Update">
+                    <CgRemove
+                      className="text-[#F10404] cursor-pointer"
+                      size={25}
+                    />
+                  </Modal.Toggle>
+                </div>
+              </li>
+            </ul>
+            {/* <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-gray-400  font-normal`}>
+                        <p className="ps-1">home</p>
+                      </div>
+                      <div className={` flex  mb-2`}>
+                        <p className="mt-1 ">
+                          <img
+                            className=" h-4  m-auto "
+                            src={locationicon}
+                            alt
+                          />
+                        </p>
+                        <p className="ps-1">
+                          2118 Thornridge <br /> Cir,Syracuse, <br />
+                          Connecticut 35624
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <img
+                        src={liveloca2}
+                        alt=""
+                        className="h-52 object-cover rounded-xl w-full mx-4"
+                      />
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <CgRemove
+                          className="text-[#F10404] cursor-pointer"
+                          size={25}
+                        />
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul> */}
+            <ul className="flex p-2 liborder ">
+              <li className="p-1 flex-1 w-64 font-semibold ">
+                <div>
+                  <div className={`text-gray-400  font-normal`}>
+                    <p className="ps-1">Notes</p>
+                  </div>
+                  <div className={` flex `}>
+                    <img className="w-4 h-4 mt-1" src={notes} alt />
+
+                    <p className="ps-1">
+                      We are going to hold a rally on Saturday. <br />
+                      <p className="my-1">Items to prepare:</p>
+                      <br />
+                      lemonade dispenserPicnic table clothExtra outdoor
+                      lights,elastic balls and heavy toys, large refrigerators
+                      for drinks, loudspeakers for music
+                      <br />
+                      <p className="my-[2px]">Invitation list:</p>
+                      <br />
+                      1.The Ulrick family
+                      <br />
+                      2. The Tilmon family
+                      <br />
+                      3.o'Malley
+                      <br />
+                      4. Swanson Family
+                      <br />
+                      5. Lee's Family
+                      <br />
+                      6. Shaw FamilyThe
+                      <br />
+                      7 Dean family
+                      <br />
+                      8. The Roberts
+                    </p>
                   </div>
                 </div>
               </li>

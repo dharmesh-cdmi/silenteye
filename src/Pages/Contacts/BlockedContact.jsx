@@ -33,48 +33,50 @@ import dp4 from "../../assests/images/profile/dp (4).png";
 import dp5 from "../../assests/images/profile/dp (5).png";
 import dp6 from "../../assests/images/profile/dp (6).png";
 import dp7 from "../../assests/images/profile/dp (7).png";
+import Oval1 from "../../assests/images/profile/Oval-1.png";
+import Oval2 from "../../assests/images/profile/Oval-2.png";
+import Oval3 from "../../assests/images/profile/Oval-3.png";
+import Oval4 from "../../assests/images/profile/Oval-4.png";
+import Oval5 from "../../assests/images/profile/Oval-5.png";
+import mailicon from "../../assests/images/calls/Contacts/mail.png";
+import notes from "../../assests/images/calls/Contacts/notes.png";
 
 const BlockedContact = () => {
   const callBlockeddata = [
     {
       img: Oval7,
-      name: "Adam Smith",
+      name: "Arlene Dean",
       callIcon: callicon,
-      callNo: "(415) 555-0192",
-      date: "Wed, May 22, 2024",
-      time: "10:15 AM",
+      callNo: "(201) 555-0124",
     },
+  ];
+  const callBlockeddatab = [
     {
-      img: dp4,
-      name: "Alex Doe",
+      img: dp7,
+      name: "Barrett Aschenbrenner",
       callIcon: callicon,
-      callNo: "(702) 555-0763",
-      date: "Thu, May 23, 2024",
-      time: "1:30 PM",
+      callNo: "(225) 555-0118",
     },
+
     {
       img: dp3,
-      name: "Anna Johnson",
+      name: "Bennet Wuebker ",
       callIcon: callicon,
-      callNo: "(212) 555-0345",
-      date: "Fri, May 24, 2024",
-      time: "5:45 PM",
+      callNo: "(319) 555-0115",
     },
+
     {
-      img: dp2,
-      name: "Aaron Brown",
+      img: Oval1,
+      name: "Bentley Simank",
       callIcon: callicon,
-      callNo: "(615) 555-0887",
-      date: "Sat, May 25, 2024",
-      time: "8:20 AM",
+      callNo: "(302) 555-0180",
     },
+
     {
-      img: dp1,
-      name: "Amelia Martinez",
+      img: Oval5,
+      name: "Beth Bowers",
       callIcon: callicon,
-      callNo: "(832) 555-0629",
-      date: "Sun, May 26, 2024",
-      time: "11:55 PM",
+      callNo: "(219) 555-0114",
     },
   ];
   return (
@@ -94,7 +96,7 @@ const BlockedContact = () => {
               </div>
               <hr />
               {/* body */}
-              <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
+              <div className="overflow-y-scroll md:h-96 h-4/5 no-scrollbar">
                 <p className="border-b text-gray-400  p-1">A</p>
                 <div className="hidden md:block">
                   <ul className="flex p-2 liborder cursor-pointer md:bg-gray-100">
@@ -107,18 +109,14 @@ const BlockedContact = () => {
                     </li>
                     <li className="p-1 flex-1 w-64 font-semibold">
                       <div>
-                        Alice Gamage
+                        Allan Tran
                         <div className="text-gray-400 flex">
                           <p className="my-auto ">
-                            <VscCallOutgoing />
+                            <img src={callicon} alt="" />
                           </p>
-                          <p className="ps-1">(308) 555-0121</p>
+                          <p className="ps-1">(270) 555-0117</p>
                         </div>
                       </div>
-                    </li>
-                    <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
-                      Tue, May 21, 2024 <br />
-                      3:58 AM
                     </li>
                   </ul>
                 </div>
@@ -133,7 +131,7 @@ const BlockedContact = () => {
                     </li>
                     <li className="p-1 flex-1 w-64 font-semibold">
                       <div>
-                        Alice Gamage
+                        Allan Taran
                         <div className="text-gray-400 flex">
                           <p className="my-auto ">
                             <VscCallOutgoing />
@@ -181,54 +179,37 @@ const BlockedContact = () => {
                 ))}
                 <p className="border-b text-gray-400  p-1">B</p>
 
-                <ul className="flex p-2 liborder cursor-pointer">
-                  <li className="flex-none w-14 pt-2">
-                    <img
-                      className="w-10 h-10 rounded-full m-auto"
-                      src={"https://xsgames.co/randomusers/avatar.php?g=female"}
-                      alt
-                    />
-                  </li>
-                  <li className="p-1 flex-1 w-64 font-semibold">
-                    <div>
-                      Barrett Aschenbrenner
-                      <div className="text-gray-400 flex">
-                        <p className="my-auto ">
-                          <VscCallOutgoing />
-                        </p>
-                        <p className="ps-1">+9198989898</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
-                    Tue, May 21, 2024 <br />
-                    3:58 AM
-                  </li>
-                </ul>
-                <ul className="flex p-2 liborder cursor-pointer ">
-                  <li className="flex-none w-14 pt-2">
-                    <img
-                      className="w-10 h-10 rounded-full m-auto"
-                      src={dp4}
-                      alt
-                    />
-                  </li>
-                  <li className="p-1 flex-1 w-64 font-semibold">
-                    <div>
-                      Bob Gamage
-                      <div className="text-gray-400 flex">
-                        <p className="my-auto ">
-                          <VscCallOutgoing />
-                        </p>
-                        <p className="ps-1">(308) 555-0121</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
-                    Tue, May 21, 2024 <br />
-                    3:58 AM
-                  </li>
-                </ul>
+                {callBlockeddatab.map((info, i) => (
+                  <Modal.Toggle toggleName="Update">
+                    <ul key={i} className="flex p-2 liborder cursor-pointer">
+                      <li className="flex-none w-14 pt-2">
+                        <img
+                          className="w-10 h-10 rounded-full m-auto"
+                          src={info.img}
+                          alt
+                        />
+                      </li>
+                      <li className="p-1 flex-1 w-64 font-semibold">
+                        <div>
+                          {info.name}
+                          <div className={`text-gray-500 flex font-normal`}>
+                            <img
+                              src={info.callIcon}
+                              alt="img"
+                              className="object-contain fill-gray-500  "
+                            />
+
+                            <p className="ps-1 font-semibold">{info.callNo}</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="p-1 hidden md:block text-gray-400 font-semibold pt-1 text-end">
+                        {info.date} <br />
+                        {info.time}
+                      </li>
+                    </ul>
+                  </Modal.Toggle>
+                ))}
                 <div className="flex justify-center my-2">
                   <button
                     type="button"
@@ -255,35 +236,32 @@ const BlockedContact = () => {
                   </li>
                   <li className="p-1 flex-1 w-64 font-semibold border-none">
                     <div>
-                      <p className="text-lg">Alice Gamage</p>
+                      <p className="text-lg">Allan Taran</p>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
                           <VscCallOutgoing />
                         </p>
-                        <p className="ps-1 text-[17px]">(308) 555-0121</p>
+                        <p className="ps-1">(270) 555-0117</p>
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
                           <IoIosMailOpen className="text-gray-400" />
                         </p>
-                        <p className="ps-1 text-[17px]">
-                          hewiegamage@gmail.com
-                        </p>
+                        <p className="ps-1">allantran@gmail.com</p>
                       </div>
                     </div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-4 border-none hidden xl:block">
-                    <div className="flex gap-2 mt-6">
+                    <div className="flex gap-1 mt-6">
                       <Modal.Toggle toggleName="Update">
-                        <img
-                          className=" h-8  m-auto cursor-pointer"
-                          src={unblock}
-                          alt
+                        <BsPersonAdd
+                          className="text-slate-900 cursor-pointer "
+                          size={25}
                         />
                       </Modal.Toggle>
                       <Modal.Toggle toggleName="Update">
                         <img
-                          className=" h-6 rounded-full m-auto cursor-pointer"
+                          className=" h-6 rounded-full m-auto cursor-pointer "
                           src={Delete}
                           alt
                         />
@@ -294,10 +272,11 @@ const BlockedContact = () => {
               </div>
               <hr />
               {/* body */}
-              <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
+              <div className="overflow-y-scroll md:h-96 h-[calc(100%-8rem)] no-scrollbar">
+                {/* header icons */}
                 <div class="grid grid-cols-5 mx-auto p-2 gap-1 divide-x border-b overflow-x-auto">
                   <div class="flex items-center   justify-center">
-                    <div class="flex gap-1 p-1 flex-col md:flex-row">
+                    <div class="flex gap-1 px-1 flex-col md:flex-row">
                       <Modal.Toggle toggleName="Update">
                         <img
                           className=" h-5  m-auto cursor-pointer"
@@ -309,7 +288,7 @@ const BlockedContact = () => {
                     </div>
                   </div>
                   <div class="flex items-center   justify-center">
-                    <div class="flex gap-1 p-1 flex-col md:flex-row">
+                    <div class="flex gap-1 px-1 flex-col md:flex-row">
                       <Modal.Toggle toggleName="Update">
                         <img
                           className=" h-5  m-auto cursor-pointer"
@@ -321,7 +300,7 @@ const BlockedContact = () => {
                     </div>
                   </div>
                   <div class="flex items-center   justify-center">
-                    <div class="flex gap-1 p-1 flex-col md:flex-row">
+                    <div class="flex gap-1 px-1 flex-col md:flex-row">
                       <Modal.Toggle toggleName="Update">
                         <img
                           className=" h-5  m-auto cursor-pointer"
@@ -333,7 +312,7 @@ const BlockedContact = () => {
                     </div>
                   </div>
                   <div class="flex items-center   justify-center">
-                    <div class="flex gap-1 p-1 flex-col md:flex-row">
+                    <div class="flex gap-1 px-1 flex-col md:flex-row">
                       <Modal.Toggle toggleName="Update">
                         <img
                           className=" h-5  m-auto cursor-pointer"
@@ -345,7 +324,7 @@ const BlockedContact = () => {
                     </div>
                   </div>
                   <div class="flex items-center   justify-center">
-                    <div class="flex gap-1 p-1 flex-col md:flex-row">
+                    <div class="flex gap-1 px-1 flex-col md:flex-row">
                       <Modal.Toggle toggleName="Update">
                         <img
                           className=" h-5  m-auto cursor-pointer"
@@ -357,7 +336,7 @@ const BlockedContact = () => {
                     </div>
                   </div>
                 </div>
-
+                {/* history */}
                 <ul className="flex p-2 liborder ">
                   <li className="p-1 flex-1 w-64 font-semibold ">
                     <div>
@@ -401,7 +380,7 @@ const BlockedContact = () => {
                             alt
                           />
                         </p>
-                        <p className="ps-1">(270) 555-4578</p>
+                        <p className="ps-1">(270) 555-0118</p>
                       </div>
                     </div>
                   </li>
@@ -430,7 +409,7 @@ const BlockedContact = () => {
                             alt
                           />
                         </p>
-                        <p className="ps-1">(270) 478-0117</p>
+                        <p className="ps-1">(270) 478-0112</p>
                       </div>
                     </div>
                   </li>
@@ -449,17 +428,13 @@ const BlockedContact = () => {
                   <li className="p-1 flex-1 w-64 font-semibold ">
                     <div>
                       <div className={`text-gray-400  font-normal`}>
-                        <p className="ps-1">business</p>
+                        <p className="ps-1">Email</p>
                       </div>
                       <div className={` flex `}>
                         <p className="my-auto ">
-                          <img
-                            className="w-4 h-4 rounded-full m-auto"
-                            src={callicon}
-                            alt
-                          />
+                          <img className="w-4 h-4  m-auto" src={mailicon} alt />
                         </p>
-                        <p className="ps-1">(417) 555-4578</p>
+                        <p className="ps-1">allantran@gmail.com</p>
                       </div>
                     </div>
                   </li>
@@ -474,22 +449,57 @@ const BlockedContact = () => {
                     </div>
                   </li>
                 </ul>
-                <ul className="flex p-2  liborder">
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-gray-400  font-normal`}>
+                        <p className="ps-1">Business Email</p>
+                      </div>
+                      <div className={` flex `}>
+                        <p className="my-auto ">
+                          <img className="w-4 h-4  m-auto" src={mailicon} alt />
+                        </p>
+                        <p className="ps-1">allantran@gmail.com</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <CgRemove
+                          className="text-[#F10404] cursor-pointer"
+                          size={25}
+                        />
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                {/* <ul className="flex p-2 liborder ">
                   <li className="p-1 flex-1 w-64 font-semibold ">
                     <div>
                       <div className={`text-gray-400  font-normal`}>
                         <p className="ps-1">home</p>
                       </div>
-                      <div className={` flex `}>
-                        <p className="my-auto ">
+                      <div className={` flex  mb-2`}>
+                        <p className="mt-1 ">
                           <img
-                            className="w-4 h-4 rounded-full m-auto"
-                            src={callicon}
+                            className=" h-4  m-auto "
+                            src={locationicon}
                             alt
                           />
                         </p>
-                        <p className="ps-1">(270) 478-0117</p>
+                        <p className="ps-1">
+                          2118 Thornridge <br /> Cir,Syracuse, <br />
+                          Connecticut 35624
+                        </p>
                       </div>
+                    </div>
+                    <div>
+                      <img
+                        src={liveloca2}
+                        alt=""
+                        className="h-52 object-cover rounded-xl w-full mx-4"
+                      />
                     </div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
@@ -502,22 +512,42 @@ const BlockedContact = () => {
                       </Modal.Toggle>
                     </div>
                   </li>
-                </ul>
+                </ul> */}
                 <ul className="flex p-2 liborder ">
                   <li className="p-1 flex-1 w-64 font-semibold ">
                     <div>
                       <div className={`text-gray-400  font-normal`}>
-                        <p className="ps-1">business</p>
+                        <p className="ps-1">Notes</p>
                       </div>
                       <div className={` flex `}>
-                        <p className="my-auto ">
-                          <img
-                            className="w-4 h-4 rounded-full m-auto"
-                            src={callicon}
-                            alt
-                          />
+                        <img className="w-4 h-4 mt-1" src={notes} alt />
+
+                        <p className="ps-1">
+                          We are going to hold a rally on Saturday. <br />
+                          <p className="my-1">Items to prepare:</p>
+                          <br />
+                          lemonade dispenserPicnic table clothExtra outdoor
+                          lights,elastic balls and heavy toys, large
+                          refrigerators for drinks, loudspeakers for music
+                          <br />
+                          <p className="my-[2px]">Invitation list:</p>
+                          <br />
+                          1.The Ulrick family
+                          <br />
+                          2. The Tilmon family
+                          <br />
+                          3.o'Malley
+                          <br />
+                          4. Swanson Family
+                          <br />
+                          5. Lee's Family
+                          <br />
+                          6. Shaw FamilyThe
+                          <br />
+                          7 Dean family
+                          <br />
+                          8. The Roberts
                         </p>
-                        <p className="ps-1">(417) 555-4578</p>
                       </div>
                     </div>
                   </li>

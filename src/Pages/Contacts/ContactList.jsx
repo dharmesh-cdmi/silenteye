@@ -47,43 +47,77 @@ const ContactList = () => {
   const contactlistdata = [
     {
       img: dp7,
-      name: "Adam Smith",
+      name: "Alfonso Richard",
       callIcon: callicon,
-      callNo: "(415) 555-0192",
-      date: "Wed, May 22, 2024",
-      time: "10:15 AM",
+      callNo: "(480) 555-0103",
     },
     {
       img: dp2,
-      name: "Alex Doe",
+      name: "Aurora Sellers",
       callIcon: callicon,
-      callNo: "(702) 555-0763",
-      date: "Thu, May 23, 2024",
-      time: "1:30 PM",
+      callNo: "(684) 555-0102",
     },
     {
       img: dp3,
-      name: "Anna Johnson",
+      name: "Arlene Dean",
       callIcon: callicon,
-      callNo: "(212) 555-0345",
-      date: "Fri, May 24, 2024",
-      time: "5:45 PM",
+      callNo: "(201) 555-0124",
     },
     {
       img: Oval4,
-      name: "Aaron Brown",
+      name: "Anthony Grace",
       callIcon: callicon,
-      callNo: "(615) 555-0887",
-      date: "Sat, May 25, 2024",
-      time: "8:20 AM",
+      callNo: "(603) 555-0123",
     },
+  ];
+  const contactlistdatab = [
     {
       img: dp7,
-      name: "Amelia Martinez",
+      name: "Barrett Aschenbrenner",
       callIcon: callicon,
-      callNo: "(832) 555-0629",
-      date: "Sun, May 26, 2024",
-      time: "11:55 PM",
+      callNo: "(225) 555-0118",
+    },
+    {
+      img: dp2,
+      name: "Beau Hoyland",
+      callIcon: callicon,
+      callNo: "(270) 555-0113",
+    },
+    {
+      img: dp3,
+      name: "Bennet Wuebker ",
+      callIcon: callicon,
+      callNo: "(319) 555-0115",
+    },
+    {
+      img: Oval4,
+      name: "Babette Mckenize",
+      callIcon: callicon,
+      callNo: "(406) 555-0120",
+    },
+    {
+      img: Oval1,
+      name: "Bentley Simank",
+      callIcon: callicon,
+      callNo: "(302) 555-0180",
+    },
+    {
+      img: Oval2,
+      name: "Brandon Aschenbrenner",
+      callIcon: callicon,
+      callNo: "(303) 555-0105",
+    },
+    {
+      img: Oval3,
+      name: "Brayden Hoyland",
+      callIcon: callicon,
+      callNo: "(907) 555-0101",
+    },
+    {
+      img: Oval5,
+      name: "Braxton Burks",
+      callIcon: callicon,
+      callNo: "(219) 555-0114",
     },
   ];
   return (
@@ -103,7 +137,7 @@ const ContactList = () => {
               </div>
               <hr />
               {/* body */}
-              <div className="overflow-y-scroll  no-scrollbar  h-[calc(100%-8rem)]">
+              <div className="overflow-y-scroll  no-scrollbar md:h-96 h-[calc(100%-8rem)]">
                 <p className="border-b text-gray-400  p-1">A</p>
                 <div className="hidden md:block">
                   <ul className="flex p-2 liborder cursor-pointer  md:bg-gray-100">
@@ -116,18 +150,14 @@ const ContactList = () => {
                     </li>
                     <li className="p-1 flex-1 w-64 font-semibold">
                       <div>
-                        Alice Gamage
+                        Allan Tran
                         <div className="text-gray-400 flex">
                           <p className="my-auto ">
-                            <VscCallOutgoing />
+                            <img src={callicon} alt="" />
                           </p>
-                          <p className="ps-1">(308) 555-0121</p>
+                          <p className="ps-1">(270) 555-0117</p>
                         </div>
                       </div>
-                    </li>
-                    <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
-                      Tue, May 21, 2024 <br />
-                      3:58 AM
                     </li>
                   </ul>
                 </div>
@@ -151,10 +181,6 @@ const ContactList = () => {
                           <p className="ps-1">(308) 555-0121</p>
                         </div>
                       </div>
-                    </li>
-                    <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
-                      Tue, May 21, 2024 <br />
-                      3:58 AM
                     </li>
                   </ul>
                 </Link>
@@ -183,66 +209,37 @@ const ContactList = () => {
                           </div>
                         </div>
                       </li>
-                      <li className="p-1 hidden md:block text-gray-400 font-semibold pt-1 text-end">
-                        {info.date} <br />
-                        {info.time}
-                      </li>
                     </ul>
                   </Modal.Toggle>
                 ))}
                 <p className="border-b text-gray-400  p-1">B</p>
-                <Modal.Toggle toggleName="Update">
-                  <ul className="flex p-2 liborder cursor-pointer">
-                    <li className="flex-none w-14 pt-2">
-                      <img
-                        className="w-10 h-10 rounded-full m-auto"
-                        src={Oval2}
-                        alt
-                      />
-                    </li>
-                    <li className="p-1 flex-1 w-64 font-semibold">
-                      <div>
-                        Barrett Aschenbrenner
-                        <div className="text-gray-400 flex">
-                          <p className="my-auto ">
-                            <VscCallOutgoing />
-                          </p>
-                          <p className="ps-1">+9198989898</p>
+                {contactlistdatab.map((info, i) => (
+                  <Modal.Toggle toggleName="Update">
+                    <ul key={i} className="flex p-2 liborder cursor-pointer">
+                      <li className="flex-none w-14 pt-2">
+                        <img
+                          className="w-10 h-10 rounded-full m-auto"
+                          src={info.img}
+                          alt
+                        />
+                      </li>
+                      <li className="p-1 flex-1 w-64 font-semibold">
+                        <div>
+                          {info.name}
+                          <div className={`text-gray-500 flex font-normal`}>
+                            <img
+                              src={info.callIcon}
+                              alt="img"
+                              className="object-contain fill-gray-500  "
+                            />
+
+                            <p className="ps-1 font-semibold">{info.callNo}</p>
+                          </div>
                         </div>
-                      </div>
-                    </li>
-                    <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
-                      Tue, May 21, 2024 <br />
-                      3:58 AM
-                    </li>
-                  </ul>
-                </Modal.Toggle>
-                <Modal.Toggle toggleName="Update">
-                  <ul className="flex p-2 liborder cursor-pointer ">
-                    <li className="flex-none w-14 pt-2">
-                      <img
-                        className="w-10 h-10 rounded-full m-auto"
-                        src={Oval5}
-                        alt
-                      />
-                    </li>
-                    <li className="p-1 flex-1 w-64 font-semibold">
-                      <div>
-                        Bob Gamage
-                        <div className="text-gray-400 flex">
-                          <p className="my-auto ">
-                            <VscCallOutgoing />
-                          </p>
-                          <p className="ps-1">(308) 555-0121</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="p-1 hidden md:block text-gray-400 font-semibold pt-4">
-                      Tue, May 21, 2024 <br />
-                      3:58 AM
-                    </li>
-                  </ul>
-                </Modal.Toggle>
+                      </li>
+                    </ul>
+                  </Modal.Toggle>
+                ))}
 
                 <div className="flex justify-center my-2">
                   <Modal.Toggle toggleName="Update">
@@ -272,18 +269,18 @@ const ContactList = () => {
                   </li>
                   <li className="p-1 flex-1 w-64 font-semibold border-none">
                     <div>
-                      <p className="text-lg">Alice Gamage</p>
+                      <p className="text-lg">Allan Taran</p>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
                           <VscCallOutgoing />
                         </p>
-                        <p className="ps-1">(308) 555-0121</p>
+                        <p className="ps-1">(270) 555-0117</p>
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
                           <IoIosMailOpen className="text-gray-400" />
                         </p>
-                        <p className="ps-1">hewiegamage@gmail.com</p>
+                        <p className="ps-1">allantran@gmail.com</p>
                       </div>
                     </div>
                   </li>
@@ -308,7 +305,7 @@ const ContactList = () => {
               </div>
               <hr />
               {/* body */}
-              <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
+              <div className="overflow-y-scroll md:h-96 h-[calc(100%-8rem)] no-scrollbar">
                 {/* header icons */}
                 <div class="grid grid-cols-5 mx-auto p-2 gap-1 divide-x border-b overflow-x-auto">
                   <div class="flex items-center   justify-center">
@@ -416,7 +413,7 @@ const ContactList = () => {
                             alt
                           />
                         </p>
-                        <p className="ps-1">(270) 555-4578</p>
+                        <p className="ps-1">(270) 555-0118</p>
                       </div>
                     </div>
                   </li>
@@ -445,7 +442,7 @@ const ContactList = () => {
                             alt
                           />
                         </p>
-                        <p className="ps-1">(270) 478-0117</p>
+                        <p className="ps-1">(270) 478-0112</p>
                       </div>
                     </div>
                   </li>

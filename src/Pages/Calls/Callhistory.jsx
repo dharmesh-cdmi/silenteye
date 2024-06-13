@@ -22,6 +22,12 @@ import Oval5 from "../../assests/images/profile/Oval-5.png";
 import Oval6 from "../../assests/images/profile/Oval-6.png";
 import Oval7 from "../../assests/images/profile/Oval-7.png";
 import Oval from "../../assests/images/profile/Oval.png";
+import dp1 from "../../assests/images/profile/dp (1).png";
+import dp2 from "../../assests/images/profile/dp (2).png";
+import dp3 from "../../assests/images/profile/dp (3).png";
+import dp4 from "../../assests/images/profile/dp (4).png";
+import dp5 from "../../assests/images/profile/dp (5).png";
+
 import { Link } from "react-router-dom";
 
 const Callhistory = () => {
@@ -33,14 +39,6 @@ const Callhistory = () => {
       callStatus: "incoming",
       date: "21/05/2024",
     },
-    ,
-    {
-      img: Oval2,
-      name: "Sander Margotta",
-      callIcon: <HiPhoneMissedCall />,
-      callStatus: "missed",
-      date: "21/05/2024",
-    },
     {
       img: Oval3,
       name: "Morty Zumalt",
@@ -49,18 +47,26 @@ const Callhistory = () => {
       date: "21/05/2024",
     },
     {
+      img: Oval2,
+      name: "Sander Margotta",
+      callIcon: <HiPhoneMissedCall />,
+      callStatus: "missed",
+      date: "21/05/2024",
+    },
+
+    {
       img: Oval4,
       name: "Ramona Beabrun",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "21/05/2024",
+      date: "20/05/2024",
     },
     {
       img: Oval5,
       name: "Garfinkel Groberg",
       callIcon: <MdPhoneCallback />,
       callStatus: "incoming",
-      date: "21/05/2024",
+      date: "20/05/2024",
     },
     ,
     {
@@ -68,21 +74,56 @@ const Callhistory = () => {
       name: "Ellie Thaemert",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "21/05/2024",
+      date: "20/05/2024",
     },
     {
       img: Oval7,
       name: "Larina Vanderveen",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "21/05/2024",
+      date: "20/05/2024",
     },
     {
       img: Oval2,
       name: "Elissa Bradfute",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "21/05/2024",
+      date: "20/05/2024",
+    },
+    {
+      img: dp1,
+      name: "Gaston Ghia",
+      callIcon: <HiPhoneMissedCall />,
+      callStatus: "outgoing",
+      date: "20/05/2024",
+    },
+    {
+      img: dp2,
+      name: "Venus Bramall",
+      callIcon: <HiPhoneMissedCall />,
+      callStatus: "incoming",
+      date: "19/05/2024",
+    },
+    {
+      img: dp3,
+      name: "Bronson Rhynes",
+      callIcon: <HiPhoneMissedCall />,
+      callStatus: "incoming",
+      date: "19/05/2024",
+    },
+    {
+      img: dp4,
+      name: "VBary Normandin",
+      callIcon: <HiPhoneMissedCall />,
+      callStatus: "missed",
+      date: "19/05/2024",
+    },
+    {
+      img: dp5,
+      name: "Eddy Herwing",
+      callIcon: <HiPhoneMissedCall />,
+      callStatus: "outgoing",
+      date: "19/05/2024",
     },
   ];
 
@@ -262,7 +303,7 @@ const Callhistory = () => {
                         <p className="my-auto ">
                           <VscCallOutgoing />
                         </p>
-                        <p className="ps-1">(270) 555-0117</p>
+                        <p className="ps-1">+1 2905442387</p>
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
@@ -319,47 +360,7 @@ const Callhistory = () => {
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
-                      <p className="ps-1">00:18:27s</p>
-                      <Modal.Toggle toggleName="Update">
-                        <div className="hidden md:block">
-                          <IoMicOutline
-                            className="text-slate-900 cursor-pointer"
-                            size={25}
-                          />
-                        </div>
-                      </Modal.Toggle>
-                      <Modal.Toggle toggleName="Update">
-                        <div className="hidden md:block">
-                          <img
-                            className="h-6 cursor-pointer"
-                            src={Delete}
-                            alt
-                          />
-                        </div>
-                      </Modal.Toggle>
-                    </div>
-                  </li>
-                </ul>
-                <ul className="flex p-2 liborder ">
-                  <li className="p-1 flex-1 w-64 font-semibold ">
-                    <div>
-                      <div className={`text-gray-600 flex font-bold`}>
-                        <p className="my-auto ">
-                          <VscCallOutgoing />
-                        </p>
-                        <p className="ps-1">outgoing</p>
-                      </div>
-                      <div className={`text-gray-400 flex font-normal`}>
-                        <p className="my-auto ">
-                          <IoIosMailOpen className="text-gray-400" />
-                        </p>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                    <div className="flex gap-4 mt-2">
-                      <p className="ps-1">00:18:27s</p>
+                      <p className="ps-1">00:18:27</p>
                       <Modal.Toggle toggleName="Update">
                         <div className="hidden md:block">
                           <IoMicOutline
@@ -393,13 +394,94 @@ const Callhistory = () => {
                         <p className="my-auto ">
                           <IoIosMailOpen className="text-gray-400" />
                         </p>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Tue, May 21, 2024 3:57 AM</p>
                       </div>
                     </div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
-                      <p className="ps-1">00:18:27s</p>
+                      <p className="ps-1">00:00:00</p>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <IoMicOutline
+                            className="text-slate-900 cursor-pointer"
+                            size={25}
+                          />
+                        </div>
+                      </Modal.Toggle>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-gray-600 flex font-bold`}>
+                        <p className="my-auto ">
+                          <VscCallOutgoing />
+                        </p>
+                        <p className="ps-1">outgoing</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 3:01 AM</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <p className="ps-1">00:03:04</p>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <IoMicOutline
+                            className="text-slate-900 cursor-pointer"
+                            size={25}
+                          />
+                        </div>
+                      </Modal.Toggle>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-green-600 flex font-bold`}>
+                        <p className="my-auto ">
+                          <MdPhoneCallback />
+                        </p>
+                        <p className="ps-1">Incoming</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 1:40 AM</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <p className="ps-1">01:20:34</p>
                       <Modal.Toggle toggleName="Update">
                         <div className="hidden md:block">
                           <IoMicOutline
@@ -433,13 +515,133 @@ const Callhistory = () => {
                         <p className="my-auto ">
                           <IoIosMailOpen className="text-gray-400" />
                         </p>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Tue, May 21, 2024 12:31 PM</p>
                       </div>
                     </div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
-                      <p className="ps-1">00:18:27s</p>
+                      <p className="ps-1">00:0:20</p>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <IoMicOutline
+                            className="text-slate-900 cursor-pointer"
+                            size={25}
+                          />
+                        </div>
+                      </Modal.Toggle>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-gray-600 flex font-bold`}>
+                        <p className="my-auto ">
+                          <VscCallOutgoing />
+                        </p>
+                        <p className="ps-1">outgoing</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 11:46 PM</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <p className="ps-1">00:00:34</p>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <IoMicOutline
+                            className="text-slate-900 cursor-pointer"
+                            size={25}
+                          />
+                        </div>
+                      </Modal.Toggle>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-green-600 flex font-bold`}>
+                        <p className="my-auto ">
+                          <MdPhoneCallback />
+                        </p>
+                        <p className="ps-1">Incoming</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 10:12 AM</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <p className="ps-1">00:3:12</p>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <IoMicOutline
+                            className="text-slate-900 cursor-pointer"
+                            size={25}
+                          />
+                        </div>
+                      </Modal.Toggle>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-red-600 flex font-bold`}>
+                        <p className="my-auto ">
+                          <HiPhoneMissedCall />
+                        </p>
+                        <p className="ps-1">Missed</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 10:11 AM</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <p className="ps-1">00:00:00</p>
                       <Modal.Toggle toggleName="Update">
                         <div className="hidden md:block">
                           <IoMicOutline
