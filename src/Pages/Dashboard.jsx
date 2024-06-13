@@ -39,6 +39,7 @@ import Oval4 from "../assests/images/profile/Oval-4.png";
 import Oval6 from "../assests/images/profile/Oval-6.png";
 
 import Oval7 from "../assests/images/profile/Oval-7.png";
+import user from "../assests/images/profile/user.png";
 
 import Oval from "../assests/images/profile/Oval.png";
 
@@ -197,28 +198,28 @@ const Dashboard = () => {
       time: "9:41 am",
     },
     {
-      img: "https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png",
+      img: user,
       name: "13654825",
       msg: "The Apple Id code is 125544. Dont share with",
-      time: "9:41 am",
+      time: "Monday",
     },
     {
-      img: "https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png",
+      img: user,
       name: "13654825",
       msg: "Your Tinder code is 815180 Don't share @tinder",
-      time: "9:41 am",
+      time: "Monday",
     },
     {
       img: Oval6,
       name: "(319) 555-0115",
       msg: "Verfication code 759028, valid for 10 minutes",
-      time: "9:41 am",
+      time: "10/13/2024",
     },
     {
-      img: "https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png",
+      img: user,
       name: "13654825",
       msg: "562963 SMS login verfication code, valid for ",
-      time: "9:41 am",
+      time: "10/13/2024",
     },
   ];
   const MostUsedApp = [
