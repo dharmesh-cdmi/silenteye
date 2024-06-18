@@ -16,8 +16,8 @@ const AppsRoutesHeader = (props) => {
     <>
       {/* Navigations, search*/}
       <CallsHead heading="Apps" placeholder="Search Notes" />
-      <hr class="h-px mb-2 md:hidden bg-gray-200 border-0 dark:bg-gray-700" />
-      <ul class=" text-sm font-medium text-center no-scrollbar md:mt-10 text-gray-500 rounded-lg shadow flex overflow-x-auto md:w-full mx-2 .no-scrollbar ">
+      <hr class="h-px mb-2 md:hidden bg-gray-200 border-0 " />
+      <ul class=" text-sm font-medium text-center no-scrollbar border md:mt-10 text-gray-500 rounded-lg shadow flex overflow-x-auto md:w-full mx-2 .no-scrollbar ">
         <li class="w-[5rem] md:w-full ">
           <Link
             to="/apps/allapps"

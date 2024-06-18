@@ -409,30 +409,29 @@ const DeviceControl = () => {
                 className="object-contain mt-2 w-24 md:w-20"
               />
             </div>
-            <div className="mx-2 w-70">
+            <div className="mx-2 ">
               <div className="flex ">
                 <div>
-                  <p className="font-semibold text-xl text-gray-900">
+                  <p className="font-semibold text-xl text-gray-900 ">
                     Filter harmful content on Device{" "}
-                    <div className="hidden md:block">
-                      <FilterModal>
-                        <FilterModal.Toggle toggleName="Update">
-                          <button
-                            type="button"
-                            class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
-                          >
-                            <AiFillEdit />
-                            Edit Filters
-                          </button>
-                        </FilterModal.Toggle>
-                        <FilterModal.Window windowName="Update">
-                          <FilterTegModal />
-                        </FilterModal.Window>
-                      </FilterModal>
-                    </div>
                   </p>
                 </div>
-
+                <div className="hidden md:block ms-4">
+                  <FilterModal>
+                    <FilterModal.Toggle toggleName="Update">
+                      <button
+                        type="button"
+                        class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                      >
+                        <AiFillEdit />
+                        <p className="text-nowrap">Edit Filters</p>
+                      </button>
+                    </FilterModal.Toggle>
+                    <FilterModal.Window windowName="Update">
+                      <FilterTegModal />
+                    </FilterModal.Window>
+                  </FilterModal>
+                </div>
                 <Modal>
                   <Modal.Toggle toggleName="Update">
                     <img

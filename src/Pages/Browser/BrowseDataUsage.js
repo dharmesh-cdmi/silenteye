@@ -8,6 +8,7 @@ import facebook from "../../assests/images/SocialApps/facebook.png";
 import yt from "../../assests/images/SocialApps/yt.png";
 import google from "../../assests/images/SocialApps/Google.png";
 import twitter from "../../assests/images/SocialApps/twitter.png";
+import wiki from "../../assests/images/SocialApps/compressify/wiki.png";
 
 const BrowseDataUsage = () => {
   return (
@@ -17,13 +18,13 @@ const BrowseDataUsage = () => {
       <section className="browserContainer  flex flex-col md:my-6">
         <div className="p-4 w-full md:rounded-t-md rounded-none border border-slate-200   ">
           <h3 className="flex font-semibold text-lg">
-            <span className="text-2xl font-extrabold">702 MB</span>&nbsp; of
+            <span className="text-2xl font-extrabold">2.40 GB</span>&nbsp; of
             Website data used
           </h3>
-          <p className="text-black/50">Today</p>
+          <p className="text-black/50 text-base">Today</p>
         </div>
 
-        <div className="browseHistoryCon flex flex-col md:border-b-md">
+        <div className="browseHistoryCon  flex flex-col border ">
           <div className="browseHistoryCol flexStartData flex">
             <div className="browseHistoryDate flex flex-col">
               <span>
@@ -32,16 +33,16 @@ const BrowseDataUsage = () => {
             </div>
             <div className="browseHistoryDes flex flex-col">
               <h3 className="font-semibold">apple.com</h3>
-              <p className="text-slate-500">140.87 MB</p>
+              <p className="text-slate-500">324.76 MB</p>
             </div>
           </div>
-          <div className="browseHistoryCol flexStartData ms-2  flex">
+          <div className="browseHistoryCol flexStartData   flex">
             <div className="browseHistoryDate flex flex-col">
               <img className="w-10 h-10  m-auto" src={yt} alt />
             </div>
             <div className="browseHistoryDes flex flex-col">
               <h3 className="font-semibold">Youtube</h3>
-              <p className="text-slate-500">140.28 MB</p>
+              <p className="text-slate-500">190.42 MB</p>
             </div>
           </div>
           <div className="browseHistoryCol flexStartData  flex">
@@ -56,10 +57,10 @@ const BrowseDataUsage = () => {
             </div>
             <div className="browseHistoryDes flex flex-col">
               <h3 className="font-semibold">Google</h3>
-              <p className="text-slate-500">140.99 MB</p>
+              <p className="text-slate-500">432.55 MB</p>
             </div>
           </div>
-          <div className="browseHistoryCol flexStartData ms-2  flex">
+          <div className="browseHistoryCol flexStartData   flex">
             <div className="browseHistoryDate flex flex-col">
               <span>
                 <img
@@ -71,10 +72,10 @@ const BrowseDataUsage = () => {
             </div>
             <div className="browseHistoryDes flex flex-col">
               <h3 className="font-semibold">Facebook</h3>
-              <p className="text-slate-500">140.12 MB</p>
+              <p className="text-slate-500">589.23 MB</p>
             </div>
           </div>
-          <div className="browseHistoryCol flexStartData ms-2  flex">
+          <div className="browseHistoryCol flexStartData  flex">
             <div className="browseHistoryDate flex flex-col">
               <span>
                 <img
@@ -86,7 +87,18 @@ const BrowseDataUsage = () => {
             </div>
             <div className="browseHistoryDes flex flex-col">
               <h3 className="font-semibold">Twitter</h3>
-              <p className="text-slate-500">140.12 MB</p>
+              <p className="text-slate-500">76.98 MB</p>
+            </div>
+          </div>
+          <div className="browseHistoryCol flexStartData  flex">
+            <div className="browseHistoryDate flex flex-col">
+              <span>
+                <img className="w-10 h-10 rounded-full m-auto" src={wiki} alt />
+              </span>
+            </div>
+            <div className="browseHistoryDes flex flex-col">
+              <h3 className="font-semibold">Wikipedia</h3>
+              <p className="text-slate-500">843.34 MB</p>
             </div>
           </div>
         </div>

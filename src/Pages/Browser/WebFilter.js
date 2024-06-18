@@ -11,7 +11,7 @@ const WebFilter = () => {
   return (
     <>
       <CallsHead heading="Web Filters" placeholder="Search " />
-      <hr class="h-px  bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <hr class="h-px  bg-gray-200 border-0 "></hr>
 
       <section className="webFilterwrapper md:border rounded-lg md:p-4  flex flex-col md:my-6">
         <div className="webFilterContainer md:rounded-lg rounded-none flex flex-col">
@@ -35,7 +35,7 @@ const WebFilter = () => {
             </div>
             <div className="browseHistoryDate flex flex-col ">
               <p className="text-slate-500 text-sm hidden md:block">
-                May 13, 09:10 AM
+                May 21,2024 01:12 PM
               </p>
               <p className="text-slate-500 text-sm md:hidden mt-8">
                 2019-10-17 02:25:09
@@ -51,10 +51,10 @@ const WebFilter = () => {
             </div>
             <div className="browseHistoryDate flex flex-col ">
               <p className="text-slate-500 text-sm hidden md:block">
-                May 13, 09:10 AM
+                May 20, 2024 07:46 AM
               </p>
               <p className="text-slate-500 text-sm md:hidden mt-8">
-                2019-10-17 02:25:09
+                May 20, 2024 07:46 AM
               </p>
             </div>
           </div>
@@ -69,7 +69,7 @@ const WebFilter = () => {
             </div>
             <div className="browseHistoryDate flex flex-col ">
               <p className="text-slate-500 text-sm hidden md:block">
-                May 13, 09:10 AM
+                May 19, 2024 05:37 PM
               </p>
               <p className="text-slate-500 text-sm md:hidden mt-8">
                 2019-10-17 02:25:09
@@ -86,7 +86,7 @@ const WebFilter = () => {
             </div>
             <div className="browseHistoryDate flex flex-col ">
               <p className="text-slate-500 text-sm hidden md:block">
-                May 13, 09:10 AM
+                May 19, 2024 12:24 PM
               </p>
               <p className="text-slate-500 text-sm md:hidden mt-8">
                 2019-10-17 02:25:09

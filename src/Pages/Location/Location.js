@@ -42,10 +42,10 @@ const Location = () => {
                   }}
                 >
                   <p className="flex justify-start ">
-                    <span className="LiveCircleIcon clear-starttext-md text-gray-500" />
-                    {v.des}
+                    <span className="LiveCircleIcon  clear-starttext-md text-gray-500" />
+                    <p className="ps-2">{v.des}</p>
                   </p>
-                  <h3 className="text-lg mt-2">{v.title}</h3>
+                  <h3 className="text-lg mt-2 font-semibold">{v.title}</h3>
                 </div>
               ))
             ) : (

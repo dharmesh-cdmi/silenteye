@@ -4,11 +4,11 @@ import { MdKeyboardDoubleArrowDown, MdPhoneCallback } from "react-icons/md";
 import { HiPhoneMissedCall } from "react-icons/hi";
 import CallsHead from "../../components/Calls/CallsHead";
 import { VscCallOutgoing } from "react-icons/vsc";
-import { IoIosMailOpen } from "react-icons/io";
+import { IoIosLock, IoIosMailOpen } from "react-icons/io";
 import { BsPersonAdd } from "react-icons/bs";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { IoMicOutline } from "react-icons/io5";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaUser } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 import Upgrade from "../../components/Shared/Upgrade";
 import Modal from "../../components/Shared/Modal";
@@ -41,57 +41,70 @@ import { FaLocationDot } from "react-icons/fa6";
 const LoginAndPassword = () => {
   const LoginAndPasswordData = [
     {
-      img: snapchat,
-      name: "Snapchat",
+      img: whatsapp,
+      name: "Whatsapp",
+      time: "Last Login 01:12 PM",
     },
     {
-      img: Instagram,
-      name: "Instagram",
+      img: snapchat,
+      name: "Snapchat",
+      time: "Last Login 11:59 AM",
     },
     {
       img: facebook,
       name: "facebook",
+      time: "Last Login 11:38 AM",
     },
     {
       img: tinder,
       name: "Tinder",
+      time: "Last Login 11:44 AM",
     },
     ,
     {
       img: yt,
       name: "Youtube",
+      time: "Last Login 11:40 AM",
     },
     {
       img: tiktokicon,
       name: "Tiktok",
+      time: "Last Login 11:36 AM",
     },
     {
       img: twittericon,
       name: "Twitter",
+      time: "Last Login 11:32 AM",
     },
     {
       img: viber,
       name: "Viber",
+      time: "Last Login 11:49 AM",
     },
     {
       img: kik,
       name: "kik",
+      time: "Last Login 09:24 AM",
     },
     {
       img: skype,
       name: "Skype",
+      time: "Last Login 09:02 AM",
     },
     {
       img: chromeicon,
       name: "Crome",
+      time: "Last Login 08:49 AM",
     },
     {
       img: telegram,
       name: "Telegram",
+      time: "Last Login 08:31 AM",
     },
     {
       img: pinteresticon,
       name: "Pinterest",
+      time: "Last Login 08:12 AM",
     },
   ];
 
@@ -117,16 +130,16 @@ const LoginAndPassword = () => {
                 <li className="flex-none w-14 pt-2">
                   <img
                     className="w-10 h-10 rounded-full m-auto"
-                    src={whatsapp}
+                    src={Instagram}
                     alt
                   />
                 </li>
                 <li className="p-1 flex-1 w-64 font-semibold">
                   <div>
-                    Whatsapp
+                    Instagram
                     <div className="font-normal">
                       <p className="ps-1 text-black/50 text-base md:text-[17px] font-medium">
-                        Last Login 2:12 PM{" "}
+                        Last Login 02:30 PM{" "}
                       </p>
                     </div>
                   </div>
@@ -144,7 +157,7 @@ const LoginAndPassword = () => {
                           {info.name}
                           <div className="font-normal">
                             <p className="ps-1 text-black/50 text-base md:text-[17px] font-medium">
-                              Last Login 2:12 PM{" "}
+                              {info.time}
                             </p>
                           </div>
                         </div>
@@ -161,7 +174,7 @@ const LoginAndPassword = () => {
           {/* first column for mobile */}
 
           {/* second column */}
-          <div className="border-r hidden md:block">
+          <div className=" hidden md:block">
             <Modal>
               {/* head */}
               <div className="text-lg font-bold p-0 md:p-2 ">
@@ -169,24 +182,24 @@ const LoginAndPassword = () => {
                   <li className="flex-none w-20 pt-2 border-none ">
                     <img
                       className="w-20 h-20  m-auto"
-                      src={whatsapp}
+                      src={Instagram}
                       alt="img"
                     />
                   </li>
-                  <li className="p-1 flex-1 w-30 font-semibold border-none">
+                  <li className="p-1 ms-2 flex-1 w-30 font-semibold border-none">
                     <div>
-                      <p className="text-lg">WhatsApp</p>
+                      <p className="text-lg">Instagram</p>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
-                          <VscCallOutgoing />
+                          <FaUser className="rounded-lg" />
                         </p>
-                        <p className="ps-1">(270) 555-0117</p>
+                        <p className="ps-1">@martinrando***</p>
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
-                          <IoIosMailOpen className="text-gray-400" />
+                          <IoIosLock className="text-gray-400" />
                         </p>
-                        <p className="ps-1">martin$4488</p>
+                        <p className="ps-1">martin$4488***</p>
                       </div>
                     </div>
                   </li>
@@ -219,7 +232,7 @@ const LoginAndPassword = () => {
                         <p className="ps-1">Los Angeles, USA</p>
                       </div>
                       <div className={`text-gray-400  font-normal`}>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Tue, May 21, 2024 02:30 PM</p>
                       </div>
                     </div>
                   </li>
@@ -244,10 +257,10 @@ const LoginAndPassword = () => {
                         <p className="my-auto ">
                           <FaLocationDot />
                         </p>
-                        <p className="ps-1">Los Angeles, USA</p>
+                        <p className="ps-1">Dollas, USA</p>
                       </div>
                       <div className={`text-gray-400  font-normal`}>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Tue, May 21, 2024 4:20 PM</p>
                       </div>
                     </div>
                   </li>
@@ -272,10 +285,10 @@ const LoginAndPassword = () => {
                         <p className="my-auto ">
                           <FaLocationDot />
                         </p>
-                        <p className="ps-1">Los Angeles, USA</p>
+                        <p className="ps-1">San Jose, USA</p>
                       </div>
                       <div className={`text-gray-400  font-normal`}>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Wed, May 20, 2024 10:05 AM</p>
                       </div>
                     </div>
                   </li>
@@ -300,10 +313,10 @@ const LoginAndPassword = () => {
                         <p className="my-auto ">
                           <FaLocationDot />
                         </p>
-                        <p className="ps-1">Los Angeles, USA</p>
+                        <p className="ps-1">Chicago, USA</p>
                       </div>
                       <div className={`text-gray-400  font-normal`}>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Wed, May 20, 2024 8:20 AM</p>
                       </div>
                     </div>
                   </li>
@@ -328,10 +341,10 @@ const LoginAndPassword = () => {
                         <p className="my-auto ">
                           <FaLocationDot />
                         </p>
-                        <p className="ps-1">Los Angeles, USA</p>
+                        <p className="ps-1">New York, USA</p>
                       </div>
                       <div className={`text-gray-400  font-normal`}>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Mon, May 16, 2024 9:45 AM</p>
                       </div>
                     </div>
                   </li>
@@ -356,10 +369,10 @@ const LoginAndPassword = () => {
                         <p className="my-auto ">
                           <FaLocationDot />
                         </p>
-                        <p className="ps-1">Los Angeles, USA</p>
+                        <p className="ps-1">San Diego, USA</p>
                       </div>
                       <div className={`text-gray-400  font-normal`}>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Mon, May 14, 2024 7:30 AM</p>
                       </div>
                     </div>
                   </li>
@@ -384,10 +397,38 @@ const LoginAndPassword = () => {
                         <p className="my-auto ">
                           <FaLocationDot />
                         </p>
-                        <p className="ps-1">Los Angeles, USA</p>
+                        <p className="ps-1">Charlotte, USA</p>
                       </div>
                       <div className={`text-gray-400  font-normal`}>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Mon, May 15, 2024 9:15 PM</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className=" gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={` flex font-bold`}>
+                        <p className="my-auto ">
+                          <FaLocationDot />
+                        </p>
+                        <p className="ps-1">Philadelphia, USA</p>
+                      </div>
+                      <div className={`text-gray-400  font-normal`}>
+                        <p className="ps-1">Sat, May 15, 2024 6:45 PM</p>
                       </div>
                     </div>
                   </li>
@@ -410,48 +451,57 @@ const LoginAndPassword = () => {
                   <div aria-label="Page navigation example">
                     <div className="hidden md:block">
                       <ul class="inline-flex -space-x-px text-base h-10">
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            <FaArrowLeft />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            1
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            ...
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            aria-current="page"
-                            class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
-                          >
-                            10
-                          </a>
-                        </li>
-
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            <FaArrowRight />
-                          </a>
-                        </li>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              <FaArrowLeft />
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              1
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              ...
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              aria-current="page"
+                              class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
+                            >
+                              10
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              <FaArrowRight />
+                            </a>
+                          </li>
+                        </Modal.Toggle>
                       </ul>
                     </div>
                   </div>
