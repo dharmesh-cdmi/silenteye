@@ -22,14 +22,14 @@ function Gallery() {
   const imgs = [
     {
       img: s2,
-      name: "nature-3076877.jpg",
+      name: "screenshot-3076877.jpg",
       desc: "20.052024-422.64 KB",
     },
-    { img: s, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ss, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: options, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: bl, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: red, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: s, name: "screenshot-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ss, name: "screenshot-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: options, name: "screenshot-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: bl, name: "screenshot-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: red, name: "screenshot-3076877.jpg", desc: "20.052024-422.64 KB" },
 
   
   ];
@@ -37,21 +37,21 @@ function Gallery() {
   const imgs2= [
     {
       img: ss5,
-      name: "nature-3076877.jpg",
+      name: "screenshot-3076877.jpg",
       desc: "20.052024-422.64 KB",
     },
-    { img: s2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ss3, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ss2, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: s2, name: "screenshot-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ss3, name: "screenshot-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ss2, name: "screenshot-3076877.jpg", desc: "20.052024-422.64 KB" },
 
     {
       img: mob,
-      name: "nature-3076877.jpg",
+      name: "screenshot-3076877.jpg",
       desc: "20.052024-422.64 KB",
     },
-    { img: black, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: ss, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
-    { img: options, name: "nature-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: black, name: "screenshot-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: ss, name: "screenshot-3076877.jpg", desc: "20.052024-422.64 KB" },
+    { img: options, name: "screenshot-3076877.jpg", desc: "20.052024-422.64 KB" },
   ];
   return (
     <div className="lg:mt-10 mt-0">

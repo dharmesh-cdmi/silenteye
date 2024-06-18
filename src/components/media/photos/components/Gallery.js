@@ -17,6 +17,34 @@ import ph25 from "../../../../assests/images/DashControl/ph2.5.png";
 import dogbook from "../../../../assests/images/dogbook.png";
 import racoon from "../../../../assests/images/racoon.png";
 
+import r31 from "../../../../assests/images/r3.1.png";
+import r32 from "../../../../assests/images/r3.2.png";
+import r33 from "../../../../assests/images/r3.3.png";
+import r34 from "../../../../assests/images/r3.4.png";
+import r35 from "../../../../assests/images/r3.5.png";
+import r36 from "../../../../assests/images/r3.6.png";
+
+import r41 from "../../../../assests/images/r41.png";
+import r42 from "../../../../assests/images/r42.png";
+import r43 from "../../../../assests/images/r43.png";
+import r44 from "../../../../assests/images/r44.png";
+import r45 from "../../../../assests/images/r45.png";
+import r46 from "../../../../assests/images/r46.png";
+
+import r51 from "../../../../assests/images/r51.png";
+import r52 from "../../../../assests/images/r52.png";
+import r53 from "../../../../assests/images/r53.png";
+import r54 from "../../../../assests/images/r54.png";
+import r55 from "../../../../assests/images/r55.png";
+import r56 from "../../../../assests/images/r56.png";
+
+import r61 from "../../../../assests/images/r61.png";
+import r62 from "../../../../assests/images/r62.png";
+import r63 from "../../../../assests/images/r63.png";
+import r64 from "../../../../assests/images/r64.png";
+import r65 from "../../../../assests/images/r65.png";
+import r66 from "../../../../assests/images/r66.png";
+
 import ph26 from "../../../../assests/images/DashControl/ph2.6.png";
 import ph27 from "../../../../assests/images/DashControl/ph2.7.png";
 import ph29 from "../../../../assests/images/DashControl/ph2.9.png";
@@ -45,28 +73,34 @@ function Gallery() {
     { img: ph23, name: "nature-3076885.jpg", desc: "20.052024-422.64 KB",id:9 },
     { img: ph24, name: "nature-3076886.jpg", desc: "20.052024-422.64 KB",id:10 },
 
-    { img: ph25, name: "nature-3076889.jpg", desc: "20.052024-422.64 KB",id:13 },
-    { img: ph1, name: "nature-3076890.jpg", desc: "20.052024-422.64 KB",id:14 },
-    { img: ph29, name: "nature-3076891.jpg", desc: "20.052024-422.64 KB",id:15 },
-    { img: ph3, name: "nature-3076892.jpg", desc: "20.052024-422.64 KB",id:15 },
-    { img: ph4, name: "nature-3076893.jpg", desc: "20.052024-422.64 KB",id:16 },
-    { img: ph5, name: "nature-3076894.jpg", desc: "20.052024-422.64 KB",id:17 },
-    { img: ph1, name: "nature-3076895.jpg", desc: "20.052024-422.64 KB",id:18 },
+    { img: r31, name: "space-3076889.jpg", desc: "20.052024-422.64 KB",id:13 },
+    { img: r32, name: "space-3076890.jpg", desc: "20.052024-422.64 KB",id:14 },
+    { img: r33, name: "space-3076891.jpg", desc: "20.052024-422.64 KB",id:15 },
+    { img: r34, name: "space-3076892.jpg", desc: "20.052024-422.64 KB",id:15 },
+    { img: r35, name: "space-3076893.jpg", desc: "20.052024-422.64 KB",id:16 },
+    { img: r36, name: "space-3076894.jpg", desc: "20.052024-422.64 KB",id:17 },
+    
+    { img: r41, name: "technology-3076895.jpg", desc: "20.052024-422.64 KB",id:18 },
+    { img: r42, name: "technology-3076883.jpg", desc: "20.052024-422.64 KB",id:7 },
+    { img: r43, name: "technology-3076887.jpg", desc: "20.052024-422.64 KB",id:11 },
+    { img: r44, name: "technology-3076888.jpg", desc: "20.052024-422.64 KB",id:12 },
+    { img: r45, name: "technology-3076884.jpg", desc: "20.052024-422.64 KB",id:8 },
+    { img: r46, name: "technology-3076885.jpg", desc: "20.052024-422.64 KB",id:9 },
+    
+    { img: r51, name: "business-3076895.jpg", desc: "20.052024-422.64 KB",id:18 },
+    { img: r52, name: "business-3076883.jpg", desc: "20.052024-422.64 KB",id:7 },
+    { img: r53, name: "business-3076887.jpg", desc: "20.052024-422.64 KB",id:11 },
+    { img: r54, name: "business-3076888.jpg", desc: "20.052024-422.64 KB",id:12 },
+    { img: r55, name: "business-3076884.jpg", desc: "20.052024-422.64 KB",id:8 },
+    { img: r56, name: "business-3076885.jpg", desc: "20.052024-422.64 KB",id:9 },
 
-    { img: racoon, name: "nature-3076883.jpg", desc: "20.052024-422.64 KB",id:7 },
-    { img: dogbook, name: "nature-3076887.jpg", desc: "20.052024-422.64 KB",id:11 },
-    { img: ph21, name: "nature-3076888.jpg", desc: "20.052024-422.64 KB",id:12 },
-    { img: ph22, name: "nature-3076884.jpg", desc: "20.052024-422.64 KB",id:8 },
-    { img: ph23, name: "nature-3076885.jpg", desc: "20.052024-422.64 KB",id:9 },
-    { img: ph24, name: "nature-3076886.jpg", desc: "20.052024-422.64 KB",id:10 },
+    { img: r61, name: "food-3076895.jpg", desc: "20.052024-422.64 KB",id:18 },
+    { img: r62, name: "food-3076883.jpg", desc: "20.052024-422.64 KB",id:7 },
+    { img: r63, name: "food-3076887.jpg", desc: "20.052024-422.64 KB",id:11 },
+    { img: r64, name: "food-3076888.jpg", desc: "20.052024-422.64 KB",id:12 },
+    { img: r65, name: "food-3076884.jpg", desc: "20.052024-422.64 KB",id:8 },
+    { img: r66, name: "food-3076885.jpg", desc: "20.052024-422.64 KB",id:9 },
 
-    { img: ph25, name: "nature-3076889.jpg", desc: "20.052024-422.64 KB",id:13 },
-    { img: ph1, name: "nature-3076890.jpg", desc: "20.052024-422.64 KB",id:14 },
-    { img: ph29, name: "nature-3076891.jpg", desc: "20.052024-422.64 KB",id:15 },
-    { img: ph3, name: "nature-3076892.jpg", desc: "20.052024-422.64 KB",id:15 },
-    { img: ph4, name: "nature-3076893.jpg", desc: "20.052024-422.64 KB",id:16 },
-    { img: ph5, name: "nature-3076894.jpg", desc: "20.052024-422.64 KB",id:17 },
-    { img: ph1, name: "nature-3076895.jpg", desc: "20.052024-422.64 KB",id:18 },
   ];
   return (
     <>

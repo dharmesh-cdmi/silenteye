@@ -6,6 +6,8 @@ import rr from "../../../assests/images/rr.png";
 import Oval from "../../../assests/images/Oval.png";
 import ph4 from "../../../assests/images/ph4.png";
 import ph5 from "../../../assests/images/ph5.png";
+import { FaPhoneAlt } from "react-icons/fa";
+
 
 import delet from "../../../assests/images/delete.png";
 import Modal from "../../Shared/Modal";
@@ -83,7 +85,7 @@ function Messages() {
               <img className="h-10 w-10 rounded-full mt-2 " src={imgg}></img>
               <div className="ml-3">
                 <h3 className="font-bold text-xl text-nowrap ">Riyah Zoik</h3>
-                <p className="text-slate-500 text-nowrap">(480) 555-0109</p>
+                <p className="text-slate-500 text-nowrap flex"><FaPhoneAlt className="w-3 h-3 mt-1.5 mr-1 text-slate-400"/>  (480) 555-0109</p>
               </div>
               <div className="flex justify-end align-middle lg:ml-52 ml-32 mt-2">
                 <Modal>
@@ -120,7 +122,7 @@ function Messages() {
               Recent Messages
             </p>
             {msgData.map((msg, index) => {
-              return <Tabs msg={msg}  />;
+              return <Tabs msg={msg} key={index}  />;
             })}
           </div>
         )}
@@ -130,21 +132,21 @@ function Messages() {
               <img className="h-10 w-10 rounded-full mt-2 " src={imgg}/>
               <div className="ml-3">
                 <h3 className="font-bold text-xl text-nowrap ">Riyah Zoik</h3>
-                <p className="text-slate-500 text-nowrap">(480) 555-0109</p>
+                <p className="text-slate-500 text-nowrap flex"><FaPhoneAlt className="w-3 h-3 mt-1.5 mr-1 text-slate-400"/>  (480) 555-0109</p>
               </div>
               <div className="flex justify-end align-middle  absolute   right-3 top-5">
                 <Modal>
                   <Modal.Toggle toggleName="Update">
                     <img
                       src={man}
-                      className="h-8 w-8 mr-3 cursor-pointer border rounded-lg p-2 shadow-[0px_0px_56px_0px_#00000014]   "
+                      className="h-10 w-10 mr-1 cursor-pointer lg:border-none border rounded-lg p-2 "
                       onClick={() => setModal(true)}
                     ></img>
                   </Modal.Toggle>
                   <Modal.Toggle toggleName="Update">
                     <img
                       src={delet}
-                      className="h-8 w-8 mr-3 cursor-pointer border rounded-lg p-2 shadow-[0px_0px_56px_0px_#00000014]"
+                      className="h-10 w-10   mr-2 cursor-pointer lg:border-none border rounded-lg p-2 "
                       onClick={() => setModal(true)}
                     ></img>
                   </Modal.Toggle>
