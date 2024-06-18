@@ -5,7 +5,11 @@ import { FaWifi } from "react-icons/fa6";
 import { AiOutlineDownload } from "react-icons/ai";
 import { MdOutlineFileUpload } from "react-icons/md";
 
+
 import del from '../../../assests/images/delete.png'
+import tick from '../../../assests/images/checkmark.png'
+import dnld from '../../../assests/images/fr.png'
+import upld from '../../../assests/images/uploadd.png'
 import { TiTick } from "react-icons/ti";
 
 
@@ -14,9 +18,9 @@ import { TiTick } from "react-icons/ti";
 
 function Tabs() {
   return (
-    <div className="lg:mx-4 mx-0 lg:mt-10 mt-4 border-t">
-      <section className="grid lg:grid-cols-4 grid-cols-1 border-0 lg:border-2 border-gray-50 rounded-xl ">
-        <div className="py-2 px-2 lg:border-r-2 lg:border-b-2 border-b">
+    <div className="lg:mx-4 mx-0 lg:mt-10 mt-1 lg:border-t-0 border-t">
+      <section className="grid lg:grid-cols-4 grid-cols-1 border-0 lg:border-2 border-gray-200 rounded-xl ">
+        <div className="py-2 px-2 lg:border-r-2 lg:border-t-0 lg:border-b-0 border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -31,11 +35,11 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-2 px-2 lg:border-r-2 lg:border-b-2 border-b">
+        <div className="py-2 px-2 lg:border-r-2 lg:border-t-0 lg:border-b-0 border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
-                <TiTick className='w-7 h-7'/>
+                <img className='h-6 w-6 mt-3 mr-1' src={tick}></img>
                 <div>
                 <h3 className="font-semibold text-lg">Home 5G</h3>
                 <p className="text-gray-400 text-sm">Connected</p>
@@ -49,11 +53,11 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-2 px-2 lg:border-r-2 lg:border-b-2 border-b">
+        <div className="py-2 px-2 lg:border-r-2 lg:border-t-0 lg:border-b-0 border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex ">
-                <AiOutlineDownload className="h-6 w-6" />
+                <img className='w-6 h-6' src={dnld}/>
                 <h3 className="font-semibold text-md">Downloaded</h3>
               </div>
               <p className=" text-sm">
@@ -63,16 +67,15 @@ function Tabs() {
             </div>
           </div>
         </div>
-
-        <div className="py-2 px-2 lg:border-r-2 lg:border-b-2 border-b">
+        <div className="py-2 px-2 lg:border-r-0 lg:border-t-0 lg:border-b-0 border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex ">
-                <MdOutlineFileUpload className="h-6 w-6" />
-                <h3 className="font-semibold text-md">Uploaded</h3>
+              <img className='w-6 h-6' src={upld}/>
+              <h3 className="font-semibold text-md">Uploaded</h3>
               </div>
               <p className=" text-sm">
-                130.77 GB{" "}
+                1.20 GB{" "}
                 <span className="text-gray-500 text-xs ">Data Downloaded</span>
               </p>
             </div>

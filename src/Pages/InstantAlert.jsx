@@ -10,6 +10,9 @@ import Button from "../components/Shared/Button";
 import More from "../assests/images/more.png";
 import Modal from "../components/Shared/Modal";
 import Upgrade from "../components/Shared/Upgrade"
+import Checkbox from "../components/Shared/Checkbox";
+
+
 
 const  InstantAlertsData=[
    {
@@ -41,12 +44,15 @@ const InstantAlert = () => {
 
   };
   return (
-    <div className='main sm:ps-3 sm:pe-3 sm:pt-4'>
+    <div className='main sm:ps-3 sm:pe-3 sm:pt-0'>
         <Header heading="Instant Alerts" />
-        <div className="sm:my-10 my-2">
+        <div className="sm:my-7 mb-2">
         <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
-          <Table.Header className="font-[16px] opacity-[50%]">
+          <Table.Header className="text-[16px]">
+            <div className='flex flex-row justify-between items-center px-[11px] font-extrabold'>
              Instant Alerts
+             <Checkbox />
+            </div>
           </Table.Header>
           <Table.Body>
               {InstantAlertsData.map((InstantAlert) => (
@@ -60,7 +66,7 @@ const InstantAlert = () => {
           <Modal.Toggle toggleName="viewMore-InstantAlert">
             <Button
               onClick={viewMore}
-              className="text-[18px]   font-medium px-[32px] shadow-[0px_0px_56px_0px_#00000014]   py-[10px] text-[#101828] text-center"
+              className="text-[18px] font-medium px-[32px] shadow-[0px_0px_56px_0px_#00000014]   py-[10px] text-[#101828] text-center"
             >
               View More
               <img src={More} alt="more" className="ps-2" />

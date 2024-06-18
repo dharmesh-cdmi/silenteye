@@ -1,6 +1,5 @@
 import React from "react";
 import { Table } from "../components/Shared/Table";
-import messenger from "../../src/assests/images/SavedPasswords/messenger.png"
 import amazon from "../../src/assests/images/SavedPasswords/amazon.png"
 import dribble from "../../src/assests/images/SavedPasswords/dribble.png"
 import facebook from "../../src/assests/images/SavedPasswords/facebook.png"
@@ -13,13 +12,15 @@ import Button from "../components/Shared/Button";
 import More from "../assests/images/more.png";
 import Modal from "../components/Shared/Modal";
 import Upgrade from "../components/Shared/Upgrade"
+import adobe from "../../src/assests/images/SavedPasswords/adope.png"
+import ebay from "../../src/assests/images/SavedPasswords/ebay.png"
 
 const SavedPasswordsData = [
   [
     {
       id: "1",
-      icon: messenger,
-      heading: "messenger.com",
+      icon: adobe,
+      heading: "adobe.com",
       identity: "Test123",
       password: "Testing4Pass@9900",
     },
@@ -37,9 +38,15 @@ const SavedPasswordsData = [
       identity: "Test125",
       password: "Testing6Pass@9900",
     },
-   
     {
       id: "4",
+      icon:  ebay,
+      heading: "ebay.com",
+      identity: "Test125",
+      password: "Testing6Pass@9900",
+    },
+    {
+      id: "5",
       icon: facebook,
       heading: "facebook.com",
       identity: "Test127",
@@ -81,10 +88,10 @@ export const SavedPassword = () => {
   };
 
   return (
-    <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
+    <div className="main sm:ps-3 sm:pe-3 sm:pt-0">
       <Header heading="Saved Passwords"/>
       {SavedPasswordsData.map((SavedPasswordsData, index) => (
-        <div key={index} className="sm:my-10 mb-2">
+        <div key={index} className="sm:my-7 mb-2">
           <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
             <Table.Header className="font-[16px] opacity-[50%]">
               Monday, {index + 11} Jan, 2023
