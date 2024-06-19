@@ -12,29 +12,30 @@ import Map from "../../assests/images/map.png";
 import InfoCard from "../../components/Cards/InfoCard.jsx";
 import CallsHead from "../../components/Calls/CallsHead.jsx";
 import { GoDotFill } from "react-icons/go";
+import PageExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx";
 
 const LocationHistory = () => {
   const locationhistory = [
     {
-      name: "38.0530192 -102.1243321 ",
+      name: "38.0530192 -102.1240109 ",
       des: "S Main St",
       time: "Mon,May 21, 2024 11:36 AM",
     },
     {
       name: "38.0530192 -102.1243321 ",
-      des: "S Main St",
-      time: "Mon,May 21, 2024 11:36 AM",
+      des: "501 Colorado St",
+      time: "Mon,May 21, 2024 10:54 AM",
     },
     {
-      name: "38.0530192 -102.1243321 ",
-      des: "S Main St",
-      time: "Mon,May 21, 2024 11:36 AM",
+      name: "38.0529842, -102.1212933 ",
+      des: "Holly Laundry and Car Wash",
+      time: "Mon,May 21, 2024 10:41 AM",
     },
   ];
   return (
     <>
       <CallsHead heading="Location history" placeholder="Search Location" />
-      <hr class="h-px my-2 md:hidden bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <hr class="h-px my-2 md:hidden bg-gray-200 border-0 "></hr>
       <InfoCard
         title="Live Location"
         titleRight={
@@ -76,6 +77,7 @@ const LocationHistory = () => {
           </div>
         </div>
       </section>
+      <PageExportBtn />
     </>
   );
 };

@@ -6,39 +6,34 @@ import file4 from "../../../assests/images/file4.png";
 export const AllFilesData = [
   {
     id: 1,
-    title: "Cloud",
-    size: "120 items",
+    title: "Hidden",
+    size: "264 items",
     icon: file1,
+    hide: true,
   },
   {
     id: 2,
-    title: "Files",
-    size: "20 items",
+    title: "iCloud",
+    size: "612 items",
     icon: file1,
   },
 
   {
     id: 4,
-    title: "Docs",
-    size: "229 items",
+    title: "Recently Deleted",
+    size: "43 items",
     icon: file1,
   },
   {
     id: 5,
-    title: "Documents",
-    size: "95 items",
+    title: "On My iPhone",
+    size: "954 items",
     icon: file1,
   },
   {
     id: 6,
-    title: "Images",
-    size: "50 items",
-    icon: file1,
-  },
-  {
-    id: 7,
-    title: "Images",
-    size: "50 items",
+    title: "Documents",
+    size: "98 items",
     icon: file1,
   },
 ];

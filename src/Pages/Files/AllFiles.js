@@ -16,9 +16,9 @@ const AllFiles = () => {
     <>
       <Modal>
         <AllFilesHead headding="All Files " />
-        <hr class="h-px md:hidden  mb-4 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+        <hr class="h-px md:hidden  mb-4 bg-gray-200 border-0 "></hr>
         <div className="Apps-container mx-2">
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 justify-items-center md:justify-items-start">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 justify-items-center md:justify-items-start mb-10">
             <div className="appBox flex flex-col justify-center mx-3 mb-3">
               <span className="appBoxicon relative">
                 <input
@@ -36,7 +36,7 @@ const AllFiles = () => {
               </span>
               <div className="-my-3 text-sm  font-semibold text-center flex flex-col justify-center">
                 <h3 className="text-base">Download</h3>
-                <p className="text-slate-600 text-nowrap">29 items</p>
+                <p className="text-slate-600 text-nowrap">323 items</p>
               </div>
             </div>
             {appData && appData.length > 0 ? (
@@ -44,7 +44,9 @@ const AllFiles = () => {
                 <Modal.Toggle toggleName="Update">
                   <div
                     key={v.id}
-                    className="appBox flex flex-col justify-center mx-3 mb-3"
+                    className={`${
+                      v.hide == true && "opacity-50"
+                    } appBox flex flex-col justify-center mx-3 mb-3 `}
                   >
                     <span className="appBoxicon relative">
                       <input

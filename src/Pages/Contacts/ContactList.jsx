@@ -309,64 +309,44 @@ const ContactList = () => {
                 {/* header icons */}
                 <div class="grid grid-cols-5 mx-auto p-2 gap-1 divide-x border-b overflow-x-auto">
                   <div class="flex items-center   justify-center">
-                    <div class="flex gap-1 px-1 flex-col md:flex-row">
-                      <Modal.Toggle toggleName="Update">
-                        <img
-                          className=" h-5  m-auto cursor-pointer"
-                          src={msg}
-                          alt
-                        />
-                      </Modal.Toggle>
-                      <p class="font-medium hidden xl:block">Message</p>
-                    </div>
+                    <Modal.Toggle toggleName="Update">
+                      <div class="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
+                        <img className=" h-5  m-auto " src={msg} alt />
+                        <p class="font-medium hidden xl:block">Message</p>
+                      </div>
+                    </Modal.Toggle>
                   </div>
                   <div class="flex items-center   justify-center">
-                    <div class="flex gap-1 px-1 flex-col md:flex-row">
-                      <Modal.Toggle toggleName="Update">
-                        <img
-                          className=" h-5  m-auto cursor-pointer"
-                          src={callpng}
-                          alt
-                        />
-                      </Modal.Toggle>
-                      <p class="font-medium hidden xl:block">Call</p>
-                    </div>
+                    <Modal.Toggle toggleName="Update">
+                      <div class="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
+                        <img className=" h-5  m-auto " src={callpng} alt />
+                        <p class="font-medium hidden xl:block">Call</p>
+                      </div>
+                    </Modal.Toggle>
                   </div>
                   <div class="flex items-center   justify-center">
-                    <div class="flex gap-1 px-1 flex-col md:flex-row">
-                      <Modal.Toggle toggleName="Update">
-                        <img
-                          className=" h-5  m-auto cursor-pointer"
-                          src={video}
-                          alt
-                        />
-                      </Modal.Toggle>
-                      <p class="font-medium hidden xl:block">Facetime</p>
-                    </div>
+                    <Modal.Toggle toggleName="Update">
+                      <div class="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
+                        <img className=" h-5  m-auto " src={video} alt />
+                        <p class="font-medium hidden xl:block">Facetime</p>
+                      </div>
+                    </Modal.Toggle>
                   </div>
                   <div class="flex items-center   justify-center">
-                    <div class="flex gap-1 px-1 flex-col md:flex-row">
-                      <Modal.Toggle toggleName="Update">
-                        <img
-                          className=" h-5  m-auto cursor-pointer"
-                          src={mail}
-                          alt
-                        />
-                      </Modal.Toggle>
-                      <p class="font-medium hidden xl:block">Mail</p>
-                    </div>
+                    <Modal.Toggle toggleName="Update">
+                      <div class="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
+                        <img className=" h-5  m-auto " src={mail} alt />
+                        <p class="font-medium hidden xl:block">Mail</p>
+                      </div>
+                    </Modal.Toggle>
                   </div>
                   <div class="flex items-center   justify-center">
-                    <div class="flex gap-1 px-1 flex-col md:flex-row">
-                      <Modal.Toggle toggleName="Update">
-                        <img
-                          className=" h-5  m-auto cursor-pointer"
-                          src={doller}
-                          alt
-                        />
-                      </Modal.Toggle>
-                      <p class="font-medium hidden xl:block">Pay</p>
-                    </div>
+                    <Modal.Toggle toggleName="Update">
+                      <div class="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
+                        <img className=" h-5  m-auto " src={doller} alt />
+                        <p class="font-medium hidden xl:block">Pay</p>
+                      </div>
+                    </Modal.Toggle>
                   </div>
                 </div>
                 {/* history */}
@@ -599,49 +579,58 @@ const ContactList = () => {
                 <div className="flex p-2 justify-between">
                   <div aria-label="Page navigation example">
                     <div className="hidden md:block">
-                      <ul class="inline-flex -space-x-px text-base h-10 ">
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            <FaArrowLeft />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            1
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            ...
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            aria-current="page"
-                            class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
-                          >
-                            10
-                          </a>
-                        </li>
-
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            <FaArrowRight />
-                          </a>
-                        </li>
+                      <ul class="inline-flex -space-x-px text-base h-10">
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              <FaArrowLeft />
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              1
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              ...
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              aria-current="page"
+                              class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
+                            >
+                              10
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              <FaArrowRight />
+                            </a>
+                          </li>
+                        </Modal.Toggle>
                       </ul>
                     </div>
                   </div>
