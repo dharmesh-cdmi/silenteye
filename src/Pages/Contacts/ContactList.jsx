@@ -41,6 +41,8 @@ import dp4 from "../../assests/images/profile/dp (4).png";
 import dp5 from "../../assests/images/profile/dp (5).png";
 import dp6 from "../../assests/images/profile/dp (6).png";
 import dp7 from "../../assests/images/profile/dp (7).png";
+import block from "../../assests/images/calls/block.png";
+
 import { Link } from "react-router-dom";
 
 const ContactList = () => {
@@ -284,20 +286,25 @@ const ContactList = () => {
                       </div>
                     </div>
                   </li>
-                  <li className="p-1 text-gray-400 font-semibold pt-4 border-none hidden xl:block">
-                    <div className="flex gap-1 mt-6">
+                  <li className="p-1 w-20 text-gray-400 font-semibold pt-4 border-none">
+                    <div className="flex gap-4 mt-6 ">
                       <Modal.Toggle toggleName="Update">
-                        <BsPersonAdd
-                          className="text-slate-900 cursor-pointer "
-                          size={25}
-                        />
+                        <div className="hidden md:block">
+                          <img
+                            className=" h-6  m-auto cursor-pointer"
+                            src={block}
+                            alt
+                          />
+                        </div>
                       </Modal.Toggle>
                       <Modal.Toggle toggleName="Update">
-                        <img
-                          className=" h-6 rounded-full m-auto cursor-pointer "
-                          src={Delete}
-                          alt
-                        />
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
                       </Modal.Toggle>
                     </div>
                   </li>
@@ -326,9 +333,9 @@ const ContactList = () => {
                   </div>
                   <div class="flex items-center   justify-center">
                     <Modal.Toggle toggleName="Update">
-                      <div class="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
+                      <div class="flex gap-1 m-auto ps-1 flex-col md:flex-row cursor-pointer">
                         <img className=" h-5  m-auto " src={video} alt />
-                        <p class="font-medium hidden xl:block">Facetime</p>
+                        <p class="font-medium ">Facetime</p>
                       </div>
                     </Modal.Toggle>
                   </div>

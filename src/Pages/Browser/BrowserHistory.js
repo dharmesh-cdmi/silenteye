@@ -48,6 +48,7 @@ const BrowseHistory = () => {
       name: "C Cymath ",
       des: "https://www.cymath.com",
       time: "08:21 AM",
+      noline: true,
     },
   ];
   const RecentBrowserHistory2 = [
@@ -80,6 +81,7 @@ const BrowseHistory = () => {
       name: "Youtube ",
       des: "https://www.cymath.com",
       time: "11:25 PM",
+      noline: true,
     },
   ];
   return (
@@ -93,7 +95,11 @@ const BrowseHistory = () => {
           </h3>
           <div className="w-full ">
             {RecentBrowserHistory.map((info, i) => (
-              <div className="border-b py-2 border-slate-300 px-4">
+              <div
+                className={`${
+                  info.noline == true ? "" : "border-b"
+                } py-2 border-slate-300 px-4`}
+              >
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
@@ -119,7 +125,11 @@ const BrowseHistory = () => {
           </h3>
           <div className="w-full ">
             {RecentBrowserHistory2.map((info, i) => (
-              <div className="border-b py-2 md:border-slate-300 px-4 ">
+              <div
+                className={`${
+                  info.noline == true ? "" : "border-b"
+                } py-2 border-slate-300 px-4`}
+              >
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />

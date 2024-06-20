@@ -182,7 +182,7 @@ function Messages() {
                 <h3 className="font-bold text-2xl text-nowrap ">
                   Mode Of Transportation
                 </h3>
-                <p className="text-slate-500 text-[17px] text-black/50 text-nowrap">
+                <p className=" text-[17px] text-black/50 text-nowrap">
                   Created:Yesterday 8:23 AM
                 </p>
               </li>
@@ -211,7 +211,7 @@ function Messages() {
           </Modal>
           <hr class="h-px  bg-gray-200 border-0 "></hr>
           <div>
-            <div className="text-center mt-4 text-slate-500 text-sm">
+            <div className="text-center mt-4 text-[#9C9CA3] text-[15px]">
               Last Edit: Yesterday 09:41 AM
             </div>
             <div className="px-2 mt-3">

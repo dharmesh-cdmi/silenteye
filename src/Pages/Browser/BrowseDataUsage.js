@@ -16,7 +16,7 @@ const BrowseDataUsage = () => {
       <CallsHead heading="Data Usage" placeholder="Search " />
 
       <section className="browserContainer  flex flex-col md:my-6">
-        <div className="p-4 w-full md:rounded-t-md rounded-none border border-slate-200   ">
+        <div className="p-4 w-full md:rounded-t-lg rounded-none border border-slate-200   ">
           <h3 className="flex font-semibold text-lg">
             <span className="text-2xl font-extrabold">2.40 GB</span>&nbsp; of
             Website data used
@@ -24,7 +24,7 @@ const BrowseDataUsage = () => {
           <p className="text-black/50 text-base">Today</p>
         </div>
 
-        <div className="browseHistoryCon  flex flex-col border ">
+        <div className="browseHistoryCon  flex flex-col border md:rounded-b-lg">
           <div className="browseHistoryCol flexStartData flex">
             <div className="browseHistoryDate flex flex-col">
               <span>
@@ -90,7 +90,10 @@ const BrowseDataUsage = () => {
               <p className="text-slate-500">76.98 MB</p>
             </div>
           </div>
-          <div className="browseHistoryCol flexStartData  flex">
+          <div
+            className="browseHistoryCol flexStartData  flex"
+            style={{ border: "none" }}
+          >
             <div className="browseHistoryDate flex flex-col">
               <span>
                 <img className="w-10 h-10 rounded-full m-auto" src={wiki} alt />

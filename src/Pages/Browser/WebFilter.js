@@ -11,9 +11,9 @@ const WebFilter = () => {
   return (
     <>
       <CallsHead heading="Web Filters" placeholder="Search " />
-      <hr class="h-px  bg-gray-200 border-0 "></hr>
+      <hr class="h-px md:hidden bg-gray-200 border-0 "></hr>
 
-      <section className="webFilterwrapper md:border rounded-lg md:p-4  flex flex-col md:my-6">
+      <section className="webFilterwrapper md:border rounded-lg   flex flex-col md:my-6">
         <div className="webFilterContainer md:rounded-lg rounded-none flex flex-col">
           {/* Browser Header */}
           <div className="webFilterHeader flex justify-between">
@@ -77,7 +77,7 @@ const WebFilter = () => {
             </div>
           </div>
 
-          <div className="browseHistoryCol flex">
+          <div className="browseHistoryCol flex" style={{ border: "none" }}>
             <div className="browseHistoryDes flex flex-col">
               <h3 className="font-semibold text-lg lg:text-lg ">Nudity</h3>
               <div className="flex justify-between">

@@ -40,6 +40,7 @@ import Oval4 from "../../assests/images/profile/Oval-4.png";
 import Oval5 from "../../assests/images/profile/Oval-5.png";
 import mailicon from "../../assests/images/calls/Contacts/mail.png";
 import notes from "../../assests/images/calls/Contacts/notes.png";
+import block from "../../assests/images/calls/block.png";
 
 const BlockedContact = () => {
   const callBlockeddata = [
@@ -253,20 +254,25 @@ const BlockedContact = () => {
                       </div>
                     </div>
                   </li>
-                  <li className="p-1 text-gray-400 font-semibold pt-4 border-none hidden xl:block">
-                    <div className="flex gap-1 mt-6">
+                  <li className="p-1 w-20 text-gray-400 font-semibold pt-4 border-none">
+                    <div className="flex gap-4 mt-6 ">
                       <Modal.Toggle toggleName="Update">
-                        <BsPersonAdd
-                          className="text-slate-900 cursor-pointer "
-                          size={25}
-                        />
+                        <div className="hidden md:block">
+                          <img
+                            className=" h-6  m-auto cursor-pointer"
+                            src={block}
+                            alt
+                          />
+                        </div>
                       </Modal.Toggle>
                       <Modal.Toggle toggleName="Update">
-                        <img
-                          className=" h-6 rounded-full m-auto cursor-pointer "
-                          src={Delete}
-                          alt
-                        />
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
                       </Modal.Toggle>
                     </div>
                   </li>

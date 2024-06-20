@@ -1,5 +1,5 @@
 import React from "react";
-import DeviceControlHead from "../components/DeviceControl/DeviceControlHead";
+
 import data from "../assests/images/DashControl/Frame.png";
 import sim1 from "../assests/images/DashControl/Verizon.png";
 import sim2 from "../assests/images/DashControl/T-Mobile.png";

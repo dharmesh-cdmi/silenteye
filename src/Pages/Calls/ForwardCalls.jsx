@@ -104,7 +104,7 @@ const ForwardCalls = () => {
       <Modal>
         <div className="md:border md:rounded-xl px-4 md:mx-0 border-t md:my-8">
           <div className="grid md:grid-cols-5 grid-cols-1">
-            <div className="md:border-r liborder ">
+            <div className="md:border-r border-b md:border-b-0 ">
               <div className="p-2">
                 <div className="flex">
                   <div className=" font-medium ">
@@ -120,19 +120,19 @@ const ForwardCalls = () => {
                 </div>
               </div>
             </div>
-            <div className="md:border-r liborder ">
+            <div className="md:border-r border-b md:border-b-0 ">
               <div className="text-lg font-medium p-2">
                 <p className="text-lg">When Busy</p>
                 <p className="text-black/50 md:text-[16px] text-[17px] font-medium">
-                  Forward to +91 98989 98989
+                  Forward to +1(640) 555-0105
                 </p>
               </div>
             </div>
-            <div className="md:border-r liborder ">
+            <div className="md:border-r border-b md:border-b-0 ">
               <div className="text-sm font-medium p-2">
                 <p className="text-lg">When unanswered</p>
                 <p className="text-black/50 md:text-[16px] text-[17px] font-medium">
-                  Forward to +91 98989 98989
+                  Forward to +1(671) 555-0110
                 </p>
               </div>
             </div>
@@ -140,7 +140,7 @@ const ForwardCalls = () => {
               <div className="text-sm font-medium p-2">
                 <p className="text-lg">When unreachable</p>
                 <p className="text-black/50 md:text-[16px] text-[17px] font-medium">
-                  Forward to +91 98989 98989
+                  Forward to +1(252) 555-0126
                 </p>
               </div>
             </div>
@@ -153,10 +153,10 @@ const ForwardCalls = () => {
                   <FiEdit size={30} />
                   Edit
                 </button> */}
-                <div className="flex justify-center">
+                <div className="flex justify-center md:h-full">
                   <button
                     type="button"
-                    class="inline-flex justify-center  text-gray-900 h-full  md:border-0 border bg-white md:border-l  w-full hover:bg-gray-100   font-medium rounded-xl text-sm px-16 py-3 md:py-5 text-center  items-center  me-2 mb-2"
+                    class="inline-flex justify-center  text-gray-900 h-full  md:border-0 border bg-white md:border-l  w-full   font-medium  rounded-xl text-sm px-16 py-3 md:py-5 text-center  items-center  me-2 mb-2"
                   >
                     <img className=" h-5 mx-2 cursor-pointer" src={edit} alt />
                     Edit
