@@ -192,12 +192,12 @@ const DeviceControl = () => {
                   <IoIosCall />
                 </p>
               </div> */}
-              <div className=" w-52 md:w-70 mt-1">
+              <div className=" w-52 md:w-80 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
                   Disables Wifi network / WLan network connectivity
                 </p>
               </div>
-              <div className="flex-1 w-48 md:w-30 text-end me-2 mt-1">
+              <div className="flex-1 w-48 md:w-20 text-end me-2 mt-1">
                 <p className="text-sm  font-medium text-gray-400 ">
                   Active Network
                 </p>
@@ -228,12 +228,12 @@ const DeviceControl = () => {
               </div>
             </div>
             <div className="flex ">
-              <div className=" w-52 md:w-70 mt-1">
+              <div className=" w-52 md:w-80 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
                   Disables Wifi network / WLan network connectivity
                 </p>
               </div>
-              <div className="flex-1 w-48 md:w-30 text-end me-2 mt-1">
+              <div className="flex-1 w-48 md:w-20 text-end me-2 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
                   No Network for 3 h
                 </p>
