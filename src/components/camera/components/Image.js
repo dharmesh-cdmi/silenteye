@@ -3,6 +3,10 @@ import React from "react";
 import del from "../../../assests/images/delete.png";
 import gallery from "../../../assests/images/gallery.png";
 import { MdOutlineFileDownload } from "react-icons/md";
+import ctime from '../../../assests/images/ctime.png'
+import donn from '../../../assests/images/donn.png'
+import oup from '../../../assests/images/oup.png'
+import folder from '../../../assests/images/fodler.png'
 import { FiUpload } from "react-icons/fi";
 import Upgrade from "../../Shared/Upgrade";
 import Modal from "../../Shared/Modal";
@@ -14,25 +18,25 @@ function Image() {
         <div className="flex justify-start flex-col">
           <h3 className="font-semibold text-xl">3076877.jpg</h3>
           <div className="flex">
-            <img className="w-2 h-2"></img>
+            <img className="w-4 h-4 text-gray-400 mt-1 mr-1" src={ctime}/>
             <p className="text-gray-500">2.4 MB</p>
           </div>
           <div className="flex">
-            <img className="w-2 h-2"></img>
+            <img className="w-4 h-4 text-gray- mt-1 mr-1" src={folder}/>
             <p className="text-gray-500">Tue,May 21,2024 01:12 PM</p>
           </div>
         </div>
         <div className="flex align-middle">
           <Modal>
+           
             <Modal.Toggle toggleName="Update">
-              <img className="h-6 w-6 mt-5 cursor-pointer" src={del}></img>
+              <img className="h-6 w-6 mt-5  cursor-pointer" src={donn} />
             </Modal.Toggle>
             <Modal.Toggle toggleName="Update">
-              <MdOutlineFileDownload className="h-6 w-6 mt-5 ml-2 cursor-pointer" />
+              <img className="h-6 w-6 mt-5 ml-3 cursor-pointer" src={oup} />
             </Modal.Toggle>
-
             <Modal.Toggle toggleName="Update">
-              <FiUpload className="h-6 w-6 mt-5 ml-2 cursor-pointer" />
+              <img className="h-6 w-6 mt-5 ml-3 cursor-pointer" src={del}></img>
             </Modal.Toggle>
             <Modal.Window windowName="Update">
               <Upgrade />
@@ -41,10 +45,8 @@ function Image() {
         </div>
       </div>
       <div className="relative">
-        <img src={gallery} className="object-cotain"></img>
-        <div className="h-16 w-16 absolute bg-white opacity-90 rounded-full left-96">
-          dssd
-        </div>
+        <img src={gallery} className="object-cotain"/>
+        <div className="h-16 w-16 absolute bg-white opacity-90 rounded-full left-96"></div>
       </div>
     </div>
   );

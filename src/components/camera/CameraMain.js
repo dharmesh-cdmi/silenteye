@@ -7,6 +7,7 @@ import LocationHead from "../../UI/HeaderTab";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Modal from "../Shared/Modal";
 import Upgrade from "../Shared/Upgrade";
+import CallsHead from "../Calls/CallsHead";
 
 function CameraMain() {
   const headerData = {
@@ -15,12 +16,15 @@ function CameraMain() {
   };
   return (
     <Card>
-      <LocationHead data={headerData} />
-      <Tabs />
-      <div className="grid grid-cols-2 mx-10 my-10 border rounded-lg">
+   <CallsHead
+        heading={"All captures"}
+        placeholder={"Search by App Name"}
+      />      <Tabs />
+      <div className="grid lg:grid-cols-2 grid-cols-1 lg:mx-2 mx-0 lg:my-10 my-0 lg:border-2 border-0 rounded-lg">
         <Gallery />
         <Image />
       </div>
+      <div className="lg:flex hidden">
       <Modal>
         <Modal.Toggle toggleName="Update">
           <div className="flex justify-center align middle my-10  ">
@@ -34,6 +38,7 @@ function CameraMain() {
           <Upgrade />
         </Modal.Window>
       </Modal>
+      </div>
     </Card>
   );
 }

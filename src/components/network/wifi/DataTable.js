@@ -200,22 +200,42 @@ function DataTable() {
         })}
         <div className="flex justify-between py-3 ">
           <div className="flex ms-5 ">
+          <Modal>
+          <Modal.Toggle toggleName="viewMore-keylogger">
+
             <div className="h-10 w-10 border-2 mr-2 rounded-lg text-gray-400 items-center mx-auto text-center pt-2">
               <FaChevronLeft className="w-4 h-4 mx-auto my-auto" />
             </div>
-            <div className="h-10 w-10 border-2 mr-2 rounded-lg text-gray-900 bg-blue-50 border-blue-800 items-center mx-auto text-center pt-1.5">
+            </Modal.Toggle>
+            <Modal.Toggle toggleName="viewMore-keylogger">
+
+            <div className="h-10 w-10 border-2 mr-2 rounded-lg cursor-pointer text-gray-900 bg-blue-50 border-blue-800 items-center mx-auto text-center pt-1.5">
               1
             </div>
+            </Modal.Toggle>
+
+            <Modal.Toggle toggleName="viewMore-keylogger">
+
             <div className="h-10 w-10 border-2 mr-2 rounded-lg text-gray-400 items-center mx-auto text-center pt-1.5">
               ...
-            </div>
-        
+            </div>        
+            </Modal.Toggle>
+
+            <Modal.Toggle toggleName="viewMore-keylogger">
             <div className="h-10 w-10 border-2 rounded-lg text-gray-900 items-center mx-auto text-center pt-1.5 ">
               10
             </div>
+            </Modal.Toggle>
+            <Modal.Toggle toggleName="viewMore-keylogger">
             <div className="h-10 w-10 border-2 rounded-lg text-gray-400 items-center mx-auto text-center pt-2 ml-2 ">
               <FaChevronRight className="h-4 w-4 m-auto"/>
             </div>
+            </Modal.Toggle>
+
+            <Modal.Window windowName="viewMore-keylogger">
+            <Upgrade />
+          </Modal.Window>
+            </Modal>
           </div>
           <div className="absolute right-5 bottom-2 ">
         <Modal>

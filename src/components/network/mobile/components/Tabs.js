@@ -23,7 +23,7 @@ function Tabs() {
               <div className="flex">
               <FaPhoneAlt className="h-2 w-2 mt-2 mr-2 text-gray-500" />
 
-                <p className="text-gray-400 text-sm">+91 98989 98989</p>
+                <p className="text-gray-400 text-sm mt-1">+91 (312) 555 3890</p>
               </div>
             </div>
             <div className="mt-1">
@@ -41,7 +41,7 @@ function Tabs() {
               </div>
               <div className="flex">
               <FaPhoneAlt className="h-2 w-2 mt-2 mr-2 text-gray-500" />
-                <p className="text-gray-400 text-sm">+91 98989 98989</p>
+                <p className="text-gray-400 text-sm mt-1">+91 (312) 555 3890</p>
               </div>
             </div>
             <div className="mt-1">
