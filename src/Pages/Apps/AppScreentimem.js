@@ -61,7 +61,7 @@ const Appsscreentime = () => {
       <hr class="h-px mb-2 md:hidden bg-gray-200 border-0 " />
       <div className="grid grid-cols-1 md:grid-cols-1 md:my-8 lg:grid-cols-2 md:gap-4 gap-0 mb-8 mx:m-0">
         <div className="border border-slate-300 rounded-lg p-4 mb-5 md:mb-0  mx-4">
-          <h4 className="text-gray-400 text-lg font-normal">
+          <h4 className="text-black/50 text-base md:text-lg font-semibold">
             App Usage : Daily Average
           </h4>
           <div className="flex justify-between">
@@ -98,12 +98,14 @@ const Appsscreentime = () => {
             </div>
           </div>
         </div>
-        <h2 className=" text-slate-400 md:hidden border-y py-3 px-4">
+        <h2 className=" text-black/50 font-semibold text-base md:hidden border-y py-3 px-4">
           Recent Most Used Apps
         </h2>
         <div className="md:border  md:border-slate-300 md:rounded-lg md:p-4 mb-5 md:mb-0">
           <div className="md:block hidden">
-            <h2 className=" text-slate-400  ">Recent Most Used Apps</h2>
+            <h2 className="text-black/50 font-semibold  md:text-lg">
+              Recent Most Used Apps
+            </h2>
           </div>
           <section className={` shadow-blue-200 mx-auto w-[calc(100%-1rem)]  `}>
             <div className="capitalize flex justify-between flex-wrap items-center text-[16px] weight-[500]"></div>

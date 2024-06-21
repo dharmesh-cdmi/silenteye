@@ -186,7 +186,7 @@ const Appsnotification = () => {
               <Checkbox />
             </div>
           </div>
-          <div className="browseHistoryCol flex">
+          <div className="browseHistoryCol flex" style={{ border: "none" }}>
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold ">
                 <img src={vimeo} className="h-10 w-10" />

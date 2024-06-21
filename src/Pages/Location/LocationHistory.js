@@ -46,10 +46,16 @@ const LocationHistory = () => {
         className="mb-2 md:mb-0 md:mt-8 text-base font-medium px-2"
       >
         <div className="rounded-md py-1 bg-gray-50 hidden md:block">
-          <img src={liveimg} alt="img" className="object-fill " />
+          <Link to="/Location/livelocation">
+            {" "}
+            <img src={liveimg} alt="img" className="object-fill " />
+          </Link>
         </div>
         <div className="rounded-xl py-1 bg-gray-50 md:hidden">
-          <img src={liveimg2} alt="img" className="object-cover h-52 w-96" />
+          <Link to="/Location/livelocation">
+            {" "}
+            <img src={liveimg2} alt="img" className="object-cover h-52 w-96" />
+          </Link>
         </div>
       </InfoCard>
       <section className="browserContainer  md:p-4  flex flex-col md:my-6">
