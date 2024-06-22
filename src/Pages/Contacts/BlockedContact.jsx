@@ -98,7 +98,7 @@ const BlockedContact = () => {
               <hr />
               {/* body */}
               <div className="overflow-y-scroll md:h-96 h-4/5 no-scrollbar">
-                <p className="border-b text-gray-400  p-1">A</p>
+                <p className="border-b text-gray-400  p-1 ps-2">A</p>
                 <div className="hidden md:block">
                   <ul className="flex p-2 liborder cursor-pointer md:bg-gray-100">
                     <li className="flex-none w-14 pt-2">
@@ -178,7 +178,7 @@ const BlockedContact = () => {
                     </ul>
                   </Modal.Toggle>
                 ))}
-                <p className="border-b text-gray-400  p-1">B</p>
+                <p className="border-b text-gray-400  p-1 ps-2">B</p>
 
                 {callBlockeddatab.map((info, i) => (
                   <Modal.Toggle toggleName="Update">
@@ -226,7 +226,7 @@ const BlockedContact = () => {
             </div>
 
             {/* second column */}
-            <div className="border-t md:border-r hidden md:block">
+            <div className="md:border-r hidden md:block">
               {/* head */}
               <div className="text-lg font-bold p-2 ">
                 <ul className="flex p-2  ">
@@ -254,19 +254,21 @@ const BlockedContact = () => {
                       </div>
                     </div>
                   </li>
-                  <li className="p-1 w-20 text-gray-400 font-semibold pt-4 border-none">
-                    <div className="flex gap-4 mt-6 ">
+                  <li className="p-1  text-gray-400 font-semibold pt-4 border-none">
+                    <div className="flex  mt-6 ">
                       <Modal.Toggle toggleName="Update">
-                        <div className="hidden md:block">
-                          <img
-                            className=" h-6  m-auto cursor-pointer"
-                            src={block}
-                            alt
-                          />
+                        <div className="hidden md:block ">
+                          <button
+                            type="button"
+                            class="text-white gap-2 bg-red-500  border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                          >
+                            <RiUserForbidLine />
+                            Unblock
+                          </button>
                         </div>
                       </Modal.Toggle>
                       <Modal.Toggle toggleName="Update">
-                        <div className="hidden md:block">
+                        <div className=" ">
                           <img
                             className="h-6 cursor-pointer"
                             src={Delete}

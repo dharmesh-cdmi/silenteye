@@ -30,6 +30,7 @@ const LocationHistory = () => {
       name: "38.0529842, -102.1212933 ",
       des: "Holly Laundry and Car Wash",
       time: "Mon,May 21, 2024 10:41 AM",
+      noline: true,
     },
   ];
   return (
@@ -65,7 +66,11 @@ const LocationHistory = () => {
           </h3>
           <div className="w-full ">
             {locationhistory.map((info, i) => (
-              <div className="border-b md:border-slate-300 px-2">
+              <div
+                className={`${
+                  info.noline == true ? "" : "border-b"
+                } md:border-slate-300 px-2`}
+              >
                 <ul key={i} className="flex ">
                   <li className="flex-none  pt-[10px] border-none">
                     <GoDotFill className=" text-green-500" />

@@ -7,7 +7,7 @@ import sim1 from "../../assests/images/DashControl/Verizon.png";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { HiOutlineChevronUpDown } from "react-icons/hi2";
 
-const Verizon = () => {
+const Verizon = (props) => {
   const moveBacks = useMoveBack();
 
   return (
@@ -22,12 +22,10 @@ const Verizon = () => {
         </div>
         <div className="flex">
           <div className="flex-none w-8 mt-[2px]">
-            <img src={sim1} alt="img" className="object-contain h-8" />
+            <img src={props.img} alt="img" className="object-contain h-8" />
           </div>
           <div className=" w-72 mt-1">
-            <p className="font-semibold text-xl text-gray-900">
-              Verizon (Sim 1)
-            </p>
+            <p className="font-semibold text-xl text-gray-900">{props.text}</p>
           </div>
         </div>
       </div>

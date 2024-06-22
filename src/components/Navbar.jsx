@@ -120,7 +120,7 @@ const Navbar = ({ isTabletMid, open, setOpen }) => {
       {/* Device INfo Toogle */}
       {showModal && <DeviceInfo />}
       {/* Notification INfo Toogle */}
-      {showModal2 && <NotificationInfo />}
+      {showModal2 && <NotificationInfo onClick={toggleModal2} />}
     </>
   );
 };

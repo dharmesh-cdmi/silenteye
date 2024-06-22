@@ -68,7 +68,7 @@ const DeviceControl = () => {
                     </label>
                   </Modal.Toggle>
                   <Modal.Window windowName="Update">
-                    <Verizon />
+                    <Verizon text=" Verizon (Sim 1)" img={sim1} />
                   </Modal.Window>
                 </Modal>
               </div>
@@ -112,7 +112,7 @@ const DeviceControl = () => {
                     </label>
                   </Modal.Toggle>
                   <Modal.Window windowName="Update">
-                    <Verizon />
+                    <Verizon text=" T-Mobile (Sim 2)" img={sim2} />
                   </Modal.Window>
                 </Modal>
               </div>
@@ -125,7 +125,7 @@ const DeviceControl = () => {
               </div>
               <div className="flex-1 w-64 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
-                  +1 (800) 917-0481
+                  +1 (800) 917-0482
                 </p>
               </div>
               <div className="flex-1 w-32 text-end me-2 mt-1">
@@ -230,7 +230,7 @@ const DeviceControl = () => {
             <div className="flex ">
               <div className=" w-52 md:w-80 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
-                  Disables Wifi network / WLan network connectivity
+                  Disables SIM's network / WLan network connectivity
                 </p>
               </div>
               <div className="flex-1 w-48 md:w-20 text-end me-2 mt-1">
@@ -245,7 +245,7 @@ const DeviceControl = () => {
 
       <div className="border-y md:border md:rounded-xl md:my-8">
         <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
-          <div className="flex md:p-4 py-4 px-2">
+          <div className="flex md:p-4 py-4  px-2">
             <div>
               <img src={fram4} alt="img" className="object-contain mt-2 h-8" />
             </div>
@@ -272,20 +272,22 @@ const DeviceControl = () => {
               </Modal>
             </div>
           </div>
-          <div className="flex md:p-4 py-4 px-2 justify-end">
-            <div className="w-14 h-14  hidden md:block">
-              <Modal>
-                <Modal.Toggle toggleName="Update">
-                  <img
-                    src={devices}
-                    alt="img"
-                    className="object-contain mt-2 cursor-pointer"
-                  />
-                </Modal.Toggle>
-                <Modal.Window windowName="Update">
-                  <Upgrade />
-                </Modal.Window>
-              </Modal>
+          <div className="  hidden md:block">
+            <div className="flex md:p-4 py-4 px-2 justify-end">
+              <div className="w-14 h-14">
+                <Modal>
+                  <Modal.Toggle toggleName="Update">
+                    <img
+                      src={devices}
+                      alt="img"
+                      className="object-contain mt-2 cursor-pointer"
+                    />
+                  </Modal.Toggle>
+                  <Modal.Window windowName="Update">
+                    <Upgrade />
+                  </Modal.Window>
+                </Modal>
+              </div>
             </div>
           </div>
         </div>
