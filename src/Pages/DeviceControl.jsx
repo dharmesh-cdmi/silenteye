@@ -68,7 +68,7 @@ const DeviceControl = () => {
                     </label>
                   </Modal.Toggle>
                   <Modal.Window windowName="Update">
-                    <Verizon />
+                    <Verizon text=" Verizon (Sim 1)" img={sim1} />
                   </Modal.Window>
                 </Modal>
               </div>
@@ -112,7 +112,7 @@ const DeviceControl = () => {
                     </label>
                   </Modal.Toggle>
                   <Modal.Window windowName="Update">
-                    <Verizon />
+                    <Verizon text=" T-Mobile (Sim 2)" img={sim2} />
                   </Modal.Window>
                 </Modal>
               </div>
@@ -125,7 +125,7 @@ const DeviceControl = () => {
               </div>
               <div className="flex-1 w-64 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
-                  +1 (800) 917-0481
+                  +1 (800) 917-0482
                 </p>
               </div>
               <div className="flex-1 w-32 text-end me-2 mt-1">
