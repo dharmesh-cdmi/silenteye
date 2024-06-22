@@ -49,6 +49,7 @@ const ScreenTime = () => {
       name: "Messenger",
       bar: "35%",
       time: "7m",
+      noline: true,
     },
   ];
   return (
@@ -102,23 +103,27 @@ const ScreenTime = () => {
         <h2 className=" text-black/50 font-semibold text-base md:hidden border-y py-3 px-4">
           Recent Most Used Apps
         </h2>
-        <div className="md:border  md:border-slate-300 md:rounded-lg md:p-4 mb-5 md:mb-0">
-          <div className="md:block hidden">
-            <h2 className=" text-black/50 font-semibold  md:text-lg">
+        <div className="md:border  md:border-slate-300 md:rounded-lg  mb-5 md:mb-0">
+          <div className="md:block hidden md:p-4  ">
+            <h2 className="text-black/50 font-semibold md:text-lg">
               Recent Most Used Apps
             </h2>
           </div>
-          <section className={` shadow-blue-200 mx-auto w-[calc(100%-1rem)]  `}>
+          <section className={` shadow-blue-200 mx-auto  `}>
             <div className="capitalize flex justify-between flex-wrap items-center text-[16px] weight-[500]"></div>
 
             <div className="rounded-lg py-1 text-[18px] weight-[500]">
-              <div className="rounded-lgs md:p-2 ">
+              <div className="rounded-lgs  ">
                 {MostUsedApp.map((info, i) => (
-                  <div className="border-b border-slate-300">
+                  <div
+                    className={`${
+                      info.noline === true ? "" : "border-b"
+                    } border-slate-300 md:px-2`}
+                  >
                     <ul key={i} className="flex  mb-2">
                       <li className="flex-none w-14 pt-2 border-none">
                         <img
-                          className="w-10 h-10  m-auto"
+                          className="w-8 h-8  m-auto"
                           src={info.img}
                           alt="logo"
                         />

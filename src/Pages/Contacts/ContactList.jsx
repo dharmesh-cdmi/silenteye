@@ -258,7 +258,7 @@ const ContactList = () => {
             </div>
 
             {/* second column */}
-            <div className="border-t md:border-r hidden md:block">
+            <div className=" md:border-r hidden md:block">
               {/* head */}
               <div className="text-lg font-bold p-2 ">
                 <ul className="flex p-2  ">

@@ -67,7 +67,7 @@ const GeoFrence = () => {
                 {LocationGeofrenceData.length > 0 ? (
                   LocationGeofrenceData.map((v, i) => (
                     <Modal.Toggle toggleName="Update">
-                      <div className="LocationHistoryCols flex gap-16 justify-start cursor-pointer">
+                      <div className="LocationHistoryCols border-b flex gap-16 justify-start cursor-pointer">
                         <div className="LocationHistoryCol flex flex-col justify-start cursor-pointer">
                           <p className="flex justify-start gap-2 text-slate-500">
                             <span className="LiveCircleIcon iconBlue" />
@@ -116,7 +116,7 @@ const GeoFrence = () => {
               <div className="geoRightMap hidden md:block" />
               <div className="geoRightMap2 md:hidden" />
 
-              <div className="LocationHistoryCols flex gap-16 justify-start cursor-pointer">
+              <div className="LocationHistoryCols border-b md:border-b-0 flex gap-16 justify-start cursor-pointer">
                 <div className="locationhistoryImg ml-2" />
                 <div className="LocationHistoryCol flex flex-col justify-start cursor-pointer">
                   <p className="flex justify-start text-slate-500 text-sm">

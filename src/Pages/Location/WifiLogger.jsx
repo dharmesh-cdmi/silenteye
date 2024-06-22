@@ -23,10 +23,10 @@ const WifiLogger = () => {
           <h3 className="text-base font-medium">Wifi Logger History</h3>
         </div>
         {/*  LIVE LOCATION HISTORY BODY */}
-        <div className="LocationHistoryBody flex flex-col justify-start">
+        <div className="LocationHistoryBody flex flex-col justify-start ">
           {LocationHistoryData.length > 0 ? (
             LocationHistoryData.map((v, i) => (
-              <div className="LocationHistoryCols flex gap-16 justify-start cursor-pointer border-r-2 border-l-2">
+              <div className="LocationHistoryCols border-b  flex gap-16 justify-start cursor-pointer border-r-2 border-l-2">
                 <div className="locationhistoryImg" />
                 <div className="LocationHistoryCol flex flex-col justify-start cursor-pointer">
                   <p className="flex justify-start gap-2 font-medium text-slate-500 text-sm">
@@ -38,7 +38,7 @@ const WifiLogger = () => {
                     {v.title}
                   </h6>
                   <p className="flex justify-start font-medium gap-4 ml-0 text-sm text-slate-500 ">
-                    {v.date + " 10:38 AM"}
+                    {v.date}
                   </p>
                 </div>
               </div>
