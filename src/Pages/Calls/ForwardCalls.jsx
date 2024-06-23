@@ -148,7 +148,7 @@ const ForwardCalls = () => {
               <Modal.Toggle toggleName="Update">
                 {/* <button
                   type="button"
-                  class="text-gray-900 gap-2 mt-2 w-full md:w-24  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm  md:pl-[1rem] py-1 text-center inline-flex items-center  me-2 mb-2"
+                  className="text-gray-900 gap-2 mt-2 w-full md:w-24  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm  md:pl-[1rem] py-1 text-center inline-flex items-center  me-2 mb-2"
                 >
                   <FiEdit size={30} />
                   Edit
@@ -156,7 +156,7 @@ const ForwardCalls = () => {
                 <div className="flex justify-center md:h-full">
                   <button
                     type="button"
-                    class="inline-flex justify-center  text-gray-900 h-full  md:border-0 border bg-white md:border-l  w-full   font-medium  rounded-xl text-sm px-16 py-3 md:py-5 text-center  items-center  me-2 mb-2"
+                    className="inline-flex justify-center  text-gray-900 h-full  md:border-0 border bg-white md:border-l  w-full   font-medium  rounded-xl text-sm px-16 py-3 md:py-5 text-center  items-center  me-2 mb-2"
                   >
                     <img className=" h-5 mx-2 cursor-pointer" src={edit} alt />
                     Edit
@@ -196,14 +196,14 @@ const ForwardCalls = () => {
                 <tr className=" border-b font-medium " key={i}>
                   <td className="px-6 pt-4">
                     <div className="flex ">
-                      <div class="flex-none w-14 h-14 ">
+                      <div className="flex-none w-14 h-14 ">
                         <img
                           className="w-10 h-10 rounded-full m-auto"
                           src={calldata.img}
                           alt
                         />
                       </div>
-                      <div class="mt-3 text-lg font-semibold  text-black">
+                      <div className="mt-3 text-lg font-semibold  text-black">
                         {calldata.name}
                       </div>
                     </div>
@@ -263,12 +263,12 @@ const ForwardCalls = () => {
           >
             <div aria-label="Page navigation example ">
               <div className="hidden md:block">
-                <ul class="inline-flex -space-x-px text-base h-10">
+                <ul className="inline-flex -space-x-px text-base h-10">
                   <Modal.Toggle toggleName="Update">
                     <li>
                       <a
                         href="#"
-                        class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
+                        className="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
                       >
                         <FaArrowLeft />
                       </a>
@@ -278,7 +278,7 @@ const ForwardCalls = () => {
                     <li>
                       <a
                         href="#"
-                        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                        className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
                       >
                         1
                       </a>
@@ -288,7 +288,7 @@ const ForwardCalls = () => {
                     <li>
                       <a
                         href="#"
-                        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                        className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
                       >
                         ...
                       </a>
@@ -299,7 +299,7 @@ const ForwardCalls = () => {
                       <a
                         href="#"
                         aria-current="page"
-                        class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
+                        className="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
                       >
                         10
                       </a>
@@ -309,7 +309,7 @@ const ForwardCalls = () => {
                     <li>
                       <a
                         href="#"
-                        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
+                        className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
                       >
                         <FaArrowRight />
                       </a>
@@ -321,7 +321,7 @@ const ForwardCalls = () => {
             <Modal.Toggle toggleName="Update">
               <button
                 type="button"
-                class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
+                className="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
               >
                 <MdKeyboardDoubleArrowDown size={30} />
                 View More

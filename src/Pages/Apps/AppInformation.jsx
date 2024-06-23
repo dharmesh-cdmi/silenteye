@@ -34,7 +34,7 @@ const AppInformation = () => {
           </div>
           <div className=" flex flex-row items-center mt-1 md:mt-0 me-2 ">
             <Modal.Toggle toggleName="Update">
-              <div className="me-1 mb-2 p-1 md:hidden rounded-[8px] border">
+              <div className="me-1  mb-2 p-1 md:hidden rounded-[8px] border">
                 <img className="h-5  cursor-pointer" src={Delete} alt />
               </div>
             </Modal.Toggle>
@@ -50,25 +50,25 @@ const AppInformation = () => {
             </Modal.Toggle>
           </div>
         </div>
-        <InfoCard title="Control" className="mb-8 ">
-          <div className="rounded-lg py-1 bg-gray-50">
+        <InfoCard title="Control" className="mb-8 md:px-0 px-2 ">
+          <div className="rounded-lg py-1  shadow bg-gray-50">
             <ul className="grid grid-cols-2 place-content-between ">
-              <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 px-4 font-medium liborder text-base md:text-lg  mt-2">
                 Block App
               </li>
               <li className="p-1 mt-1 text-[#172A6E] liborder text-base md:text-lg  font-semibold text-end me-2">
                 <Checkbox />
               </li>
-              <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 px-4 font-medium liborder text-base md:text-lg  mt-2">
                 Hide from Home Screen
               </li>
               <li className="p-1 mt-1 text-[#172A6E] liborder text-base md:text-lg  font-semibold text-end me-2">
                 <Checkbox />
               </li>
-              <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 px-4 font-medium  text-base md:text-lg  mt-2">
                 Hide Notification
               </li>
-              <li className="p-1 text-[#172A6E] liborder text-base md:text-lg  font-semibold text-end me-2">
+              <li className="p-1 text-[#172A6E]  text-base md:text-lg  font-semibold text-end me-2">
                 <label className={` toggle-switch mt-1`}>
                   <input type="checkbox" checked />
                   <div className="toggle-switch-background">
@@ -79,37 +79,37 @@ const AppInformation = () => {
             </ul>
           </div>
         </InfoCard>
-        <InfoCard title="Info" className="mb-8 ">
-          <div className="rounded-lg py-1 bg-gray-50">
+        <InfoCard title="Info" className="mb-8 md:px-0 px-2">
+          <div className="rounded-lg py-1 shadow bg-gray-50">
             <ul className="grid grid-cols-2 place-content-between ">
-              <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 px-4 font-medium liborder text-base md:text-lg  mt-2">
                 Category
               </li>
-              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-end text-base md:text-lg  mt-2">
+              <li className="p-1 text-[#172A6E]  px-4 font-medium liborder text-end text-base md:text-lg  mt-2">
                 Social
               </li>
-              <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 px-4 font-medium liborder text-base md:text-lg  mt-2">
                 Age
               </li>
-              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-end text-base md:text-lg  mt-2">
+              <li className="p-1 text-[#172A6E]  px-4 font-medium liborder text-end text-base md:text-lg  mt-2">
                 12+
               </li>
-              <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 px-4 font-medium liborder text-base md:text-lg  mt-2">
                 Status
               </li>
-              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-end text-base md:text-lg  mt-2">
+              <li className="p-1 text-[#172A6E]  px-4 font-medium liborder text-end text-base md:text-lg  mt-2">
                 Installed
               </li>
-              <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 px-4 font-medium  text-base md:text-lg  mt-2">
                 Developer
               </li>
-              <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-end text-base md:text-lg  mt-2">
+              <li className="p-1 text-[#172A6E]  px-4 font-medium  text-end text-base md:text-lg  mt-2">
                 WhatsApp Inc.
               </li>
             </ul>
           </div>
         </InfoCard>
-        <InfoCard title="Screen Time" className="mb-4 ">
+        <InfoCard title="Screen Time" className="mb-4 md:px-0 px-2">
           <div className="border border-slate-300 rounded-lg p-4 mb-5 md:mb-0">
             <h4 className="text-gray-400 text-lg font-normal">
               Today 13 January
@@ -149,29 +149,29 @@ const AppInformation = () => {
             </div>
           </div>
         </InfoCard>
-        <div className="rounded-lg  bg-gray-50 mx-2 my-4">
+        <div className="rounded-lg shadow px-2  bg-gray-50 md:mx-0 mx-4 my-4">
           <ul className="grid grid-cols-2 place-content-between ">
-            <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+            <li className="p-1 px-4 font-medium liborder text-base md:text-lg  mt-2">
               Daily Average
             </li>
-            <li className="p-1 text-[#172A6E]  px-2 font-medium liborder text-end text-base md:text-lg  mt-2">
+            <li className="p-1 text-[#172A6E]  px-4 font-medium liborder text-end text-base md:text-lg  mt-2">
               31m
             </li>
-            <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+            <li className="p-1 px-4 font-medium  text-base md:text-lg  mt-2">
               Notifications
             </li>
-            <li className="p-1 text-[#172A6E]  px-2 font-medium text-end liborder text-base md:text-lg  mt-2">
+            <li className="p-1 text-[#172A6E]  px-4 font-medium text-end  text-base md:text-lg  mt-2">
               11
             </li>
           </ul>
         </div>
-        <InfoCard title="Usage Limits" className="mb-8 ">
-          <div className="rounded-lg py-1 bg-gray-50">
+        <InfoCard title="Usage Limits" className="mb-8 md:px-0 px-2">
+          <div className="rounded-lg py-1 shadow bg-gray-50">
             <ul className="grid grid-cols-2 place-content-between ">
-              <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 px-4 font-medium  text-base md:text-lg  mt-2">
                 Daily Usage Limit
               </li>
-              <li className="p-1 text-[#172A6E]  px-2 font-medium text-end liborder text-base md:text-lg  mt-2">
+              <li className="p-1 text-[#172A6E]  px-4 font-medium text-end  text-base md:text-lg  mt-2">
                 10 min
               </li>
             </ul>

@@ -37,10 +37,10 @@ const AppsInfoModal = () => {
     },
   ];
   return (
-    <div className=" w-[310px] md:w-[37rem] h-[28rem]">
+    <div className=" w-[310px] md:w-[37rem] h-[448px]">
       <div className="flex py-2 border-b-[#DDDDDD] px-[16px]     border-b-[1px]">
         <div
-          className="image-wrapper me-2  p-[8px] mb-1  border-[#D0D5DD] border-[1px] cursor-pointer  rounded-[8px]"
+          className="image-wrapper shadow me-2 mt-[2px]  p-[8px] mb-1  border-[#D0D5DD] border-[1px] cursor-pointer  rounded-[8px]"
           onClick={moveBacks}
         >
           {/* <img src={moveBack} className="h-5" alt="move-Back" /> */}
@@ -50,7 +50,7 @@ const AppsInfoModal = () => {
           <div className="flex-none w-8 mt-[2px]">
             <img src={Whatsapp} alt="img" className="object-contain h-8" />
           </div>
-          <div className=" w-72 mt-1">
+          <div className=" w-72 ps-2 mt-1">
             <p className="font-semibold text-xl text-gray-900">Whatsapp</p>
           </div>
         </div>

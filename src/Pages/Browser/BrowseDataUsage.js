@@ -16,12 +16,12 @@ const BrowseDataUsage = () => {
       <CallsHead heading="Data Usage" placeholder="Search " />
 
       <section className="browserContainer  flex flex-col md:my-6">
-        <div className="p-4 w-full md:rounded-t-lg rounded-none border border-slate-200   ">
-          <h3 className="flex font-semibold text-lg">
+        <div className=" p-2 md:p-4 w-full md:rounded-t-lg rounded-none border border-slate-200   ">
+          <h3 className="md:ps-0 ps-3 flex font-semibold text-lg">
             <span className="text-2xl font-extrabold">2.40 GB</span>&nbsp; of
             Website data used
           </h3>
-          <p className="text-black/50 text-base">Today</p>
+          <p className="text-black/50 text-base md:ps-0 ps-3">Today</p>
         </div>
 
         <div className="browseHistoryCon  flex flex-col border md:rounded-b-lg">

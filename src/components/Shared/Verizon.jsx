@@ -43,15 +43,15 @@ const Verizon = (props) => {
           <div className="mt-2">
             <button
               type="button"
-              class="text-gray-900 font-[900] text-lg bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg px-5 py-2.5 text-center inline-flex items-center  me-2 mb-2"
+              className="text-gray-900 font-[900] text-lg bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg px-5 py-2.5 text-center inline-flex items-center  me-2 mb-2"
             >
               Permenant Block
             </button>
           </div>
         </div>
-        <div class="inline-flex items-center justify-center w-full">
-          <hr class="w-[35rem] h-px my-2 mb-4 bg-gray-200 border-0 " />
-          {/* <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+        <div className="inline-flex items-center justify-center w-full">
+          <hr className="w-[35rem] h-px my-2 mb-4 bg-gray-200 border-0 " />
+          {/* <span className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
             or
           </span> */}
         </div>
@@ -96,7 +96,7 @@ const Verizon = (props) => {
         <div className="my-2 text-center">
           <button
             type="button"
-            class="text-gray-900 font-[900] text-lg bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg px-5 py-2.5 text-center inline-flex items-center  me-2 mb-2"
+            className="text-gray-900 font-[900] text-lg bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg px-5 py-2.5 text-center inline-flex items-center  me-2 mb-2"
           >
             Permenant Block
           </button>

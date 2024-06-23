@@ -87,7 +87,7 @@ const BrowseHistory = () => {
   return (
     <>
       <CallsHead heading="Browser History" placeholder="Search " />
-      <hr class="h-px  md:hidden bg-gray-200 border-0 "></hr>
+      <hr className="h-px  md:hidden bg-gray-200 border-0 "></hr>
       <section className="browserContainer md:border rounded-lg   flex flex-col md:my-6">
         <div className="browseHistoryCon md:rounded-lg flex flex-col">
           <h3 className="border-b-2 w-full p-3 text-base text-slate-500">

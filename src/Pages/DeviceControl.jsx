@@ -313,7 +313,7 @@ const DeviceControl = () => {
                 <Modal.Toggle toggleName="Update">
                   <button
                     type="button"
-                    class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                    className="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
                   >
                     <CiMobile3 size={30} />
                     View Live Screen
@@ -423,7 +423,7 @@ const DeviceControl = () => {
                     <FilterModal.Toggle toggleName="Update">
                       <button
                         type="button"
-                        class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                        className="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
                       >
                         <AiFillEdit />
                         <p className="text-nowrap">Edit Filters</p>
@@ -452,22 +452,22 @@ const DeviceControl = () => {
               </p>
               <div className="hidden md:block">
                 <div className=" flex flex-wrap gap-2">
-                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     Nudity
                   </span>
-                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     Hate
                   </span>
-                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     Violence
                   </span>
-                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     Self-harm
                   </span>
-                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     Bullying/Harassment
                   </span>
-                  <span class="bg-[#172A6E] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#172A6E] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     +25 More Tags
                   </span>
                 </div>
@@ -477,22 +477,22 @@ const DeviceControl = () => {
           <div>
             <div className=" md:hidden">
               <div className=" flex flex-wrap justify-start mx-4 gap-2">
-                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Nudity
                 </span>
-                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Hate
                 </span>
-                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Violence
                 </span>
-                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Self-harm
                 </span>
-                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Bullying/Harassment
                 </span>
-                <span class="bg-[#172A6E] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#172A6E] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   +25 More Tags
                 </span>
               </div>
@@ -509,7 +509,7 @@ const DeviceControl = () => {
                     <FilterModal.Toggle toggleName="Update">
                       <button
                         type="button"
-                        class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                        className="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
                       >
                         <AiFillEdit />
                         Edit Filters

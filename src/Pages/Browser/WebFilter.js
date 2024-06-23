@@ -11,14 +11,16 @@ const WebFilter = () => {
   return (
     <>
       <CallsHead heading="Web Filters" placeholder="Search " />
-      <hr class="h-px md:hidden bg-gray-200 border-0 "></hr>
+      <hr className="h-px md:hidden bg-gray-200 border-0 "></hr>
 
       <section className="webFilterwrapper md:border rounded-lg   flex flex-col md:my-6">
         <div className="webFilterContainer md:rounded-lg rounded-none flex flex-col">
           {/* Browser Header */}
-          <div className="webFilterHeader flex justify-between">
-            <h3 className="text-lg font-semibold">Disallowed filters</h3>
-            <button>
+          <div className="webFilterHeader p-1 md:p-2 flex justify-between">
+            <h3 className="text-lg font-semibold ps-4 md:ps-2">
+              Disallowed filters
+            </h3>
+            <button className="me-4 md:me-2">
               <IoAddOutline />
             </button>
           </div>

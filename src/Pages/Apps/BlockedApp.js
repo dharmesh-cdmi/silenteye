@@ -17,7 +17,7 @@ const BlockededApp = () => {
     <>
       <div className="Apps-container">
         <AppsRoutesHeader data="4" />
-        <hr class="h-px mt-2  md:hidden bg-gray-200 border-0 " />
+        <hr className="h-px mt-2  md:hidden bg-gray-200 border-0 " />
 
         <div className="appsComponentsContainer flex">
           <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 mt-4 md:mt-8 gap-[7px] md:gap-8">

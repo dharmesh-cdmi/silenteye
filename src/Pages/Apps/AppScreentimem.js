@@ -59,7 +59,7 @@ const Appsscreentime = () => {
         heading="Screen Time"
         // placeholder="Search by Name or Phone Number"
       />
-      <hr class="h-px mb-2 md:hidden bg-gray-200 border-0 " />
+      <hr className="h-px mb-2 md:hidden bg-gray-200 border-0 " />
       <div className="grid grid-cols-1 md:grid-cols-1 md:my-8 lg:grid-cols-2 md:gap-4 gap-0 mb-8 mx:m-0">
         <div className="border border-slate-300 rounded-lg p-4 mb-5 md:mb-0  mx-4">
           <h4 className="text-black/50 text-base md:text-lg font-semibold">
@@ -119,7 +119,7 @@ const Appsscreentime = () => {
                       info.noline === true ? "" : "border-b"
                     } border-slate-300 md:px-2`}
                   >
-                    <ul key={i} className="flex  mb-2">
+                    <ul key={i} className="flex px-2 md:px-0 mb-2">
                       <li className="flex-none w-14 pt-2 border-none">
                         <img
                           className="w-8 h-8  m-auto"
@@ -134,7 +134,7 @@ const Appsscreentime = () => {
                         {info.time}
                       </li>
                     </ul>
-                    <div className="w-full  rounded-full h-1.5 mb-2  mx-2">
+                    <div className="px-2 md:px-0  rounded-full h-1.5 mb-2  mx-2">
                       <div
                         className="bg-gray-300 h-1.5 rounded-full "
                         style={{ width: info.bar }}

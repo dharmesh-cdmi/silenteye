@@ -119,8 +119,8 @@ const LoginAndPassword = () => {
           {/* first column */}
           <div className="border-r ">
             {/* head */}
-            <div className="text-lg font-bold p-4">
-              <p>All Recent Apps</p>
+            <div className="text-lg font-bold  p-2 md:p-4">
+              <p className="md:ps-0 ps-3">All Recent Apps</p>
             </div>
             <hr />
 
