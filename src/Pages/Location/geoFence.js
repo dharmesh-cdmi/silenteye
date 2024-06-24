@@ -18,10 +18,10 @@ const GeoFrence = () => {
       <Modal>
         <div className="Location-container flex flex-col justify-center align-middle ">
           <CallsHead heading="Geo Fence" placeholder="Search " />
-          <hr class="h-px md:hidden bg-gray-200 border-0 "></hr>
+          <hr className="h-px md:hidden bg-gray-200 border-0 "></hr>
 
           {/* GEOFRENCE CONTAINERS */}
-          <div className="geoFrenceContainer flex">
+          <div className="geoFrenceContainer flex mb-6">
             {/* GEOFRENCE LEFT CONTAINERS */}
             <div className="geoFrenceConLeft flex flex-col justify-start">
               <div className="geoLeftDes flex flex-col">
@@ -29,6 +29,7 @@ const GeoFrence = () => {
                   GeoFrence History
                 </h3>
               </div>
+
               <div className="geoLeftBtns flex">
                 <Link to={"#"}>
                   <button className="active text-slate-500">All</button>
@@ -96,17 +97,24 @@ const GeoFrence = () => {
                     All
                   </button>
                 </Link>
-                <Link to={"#"}>
-                  <button className=" text-black/50">Today</button>
-                </Link>
-                <Link to={"#"}>
-                  <button className=" text-black/50">Yesterday</button>
-                </Link>
-                <Link to={"#"}>
-                  <button className=" text-black/50">Last 7 Day</button>
-                </Link>
+
+                <Modal.Toggle toggleName="Update">
+                  <Link to={"#"}>
+                    <button className=" text-black/50">Today</button>
+                  </Link>
+                </Modal.Toggle>
+                <Modal.Toggle toggleName="Update">
+                  <Link to={"#"}>
+                    <button className=" text-black/50">Yesterday</button>
+                  </Link>
+                </Modal.Toggle>
+                <Modal.Toggle toggleName="Update">
+                  <Link to={"#"}>
+                    <button className=" text-black/50">Last 7 Day</button>
+                  </Link>
+                </Modal.Toggle>
               </div>
-              <hr class="h-px my-2 md:hidden bg-gray-200 border-0 "></hr>
+              <hr className="h-px my-2 md:hidden bg-gray-200 border-0 "></hr>
               <div className="md:p-2  pb-2 flex flex-col">
                 <h3 className=" text-black/50 mx-3 text-base font-medium">
                   Location History

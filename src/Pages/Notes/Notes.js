@@ -85,14 +85,15 @@ function Messages() {
       {/* NOTES HEADER */}
 
       <CallsHead heading="Notes" placeholder="Search Notes" />
+      <hr className="h-px md:hidden   bg-gray-200 border-0 "></hr>
 
       {/* " <LocationHead data={headerData} /> */}
-      <div className="grid lg:grid-cols-2 grid-cols-1 md:rounded-lg border-2 md:mx-4  border-gray-200 md:mt-10">
+      <div className="grid lg:grid-cols-2 grid-cols-1 md:rounded-lg md:border md:mx-4  border-gray-200 md:mt-10">
         <div className="">
           <p className="py-4 ps-3 text-lg font-bold border-b-2 hidden md:block">
             Recent Notes
           </p>
-          <p className="py-4  ps-3 font-semibold border-b-2 md:hidden text-black/50">
+          <p className="py-2  ps-3 font-semibold border-b-2 md:hidden text-black/50">
             Recent Notes
           </p>
           <div className="overflow-y-scroll  h-[calc(100%-8rem)] no-scrollbar">
@@ -141,7 +142,7 @@ function Messages() {
 
                         <div className="flex ">
                           {msg.icon === true && (
-                            <span class="w-2 h-2 bg-[#007AFF] md:hidden rounded-full 1  mt-2"></span>
+                            <span className="w-2 h-2 bg-[#007AFF] md:hidden rounded-full 1  mt-2"></span>
                           )}
 
                           <p className="md:hidden font-semibold mx-1 text-black/50">
@@ -151,7 +152,7 @@ function Messages() {
 
                         <div className="flex ">
                           {msg.icon === true && (
-                            <span class="w-2 h-2 bg-[#007AFF] hidden md:block rounded-full 1  mt-2"></span>
+                            <span className="w-2 h-2 bg-[#007AFF] hidden md:block rounded-full 1  mt-2"></span>
                           )}
 
                           <p className="hidden md:block text-[17px] font-semibold text-black/50 mx-1">
@@ -209,7 +210,7 @@ function Messages() {
               <Upgrade />
             </Modal.Window>
           </Modal>
-          <hr class="h-px  bg-gray-200 border-0 "></hr>
+          <hr className="h-px  bg-gray-200 border-0 "></hr>
           <div>
             <div className="text-center mt-4 text-[#9C9CA3] text-[15px]">
               Last Edit: Yesterday 09:41 AM

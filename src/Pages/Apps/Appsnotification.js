@@ -46,7 +46,7 @@ const Appsnotification = () => {
     <>
       {/* Navigations, search*/}
       <CallsHead heading="Apps Notifications" placeholder="Search Notes" />
-      <hr class="h-px  md:hidden bg-gray-200 border-0 " />
+      <hr className="h-px  md:hidden bg-gray-200 border-0 " />
 
       {/* ====== NOTIFICATION ====== */}
 
@@ -59,7 +59,7 @@ const Appsnotification = () => {
 
           <Checkbox />
         </div>
-        <hr class="h-px   bg-gray-200 border-0" />
+        <hr className="h-px   bg-gray-200 border-0" />
 
         {/* Browser Header */}
         <div className="browseHistoryCon flex flex-col">

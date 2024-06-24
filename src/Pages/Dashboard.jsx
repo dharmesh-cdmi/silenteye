@@ -359,7 +359,7 @@ const Dashboard = () => {
           <li className="mt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
             <button
               type="button"
-              class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 "
+              className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 "
             >
               <FaApple className="text-black " />
               iPhone 11
@@ -378,7 +378,7 @@ const Dashboard = () => {
             <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
               <button
                 type="button"
-                class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+                className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
               >
                 <FaApple className="text-black " />
                 iPhone 13
@@ -390,7 +390,7 @@ const Dashboard = () => {
             <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
               <button
                 type="button"
-                class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+                className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
               >
                 <FcAndroidOs />
                 Samsung 12
@@ -402,7 +402,7 @@ const Dashboard = () => {
             <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
               <button
                 type="button"
-                class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+                className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
               >
                 <FaApple className="text-black " />
                 iPhone 14 Pro
@@ -772,7 +772,7 @@ const Dashboard = () => {
             <div className="hidden md:block">
               <button
                 type="button"
-                class=" text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-semibold rounded-lg text-lg px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                className=" text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-semibold rounded-lg text-lg px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
               >
                 View More
                 <MdKeyboardDoubleArrowDown size={22} />

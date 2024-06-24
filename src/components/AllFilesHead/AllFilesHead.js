@@ -43,7 +43,7 @@ const AllFilesHead = (props) => {
             {/* <img src={moveBack}  /> */}
             <MdKeyboardBackspace className="h-6 w-6" />
           </div>
-          <span className="text-[16px] xl:text-[20px] hidden lg:block text-black/50 md:text-[#000000] md:ps-3 ps-1 font-[600]">
+          <span className="text-[16px] xl:text-[20px]  text-black/50 md:text-[#000000] md:ps-3 ps-1 font-[600]">
             {props.headding}
           </span>
         </div>

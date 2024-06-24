@@ -36,7 +36,7 @@ const LocationHistory = () => {
   return (
     <>
       <CallsHead heading="Location history" placeholder="Search Location" />
-      <hr class="h-px my-2 md:hidden bg-gray-200 border-0 "></hr>
+      <hr className="h-px my-2 md:hidden bg-gray-200 border-0 "></hr>
       <InfoCard
         title="Live Location"
         titleRight={

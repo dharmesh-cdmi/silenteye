@@ -556,7 +556,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
     },
   ];
   return (
-    <div className="h-screen fixed left-0 z-10">
+    <div className="h-screen fixed left-0 z-10 w-1">
       <div
         onClick={() => setOpen(false)}
         className={`md:hidden fixed inset-0 max-h-screen  bg-black/50 ${
@@ -592,16 +592,16 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
 
         <div className="flex flex-col mt-4 md:mt-[4px] h-full ">
           {open && (
-            <div class="mx-3">
-              <p class="text-base text-left font-medium">demo@domain.com</p>
-              <p class="text-left text-secondary text-sm font-normal">
+            <div className="mx-3">
+              <p className="text-base text-left font-medium">demo@domain.com</p>
+              <p className="text-left text-secondary text-sm font-normal">
                 Updated: Apr 24 2024 16:30:22
               </p>
               <button
                 type="button"
-                class="max-w text-white my-2 bg-[#172A6E] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm md:px-12 py-2 text-center flex items-center justify-center w-full"
+                className="max-w text-white my-2 bg-[#172A6E] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm md:px-12 py-2 text-center flex items-center justify-center w-full"
               >
-                <IoMdAdd class="mx-2" />
+                <IoMdAdd className="mx-2" />
                 Add Devices
               </button>
             </div>

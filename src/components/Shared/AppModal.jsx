@@ -42,7 +42,7 @@ function Window({ children, windowName }) {
           className="absolute flex right-4 gap-1 top-2 rounded-[8px]  border-[#D0D5DD] border-[1px]   p-[4px] px-2 mb-2 text-[#000000] text-lg font-semibold transition-all hover:bg-gray-100"
           onClick={onCloseModal}
         >
-          <img src={deletei} className="h-5 mt-[2px] " alt="" />
+          <img src={deletei} className="h-5 mt-[3px] " alt="" />
           Uninstall
         </button>
 

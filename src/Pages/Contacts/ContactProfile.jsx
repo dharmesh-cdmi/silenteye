@@ -60,7 +60,7 @@ export function BlockedContactProfile() {
               <div className=" md:hidden ">
                 <button
                   type="button"
-                  class="text-white gap-2 bg-red-500  border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                  className="text-white gap-2 bg-red-500  border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
                 >
                   <RiUserForbidLine />
                   Unblock
@@ -125,9 +125,9 @@ export function BlockedContactProfile() {
           <hr />
           {/* body */}
           <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
-            <div class="grid grid-cols-5 mx-auto p-2 gap-1 divide-x border-b overflow-x-auto">
-              <div class="flex items-center   justify-center">
-                <div class="flex gap-1 px-1 flex-col md:flex-row">
+            <div className="grid grid-cols-5 mx-auto p-2 gap-1 divide-x border-b overflow-x-auto">
+              <div className="flex items-center   justify-center">
+                <div className="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
                     <img
                       className=" h-5  m-auto cursor-pointer"
@@ -135,11 +135,11 @@ export function BlockedContactProfile() {
                       alt
                     />
                   </Modal.Toggle>
-                  <p class="font-medium ">Message</p>
+                  <p className="font-medium ">Message</p>
                 </div>
               </div>
-              <div class="flex items-center   justify-center">
-                <div class="flex gap-1 px-1 flex-col md:flex-row">
+              <div className="flex items-center   justify-center">
+                <div className="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
                     <img
                       className=" h-5  m-auto cursor-pointer"
@@ -147,11 +147,11 @@ export function BlockedContactProfile() {
                       alt
                     />
                   </Modal.Toggle>
-                  <p class="font-medium ">Call</p>
+                  <p className="font-medium ">Call</p>
                 </div>
               </div>
-              <div class="flex items-center   justify-center">
-                <div class="flex gap-1 ps-1 flex-col md:flex-row">
+              <div className="flex items-center   justify-center">
+                <div className="flex gap-1 ps-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
                     <img
                       className=" h-5  m-auto cursor-pointer"
@@ -159,11 +159,11 @@ export function BlockedContactProfile() {
                       alt
                     />
                   </Modal.Toggle>
-                  <p class="font-medium ">Facetime</p>
+                  <p className="font-medium ">Facetime</p>
                 </div>
               </div>
-              <div class="flex items-center   justify-center">
-                <div class="flex gap-1 px-1 flex-col md:flex-row">
+              <div className="flex items-center   justify-center">
+                <div className="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
                     <img
                       className=" h-5  m-auto cursor-pointer"
@@ -171,11 +171,11 @@ export function BlockedContactProfile() {
                       alt
                     />
                   </Modal.Toggle>
-                  <p class="font-medium ">Mail</p>
+                  <p className="font-medium ">Mail</p>
                 </div>
               </div>
-              <div class="flex items-center   justify-center">
-                <div class="flex gap-1 px-1 flex-col md:flex-row">
+              <div className="flex items-center   justify-center">
+                <div className="flex gap-1 px-1 flex-col md:flex-row">
                   <Modal.Toggle toggleName="Update">
                     <img
                       className=" h-5  m-auto cursor-pointer"
@@ -183,7 +183,7 @@ export function BlockedContactProfile() {
                       alt
                     />
                   </Modal.Toggle>
-                  <p class="font-medium ">Pay</p>
+                  <p className="font-medium ">Pay</p>
                 </div>
               </div>
             </div>
@@ -416,11 +416,11 @@ export function BlockedContactProfile() {
             <div className="flex p-2 justify-between">
               <div aria-label="Page navigation example">
                 <div className="hidden md:block">
-                  <ul class="inline-flex -space-x-px text-base h-10 ">
+                  <ul className="inline-flex -space-x-px text-base h-10 ">
                     <li>
                       <a
                         href="#"
-                        class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
+                        className="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
                       >
                         <FaArrowLeft />
                       </a>
@@ -428,7 +428,7 @@ export function BlockedContactProfile() {
                     <li>
                       <a
                         href="#"
-                        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                        className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
                       >
                         1
                       </a>
@@ -436,7 +436,7 @@ export function BlockedContactProfile() {
                     <li>
                       <a
                         href="#"
-                        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                        className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
                       >
                         ...
                       </a>
@@ -445,7 +445,7 @@ export function BlockedContactProfile() {
                       <a
                         href="#"
                         aria-current="page"
-                        class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
+                        className="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
                       >
                         10
                       </a>
@@ -454,7 +454,7 @@ export function BlockedContactProfile() {
                     <li>
                       <a
                         href="#"
-                        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
+                        className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
                       >
                         <FaArrowRight />
                       </a>
@@ -467,7 +467,7 @@ export function BlockedContactProfile() {
                 <Modal.Toggle toggleName="Update">
                   <button
                     type="button"
-                    class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
+                    className="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
                   >
                     <MdKeyboardDoubleArrowDown size={30} />
                     View More
@@ -569,44 +569,44 @@ const ContactProfile = () => {
           <hr />
           {/* body */}
           <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
-            <div class="grid grid-cols-5 mx-auto p-2 gap-1 divide-x border-b overflow-x-auto">
-              <div class="flex items-center   justify-center">
+            <div className="grid grid-cols-5 mx-auto p-2 gap-1 divide-x border-b overflow-x-auto">
+              <div className="flex items-center   justify-center">
                 <Modal.Toggle toggleName="Update">
-                  <div class="flex gap-1 px-2 flex-col md:flex-row cursor-pointer">
+                  <div className="flex gap-1 px-2 flex-col md:flex-row cursor-pointer">
                     <img className=" h-5  m-auto " src={msg} alt />
-                    <p class="font-medium ">Message</p>
+                    <p className="font-medium ">Message</p>
                   </div>
                 </Modal.Toggle>
               </div>
-              <div class="flex items-center   justify-center">
+              <div className="flex items-center   justify-center">
                 <Modal.Toggle toggleName="Update">
-                  <div class="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
+                  <div className="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
                     <img className=" h-5  m-auto " src={callpng} alt />
-                    <p class="font-medium ">Call</p>
+                    <p className="font-medium ">Call</p>
                   </div>
                 </Modal.Toggle>
               </div>
-              <div class="flex items-center   justify-center">
+              <div className="flex items-center   justify-center">
                 <Modal.Toggle toggleName="Update">
-                  <div class="flex gap-1 m-auto ps-1 flex-col md:flex-row cursor-pointer">
+                  <div className="flex gap-1 m-auto ps-1 flex-col md:flex-row cursor-pointer">
                     <img className=" h-5  m-auto " src={video} alt />
-                    <p class="font-medium ">Facetime</p>
+                    <p className="font-medium ">Facetime</p>
                   </div>
                 </Modal.Toggle>
               </div>
-              <div class="flex items-center   justify-center">
+              <div className="flex items-center   justify-center">
                 <Modal.Toggle toggleName="Update">
-                  <div class="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
+                  <div className="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
                     <img className=" h-5  m-auto " src={mail} alt />
-                    <p class="font-medium ">Mail</p>
+                    <p className="font-medium ">Mail</p>
                   </div>
                 </Modal.Toggle>
               </div>
-              <div class="flex items-center   justify-center">
+              <div className="flex items-center   justify-center">
                 <Modal.Toggle toggleName="Update">
-                  <div class="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
+                  <div className="flex gap-1 px-1 flex-col md:flex-row cursor-pointer">
                     <img className=" h-5  m-auto " src={doller} alt />
-                    <p class="font-medium ">Pay</p>
+                    <p className="font-medium ">Pay</p>
                   </div>
                 </Modal.Toggle>
               </div>
@@ -840,12 +840,12 @@ const ContactProfile = () => {
             <div className="flex p-2 justify-between">
               <div aria-label="Page navigation example">
                 <div className="hidden md:block">
-                  <ul class="inline-flex -space-x-px text-base h-10">
+                  <ul className="inline-flex -space-x-px text-base h-10">
                     <Modal.Toggle toggleName="Update">
                       <li>
                         <a
                           href="#"
-                          class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
+                          className="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
                         >
                           <FaArrowLeft />
                         </a>
@@ -855,7 +855,7 @@ const ContactProfile = () => {
                       <li>
                         <a
                           href="#"
-                          class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                          className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
                         >
                           1
                         </a>
@@ -865,7 +865,7 @@ const ContactProfile = () => {
                       <li>
                         <a
                           href="#"
-                          class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                          className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
                         >
                           ...
                         </a>
@@ -876,7 +876,7 @@ const ContactProfile = () => {
                         <a
                           href="#"
                           aria-current="page"
-                          class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
+                          className="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
                         >
                           10
                         </a>
@@ -886,7 +886,7 @@ const ContactProfile = () => {
                       <li>
                         <a
                           href="#"
-                          class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
+                          className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
                         >
                           <FaArrowRight />
                         </a>
@@ -900,7 +900,7 @@ const ContactProfile = () => {
                 <Modal.Toggle toggleName="Update">
                   <button
                     type="button"
-                    class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
+                    className="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
                   >
                     <MdKeyboardDoubleArrowDown size={30} />
                     View More

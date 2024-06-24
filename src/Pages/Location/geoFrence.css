@@ -12,7 +12,7 @@
   white-space: nowrap;
 }
 .geoLeftDes{
-  padding: 1rem;
+  padding: .7rem;
   border-bottom: 1.5px solid #d0d4dd;
 }
 
@@ -47,7 +47,7 @@
   /* font-size: 1.1rem; */
 }
 .geoRightMap{
-  height: 23.5rem;
+  height: 23rem;
  background: url("../../assests/images/map.png");
  background-size: cover;
  background-position: center;
