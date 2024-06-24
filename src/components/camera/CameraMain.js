@@ -24,7 +24,7 @@ function CameraMain() {
         <Gallery />
         <Image />
       </div>
-      <div className="lg:flex hidden">
+      <div className="lg:flex justify-center hidden">
       <Modal>
         <Modal.Toggle toggleName="Update">
           <div className="flex justify-center align middle my-10  ">

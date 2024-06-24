@@ -25,7 +25,7 @@ function UsageTable() {
     <div className="grid grid-cols-1 lg:border-2 border-0 lg:mx-4 mx-0 lg:mt-9 mt-3 rounded-xl">
       {contents.map((content, index) => {
         return (
-          <div className={`flex align-middle justify-between lg:p-4 py-4 px-2  border-b ${content.name==="Gmail" ? "lg:border-b-0" :"lg:border-b-2"} `}>
+          <div className={`flex align-middle justify-between lg:p-4 py-4 px-2  border-b ${ content.name==="Gmail" ? "lg:border-b-0" :"lg:border-b-2"} `}>
             <div className="flex">
               <img className="w-8 h-8 rounded-lg mr-3" src={content.img}></img>
               <h3 className="text-lg font-semibold mt-1">{content.name}</h3>

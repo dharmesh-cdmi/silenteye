@@ -17,11 +17,11 @@ function Tabs() {
   },
   ];
   return (
-    <div className="grid lg:grid-cols-3 lg:border-t-0 border-t-2 grid-cols-1 lg:border-2 rounded-lg mx-2 mt-2 lg:mt-10">
+    <div className="grid lg:grid-cols-3 lg:border-t-2 border-t-2 grid-cols-1 lg:border-2 rounded-lg mx-2  lg:mt-10">
       {contents.map((content, index) => {
         return (
-          <div key={index} className={`${content.d1==="720.35 MB" ? "lg:border-r-0 border-b-2" : "lg:border-r-2 border-b-2"} p-2`}>
-            <div className=" flex">
+          <div key={index} className={`${content.d1==="720.35 MB" ? "lg:border-r-0 lg:border-b-0" : "lg:border-r-2 lg:border-b-0"} p-2 border-b-2`}>
+            <div className="flex">
               {content.comp}
               <h3 className="font-bold text-lg">{content.title}</h3>
             </div>

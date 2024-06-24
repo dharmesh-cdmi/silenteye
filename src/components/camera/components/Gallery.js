@@ -27,9 +27,8 @@ function Gallery() {
       </div>
       <div className="grid grid-cols-3">
         {images.map((img, idx) => {
-          return <img className="border-2" src={img.src} key={idx}></img>;
+          return <img className="border-2" src={img.src} key={idx}/>
         })}
-        
       </div>
 
       
