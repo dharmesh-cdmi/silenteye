@@ -26,7 +26,7 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-2 px-2 lg:border-r-2 border-b">
+        <div className="py-2 px-2 lg:border-r-2 lg:border-b-0 border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -42,7 +42,7 @@ function Tabs() {
           </div>
         </div>
 
-        <div className="py-2 px-2 lg:border-r-2 border-b">
+        <div className="py-2 px-2 lg:border-r-2 border-b lg:border-b-0">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex ">

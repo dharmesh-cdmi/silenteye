@@ -39,36 +39,41 @@ function Matrix() {
           );
         })}
         {i.map((num, index) => {
-          return (
-            <Modal>
-              <Modal.Toggle toggleName="Update">
-                <div
-                  className={`p-2 pb-1  border lg:border-r lg:border-t-0 lg:border-l-0 ${
-                    num >= 29 ? "lg:border-b-0" : "lg:border-b-2"
-                  }  font-medium`}
-                  key={index}
-                >
-                  {num % 32}
-                  {(num === 4 ||
-                    num === 5 ||
-                    num === 31 ||
-                    num === 8 ||
-                    num === 14 ||
-                    num === 17 ||
-                    num === 27) && (
+          const showModal = [4, 5, 31, 8, 14, 17, 27].includes(num);
+          if (showModal) {
+            return (
+              <Modal key={index}>
+                <Modal.Toggle toggleName="Update">
+                  <div
+                    className={`p-2 pb-1 border lg:border-r lg:border-t-0 lg:border-l-0 ${
+                      num >= 29 ? "lg:border-b-0" : "lg:border-b-2"
+                    } font-medium`}
+                  >
+                    {num % 32}
                     <div className="flex mt-1">
-                      <div className="bg-green-800  h-2 w-2 rounded-full mr-1"></div>
+                      <div className="bg-green-800 h-2 w-2 rounded-full mr-1"></div>
                       <div className="bg-blue-900 h-2 w-2 rounded-full mr-1"></div>
                       <div className="bg-blue-500 h-2 w-2 rounded-full mr-1"></div>
                     </div>
-                  )}
-                </div>
-              </Modal.Toggle>
-              <Modal.Window windowName="Update">
-                <Upgrade />
-              </Modal.Window>
-            </Modal>
-          );
+                  </div>
+                </Modal.Toggle>
+                <Modal.Window windowName="Update">
+                  <Upgrade />
+                </Modal.Window>
+              </Modal>
+            );
+          } else {
+            return (
+              <div
+                className={`p-2 pb-1 border lg:border-r lg:border-t-0 lg:border-l-0 ${
+                  num >= 29 ? "lg:border-b-0" : "lg:border-b-2"
+                } font-medium`}
+                key={index}
+              >
+                {num % 32}
+              </div>
+            );
+          }
         })}
       </div>
       <div className="grid grid-cols-1 rounded-xl lg:border-2  border-0 mt-9">
