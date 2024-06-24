@@ -5,7 +5,9 @@ import messenger from "../../../../assests/images/SocialApps/messenger.png";
 import facebook from "../../../../assests/images/SocialApps/facebook.png";
 import youtube from "../../../../assests/images/yt.png";
 import crome from "../../../../assests/images/crome.png";
-import apple from '../../../../assests/images/apple.png'
+import apple from "../../../../assests/images/apple.png";
+import wiki from "../../../../assests/images/wikoi.png";
+import google from "../../../../assests/images/googlee.png";
 
 function Table() {
   const contents = [
@@ -19,14 +21,14 @@ function Table() {
   const contents2 = [
     { name: "apple.com", data: "122 Mb", img: apple },
     { name: "youtube.com", data: "898 Mb", img: youtube },
-    { name: "google.com", data: "122 Mb", img: crome },
+    { name: "google.com", data: "122 Mb", img: google},
     { name: "facebook.com", data: "670 Mb", img: facebook },
     { name: "twitter.com", data: "990 Mb", img: whatsapp },
-    { name: "wikipedia.org", data: "898 Mb", img: crome },
+    { name: "wikipedia.org", data: "898 Mb", img: wiki },
   ];
   return (
     <div className="grid lg:grid-cols-2 grid-cols-1 lg:mx-4 mx-0 lg:border-2 border-0 border-b-0 rounded-lg mt-2 lg:mt-7">
-      <div className="lg:border-r-2 border-r-0 border-b-2   ">
+      <div className="lg:border-r-2 border-r-0 lg:border-b-0 border-b-2">
         <p className="text-2xl font-bold pt-3 px-3">
           1.42 GB
           <span className=" ml-2 text-lg">of App Data used</span>
@@ -35,13 +37,13 @@ function Table() {
         {contents.map((content, index) => {
           return (
             <div
-              className={`p-2 flex align-middle border-b-2 ${
-                content.b ? "" : ""
+              className={`p-2 flex align-middle   c ${
+                content.name === "WhatsApp" ? "border-b-0" : "border-b-2"
               }`}
               key={index}
             >
               <img
-                className="h-12 w-12 rounded-full mr-3"
+                className="h-12 w-12 rounded-md mr-3"
                 src={content.img}
               ></img>
               <div className="flex flex-col">
@@ -52,7 +54,7 @@ function Table() {
           );
         })}
       </div>
-      <div className="  border-b-2 lg:grid hidden ">
+      <div className="  lg:border-b-0 border-b-2 lg:grid hidden ">
         <p className="text-2xl font-bold pt-3 px-3">
           702 MB
           <span className=" ml-2 text-lg">of Website Data used</span>
@@ -61,13 +63,13 @@ function Table() {
         {contents2.map((content, index) => {
           return (
             <div
-              className={`p-2 flex align-middle border-b-2 ${
-                content.b ? "" : ""
+              className={`p-2 flex align-middle  ${
+                content.name ==="wikipedia.org" ? "border-b-0" : "border-b-2"
               }`}
               key={index}
             >
               <img
-                className="h-12 w-12 rounded-full mr-3"
+                className="h-12 w-12 rounded-md mr-3"
                 src={content.img}
               ></img>
               <div className="flex flex-col">
