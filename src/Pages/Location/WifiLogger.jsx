@@ -27,7 +27,9 @@ const WifiLogger = () => {
           {LocationHistoryData.length > 0 ? (
             LocationHistoryData.map((v, i) => (
               <div className="LocationHistoryCols border-b  flex gap-16 justify-start cursor-pointer border-r-2 border-l-2">
-                <div className="locationhistoryImg" />
+                <div className="locationhistoryImg">
+                  <img src={v.img} />
+                </div>
                 <div className="LocationHistoryCol flex flex-col justify-start cursor-pointer">
                   <p className="flex justify-start gap-2 font-medium text-slate-500 text-sm">
                     <span className="LiveCircleIcon" />
