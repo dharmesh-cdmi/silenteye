@@ -19,19 +19,19 @@ import cmath from "../assests/images/cymath2.png";
 import robo from "../assests/images/robo2.png";
 import photos from "../assests/images/KeyLogger/photos.png";
 import location from "../assests/images/location.png";
-import wifi from "../assests/images/dashboard/wifi.png";
-import Apps from "../assests/images/dashboard/Apps.png";
-import Network from "../assests/images/dashboard/Network.png";
-import audio from "../assests/images/dashboard/audio.png";
-import battery from "../assests/images/dashboard/battery.png";
-import device from "../assests/images/dashboard/device storage.png";
-import document from "../assests/images/dashboard/document.png";
+import wifi from "../assests/images/dashboard/wifi.svg";
+import Apps from "../assests/images/dashboard/Apps.svg";
+import Network from "../assests/images/dashboard/Network.svg";
+import audio from "../assests/images/dashboard/audio.svg";
+import battery from "../assests/images/dashboard/battery.svg";
+import device from "../assests/images/dashboard/device storage.svg";
+import document from "../assests/images/dashboard/document.svg";
 import drive from "../assests/images/dashboard/drive.svg.png";
-import freespace from "../assests/images/dashboard/free space.png";
-import gps from "../assests/images/dashboard/gps.png";
-import image from "../assests/images/dashboard/image.png";
-import other from "../assests/images/dashboard/other.png";
-import video from "../assests/images/dashboard/video.png";
+import freespace from "../assests/images/dashboard/free space.svg";
+import gps from "../assests/images/dashboard/gps.svg";
+import image from "../assests/images/dashboard/image.svg";
+import other from "../assests/images/dashboard/other.svg";
+import video from "../assests/images/dashboard/video.svg";
 import Oval1 from "../assests/images/profile/Oval-1.png";
 import Oval2 from "../assests/images/profile/Oval-2.png";
 import Oval3 from "../assests/images/profile/Oval-3.png";
@@ -39,6 +39,7 @@ import Oval4 from "../assests/images/profile/Oval-4.png";
 import Oval6 from "../assests/images/profile/Oval-6.png";
 
 import Oval7 from "../assests/images/profile/Oval-7.png";
+import user from "../assests/images/profile/user.png";
 
 import Oval from "../assests/images/profile/Oval.png";
 
@@ -197,28 +198,28 @@ const Dashboard = () => {
       time: "9:41 am",
     },
     {
-      img: "https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png",
+      img: user,
       name: "13654825",
       msg: "The Apple Id code is 125544. Dont share with",
-      time: "9:41 am",
+      time: "Monday",
     },
     {
-      img: "https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png",
+      img: user,
       name: "13654825",
       msg: "Your Tinder code is 815180 Don't share @tinder",
-      time: "9:41 am",
+      time: "Monday",
     },
     {
       img: Oval6,
       name: "(319) 555-0115",
       msg: "Verfication code 759028, valid for 10 minutes",
-      time: "9:41 am",
+      time: "10/13/2024",
     },
     {
-      img: "https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png",
+      img: user,
       name: "13654825",
       msg: "562963 SMS login verfication code, valid for ",
-      time: "9:41 am",
+      time: "10/13/2024",
     },
   ];
   const MostUsedApp = [
@@ -252,31 +253,31 @@ const Dashboard = () => {
       img: whatsapp,
       name: "Justin Ryhss",
       des: "Do you want to go see a movie tonight?",
-      time: "9:10 AM",
+      time: "09:10 AM",
     },
     {
       img: location,
       name: "Asher is Out of Location",
       des: "Location Alert! GeoFencer.",
-      time: "9:10 AM",
+      time: "09:10 AM",
     },
     {
       img: YT,
       name: "Watch Now: TII News New Video ",
       des: "How you feel about new video?",
-      time: "9:10 AM",
+      time: "09:10 AM",
     },
     {
       img: mgngr,
       name: "Yoknin Yossee ",
       des: "Hey! How are you?",
-      time: "9:10 AM",
+      time: "09:10 AM",
     },
     {
       img: whatsapp,
       name: "Moon & Urus",
       des: "New Office Table Available Now!",
-      time: "9:10 AM",
+      time: "09:10 AM",
     },
   ];
   const RecentKeylogger = [
@@ -284,31 +285,31 @@ const Dashboard = () => {
       img: crome,
       name: "Chrome ",
       des: "Bookstores near me",
-      time: "9:10 AM",
+      time: "09:10 AM",
     },
     {
       img: photos,
       name: "Photos ",
       des: "should we meet up tomorrow before classes?",
-      time: "9:10 AM",
+      time: "09:10 AM",
     },
     {
       img: whatsapp,
       name: "WhatsApp ",
       des: "hey, how are you doing?",
-      time: "9:10 AM",
+      time: "09:10 AM",
     },
     {
       img: whatsapp,
       name: "WhatsApp ",
       des: "idk, maybe in an hour or so",
-      time: "9:10 AM",
+      time: "09:10 AM",
     },
     {
       img: mgngr,
       name: "Messenger ",
       des: "did she say anything to you? or dad?",
-      time: "9:10 AM",
+      time: "09:10 AM",
     },
   ];
   const RecentBrowserHistory = [
@@ -316,31 +317,31 @@ const Dashboard = () => {
       img: apple,
       name: "Apple ",
       des: "https://www.apple.com",
-      time: "9:10 AM",
+      time: "09:10 AM",
     },
     {
       img: fb,
       name: "Facebook ",
       des: "https://www.facebook.com",
-      time: "9:10 AM",
+      time: "08:58 AM",
     },
     {
       img: whatsapp,
       name: "WhatsApp ",
       des: "https://www.web.whatsapp.com",
-      time: "9:10 AM",
+      time: "08:44 AM",
     },
     {
       img: robo,
       name: "Roblox ",
       des: "https://www.roblox.com",
-      time: "9:10 AM",
+      time: "08:43 AM",
     },
     {
       img: cmath,
       name: "C Cymath ",
       des: "https://www.cymath.com",
-      time: "9:10 AM",
+      time: "08:21 AM",
     },
   ];
 
@@ -358,7 +359,7 @@ const Dashboard = () => {
           <li className="mt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
             <button
               type="button"
-              class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 "
+              className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 "
             >
               <FaApple className="text-black " />
               iPhone 11
@@ -377,7 +378,7 @@ const Dashboard = () => {
             <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
               <button
                 type="button"
-                class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+                className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
               >
                 <FaApple className="text-black " />
                 iPhone 13
@@ -389,7 +390,7 @@ const Dashboard = () => {
             <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
               <button
                 type="button"
-                class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+                className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
               >
                 <FcAndroidOs />
                 Samsung 12
@@ -401,7 +402,7 @@ const Dashboard = () => {
             <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
               <button
                 type="button"
-                class=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+                className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
               >
                 <FaApple className="text-black " />
                 iPhone 14 Pro
@@ -768,13 +769,15 @@ const Dashboard = () => {
       <div className="flex justify-center mb-12">
         <Modal>
           <Modal.Toggle toggleName="viewMore-keylogger">
-            <button
-              type="button"
-              class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-semibold rounded-lg text-lg px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
-            >
-              View More
-              <MdKeyboardDoubleArrowDown size={22} />
-            </button>
+            <div className="hidden md:block">
+              <button
+                type="button"
+                className=" text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-semibold rounded-lg text-lg px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+              >
+                View More
+                <MdKeyboardDoubleArrowDown size={22} />
+              </button>
+            </div>
           </Modal.Toggle>
           <Modal.Window windowName="viewMore-keylogger">
             <Upgrade />

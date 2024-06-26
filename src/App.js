@@ -55,6 +55,7 @@ import LoginAndPassword from "./Pages/Apps/LoginAndPassword.jsx";
 import WifiLogger from "./Pages/Location/WifiLogger.jsx";
 import AppInformation from "./Pages/Apps/AppInformation.jsx";
 import AppPermissions from "./components/AppPermissions/AppPermissions.jsx";
+import LoginpassProfile from "./Pages/Apps/LoginpassProfile.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -255,6 +256,10 @@ function App() {
         {
           path: "/apps/loginandpassword",
           element: <LoginAndPassword />,
+        },
+        {
+          path: "/Apps/loginandpassword/profile",
+          element: <LoginpassProfile />,
         },
         {
           path: "/location",

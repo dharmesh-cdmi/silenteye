@@ -24,50 +24,113 @@ import Oval5 from "../../assests/images/profile/Oval-5.png";
 import Oval6 from "../../assests/images/profile/Oval-6.png";
 import Oval7 from "../../assests/images/profile/Oval-7.png";
 import Oval from "../../assests/images/profile/Oval.png";
+import dp1 from "../../assests/images/profile/dpb1.png";
+import dp2 from "../../assests/images/profile/dp (2).png";
+import dp3 from "../../assests/images/profile/dp (3).png";
+import dp4 from "../../assests/images/profile/dp (4).png";
+import dp5 from "../../assests/images/profile/dp (5).png";
+import dp6 from "../../assests/images/profile/Oval-6.png";
+import dp7 from "../../assests/images/profile/Oval-7.png";
 
 const BlockedCalls = () => {
   const moveBacks = useMoveBack();
 
   const callBlockeddata = [
     {
+      img: dp2,
+      name: "Jeanette Minutillo",
+      callIcon: callicon,
+      callNo: "(308) 555-0121",
+      date: "Tue, May 21, 2024",
+      time: "3:57 AM",
+    },
+    {
+      img: dp3,
+      name: "Mirelle Gooch",
+      callIcon: callicon,
+      callNo: "(603) 555-0123",
+      date: "Tue, May 21, 2024",
+      time: "3:01 AM",
+    },
+    {
+      img: dp4,
+      name: "Rivi Cujas",
+      callIcon: callicon,
+      callNo: "(907) 555-0101",
+      date: "Tue, May 21, 2024",
+      time: "1:40 AM",
+    },
+    {
+      img: dp5,
+      name: "Grier Bauknight",
+      callIcon: callicon,
+      callNo: "(406) 555-0120",
+      date: "Tue, May 21, 2024",
+      time: "12:31 PM",
+    },
+    {
+      img: dp6,
+      name: "Gretel Lunford",
+      callIcon: callicon,
+      callNo: "(808) 555-0111",
+      date: "Tue, May 21, 2024",
+      time: "11:46 PM",
+    },
+    {
+      img: dp7,
+      name: "Caryl Gearin",
+      callIcon: callicon,
+      callNo: "(217) 555-0113",
+      date: "Tue, May 21, 2024",
+      time: "10:12 AM",
+    },
+    {
+      img: Oval7,
+      name: "Joe Agosto",
+      callIcon: callicon,
+      callNo: "(505) 555-0125",
+      date: "Tue, May 21, 2024",
+      time: "10:11 AM",
+    },
+    {
       img: Oval1,
-      name: "Sara Smith",
+      name: "Candie Raspa",
       callIcon: callicon,
-      callNo: "(415) 555-0192",
-      date: "Wed, May 22, 2024",
-      time: "10:15 AM",
-    },
-    {
-      img: Oval2,
-      name: "John Doe",
-      callIcon: callicon,
-      callNo: "(702) 555-0763",
-      date: "Thu, May 23, 2024",
-      time: "1:30 PM",
-    },
-    {
-      img: Oval3,
-      name: "Emily Johnson",
-      callIcon: callicon,
-      callNo: "(212) 555-0345",
-      date: "Fri, May 24, 2024",
-      time: "5:45 PM",
-    },
-    {
-      img: Oval4,
-      name: "Michael Brown",
-      callIcon: callicon,
-      callNo: "(615) 555-0887",
-      date: "Sat, May 25, 2024",
-      time: "8:20 AM",
+      callNo: "(201) 555-0124",
+      date: "Tue, May 21, 2024",
+      time: "10:10 AM",
     },
     {
       img: Oval5,
-      name: "Sophia Martinez",
+      name: "Miguelita Connally",
       callIcon: callicon,
-      callNo: "(832) 555-0629",
-      date: "Sun, May 26, 2024",
-      time: "11:55 PM",
+      callNo: "(408) 555-0103",
+      date: "Tue, May 21, 2024",
+      time: "10:01 AM",
+    },
+    {
+      img: Oval2,
+      name: "Reta Galea",
+      callIcon: callicon,
+      callNo: "(319) 555-0115",
+      date: "Tue, May 21, 2024",
+      time: "09:56 AM",
+    },
+    {
+      img: Oval3,
+      name: "Urbano Veer",
+      callIcon: callicon,
+      callNo: "(208) 555-0112",
+      date: "Tue, May 21, 2024",
+      time: "09:47 AM",
+    },
+    {
+      img: Oval5,
+      name: "Abagael Mcferren",
+      callIcon: callicon,
+      callNo: "(209) 555-0112",
+      date: "Tue, May 21, 2024",
+      time: "09:32 AM",
     },
   ];
   return (
@@ -87,7 +150,7 @@ const BlockedCalls = () => {
           >
             <img src={moveBack} alt="move-Back" className="h-6" />
           </div>
-          <span className="text-[15px] md:text-[20px]  text-black/50 md:text-[#000000] md:ps-3 ps-1 font-[600]">
+          <span className="text-[16px] md:text-[20px]  text-black/50 md:text-[#000000] md:ps-3 ps-1 font-[600]">
             Blocked Calls
           </span>
         </div>
@@ -118,7 +181,7 @@ const BlockedCalls = () => {
           </Modal>
         </div>
       </div>
-      <hr class="h-px md:hidden bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <hr className="h-px md:hidden bg-gray-200 border-0 "></hr>
       <div className="md:border md:rounded-xl md:my-8 my-1  shadow ">
         <div className="grid grid-cols-1 md:grid-cols-2 ">
           {/* first column */}
@@ -129,12 +192,12 @@ const BlockedCalls = () => {
             </div>
             <hr />
             {/* body */}
-            <div className="overflow-y-scroll h-96 no-scrollbar">
+            <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
               <ul className="flex p-2 liborder cursor-pointer bg-gray-100">
                 <li className="flex-none w-14 pt-2">
                   <img
                     className="w-10 h-10 rounded-full m-auto"
-                    src={Oval7}
+                    src={dp1}
                     alt
                   />
                 </li>
@@ -145,12 +208,12 @@ const BlockedCalls = () => {
                       <p className="my-auto ">
                         <img className="h-4 " src={callicon} alt />
                       </p>
-                      <p className="ps-1">(308) 555-0121</p>
+                      <p className="ps-1">(702) 555-0122</p>
                     </div>
                   </div>
                 </li>
                 <li className="p-1 text-gray-400 font-semibold pt-4 text-end">
-                  21/05/2024 <br />
+                  Tue,May 21,2024 <br />
                   3:58 AM
                 </li>
               </ul>
@@ -202,7 +265,7 @@ const BlockedCalls = () => {
                   <li className="flex-none w-20 pt-2 border-none">
                     <img
                       className="w-20 h-20 rounded-full m-auto"
-                      src={Oval7}
+                      src={dp1}
                       alt="img"
                     />
                   </li>
@@ -213,7 +276,7 @@ const BlockedCalls = () => {
                         <p className="my-auto ">
                           <VscCallOutgoing />
                         </p>
-                        <p className="ps-1">(308) 555-0121</p>
+                        <p className="ps-1">(702) 555-0122</p>
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
@@ -308,7 +371,7 @@ const BlockedCalls = () => {
                         <p className="my-auto ">
                           <IoIosMailOpen className="text-gray-400 hidden md:block" />
                         </p>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Tue, May 21, 2024 3:57 AM</p>
                       </div>
                     </div>
                   </li>
@@ -343,7 +406,7 @@ const BlockedCalls = () => {
                         <p className="my-auto ">
                           <IoIosMailOpen className="text-gray-400 hidden md:block" />
                         </p>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Tue, May 21, 2024 3:01 AM</p>
                       </div>
                     </div>
                   </li>
@@ -378,7 +441,151 @@ const BlockedCalls = () => {
                         <p className="my-auto ">
                           <IoIosMailOpen className="text-gray-400 hidden md:block" />
                         </p>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Tue, May 21, 2024 1:40 AM</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <div>
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={` flex font-bold`}>
+                        <p className="my-auto ">
+                          <img
+                            className="w-4 h-4 rounded-full m-auto"
+                            src={callicon}
+                            alt
+                          />
+                        </p>
+                        <p className="ps-1">Blocked</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400 hidden md:block" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 12:31 PM</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <div>
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={` flex font-bold`}>
+                        <p className="my-auto ">
+                          <img
+                            className="w-4 h-4 rounded-full m-auto"
+                            src={callicon}
+                            alt
+                          />
+                        </p>
+                        <p className="ps-1">Blocked</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400 hidden md:block" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 11:46 PM</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <div>
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={` flex font-bold`}>
+                        <p className="my-auto ">
+                          <img
+                            className="w-4 h-4 rounded-full m-auto"
+                            src={callicon}
+                            alt
+                          />
+                        </p>
+                        <p className="ps-1">Blocked</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400 hidden md:block" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 10:12 AM</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <Modal.Toggle toggleName="Update">
+                        <div>
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={` flex font-bold`}>
+                        <p className="my-auto ">
+                          <img
+                            className="w-4 h-4 rounded-full m-auto"
+                            src={callicon}
+                            alt
+                          />
+                        </p>
+                        <p className="ps-1">Blocked</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400 hidden md:block" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 10:11 AM</p>
                       </div>
                     </div>
                   </li>
@@ -400,49 +607,58 @@ const BlockedCalls = () => {
                 <div className="flex p-2 justify-between">
                   <div aria-label="Page navigation example">
                     <div className="hidden md:block">
-                      <ul class="inline-flex -space-x-px text-base h-10 ">
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            <FaArrowLeft />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            1
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            ...
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            aria-current="page"
-                            class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
-                          >
-                            10
-                          </a>
-                        </li>
-
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
-                          >
-                            <FaArrowRight />
-                          </a>
-                        </li>
+                      <ul className="inline-flex -space-x-px text-base h-10">
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              className="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              <FaArrowLeft />
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              1
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              ...
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              aria-current="page"
+                              className="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
+                            >
+                              10
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              <FaArrowRight />
+                            </a>
+                          </li>
+                        </Modal.Toggle>
                       </ul>
                     </div>
                   </div>
@@ -452,7 +668,7 @@ const BlockedCalls = () => {
                       <div className="">
                         <button
                           type="button"
-                          class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                          className="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
                         >
                           <MdKeyboardDoubleArrowDown size={30} />
                           View More

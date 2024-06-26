@@ -1,5 +1,5 @@
 import React from "react";
-import DeviceControlHead from "../components/DeviceControl/DeviceControlHead";
+
 import data from "../assests/images/DashControl/Frame.png";
 import sim1 from "../assests/images/DashControl/Verizon.png";
 import sim2 from "../assests/images/DashControl/T-Mobile.png";
@@ -68,7 +68,7 @@ const DeviceControl = () => {
                     </label>
                   </Modal.Toggle>
                   <Modal.Window windowName="Update">
-                    <Verizon />
+                    <Verizon text=" Verizon (Sim 1)" img={sim1} />
                   </Modal.Window>
                 </Modal>
               </div>
@@ -112,7 +112,7 @@ const DeviceControl = () => {
                     </label>
                   </Modal.Toggle>
                   <Modal.Window windowName="Update">
-                    <Verizon />
+                    <Verizon text=" T-Mobile (Sim 2)" img={sim2} />
                   </Modal.Window>
                 </Modal>
               </div>
@@ -125,7 +125,7 @@ const DeviceControl = () => {
               </div>
               <div className="flex-1 w-64 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
-                  +1 (800) 917-0481
+                  +1 (800) 917-0482
                 </p>
               </div>
               <div className="flex-1 w-32 text-end me-2 mt-1">
@@ -192,12 +192,12 @@ const DeviceControl = () => {
                   <IoIosCall />
                 </p>
               </div> */}
-              <div className=" w-52 md:w-70 mt-1">
+              <div className=" w-52 md:w-80 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
                   Disables Wifi network / WLan network connectivity
                 </p>
               </div>
-              <div className="flex-1 w-48 md:w-30 text-end me-2 mt-1">
+              <div className="flex-1 w-48 md:w-20 text-end me-2 mt-1">
                 <p className="text-sm  font-medium text-gray-400 ">
                   Active Network
                 </p>
@@ -228,12 +228,12 @@ const DeviceControl = () => {
               </div>
             </div>
             <div className="flex ">
-              <div className=" w-52 md:w-70 mt-1">
+              <div className=" w-52 md:w-80 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
-                  Disables Wifi network / WLan network connectivity
+                  Disables SIM's network / WLan network connectivity
                 </p>
               </div>
-              <div className="flex-1 w-48 md:w-30 text-end me-2 mt-1">
+              <div className="flex-1 w-48 md:w-20 text-end me-2 mt-1">
                 <p className="text-sm font-medium text-gray-400 ">
                   No Network for 3 h
                 </p>
@@ -245,7 +245,7 @@ const DeviceControl = () => {
 
       <div className="border-y md:border md:rounded-xl md:my-8">
         <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 ">
-          <div className="flex md:p-4 py-4 px-2">
+          <div className="flex md:p-4 py-4  px-2">
             <div>
               <img src={fram4} alt="img" className="object-contain mt-2 h-8" />
             </div>
@@ -272,20 +272,22 @@ const DeviceControl = () => {
               </Modal>
             </div>
           </div>
-          <div className="flex md:p-4 py-4 px-2 justify-end">
-            <div className="w-14 h-14  hidden md:block">
-              <Modal>
-                <Modal.Toggle toggleName="Update">
-                  <img
-                    src={devices}
-                    alt="img"
-                    className="object-contain mt-2 cursor-pointer"
-                  />
-                </Modal.Toggle>
-                <Modal.Window windowName="Update">
-                  <Upgrade />
-                </Modal.Window>
-              </Modal>
+          <div className="  hidden md:block">
+            <div className="flex md:p-4 py-4 px-2 justify-end">
+              <div className="w-14 h-14">
+                <Modal>
+                  <Modal.Toggle toggleName="Update">
+                    <img
+                      src={devices}
+                      alt="img"
+                      className="object-contain mt-2 cursor-pointer"
+                    />
+                  </Modal.Toggle>
+                  <Modal.Window windowName="Update">
+                    <Upgrade />
+                  </Modal.Window>
+                </Modal>
+              </div>
             </div>
           </div>
         </div>
@@ -311,7 +313,7 @@ const DeviceControl = () => {
                 <Modal.Toggle toggleName="Update">
                   <button
                     type="button"
-                    class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                    className="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
                   >
                     <CiMobile3 size={30} />
                     View Live Screen
@@ -409,30 +411,29 @@ const DeviceControl = () => {
                 className="object-contain mt-2 w-24 md:w-20"
               />
             </div>
-            <div className="mx-2 w-70">
+            <div className="mx-2 ">
               <div className="flex ">
                 <div>
-                  <p className="font-semibold text-xl text-gray-900">
+                  <p className="font-semibold text-xl text-gray-900 ">
                     Filter harmful content on Device{" "}
-                    <div className="hidden md:block">
-                      <FilterModal>
-                        <FilterModal.Toggle toggleName="Update">
-                          <button
-                            type="button"
-                            class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
-                          >
-                            <AiFillEdit />
-                            Edit Filters
-                          </button>
-                        </FilterModal.Toggle>
-                        <FilterModal.Window windowName="Update">
-                          <FilterTegModal />
-                        </FilterModal.Window>
-                      </FilterModal>
-                    </div>
                   </p>
                 </div>
-
+                <div className="hidden md:block ms-4">
+                  <FilterModal>
+                    <FilterModal.Toggle toggleName="Update">
+                      <button
+                        type="button"
+                        className="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                      >
+                        <AiFillEdit />
+                        <p className="text-nowrap">Edit Filters</p>
+                      </button>
+                    </FilterModal.Toggle>
+                    <FilterModal.Window windowName="Update">
+                      <FilterTegModal />
+                    </FilterModal.Window>
+                  </FilterModal>
+                </div>
                 <Modal>
                   <Modal.Toggle toggleName="Update">
                     <img
@@ -451,22 +452,22 @@ const DeviceControl = () => {
               </p>
               <div className="hidden md:block">
                 <div className=" flex flex-wrap gap-2">
-                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     Nudity
                   </span>
-                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     Hate
                   </span>
-                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     Violence
                   </span>
-                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     Self-harm
                   </span>
-                  <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     Bullying/Harassment
                   </span>
-                  <span class="bg-[#172A6E] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                  <span className="bg-[#172A6E] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                     +25 More Tags
                   </span>
                 </div>
@@ -476,22 +477,22 @@ const DeviceControl = () => {
           <div>
             <div className=" md:hidden">
               <div className=" flex flex-wrap justify-start mx-4 gap-2">
-                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Nudity
                 </span>
-                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Hate
                 </span>
-                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Violence
                 </span>
-                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Self-harm
                 </span>
-                <span class="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#E9EBFF] text-[#172A6E] text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Bullying/Harassment
                 </span>
-                <span class="bg-[#172A6E] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#172A6E] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                   +25 More Tags
                 </span>
               </div>
@@ -508,7 +509,7 @@ const DeviceControl = () => {
                     <FilterModal.Toggle toggleName="Update">
                       <button
                         type="button"
-                        class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
+                        className="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
                       >
                         <AiFillEdit />
                         Edit Filters

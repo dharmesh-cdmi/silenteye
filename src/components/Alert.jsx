@@ -15,7 +15,7 @@ const Alert = () => {
           <GoAlert />
 
           <span className="sr-only">Info</span>
-          <div className="ms-3 text-sm font-medium">
+          <div className="ms-3 text-base font-medium">
             This demo dashboard is for reference only, no activities can be
             performed here.{" "}
             <a

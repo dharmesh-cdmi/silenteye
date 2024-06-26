@@ -7,7 +7,7 @@ import sim1 from "../../assests/images/DashControl/Verizon.png";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { HiOutlineChevronUpDown } from "react-icons/hi2";
 
-const Verizon = () => {
+const Verizon = (props) => {
   const moveBacks = useMoveBack();
 
   return (
@@ -22,12 +22,10 @@ const Verizon = () => {
         </div>
         <div className="flex">
           <div className="flex-none w-8 mt-[2px]">
-            <img src={sim1} alt="img" className="object-contain h-8" />
+            <img src={props.img} alt="img" className="object-contain h-8" />
           </div>
           <div className=" w-72 mt-1">
-            <p className="font-semibold text-xl text-gray-900">
-              Verizon (Sim 1)
-            </p>
+            <p className="font-semibold text-xl text-gray-900">{props.text}</p>
           </div>
         </div>
       </div>
@@ -45,15 +43,15 @@ const Verizon = () => {
           <div className="mt-2">
             <button
               type="button"
-              class="text-gray-900 font-[900] text-lg bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg px-5 py-2.5 text-center inline-flex items-center  me-2 mb-2"
+              className="text-gray-900 font-[900] text-lg bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg px-5 py-2.5 text-center inline-flex items-center  me-2 mb-2"
             >
               Permenant Block
             </button>
           </div>
         </div>
-        <div class="inline-flex items-center justify-center w-full">
-          <hr class="w-[35rem] h-px my-2 mb-4 bg-gray-200 border-0 " />
-          {/* <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+        <div className="inline-flex items-center justify-center w-full">
+          <hr className="w-[35rem] h-px my-2 mb-4 bg-gray-200 border-0 " />
+          {/* <span className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
             or
           </span> */}
         </div>
@@ -98,7 +96,7 @@ const Verizon = () => {
         <div className="my-2 text-center">
           <button
             type="button"
-            class="text-gray-900 font-[900] text-lg bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg px-5 py-2.5 text-center inline-flex items-center  me-2 mb-2"
+            className="text-gray-900 font-[900] text-lg bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100  rounded-lg px-5 py-2.5 text-center inline-flex items-center  me-2 mb-2"
           >
             Permenant Block
           </button>

@@ -20,7 +20,7 @@ import { IoIosSearch } from "react-icons/io";
 
 import Modal from "../../components/Shared/Modal.jsx";
 import Upgrade from "../../components/Shared/Upgrade.jsx";
-import CallsHead from "../../components/Calls/CallsHead.jsx";
+import DeviceControlHead from "../../components/DeviceControl/DeviceControlHead.jsx";
 import InfoCard from "../../components/Cards/InfoCard";
 import graph from "../../assests/images/graph2.png";
 
@@ -49,19 +49,21 @@ const ScreenTime = () => {
       name: "Messenger",
       bar: "35%",
       time: "7m",
+      noline: true,
     },
   ];
   return (
     <>
       {/* Navigations, search*/}
-      <CallsHead
+      <DeviceControlHead
         heading="Screen Time"
         // placeholder="Search by Name or Phone Number"
       />
-      <hr class="h-px mb-4 md:hidden bg-gray-200 border-0 dark:bg-gray-700" />
+
+      <hr className="h-px mb-4 md:hidden bg-gray-200 border-0 " />
       <div className="grid grid-cols-1 md:grid-cols-1 md:my-8 lg:grid-cols-2 md:gap-4 gap-0 mb-8 mx:m-0">
         <div className="border border-slate-300 rounded-lg p-4 mb-5 md:mb-0  mx-4">
-          <h4 className="text-gray-400 text-lg font-normal">
+          <h4 className="text-black/50 text-base md:text-lg font-semibold">
             App Usage : Daily Average
           </h4>
           <div className="flex justify-between">
@@ -98,24 +100,30 @@ const ScreenTime = () => {
             </div>
           </div>
         </div>
-        <h2 className=" text-slate-400 md:hidden border-y py-3 px-4">
+        <h2 className=" text-black/50 font-semibold text-base md:hidden border-y py-3 px-4">
           Recent Most Used Apps
         </h2>
-        <div className="md:border  md:border-slate-300 md:rounded-lg md:p-4 mb-5 md:mb-0">
-          <div className="md:block hidden">
-            <h2 className=" text-slate-400  ">Recent Most Used Apps</h2>
+        <div className="md:border  md:border-slate-300 md:rounded-lg  mb-5 md:mb-0">
+          <div className="md:block hidden md:p-4  ">
+            <h2 className="text-black/50 font-semibold md:text-lg">
+              Recent Most Used Apps
+            </h2>
           </div>
-          <section className={` shadow-blue-200 mx-auto w-[calc(100%-1rem)]  `}>
+          <section className={` shadow-blue-200 mx-auto  `}>
             <div className="capitalize flex justify-between flex-wrap items-center text-[16px] weight-[500]"></div>
 
             <div className="rounded-lg py-1 text-[18px] weight-[500]">
-              <div className="rounded-lgs md:p-2 ">
+              <div className="rounded-lgs  ">
                 {MostUsedApp.map((info, i) => (
-                  <div className="border-b border-slate-300">
-                    <ul key={i} className="flex  mb-2">
+                  <div
+                    className={`${
+                      info.noline === true ? "" : "border-b"
+                    } border-slate-300 md:px-2`}
+                  >
+                    <ul key={i} className="flex px-2 md:px-0 mb-2">
                       <li className="flex-none w-14 pt-2 border-none">
                         <img
-                          className="w-10 h-10  m-auto"
+                          className="w-8 h-8  m-auto"
                           src={info.img}
                           alt="logo"
                         />
@@ -123,11 +131,11 @@ const ScreenTime = () => {
                       <li className="p-1 flex-1 w-64 font-semibold text-xl mt-2 text-gray-900 border-none">
                         <div>{info.name}</div>
                       </li>
-                      <li className="p-1 text-[16px] md:text-[18px] text-gray-400 font-medium md:font-semibold pt-4 border-none">
+                      <li className="p-1 text-[16px] md:text-[18px] text-[#172A6E] font-medium md:font-semibold pt-4 border-none">
                         {info.time}
                       </li>
                     </ul>
-                    <div className="w-full  rounded-full h-1.5 mb-2  mx-2">
+                    <div className="px-2 md:px-0  rounded-full h-1.5 mb-2  mx-2">
                       <div
                         className="bg-gray-300 h-1.5 rounded-full "
                         style={{ width: info.bar }}

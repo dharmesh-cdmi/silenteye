@@ -8,6 +8,7 @@ import Whatsapp from "../../assests/images/SocialApps/whatsapp.png";
 import Upgrade from "../../components/Shared/Upgrade.jsx";
 import Modal from "../../components/Shared/Modal.jsx";
 import CallsHead from "../../components/Calls/CallsHead.jsx";
+import PageExportBtn from "../../components/pageExportBtn/PageExportBtn.jsx";
 
 const InstalledApp = () => {
   const [appData, setAppData] = useState(InstalledAppData);
@@ -16,10 +17,10 @@ const InstalledApp = () => {
     <>
       <div className="Apps-container">
         <AppsRoutesHeader data="2" />
-        <hr class="h-px mt-2  md:hidden bg-gray-200 border-0 dark:bg-gray-700" />
+        <hr className="h-px mt-2  md:hidden bg-gray-200 border-0 " />
 
         <div className="appsComponentsContainer flex">
-          <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 mt-4 md:mt-8 gap-[7px] md:gap-8">
+          <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 mt-4 md:mt-8 gap-[7px] md:gap-8 mb-4">
             <div className="appBox  flex flex-col justify-center">
               <span className="appBoxicon">
                 <img
@@ -66,6 +67,7 @@ const InstalledApp = () => {
           </div>
         </div>
       </div>
+      <PageExportBtn />
     </>
   );
 };

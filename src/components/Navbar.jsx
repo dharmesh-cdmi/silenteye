@@ -80,7 +80,7 @@ const Navbar = ({ isTabletMid, open, setOpen }) => {
               <button
                 onClick={toggleModal}
                 type="button"
-                class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-lg px-5 py-2 text-center inline-flex items-center   me-2 mb-2"
+                className="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-lg px-5 py-2 text-center inline-flex items-center   me-2 mb-2"
               >
                 <CiMobile3 />
                 Ashly's Device
@@ -105,7 +105,7 @@ const Navbar = ({ isTabletMid, open, setOpen }) => {
 
             <button
               type="button"
-              class="text-white active md:block hidden  focus:ring-4  font-medium rounded-lg text-sm px-5 py-1.5 me-2 mb-[.60rem]"
+              className="text-white active md:block hidden  focus:ring-4  font-medium rounded-lg text-sm px-5 py-1.5 me-2 mb-[.60rem]"
             >
               Try Now
             </button>
@@ -120,7 +120,7 @@ const Navbar = ({ isTabletMid, open, setOpen }) => {
       {/* Device INfo Toogle */}
       {showModal && <DeviceInfo />}
       {/* Notification INfo Toogle */}
-      {showModal2 && <NotificationInfo />}
+      {showModal2 && <NotificationInfo onClick={toggleModal2} />}
     </>
   );
 };

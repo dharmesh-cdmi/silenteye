@@ -54,13 +54,13 @@
   width: 100%;
   align-items: center;
   padding: 1rem;
-  border-bottom: 1.5px solid #d0d4dd;
+
 }
 .LocationHistoryCols .locationhistoryImg{
  width: 5rem; 
  height: 4rem;
  border-radius: 8px;
- background: url("../../assests/images/map.png");
+
  background-position: center;
  background-size: cover;
 }
@@ -74,17 +74,17 @@
     align-items: center;
 }
 .LiveCircleIcon {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border: none;
     background-color: #13cd26;
     border-radius: 50%;
 }
 .iconBlue {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border: none;
-    background-color: #3f62e9;
+    background-color: #4285F4;
     border-radius: 50%;
 }
 .LocationHistoryCol h3 {

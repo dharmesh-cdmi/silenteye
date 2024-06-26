@@ -25,63 +25,73 @@ const ForwardCalls = () => {
   const forwordcalldata = [
     {
       img: Oval,
-      name: "Hewie Gamage",
+      name: "Anica Haslem",
       mobile: "(201) 555-0124",
       callIcon: <VscCallOutgoing />,
       callStatus: "outgoing",
-      date: "21/05/2024",
+      date: "Tue, May 21, 2024",
       time: "3:58 AM",
       duration: "00:12:32",
     },
     {
       img: Oval1,
-      name: "Tommi Osayande",
-      mobile: "(308) 555-0192",
+      name: "Lilllie Lokken",
+      mobile: "(316) 555-0116",
       callIcon: <MdPhoneCallback />,
       callStatus: "incoming",
-      date: "22/05/2024",
-      time: "10:15 AM",
-      duration: "00:08:45",
+      date: "Tue, May 21, 2024",
+      time: "3:57 AM",
+      duration: "-",
     },
     {
       img: Oval2,
-      name: "Ramona Bea",
-      mobile: "(702) 555-0763",
+      name: "Nicolette Dickey",
+      mobile: "(671) 555-0110",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "23/05/2024",
-      time: "1:30 PM",
-      duration: "00:20:18",
+      date: "Tue, May 21, 2024",
+      time: "3:01 AM",
+      duration: "-",
     },
     {
       img: Oval3,
-      name: "Sara Smith",
-      mobile: "(212) 555-0345",
+      name: "Alfonso Duree",
+      mobile: "(406) 555-0120",
       callIcon: <VscCallOutgoing />,
       callStatus: "outgoing",
-      date: "24/05/2024",
-      time: "5:45 PM",
-      duration: "00:15:03",
+      date: "Tue, May 21, 2024",
+      time: "1:40 AM",
+      duration: "01:12:29",
     },
     {
       img: Oval4,
-      name: "John Doe",
-      mobile: "(615) 555-0887",
+      name: "Nomi Giddins",
+      mobile: "(229) 555-0109",
       callIcon: <MdPhoneCallback />,
       callStatus: "incoming",
-      date: "25/05/2024",
-      time: "8:20 AM",
-      duration: "00:09:57",
+      date: "Tue, May 21, 2024",
+      time: "12:31 PM",
+      duration: "-",
     },
     {
       img: Oval5,
-      name: "Emily Johnson",
-      mobile: "(832) 555-0629",
+      name: "Francis Suran",
+      mobile: "(225) 555-0118",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "26/05/2024",
-      time: "11:55 PM",
-      duration: "00:25:40",
+      date: "Tue, May 21, 2024",
+      time: "11:16 PM",
+      duration: "-",
+    },
+    {
+      img: Oval6,
+      name: "Michele Suski",
+      mobile: "(252) 555-0126",
+      callIcon: <HiPhoneMissedCall />,
+      callStatus: "missed",
+      date: "Tue, May 21, 2024",
+      time: "11:12 PM",
+      duration: "00:30:04",
     },
   ];
 
@@ -94,12 +104,14 @@ const ForwardCalls = () => {
       <Modal>
         <div className="md:border md:rounded-xl px-4 md:mx-0 border-t md:my-8">
           <div className="grid md:grid-cols-5 grid-cols-1">
-            <div className="md:border-r liborder ">
+            <div className="md:border-r border-b md:border-b-0 ">
               <div className="p-2">
                 <div className="flex">
-                  <div className="text-sm font-medium ">
-                    <p>Always Forward</p>
-                    <p className="text-gray-300">Off</p>
+                  <div className=" font-medium ">
+                    <p className="text-lg">Always Forward</p>
+                    <p className="text-black/50 md:text-[16px] text-[17px ] font-medium">
+                      Off
+                    </p>
                   </div>
 
                   <div className="flex-1 text-end mt-2">
@@ -108,37 +120,43 @@ const ForwardCalls = () => {
                 </div>
               </div>
             </div>
-            <div className="md:border-r liborder ">
-              <div className="text-sm font-medium p-2">
-                <p>When Busy</p>
-                <p className="text-gray-300">Forward to +91 98989 98989</p>
+            <div className="md:border-r border-b md:border-b-0 ">
+              <div className="text-lg font-medium p-2">
+                <p className="text-lg">When Busy</p>
+                <p className="text-black/50 md:text-[16px] text-[17px] font-medium">
+                  Forward to +1(640) 555-0105
+                </p>
               </div>
             </div>
-            <div className="md:border-r liborder ">
+            <div className="md:border-r border-b md:border-b-0 ">
               <div className="text-sm font-medium p-2">
-                <p>When unanswered</p>
-                <p className="text-gray-300">Forward to +91 98989 98989</p>
+                <p className="text-lg">When unanswered</p>
+                <p className="text-black/50 md:text-[16px] text-[17px] font-medium">
+                  Forward to +1(671) 555-0110
+                </p>
               </div>
             </div>
             <div className="">
               <div className="text-sm font-medium p-2">
-                <p>When unreachable</p>
-                <p className="text-gray-300">Forward to +91 98989 98989</p>
+                <p className="text-lg">When unreachable</p>
+                <p className="text-black/50 md:text-[16px] text-[17px] font-medium">
+                  Forward to +1(252) 555-0126
+                </p>
               </div>
             </div>
             <div className="mx-2 ">
               <Modal.Toggle toggleName="Update">
                 {/* <button
                   type="button"
-                  class="text-gray-900 gap-2 mt-2 w-full md:w-24  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm  md:pl-[1rem] py-1 text-center inline-flex items-center  me-2 mb-2"
+                  className="text-gray-900 gap-2 mt-2 w-full md:w-24  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm  md:pl-[1rem] py-1 text-center inline-flex items-center  me-2 mb-2"
                 >
                   <FiEdit size={30} />
                   Edit
                 </button> */}
-                <div className="flex justify-center">
+                <div className="flex justify-center md:h-full">
                   <button
                     type="button"
-                    class="inline-flex justify-center  text-gray-900 h-full  md:border-0 border bg-white md:border-l  w-full hover:bg-gray-100   font-medium rounded-xl text-sm px-16 py-3 md:py-5 text-center  items-center  me-2 mb-2"
+                    className="inline-flex justify-center  text-gray-900 h-full  md:border-0 border bg-white md:border-l  w-full   font-medium  rounded-xl text-sm px-16 py-3 md:py-5 text-center  items-center  me-2 mb-2"
                   >
                     <img className=" h-5 mx-2 cursor-pointer" src={edit} alt />
                     Edit
@@ -178,14 +196,16 @@ const ForwardCalls = () => {
                 <tr className=" border-b font-medium " key={i}>
                   <td className="px-6 pt-4">
                     <div className="flex ">
-                      <div class="flex-none w-14 h-14 ">
+                      <div className="flex-none w-14 h-14 ">
                         <img
                           className="w-10 h-10 rounded-full m-auto"
                           src={calldata.img}
                           alt
                         />
                       </div>
-                      <div class="mt-3   ">{calldata.name}</div>
+                      <div className="mt-3 text-lg font-semibold  text-black">
+                        {calldata.name}
+                      </div>
                     </div>
                   </td>
                   <td className="px-6 pt-4">
@@ -195,7 +215,10 @@ const ForwardCalls = () => {
                         src={callicon}
                         alt
                       />
-                      {calldata.mobile}
+                      <p className="text-lg font-semibold text-black">
+                        {" "}
+                        {calldata.mobile}
+                      </p>
                     </div>
                   </td>
                   <td className="px-6 pt-4">
@@ -206,16 +229,22 @@ const ForwardCalls = () => {
                         calldata.callStatus == "incoming" && "text-green-600"
                       } flex `}
                     >
-                      <p className="my-auto ">{calldata.callIcon}</p>
-                      <p className="ps-1">{calldata.callStatus}</p>
+                      <p className="my-auto text-lg font-semibold">
+                        {calldata.callIcon}
+                      </p>
+                      <p className="ps-1 text-lg font-semibold">
+                        {calldata.callStatus}
+                      </p>
                     </div>
                   </td>
-                  <td className="px-6 pt-4">
+                  <td className="px-6 pt-4 text-lg font-semibold text-black">
                     {calldata.date}
                     <br />
                     {calldata.time}
                   </td>
-                  <td className="px-6 pt-4">{calldata.duration}</td>
+                  <td className="px-6 pt-4 text-lg font-semibold text-black">
+                    {calldata.duration}
+                  </td>
                   <td className="px-6 pt-4">
                     <Modal.Toggle toggleName="Update">
                       <div>
@@ -234,56 +263,65 @@ const ForwardCalls = () => {
           >
             <div aria-label="Page navigation example ">
               <div className="hidden md:block">
-                <ul class="inline-flex -space-x-px text-base h-10 ">
-                  <li className="border-none">
-                    <a
-                      href="#"
-                      class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
-                    >
-                      <FaArrowLeft />
-                    </a>
-                  </li>
-                  <li className="border-none">
-                    <a
-                      href="#"
-                      class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
-                    >
-                      1
-                    </a>
-                  </li>
-                  <li className="border-none">
-                    <a
-                      href="#"
-                      class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
-                    >
-                      ...
-                    </a>
-                  </li>
-                  <li className="border-none">
-                    <a
-                      href="#"
-                      aria-current="page"
-                      class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
-                    >
-                      10
-                    </a>
-                  </li>
-
-                  <li className="border-none">
-                    <a
-                      href="#"
-                      class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
-                    >
-                      <FaArrowRight />
-                    </a>
-                  </li>
+                <ul className="inline-flex -space-x-px text-base h-10">
+                  <Modal.Toggle toggleName="Update">
+                    <li>
+                      <a
+                        href="#"
+                        className="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
+                      >
+                        <FaArrowLeft />
+                      </a>
+                    </li>
+                  </Modal.Toggle>
+                  <Modal.Toggle toggleName="Update">
+                    <li>
+                      <a
+                        href="#"
+                        className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                      >
+                        1
+                      </a>
+                    </li>
+                  </Modal.Toggle>
+                  <Modal.Toggle toggleName="Update">
+                    <li>
+                      <a
+                        href="#"
+                        className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                      >
+                        ...
+                      </a>
+                    </li>
+                  </Modal.Toggle>
+                  <Modal.Toggle toggleName="Update">
+                    <li>
+                      <a
+                        href="#"
+                        aria-current="page"
+                        className="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
+                      >
+                        10
+                      </a>
+                    </li>
+                  </Modal.Toggle>
+                  <Modal.Toggle toggleName="Update">
+                    <li>
+                      <a
+                        href="#"
+                        className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
+                      >
+                        <FaArrowRight />
+                      </a>
+                    </li>
+                  </Modal.Toggle>
                 </ul>
               </div>
             </div>
             <Modal.Toggle toggleName="Update">
               <button
                 type="button"
-                class="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
+                className="text-gray-900 gap-2 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
               >
                 <MdKeyboardDoubleArrowDown size={30} />
                 View More

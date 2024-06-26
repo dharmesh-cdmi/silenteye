@@ -8,17 +8,28 @@ import { IoIosArrowDropright } from "react-icons/io";
 import Map from "../../assests/images/map.png";
 import Map2 from "../../assests/images/map2.png";
 import CallsHead from "../../components/Calls/CallsHead.jsx";
+import moveBack from "../../assests/images/Header/arrow.png";
+import { useMoveBack } from "../../hooks/useMoveBack";
 
 const Location = () => {
+  const moveBacks = useMoveBack();
+
   return (
     <div className="Location-wrapper">
       <div className="Location-container flex flex-col justify-center align-middle ">
-        {/*  LIVE LOCATION HEADER */}
-        {/* <div className="locationHeader flex justify-center">
-    <h3>Live Location</h3>
-    <Link to="#">view more</Link>
-    </div> */}
-        <CallsHead heading="Live Location" placeholder="Search " />
+        <div className="flex md:flex-row  justify-between  items-start  md:items-center mx-2 md:mx-0">
+          <div className="item-one flex flex-row items-center ">
+            <div
+              className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] p-[6px] md:p-[10px]    md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
+              onClick={moveBacks}
+            >
+              <img src={moveBack} className="h-6 w-6" alt="move-Back" />
+            </div>
+            <span className="text-[16px] md:text-[20px] text-black/50  md:text-[#000000] md:ps-3 ps-1 font-[600]">
+              Live Location
+            </span>
+          </div>
+        </div>
 
         {/*  LIVE LOCATION MAP */}
         <div className=" md:mt-8 flex justify-center ">
@@ -38,23 +49,19 @@ const Location = () => {
                   className="LocationHistoryCol flex flex-col justify-start cursor-pointer"
                   style={{
                     padding: "1rem",
-                    borderBottom: "1.5px solid #d0d4dd",
                   }}
                 >
-                  <p className="flex justify-start gap-4">
-                    <span className="LiveCircleIcon clear-starttext-md text-gray-500" />
-                    {v.des}
+                  <p className="flex justify-start ">
+                    <span className="LiveCircleIcon  clear-starttext-md text-gray-500" />
+                    <p className="ps-2">{v.des}</p>
                   </p>
-                  <h3 className="text-lg mt-2">{v.title}</h3>
+                  <h3 className="text-lg mt-2 font-semibold">{v.title}</h3>
                 </div>
               ))
             ) : (
               <h3>no data found</h3>
             )}
           </div>
-        </div>
-        <div className="hidden md:block">
-          <ExportBtn />
         </div>
       </div>
     </div>

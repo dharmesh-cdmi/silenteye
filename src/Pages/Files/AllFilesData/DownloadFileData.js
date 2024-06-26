@@ -5,48 +5,56 @@ import fileImg from "../../../assests/images/fileimg.png";
 import fileMp3 from "../../../assests/images/filemp3.png";
 import fileVid from "../../../assests/images/filevideo.png";
 import fileZip from "../../../assests/images/filezip.png";
+import filep from "../../../assests/images/file-p.png";
+import filet from "../../../assests/images/file-t.png";
 
 export const DownloadFilesData = [
   {
-    id: 1,
-    title: "Doc1.word",
-    size: "2024-05-01",
+    title: "ui_design.word",
+    size: "22.03.2024",
     icon: file2,
   },
   {
-    id: 2,
-    title: "hero.img",
-    size: "2024-05-02",
-    icon: fileImg,
+    title: "ui_design.txt",
+    size: "22.03.2024",
+    icon: filet,
+    hide: true,
   },
   {
-    id: 3,
-    title: "zoo.mp4",
-    size: "2024-05-03",
-    icon: fileVid,
-  },
-  {
-    id: 4,
-    title: "docs.zip",
-    size: "2024-05-04",
-    icon: fileZip,
-  },
-  {
-    id: 5,
-    title: "sheet.xlsx",
-    size: "2024-05-05",
+    title: "ui_design.xlsx",
+    size: "22.03.2024",
     icon: file3,
   },
   {
-    id: 6,
-    title: "repo.pdf",
-    size: "2024-05-09",
+    title: "ui_design.ppt",
+    size: "22.03.2024",
+    icon: filep,
+  },
+
+  {
+    title: "ui_design.mov",
+    size: "22.03.2024",
+    icon: fileVid,
+  },
+  {
+    title: "ui_design.jpg",
+    size: "22.03.2024",
+    icon: fileImg,
+  },
+  {
+    title: "ui_design.zip",
+    size: "22.03.2024",
+    icon: fileZip,
+  },
+
+  {
+    title: "ui_design.pdf",
+    size: "22.03.2024",
     icon: file4,
   },
   {
-    id: 7,
-    title: "song.mp3",
-    size: "2024-05-09",
+    title: "ui_design.mp3",
+    size: "22.03.2024",
     icon: fileMp3,
   },
 ];

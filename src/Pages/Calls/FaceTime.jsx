@@ -26,57 +26,57 @@ const FaceTime = () => {
   const facetimedata = [
     {
       img: Oval1,
-      name: "Tommi Osayande",
+      name: "Eddy Herwig",
       callIcon: <MdPhoneCallback />,
       callStatus: "incoming",
-      date: "21/05/2024",
+      date: "19/05/2024",
     },
     ,
     {
       img: Oval2,
-      name: "Sander Margotta",
+      name: "Bary Normandin",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "21/05/2024",
+      date: "19/05/2024",
     },
     {
       img: Oval3,
-      name: "Morty Zumalt",
+      name: "Gaston Ghia",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "21/05/2024",
+      date: "20/05/2024",
     },
     {
       img: Oval4,
-      name: "Ramona Bea",
+      name: "Elissa Bradfute",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "21/05/2024",
+      date: "20/05/2024",
     },
     {
       img: Oval5,
-      name: "Tommi Osayande",
+      name: "Venus Bramall",
       callIcon: <MdPhoneCallback />,
       callStatus: "incoming",
-      date: "21/05/2024",
+      date: "20/05/2024",
     },
     ,
     {
       img: Oval6,
-      name: "Sander Margotta",
+      name: "Larina Vanderveen",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "21/05/2024",
+      date: "20/05/2024",
     },
     {
       img: Oval7,
-      name: "Morty Zumalt",
+      name: "Hewie Gamage",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
-      date: "21/05/2024",
+      date: "20/05/2024",
     },
     {
-      img: "https://xsgames.co/randomusers/avatar.php?g=male",
+      img: Oval1,
       name: "Ramona Bea",
       callIcon: <HiPhoneMissedCall />,
       callStatus: "missed",
@@ -95,7 +95,7 @@ const FaceTime = () => {
           <div className="border-r hidden md:block">
             {/* head */}
             <div className="text-lg font-bold p-4">
-              <p>Recent Calls</p>
+              <p>Recent FaceTimes</p>
             </div>
             <hr />
             {/* body */}
@@ -110,7 +110,7 @@ const FaceTime = () => {
                 </li>
                 <li className="p-1 flex-1 w-64 font-semibold">
                   <div>
-                    Hewie Gamage
+                    Bronson Rhynes
                     <div className="text-gray-400 flex">
                       <p className="my-auto ">
                         <VscCallOutgoing />
@@ -120,7 +120,7 @@ const FaceTime = () => {
                   </div>
                 </li>
                 <li className="p-1 text-gray-400 font-semibold pt-4">
-                  21/05/2024
+                  19/05/2024
                 </li>
               </ul>
               {facetimedata.map((info, i) => (
@@ -179,12 +179,12 @@ const FaceTime = () => {
                   </li>
                   <li className="p-1 flex-1 w-30 font-semibold border-none">
                     <div>
-                      <p className="text-lg">Hewie Gamage</p>
+                      <p className="text-lg">Bronson Rhynes</p>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
                           <VscCallOutgoing />
                         </p>
-                        <p className="ps-1">(270) 555-0117</p>
+                        <p className="ps-1">+1 290542387</p>
                       </div>
                       <div className={`text-gray-400 flex font-normal`}>
                         <p className="my-auto ">
@@ -220,7 +220,7 @@ const FaceTime = () => {
               </div>
               <hr />
               {/* body */}
-              <div className="overflow-y-scroll h-96 no-scrollbar">
+              <div className="overflow-y-scroll md:h-96 h-[calc(100%-8rem)] no-scrollbar">
                 <p className="border-b text-gray-400  p-2">All Calls</p>
                 <ul className="flex p-2 liborder ">
                   <li className="p-1 flex-1 w-64 font-semibold ">
@@ -241,47 +241,7 @@ const FaceTime = () => {
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
-                      <p className="ps-1">00:18:27s</p>
-                      <Modal.Toggle toggleName="Update">
-                        <div className="hidden md:block">
-                          <IoMicOutline
-                            className="text-slate-900 cursor-pointer"
-                            size={25}
-                          />
-                        </div>
-                      </Modal.Toggle>
-                      <Modal.Toggle toggleName="Update">
-                        <div className="hidden md:block">
-                          <img
-                            className="h-6 cursor-pointer"
-                            src={Delete}
-                            alt
-                          />
-                        </div>
-                      </Modal.Toggle>
-                    </div>
-                  </li>
-                </ul>
-                <ul className="flex p-2 liborder ">
-                  <li className="p-1 flex-1 w-64 font-semibold ">
-                    <div>
-                      <div className={`text-gray-600 flex font-bold`}>
-                        <p className="my-auto ">
-                          <VscCallOutgoing />
-                        </p>
-                        <p className="ps-1">outgoing</p>
-                      </div>
-                      <div className={`text-gray-400 flex font-normal`}>
-                        <p className="my-auto ">
-                          <IoIosMailOpen className="text-gray-400" />
-                        </p>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                    <div className="flex gap-4 mt-2">
-                      <p className="ps-1">00:18:27s</p>
+                      <p className="ps-1">00:18:27</p>
                       <Modal.Toggle toggleName="Update">
                         <div className="hidden md:block">
                           <IoMicOutline
@@ -315,13 +275,94 @@ const FaceTime = () => {
                         <p className="my-auto ">
                           <IoIosMailOpen className="text-gray-400" />
                         </p>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Tue, May 21, 2024 3:57 AM</p>
                       </div>
                     </div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
-                      <p className="ps-1">00:18:27s</p>
+                      <p className="ps-1">00:00:00</p>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <IoMicOutline
+                            className="text-slate-900 cursor-pointer"
+                            size={25}
+                          />
+                        </div>
+                      </Modal.Toggle>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-gray-600 flex font-bold`}>
+                        <p className="my-auto ">
+                          <VscCallOutgoing />
+                        </p>
+                        <p className="ps-1">outgoing</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 3:01 AM</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <p className="ps-1">00:03:04</p>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <IoMicOutline
+                            className="text-slate-900 cursor-pointer"
+                            size={25}
+                          />
+                        </div>
+                      </Modal.Toggle>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-green-600 flex font-bold`}>
+                        <p className="my-auto ">
+                          <MdPhoneCallback />
+                        </p>
+                        <p className="ps-1">Incoming</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 1:40 AM</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <p className="ps-1">01:20:34</p>
                       <Modal.Toggle toggleName="Update">
                         <div className="hidden md:block">
                           <IoMicOutline
@@ -355,13 +396,133 @@ const FaceTime = () => {
                         <p className="my-auto ">
                           <IoIosMailOpen className="text-gray-400" />
                         </p>
-                        <p className="ps-1">Tue, May 21, 2024 3:58 AM</p>
+                        <p className="ps-1">Tue, May 21, 2024 12:31 PM</p>
                       </div>
                     </div>
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
-                      <p className="ps-1">00:18:27s</p>
+                      <p className="ps-1">00:0:20</p>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <IoMicOutline
+                            className="text-slate-900 cursor-pointer"
+                            size={25}
+                          />
+                        </div>
+                      </Modal.Toggle>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-gray-600 flex font-bold`}>
+                        <p className="my-auto ">
+                          <VscCallOutgoing />
+                        </p>
+                        <p className="ps-1">outgoing</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 11:46 PM</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <p className="ps-1">00:00:34</p>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <IoMicOutline
+                            className="text-slate-900 cursor-pointer"
+                            size={25}
+                          />
+                        </div>
+                      </Modal.Toggle>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-green-600 flex font-bold`}>
+                        <p className="my-auto ">
+                          <MdPhoneCallback />
+                        </p>
+                        <p className="ps-1">Incoming</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 10:12 AM</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <p className="ps-1">00:3:12</p>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <IoMicOutline
+                            className="text-slate-900 cursor-pointer"
+                            size={25}
+                          />
+                        </div>
+                      </Modal.Toggle>
+                      <Modal.Toggle toggleName="Update">
+                        <div className="hidden md:block">
+                          <img
+                            className="h-6 cursor-pointer"
+                            src={Delete}
+                            alt
+                          />
+                        </div>
+                      </Modal.Toggle>
+                    </div>
+                  </li>
+                </ul>
+                <ul className="flex p-2 liborder ">
+                  <li className="p-1 flex-1 w-64 font-semibold ">
+                    <div>
+                      <div className={`text-red-600 flex font-bold`}>
+                        <p className="my-auto ">
+                          <HiPhoneMissedCall />
+                        </p>
+                        <p className="ps-1">Missed</p>
+                      </div>
+                      <div className={`text-gray-400 flex font-normal`}>
+                        <p className="my-auto ">
+                          <IoIosMailOpen className="text-gray-400" />
+                        </p>
+                        <p className="ps-1">Tue, May 21, 2024 10:11 AM</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="p-1 text-gray-400 font-semibold pt-2 ">
+                    <div className="flex gap-4 mt-2">
+                      <p className="ps-1">00:00:00</p>
                       <Modal.Toggle toggleName="Update">
                         <div className="hidden md:block">
                           <IoMicOutline
@@ -385,49 +546,58 @@ const FaceTime = () => {
                 <div className="flex p-2 justify-between">
                   <div aria-label="Page navigation example">
                     <div className="hidden md:block">
-                      <ul class="inline-flex -space-x-px text-base h-10">
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700  "
-                          >
-                            <FaArrowLeft />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700  "
-                          >
-                            1
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700  "
-                          >
-                            ...
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            aria-current="page"
-                            class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
-                          >
-                            10
-                          </a>
-                        </li>
-
-                        <li>
-                          <a
-                            href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700  "
-                          >
-                            <FaArrowRight />
-                          </a>
-                        </li>
+                      <ul className="inline-flex -space-x-px text-base h-10">
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              className="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              <FaArrowLeft />
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              1
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              ...
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              aria-current="page"
+                              className="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 "
+                            >
+                              10
+                            </a>
+                          </li>
+                        </Modal.Toggle>
+                        <Modal.Toggle toggleName="Update">
+                          <li>
+                            <a
+                              href="#"
+                              className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 "
+                            >
+                              <FaArrowRight />
+                            </a>
+                          </li>
+                        </Modal.Toggle>
                       </ul>
                     </div>
                   </div>
@@ -436,7 +606,7 @@ const FaceTime = () => {
                     <Modal.Toggle toggleName="Update">
                       <button
                         type="button"
-                        class="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center  me-2 mb-2"
+                        className="text-gray-900 gap-2  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1 text-center inline-flex items-center   me-2 mb-2"
                       >
                         <MdKeyboardDoubleArrowDown size={30} />
                         View More

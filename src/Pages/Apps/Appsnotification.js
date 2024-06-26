@@ -21,6 +21,15 @@ import snapchaticon from "../../assests/images/snapchat.svg";
 import telegramiconIcon from "../../assests/images/telegram.svg";
 import tiktokicon from "../../assests/images/tiktok.svg";
 import tindericon from "../../assests/images/tinder.svg";
+import whatsapp from "../../assests/images/SocialApps/whatsapp.png";
+import gmail from "../../assests/images/gmail.svg";
+import gsheet from "../../assests/images/sheet.svg";
+import telegram from "../../assests/images/telegram.svg";
+import twitch from "../../assests/images/SocialApps/twitch.png";
+import discord from "../../assests/images/SocialApps/discord.png";
+import hotspot from "../../assests/images/SocialApps/hotspot.png";
+
+import vimeo from "../../assests/images/SocialApps/vimeo.png";
 import twittericon from "../../assests/images/twitter.svg";
 import yt from "../../assests/images/yt.png";
 import crome from "../../assests/images/crome.png";
@@ -37,28 +46,28 @@ const Appsnotification = () => {
     <>
       {/* Navigations, search*/}
       <CallsHead heading="Apps Notifications" placeholder="Search Notes" />
+      <hr className="h-px  md:hidden bg-gray-200 border-0 " />
 
       {/* ====== NOTIFICATION ====== */}
 
-      <section className="md:browserContainer flex flex-col md:my-8">
+      <section className="md:browserContainer md:border rounded-lg flex flex-col md:my-8">
         {/* Browser Header */}
-        <div className="browserHeader appnotificationheader md:border-2 md:border-b-0 md:rounded-t-lg border-slate-300 flex justify-between border-t">
-          <h3 className="font-semibold text-lg">
+        <div className="browserHeader appnotificationheader   border-slate-300 flex justify-between ">
+          <h3 className="font-semibold text-lg md:text-xl">
             Hide Notifications (All apps)
           </h3>
 
           <Checkbox />
         </div>
+        <hr className="h-px   bg-gray-200 border-0" />
 
         {/* Browser Header */}
         <div className="browseHistoryCon flex flex-col">
           <div className="browseHistoryCol  flex ">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
-                <span className="mr-3 w-10 ms-2 ">
-                  <img src={yt} />
-                </span>
-                Youtube
+                <img src={hotspot} className="h-10" />
+                &nbsp; &nbsp; Mobile Hotspot
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
@@ -68,10 +77,8 @@ const Appsnotification = () => {
           <div className="browseHistoryCol  flex ">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
-                <span className="mr-3 w-10 ms-2">
-                  <img src={crome} className="h-10" />
-                </span>
-                Chrome
+                <img src={yt} />
+                &nbsp; &nbsp; Youtube
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
@@ -81,10 +88,8 @@ const Appsnotification = () => {
           <div className="browseHistoryCol  flex ">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
-                <span className="mr-3 w-10 ms-2">
-                  <img src={fb} className="h-10" />
-                </span>
-                Facebook
+                <img src={crome} className="h-10" />
+                &nbsp; &nbsp; Chrome
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
@@ -94,10 +99,8 @@ const Appsnotification = () => {
           <div className="browseHistoryCol  flex ">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
-                <span className="mr-3 w-10 ms-2">
-                  <img src={msgngr} />
-                </span>
-                Messenger
+                <img src={fb} className="h-10" />
+                &nbsp; &nbsp; Facebook
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
@@ -107,10 +110,19 @@ const Appsnotification = () => {
           <div className="browseHistoryCol  flex ">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
-                <span className="mr-3">
-                  <img src={snapchaticon} className="h-10" />
-                </span>
-                Snapchat
+                <img src={msgngr} />
+                &nbsp; &nbsp; Messenger
+              </h3>
+            </div>
+            <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
+              <Checkbox />
+            </div>
+          </div>
+          <div className="browseHistoryCol  flex ">
+            <div className="browseHistoryDes notificationappdesicon flex flex-col">
+              <h3 className="flex align-middle items-center font-semibold">
+                <img src={whatsapp} className="h-10" />
+                &nbsp; &nbsp; Whatsapp
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
@@ -121,10 +133,8 @@ const Appsnotification = () => {
           <div className="browseHistoryCol flex">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
-                <span className="mr-3">
-                  <img src={telegramiconIcon} className="h-10" />
-                </span>
-                Telegram
+                <img src={gmail} className="h-10" />
+                &nbsp; &nbsp; Gmail
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
@@ -135,10 +145,8 @@ const Appsnotification = () => {
           <div className="browseHistoryCol flex">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
-                <span className="mr-3">
-                  <img src={tiktokicon} className="h-10" />
-                </span>
-                Tiktok
+                <img src={gsheet} className="h-10" />
+                &nbsp; &nbsp; Google Sheets
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
@@ -149,10 +157,7 @@ const Appsnotification = () => {
           <div className="browseHistoryCol flex">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold">
-                <span className="mr-3">
-                  <img src={tindericon} className="h-10" />{" "}
-                </span>
-                Tinder
+                <img src={telegram} className="h-10" /> &nbsp; &nbsp; Telegram
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
@@ -163,10 +168,29 @@ const Appsnotification = () => {
           <div className="browseHistoryCol flex">
             <div className="browseHistoryDes notificationappdesicon flex flex-col">
               <h3 className="flex align-middle items-center font-semibold ">
-                <span className="mr-3">
-                  <img src={twittericon} className="h-10" />{" "}
-                </span>
-                Twitter
+                <img src={twitch} className="h-10" /> &nbsp; &nbsp; Twitch
+              </h3>
+            </div>
+            <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
+              <Checkbox />
+            </div>
+          </div>
+          <div className="browseHistoryCol flex">
+            <div className="browseHistoryDes notificationappdesicon flex flex-col">
+              <h3 className="flex align-middle items-center font-semibold ">
+                <img src={discord} className="h-10" />
+                &nbsp; &nbsp; Discord
+              </h3>
+            </div>
+            <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">
+              <Checkbox />
+            </div>
+          </div>
+          <div className="browseHistoryCol flex" style={{ border: "none" }}>
+            <div className="browseHistoryDes notificationappdesicon flex flex-col">
+              <h3 className="flex align-middle items-center font-semibold ">
+                <img src={vimeo} className="h-10 w-10" />
+                &nbsp; &nbsp; Vimeo
               </h3>
             </div>
             <div className="browseHistoryDate Notificationsappsdataicon flex flex-col">

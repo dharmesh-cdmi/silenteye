@@ -12,6 +12,7 @@ import Modal from "./Shared/Modal";
 import Upgrade from "./Shared/Upgrade";
 
 export function NotificationInfo(props) {
+  const { onClick } = props;
   const NotificationData = [
     {
       img: Frame,
@@ -65,18 +66,19 @@ export function NotificationInfo(props) {
       className=" fixed  top-[3.7rem] md:top-[4.8rem] md:right-52 border shadow w-full md:w-fit  z-50 flex justify-center  items-center bg-white rounded-lg"
       // Adjust z-index here
     >
-      <div class="relative bg-white md:rounded-lg md:shadow  mx-auto">
+      <div className="relative bg-white md:rounded-lg md:shadow  mx-auto">
         <div>
           {/* Modal header */}
           <div className="flex items-center justify-between p-2 md:p-3 border-b rounded-t ">
             <h3 className="text-xl font-semibold text-gray-900 ">
               Notification{" "}
-              <span class="bg-[#34C759] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full ">
+              <span className="bg-[#34C759] text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full ">
                 3 New
               </span>
             </h3>
             <button
               type="button"
+              onClick={onClick}
               className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center "
               data-modal-hide="static-modal"
             >

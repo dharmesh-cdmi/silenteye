@@ -39,7 +39,7 @@ const AccordionHeader = ({ children, className = "", ...restProps }) => {
     <div
       {...restProps}
       className={twMerge(
-        "cursor-pointer flex-row flex p-[16px]  justify-between  items-center",
+        "cursor-pointer flex-row flex  ps-[16px] pe-[16px] pt-[16px]  pb-[12px]  justify-between  items-center",
         isOpen ? "rounded-t-lg" : "rounded-lg",
         className
       )}
@@ -57,7 +57,7 @@ const AccordionBody = ({ children, className = "", ...restProps }) => {
   return (
     <div
       {...restProps}
-      className={twMerge("p-[16px] ", isOpen ? "block" : "hidden", className)}
+      className={twMerge("ps-[16px] pe-[16px] pb-[16px]  pt-[0px] ", isOpen ? "block" : "hidden", className)}
     >
       {children}
     </div>
