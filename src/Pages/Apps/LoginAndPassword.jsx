@@ -126,25 +126,48 @@ const LoginAndPassword = () => {
 
             {/* body */}
             <div className="overflow-y-scroll h-[calc(100%-8rem)] no-scrollbar">
-              <ul className="flex p-2 liborder cursor-pointer bg-gray-100">
-                <li className="flex-none w-14 pt-2">
-                  <img
-                    className="w-10 h-10 rounded-full m-auto"
-                    src={Instagram}
-                    alt
-                  />
-                </li>
-                <li className="p-1 flex-1 w-64 font-semibold">
-                  <div>
-                    Instagram
-                    <div className="font-normal">
-                      <p className="ps-1 text-black/50 text-base md:text-[17px] font-medium">
-                        Last Login 02:30 PM{" "}
-                      </p>
+              <Link to="/Apps/loginandpassword/profile">
+                <ul className="flex md:hidden p-2 liborder cursor-pointer bg-gray-100">
+                  <li className="flex-none w-14 pt-2">
+                    <img
+                      className="w-10 h-10 rounded-full m-auto"
+                      src={Instagram}
+                      alt
+                    />
+                  </li>
+                  <li className="p-1 flex-1 w-64 font-semibold">
+                    <div>
+                      Instagram
+                      <div className="font-normal">
+                        <p className="ps-1 text-black/50 text-base md:text-[17px] font-medium">
+                          Last Login 02:30 PM{" "}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </Link>
+              <div className="hidden md:block">
+                <ul className="flex p-2  liborder cursor-pointer bg-gray-100">
+                  <li className="flex-none w-14 pt-2">
+                    <img
+                      className="w-10 h-10 rounded-full m-auto"
+                      src={Instagram}
+                      alt
+                    />
+                  </li>
+                  <li className="p-1 flex-1 w-64 font-semibold">
+                    <div>
+                      Instagram
+                      <div className="font-normal">
+                        <p className="ps-1 text-black/50 text-base md:text-[17px] font-medium">
+                          Last Login 02:30 PM{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
               {LoginAndPasswordData.map((info, i) => (
                 <Modal>
                   <Modal.Toggle toggleName="Update">

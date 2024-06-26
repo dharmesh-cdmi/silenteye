@@ -124,7 +124,7 @@ const GeoFrence = () => {
               <div className="geoRightMap hidden md:block" />
               <div className="geoRightMap2 md:hidden" />
 
-              <div className="LocationHistoryCols border-b md:border-b-0 flex gap-16 justify-start cursor-pointer">
+              <div className="LocationHistoryCols  border-b md:border-b-0 flex gap-16 justify-start cursor-pointer">
                 <div className="locationhistoryImg ml-2" />
                 <div className="LocationHistoryCol flex flex-col justify-start cursor-pointer">
                   <p className="flex justify-start text-slate-500 text-sm">

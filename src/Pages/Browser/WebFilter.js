@@ -17,7 +17,7 @@ const WebFilter = () => {
         <div className="webFilterContainer md:rounded-lg rounded-none flex flex-col">
           {/* Browser Header */}
           <div className="webFilterHeader p-1 md:p-2 flex justify-between">
-            <h3 className="text-lg font-semibold ps-4 md:ps-2">
+            <h3 className="text-lg font-semibold ps-3 md:ps-2">
               Disallowed filters
             </h3>
             <button className="me-4 md:me-2">
@@ -27,7 +27,7 @@ const WebFilter = () => {
 
           {/* Browser  DATA COLUMNS */}
           <div className="browseHistoryCol flex">
-            <div className="browseHistoryDes flex flex-col">
+            <div className="browseHistoryDes ps-1 flex flex-col">
               <h3 className="font-semibold text-lg lg:text-lg ">
                 https://www.facebook.com
               </h3>
@@ -46,7 +46,9 @@ const WebFilter = () => {
           </div>
           <div className="browseHistoryCol flex">
             <div className="browseHistoryDes flex flex-col">
-              <h3 className="font-semibold text-lg lg:text-lg ">Pen Vape</h3>
+              <h3 className="font-semibold ps-1 text-lg lg:text-lg ">
+                Pen Vape
+              </h3>
               <div className="flex justify-between">
                 <p className="text-black/50 font-normal">website blocked</p>
               </div>
@@ -62,7 +64,7 @@ const WebFilter = () => {
           </div>
           <div className="browseHistoryCol flex">
             <div className="browseHistoryDes flex flex-col">
-              <h3 className="font-semibold text-lg lg:text-lg ">
+              <h3 className="font-semibold ps-1 text-lg lg:text-lg ">
                 https://www.apple.com
               </h3>
               <div className="flex justify-between">
@@ -81,7 +83,7 @@ const WebFilter = () => {
 
           <div className="browseHistoryCol flex" style={{ border: "none" }}>
             <div className="browseHistoryDes flex flex-col">
-              <h3 className="font-semibold text-lg lg:text-lg ">Nudity</h3>
+              <h3 className="font-semibold ps-1 text-lg lg:text-lg ">Nudity</h3>
               <div className="flex justify-between">
                 <p className="text-black/50 font-normal">Keyword blocked</p>
               </div>
