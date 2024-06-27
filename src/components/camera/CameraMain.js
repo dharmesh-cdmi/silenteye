@@ -42,7 +42,7 @@ function CameraMain() {
     </Card>
   );
 }
-//abcd zlatan ibrahimoviccc
+
 
 
 export default CameraMain;
