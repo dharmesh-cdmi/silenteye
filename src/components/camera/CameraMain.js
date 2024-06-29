@@ -12,6 +12,7 @@ import CallsHead from "../Calls/CallsHead";
 function CameraMain() {
   const headerData = {
     location: "All Captures",
+    
     placeHolder: "Search by Photos, People, Places",
   };
   return (
