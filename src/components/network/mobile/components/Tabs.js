@@ -22,7 +22,7 @@ function Tabs() {
                 <h3 className="font-semibold text-lg">Verizon</h3>
               </div>
               <div className="flex">
-              <FaPhoneAlt className="h-2 w-2 mt-2 mr-2 text-gray-500" />
+              <FaPhoneAlt className="h-[10px] w-[10px] mt-2.5 mr-1 text-gray-500" />
 
                 <p className="text-gray-400 text-sm mt-1">+1 (312) 555 3890</p>
               </div>
@@ -41,7 +41,7 @@ function Tabs() {
                 <h3 className="font-semibold text-lg">T-Mobile</h3>
               </div>
               <div className="flex">
-              <FaPhoneAlt className="h-2 w-2 mt-2 mr-2 text-gray-500" />
+              <FaPhoneAlt className="h-[10px] w-[10px] mt-2.5 mr-1 text-gray-500" />
                 <p className="text-gray-400 text-sm mt-1">+1 (312) 555 3890</p>
               </div>
             </div>

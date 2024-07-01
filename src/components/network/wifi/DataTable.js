@@ -167,8 +167,9 @@ function DataTable() {
                   <FaWifi className="h-5 w-5 ml-3 mt-1" />
                   <h3 className="font-semibold ml-2">{content.name}</h3>
                 </div>
-                <div className="flex justify-center py-4 border-b-2">
-                  <p className="font-medium">{content.connected}</p>
+                <div className="flex flex-col justify-end py-4 border-b-2 px-5">
+                  <p className="font-medium text-end">{content.connected}</p>
+                  <p className="text-end font-medium">{content.time}</p>
                 </div>
                 <div className="flex justify-center py-4 border-b-2">
                   <p className="font-medium">{content.usage}</p>
