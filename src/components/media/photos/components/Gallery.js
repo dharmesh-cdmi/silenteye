@@ -138,7 +138,7 @@ function Gallery() {
           </div>
         </>
       )}
-      <p className="lg:py-7 pt-6 text-gray-500 text-center text-xs border-t lg:border-0 mt-2">
+      <p className="lg:py-7 pt-6 text-gray-500 text-center text-xs border-t lg:border-0 mt-0">
         Yesterday 8:02 AM
       </p>
       <div className="grid lg:grid-cols-6 grid-cols-2 gap-6 lg:mx-2 me-2 lg:ms-0 ms-2.5 lg:mt-10 mt-5">

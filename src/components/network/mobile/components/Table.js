@@ -12,11 +12,11 @@ import google from "../../../../assests/images/googlee.png";
 function Table() {
   const contents = [
     { name: "Mobile Hotspot", data: "740 Mb", b: true, img: wif },
-    { name: "Youtube", data: "232 Mb", b: true, img: youtube },
-    { name: "Chrome", data: "430 Mb", b: true, img: crome },
-    { name: "Facebook", data: "34 Mb", b: true, img: facebook },
-    { name: "Messenger", data: "230 Mb", b: true, img: messenger },
-    { name: "WhatsApp", data: "988 Mb", b: true, img: whatsapp },
+    { name: "Youtube", data: "532 Mb", b: true, img: youtube },
+    { name: "Chrome", data: "453 Mb", b: true, img: crome },
+    { name: "Facebook", data: "142 Mb", b: true, img: facebook },
+    { name: "Messenger", data: "62 Mb", b: true, img: messenger },
+    { name: "WhatsApp", data: "60 Mb", b: true, img: whatsapp },
   ];
   const contents2 = [
     { name: "apple.com", data: "122 Mb", img: apple },
@@ -27,7 +27,7 @@ function Table() {
     { name: "wikipedia.org", data: "898 Mb", img: wiki },
   ];
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:mx-4 mx-0 lg:border-2 border-0 border-b-0 rounded-lg mt-2 lg:mt-7">
+    <div className="grid lg:grid-cols-2 grid-cols-1 lg:mx-4 lg:px-0 px-4 lg:border-2 border-0 border-b-0 rounded-lg mt-2 lg:mt-7">
       <div className="lg:border-r-2 border-r-0 lg:border-b-0 border-b-2">
         <p className="text-2xl font-bold pt-3 px-3">
           1.42 GB
