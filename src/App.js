@@ -109,7 +109,7 @@ function App() {
         { path: "/network/mobile-network", element: <MobileMain /> },
         { path: "/network/wifi-network", element: <WifiMain /> },
         { path: "/network/data-usage", element: <DataMain /> },
-        { path: "camera", element: <CameraMain /> },
+        { path: "/Camera/camera", element: <CameraMain /> },
         { path: "media/photos", element: <MediaMain /> },
         { path: "media/videos", element: <VideosMain /> },
         { path: "media/screenshots", element: <ScreenShotsMain /> },
