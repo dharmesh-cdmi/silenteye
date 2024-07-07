@@ -150,6 +150,7 @@ const Dashboard = () => {
     {
       name: "Last Updated",
       details: "Dec 28,2023 02:28",
+      noline:true,
     },
   ];
   const RecentCall = [
@@ -246,6 +247,7 @@ const Dashboard = () => {
       name: "Messenger",
       bar: "35%",
       time: "7m",
+      noline:true
     },
   ];
   const RecentAlert = [
@@ -278,6 +280,8 @@ const Dashboard = () => {
       name: "Moon & Urus",
       des: "New Office Table Available Now!",
       time: "09:10 AM",
+      noline:true
+
     },
   ];
   const RecentKeylogger = [
@@ -310,6 +314,8 @@ const Dashboard = () => {
       name: "Messenger ",
       des: "did she say anything to you? or dad?",
       time: "09:10 AM",
+      noline:true
+
     },
   ];
   const RecentBrowserHistory = [
@@ -342,7 +348,10 @@ const Dashboard = () => {
       name: "C Cymath ",
       des: "https://www.cymath.com",
       time: "08:21 AM",
+      noline:true
+
     },
+
   ];
 
   return (
@@ -441,7 +450,7 @@ const Dashboard = () => {
         <InfoCard title="Device Info" className="mb-2 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
-              <ul key={i} className="grid grid-cols-2 liborder ">
+              <ul key={i}  className={`${info.noline === true ? " md:border-b" : " liborder"} grid grid-cols-2 `}>
                 <li className="py-3 px-2 text-base md:text-lg  ">
                   {info.name}
                 </li>
@@ -502,10 +511,10 @@ const Dashboard = () => {
                   </div>
                 </label>
               </li>
-              <li className="py-3 px-2 liborder text-base md:text-lg  ">
+              <li className="py-3 px-2 md:border-b text-base md:text-lg  ">
                 Expiry Date
               </li>
-              <li className="py-3 text-[#172A6E] liborder  text-base md:text-lg  text-end me-2">
+              <li className="py-3 text-[#172A6E] md:border-b  text-base md:text-lg  text-end me-2">
                 Dec 28,2024 2:28
               </li>
             </ul>
@@ -647,7 +656,7 @@ const Dashboard = () => {
         >
           <div className="rounded-lg p-2 bg-gray-50">
             {MostUsedApp.map((info, i) => (
-              <div className="border-b border-slate-300 mt-2">
+              <div  className={`${!info.noline === true && 'border-b'}  border-slate-300 mt-2 `}>
                 <ul key={i} className="flex  mb-2">
                   <li className="flex-none w-14  pt-[14.4px] md:pt-2 border-none">
                     <img
@@ -689,7 +698,7 @@ const Dashboard = () => {
         >
           <div>
             {RecentAlert.map((info, i) => (
-              <div className="border-b border-slate-300 mt-2">
+              <div className={`${info.noline === true ? "" : " liborder"}  border-slate-300 mt-2`}>
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
@@ -718,7 +727,7 @@ const Dashboard = () => {
         >
           <div>
             {RecentKeylogger.map((info, i) => (
-              <div className="border-b border-slate-300 mt-2">
+              <div className={`${info.noline === true ? "" : " liborder"}  border-slate-300 mt-2`}>
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
@@ -747,7 +756,7 @@ const Dashboard = () => {
         >
           <div>
             {RecentBrowserHistory.map((info, i) => (
-              <div className="border-b border-slate-300 mt-2">
+              <div className={`${info.noline === true ? "" : " liborder"}  border-slate-300 mt-2`}>
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
