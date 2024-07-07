@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
-import vi from './vi.png'
+import vi from './abc.png'
 
 import v from "../../../assests/images/vid.png";
 import v2 from "../../../assests/images/vid2.png";

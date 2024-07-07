@@ -9,6 +9,7 @@ import sim2 from "../../../../assests/images/DashControl/Verizon.png";
 import { FaPhoneAlt } from "react-icons/fa";
 
 
+
 function Tabs() {
   return (
     <div className="lg:mx-4 mx-0 lg:mt-10 mt-1">
@@ -21,9 +22,9 @@ function Tabs() {
                 <h3 className="font-semibold text-lg">Verizon</h3>
               </div>
               <div className="flex">
-              <FaPhoneAlt className="h-2 w-2 mt-2 mr-2 text-gray-500" />
+              <FaPhoneAlt className="h-[10px] w-[10px] mt-2.5 mr-1 text-gray-500" />
 
-                <p className="text-gray-400 text-sm">+91 98989 98989</p>
+                <p className="text-gray-400 text-sm mt-1">+1 (312) 555 3890</p>
               </div>
             </div>
             <div className="mt-1">
@@ -40,8 +41,8 @@ function Tabs() {
                 <h3 className="font-semibold text-lg">T-Mobile</h3>
               </div>
               <div className="flex">
-              <FaPhoneAlt className="h-2 w-2 mt-2 mr-2 text-gray-500" />
-                <p className="text-gray-400 text-sm">+91 98989 98989</p>
+              <FaPhoneAlt className="h-[10px] w-[10px] mt-2.5 mr-1 text-gray-500" />
+                <p className="text-gray-400 text-sm mt-1">+1 (312) 555 3890</p>
               </div>
             </div>
             <div className="mt-1">

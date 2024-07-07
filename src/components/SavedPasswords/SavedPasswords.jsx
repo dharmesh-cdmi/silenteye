@@ -4,9 +4,9 @@ import { Accordion } from "../Shared/Accordian";
 import copy from "../../assests/images/copy.png";
 const SavedPasswords = ({ SavedPassword }) => {
   const { id, icon, heading, identity, password } = SavedPassword;
-  const borderClasses = id !== "1" ? "sm:border-[0px] border-t-[0.5px] border-[#DDDDDD]" : "";
+  const borderClasses =
+    id !== "1" ? "sm:border-[0px] border-t-[0.5px] border-[#DDDDDD]" : "";
 
-   
   return (
     <Table.Row>
       <div className="px-[12px] ">
@@ -39,7 +39,7 @@ const SavedPasswords = ({ SavedPassword }) => {
                       {password}{" "}
                       <img
                         src={copy}
-                        className="ms-2 h-auto  max-w-[100%]"
+                        className="ms-2 h-6 w-6 "
                         alt="copy"
                       />
                     </span>
