@@ -347,7 +347,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className="md:hidden border-b mx-4  mb-2 rounded-lg  bg-gray-50 mt-20">
+      <div className="md:hidden border-b mx-4  mb-2 rounded-lg  bg-gray-50 mt-36">
         <ul
           className="grid grid-cols-2  mb-2 cursor-pointer"
           onClick={handletoggle}
@@ -426,10 +426,10 @@ const Dashboard = () => {
                   alt
                 />
               </div>
-              <h6 className="text-[13px] md:text-[18px] weight-[500]">
+              <h6 className="text-[13px] md:text-[18px] font-medium text-nowrap">
                 {data.name}
               </h6>
-              <p className="text-[#007AFF] text-[12px] md:text-[16px] weight-[500]">
+              <p className="text-[#007AFF] text-[12px] md:text-[16px] font-medium">
                 {data.status}
               </p>
             </div>
