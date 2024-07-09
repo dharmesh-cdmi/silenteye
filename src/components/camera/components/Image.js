@@ -10,10 +10,12 @@ import folder from '../../../assests/images/fodler.png'
 import { FiUpload } from "react-icons/fi";
 import Upgrade from "../../Shared/Upgrade";
 import Modal from "../../Shared/Modal";
+import { FaAngleRight,FaAngleLeft } from "react-icons/fa6";
+
 
 function Image() {
   return (
-    <div>
+    <div className="relative">
       <div className="flex justify-between align-middle p-3 border-b-2">
         <div className="flex justify-start flex-col">
           <h3 className="font-semibold text-xl">3076877.jpg</h3>
@@ -46,7 +48,10 @@ function Image() {
       </div>
       <div className="relative">
         <img src={gallery} className="object-cotain"/>
-        <div className="h-16 w-16 absolute bg-white opacity-90 rounded-full left-96"></div>
+        {/* <div className="h-16 w-16 absolute bg-white opacity-90 rounded-full left-96"></div> */}
+        <div className="absolute h-12 w-12 rounded-full right-5 bottom-7 bg-white opacity-90"><FaAngleRight className="mx-auto mt-4"/></div>
+        <div className="absolute h-12 w-12 rounded-full right-20 bottom-7 bg-white opacity-90"><FaAngleLeft className="mx-auto mt-4"/></div>
+
       </div>
     </div>
   );

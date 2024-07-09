@@ -207,7 +207,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
       ],
     },
     {
-      name: "Camera",
+      name: "camera",
       icon: Camera,
       subMenu: [
         {
@@ -224,7 +224,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "All Captures",
-          link: "camera",
+          link: "",
         },
       ],
     },

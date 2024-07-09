@@ -18,7 +18,7 @@ function Tabs(props) {
         src={props.msg.pic}
       ></img>
       <div className="flex align-middle flex-col px-5">
-        <h3 className="font-semibold">{props.msg.name}</h3>
+        <h3 className="text-xl font-semibold">{props.msg.name}</h3>
         <p className="lg:pe-0 lg:w-auto w-52 overflow-hidden  text-nowrap text-sm text-gray-500">
           {props.msg.text}
           <span className=" right-2 absolute">{props.msg.date}</span>
@@ -41,8 +41,8 @@ function Tabs(props) {
             src={props.msg.pic}
           ></img>
           <div className="flex align-middle flex-col px-5">
-            <h3 className="font-semibold">{props.msg.name}</h3>
-            <p className="lg:pe-0 lg:w-auto w-52 overflow-hidden  text-nowrap text-sm text-gray-500">
+            <h3 className="text-xl font-semibold">{props.msg.name}</h3>
+            <p className="lg:pe-0 lg:w-auto w-52 overflow-hidden  text-nowrap text-md text-gray-500">
               {props.msg.text}
               <span className=" right-2 absolute">{props.msg.date}</span>
             </p>
