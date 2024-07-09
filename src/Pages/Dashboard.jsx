@@ -150,6 +150,7 @@ const Dashboard = () => {
     {
       name: "Last Updated",
       details: "Dec 28,2023 02:28",
+      noline:true,
     },
   ];
   const RecentCall = [
@@ -192,22 +193,22 @@ const Dashboard = () => {
   ];
   const RecentMessages = [
     {
-      img: Oval7,
-      name: "Riyah Webflow",
+      img: user,
+      name: "+61 123 456 890",
       msg: "Little brother, I'm lonely and I'm looking for company. My Telegram ID: Tindf202",
       time: "9:41 am",
     },
     {
       img: user,
-      name: "13654825",
+      name: "+61 123 456 890",
       msg: "The Apple Id code is 125544. Dont share with",
-      time: "Monday",
+      time: "9:41 am",
     },
     {
       img: user,
-      name: "13654825",
+      name: "+61 123 456 890",
       msg: "Your Tinder code is 815180 Don't share @tinder",
-      time: "Monday",
+      time: "9:41 am",
     },
     {
       img: Oval6,
@@ -217,7 +218,7 @@ const Dashboard = () => {
     },
     {
       img: user,
-      name: "13654825",
+      name: "+61 123 456 890",
       msg: "562963 SMS login verfication code, valid for ",
       time: "10/13/2024",
     },
@@ -246,6 +247,7 @@ const Dashboard = () => {
       name: "Messenger",
       bar: "35%",
       time: "7m",
+      noline:true
     },
   ];
   const RecentAlert = [
@@ -278,6 +280,8 @@ const Dashboard = () => {
       name: "Moon & Urus",
       des: "New Office Table Available Now!",
       time: "09:10 AM",
+      noline:true
+
     },
   ];
   const RecentKeylogger = [
@@ -310,6 +314,8 @@ const Dashboard = () => {
       name: "Messenger ",
       des: "did she say anything to you? or dad?",
       time: "09:10 AM",
+      noline:true
+
     },
   ];
   const RecentBrowserHistory = [
@@ -342,24 +348,27 @@ const Dashboard = () => {
       name: "C Cymath ",
       des: "https://www.cymath.com",
       time: "08:21 AM",
+      noline:true
+
     },
+
   ];
 
   return (
     <>
-      <div className="md:hidden border-b mx-4  mb-2 rounded-lg  bg-gray-50 mt-20">
+      <div className="md:hidden border-b mx-4  mb-2 rounded-lg  bg-gray-50 mt-36">
         <ul
           className="grid grid-cols-2  mb-2 cursor-pointer"
           onClick={handletoggle}
         >
-          <li className=" mt-2 gap-2 flex font-medium  ">
+          <li className=" mt-2 gap-2 flex  ">
             <CiMobile3 size={20} className="ms-2  mt-[0.15rem] " /> Ashly's
             Device
           </li>
           <li className="mt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
             <button
               type="button"
-              className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 "
+              className=" text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 "
             >
               <FaApple className="text-black " />
               iPhone 11
@@ -374,11 +383,11 @@ const Dashboard = () => {
           onClick={handletoggle}
         >
           <ul className="grid grid-cols-2  liborder ">
-            <li className="pt-2 px-2 font-medium  "> Gerry's Device</li>
+            <li className="pt-2 px-2  "> Gerry's Device</li>
             <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
               <button
                 type="button"
-                className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+                className=" text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
               >
                 <FaApple className="text-black " />
                 iPhone 13
@@ -386,11 +395,11 @@ const Dashboard = () => {
             </li>
           </ul>
           <ul className="grid grid-cols-2  liborder ">
-            <li className="pt-2 px-2 font-medium  "> Akhil's Device</li>
+            <li className="pt-2 px-2  "> Akhil's Device</li>
             <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
               <button
                 type="button"
-                className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+                className=" text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
               >
                 <FcAndroidOs />
                 Samsung 12
@@ -398,11 +407,11 @@ const Dashboard = () => {
             </li>
           </ul>
           <ul className="grid grid-cols-2   ">
-            <li className="pt-2 px-2 font-medium  "> Gurdeep's Device</li>
+            <li className="pt-2 px-2  "> Gurdeep's Device</li>
             <li className="pt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
               <button
                 type="button"
-                className=" font-medium text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
+                className=" text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 mb-2"
               >
                 <FaApple className="text-black " />
                 iPhone 14 Pro
@@ -426,10 +435,10 @@ const Dashboard = () => {
                   alt
                 />
               </div>
-              <h6 className="text-[13px] md:text-[18px] weight-[500]">
+              <h6 className="text-[13px] md:text-[18px] font-medium text-nowrap">
                 {data.name}
               </h6>
-              <p className="text-[#007AFF] text-[12px] md:text-[16px] weight-[500]">
+              <p className="text-[#007AFF] text-[12px] md:text-[16px] font-medium">
                 {data.status}
               </p>
             </div>
@@ -441,11 +450,11 @@ const Dashboard = () => {
         <InfoCard title="Device Info" className="mb-2 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
-              <ul key={i} className="grid grid-cols-2 liborder ">
-                <li className="py-3 px-2 font-medium text-base md:text-lg  ">
+              <ul key={i}  className={`${info.noline === true ? " md:border-b" : " liborder"} grid grid-cols-2 `}>
+                <li className="py-3 px-2 text-base md:text-lg  ">
                   {info.name}
                 </li>
-                <li className=" flex justify-end py-3 text-end pe-2 font-semibold text-[#172A6E] text-base md:text-lg sm:font-medium md:font-semibold">
+                <li className=" flex justify-end py-3 text-end pe-2 text-[#172A6E] text-base md:text-lg sm:font-medium md:font-semibold">
                   <img
                     src={info.icon}
                     className="h-4 md:mt-[6px] mt-[3px] mx-1"
@@ -475,22 +484,22 @@ const Dashboard = () => {
         <InfoCard title="Account Info " className="mb-2 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             <ul className="grid grid-cols-2 place-content-between ">
-              <li className="py-3 px-2 font-medium text-base md:text-lg  liborder">
+              <li className="py-3 px-2 text-base md:text-lg  liborder">
                 Membership
               </li>
-              <li className="py-3 text-[#172A6E] text-base md:text-lg  font-semibold liborder text-end me-2">
+              <li className="py-3 text-[#172A6E] text-base md:text-lg  liborder text-end me-2">
                 Premium
               </li>
-              <li className="py-3 px-2 font-medium text-base md:text-lg  liborder">
+              <li className="py-3 px-2 text-base md:text-lg  liborder">
                 Duration
               </li>
-              <li className="py-3 text-[#172A6E] text-base md:text-lg  liborder font-semibold text-end me-2">
+              <li className="py-3 text-[#172A6E] text-base md:text-lg  liborder text-end me-2">
                 Yearly
               </li>
-              <li className="p-1 px-2 font-medium liborder text-base md:text-lg  mt-2">
+              <li className="p-1 px-2 liborder text-base md:text-lg  mt-2">
                 Auto Renew
               </li>
-              <li className="p-1 text-[#172A6E] liborder text-base md:text-lg  font-semibold text-end me-2">
+              <li className="p-1 text-[#172A6E] liborder text-base md:text-lg  text-end me-2">
                 <label className={` toggle-switch mt-1`}>
                   <input
                     type="checkbox"
@@ -502,10 +511,10 @@ const Dashboard = () => {
                   </div>
                 </label>
               </li>
-              <li className="py-3 px-2 font-medium liborder text-base md:text-lg  ">
+              <li className="py-3 px-2 md:border-b text-base md:text-lg  ">
                 Expiry Date
               </li>
-              <li className="py-3 text-[#172A6E] liborder  text-base md:text-lg  font-semibold text-end me-2">
+              <li className="py-3 text-[#172A6E] md:border-b  text-base md:text-lg  text-end me-2">
                 Dec 28,2024 2:28
               </li>
             </ul>
@@ -532,9 +541,9 @@ const Dashboard = () => {
                   alt
                 />
               </li>
-              <li className="p-1 flex-1 w-64 font-semibold">
+              <li className="p-1 flex-1 w-64">
                 <div>
-                  <p className="text-[16px] md:text-[18px] lg:text-[18px] xl:text-[24px] weight-[500]">
+                  <p className="font-semibold text-[16px] md:text-[18px] lg:text-[18px] xl:text-[24px] weight-[500]">
                     {info.name}
                   </p>
                   <div
@@ -551,7 +560,7 @@ const Dashboard = () => {
                   </div>
                 </div>
               </li>
-              <li className="p-1 text-[16px] md:text-[18px] text-gray-400 font-medium md:font-semibold pt-4">
+              <li className="p-1 text-[15px] md:text-[18px] text-gray-400 md:font-semibold pt-4">
                 {info.date}
               </li>
             </ul>
@@ -575,21 +584,21 @@ const Dashboard = () => {
                   alt
                 />
               </li>
-              <li className="p-1 flex-1 w-64 font-semibold">
+              <li className="p-1 flex-1 w-64">
                 <div>
-                  <p className="text-[16px] md:text-[18px] lg:text-[18px] xl:text-[24px] weight-[500]">
+                  <p className="font-semibold text-[16px] md:text-[18px] lg:text-[18px] xl:text-[24px] weight-[500]">
                     {info.name}
                   </p>
 
                   <p className="ps-1 text-gray-400 lg:hidden xl:block text-[14px] md:text-[17px] weight-[500] ">
-                    {info.msg.slice(0, 38)}..
+                    {info.msg.slice(0, 58)}..
                   </p>
                   <p className="ps-1 text-gray-400 lg:block hidden xl:hidden 2xl:hidden text-[17px] weight-[500] ">
                     {info.msg.slice(0, 20)}..
                   </p>
                 </div>
               </li>
-              <li className="p-1 text-[16px] md:text-[18px] text-gray-400 font-medium md:font-semibold pt-4">
+              <li className="p-1 text-[14px] md:text-[18px] text-gray-400 md:font-semibold">
                 {info.time}
               </li>
             </ul>
@@ -598,11 +607,11 @@ const Dashboard = () => {
       </div>
       <div className="grid  grid-cols-1 md:grid-cols-1  lg:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
         <div className="border border-slate-300 rounded-lg p-4 mb-5 md:mb-0">
-          <h4 className="text-gray-400 text-lg font-normal">
+          <h5 className="text-[16px] text-gray-400">
             App Usage : Daily Average
-          </h4>
+          </h5>
           <div className="flex justify-between">
-            <h1 className="text-2xl font-bold">7h 24m</h1>
+            <h2 className="text-[20px]">7h 24m</h2>
             <p className="text-gray-400">18% from last week</p>
           </div>
           <div>
@@ -610,15 +619,15 @@ const Dashboard = () => {
           </div>
           <div className="flex justify-between">
             <div>
-              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-blue-500">
+              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base text-blue-500">
                 Productivity & Finance
               </h1>
-              <h1 className=" lg:text-xl md:text-lg text-base font-medium">
+              <h1 className=" lg:text-xl md:text-lg text-base">
                 10h 49m
               </h1>
             </div>
             <div>
-              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-cyan-600">
+              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base text-cyan-600">
                 Other
               </h1>
               <h1 className=" lg:text-xl md:text-lg text-base font-medium ">
@@ -626,7 +635,7 @@ const Dashboard = () => {
               </h1>
             </div>
             <div>
-              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base font-bold text-orange-700">
+              <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base text-orange-700">
                 Social
               </h1>
               <h1 className=" lg:text-xl md:text-lg text-base font-medium ">
@@ -647,7 +656,7 @@ const Dashboard = () => {
         >
           <div className="rounded-lg p-2 bg-gray-50">
             {MostUsedApp.map((info, i) => (
-              <div className="border-b border-slate-300">
+              <div  className={`${!info.noline === true && 'border-b'}  border-slate-300 mt-2 `}>
                 <ul key={i} className="flex  mb-2">
                   <li className="flex-none w-14  pt-[14.4px] md:pt-2 border-none">
                     <img
@@ -656,7 +665,7 @@ const Dashboard = () => {
                       alt="logo"
                     />
                   </li>
-                  <li className="p-1 flex-1 w-64 font-semibold text-xl mt-2 text-gray-900 border-none">
+                  <li className="p-1 flex-1 w-64 text-xl mt-2 text-gray-900 border-none">
                     <div>{info.name}</div>
                   </li>
                   <li className="p-1 text-[#172A6E] flex text-[16px] md:text-[18px]  font-medium md:font-semibold pt-4 border-none">
@@ -689,12 +698,12 @@ const Dashboard = () => {
         >
           <div>
             {RecentAlert.map((info, i) => (
-              <div className="border-b border-slate-300">
+              <div className={`${info.noline === true ? "" : " liborder"}  border-slate-300 mt-2`}>
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
                   </li>
-                  <li className="p-1 flex-1 w-64 font-semibold text-lg md:text-xl  text-gray-900 border-none">
+                  <li className="p-1 flex-1 w-64 text-lg md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 20)}</div>
                   </li>
                   <li className="p-1 text-gray-400  font-medium md:font-semibold mt-2 text-sm border-none">
@@ -718,12 +727,12 @@ const Dashboard = () => {
         >
           <div>
             {RecentKeylogger.map((info, i) => (
-              <div className="border-b border-slate-300">
+              <div className={`${info.noline === true ? "" : " liborder"}  border-slate-300 mt-2`}>
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
                   </li>
-                  <li className="p-1 flex-1 w-64 font-semibold text-lg md:text-xl  text-gray-900 border-none">
+                  <li className="p-1 flex-1 w-64 text-lg md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
                   </li>
                   <li className="p-1 mt-2  text-gray-400 font-medium md:font-semibold text-sm border-none">
@@ -747,12 +756,12 @@ const Dashboard = () => {
         >
           <div>
             {RecentBrowserHistory.map((info, i) => (
-              <div className="border-b border-slate-300">
+              <div className={`${info.noline === true ? "" : " liborder"}  border-slate-300 mt-2`}>
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
                   </li>
-                  <li className="p-1 flex-1 w-64 font-semibold text-lg md:text-xl text-gray-900 border-none">
+                  <li className="p-1 flex-1 w-64 text-lg md:text-xl text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
                   </li>
                   <li className="p-1 mt-2  text-gray-400 font-medium md:font-semibold text-sm border-none">
