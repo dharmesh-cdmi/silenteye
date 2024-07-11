@@ -7,17 +7,15 @@ const Alert = () => {
     <>
       <div
         id="alert-4"
-        style={{ width: "inherit" }}
-        className=" items-center  border-t top-[59px] md:top-[66px]  z-10 mb-2 px-2 md:px-4 fixed   pt-2 text-black  bg-[#FFEAB5] py-2 "
+        style={{ width: "inherit", top: "66px" }}
+        className=" items-center hidden border-t sm:hidden md:block   z-10 mb-2 px-4 fixed  text-black  bg-[#FFEAB5] py-2 "
         role="alert"
       >
-        <div className="flex md:mx-3 gap-2 md:gap-0">
-          <div className="mt-2 md:mt-0">
-          <GoAlert className="mt-[3px] h-4 w-4"/>
-          </div>
+        <div className="flex mx-3">
+          <GoAlert />
 
           <span className="sr-only">Info</span>
-          <div className="md:ms-3  text-[13px] md:text-base font-medium">
+          <div className="ms-3 text-base font-medium">
             This demo dashboard is for reference only, no activities can be
             performed here.{" "}
             <a

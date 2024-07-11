@@ -8,6 +8,7 @@ import { AllFilesData } from "./AllFilesData/AllFilesData.js";
 import { Link } from "react-router-dom";
 import Modal from "../../components/Shared/Modal.jsx";
 import Upgrade from "../../components/Shared/Upgrade.jsx";
+import NewAlert from "../../components/NewAlert.jsx";
 
 const AllFiles = () => {
   const [appData, setAppData] = useState(AllFilesData);
@@ -16,6 +17,7 @@ const AllFiles = () => {
     <>
       <Modal>
         <AllFilesHead headding="All Files " />
+        <NewAlert />
         <hr className="h-px md:hidden  mb-4 bg-gray-200 border-0 "></hr>
         <div className="Apps-container mx-2">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 justify-items-center md:justify-items-start mb-10">

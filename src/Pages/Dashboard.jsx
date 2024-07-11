@@ -51,6 +51,8 @@ import Button from "../components/Shared/Button";
 import { Link } from "react-router-dom";
 import { PiGreaterThanBold } from "react-icons/pi";
 import { FcAndroidOs } from "react-icons/fc";
+import NewAlert from "../components/NewAlert";
+import { GoAlert } from "react-icons/go";
 
 const Dashboard = () => {
   const [autoRenew, setAutoReNew] = useState(true);
@@ -150,7 +152,7 @@ const Dashboard = () => {
     {
       name: "Last Updated",
       details: "Dec 28,2023 02:28",
-      noline:true,
+      noline: true,
     },
   ];
   const RecentCall = [
@@ -247,7 +249,7 @@ const Dashboard = () => {
       name: "Messenger",
       bar: "35%",
       time: "7m",
-      noline:true
+      noline: true,
     },
   ];
   const RecentAlert = [
@@ -280,8 +282,7 @@ const Dashboard = () => {
       name: "Moon & Urus",
       des: "New Office Table Available Now!",
       time: "09:10 AM",
-      noline:true
-
+      noline: true,
     },
   ];
   const RecentKeylogger = [
@@ -314,8 +315,7 @@ const Dashboard = () => {
       name: "Messenger ",
       des: "did she say anything to you? or dad?",
       time: "09:10 AM",
-      noline:true
-
+      noline: true,
     },
   ];
   const RecentBrowserHistory = [
@@ -348,14 +348,37 @@ const Dashboard = () => {
       name: "C Cymath ",
       des: "https://www.cymath.com",
       time: "08:21 AM",
-      noline:true
-
+      noline: true,
     },
-
   ];
 
   return (
     <>
+      <div
+        id="alert-4"
+        style={{ width: "inherit", top: "60px" }}
+        className=" items-center  border-t z-10 mb-2 px-4 fixed md:hidden text-black  bg-[#FFEAB5] py-2 "
+        role="alert"
+      >
+        <div className="flex md:mx-3 gap-2 md:gap-0">
+          <div className="mt-2 md:mt-0">
+            <GoAlert className="mt-[3px] h-4 w-4" />
+          </div>
+
+          <span className="sr-only">Info</span>
+          <div className="md:ms-3  text-[13px] md:text-base font-medium">
+            This demo dashboard is for reference only, no activities can be
+            performed here.{" "}
+            <a
+              href="#"
+              className="font-semibold underline hover:no-underline text-[#172A6E]"
+            >
+              Upgrade to Unlock Full Access.
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="md:hidden border-b mx-4  mb-2 rounded-lg  bg-gray-50 mt-36">
         <ul
           className="grid grid-cols-2  mb-2 cursor-pointer"
@@ -420,7 +443,6 @@ const Dashboard = () => {
           </ul>
         </div>
       )}
-
       <div className="grid grid-cols-4 mx-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 md:gap-4 my-8 md:my-2 ">
         {DashIcons.map((data, i) => (
           <div
@@ -445,12 +467,16 @@ const Dashboard = () => {
           </div>
         ))}
       </div>
-
       <div className="grid grid-cols-1 mx-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8  md:mx-0 ">
         <InfoCard title="Device Info" className="mb-2 md:mb-0">
           <div className="rounded-lg py-1 bg-gray-50">
             {DashInfo.map((info, i) => (
-              <ul key={i}  className={`${info.noline === true ? " md:border-b" : " liborder"} grid grid-cols-2 `}>
+              <ul
+                key={i}
+                className={`${
+                  info.noline === true ? " md:border-b" : " liborder"
+                } grid grid-cols-2 `}
+              >
                 <li className="py-3 px-2 text-base md:text-lg  ">
                   {info.name}
                 </li>
@@ -521,7 +547,6 @@ const Dashboard = () => {
           </div>
         </InfoCard>
       </div>
-
       <div className="grid grid-cols-1 mx-4 md:grid-cols-1  lg:grid-cols-2 gap-0 mb-8  md:mx-0">
         <InfoCard
           title="Recent Calls"
@@ -622,9 +647,7 @@ const Dashboard = () => {
               <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base text-blue-500">
                 Productivity & Finance
               </h1>
-              <h1 className=" lg:text-xl md:text-lg text-base">
-                10h 49m
-              </h1>
+              <h1 className=" lg:text-xl md:text-lg text-base">10h 49m</h1>
             </div>
             <div>
               <h1 className="xl:text-2xl lg:text-xl md:text-lg text-base text-cyan-600">
@@ -656,7 +679,11 @@ const Dashboard = () => {
         >
           <div className="rounded-lg p-2 bg-gray-50">
             {MostUsedApp.map((info, i) => (
-              <div  className={`${!info.noline === true && 'border-b'}  border-slate-300 mt-2 `}>
+              <div
+                className={`${
+                  !info.noline === true && "border-b"
+                }  border-slate-300 mt-2 `}
+              >
                 <ul key={i} className="flex  mb-2">
                   <li className="flex-none w-14  pt-[14.4px] md:pt-2 border-none">
                     <img
@@ -698,7 +725,11 @@ const Dashboard = () => {
         >
           <div>
             {RecentAlert.map((info, i) => (
-              <div className={`${info.noline === true ? "" : " liborder"}  border-slate-300 mt-2`}>
+              <div
+                className={`${
+                  info.noline === true ? "" : " liborder"
+                }  border-slate-300 mt-2`}
+              >
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
@@ -727,7 +758,11 @@ const Dashboard = () => {
         >
           <div>
             {RecentKeylogger.map((info, i) => (
-              <div className={`${info.noline === true ? "" : " liborder"}  border-slate-300 mt-2`}>
+              <div
+                className={`${
+                  info.noline === true ? "" : " liborder"
+                }  border-slate-300 mt-2`}
+              >
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />
@@ -756,7 +791,11 @@ const Dashboard = () => {
         >
           <div>
             {RecentBrowserHistory.map((info, i) => (
-              <div className={`${info.noline === true ? "" : " liborder"}  border-slate-300 mt-2`}>
+              <div
+                className={`${
+                  info.noline === true ? "" : " liborder"
+                }  border-slate-300 mt-2`}
+              >
                 <ul key={i} className="flex ">
                   <li className="flex-none w-6 pt-2 border-none">
                     <img className="w-5 h-5 " src={info.img} alt="logo" />

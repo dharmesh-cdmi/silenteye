@@ -14,6 +14,7 @@ import Delete from "../../assests/images/delete.png";
 import { useMoveBack } from "../../hooks/useMoveBack";
 import moveBack from "../../assests/images/Header/arrow.png";
 import Oval from "../../assests/images/profile/Oval.png";
+import NewAlert from "../../components/NewAlert";
 
 const CallProfile = () => {
   const moveBacks = useMoveBack();
@@ -21,7 +22,7 @@ const CallProfile = () => {
   return (
     <Modal>
       <div className="mx-0">
-        <div className="flex md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0">
+        <div className="flex mt-16 md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0">
           <div className="item-one flex flex-row items-center ">
             <div
               className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
@@ -49,8 +50,9 @@ const CallProfile = () => {
             </Modal.Toggle>
           </div>
         </div>
+        <NewAlert />
         {/* second column */}
-        <div className="border-t ">
+        <div className="">
           {/* head */}
           <div className="text-lg font-bold p-0 md:p-2 ">
             <ul className="flex p-2 ">

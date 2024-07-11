@@ -9,6 +9,7 @@ import { useState } from "react";
 import Delete from "../../assests/images/delete.png";
 import moveBack from "../../assests/images/Header/arrow.png";
 import { BiSolidEdit } from "react-icons/bi";
+import NewAlert from "../../components/NewAlert.jsx";
 
 const NotesProfile = () => {
   const moveBacks = useMoveBack();
@@ -44,6 +45,7 @@ const NotesProfile = () => {
             </Modal.Toggle>
           </div>
         </div>
+        <NewAlert />
         <div className=" ">
           <div className="border-y py-4">
             <p className="text-black   px-4  w-56  font-bold text-2xl text-nowrap">
