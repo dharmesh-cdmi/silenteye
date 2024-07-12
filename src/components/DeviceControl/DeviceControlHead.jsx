@@ -19,7 +19,7 @@ const DeviceControlHead = (props) => {
     //Logic for filter the keyLogger here
   };
   return (
-    <div className="flex md:flex-row  justify-between  items-start  md:items-center mx-2 md:mx-0">
+    <div className="flex md:flex-row pt-2 md:pt-0 justify-between  items-start  md:items-center mx-2 md:mx-0">
       <div className="item-one flex flex-row items-center ">
         <div
           className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] p-[6px] md:p-[10px]    md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
