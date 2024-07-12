@@ -27,7 +27,7 @@ const CallsHead = (props) => {
   return (
     <>
       <div
-        className={`${props.padTop} flex md:flex-row   md:mt-0 justify-between  items-start   md:items-center mx-2 md:mx-0`}
+        className={`${props.padTop} flex md:flex-row  pt-2 md:mt-0 justify-between  items-start   md:items-center mx-2 md:mx-0`}
       >
         <div className="item-one flex flex-row items-center ">
           <div

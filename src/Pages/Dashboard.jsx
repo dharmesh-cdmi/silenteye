@@ -355,10 +355,8 @@ const Dashboard = () => {
   return (
     <>
       <div
-        id="alert-4"
-        style={{ width: "inherit", top: "60px" }}
-        className=" items-center  border-t z-10 mb-2 px-4 fixed md:hidden text-black  bg-[#FFEAB5] py-2 "
-        role="alert"
+        style={{ width: "inherit" }}
+        className=" items-center  mb-2 px-4 md:hidden text-black bg-[#FFEAB5] py-2 "
       >
         <div className="flex md:mx-3 gap-2 md:gap-0">
           <div className="mt-2 md:mt-0">
@@ -379,7 +377,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="md:hidden border-b mx-4  mb-2 rounded-lg  bg-gray-50 mt-36">
+      <div className="md:hidden border-b mx-4  mb-2 rounded-lg  bg-gray-50 mt-8">
         <ul
           className="grid grid-cols-2  mb-2 cursor-pointer"
           onClick={handletoggle}
