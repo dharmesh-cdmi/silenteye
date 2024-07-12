@@ -23,6 +23,7 @@ import Upgrade from "../../components/Shared/Upgrade.jsx";
 import DeviceControlHead from "../../components/DeviceControl/DeviceControlHead.jsx";
 import InfoCard from "../../components/Cards/InfoCard";
 import graph from "../../assests/images/graph2.png";
+import NewAlert from "../../components/NewAlert.jsx";
 
 const ScreenTime = () => {
   const MostUsedApp = [
@@ -59,6 +60,7 @@ const ScreenTime = () => {
         heading="Screen Time"
         // placeholder="Search by Name or Phone Number"
       />
+      <NewAlert />
 
       <hr className="h-px mb-4 md:hidden bg-gray-200 border-0 " />
       <div className="grid grid-cols-1 md:grid-cols-1 md:my-8 lg:grid-cols-2 md:gap-4 gap-0 mb-8 mx:m-0">

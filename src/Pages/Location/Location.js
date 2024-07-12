@@ -10,6 +10,7 @@ import Map2 from "../../assests/images/map2.png";
 import CallsHead from "../../components/Calls/CallsHead.jsx";
 import moveBack from "../../assests/images/Header/arrow.png";
 import { useMoveBack } from "../../hooks/useMoveBack";
+import NewAlert from "../../components/NewAlert.jsx";
 
 const Location = () => {
   const moveBacks = useMoveBack();
@@ -30,6 +31,7 @@ const Location = () => {
             </span>
           </div>
         </div>
+        <NewAlert />
 
         {/*  LIVE LOCATION MAP */}
         <div className=" md:mt-8 flex justify-center ">

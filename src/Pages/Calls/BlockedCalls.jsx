@@ -31,6 +31,7 @@ import dp4 from "../../assests/images/profile/dp (4).png";
 import dp5 from "../../assests/images/profile/dp (5).png";
 import dp6 from "../../assests/images/profile/Oval-6.png";
 import dp7 from "../../assests/images/profile/Oval-7.png";
+import NewAlert from "../../components/NewAlert";
 
 const BlockedCalls = () => {
   const moveBacks = useMoveBack();
@@ -142,7 +143,7 @@ const BlockedCalls = () => {
         />
       </div>
 
-      <div className="flex md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0">
+      <div className="flex md:flex-row md:hidden justify-between mt-16 items-start  md:items-center mx-2 md:mx-0">
         <div className="item-one flex flex-row items-center ">
           <div
             className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
@@ -181,8 +182,8 @@ const BlockedCalls = () => {
           </Modal>
         </div>
       </div>
-      <hr className="h-px md:hidden bg-gray-200 border-0 "></hr>
-      <div className="md:border md:rounded-xl md:my-8 my-1  shadow ">
+      <NewAlert />
+      <div className="md:border md:rounded-xl md:my-8 shadow ">
         <div className="grid grid-cols-1 md:grid-cols-2 ">
           {/* first column */}
           <div className="border-r hidden md:block">

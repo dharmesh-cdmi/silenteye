@@ -26,14 +26,15 @@ import Modal from "../components/Shared/Modal";
 import FilterTegModal from "../components/Shared/FilterTegModal";
 import FilterModal from "../components/Shared/FilterModal";
 import Upgrade from "../components/Shared/Upgrade";
+import NewAlert from "../components/NewAlert";
 
 const DeviceControl = () => {
   return (
     <div>
       <CallsHead heading="Device Control" placeholder="Search " />
 
-      <div className="border-y md:border md:rounded-xl  md:my-8">
-        <div className="flex md:p-4 py-4 px-2 border-b">
+      <div className="border-b md:border-y md:border md:rounded-xl  md:my-8">
+        <div className="flex md:p-4 py-2 md:py-4 px-2 border-b">
           <div>
             <img src={data} alt="img" className="object-contain mt-2 h-8" />
           </div>

@@ -36,6 +36,7 @@ import dp6 from "../../assests/images/profile/dp (6).png";
 import dp7 from "../../assests/images/profile/dp (7).png";
 
 import notes from "../../assests/images/calls/Contacts/notes.png";
+import NewAlert from "../../components/NewAlert";
 
 export function BlockedContactProfile() {
   const moveBacks = useMoveBack();
@@ -43,7 +44,7 @@ export function BlockedContactProfile() {
   return (
     <>
       <Modal>
-        <div className="flex md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0 ">
+        <div className="flex mt-16 md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0 ">
           <div className="item-one flex flex-row items-center ">
             <div
               className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
@@ -74,6 +75,7 @@ export function BlockedContactProfile() {
             </Modal.Toggle>
           </div>
         </div>
+        <NewAlert />
 
         <div className="border-t md:border-r ">
           {/* head */}
@@ -490,7 +492,7 @@ const ContactProfile = () => {
   return (
     <>
       <Modal>
-        <div className="flex md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0">
+        <div className="flex md:flex-row md:hidden justify-between  items-start  md:items-center mt-16 mx-2 md:mx-0">
           <div className="item-one flex flex-row items-center ">
             <div
               className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
@@ -518,6 +520,7 @@ const ContactProfile = () => {
             </Modal.Toggle>
           </div>
         </div>
+        <NewAlert />
 
         <div className="border-t md:border-r ">
           {/* head */}
