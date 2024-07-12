@@ -38,7 +38,7 @@ function Gallery() {
     { img: a4, text: "Recently Deleted", desc: "1264 Photos, 164 Videos" },
   ];
   return (
-    <div className="border-t lg:border-0 mt-1 lg:mx-4 mx-0">
+    <div className="border-t lg:border-0 mt-0 lg:mx-4 mx-0">
       <p className="lg:p-4 mt-10  p-1 text-gray-500 text-md">My Albums</p>
       <div className="grid lg:grid-cols-5 grid-cols-2 gap-6 lg:mx-0 ms-2.5 lg:ms-0  lg:mt-10 mt-5">
         {albums.map((album, index) => {
