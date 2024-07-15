@@ -224,7 +224,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
         },
         {
           name: "All Captures",
-          link: "",
+          link: "camera",
         },
       ],
     },
