@@ -27,7 +27,7 @@ const SocialAppsHeader = () => {
   };
 
   return (
-    <div className="flex flex-row  justify-between items-start  border-b-[0.5px] mx-2 md:mx-0  border-[#DDDDDD] sm:border-[0px]">
+    <div className="flex flex-row pt-2 md:pt-0 justify-between items-start  border-b-[0.5px] mx-2 md:mx-0  border-[#DDDDDD] sm:border-[0px]">
       <div className="item-one flex flex-row items-center">
         <div
           className="image-wrappe sm:shadow-[0px_0px_56px_0px_#00000014]    p-[10px]  sm:border-[#D0D5DD] sm:border-[1px] cursor-pointer  rounded-[8px] "

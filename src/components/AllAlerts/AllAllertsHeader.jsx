@@ -25,8 +25,8 @@ const AllAllertsHeader = () => {
   };
 
   return (
-    <div className="flex md:flex-row  justify-between  items-start  md:items-center mx-2 md:mx-0">
-      <div className="item-one flex flex-row items-center">
+    <div className="flex md:flex-row pt-2 md:pt-0 justify-between  items-start  md:items-center mx-2 md:mx-0">
+      <div className="item-one  flex flex-row items-center">
         <div
           className="image-wrappe sm:shadow-[0px_0px_56px_0px_#00000014]    p-[10px]  sm:border-[#D0D5DD] sm:border-[1px] cursor-pointer  rounded-[8px]"
           onClick={moveBacks}
@@ -34,7 +34,7 @@ const AllAllertsHeader = () => {
           <img src={moveBack} alt="move-Back" className="h-6 w-6" />
         </div>
         <span className="text-[15px] md:text-[20px]  text-[#000000]  opacity-[50%] sm:opacity-[100%]  sm:ps-3 ps-1 sm:font-[600] font-[500]">
-          Alert & Notifications
+          Notifications
         </span>
       </div>
       <div className="item-two flex flex-row  mt-0 ">
