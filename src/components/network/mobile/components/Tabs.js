@@ -6,6 +6,7 @@ import Modal from "../../../Shared/Modal";
 import Upgrade from "../../../Shared/Upgrade";
 import sim from "../../../../assests/images/DashControl/T-Mobile.png";
 import sim2 from "../../../../assests/images/DashControl/Verizon.png";
+
 import { FaPhoneAlt } from "react-icons/fa";
 
 

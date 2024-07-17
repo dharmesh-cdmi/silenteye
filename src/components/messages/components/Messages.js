@@ -71,7 +71,7 @@ function Messages() {
       <div className="grid lg:grid-cols-2 grid-cols-1 rounded-lg lg:border-2 border-t lg:mx-0 mx-0  border-gray-200 lg:mt-10 mt-0">
         {!isConvo && (
           <div className="">
-            <p className="py-4 ps-3 text-xl font-semibold lg:border-b-2 border-0 ">
+            <p className="py-3 ps-3 text-xl font-semibold lg:border-b-2 border-0 ">
               Recent Messages
             </p>
             {msgData.map((msg, index) => {

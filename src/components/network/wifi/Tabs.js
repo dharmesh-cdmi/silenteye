@@ -10,6 +10,7 @@ import del from '../../../assests/images/delete.png'
 import tick from '../../../assests/images/checkmark.png'
 import dnld from '../../../assests/images/fr.png'
 import upld from '../../../assests/images/uploadd.png'
+import ww from "../../../assests/images/ww.png";
 import { TiTick } from "react-icons/ti";
 
 
@@ -48,7 +49,7 @@ function Tabs() {
             </div>
             <div className="mt-4 flex ">
             <CiLock className='w-6 h-6 mr-0.5 font-medium' />
-              <FaWifi className='w-6 h-6 mr-0.5'  />
+              <img src={ww} className='w-6 h-6 mr-0.5'  />
               <img src={del}  className='h-6 w-6'/>
             </div>
           </div>

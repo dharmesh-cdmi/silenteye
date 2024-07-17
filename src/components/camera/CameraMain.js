@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Tabs from "./components/Tabs";
 import Card from "../../UI/Card";
 import Gallery from "./components/Gallery";
@@ -10,6 +10,10 @@ import Upgrade from "../Shared/Upgrade";
 import CallsHead from "../Calls/CallsHead";
 
 function CameraMain() {
+  const [show, setShow] = useState("hidden");
+  const setShowHandler = () => {
+    setShow("flex");
+  };
   const headerData = {
     location: "All Captures",
     placeHolder: "Search by Photos, People, Places",
@@ -19,8 +23,10 @@ function CameraMain() {
       <CallsHead heading={"All captures"} placeholder={"Search by App Name"} />{" "}
       <Tabs />
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:mx-2 mx-0 lg:my-10 my-0 lg:border-2 border-0 rounded-lg">
-        <Gallery />
-        <Image />
+        <Gallery onClick={setShowHandler} />
+        <div className={`lg:flex ${show}`}>
+          <Image />
+        </div>
       </div>
       <div className="lg:flex justify-center hidden">
         <Modal>

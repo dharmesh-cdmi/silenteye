@@ -21,7 +21,7 @@ function Table() {
   const contents2 = [
     { name: "apple.com", data: "122 Mb", img: apple },
     { name: "youtube.com", data: "898 Mb", img: youtube },
-    { name: "google.com", data: "122 Mb", img: google},
+    { name: "google.com", data: "122 Mb", img: google },
     { name: "facebook.com", data: "670 Mb", img: facebook },
     { name: "twitter.com", data: "990 Mb", img: whatsapp },
     { name: "wikipedia.org", data: "898 Mb", img: wiki },
@@ -43,7 +43,7 @@ function Table() {
               key={index}
             >
               <img
-                className="h-12 w-12 rounded-md mr-3"
+                className="h-10 w-10 rounded-md mr-3 mt-1.5"
                 src={content.img}
               ></img>
               <div className="flex flex-col">
@@ -64,7 +64,7 @@ function Table() {
           return (
             <div
               className={`p-2 flex align-middle  ${
-                content.name ==="wikipedia.org" ? "border-b-0" : "border-b-2"
+                content.name === "wikipedia.org" ? "border-b-0" : "border-b-2"
               }`}
               key={index}
             >
