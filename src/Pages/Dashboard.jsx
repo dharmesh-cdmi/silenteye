@@ -18,7 +18,7 @@ import apple from "../assests/images/apple2.png";
 import cmath from "../assests/images/cymath2.png";
 import robo from "../assests/images/robo2.png";
 import photos from "../assests/images/KeyLogger/photos.png";
-import location from "../assests/images/location.png";
+import location from "../assests/images/locationreact.png";
 import wifi from "../assests/images/dashboard/wifi.svg";
 import Apps from "../assests/images/dashboard/Apps.svg";
 import Network from "../assests/images/dashboard/Network.svg";
@@ -52,7 +52,7 @@ import { Link } from "react-router-dom";
 import { PiGreaterThanBold } from "react-icons/pi";
 import { FcAndroidOs } from "react-icons/fc";
 import NewAlert from "../components/NewAlert";
-import { GoAlert } from "react-icons/go";
+import { GoAlert, GoDotFill } from "react-icons/go";
 
 const Dashboard = () => {
   const [autoRenew, setAutoReNew] = useState(true);
@@ -379,14 +379,13 @@ const Dashboard = () => {
 
       <div className="md:hidden border-b mx-4  mb-2 rounded-lg  bg-gray-50 mt-8">
         <ul
-          className="grid grid-cols-2  mb-2 cursor-pointer"
+          className="grid grid-cols-2  h-12  cursor-pointer"
           onClick={handletoggle}
         >
-          <li className=" mt-2 gap-2 flex  ">
-            <CiMobile3 size={20} className="ms-2  mt-[0.15rem] " /> Ashly's
-            Device
+          <li className="flex items-center  gap-2   ">
+            <CiMobile3 size={20} className="ms-2  " /> Ashly's Device
           </li>
-          <li className="mt-2 flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
+          <li className=" items-center flex flex-row-reverse text-[#172A6E]  sm:font-medium md:font-semibold">
             <button
               type="button"
               className=" text-base gap-1  text-[#172A6E]  focus:outline-none    text-center inline-flex items-center  me-2 "
@@ -441,7 +440,7 @@ const Dashboard = () => {
           </ul>
         </div>
       )}
-      <div className="grid grid-cols-4 mx-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 md:gap-4 my-8 md:my-2 ">
+      <div className="grid grid-cols-4 mx-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 md:gap-4 mt-6 mb-2 md:my-2 ">
         {DashIcons.map((data, i) => (
           <div
             className="flex items-center justify-center text-center mb-4 md:mb-6"
@@ -455,7 +454,7 @@ const Dashboard = () => {
                   alt
                 />
               </div>
-              <h6 className="text-[13px] md:text-[18px] font-medium text-nowrap">
+              <h6 className="text-[13px] md:text-[18px] font-medium  text-nowrap">
                 {data.name}
               </h6>
               <p className="text-[#007AFF] text-[12px] md:text-[16px] font-medium">
@@ -465,9 +464,9 @@ const Dashboard = () => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 mx-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mb-8  md:mx-0 ">
+      <div className="grid grid-cols-1 mx-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4  md:mb-8  md:mx-0 ">
         <InfoCard title="Device Info" className="mb-2 md:mb-0">
-          <div className="rounded-lg py-1 bg-gray-50">
+          <div className="rounded-lg py-1 bg-[#8E8E93]/[0.08]">
             {DashInfo.map((info, i) => (
               <ul
                 key={i}
@@ -481,7 +480,7 @@ const Dashboard = () => {
                 <li className=" flex justify-end py-3 text-end pe-2 text-[#172A6E] text-base md:text-lg sm:font-medium md:font-semibold">
                   <img
                     src={info.icon}
-                    className="h-4 md:mt-[6px] mt-[3px] mx-1"
+                    className="h-4 md:mt-[6px] mt-[3px] mx-1 font-medium"
                   />{" "}
                   <span>{info.details}</span>
                 </li>
@@ -506,24 +505,24 @@ const Dashboard = () => {
           </div>
         </InfoCard>
         <InfoCard title="Account Info " className="mb-2 md:mb-0">
-          <div className="rounded-lg py-1 bg-gray-50">
+          <div className="rounded-lg py-1 bg-[#8E8E93]/[0.08]">
             <ul className="grid grid-cols-2 place-content-between ">
               <li className="py-3 px-2 text-base md:text-lg  liborder">
                 Membership
               </li>
-              <li className="py-3 text-[#172A6E] text-base md:text-lg  liborder text-end me-2">
+              <li className="py-3 text-[#172A6E] text-base md:text-lg font-medium liborder text-end me-2">
                 Premium
               </li>
               <li className="py-3 px-2 text-base md:text-lg  liborder">
                 Duration
               </li>
-              <li className="py-3 text-[#172A6E] text-base md:text-lg  liborder text-end me-2">
+              <li className="py-3 text-[#172A6E] text-base md:text-lg font-medium liborder text-end me-2">
                 Yearly
               </li>
               <li className="p-1 px-2 liborder text-base md:text-lg  mt-2">
                 Auto Renew
               </li>
-              <li className="p-1 text-[#172A6E] liborder text-base md:text-lg  text-end me-2">
+              <li className="p-1 text-[#172A6E] liborder text-base md:text-lg font-medium text-end me-2">
                 <label className={` toggle-switch mt-1`}>
                   <input
                     type="checkbox"
@@ -538,14 +537,14 @@ const Dashboard = () => {
               <li className="py-3 px-2 md:border-b text-base md:text-lg  ">
                 Expiry Date
               </li>
-              <li className="py-3 text-[#172A6E] md:border-b  text-base md:text-lg  text-end me-2">
+              <li className="py-3 text-[#172A6E] font-medium md:border-b  text-base md:text-lg  text-end me-2">
                 Dec 28,2024 2:28
               </li>
             </ul>
           </div>
         </InfoCard>
       </div>
-      <div className="grid grid-cols-1 mx-4 md:grid-cols-1  lg:grid-cols-2 gap-0 mb-8  md:mx-0">
+      <div className="grid grid-cols-1 mx-4 md:grid-cols-1  lg:grid-cols-2 md:gap-8 mb-2 md:mb-8   md:mx-0">
         <InfoCard
           title="Recent Calls"
           titleRight={
@@ -553,13 +552,13 @@ const Dashboard = () => {
               <Link to="/calls/callhistory">See All</Link>
             </p>
           }
-          className="mb-5 md:mb-0"
+          className="mb-5 md:mb-0 "
         >
           {RecentCall.map((info, i) => (
-            <ul key={i} className="flex p-2 liborder ">
-              <li className="flex-none w-14 pt-2">
+            <ul key={i} className="flex md:p-2 py-1  liborder  items-center">
+              <li className="flex-none w-12 md:w-14 pt-2">
                 <img
-                  className="w-10 h-10 rounded-full m-auto"
+                  className="w-10 h-10 rounded-full md:m-auto"
                   src={info.img}
                   alt
                 />
@@ -596,13 +595,14 @@ const Dashboard = () => {
               <Link to="/messages">See All</Link>
             </p>
           }
-          className="mb-5 md:mb-0"
+          className="mb-5 md:mb-0 "
         >
           {RecentMessages.map((info, i) => (
-            <ul key={i} className="flex p-2 liborder">
-              <li className="flex-none w-14 pt-2">
+            <ul key={i} className="flex md:p-2 py-1 liborder items-center ">
+              <GoDotFill className="md:hidden mt-2 text-[#007AFF]" />
+              <li className="flex-none w-12 md:w-14 pt-2">
                 <img
-                  className="w-10 h-10 rounded-full m-auto"
+                  className="w-10 h-10 rounded-full md:m-auto"
                   src={info.img}
                   alt
                 />
@@ -614,7 +614,7 @@ const Dashboard = () => {
                   </p>
 
                   <p className="ps-1 text-gray-400 lg:hidden xl:block text-[14px] md:text-[17px] weight-[500] ">
-                    {info.msg.slice(0, 58)}..
+                    {info.msg.slice(0, 50)}..
                   </p>
                   <p className="ps-1 text-gray-400 lg:block hidden xl:hidden 2xl:hidden text-[17px] weight-[500] ">
                     {info.msg.slice(0, 20)}..
@@ -628,7 +628,7 @@ const Dashboard = () => {
           ))}
         </InfoCard>
       </div>
-      <div className="grid  grid-cols-1 md:grid-cols-1  lg:grid-cols-2 md:gap-4 gap-0 mb-8 mx-4 mx:m-0">
+      <div className="grid  grid-cols-1 md:grid-cols-1  lg:grid-cols-2 md:gap-4 gap-0 mb-2 md:mb-8  mx-4 mx:m-0">
         <div className="border border-slate-300 rounded-lg p-4 mb-5 md:mb-0">
           <h5 className="text-[16px] text-gray-400">
             App Usage : Daily Average
@@ -675,17 +675,17 @@ const Dashboard = () => {
           }
           className="mb-5 md:mb-0"
         >
-          <div className="rounded-lg p-2 bg-gray-50">
+          <div className="rounded-lg p-2 bg-[#8E8E93]/[0.08]">
             {MostUsedApp.map((info, i) => (
               <div
                 className={`${
                   !info.noline === true && "border-b"
-                }  border-slate-300 mt-2 `}
+                }  border-slate-300 md:mt-2 `}
               >
-                <ul key={i} className="flex  mb-2">
-                  <li className="flex-none w-14  pt-[14.4px] md:pt-2 border-none">
+                <ul key={i} className="flex mb-1 md:mb-2">
+                  <li className="flex-none w-10 md:w-14  pt-[14.6px] md:pt-2 border-none">
                     <img
-                      className="w-6 h-6 md:h-10 md:w-10 m-auto "
+                      className="w-6 h-6 md:h-10 md:w-10 ms-2 md:ms-0 md:m-auto "
                       src={info.img}
                       alt="logo"
                     />
@@ -729,8 +729,12 @@ const Dashboard = () => {
                 }  border-slate-300 mt-2`}
               >
                 <ul key={i} className="flex ">
-                  <li className="flex-none w-6 pt-2 border-none">
-                    <img className="w-5 h-5 " src={info.img} alt="logo" />
+                  <li className="flex-none w-5 md:w-6 pt-2 border-none">
+                    <img
+                      className="size-4 md:size-5 "
+                      src={info.img}
+                      alt="logo"
+                    />
                   </li>
                   <li className="p-1 flex-1 w-64 text-lg md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 20)}</div>
@@ -762,8 +766,12 @@ const Dashboard = () => {
                 }  border-slate-300 mt-2`}
               >
                 <ul key={i} className="flex ">
-                  <li className="flex-none w-6 pt-2 border-none">
-                    <img className="w-5 h-5 " src={info.img} alt="logo" />
+                  <li className="flex-none w-5 md:w-6 pt-2 border-none">
+                    <img
+                      className="size-4 md:size-5"
+                      src={info.img}
+                      alt="logo"
+                    />
                   </li>
                   <li className="p-1 flex-1 w-64 text-lg md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
@@ -795,8 +803,12 @@ const Dashboard = () => {
                 }  border-slate-300 mt-2`}
               >
                 <ul key={i} className="flex ">
-                  <li className="flex-none w-6 pt-2 border-none">
-                    <img className="w-5 h-5 " src={info.img} alt="logo" />
+                  <li className="flex-none w-5 md:w-6 pt-2 border-none">
+                    <img
+                      className="size-4 md:size-5 "
+                      src={info.img}
+                      alt="logo"
+                    />
                   </li>
                   <li className="p-1 flex-1 w-64 text-lg md:text-xl text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
