@@ -10,7 +10,7 @@ function Tabs(props) {
       <div
       className={` ${
         props.msg.active ? "bg-gray-200" : ""
-      } flex py-4 border-b cursor-pointer overflow-x-hidden relative `}
+      } flex py-2 border-b cursor-pointer overflow-x-hidden relative `}
       onClick={props.onConvo}
     >
       <img
