@@ -12,10 +12,11 @@ const Alert = () => {
         role="alert"
       >
         <div className="flex mx-3">
-          <GoAlert />
-
+          <div className="mt-1">
+            <GoAlert />
+          </div>
           <span className="sr-only">Info</span>
-          <div className="ms-3 text-base font-medium">
+          <div className="ms-2 text-base font-medium">
             This demo dashboard is for reference only, no activities can be
             performed here.{" "}
             <a

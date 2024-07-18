@@ -11,6 +11,7 @@ import { RiMenu2Fill } from "react-icons/ri";
 import bell from "../assests/images/Bell.png";
 import DeviceInfo, { NotificationInfo } from "./ToggleInfo";
 import logo from "../assests/images/Logo.svg";
+import logo2 from "../assests/images/logo2.png";
 import Oval from "../assests/images/profile/Oval.png";
 import MenuIcon from "../assests/images/menu.png";
 import { Link } from "react-router-dom";
@@ -55,7 +56,12 @@ const Navbar = ({ isTabletMid, open, setOpen }) => {
             <Link to="/">
               <img
                 src={logo}
-                className=" h-[1.5rem] object-cover mt-2 cursor-pointer"
+                className=" h-[1.5rem] hidden md:block object-cover mt-2 cursor-pointer"
+                alt="logo"
+              />{" "}
+              <img
+                src={logo2}
+                className=" h-[1.5rem] md:hidden object-cover mt-2 cursor-pointer"
                 alt="logo"
               />{" "}
             </Link>
@@ -111,7 +117,7 @@ const Navbar = ({ isTabletMid, open, setOpen }) => {
             </button>
             <div className="relative">
               <img className="w-10 h-10 rounded-full" src={Oval} alt />
-              <span className="bottom-[10px] left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white  rounded-full" />
+              <span className="bottom-[1px] left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white  rounded-full" />
             </div>
           </div>
         </div>
