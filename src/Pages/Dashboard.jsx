@@ -728,18 +728,18 @@ const Dashboard = () => {
                   info.noline === true ? "" : " liborder"
                 }  border-slate-300 mt-2`}
               >
-                <ul key={i} className="flex ">
-                  <li className="flex-none w-5 md:w-6 pt-2 border-none">
+                <ul key={i} className="flex items-center">
+                  <li className="flex-none  w-5 md:w-6   border-none">
                     <img
-                      className="size-4 md:size-5 "
+                      className="size-4 md:size-5"
                       src={info.img}
                       alt="logo"
                     />
                   </li>
-                  <li className="p-1 flex-1 w-64 text-lg md:text-xl  text-gray-900 border-none">
+                  <li className="md:p-1  flex-1 w-64 text-lg md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 20)}</div>
                   </li>
-                  <li className="p-1 text-gray-400  font-medium md:font-semibold mt-2 text-sm border-none">
+                  <li className="md:p-1 text-gray-400  font-medium md:font-semibold mt-2 text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
@@ -765,18 +765,18 @@ const Dashboard = () => {
                   info.noline === true ? "" : " liborder"
                 }  border-slate-300 mt-2`}
               >
-                <ul key={i} className="flex ">
-                  <li className="flex-none w-5 md:w-6 pt-2 border-none">
+                <ul key={i} className="flex items-center">
+                  <li className="flex-none w-5 md:w-6  border-none">
                     <img
                       className="size-4 md:size-5"
                       src={info.img}
                       alt="logo"
                     />
                   </li>
-                  <li className="p-1 flex-1 w-64 text-lg md:text-xl  text-gray-900 border-none">
+                  <li className="md:p-1 flex-1 w-64 text-lg md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
                   </li>
-                  <li className="p-1 mt-2  text-gray-400 font-medium md:font-semibold text-sm border-none">
+                  <li className="md:p-1 mt-2  text-gray-400 font-medium md:font-semibold text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
@@ -802,18 +802,18 @@ const Dashboard = () => {
                   info.noline === true ? "" : " liborder"
                 }  border-slate-300 mt-2`}
               >
-                <ul key={i} className="flex ">
-                  <li className="flex-none w-5 md:w-6 pt-2 border-none">
+                <ul key={i} className="flex items-center">
+                  <li className="flex-none w-5 md:w-6  border-none">
                     <img
                       className="size-4 md:size-5 "
                       src={info.img}
                       alt="logo"
                     />
                   </li>
-                  <li className="p-1 flex-1 w-64 text-lg md:text-xl text-gray-900 border-none">
+                  <li className="md:p-1 flex-1 w-64 text-lg md:text-xl text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
                   </li>
-                  <li className="p-1 mt-2  text-gray-400 font-medium md:font-semibold text-sm border-none">
+                  <li className="md:p-1 mt-2  text-gray-400 font-medium md:font-semibold text-sm border-none">
                     {info.time}
                   </li>
                 </ul>
