@@ -359,12 +359,12 @@ const Dashboard = () => {
         className=" items-center  mb-2 px-4 md:hidden text-black bg-[#FFEAB5] py-2 "
       >
         <div className="flex md:mx-3 gap-2 md:gap-0">
-          <div className="mt-2 md:mt-0">
+          <div className="mt-1 xs:mt-2 md:mt-0">
             <GoAlert className="mt-[3px] h-4 w-4" />
           </div>
 
           <span className="sr-only">Info</span>
-          <div className="md:ms-3  text-[13px] md:text-base font-medium">
+          <div className="md:ms-3 text-[10px] xs:text-[13px] md:text-base font-medium">
             This demo dashboard is for reference only, no activities can be
             performed here.{" "}
             <a
@@ -454,7 +454,7 @@ const Dashboard = () => {
                   alt
                 />
               </div>
-              <h6 className="text-[13px] md:text-[18px] font-medium  text-nowrap">
+              <h6 className="text-[11px] xs:text-[13px] md:text-[18px] font-medium  text-nowrap">
                 {data.name}
               </h6>
               <p className="text-[#007AFF] text-[12px] md:text-[16px] font-medium">
@@ -690,7 +690,7 @@ const Dashboard = () => {
                       alt="logo"
                     />
                   </li>
-                  <li className="p-1 flex-1 w-64 text-xl mt-2 text-gray-900 border-none">
+                  <li className="p-1 flex-1 w-64 text-lg md:text-xl mt-2 text-gray-900 border-none">
                     <div>{info.name}</div>
                   </li>
                   <li className="p-1 text-[#172A6E] flex text-[16px] md:text-[18px]  font-medium md:font-semibold pt-4 border-none">
@@ -736,7 +736,7 @@ const Dashboard = () => {
                       alt="logo"
                     />
                   </li>
-                  <li className="md:p-1  flex-1 w-64 text-lg md:text-xl  text-gray-900 border-none">
+                  <li className="md:p-1  flex-1 w-64 text-[17px] md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 20)}</div>
                   </li>
                   <li className="md:p-1 text-gray-400  font-medium md:font-semibold mt-2 text-sm border-none">
@@ -773,7 +773,7 @@ const Dashboard = () => {
                       alt="logo"
                     />
                   </li>
-                  <li className="md:p-1 flex-1 w-64 text-lg md:text-xl  text-gray-900 border-none">
+                  <li className="md:p-1 flex-1 w-64 text-[17px] md:text-xl  text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
                   </li>
                   <li className="md:p-1 mt-2  text-gray-400 font-medium md:font-semibold text-sm border-none">
@@ -810,7 +810,7 @@ const Dashboard = () => {
                       alt="logo"
                     />
                   </li>
-                  <li className="md:p-1 flex-1 w-64 text-lg md:text-xl text-gray-900 border-none">
+                  <li className="md:p-1 flex-1 w-64 text-[17px] md:text-xl text-gray-900 border-none">
                     <div>{info.name.slice(0, 25)}</div>
                   </li>
                   <li className="md:p-1 mt-2  text-gray-400 font-medium md:font-semibold text-sm border-none">
