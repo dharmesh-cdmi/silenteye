@@ -24,7 +24,7 @@ const FilesDownload = () => {
                 <Modal.Toggle toggleName="Update">
                   <div
                     key={v.id}
-                    className="appBox flex flex-col justify-center mx-3 mb-14"
+                    className="appBox flex flex-col justify-center mx-3 mb-1 md:mb-14"
                   >
                     <span className="appBoxicon relative">
                       <input

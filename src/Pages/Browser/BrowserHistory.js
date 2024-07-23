@@ -118,7 +118,7 @@ const BrowseHistory = () => {
           </div>
         </div>
       </section>
-      <section className="browserContainer md:border rounded-lg  mt-6 flex flex-col md:my-6">
+      <section className="browserContainer md:border rounded-lg  md:mt-6 flex flex-col md:my-6">
         <div className="browseHistoryCon md:rounded-lg flex flex-col">
           <h3 className="border-b-2 w-full p-3 text-base text-slate-500">
             Monday , 20 May 2024

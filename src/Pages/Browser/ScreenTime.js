@@ -63,7 +63,7 @@ const ScreenTime = () => {
       <NewAlert />
 
       <hr className="h-px mb-4 md:hidden bg-gray-200 border-0 " />
-      <div className="grid grid-cols-1 md:grid-cols-1 md:my-8 lg:grid-cols-2 md:gap-4 gap-0 mb-8 mx:m-0">
+      <div className="grid grid-cols-1 md:grid-cols-1 md:my-8 lg:grid-cols-2 md:gap-4 gap-0  mx:m-0">
         <div className="border border-slate-300 rounded-lg p-4 mb-5 md:mb-0  mx-4">
           <h4 className="text-black/50 text-base md:text-lg font-semibold">
             App Usage : Daily Average
@@ -102,7 +102,7 @@ const ScreenTime = () => {
             </div>
           </div>
         </div>
-        <h2 className=" text-black/50 font-semibold text-base md:hidden border-y py-3 px-4">
+        <h2 className=" text-black/50 font-semibold text-base md:hidden border-y py-2 px-4">
           Recent Most Used Apps
         </h2>
         <div className="md:border  md:border-slate-300 md:rounded-lg  mb-5 md:mb-0">

@@ -21,7 +21,7 @@ const GeoFrence = () => {
           <hr className="h-px md:hidden bg-gray-200 border-0 "></hr>
 
           {/* GEOFRENCE CONTAINERS */}
-          <div className="geoFrenceContainer flex mb-6">
+          <div className="geoFrenceContainer flex mb-2 md:mb-6">
             {/* GEOFRENCE LEFT CONTAINERS */}
             <div className="geoFrenceConLeft flex flex-col justify-start">
               <div className="geoLeftDes flex flex-col">
