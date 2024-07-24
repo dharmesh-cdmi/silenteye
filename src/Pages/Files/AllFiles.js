@@ -21,7 +21,7 @@ const AllFiles = () => {
         <hr className="h-px md:hidden  mb-4 bg-gray-200 border-0 "></hr>
         <div className="Apps-container mx-2">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 justify-items-center md:justify-items-start mb-10">
-            <div className="appBox flex flex-col justify-center mx-3 mb-3">
+            <div className="appBox flex flex-col justify-center mx-3 md:mb-3">
               <span className="appBoxicon relative">
                 <input
                   type="checkbox"

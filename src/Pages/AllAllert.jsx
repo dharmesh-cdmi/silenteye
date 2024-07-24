@@ -12,6 +12,7 @@ import snapchat from "../../src/assests/images/AllAlerts/snapchat.png";
 import instagram from "../../src/assests/images/AllAlerts/instagram.png";
 import Modal from "../components/Shared/Modal";
 import Upgrade from "../components/Shared/Upgrade";
+import NewAlert from "../components/NewAlert";
 
 const AllAllertsData = [
   [
@@ -28,7 +29,7 @@ const AllAllertsData = [
       heading: "Asher is Out of Location",
       subheading: "Location Alert ! GeoFencer.",
       time: "08:58 AM",
-    },   
+    },
     {
       id: "3",
       img: youtube,
@@ -73,7 +74,6 @@ const AllAllertsData = [
       subheading: "I thought you already talked to her",
       time: "11:28 PM",
     },
-
   ],
 ];
 const AllAllert = () => {
@@ -82,39 +82,41 @@ const AllAllert = () => {
   };
 
   return (
-    <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
-      <AllAllertsHeader />
-      {AllAllertsData.map((AllAllertsData, index) => (
-        <div key={index} className="sm:my-10 mb-2">
-          <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
-            <Table.Header className="font-[16px] opacity-[50%]">
-              Monday, {index + 11} Jan, 2023
-            </Table.Header>
-            <Table.Body>
-              {AllAllertsData.map((AllAlert) => (
-                <AllAlerts key={AllAlert.id} AllAlert={AllAlert} />
-              ))}
-            </Table.Body>
-          </Table>
+    <>
+      <div className="main sm:ps-3 sm:pe-3 sm:pt-4">
+        <AllAllertsHeader />
+        {AllAllertsData.map((AllAllertsData, index) => (
+          <div key={index} className="sm:my-10 mb-2">
+            <Table className="sm:border-[#DDDDDD] sm:border-[1px] sm:rounded-lg">
+              <Table.Header className="font-[16px] opacity-[50%]">
+                Monday, {index + 11} Jan, 2023
+              </Table.Header>
+              <Table.Body>
+                {AllAllertsData.map((AllAlert) => (
+                  <AllAlerts key={AllAlert.id} AllAlert={AllAlert} />
+                ))}
+              </Table.Body>
+            </Table>
+          </div>
+        ))}
+        <div className="flex justify-center mb-12 mt-3">
+          <Modal>
+            <Modal.Toggle toggleName="viewMore-allAllert">
+              <Button
+                onClick={viewMore}
+                className="text-[18px]  shadow-[0px_0px_56px_0px_#00000014]  font-medium px-[32px]  py-[10px] text-[#101828] text-center"
+              >
+                View More
+                <img src={More} alt="more" className="ps-2" />
+              </Button>
+            </Modal.Toggle>
+            <Modal.Window windowName="viewMore-allAllert">
+              <Upgrade />
+            </Modal.Window>
+          </Modal>
         </div>
-      ))}
-      <div className="flex justify-center mb-12 mt-3">
-        <Modal>
-          <Modal.Toggle toggleName="viewMore-allAllert">
-            <Button
-              onClick={viewMore}
-              className="text-[18px]  shadow-[0px_0px_56px_0px_#00000014]  font-medium px-[32px]  py-[10px] text-[#101828] text-center"
-            >
-              View More
-              <img src={More} alt="more" className="ps-2" />
-            </Button>
-          </Modal.Toggle>
-          <Modal.Window windowName="viewMore-allAllert">
-            <Upgrade />
-          </Modal.Window>
-        </Modal>
       </div>
-    </div>
+    </>
   );
 };
 

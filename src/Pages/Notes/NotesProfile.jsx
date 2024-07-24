@@ -17,7 +17,7 @@ const NotesProfile = () => {
   return (
     <>
       <Modal>
-        <div className="flex md:flex-row md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0">
+        <div className="flex md:flex-row pt-2 md:hidden justify-between  items-start  md:items-center mx-2 md:mx-0">
           <div className="item-one flex flex-row items-center ">
             <div
               className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"
