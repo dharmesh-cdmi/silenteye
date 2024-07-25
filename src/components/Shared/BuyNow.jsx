@@ -25,7 +25,11 @@ export function BuyNow2({ onCloseModal }) {
           </Button>
         </div>
         <div className=" w-[100%]">
-          <Button className=" w-[100%] py-[10px] bg-green-100  border-green-500 border-[1px] font-[600]  px-[70px] text-[18px] text-[#000000] ">
+          <Button 
+            onClick={() => {
+              window.open("https://silenteye.co/pages/pricing.html","_self")
+            }}
+            className=" w-[100%] py-[10px] bg-green-100  border-green-500 border-[1px] font-[600]  px-[70px] text-[18px] text-[#000000] ">
             <img src={diamond} alt="diamond" className="pe-2" />
             Buy Now
           </Button>
@@ -57,7 +61,11 @@ const BuyNow = ({ onCloseModal }) => {
           Cancel
         </Button>
         <div className="md:ms-3 w-[100%]">
-          <Button className="py-[10px] w-[100%] bg-green-100  border-green-500 border-[1px] font-[600]  px-[70px] text-[18px] text-[#000000] ">
+          <Button 
+            onClick={() => {
+              window.open("https://silenteye.co/pages/pricing.html","_self")
+            }}
+            className="py-[10px] w-[100%] bg-green-100  border-green-500 border-[1px] font-[600]  px-[70px] text-[18px] text-[#000000] ">
             <img src={diamond} alt="diamond" className="pe-2" />
             Buy Now
           </Button>
