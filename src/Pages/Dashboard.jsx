@@ -368,7 +368,7 @@ const Dashboard = () => {
             This demo dashboard is for reference only, no activities can be
             performed here.{" "}
             <a
-              href="#"
+              href="https://silenteye.co/pages/pricing.html"
               className="font-semibold underline hover:no-underline text-[#172A6E]"
             >
               Upgrade to Unlock Full Access.
