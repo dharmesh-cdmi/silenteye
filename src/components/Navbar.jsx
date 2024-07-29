@@ -112,6 +112,9 @@ const Navbar = ({ isTabletMid, open, setOpen }) => {
             <button
               type="button"
               className="text-white active md:block hidden  focus:ring-4  font-medium rounded-lg text-sm px-5 py-1.5 me-2 mb-[.60rem]"
+              onClick={() => {
+                window.open("https://silenteye.co/pages/pricing.html","_self")
+              }}
             >
               Try Now
             </button>

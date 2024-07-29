@@ -726,7 +726,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
               </NavLink>
             </li>
             <li className="liborder">
-              <NavLink to={"/logout"} className="link">
+              <NavLink to={"https://silenteye.co/index.html"} className="link">
                 <img className="h-5 " src={Logout} alt />
                 Logout
               </NavLink>
