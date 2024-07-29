@@ -590,7 +590,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
           )}
         </div>
 
-        <div className="flex flex-col mt-4 md:mt-[4px] h-full ">
+        <div className="flex flex-col mt-4 md:mt-[4px] h-[90%] ">
           {open && (
             <div className="mx-3">
               <p className="text-base text-left font-medium">demo@domain.com</p>
@@ -726,7 +726,7 @@ const Sidebar = ({ isTabletMid, open, setOpen }) => {
               </NavLink>
             </li>
             <li className="liborder">
-              <NavLink to={"https://silenteye.co/index.html"} className="link">
+              <NavLink to={"/logout"} className="link pointer-events-none">
                 <img className="h-5 " src={Logout} alt />
                 Logout
               </NavLink>
