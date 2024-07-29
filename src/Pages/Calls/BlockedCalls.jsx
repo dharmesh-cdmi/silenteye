@@ -343,6 +343,8 @@ const BlockedCalls = () => {
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
+                      <p className="ps-1 md:hidden">00:18:27</p>
+
                       <Modal.Toggle toggleName="Update">
                         <div>
                           <img
@@ -378,6 +380,7 @@ const BlockedCalls = () => {
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
+                      <p className="ps-1 md:hidden">00:18:27</p>
                       <Modal.Toggle toggleName="Update">
                         <div>
                           <img
@@ -413,6 +416,7 @@ const BlockedCalls = () => {
                   </li>
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
+                      <p className="ps-1 md:hidden">00:18:27</p>
                       <Modal.Toggle toggleName="Update">
                         <div>
                           <img
@@ -449,6 +453,7 @@ const BlockedCalls = () => {
 
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
+                      <p className="ps-1 md:hidden">00:18:27</p>
                       <Modal.Toggle toggleName="Update">
                         <div>
                           <img
@@ -485,6 +490,7 @@ const BlockedCalls = () => {
 
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
+                      <p className="ps-1 md:hidden">00:18:27</p>
                       <Modal.Toggle toggleName="Update">
                         <div>
                           <img
@@ -521,6 +527,7 @@ const BlockedCalls = () => {
 
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
+                      <p className="ps-1 md:hidden">00:18:27</p>
                       <Modal.Toggle toggleName="Update">
                         <div>
                           <img
@@ -557,6 +564,7 @@ const BlockedCalls = () => {
 
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
+                      <p className="ps-1 md:hidden">00:18:27</p>
                       <Modal.Toggle toggleName="Update">
                         <div>
                           <img
@@ -593,6 +601,7 @@ const BlockedCalls = () => {
 
                   <li className="p-1 text-gray-400 font-semibold pt-2 ">
                     <div className="flex gap-4 mt-2">
+                      <p className="ps-1 md:hidden">00:18:27</p>
                       <Modal.Toggle toggleName="Update">
                         <div>
                           <img

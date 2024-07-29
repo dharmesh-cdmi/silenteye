@@ -81,9 +81,9 @@ const CallProfile = () => {
                 </div>
               </li>
               <li className="p-1 w-20 text-gray-400 font-semibold pt-4 border-none">
-                <div className="flex gap-4 mt-6 ">
+                <div className="flex gap-2 mt-6 ">
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <BsPersonAdd
                         className="text-slate-900 cursor-pointer"
                         size={25}
@@ -91,7 +91,7 @@ const CallProfile = () => {
                     </div>
                   </Modal.Toggle>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <img className="h-6 cursor-pointer" src={Delete} alt />
                     </div>
                   </Modal.Toggle>
@@ -121,10 +121,10 @@ const CallProfile = () => {
                 </div>
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                <div className="flex gap-4 mt-2">
+                <div className="flex gap-2 mt-2">
                   <p className="ps-1">00:18:27</p>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div className="">
                       <IoMicOutline
                         className="text-slate-900 cursor-pointer"
                         size={25}
@@ -132,7 +132,7 @@ const CallProfile = () => {
                     </div>
                   </Modal.Toggle>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div className="">
                       <img className="h-6 cursor-pointer" src={Delete} alt />
                     </div>
                   </Modal.Toggle>
@@ -157,10 +157,10 @@ const CallProfile = () => {
                 </div>
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                <div className="flex gap-4 mt-2">
+                <div className="flex gap-2 mt-2">
                   <p className="ps-1">00:00:00</p>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <IoMicOutline
                         className="text-slate-900 cursor-pointer"
                         size={25}
@@ -168,7 +168,7 @@ const CallProfile = () => {
                     </div>
                   </Modal.Toggle>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <img className="h-6 cursor-pointer" src={Delete} alt />
                     </div>
                   </Modal.Toggle>
@@ -193,10 +193,10 @@ const CallProfile = () => {
                 </div>
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                <div className="flex gap-4 mt-2">
+                <div className="flex gap-2 mt-2">
                   <p className="ps-1">00:03:04</p>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <IoMicOutline
                         className="text-slate-900 cursor-pointer"
                         size={25}
@@ -204,7 +204,7 @@ const CallProfile = () => {
                     </div>
                   </Modal.Toggle>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <img className="h-6 cursor-pointer" src={Delete} alt />
                     </div>
                   </Modal.Toggle>
@@ -230,10 +230,10 @@ const CallProfile = () => {
                 </div>
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                <div className="flex gap-4 mt-2">
+                <div className="flex gap-2 mt-2">
                   <p className="ps-1">01:20:34</p>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <IoMicOutline
                         className="text-slate-900 cursor-pointer"
                         size={25}
@@ -241,7 +241,7 @@ const CallProfile = () => {
                     </div>
                   </Modal.Toggle>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <img className="h-6 cursor-pointer" src={Delete} alt />
                     </div>
                   </Modal.Toggle>
@@ -266,10 +266,10 @@ const CallProfile = () => {
                 </div>
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                <div className="flex gap-4 mt-2">
+                <div className="flex gap-2 mt-2">
                   <p className="ps-1">00:0:20</p>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <IoMicOutline
                         className="text-slate-900 cursor-pointer"
                         size={25}
@@ -277,7 +277,7 @@ const CallProfile = () => {
                     </div>
                   </Modal.Toggle>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <img className="h-6 cursor-pointer" src={Delete} alt />
                     </div>
                   </Modal.Toggle>
@@ -302,10 +302,10 @@ const CallProfile = () => {
                 </div>
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                <div className="flex gap-4 mt-2">
+                <div className="flex gap-2 mt-2">
                   <p className="ps-1">00:00:34</p>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <IoMicOutline
                         className="text-slate-900 cursor-pointer"
                         size={25}
@@ -313,7 +313,7 @@ const CallProfile = () => {
                     </div>
                   </Modal.Toggle>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <img className="h-6 cursor-pointer" src={Delete} alt />
                     </div>
                   </Modal.Toggle>
@@ -338,10 +338,10 @@ const CallProfile = () => {
                 </div>
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                <div className="flex gap-4 mt-2">
+                <div className="flex gap-2 mt-2">
                   <p className="ps-1">00:3:12</p>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <IoMicOutline
                         className="text-slate-900 cursor-pointer"
                         size={25}
@@ -349,7 +349,7 @@ const CallProfile = () => {
                     </div>
                   </Modal.Toggle>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <img className="h-6 cursor-pointer" src={Delete} alt />
                     </div>
                   </Modal.Toggle>
@@ -374,10 +374,10 @@ const CallProfile = () => {
                 </div>
               </li>
               <li className="p-1 text-gray-400 font-semibold pt-2 ">
-                <div className="flex gap-4 mt-2">
+                <div className="flex gap-2 mt-2">
                   <p className="ps-1">00:00:00</p>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <IoMicOutline
                         className="text-slate-900 cursor-pointer"
                         size={25}
@@ -385,7 +385,7 @@ const CallProfile = () => {
                     </div>
                   </Modal.Toggle>
                   <Modal.Toggle toggleName="Update">
-                    <div className="hidden md:block">
+                    <div>
                       <img className="h-6 cursor-pointer" src={Delete} alt />
                     </div>
                   </Modal.Toggle>
