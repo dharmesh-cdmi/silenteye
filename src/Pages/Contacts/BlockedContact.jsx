@@ -5,7 +5,7 @@ import {
 } from "react-icons/md";
 import { HiPhoneMissedCall } from "react-icons/hi";
 import CallsHead from "../../components/Calls/CallsHead";
-import callicon from "../../assests/images/calls/call-fill.png";
+import callicon from "../../assests/images/calls/Contacts/block.png";
 import { VscCallOutgoing } from "react-icons/vsc";
 import { IoIosCall, IoIosMailOpen } from "react-icons/io";
 import { BsCurrencyDollar, BsPersonAdd } from "react-icons/bs";
@@ -113,7 +113,11 @@ const BlockedContact = () => {
                         Allan Tran
                         <div className="text-gray-400 flex">
                           <p className="my-auto ">
-                            <img src={callicon} alt="" />
+                            <img
+                              className="w-4 h-4 rounded-full m-auto"
+                              src={callicon}
+                              alt
+                            />
                           </p>
                           <p className="ps-1">(270) 555-0117</p>
                         </div>
@@ -135,7 +139,11 @@ const BlockedContact = () => {
                         Allan Taran
                         <div className="text-gray-400 flex">
                           <p className="my-auto ">
-                            <VscCallOutgoing />
+                            <img
+                              className="w-4 h-4 rounded-full m-auto"
+                              src={callicon}
+                              alt
+                            />
                           </p>
                           <p className="ps-1">(308) 555-0121</p>
                         </div>
@@ -161,11 +169,13 @@ const BlockedContact = () => {
                         <div>
                           {info.name}
                           <div className={`text-gray-500 flex font-normal`}>
-                            <img
-                              src={info.callIcon}
-                              alt="img"
-                              className="object-contain fill-gray-500  "
-                            />
+                            <p className="my-auto ">
+                              <img
+                                className="w-4 h-4 rounded-full m-auto"
+                                src={callicon}
+                                alt
+                              />
+                            </p>
 
                             <p className="ps-1 font-semibold">{info.callNo}</p>
                           </div>
@@ -194,11 +204,13 @@ const BlockedContact = () => {
                         <div>
                           {info.name}
                           <div className={`text-gray-500 flex font-normal`}>
-                            <img
-                              src={info.callIcon}
-                              alt="img"
-                              className="object-contain fill-gray-500  "
-                            />
+                            <p className="my-auto ">
+                              <img
+                                className="w-4 h-4 rounded-full m-auto"
+                                src={callicon}
+                                alt
+                              />
+                            </p>
 
                             <p className="ps-1 font-semibold">{info.callNo}</p>
                           </div>
@@ -338,7 +350,7 @@ const BlockedContact = () => {
                           <img
                             className="w-4 h-4 rounded-full m-auto"
                             src={callicon}
-                            alt
+                            altc
                           />
                         </p>
                         <p className="ps-1">(270) 555-0117</p>

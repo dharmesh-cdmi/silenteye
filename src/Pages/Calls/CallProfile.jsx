@@ -80,7 +80,7 @@ const CallProfile = () => {
                   </div>
                 </div>
               </li>
-              <li className="p-1 w-20 text-gray-400 font-semibold pt-4 border-none">
+              {/* <li className="p-1 w-20 text-gray-400 font-semibold pt-4 border-none">
                 <div className="flex gap-2 mt-6 ">
                   <Modal.Toggle toggleName="Update">
                     <div>
@@ -96,7 +96,7 @@ const CallProfile = () => {
                     </div>
                   </Modal.Toggle>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
           <hr />

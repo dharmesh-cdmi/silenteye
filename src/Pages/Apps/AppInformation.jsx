@@ -19,7 +19,7 @@ const AppInformation = () => {
   return (
     <div>
       <Modal>
-        <div className="flex border-b md:flex-row md:hidden justify-between mb-2  items-start  md:items-center  md:mx-0">
+        <div className="flex border-b md:flex-row md:hidden pt-2 md:mt-0 justify-between mb-2  items-start  md:items-center  md:mx-0">
           <div className="item-one ps-3 flex flex-row items-center ">
             <div
               className="image-wrapper shadow-[0px_0px_56px_0px_#00000014] md:p-[10px] p-[6px]  md:border-[#D0D5DD] md:border-[1px] cursor-pointer  md:rounded-[8px]"

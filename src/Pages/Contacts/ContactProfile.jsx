@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  MdCall,
   MdKeyboardDoubleArrowDown,
   MdOutlineMailOutline,
   MdPhoneCallback,
@@ -93,7 +94,7 @@ export function BlockedContactProfile() {
                   <p className="text-lg">Allan Taran</p>
                   <div className={`text-gray-400 flex font-normal`}>
                     <p className="my-auto ">
-                      <VscCallOutgoing />
+                      <MdCall />
                     </p>
                     <p className="ps-1">(270) 555-0117</p>
                   </div>
@@ -538,7 +539,7 @@ const ContactProfile = () => {
                   <p className="text-lg">Allan Taran</p>
                   <div className={`text-gray-400 flex font-normal`}>
                     <p className="my-auto ">
-                      <VscCallOutgoing />
+                      <MdCall />
                     </p>
                     <p className="ps-1">(270) 555-0117</p>
                   </div>
