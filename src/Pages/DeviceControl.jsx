@@ -140,7 +140,7 @@ const DeviceControl = () => {
       </div>
       <div className="border-y md:border md:rounded-xl md:my-8">
         <div className="flex md:p-4 py-4 px-2 border-b">
-          <div>
+          <div className="ms-2 md:ms-0">
             <img
               src={fram1}
               alt="img"
