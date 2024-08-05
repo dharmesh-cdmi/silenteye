@@ -19,7 +19,7 @@ import { TiTick } from "react-icons/ti";
 
 function Tabs() {
   return (
-    <div className="lg:mx-4 mx-0 lg:mt-10 mt-1 lg:border-t-0 border-t">
+    <div className="lg:mx-4 mx-0 lg:mt-10 lg:border-t-0 border-t">
       <section className="grid lg:grid-cols-4 grid-cols-1 border-0 lg:border-2 border-gray-200 rounded-xl ">
         <div className="py-2 px-2 lg:border-r-2 lg:border-t-0 lg:border-b-0 border-b">
           <div className="flex justify-between align-middle">
@@ -61,7 +61,7 @@ function Tabs() {
                 <img className='w-6 h-6' src={dnld}/>
                 <h3 className="font-semibold text-md">Downloaded</h3>
               </div>
-              <p className=" text-sm">
+              <p className=" text-sm font-medium">
                 130.77 GB{" "}
                 <span className="text-gray-500 text-xs">{" Data Uploaded"}</span>
               </p>
@@ -75,7 +75,7 @@ function Tabs() {
               <img className='w-6 h-6' src={upld}/>
               <h3 className="font-semibold text-md">Uploaded</h3>
               </div>
-              <p className=" text-sm">
+              <p className=" text-sm font-medium">
                 1.20 GB{" "}
                 <span className="text-gray-500 text-xs ">Data Downloaded</span>
               </p>

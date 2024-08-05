@@ -9,9 +9,9 @@ import upld from '../../../assests/images/uploadd.png'
 
 function Tabs() {
   return (
-    <div className="lg:mx-4 mx-0 lg:mt-10 mt-1 lg:border-0 border-t">
+    <div className="lg:mx-4 mx-0 lg:mt-10 lg:border-0 border-t">
       <section className="grid lg:grid-cols-4 grid-cols-1 lg:border-2 border-0 border-gray-200 rounded-xl ">
-        <div className="py-2 px-2 lg:border-r-2 lg:border-b-0 border-b ">
+        <div className="py-2.5 px-2.5 lg:border-r-2 lg:border-b-0 border-b ">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -26,7 +26,7 @@ function Tabs() {
             </div>
           </div>
         </div>
-        <div className="py-2 px-2 lg:border-r-2 lg:border-b-0 border-b">
+        <div className="py-2.5 px-2.5 lg:border-r-2 lg:border-b-0 border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex">
@@ -42,14 +42,14 @@ function Tabs() {
           </div>
         </div>
 
-        <div className="py-2 px-2 lg:border-r-2 border-b lg:border-b-0">
+        <div className="py-2.5 px-2.5 lg:border-r-2 border-b lg:border-b-0">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex ">
                 <img className='h-6 w-6 mr-1' src={dnld}></img>
                 <h3 className="font-semibold text-md">Downloaded</h3>
               </div>
-              <p className=" text-sm">
+              <p className=" text-sm font-medium">
                 130.77 GB{" "}
                 <span className="text-gray-500 text-xs">Data Uploaded</span>
               </p>
@@ -57,7 +57,7 @@ function Tabs() {
           </div>
         </div>
 
-        <div className="py-2 px-2 lg:border-0 border-b">
+        <div className="py-2.5 font-medium px-2.5 lg:border-0 border-b">
           <div className="flex justify-between align-middle">
             <div className="flex flex-col">
               <div className="flex ">

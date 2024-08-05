@@ -12,7 +12,7 @@ function CalenderMain() {
   return (
     <Card>
       <div className="md:hidden block">
-        <CallsHead heading={"May 2022"} placeholder="Search" />
+        <CallsHead heading={"Calendar"} placeholder="Search" />
       </div>
       <Header heading="May,2022" data={headerData} />
       <Matrix />
