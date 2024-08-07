@@ -26,7 +26,7 @@ function Matrix() {
   ];
 
   return (
-    <div className="mt-10 lg:mx-4 mx-0 lg:ms-0 ">
+    <div className="lg:mt-10 mt-2 lg:mx-4 mx-0 lg:ms-0 ">
       <div className="grid grid-cols-7 rounded-xl lg:border-2 border-t border-b">
         {days.map((day, idx) => {
           return (
